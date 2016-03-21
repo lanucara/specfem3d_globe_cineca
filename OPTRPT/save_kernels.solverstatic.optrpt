@@ -1,0 +1,402 @@
+
+Begin optimization report for: SAVE_KERNELS_HESSIAN
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/specfem3D/save_kernels.F90(812,3)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at src/specfem3D/save_kernels.F90(812,3)
+      remark #15542: loop was not vectorized: inner loop was already vectorized
+
+      LOOP BEGIN at src/specfem3D/save_kernels.F90(812,3)
+         remark #15542: loop was not vectorized: inner loop was already vectorized
+
+         LOOP BEGIN at src/specfem3D/save_kernels.F90(812,3)
+         <Peeled>
+            remark #15301: PEEL LOOP WAS VECTORIZED
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/save_kernels.F90(812,3)
+            remark #15300: LOOP WAS VECTORIZED
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/save_kernels.F90(812,3)
+         <Remainder>
+            remark #15301: REMAINDER LOOP WAS VECTORIZED
+         LOOP END
+      LOOP END
+   LOOP END
+LOOP END
+===========================================================================
+
+Begin optimization report for: SAVE_KERNELS_BOUNDARY_KL
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/specfem3D/save_kernels.F90(686,3)
+   remark #15301: FUSED LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/save_kernels.F90(687,3)
+LOOP END
+
+LOOP BEGIN at src/specfem3D/save_kernels.F90(688,3)
+LOOP END
+
+LOOP BEGIN at src/specfem3D/save_kernels.F90(689,3)
+LOOP END
+
+LOOP BEGIN at src/specfem3D/save_kernels.F90(690,3)
+LOOP END
+
+LOOP BEGIN at src/specfem3D/save_kernels.F90(686,3)
+<Remainder>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+===========================================================================
+
+Begin optimization report for: SAVE_KERNELS_INNER_CORE
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/specfem3D/save_kernels.F90(627,3)
+<Peeled>
+   remark #15301: PEEL LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/save_kernels.F90(627,3)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/save_kernels.F90(627,3)
+<Remainder>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+===========================================================================
+
+Begin optimization report for: SAVE_KERNELS_OUTER_CORE
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/specfem3D/save_kernels.F90(563,3)
+<Peeled>
+   remark #15301: PEEL LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/save_kernels.F90(563,3)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/save_kernels.F90(563,3)
+<Remainder>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+===========================================================================
+
+Begin optimization report for: SAVE_KERNELS_CRUST_MANTLE
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/specfem3D/save_kernels.F90(177,3)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at src/specfem3D/save_kernels.F90(178,5)
+      remark #15542: loop was not vectorized: inner loop was already vectorized
+
+      LOOP BEGIN at src/specfem3D/save_kernels.F90(179,7)
+         remark #15542: loop was not vectorized: inner loop was already vectorized
+
+         LOOP BEGIN at src/specfem3D/save_kernels.F90(180,9)
+            remark #15542: loop was not vectorized: inner loop was already vectorized
+
+            LOOP BEGIN at src/specfem3D/save_kernels.F90(192,13)
+               remark #15300: LOOP WAS VECTORIZED
+            LOOP END
+
+            LOOP BEGIN at src/specfem3D/save_kernels.F90(192,13)
+            <Remainder>
+               remark #15301: REMAINDER LOOP WAS VECTORIZED
+            LOOP END
+         LOOP END
+      LOOP END
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/specfem3D/save_kernels.F90(486,9)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/save_kernels.F90(486,9)
+<Remainder>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/save_kernels.F90(489,9)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at src/specfem3D/save_kernels.F90(489,9)
+      remark #15542: loop was not vectorized: inner loop was already vectorized
+
+      LOOP BEGIN at src/specfem3D/save_kernels.F90(489,9)
+         remark #15542: loop was not vectorized: inner loop was already vectorized
+
+         LOOP BEGIN at src/specfem3D/save_kernels.F90(489,9)
+            remark #15542: loop was not vectorized: inner loop was already vectorized
+
+            LOOP BEGIN at src/specfem3D/save_kernels.F90(489,9)
+            <Peeled>
+               remark #15301: PEEL LOOP WAS VECTORIZED
+            LOOP END
+
+            LOOP BEGIN at src/specfem3D/save_kernels.F90(489,9)
+               remark #15300: LOOP WAS VECTORIZED
+            LOOP END
+
+            LOOP BEGIN at src/specfem3D/save_kernels.F90(489,9)
+            <Alternate Alignment Vectorized Loop>
+            LOOP END
+
+            LOOP BEGIN at src/specfem3D/save_kernels.F90(489,9)
+            <Remainder>
+               remark #15301: REMAINDER LOOP WAS VECTORIZED
+            LOOP END
+         LOOP END
+      LOOP END
+   LOOP END
+LOOP END
+===========================================================================
+
+Begin optimization report for: SAVE_KERNELS_SOURCE_DERIVATIVES
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/specfem3D/save_kernels.F90(743,3)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at src/specfem3D/save_kernels.F90(745,30)
+      remark #15398: loop was not vectorized: loop was transformed to memset or memcpy
+   LOOP END
+
+   LOOP BEGIN at src/specfem3D/save_kernels.F90(745,30)
+      remark #15542: loop was not vectorized: inner loop was already vectorized
+
+      LOOP BEGIN at src/specfem3D/save_kernels.F90(745,30)
+      <Peeled>
+         remark #15301: PEEL LOOP WAS VECTORIZED
+      LOOP END
+
+      LOOP BEGIN at src/specfem3D/save_kernels.F90(745,30)
+         remark #15301: PERMUTED LOOP WAS VECTORIZED
+      LOOP END
+
+      LOOP BEGIN at src/specfem3D/save_kernels.F90(745,30)
+      <Alternate Alignment Vectorized Loop>
+      LOOP END
+
+      LOOP BEGIN at src/specfem3D/save_kernels.F90(745,30)
+      <Remainder>
+         remark #15301: REMAINDER LOOP WAS VECTORIZED
+      LOOP END
+   LOOP END
+
+   LOOP BEGIN at src/specfem3D/save_kernels.F90(745,5)
+      remark #15300: LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/specfem3D/save_kernels.F90(745,5)
+   <Remainder>
+      remark #15301: REMAINDER LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/specfem3D/save_kernels.F90(749,41)
+      remark #15398: loop was not vectorized: loop was transformed to memset or memcpy
+   LOOP END
+
+   LOOP BEGIN at src/specfem3D/save_kernels.F90(749,41)
+      remark #15542: loop was not vectorized: inner loop was already vectorized
+
+      LOOP BEGIN at src/specfem3D/save_kernels.F90(749,41)
+         remark #15542: loop was not vectorized: inner loop was already vectorized
+
+         LOOP BEGIN at src/specfem3D/save_kernels.F90(749,41)
+            remark #15542: loop was not vectorized: inner loop was already vectorized
+
+            LOOP BEGIN at src/specfem3D/save_kernels.F90(749,41)
+               remark #15542: loop was not vectorized: inner loop was already vectorized
+
+               LOOP BEGIN at src/specfem3D/save_kernels.F90(749,41)
+                  remark #15542: loop was not vectorized: inner loop was already vectorized
+
+                  LOOP BEGIN at src/specfem3D/save_kernels.F90(749,41)
+                     remark #15301: PERMUTED LOOP WAS VECTORIZED
+                  LOOP END
+
+                  LOOP BEGIN at src/specfem3D/save_kernels.F90(749,41)
+                  <Remainder>
+                     remark #15301: REMAINDER LOOP WAS VECTORIZED
+                  LOOP END
+               LOOP END
+
+               LOOP BEGIN at src/specfem3D/save_kernels.F90(749,41)
+               <Remainder>
+                  remark #15542: loop was not vectorized: inner loop was already vectorized
+
+                  LOOP BEGIN at src/specfem3D/save_kernels.F90(749,41)
+                     remark #15301: PERMUTED LOOP WAS VECTORIZED
+                  LOOP END
+
+                  LOOP BEGIN at src/specfem3D/save_kernels.F90(749,41)
+                  <Remainder>
+                     remark #15301: REMAINDER LOOP WAS VECTORIZED
+                  LOOP END
+               LOOP END
+            LOOP END
+
+            LOOP BEGIN at src/specfem3D/save_kernels.F90(749,41)
+            <Remainder>
+               remark #15542: loop was not vectorized: inner loop was already vectorized
+
+               LOOP BEGIN at src/specfem3D/save_kernels.F90(749,41)
+                  remark #15542: loop was not vectorized: inner loop was already vectorized
+
+                  LOOP BEGIN at src/specfem3D/save_kernels.F90(749,41)
+                  <Peeled>
+                     remark #15301: PEEL LOOP WAS VECTORIZED
+                  LOOP END
+
+                  LOOP BEGIN at src/specfem3D/save_kernels.F90(749,41)
+                     remark #15301: PERMUTED LOOP WAS VECTORIZED
+                  LOOP END
+
+                  LOOP BEGIN at src/specfem3D/save_kernels.F90(749,41)
+                  <Alternate Alignment Vectorized Loop>
+                  LOOP END
+
+                  LOOP BEGIN at src/specfem3D/save_kernels.F90(749,41)
+                  <Remainder>
+                     remark #15301: REMAINDER LOOP WAS VECTORIZED
+                  LOOP END
+               LOOP END
+            LOOP END
+         LOOP END
+      LOOP END
+   LOOP END
+
+   LOOP BEGIN at src/specfem3D/save_kernels.F90(749,34)
+      remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+      LOOP BEGIN at src/specfem3D/save_kernels.F90(749,34)
+         remark #15398: loop was not vectorized: loop was transformed to memset or memcpy
+      LOOP END
+   LOOP END
+
+   LOOP BEGIN at src/specfem3D/save_kernels.F90(749,34)
+      remark #15542: loop was not vectorized: inner loop was already vectorized
+
+      LOOP BEGIN at src/specfem3D/save_kernels.F90(749,34)
+         remark #15542: loop was not vectorized: inner loop was already vectorized
+
+         LOOP BEGIN at src/specfem3D/save_kernels.F90(749,34)
+            remark #15542: loop was not vectorized: inner loop was already vectorized
+
+            LOOP BEGIN at src/specfem3D/save_kernels.F90(749,34)
+               remark #15542: loop was not vectorized: inner loop was already vectorized
+
+               LOOP BEGIN at src/specfem3D/save_kernels.F90(749,34)
+                  remark #15542: loop was not vectorized: inner loop was already vectorized
+
+                  LOOP BEGIN at src/specfem3D/save_kernels.F90(749,34)
+                     remark #15300: LOOP WAS VECTORIZED
+                  LOOP END
+
+                  LOOP BEGIN at src/specfem3D/save_kernels.F90(749,34)
+                  <Remainder>
+                     remark #15301: REMAINDER LOOP WAS VECTORIZED
+                  LOOP END
+               LOOP END
+
+               LOOP BEGIN at src/specfem3D/save_kernels.F90(749,34)
+               <Remainder>
+                  remark #15542: loop was not vectorized: inner loop was already vectorized
+
+                  LOOP BEGIN at src/specfem3D/save_kernels.F90(749,34)
+                  <Peeled>
+                     remark #15301: PEEL LOOP WAS VECTORIZED
+                  LOOP END
+
+                  LOOP BEGIN at src/specfem3D/save_kernels.F90(749,34)
+                     remark #15300: LOOP WAS VECTORIZED
+                  LOOP END
+
+                  LOOP BEGIN at src/specfem3D/save_kernels.F90(749,34)
+                  <Alternate Alignment Vectorized Loop>
+                  LOOP END
+
+                  LOOP BEGIN at src/specfem3D/save_kernels.F90(749,34)
+                  <Remainder>
+                     remark #15301: REMAINDER LOOP WAS VECTORIZED
+                  LOOP END
+               LOOP END
+            LOOP END
+
+            LOOP BEGIN at src/specfem3D/save_kernels.F90(749,34)
+            <Remainder>
+               remark #15542: loop was not vectorized: inner loop was already vectorized
+
+               LOOP BEGIN at src/specfem3D/save_kernels.F90(749,34)
+                  remark #15542: loop was not vectorized: inner loop was already vectorized
+
+                  LOOP BEGIN at src/specfem3D/save_kernels.F90(749,34)
+                  <Peeled>
+                     remark #15301: PEEL LOOP WAS VECTORIZED
+                  LOOP END
+
+                  LOOP BEGIN at src/specfem3D/save_kernels.F90(749,34)
+                     remark #15300: LOOP WAS VECTORIZED
+                  LOOP END
+
+                  LOOP BEGIN at src/specfem3D/save_kernels.F90(749,34)
+                  <Alternate Alignment Vectorized Loop>
+                  LOOP END
+
+                  LOOP BEGIN at src/specfem3D/save_kernels.F90(749,34)
+                  <Remainder>
+                     remark #15301: REMAINDER LOOP WAS VECTORIZED
+                  LOOP END
+               LOOP END
+            LOOP END
+         LOOP END
+      LOOP END
+   LOOP END
+
+   LOOP BEGIN at src/specfem3D/save_kernels.F90(749,5)
+      remark #15542: loop was not vectorized: inner loop was already vectorized
+
+      LOOP BEGIN at src/specfem3D/save_kernels.F90(749,5)
+      <Peeled>
+         remark #15301: PEEL LOOP WAS VECTORIZED
+      LOOP END
+
+      LOOP BEGIN at src/specfem3D/save_kernels.F90(749,5)
+         remark #15300: LOOP WAS VECTORIZED
+      LOOP END
+
+      LOOP BEGIN at src/specfem3D/save_kernels.F90(749,5)
+      <Remainder>
+         remark #15301: REMAINDER LOOP WAS VECTORIZED
+      LOOP END
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/specfem3D/save_kernels.F90(762,5)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed FLOW dependence between 1633 line 763 and 1633 line 763
+LOOP END
+===========================================================================

@@ -1,0 +1,21 @@
+
+Begin optimization report for: MOHO_STRETCHING_HONOR_CRUST
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/meshfem3D/moho_stretching.f90(71,3)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed OUTPUT dependence between x line 73 and x line 91
+LOOP END
+===========================================================================
+
+Begin optimization report for: MOHO_STRETCHING_HONOR_CRUST_REG
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/meshfem3D/moho_stretching.f90(263,3)
+   remark #15521: loop was not vectorized: explicitly compute the iteration count before executing the loop or try using canonical loop form
+LOOP END
+===========================================================================

@@ -1,0 +1,51 @@
+
+Begin optimization report for: SMOOTHING_WEIGHTS_VEC
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/shared/smooth_weights_vec.F90(80,3)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/shared/smooth_weights_vec.F90(80,3)
+<Remainder>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+===========================================================================
+
+Begin optimization report for: SMOOTH_WEIGHTS_CAP_VARDEGREE
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/shared/smooth_weights_vec.F90(242,3)
+   remark #15398: loop was not vectorized: loop was transformed to memset or memcpy
+LOOP END
+
+LOOP BEGIN at src/shared/smooth_weights_vec.F90(243,3)
+   remark #15398: loop was not vectorized: loop was transformed to memset or memcpy
+LOOP END
+
+LOOP BEGIN at src/shared/smooth_weights_vec.F90(244,3)
+   remark #15398: loop was not vectorized: loop was transformed to memset or memcpy
+LOOP END
+
+LOOP BEGIN at src/shared/smooth_weights_vec.F90(286,3)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed FLOW dependence between weight line 298 and weight line 300
+
+   LOOP BEGIN at src/shared/smooth_weights_vec.F90(293,5)
+      remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+      remark #15346: vector dependence: assumed FLOW dependence between weight line 298 and weight line 300
+
+      LOOP BEGIN at src/shared/smooth_weights_vec.F90(311,7)
+      <Peeled, Distributed chunk1>
+         remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+      LOOP END
+
+      LOOP BEGIN at src/shared/smooth_weights_vec.F90(311,7)
+      LOOP END
+   LOOP END
+LOOP END
+===========================================================================

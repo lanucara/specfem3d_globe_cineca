@@ -1,0 +1,391 @@
+
+Begin optimization report for: COMPUTE_BOUNDARY_KERNELS
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/specfem3D/compute_boundary_kernel.f90(71,5)
+   remark #15398: loop was not vectorized: loop was transformed to memset or memcpy
+LOOP END
+
+LOOP BEGIN at src/specfem3D/compute_boundary_kernel.f90(74,5)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed OUTPUT dependence between MASK_IBOOL line 86 and MASK_IBOOL line 86
+
+   LOOP BEGIN at src/specfem3D/compute_boundary_kernel.f90(75,7)
+      remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+      remark #15346: vector dependence: assumed OUTPUT dependence between MASK_IBOOL line 86 and MASK_IBOOL line 86
+
+      LOOP BEGIN at src/specfem3D/compute_boundary_kernel.f90(76,9)
+         remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+         remark #15346: vector dependence: assumed OUTPUT dependence between MASK_IBOOL line 86 and MASK_IBOOL line 86
+
+         LOOP BEGIN at src/specfem3D/compute_boundary_kernel.f90(77,11)
+            remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+            remark #15346: vector dependence: assumed FLOW dependence between MASK_IBOOL line 86 and MASK_IBOOL line 83
+
+            LOOP BEGIN at src/specfem3D/compute_boundary_kernel.f90(102,15)
+               remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+            LOOP END
+
+            LOOP BEGIN at src/specfem3D/compute_boundary_kernel.f90(105,15)
+            LOOP END
+
+            LOOP BEGIN at src/specfem3D/compute_boundary_kernel.f90(108,15)
+            LOOP END
+
+            LOOP BEGIN at src/specfem3D/compute_boundary_kernel.f90(124,15)
+            LOOP END
+
+            LOOP BEGIN at src/specfem3D/compute_boundary_kernel.f90(127,15)
+            LOOP END
+
+            LOOP BEGIN at src/specfem3D/compute_boundary_kernel.f90(130,15)
+            LOOP END
+
+            LOOP BEGIN at src/specfem3D/compute_boundary_kernel.f90(145,15)
+            LOOP END
+
+            LOOP BEGIN at src/specfem3D/compute_boundary_kernel.f90(148,15)
+            LOOP END
+
+            LOOP BEGIN at src/specfem3D/compute_boundary_kernel.f90(151,15)
+            LOOP END
+         LOOP END
+      LOOP END
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/specfem3D/compute_boundary_kernel.f90(213,5)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/compute_boundary_kernel.f90(213,5)
+<Remainder>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/compute_boundary_kernel.f90(251,3)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/compute_boundary_kernel.f90(251,3)
+<Remainder>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/compute_boundary_kernel.f90(288,3)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/compute_boundary_kernel.f90(288,3)
+<Remainder>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/compute_boundary_kernel.f90(316,3)
+   remark #15398: loop was not vectorized: loop was transformed to memset or memcpy
+LOOP END
+
+LOOP BEGIN at src/specfem3D/compute_boundary_kernel.f90(335,3)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/compute_boundary_kernel.f90(335,3)
+<Remainder>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/compute_boundary_kernel.f90(363,3)
+   remark #15398: loop was not vectorized: loop was transformed to memset or memcpy
+LOOP END
+
+LOOP BEGIN at src/specfem3D/compute_boundary_kernel.f90(383,3)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/compute_boundary_kernel.f90(383,3)
+<Remainder>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+===========================================================================
+
+Begin optimization report for: COMPUTE_BOUNDARY_KERNEL_DEPTH
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/specfem3D/compute_boundary_kernel.f90(440,3)
+   remark #15398: loop was not vectorized: loop was transformed to memset or memcpy
+LOOP END
+
+LOOP BEGIN at src/specfem3D/compute_boundary_kernel.f90(442,3)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at src/specfem3D/compute_boundary_kernel.f90(446,5)
+   <Distributed chunk1>
+      remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+      remark #15346: vector dependence: assumed OUTPUT dependence between i line 448 and i line 453
+
+      LOOP BEGIN at src/specfem3D/compute_boundary_kernel.f90(448,9)
+         remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+
+         LOOP BEGIN at src/specfem3D/compute_boundary_kernel.f90(450,11)
+            remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/compute_boundary_kernel.f90(451,11)
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/compute_boundary_kernel.f90(452,11)
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/compute_boundary_kernel.f90(450,11)
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/compute_boundary_kernel.f90(450,11)
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/compute_boundary_kernel.f90(450,11)
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/compute_boundary_kernel.f90(450,11)
+         LOOP END
+      LOOP END
+   LOOP END
+
+   LOOP BEGIN at src/specfem3D/compute_boundary_kernel.f90(446,5)
+   <Distributed chunk2>
+      remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+      remark #15346: vector dependence: assumed OUTPUT dependence between j line 447 and j line 454
+   LOOP END
+
+   LOOP BEGIN at src/specfem3D/compute_boundary_kernel.f90(458,5)
+      remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+      LOOP BEGIN at src/specfem3D/compute_boundary_kernel.f90(459,7)
+         remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+         LOOP BEGIN at src/specfem3D/compute_boundary_kernel.f90(460,9)
+            remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+            LOOP BEGIN at src/specfem3D/compute_boundary_kernel.f90(461,11)
+               remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+            LOOP END
+
+            LOOP BEGIN at src/specfem3D/compute_boundary_kernel.f90(473,22)
+            LOOP END
+
+            LOOP BEGIN at src/specfem3D/compute_boundary_kernel.f90(473,22)
+            LOOP END
+
+            LOOP BEGIN at src/specfem3D/compute_boundary_kernel.f90(473,11)
+            LOOP END
+
+            LOOP BEGIN at src/specfem3D/compute_boundary_kernel.f90(461,11)
+            <Distributed chunk2>
+               remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+            LOOP END
+
+            LOOP BEGIN at src/specfem3D/compute_boundary_kernel.f90(474,22)
+               remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+            LOOP END
+
+            LOOP BEGIN at src/specfem3D/compute_boundary_kernel.f90(474,22)
+            LOOP END
+
+            LOOP BEGIN at src/specfem3D/compute_boundary_kernel.f90(474,11)
+            LOOP END
+
+            LOOP BEGIN at src/specfem3D/compute_boundary_kernel.f90(475,22)
+            LOOP END
+
+            LOOP BEGIN at src/specfem3D/compute_boundary_kernel.f90(475,22)
+            LOOP END
+
+            LOOP BEGIN at src/specfem3D/compute_boundary_kernel.f90(475,11)
+            LOOP END
+
+            LOOP BEGIN at src/specfem3D/compute_boundary_kernel.f90(498,22)
+               remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+            LOOP END
+
+            LOOP BEGIN at src/specfem3D/compute_boundary_kernel.f90(498,22)
+            LOOP END
+
+            LOOP BEGIN at src/specfem3D/compute_boundary_kernel.f90(498,11)
+            LOOP END
+
+            LOOP BEGIN at src/specfem3D/compute_boundary_kernel.f90(499,22)
+               remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+            LOOP END
+
+            LOOP BEGIN at src/specfem3D/compute_boundary_kernel.f90(499,22)
+            LOOP END
+
+            LOOP BEGIN at src/specfem3D/compute_boundary_kernel.f90(499,11)
+            LOOP END
+
+            LOOP BEGIN at src/specfem3D/compute_boundary_kernel.f90(500,22)
+            LOOP END
+
+            LOOP BEGIN at src/specfem3D/compute_boundary_kernel.f90(500,22)
+            LOOP END
+
+            LOOP BEGIN at src/specfem3D/compute_boundary_kernel.f90(500,11)
+            LOOP END
+
+            LOOP BEGIN at src/specfem3D/compute_boundary_kernel.f90(524,55)
+               remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+            LOOP END
+
+            LOOP BEGIN at src/specfem3D/compute_boundary_kernel.f90(524,55)
+            LOOP END
+
+            LOOP BEGIN at src/specfem3D/compute_boundary_kernel.f90(524,31)
+            LOOP END
+
+            LOOP BEGIN at src/specfem3D/compute_boundary_kernel.f90(525,50)
+            LOOP END
+
+            LOOP BEGIN at src/specfem3D/compute_boundary_kernel.f90(525,50)
+            LOOP END
+
+            LOOP BEGIN at src/specfem3D/compute_boundary_kernel.f90(525,26)
+            LOOP END
+
+            LOOP BEGIN at src/specfem3D/compute_boundary_kernel.f90(524,13)
+               remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+            LOOP END
+
+            LOOP BEGIN at src/specfem3D/compute_boundary_kernel.f90(527,61)
+            LOOP END
+
+            LOOP BEGIN at src/specfem3D/compute_boundary_kernel.f90(527,13)
+               remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+            LOOP END
+
+            LOOP BEGIN at src/specfem3D/compute_boundary_kernel.f90(533,57)
+               remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+            LOOP END
+
+            LOOP BEGIN at src/specfem3D/compute_boundary_kernel.f90(534,26)
+               remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+            LOOP END
+
+            LOOP BEGIN at src/specfem3D/compute_boundary_kernel.f90(535,26)
+               remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+            LOOP END
+
+            LOOP BEGIN at src/specfem3D/compute_boundary_kernel.f90(536,26)
+               remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+            LOOP END
+
+            LOOP BEGIN at src/specfem3D/compute_boundary_kernel.f90(537,39)
+               remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+            LOOP END
+
+            LOOP BEGIN at src/specfem3D/compute_boundary_kernel.f90(537,39)
+               remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+            LOOP END
+
+            LOOP BEGIN at src/specfem3D/compute_boundary_kernel.f90(537,77)
+               remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+            LOOP END
+
+            LOOP BEGIN at src/specfem3D/compute_boundary_kernel.f90(537,77)
+               remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+            LOOP END
+
+            LOOP BEGIN at src/specfem3D/compute_boundary_kernel.f90(537,26)
+               remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+            LOOP END
+
+            LOOP BEGIN at src/specfem3D/compute_boundary_kernel.f90(538,39)
+               remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+            LOOP END
+
+            LOOP BEGIN at src/specfem3D/compute_boundary_kernel.f90(538,39)
+               remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+            LOOP END
+
+            LOOP BEGIN at src/specfem3D/compute_boundary_kernel.f90(538,75)
+               remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+            LOOP END
+
+            LOOP BEGIN at src/specfem3D/compute_boundary_kernel.f90(538,75)
+            LOOP END
+
+            LOOP BEGIN at src/specfem3D/compute_boundary_kernel.f90(538,26)
+            LOOP END
+         LOOP END
+      LOOP END
+   LOOP END
+
+   LOOP BEGIN at src/specfem3D/compute_boundary_kernel.f90(549,7)
+   <Distributed chunk1>
+      remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+      LOOP BEGIN at src/specfem3D/compute_boundary_kernel.f90(550,9)
+         remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+         LOOP BEGIN at src/specfem3D/compute_boundary_kernel.f90(552,11)
+            remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/compute_boundary_kernel.f90(565,22)
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/compute_boundary_kernel.f90(565,22)
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/compute_boundary_kernel.f90(565,11)
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/compute_boundary_kernel.f90(552,11)
+         <Distributed chunk2>
+            remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/compute_boundary_kernel.f90(566,22)
+            remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/compute_boundary_kernel.f90(566,22)
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/compute_boundary_kernel.f90(566,11)
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/compute_boundary_kernel.f90(567,22)
+            remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/compute_boundary_kernel.f90(567,22)
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/compute_boundary_kernel.f90(567,11)
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/compute_boundary_kernel.f90(583,45)
+            remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/compute_boundary_kernel.f90(583,45)
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/compute_boundary_kernel.f90(583,22)
+         LOOP END
+      LOOP END
+   LOOP END
+
+   LOOP BEGIN at src/specfem3D/compute_boundary_kernel.f90(587,9)
+      remark #15300: LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/specfem3D/compute_boundary_kernel.f90(587,9)
+   <Remainder>
+      remark #15301: REMAINDER LOOP WAS VECTORIZED
+   LOOP END
+LOOP END
+===========================================================================

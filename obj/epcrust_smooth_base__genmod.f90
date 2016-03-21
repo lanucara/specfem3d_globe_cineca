@@ -1,0 +1,12 @@
+        !COMPILER-GENERATED INTERFACE MODULE: Fri Mar 11 15:46:09 2016
+        MODULE EPCRUST_SMOOTH_BASE__genmod
+          INTERFACE 
+            SUBROUTINE EPCRUST_SMOOTH_BASE(X,Y,X1,Y1,WEIGHT)
+              REAL(KIND=8) :: X
+              REAL(KIND=8) :: Y
+              REAL(KIND=8) :: X1(80)
+              REAL(KIND=8) :: Y1(80)
+              REAL(KIND=8) :: WEIGHT(80)
+            END SUBROUTINE EPCRUST_SMOOTH_BASE
+          END INTERFACE 
+        END MODULE EPCRUST_SMOOTH_BASE__genmod

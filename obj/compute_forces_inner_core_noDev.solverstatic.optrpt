@@ -1,0 +1,145 @@
+
+Begin optimization report for: COMPUTE_FORCES_INNER_CORE_NODEV
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/specfem3D/compute_forces_inner_core_noDev.f90(160,3)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at src/specfem3D/compute_forces_inner_core_noDev.f90(169,7)
+      remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+      LOOP BEGIN at src/specfem3D/compute_forces_inner_core_noDev.f90(170,9)
+         remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+         LOOP BEGIN at src/specfem3D/compute_forces_inner_core_noDev.f90(171,11)
+            remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+            LOOP BEGIN at src/specfem3D/compute_forces_inner_core_noDev.f90(185,13)
+               remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+            LOOP END
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/compute_forces_inner_core_noDev.f90(171,11)
+         <Remainder>
+            remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+            LOOP BEGIN at src/specfem3D/compute_forces_inner_core_noDev.f90(185,13)
+               remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+            LOOP END
+         LOOP END
+      LOOP END
+   LOOP END
+
+   LOOP BEGIN at src/specfem3D/compute_forces_inner_core_noDev.f90(452,9)
+      remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+      LOOP BEGIN at src/specfem3D/compute_forces_inner_core_noDev.f90(453,11)
+         remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+
+         LOOP BEGIN at src/specfem3D/compute_forces_inner_core_noDev.f90(467,13)
+         <Distributed chunk1>
+            remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/compute_forces_inner_core_noDev.f90(467,13)
+         <Distributed chunk2>
+            remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+         LOOP END
+      LOOP END
+
+      LOOP BEGIN at src/specfem3D/compute_forces_inner_core_noDev.f90(453,11)
+         remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+
+         LOOP BEGIN at src/specfem3D/compute_forces_inner_core_noDev.f90(467,13)
+         <Distributed chunk1>
+            remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/compute_forces_inner_core_noDev.f90(467,13)
+         <Distributed chunk2>
+            remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+         LOOP END
+      LOOP END
+
+      LOOP BEGIN at src/specfem3D/compute_forces_inner_core_noDev.f90(453,11)
+         remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+
+         LOOP BEGIN at src/specfem3D/compute_forces_inner_core_noDev.f90(467,13)
+         <Distributed chunk1>
+            remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/compute_forces_inner_core_noDev.f90(467,13)
+         <Distributed chunk2>
+            remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+         LOOP END
+      LOOP END
+
+      LOOP BEGIN at src/specfem3D/compute_forces_inner_core_noDev.f90(453,11)
+         remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+
+         LOOP BEGIN at src/specfem3D/compute_forces_inner_core_noDev.f90(467,13)
+         <Distributed chunk1>
+            remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/compute_forces_inner_core_noDev.f90(467,13)
+         <Distributed chunk2>
+            remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+         LOOP END
+      LOOP END
+
+      LOOP BEGIN at src/specfem3D/compute_forces_inner_core_noDev.f90(453,11)
+         remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+
+         LOOP BEGIN at src/specfem3D/compute_forces_inner_core_noDev.f90(467,13)
+         <Distributed chunk1>
+            remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/compute_forces_inner_core_noDev.f90(467,13)
+         <Distributed chunk2>
+            remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+         LOOP END
+      LOOP END
+   LOOP END
+
+   LOOP BEGIN at src/specfem3D/compute_forces_inner_core_noDev.f90(506,7)
+      remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+      remark #15346: vector dependence: assumed OUTPUT dependence between accel_inner_core line 510 and accel_inner_core line 510
+
+      LOOP BEGIN at src/specfem3D/compute_forces_inner_core_noDev.f90(507,9)
+         remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+         remark #15346: vector dependence: assumed OUTPUT dependence between accel_inner_core line 510 and accel_inner_core line 510
+
+         LOOP BEGIN at src/specfem3D/compute_forces_inner_core_noDev.f90(508,11)
+            remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+            remark #15346: vector dependence: assumed FLOW dependence between accel_inner_core line 510 and accel_inner_core line 510
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/compute_forces_inner_core_noDev.f90(508,11)
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/compute_forces_inner_core_noDev.f90(508,11)
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/compute_forces_inner_core_noDev.f90(508,11)
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/compute_forces_inner_core_noDev.f90(508,11)
+         LOOP END
+      LOOP END
+   LOOP END
+
+   LOOP BEGIN at src/specfem3D/compute_forces_inner_core_noDev.f90(554,9)
+      remark #15300: LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/specfem3D/compute_forces_inner_core_noDev.f90(554,9)
+   <Remainder>
+      remark #15301: REMAINDER LOOP WAS VECTORIZED
+   LOOP END
+LOOP END
+===========================================================================

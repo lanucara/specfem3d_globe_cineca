@@ -1,0 +1,10 @@
+
+Begin optimization report for: MESHFEM3D_MODELS_GETATTEN_VAL
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/meshfem3D/meshfem3D_models.F90(855,3)
+   remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+===========================================================================

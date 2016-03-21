@@ -1,0 +1,10 @@
+        !COMPILER-GENERATED INTERFACE MODULE: Fri Mar 11 15:45:24 2016
+        MODULE HEX_NODES__genmod
+          INTERFACE 
+            SUBROUTINE HEX_NODES(IADDX,IADDY,IADDZ)
+              INTEGER(KIND=4) :: IADDX(27)
+              INTEGER(KIND=4) :: IADDY(27)
+              INTEGER(KIND=4) :: IADDZ(27)
+            END SUBROUTINE HEX_NODES
+          END INTERFACE 
+        END MODULE HEX_NODES__genmod

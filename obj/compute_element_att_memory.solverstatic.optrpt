@@ -1,0 +1,88 @@
+
+Begin optimization report for: COMPUTE_ELEMENT_ATT_MEMORY_CM
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/specfem3D/compute_element_att_memory.F90(122,11)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at src/specfem3D/compute_element_att_memory.F90(121,9)
+      remark #15301: FUSED LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/specfem3D/compute_element_att_memory.F90(145,5)
+   LOOP END
+
+   LOOP BEGIN at src/specfem3D/compute_element_att_memory.F90(121,9)
+   <Remainder>
+      remark #15301: REMAINDER LOOP WAS VECTORIZED
+   LOOP END
+LOOP END
+===========================================================================
+
+Begin optimization report for: COMPUTE_ELEMENT_ATT_MEMORY_CM_LDDRK
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/specfem3D/compute_element_att_memory.F90(273,61)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at src/specfem3D/compute_element_att_memory.F90(251,9)
+      remark #15301: FUSED LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/specfem3D/compute_element_att_memory.F90(271,5)
+   LOOP END
+
+   LOOP BEGIN at src/specfem3D/compute_element_att_memory.F90(251,9)
+   <Remainder>
+      remark #15301: REMAINDER LOOP WAS VECTORIZED
+   LOOP END
+LOOP END
+===========================================================================
+
+Begin optimization report for: COMPUTE_ELEMENT_ATT_MEMORY_IC
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/specfem3D/compute_element_att_memory.F90(386,9)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at src/specfem3D/compute_element_att_memory.F90(385,7)
+      remark #15301: FUSED LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/specfem3D/compute_element_att_memory.F90(398,5)
+   LOOP END
+
+   LOOP BEGIN at src/specfem3D/compute_element_att_memory.F90(385,7)
+   <Remainder>
+      remark #15301: REMAINDER LOOP WAS VECTORIZED
+   LOOP END
+LOOP END
+===========================================================================
+
+Begin optimization report for: COMPUTE_ELEMENT_ATT_MEMORY_IC_LDDRK
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/specfem3D/compute_element_att_memory.F90(510,61)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at src/specfem3D/compute_element_att_memory.F90(498,7)
+      remark #15301: FUSED LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/specfem3D/compute_element_att_memory.F90(508,5)
+   LOOP END
+
+   LOOP BEGIN at src/specfem3D/compute_element_att_memory.F90(498,7)
+   <Remainder>
+      remark #15301: REMAINDER LOOP WAS VECTORIZED
+   LOOP END
+LOOP END
+===========================================================================

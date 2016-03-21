@@ -1,0 +1,26 @@
+
+Begin optimization report for: CREATE_CENTRAL_CUBE
+
+    Report from: Vector optimizations [vec]
+
+
+
+Non-optimizable loops:
+
+
+LOOP BEGIN at src/meshfem3D/create_central_cube.f90(260,3)
+   remark #15536: loop was not vectorized: inner loop throttling prevents vectorization of this outer loop. Refer to inner loop message for more details.
+
+   LOOP BEGIN at src/meshfem3D/create_central_cube.f90(259,5)
+      remark #15536: loop was not vectorized: inner loop throttling prevents vectorization of this outer loop. Refer to inner loop message for more details.
+
+      LOOP BEGIN at src/meshfem3D/create_central_cube.f90(258,7)
+         remark #15536: loop was not vectorized: inner loop throttling prevents vectorization of this outer loop. Refer to inner loop message for more details.
+
+         LOOP BEGIN at src/meshfem3D/create_central_cube.f90(191,9)
+            remark #15534: loop was not vectorized: loop contains arithmetic if or computed goto. Consider using if-then-else statement.    [ src/meshfem3D/create_central_cube.f90(157,22) ]
+         LOOP END
+      LOOP END
+   LOOP END
+LOOP END
+===========================================================================

@@ -1,0 +1,87 @@
+
+Begin optimization report for: COMPUTE_ELEMENT_GLL_LOCATIONS
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/meshfem3D/compute_element_properties.f90(342,9)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at src/meshfem3D/compute_element_properties.f90(333,9)
+      remark #15300: LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/meshfem3D/compute_element_properties.f90(333,9)
+   <Remainder>
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/compute_element_properties.f90(342,9)
+<Remainder>
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at src/meshfem3D/compute_element_properties.f90(333,9)
+      remark #15300: LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/meshfem3D/compute_element_properties.f90(333,9)
+   <Remainder>
+   LOOP END
+LOOP END
+===========================================================================
+
+Begin optimization report for: COMPUTE_ELEMENT_PROPERTIES
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/meshfem3D/compute_element_properties.f90(342,9) inlined into src/meshfem3D/compute_element_properties.f90(192,8)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at src/meshfem3D/compute_element_properties.f90(333,9) inlined into src/meshfem3D/compute_element_properties.f90(192,8)
+      remark #15300: LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/meshfem3D/compute_element_properties.f90(333,9) inlined into src/meshfem3D/compute_element_properties.f90(192,8)
+   <Remainder>
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/compute_element_properties.f90(342,9) inlined into src/meshfem3D/compute_element_properties.f90(192,8)
+<Remainder>
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at src/meshfem3D/compute_element_properties.f90(333,9) inlined into src/meshfem3D/compute_element_properties.f90(192,8)
+      remark #15300: LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/meshfem3D/compute_element_properties.f90(333,9) inlined into src/meshfem3D/compute_element_properties.f90(192,8)
+   <Remainder>
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/compute_element_properties.f90(342,9) inlined into src/meshfem3D/compute_element_properties.f90(285,10)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at src/meshfem3D/compute_element_properties.f90(333,9) inlined into src/meshfem3D/compute_element_properties.f90(285,10)
+      remark #15300: LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/meshfem3D/compute_element_properties.f90(333,9) inlined into src/meshfem3D/compute_element_properties.f90(285,10)
+   <Remainder>
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/compute_element_properties.f90(342,9) inlined into src/meshfem3D/compute_element_properties.f90(285,10)
+<Remainder>
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at src/meshfem3D/compute_element_properties.f90(333,9) inlined into src/meshfem3D/compute_element_properties.f90(285,10)
+      remark #15300: LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/meshfem3D/compute_element_properties.f90(333,9) inlined into src/meshfem3D/compute_element_properties.f90(285,10)
+   <Remainder>
+   LOOP END
+LOOP END
+===========================================================================

@@ -1,0 +1,46 @@
+
+Begin optimization report for: LGNDR
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/meshfem3D/lgndr.f90(91,3)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/lgndr.f90(91,3)
+<Remainder>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/lgndr.f90(103,3)
+   remark #15522: loop was not vectorized: loop control flow is too complex. Try using canonical loop form.
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/lgndr.f90(133,3)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed FLOW dependence between stom line 136 and stom line 134
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/lgndr.f90(133,3)
+<Remainder>
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/lgndr.f90(142,5)
+<Peeled>
+   remark #15301: PEEL LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/lgndr.f90(142,5)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/lgndr.f90(142,5)
+<Alternate Alignment Vectorized Loop>
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/lgndr.f90(142,5)
+<Remainder>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+===========================================================================

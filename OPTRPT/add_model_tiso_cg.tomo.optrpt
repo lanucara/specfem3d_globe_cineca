@@ -1,0 +1,119 @@
+
+Begin optimization report for: ADD_MODEL
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/tomography/add_model_tiso_cg.f90(144,3)
+   remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+   LOOP BEGIN at src/tomography/add_model_tiso_cg.f90(144,3)
+      remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+      LOOP BEGIN at src/tomography/add_model_tiso_cg.f90(144,3)
+         remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+         LOOP BEGIN at src/tomography/add_model_tiso_cg.f90(144,3)
+            remark #15398: loop was not vectorized: loop was transformed to memset or memcpy
+         LOOP END
+      LOOP END
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/tomography/add_model_tiso_cg.f90(145,3)
+   remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+   LOOP BEGIN at src/tomography/add_model_tiso_cg.f90(145,3)
+      remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+      LOOP BEGIN at src/tomography/add_model_tiso_cg.f90(145,3)
+         remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+         LOOP BEGIN at src/tomography/add_model_tiso_cg.f90(145,3)
+            remark #15398: loop was not vectorized: loop was transformed to memset or memcpy
+         LOOP END
+      LOOP END
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/tomography/add_model_tiso_cg.f90(146,3)
+   remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+   LOOP BEGIN at src/tomography/add_model_tiso_cg.f90(146,3)
+      remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+      LOOP BEGIN at src/tomography/add_model_tiso_cg.f90(146,3)
+         remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+         LOOP BEGIN at src/tomography/add_model_tiso_cg.f90(146,3)
+            remark #15398: loop was not vectorized: loop was transformed to memset or memcpy
+         LOOP END
+      LOOP END
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/tomography/add_model_tiso_cg.f90(147,3)
+   remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+   LOOP BEGIN at src/tomography/add_model_tiso_cg.f90(147,3)
+      remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+      LOOP BEGIN at src/tomography/add_model_tiso_cg.f90(147,3)
+         remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+         LOOP BEGIN at src/tomography/add_model_tiso_cg.f90(147,3)
+            remark #15398: loop was not vectorized: loop was transformed to memset or memcpy
+         LOOP END
+      LOOP END
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/tomography/add_model_tiso_cg.f90(148,3)
+   remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+   LOOP BEGIN at src/tomography/add_model_tiso_cg.f90(148,3)
+      remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+      LOOP BEGIN at src/tomography/add_model_tiso_cg.f90(148,3)
+         remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+         LOOP BEGIN at src/tomography/add_model_tiso_cg.f90(148,3)
+            remark #15398: loop was not vectorized: loop was transformed to memset or memcpy
+         LOOP END
+      LOOP END
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/tomography/add_model_tiso_cg.f90(149,3)
+   remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+   LOOP BEGIN at src/tomography/add_model_tiso_cg.f90(149,3)
+      remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+      LOOP BEGIN at src/tomography/add_model_tiso_cg.f90(149,3)
+         remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+         LOOP BEGIN at src/tomography/add_model_tiso_cg.f90(149,3)
+            remark #15398: loop was not vectorized: loop was transformed to memset or memcpy
+         LOOP END
+      LOOP END
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/tomography/add_model_tiso_cg.f90(154,3)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at src/tomography/add_model_tiso_cg.f90(155,5)
+      remark #15542: loop was not vectorized: inner loop was already vectorized
+
+      LOOP BEGIN at src/tomography/add_model_tiso_cg.f90(156,7)
+         remark #15542: loop was not vectorized: inner loop was already vectorized
+
+         LOOP BEGIN at src/tomography/add_model_tiso_cg.f90(157,9)
+         <Peeled>
+            remark #15300: LOOP WAS VECTORIZED
+         LOOP END
+      LOOP END
+   LOOP END
+LOOP END
+===========================================================================

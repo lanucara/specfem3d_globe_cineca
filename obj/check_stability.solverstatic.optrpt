@@ -1,0 +1,115 @@
+
+Begin optimization report for: CHECK_STABILITY
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/specfem3D/check_stability.f90(88,23)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/check_stability.f90(88,23)
+<Remainder>
+LOOP END
+
+LOOP BEGIN at src/specfem3D/check_stability.f90(91,23)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/check_stability.f90(91,23)
+<Remainder>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/check_stability.f90(95,18)
+<Peeled>
+   remark #15301: PEEL LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/check_stability.f90(95,18)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/check_stability.f90(95,18)
+<Remainder>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/check_stability.f90(145,21)
+<Peeled>
+   remark #15301: PEEL LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/check_stability.f90(145,21)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/check_stability.f90(145,21)
+<Remainder>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/check_stability.f90(146,26)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at src/specfem3D/check_stability.f90(146,26)
+      remark #15542: loop was not vectorized: inner loop was already vectorized
+
+      LOOP BEGIN at src/specfem3D/check_stability.f90(146,26)
+         remark #15301: OUTER LOOP WAS VECTORIZED
+
+         LOOP BEGIN at src/specfem3D/check_stability.f90(146,26)
+            remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/check_stability.f90(147,26)
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/check_stability.f90(148,26)
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/check_stability.f90(149,26)
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/check_stability.f90(150,26)
+         LOOP END
+      LOOP END
+
+      LOOP BEGIN at src/specfem3D/check_stability.f90(147,26)
+      LOOP END
+
+      LOOP BEGIN at src/specfem3D/check_stability.f90(148,26)
+      LOOP END
+
+      LOOP BEGIN at src/specfem3D/check_stability.f90(149,26)
+      LOOP END
+
+      LOOP BEGIN at src/specfem3D/check_stability.f90(150,26)
+      LOOP END
+   LOOP END
+
+   LOOP BEGIN at src/specfem3D/check_stability.f90(147,26)
+   LOOP END
+
+   LOOP BEGIN at src/specfem3D/check_stability.f90(148,26)
+   LOOP END
+
+   LOOP BEGIN at src/specfem3D/check_stability.f90(149,26)
+   LOOP END
+
+   LOOP BEGIN at src/specfem3D/check_stability.f90(150,26)
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/specfem3D/check_stability.f90(147,26)
+LOOP END
+
+LOOP BEGIN at src/specfem3D/check_stability.f90(148,26)
+LOOP END
+
+LOOP BEGIN at src/specfem3D/check_stability.f90(149,26)
+LOOP END
+
+LOOP BEGIN at src/specfem3D/check_stability.f90(150,26)
+LOOP END
+===========================================================================

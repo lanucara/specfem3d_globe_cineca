@@ -1,0 +1,22 @@
+
+Begin optimization report for: CREATE_REGULAR_ELEMENTS
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/meshfem3D/create_regular_elements.f90(159,3)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at src/meshfem3D/create_regular_elements.f90(160,5)
+      remark #15542: loop was not vectorized: inner loop was already vectorized
+
+      LOOP BEGIN at src/meshfem3D/create_regular_elements.f90(161,7)
+         remark #15542: loop was not vectorized: inner loop was already vectorized
+
+         LOOP BEGIN at src/meshfem3D/create_regular_elements.f90(167,22)
+            remark #15300: LOOP WAS VECTORIZED
+         LOOP END
+      LOOP END
+   LOOP END
+LOOP END
+===========================================================================

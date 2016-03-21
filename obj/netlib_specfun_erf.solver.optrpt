@@ -1,0 +1,42 @@
+
+Begin optimization report for: CALERF
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/specfem3D/netlib_specfun_erf.f90(180,7)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed ANTI dependence between xden line 182 and xden line 182
+LOOP END
+
+LOOP BEGIN at src/specfem3D/netlib_specfun_erf.f90(197,7)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed ANTI dependence between xden line 199 and xden line 199
+LOOP END
+
+LOOP BEGIN at src/specfem3D/netlib_specfun_erf.f90(225,7)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed ANTI dependence between xden line 227 and xden line 227
+LOOP END
+===========================================================================
+
+Begin optimization report for: NETLIB_SPECFUN_ERF
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/specfem3D/netlib_specfun_erf.f90(180,7) inlined into src/specfem3D/netlib_specfun_erf.f90(279,8)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed ANTI dependence between xden line 182 and xden line 182
+LOOP END
+
+LOOP BEGIN at src/specfem3D/netlib_specfun_erf.f90(197,7) inlined into src/specfem3D/netlib_specfun_erf.f90(279,8)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed ANTI dependence between xden line 199 and xden line 199
+LOOP END
+
+LOOP BEGIN at src/specfem3D/netlib_specfun_erf.f90(225,7) inlined into src/specfem3D/netlib_specfun_erf.f90(279,8)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed ANTI dependence between xden line 227 and xden line 227
+LOOP END
+===========================================================================

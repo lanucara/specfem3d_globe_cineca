@@ -1,0 +1,1428 @@
+
+Begin optimization report for: CRM_ALLOCATE_ARRAYS
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(564,5)
+<Multiversioned v1>
+   remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(564,5)
+<Multiversioned v2>
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(574,3)
+   remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+   LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(574,3)
+      remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+      LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(574,3)
+         remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+         LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(574,3)
+            remark #15398: loop was not vectorized: loop was transformed to memset or memcpy
+         LOOP END
+      LOOP END
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(574,29)
+   remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+   LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(574,29)
+      remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+      LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(574,29)
+         remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+         LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(574,29)
+            remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+            LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(574,29)
+               remark #15398: loop was not vectorized: loop was transformed to memset or memcpy
+            LOOP END
+         LOOP END
+      LOOP END
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(581,3)
+   remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+   LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(581,3)
+      remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+      LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(581,3)
+         remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+         LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(581,3)
+            remark #15398: loop was not vectorized: loop was transformed to memset or memcpy
+         LOOP END
+      LOOP END
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(581,28)
+   remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+   LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(581,28)
+      remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+      LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(581,28)
+         remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+         LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(581,28)
+            remark #15398: loop was not vectorized: loop was transformed to memset or memcpy
+         LOOP END
+      LOOP END
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(592,3)
+   remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+   LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(592,3)
+      remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+      LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(592,3)
+         remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+         LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(592,3)
+            remark #15398: loop was not vectorized: loop was transformed to memset or memcpy
+         LOOP END
+      LOOP END
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(592,31)
+   remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+   LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(592,31)
+      remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+      LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(592,31)
+         remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+         LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(592,31)
+            remark #15398: loop was not vectorized: loop was transformed to memset or memcpy
+         LOOP END
+      LOOP END
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(593,3)
+   remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+   LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(593,3)
+      remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+      LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(593,3)
+         remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+         LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(593,3)
+            remark #15398: loop was not vectorized: loop was transformed to memset or memcpy
+         LOOP END
+      LOOP END
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(593,28)
+   remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+   LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(593,28)
+      remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+      LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(593,28)
+         remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+         LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(593,28)
+            remark #15398: loop was not vectorized: loop was transformed to memset or memcpy
+         LOOP END
+      LOOP END
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(594,3)
+   remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+   LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(594,3)
+      remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+      LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(594,3)
+         remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+         LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(594,3)
+            remark #15398: loop was not vectorized: loop was transformed to memset or memcpy
+         LOOP END
+      LOOP END
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(595,3)
+   remark #15398: loop was not vectorized: loop was transformed to memset or memcpy
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(607,3)
+   remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+   LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(607,3)
+      remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+      LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(607,3)
+         remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+         LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(607,3)
+            remark #15398: loop was not vectorized: loop was transformed to memset or memcpy
+         LOOP END
+      LOOP END
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(607,26)
+   remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+   LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(607,26)
+      remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+      LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(607,26)
+         remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+         LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(607,26)
+            remark #15398: loop was not vectorized: loop was transformed to memset or memcpy
+         LOOP END
+      LOOP END
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(639,3)
+   remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+   LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(639,3)
+      remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+      LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(639,3)
+         remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+         LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(639,3)
+            remark #15398: loop was not vectorized: loop was transformed to memset or memcpy
+         LOOP END
+      LOOP END
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(639,28)
+   remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+   LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(639,28)
+      remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+      LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(639,28)
+         remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+         LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(639,28)
+            remark #15398: loop was not vectorized: loop was transformed to memset or memcpy
+         LOOP END
+      LOOP END
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(639,53)
+   remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+   LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(639,53)
+      remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+      LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(639,53)
+         remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+         LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(639,53)
+            remark #15398: loop was not vectorized: loop was transformed to memset or memcpy
+         LOOP END
+      LOOP END
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(640,3)
+   remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+   LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(640,3)
+      remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+      LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(640,3)
+         remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+         LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(640,3)
+            remark #15398: loop was not vectorized: loop was transformed to memset or memcpy
+         LOOP END
+      LOOP END
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(640,28)
+   remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+   LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(640,28)
+      remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+      LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(640,28)
+         remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+         LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(640,28)
+            remark #15398: loop was not vectorized: loop was transformed to memset or memcpy
+         LOOP END
+      LOOP END
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(640,53)
+   remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+   LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(640,53)
+      remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+      LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(640,53)
+         remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+         LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(640,53)
+            remark #15398: loop was not vectorized: loop was transformed to memset or memcpy
+         LOOP END
+      LOOP END
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(641,3)
+   remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+   LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(641,3)
+      remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+      LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(641,3)
+         remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+         LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(641,3)
+            remark #15398: loop was not vectorized: loop was transformed to memset or memcpy
+         LOOP END
+      LOOP END
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(641,28)
+   remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+   LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(641,28)
+      remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+      LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(641,28)
+         remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+         LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(641,28)
+            remark #15398: loop was not vectorized: loop was transformed to memset or memcpy
+         LOOP END
+      LOOP END
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(641,53)
+   remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+   LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(641,53)
+      remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+      LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(641,53)
+         remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+         LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(641,53)
+            remark #15398: loop was not vectorized: loop was transformed to memset or memcpy
+         LOOP END
+      LOOP END
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(642,3)
+   remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+   LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(642,3)
+      remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+      LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(642,3)
+         remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+         LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(642,3)
+            remark #15398: loop was not vectorized: loop was transformed to memset or memcpy
+         LOOP END
+      LOOP END
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(642,28)
+   remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+   LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(642,28)
+      remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+      LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(642,28)
+         remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+         LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(642,28)
+            remark #15398: loop was not vectorized: loop was transformed to memset or memcpy
+         LOOP END
+      LOOP END
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(642,53)
+   remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+   LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(642,53)
+      remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+      LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(642,53)
+         remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+         LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(642,53)
+            remark #15398: loop was not vectorized: loop was transformed to memset or memcpy
+         LOOP END
+      LOOP END
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(643,3)
+   remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+   LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(643,3)
+      remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+      LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(643,3)
+         remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+         LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(643,3)
+            remark #15398: loop was not vectorized: loop was transformed to memset or memcpy
+         LOOP END
+      LOOP END
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(643,28)
+   remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+   LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(643,28)
+      remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+      LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(643,28)
+         remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+         LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(643,28)
+            remark #15398: loop was not vectorized: loop was transformed to memset or memcpy
+         LOOP END
+      LOOP END
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(643,53)
+   remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+   LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(643,53)
+      remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+      LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(643,53)
+         remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+         LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(643,53)
+            remark #15398: loop was not vectorized: loop was transformed to memset or memcpy
+         LOOP END
+      LOOP END
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(644,3)
+   remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+   LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(644,3)
+      remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+      LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(644,3)
+         remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+         LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(644,3)
+            remark #15398: loop was not vectorized: loop was transformed to memset or memcpy
+         LOOP END
+      LOOP END
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(644,28)
+   remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+   LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(644,28)
+      remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+      LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(644,28)
+         remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+         LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(644,28)
+            remark #15398: loop was not vectorized: loop was transformed to memset or memcpy
+         LOOP END
+      LOOP END
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(644,53)
+   remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+   LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(644,53)
+      remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+      LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(644,53)
+         remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+         LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(644,53)
+            remark #15398: loop was not vectorized: loop was transformed to memset or memcpy
+         LOOP END
+      LOOP END
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(645,3)
+   remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+   LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(645,3)
+      remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+      LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(645,3)
+         remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+         LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(645,3)
+            remark #15398: loop was not vectorized: loop was transformed to memset or memcpy
+         LOOP END
+      LOOP END
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(645,28)
+   remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+   LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(645,28)
+      remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+      LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(645,28)
+         remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+         LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(645,28)
+            remark #15398: loop was not vectorized: loop was transformed to memset or memcpy
+         LOOP END
+      LOOP END
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(645,53)
+   remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+   LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(645,53)
+      remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+      LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(645,53)
+         remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+         LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(645,53)
+            remark #15398: loop was not vectorized: loop was transformed to memset or memcpy
+         LOOP END
+      LOOP END
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(660,3)
+   remark #15398: loop was not vectorized: loop was transformed to memset or memcpy
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(660,22)
+   remark #15398: loop was not vectorized: loop was transformed to memset or memcpy
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(661,3)
+   remark #15398: loop was not vectorized: loop was transformed to memset or memcpy
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(661,22)
+   remark #15398: loop was not vectorized: loop was transformed to memset or memcpy
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(662,3)
+   remark #15398: loop was not vectorized: loop was transformed to memset or memcpy
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(662,24)
+   remark #15398: loop was not vectorized: loop was transformed to memset or memcpy
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(673,3)
+   remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+   LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(673,3)
+      remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+      LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(673,3)
+         remark #15398: loop was not vectorized: loop was transformed to memset or memcpy
+      LOOP END
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(673,33)
+   remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+   LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(673,33)
+      remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+      LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(673,33)
+         remark #15398: loop was not vectorized: loop was transformed to memset or memcpy
+      LOOP END
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(674,3)
+   remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+   LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(674,3)
+      remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+      LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(674,3)
+         remark #15398: loop was not vectorized: loop was transformed to memset or memcpy
+      LOOP END
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(674,33)
+   remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+   LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(674,33)
+      remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+      LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(674,33)
+         remark #15398: loop was not vectorized: loop was transformed to memset or memcpy
+      LOOP END
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(675,3)
+   remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+   LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(675,3)
+      remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+      LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(675,3)
+         remark #15398: loop was not vectorized: loop was transformed to memset or memcpy
+      LOOP END
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(675,35)
+   remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+   LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(675,35)
+      remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+      LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(675,35)
+         remark #15398: loop was not vectorized: loop was transformed to memset or memcpy
+      LOOP END
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(685,3)
+   remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+   LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(685,3)
+      remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+      LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(685,3)
+         remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+         LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(685,3)
+            remark #15398: loop was not vectorized: loop was transformed to memset or memcpy
+         LOOP END
+      LOOP END
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(685,31)
+   remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+   LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(685,31)
+      remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+      LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(685,31)
+         remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+         LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(685,31)
+            remark #15398: loop was not vectorized: loop was transformed to memset or memcpy
+         LOOP END
+      LOOP END
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(686,3)
+   remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+   LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(686,3)
+      remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+      LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(686,3)
+         remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+         LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(686,3)
+            remark #15398: loop was not vectorized: loop was transformed to memset or memcpy
+         LOOP END
+      LOOP END
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(686,31)
+   remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+   LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(686,31)
+      remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+      LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(686,31)
+         remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+         LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(686,31)
+            remark #15398: loop was not vectorized: loop was transformed to memset or memcpy
+         LOOP END
+      LOOP END
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(687,3)
+   remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+   LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(687,3)
+      remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+      LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(687,3)
+         remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+         LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(687,3)
+            remark #15398: loop was not vectorized: loop was transformed to memset or memcpy
+         LOOP END
+      LOOP END
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(687,33)
+   remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+   LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(687,33)
+      remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+      LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(687,33)
+         remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+         LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(687,33)
+            remark #15398: loop was not vectorized: loop was transformed to memset or memcpy
+         LOOP END
+      LOOP END
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(711,5)
+   remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+   LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(711,5)
+      remark #15398: loop was not vectorized: loop was transformed to memset or memcpy
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(711,21)
+   remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+   LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(711,21)
+      remark #15398: loop was not vectorized: loop was transformed to memset or memcpy
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(712,5)
+   remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+   LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(712,5)
+      remark #15398: loop was not vectorized: loop was transformed to memset or memcpy
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(712,21)
+   remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+   LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(712,21)
+      remark #15398: loop was not vectorized: loop was transformed to memset or memcpy
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(713,5)
+   remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+   LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(713,5)
+      remark #15398: loop was not vectorized: loop was transformed to memset or memcpy
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(713,24)
+   remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+   LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(713,24)
+      remark #15398: loop was not vectorized: loop was transformed to memset or memcpy
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(722,3)
+   remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+   LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(722,3)
+      remark #15398: loop was not vectorized: loop was transformed to memset or memcpy
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(722,30)
+   remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+   LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(722,30)
+      remark #15398: loop was not vectorized: loop was transformed to memset or memcpy
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(730,24)
+   remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(740,5)
+   remark #15398: loop was not vectorized: loop was transformed to memset or memcpy
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(740,26)
+   remark #15398: loop was not vectorized: loop was transformed to memset or memcpy
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(741,5)
+   remark #15398: loop was not vectorized: loop was transformed to memset or memcpy
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(741,27)
+   remark #15398: loop was not vectorized: loop was transformed to memset or memcpy
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(750,5)
+   remark #15398: loop was not vectorized: loop was transformed to memset or memcpy
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(750,36)
+   remark #15398: loop was not vectorized: loop was transformed to memset or memcpy
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(751,5)
+   remark #15398: loop was not vectorized: loop was transformed to memset or memcpy
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(751,37)
+   remark #15398: loop was not vectorized: loop was transformed to memset or memcpy
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(760,5)
+   remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+   LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(760,5)
+      remark #15398: loop was not vectorized: loop was transformed to memset or memcpy
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(760,38)
+   remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+   LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(760,38)
+      remark #15398: loop was not vectorized: loop was transformed to memset or memcpy
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(761,5)
+   remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+   LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(761,5)
+      remark #15398: loop was not vectorized: loop was transformed to memset or memcpy
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(761,39)
+   remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+   LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(761,39)
+      remark #15398: loop was not vectorized: loop was transformed to memset or memcpy
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(768,5)
+   remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+   LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(768,5)
+      remark #15398: loop was not vectorized: loop was transformed to memset or memcpy
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(768,27)
+   remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+   LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(768,27)
+      remark #15398: loop was not vectorized: loop was transformed to memset or memcpy
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(789,3)
+   remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+   LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(789,3)
+      remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+      LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(789,3)
+         remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+         LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(789,3)
+            remark #15398: loop was not vectorized: loop was transformed to memset or memcpy
+         LOOP END
+      LOOP END
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(789,28)
+   remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+   LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(789,28)
+      remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+      LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(789,28)
+         remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+         LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(789,28)
+            remark #15398: loop was not vectorized: loop was transformed to memset or memcpy
+         LOOP END
+      LOOP END
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(789,53)
+   remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+   LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(789,53)
+      remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+      LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(789,53)
+         remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+         LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(789,53)
+            remark #15398: loop was not vectorized: loop was transformed to memset or memcpy
+         LOOP END
+      LOOP END
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(790,3)
+   remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+   LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(790,3)
+      remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+      LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(790,3)
+         remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+         LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(790,3)
+            remark #15398: loop was not vectorized: loop was transformed to memset or memcpy
+         LOOP END
+      LOOP END
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(790,29)
+   remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+   LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(790,29)
+      remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+      LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(790,29)
+         remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+         LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(790,29)
+            remark #15398: loop was not vectorized: loop was transformed to memset or memcpy
+         LOOP END
+      LOOP END
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(790,55)
+   remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+   LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(790,55)
+      remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+      LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(790,55)
+         remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+         LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(790,55)
+            remark #15398: loop was not vectorized: loop was transformed to memset or memcpy
+         LOOP END
+      LOOP END
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(791,3)
+   remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+   LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(791,3)
+      remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+      LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(791,3)
+         remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+         LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(791,3)
+            remark #15398: loop was not vectorized: loop was transformed to memset or memcpy
+         LOOP END
+      LOOP END
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(791,31)
+   remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+   LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(791,31)
+      remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+      LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(791,31)
+         remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+         LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(791,31)
+            remark #15398: loop was not vectorized: loop was transformed to memset or memcpy
+         LOOP END
+      LOOP END
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(791,59)
+   remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+   LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(791,59)
+      remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+      LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(791,59)
+         remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+         LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(791,59)
+            remark #15398: loop was not vectorized: loop was transformed to memset or memcpy
+         LOOP END
+      LOOP END
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(814,3)
+   remark #15398: loop was not vectorized: loop was transformed to memset or memcpy
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(814,26)
+   remark #15398: loop was not vectorized: loop was transformed to memset or memcpy
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(815,3)
+   remark #15398: loop was not vectorized: loop was transformed to memset or memcpy
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(815,25)
+   remark #15398: loop was not vectorized: loop was transformed to memset or memcpy
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(816,3)
+   remark #15398: loop was not vectorized: loop was transformed to memset or memcpy
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(816,25)
+   remark #15398: loop was not vectorized: loop was transformed to memset or memcpy
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(817,3)
+   remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+   LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(817,3)
+      remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+      LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(817,3)
+         remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+         LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(817,3)
+            remark #15398: loop was not vectorized: loop was transformed to memset or memcpy
+         LOOP END
+      LOOP END
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(817,31)
+   remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+   LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(817,31)
+      remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+      LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(817,31)
+         remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+         LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(817,31)
+            remark #15398: loop was not vectorized: loop was transformed to memset or memcpy
+         LOOP END
+      LOOP END
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(817,58)
+   remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+   LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(817,58)
+      remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+      LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(817,58)
+         remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+         LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(817,58)
+            remark #15398: loop was not vectorized: loop was transformed to memset or memcpy
+         LOOP END
+      LOOP END
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(818,3)
+   remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+   LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(818,3)
+      remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+      LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(818,3)
+         remark #15398: loop was not vectorized: loop was transformed to memset or memcpy
+      LOOP END
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(818,33)
+   remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+   LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(818,33)
+      remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+      LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(818,33)
+         remark #15398: loop was not vectorized: loop was transformed to memset or memcpy
+      LOOP END
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(818,62)
+   remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+   LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(818,62)
+      remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+      LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(818,62)
+         remark #15398: loop was not vectorized: loop was transformed to memset or memcpy
+      LOOP END
+   LOOP END
+LOOP END
+===========================================================================
+
+Begin optimization report for: CRM_SETUP_LAYERS
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(868,3)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(868,3)
+<Remainder>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(868,3)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(868,3)
+   <Multiversioned v2>
+      remark #15300: LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(868,3)
+   <Alternate Alignment Vectorized Loop, Multiversioned v2>
+   LOOP END
+
+   LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(868,3)
+   <Remainder, Multiversioned v2>
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(874,5)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(874,5)
+<Remainder>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+===========================================================================
+
+Begin optimization report for: CRM_CREATE_ELEMENTS
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(964,3)
+   remark #15398: loop was not vectorized: loop was transformed to memset or memcpy
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(971,3)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed ANTI dependence between ARGBLOCK_REC_0 line 973 and ARGBLOCK_REC_0 line 977
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(1115,3)
+<Peeled, Distributed chunk1>
+   remark #15301: PEEL LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(1115,3)
+<Distributed chunk1>
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(1124,48)
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(1115,3)
+<Remainder, Distributed chunk1>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(1115,3)
+<Remainder, Distributed chunk1>
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(1115,3)
+<Peeled, Distributed chunk2>
+   remark #15301: PEEL LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(1115,3)
+<Distributed chunk2>
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(1115,3)
+<Alternate Alignment Vectorized Loop, Distributed chunk2>
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(1115,3)
+<Remainder, Distributed chunk2>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(1130,18)
+<Peeled>
+   remark #15301: PEEL LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(1130,18)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(1130,18)
+<Remainder>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+===========================================================================
+
+Begin optimization report for: CRM_SETUP_MPI_BUFFERS
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(1267,3)
+   remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(1268,3)
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(1269,3)
+   remark #15398: loop was not vectorized: loop was transformed to memset or memcpy
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(1270,3)
+   remark #15398: loop was not vectorized: loop was transformed to memset or memcpy
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(1271,3)
+   remark #15398: loop was not vectorized: loop was transformed to memset or memcpy
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(1272,3)
+   remark #15398: loop was not vectorized: loop was transformed to memset or memcpy
+LOOP END
+===========================================================================
+
+Begin optimization report for: CRM_SETUP_INDEXING
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(1183,3)
+   remark #15398: loop was not vectorized: loop was transformed to memset or memcpy
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(1184,3)
+   remark #15398: loop was not vectorized: loop was transformed to memset or memcpy
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(1185,3)
+   remark #15398: loop was not vectorized: loop was transformed to memset or memcpy
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(1186,3)
+   remark #15398: loop was not vectorized: loop was transformed to memset or memcpy
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(1187,3)
+   remark #15398: loop was not vectorized: loop was transformed to memset or memcpy
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(1191,3)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed OUTPUT dependence between XP line 1198 and XP line 1198
+
+   LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(1194,5)
+      remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+      remark #15346: vector dependence: assumed OUTPUT dependence between XP line 1198 and XP line 1198
+
+      LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(1195,7)
+         remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+         remark #15346: vector dependence: assumed OUTPUT dependence between XP line 1198 and XP line 1198
+
+         LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(1196,9)
+            remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+         LOOP END
+
+         LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(1196,9)
+         LOOP END
+
+         LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(1196,9)
+         LOOP END
+
+         LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(1196,9)
+         LOOP END
+
+         LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(1196,9)
+         LOOP END
+      LOOP END
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(1217,7)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(1217,7)
+      remark #15542: loop was not vectorized: inner loop was already vectorized
+
+      LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(1217,7)
+         remark #15542: loop was not vectorized: inner loop was already vectorized
+
+         LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(1217,7)
+         <Peeled>
+            remark #15301: PEEL LOOP WAS VECTORIZED
+         LOOP END
+
+         LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(1217,7)
+            remark #15300: LOOP WAS VECTORIZED
+         LOOP END
+
+         LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(1217,7)
+         <Remainder>
+            remark #15301: REMAINDER LOOP WAS VECTORIZED
+         LOOP END
+      LOOP END
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(1217,31)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(1217,31)
+      remark #15542: loop was not vectorized: inner loop was already vectorized
+
+      LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(1217,31)
+         remark #15542: loop was not vectorized: inner loop was already vectorized
+
+         LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(1217,31)
+         <Peeled>
+            remark #15301: PEEL LOOP WAS VECTORIZED
+         LOOP END
+
+         LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(1217,31)
+            remark #15300: LOOP WAS VECTORIZED
+         LOOP END
+
+         LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(1217,31)
+         <Remainder>
+            remark #15301: REMAINDER LOOP WAS VECTORIZED
+         LOOP END
+      LOOP END
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(1225,7)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(1225,7)
+      remark #15542: loop was not vectorized: inner loop was already vectorized
+
+      LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(1225,7)
+         remark #15542: loop was not vectorized: inner loop was already vectorized
+
+         LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(1225,7)
+         <Peeled>
+            remark #15301: PEEL LOOP WAS VECTORIZED
+         LOOP END
+
+         LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(1225,7)
+            remark #15300: LOOP WAS VECTORIZED
+         LOOP END
+
+         LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(1225,7)
+         <Remainder>
+            remark #15301: REMAINDER LOOP WAS VECTORIZED
+         LOOP END
+      LOOP END
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(1225,31)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(1225,31)
+      remark #15542: loop was not vectorized: inner loop was already vectorized
+
+      LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(1225,31)
+         remark #15542: loop was not vectorized: inner loop was already vectorized
+
+         LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(1225,31)
+         <Peeled>
+            remark #15301: PEEL LOOP WAS VECTORIZED
+         LOOP END
+
+         LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(1225,31)
+            remark #15300: LOOP WAS VECTORIZED
+         LOOP END
+
+         LOOP BEGIN at src/meshfem3D/create_regions_mesh.F90(1225,31)
+         <Remainder>
+            remark #15301: REMAINDER LOOP WAS VECTORIZED
+         LOOP END
+      LOOP END
+   LOOP END
+LOOP END
+===========================================================================

@@ -1,0 +1,218 @@
+
+Begin optimization report for: COMPUTE_STACEY_CM_FORWARD
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/specfem3D/compute_stacey_crust_mantle.f90(87,7)
+   remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+   LOOP BEGIN at src/specfem3D/compute_stacey_crust_mantle.f90(95,9)
+      remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+      remark #15346: vector dependence: assumed OUTPUT dependence between accel_crust_mantle line 115 and accel_crust_mantle line 115
+
+      LOOP BEGIN at src/specfem3D/compute_stacey_crust_mantle.f90(96,11)
+         remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+         remark #15346: vector dependence: assumed FLOW dependence between accel_crust_mantle line 115 and accel_crust_mantle line 115
+      LOOP END
+
+      LOOP BEGIN at src/specfem3D/compute_stacey_crust_mantle.f90(96,11)
+         remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+         remark #15346: vector dependence: assumed FLOW dependence between accel_crust_mantle line 115 and accel_crust_mantle line 115
+      LOOP END
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/specfem3D/compute_stacey_crust_mantle.f90(146,7)
+   remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+   LOOP BEGIN at src/specfem3D/compute_stacey_crust_mantle.f90(154,9)
+      remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+      remark #15346: vector dependence: assumed OUTPUT dependence between accel_crust_mantle line 174 and accel_crust_mantle line 174
+
+      LOOP BEGIN at src/specfem3D/compute_stacey_crust_mantle.f90(155,11)
+         remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+         remark #15346: vector dependence: assumed FLOW dependence between accel_crust_mantle line 174 and accel_crust_mantle line 174
+      LOOP END
+
+      LOOP BEGIN at src/specfem3D/compute_stacey_crust_mantle.f90(155,11)
+         remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+         remark #15346: vector dependence: assumed FLOW dependence between accel_crust_mantle line 174 and accel_crust_mantle line 174
+      LOOP END
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/specfem3D/compute_stacey_crust_mantle.f90(205,5)
+   remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+   LOOP BEGIN at src/specfem3D/compute_stacey_crust_mantle.f90(213,7)
+      remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+      remark #15346: vector dependence: assumed OUTPUT dependence between accel_crust_mantle line 233 and accel_crust_mantle line 233
+
+      LOOP BEGIN at src/specfem3D/compute_stacey_crust_mantle.f90(214,9)
+         remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+         remark #15346: vector dependence: assumed FLOW dependence between accel_crust_mantle line 233 and accel_crust_mantle line 233
+      LOOP END
+
+      LOOP BEGIN at src/specfem3D/compute_stacey_crust_mantle.f90(214,9)
+         remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+         remark #15346: vector dependence: assumed FLOW dependence between accel_crust_mantle line 233 and accel_crust_mantle line 233
+      LOOP END
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/specfem3D/compute_stacey_crust_mantle.f90(261,5)
+   remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+   LOOP BEGIN at src/specfem3D/compute_stacey_crust_mantle.f90(269,7)
+      remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+      remark #15346: vector dependence: assumed OUTPUT dependence between accel_crust_mantle line 289 and accel_crust_mantle line 289
+
+      LOOP BEGIN at src/specfem3D/compute_stacey_crust_mantle.f90(270,9)
+         remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+         remark #15346: vector dependence: assumed FLOW dependence between accel_crust_mantle line 289 and accel_crust_mantle line 289
+      LOOP END
+
+      LOOP BEGIN at src/specfem3D/compute_stacey_crust_mantle.f90(270,9)
+         remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+         remark #15346: vector dependence: assumed FLOW dependence between accel_crust_mantle line 289 and accel_crust_mantle line 289
+      LOOP END
+   LOOP END
+LOOP END
+===========================================================================
+
+Begin optimization report for: COMPUTE_STACEY_CM_BACKWARD
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/specfem3D/compute_stacey_crust_mantle.f90(376,7)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+
+   LOOP BEGIN at src/specfem3D/compute_stacey_crust_mantle.f90(384,9)
+      remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+      remark #15346: vector dependence: assumed OUTPUT dependence between b_accel_crust_mantle line 388 and b_accel_crust_mantle line 388
+
+      LOOP BEGIN at src/specfem3D/compute_stacey_crust_mantle.f90(385,11)
+         remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+         remark #15346: vector dependence: assumed FLOW dependence between b_accel_crust_mantle line 388 and b_accel_crust_mantle line 388
+
+         LOOP BEGIN at src/specfem3D/compute_stacey_crust_mantle.f90(388,13)
+         LOOP END
+      LOOP END
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/specfem3D/compute_stacey_crust_mantle.f90(413,7)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+
+   LOOP BEGIN at src/specfem3D/compute_stacey_crust_mantle.f90(421,9)
+      remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+      remark #15346: vector dependence: assumed OUTPUT dependence between b_accel_crust_mantle line 425 and b_accel_crust_mantle line 425
+
+      LOOP BEGIN at src/specfem3D/compute_stacey_crust_mantle.f90(422,11)
+         remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+         remark #15346: vector dependence: assumed FLOW dependence between b_accel_crust_mantle line 425 and b_accel_crust_mantle line 425
+
+         LOOP BEGIN at src/specfem3D/compute_stacey_crust_mantle.f90(425,13)
+         LOOP END
+      LOOP END
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/specfem3D/compute_stacey_crust_mantle.f90(448,5)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+
+   LOOP BEGIN at src/specfem3D/compute_stacey_crust_mantle.f90(456,7)
+      remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+      remark #15346: vector dependence: assumed OUTPUT dependence between b_accel_crust_mantle line 460 and b_accel_crust_mantle line 460
+
+      LOOP BEGIN at src/specfem3D/compute_stacey_crust_mantle.f90(457,9)
+         remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+         remark #15346: vector dependence: assumed FLOW dependence between b_accel_crust_mantle line 460 and b_accel_crust_mantle line 460
+
+         LOOP BEGIN at src/specfem3D/compute_stacey_crust_mantle.f90(460,11)
+         LOOP END
+      LOOP END
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/specfem3D/compute_stacey_crust_mantle.f90(481,5)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+
+   LOOP BEGIN at src/specfem3D/compute_stacey_crust_mantle.f90(489,7)
+      remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+      remark #15346: vector dependence: assumed OUTPUT dependence between b_accel_crust_mantle line 493 and b_accel_crust_mantle line 493
+
+      LOOP BEGIN at src/specfem3D/compute_stacey_crust_mantle.f90(490,9)
+         remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+         remark #15346: vector dependence: assumed FLOW dependence between b_accel_crust_mantle line 493 and b_accel_crust_mantle line 493
+
+         LOOP BEGIN at src/specfem3D/compute_stacey_crust_mantle.f90(493,11)
+         LOOP END
+      LOOP END
+   LOOP END
+LOOP END
+===========================================================================
+
+Begin optimization report for: COMPUTE_STACEY_CM_BACKWARD_UNDOATT
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/specfem3D/compute_stacey_crust_mantle.f90(568,7)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+
+   LOOP BEGIN at src/specfem3D/compute_stacey_crust_mantle.f90(576,9)
+      remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+      remark #15346: vector dependence: assumed FLOW dependence between specfem_par_crustmantle_mp_b_acc line 596 and specfem_par_crustmantle_mp_b_acc line 596
+
+      LOOP BEGIN at src/specfem3D/compute_stacey_crust_mantle.f90(577,11)
+         remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+         remark #15346: vector dependence: assumed FLOW dependence between specfem_par_crustmantle_mp_b_acc line 596 and specfem_par_crustmantle_mp_b_acc line 596
+      LOOP END
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/specfem3D/compute_stacey_crust_mantle.f90(617,7)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+
+   LOOP BEGIN at src/specfem3D/compute_stacey_crust_mantle.f90(625,9)
+      remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+      remark #15346: vector dependence: assumed FLOW dependence between specfem_par_crustmantle_mp_b_acc line 645 and specfem_par_crustmantle_mp_b_acc line 645
+
+      LOOP BEGIN at src/specfem3D/compute_stacey_crust_mantle.f90(626,11)
+         remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+         remark #15346: vector dependence: assumed FLOW dependence between specfem_par_crustmantle_mp_b_acc line 645 and specfem_par_crustmantle_mp_b_acc line 645
+      LOOP END
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/specfem3D/compute_stacey_crust_mantle.f90(664,5)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+
+   LOOP BEGIN at src/specfem3D/compute_stacey_crust_mantle.f90(672,7)
+      remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+      remark #15346: vector dependence: assumed FLOW dependence between specfem_par_crustmantle_mp_b_acc line 692 and specfem_par_crustmantle_mp_b_acc line 692
+
+      LOOP BEGIN at src/specfem3D/compute_stacey_crust_mantle.f90(673,9)
+         remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+         remark #15346: vector dependence: assumed FLOW dependence between specfem_par_crustmantle_mp_b_acc line 692 and specfem_par_crustmantle_mp_b_acc line 692
+      LOOP END
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/specfem3D/compute_stacey_crust_mantle.f90(709,5)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+
+   LOOP BEGIN at src/specfem3D/compute_stacey_crust_mantle.f90(717,7)
+      remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+      remark #15346: vector dependence: assumed FLOW dependence between specfem_par_crustmantle_mp_b_acc line 737 and specfem_par_crustmantle_mp_b_acc line 737
+
+      LOOP BEGIN at src/specfem3D/compute_stacey_crust_mantle.f90(718,9)
+         remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+         remark #15346: vector dependence: assumed FLOW dependence between specfem_par_crustmantle_mp_b_acc line 737 and specfem_par_crustmantle_mp_b_acc line 737
+      LOOP END
+   LOOP END
+LOOP END
+===========================================================================

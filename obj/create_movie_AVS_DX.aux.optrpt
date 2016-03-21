@@ -1,0 +1,297 @@
+
+Begin optimization report for: XCREATE_MOVIE_AVS_DX
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/auxiliaries/create_movie_AVS_DX.f90(237,3)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/auxiliaries/create_movie_AVS_DX.f90(237,3)
+<Remainder>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/auxiliaries/create_movie_AVS_DX.f90(334,3)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at src/auxiliaries/create_movie_AVS_DX.f90(364,35)
+      remark #15542: loop was not vectorized: inner loop was already vectorized
+
+      LOOP BEGIN at src/auxiliaries/create_movie_AVS_DX.f90(364,35)
+      <Peeled>
+         remark #15301: PEEL LOOP WAS VECTORIZED
+      LOOP END
+
+      LOOP BEGIN at src/auxiliaries/create_movie_AVS_DX.f90(364,35)
+         remark #15300: LOOP WAS VECTORIZED
+      LOOP END
+
+      LOOP BEGIN at src/auxiliaries/create_movie_AVS_DX.f90(364,35)
+      <Remainder>
+         remark #15301: REMAINDER LOOP WAS VECTORIZED
+      LOOP END
+   LOOP END
+
+   LOOP BEGIN at src/auxiliaries/create_movie_AVS_DX.f90(364,56)
+      remark #15542: loop was not vectorized: inner loop was already vectorized
+
+      LOOP BEGIN at src/auxiliaries/create_movie_AVS_DX.f90(364,56)
+      <Peeled>
+         remark #15301: PEEL LOOP WAS VECTORIZED
+      LOOP END
+
+      LOOP BEGIN at src/auxiliaries/create_movie_AVS_DX.f90(364,56)
+         remark #15300: LOOP WAS VECTORIZED
+      LOOP END
+
+      LOOP BEGIN at src/auxiliaries/create_movie_AVS_DX.f90(364,56)
+      <Remainder>
+         remark #15301: REMAINDER LOOP WAS VECTORIZED
+      LOOP END
+   LOOP END
+
+   LOOP BEGIN at src/auxiliaries/create_movie_AVS_DX.f90(365,35)
+      remark #15542: loop was not vectorized: inner loop was already vectorized
+
+      LOOP BEGIN at src/auxiliaries/create_movie_AVS_DX.f90(365,35)
+      <Peeled>
+         remark #15301: PEEL LOOP WAS VECTORIZED
+      LOOP END
+
+      LOOP BEGIN at src/auxiliaries/create_movie_AVS_DX.f90(365,35)
+         remark #15300: LOOP WAS VECTORIZED
+      LOOP END
+
+      LOOP BEGIN at src/auxiliaries/create_movie_AVS_DX.f90(365,35)
+      <Remainder>
+         remark #15301: REMAINDER LOOP WAS VECTORIZED
+      LOOP END
+   LOOP END
+
+   LOOP BEGIN at src/auxiliaries/create_movie_AVS_DX.f90(365,56)
+      remark #15542: loop was not vectorized: inner loop was already vectorized
+
+      LOOP BEGIN at src/auxiliaries/create_movie_AVS_DX.f90(365,56)
+      <Peeled>
+         remark #15301: PEEL LOOP WAS VECTORIZED
+      LOOP END
+
+      LOOP BEGIN at src/auxiliaries/create_movie_AVS_DX.f90(365,56)
+         remark #15300: LOOP WAS VECTORIZED
+      LOOP END
+
+      LOOP BEGIN at src/auxiliaries/create_movie_AVS_DX.f90(365,56)
+      <Remainder>
+         remark #15301: REMAINDER LOOP WAS VECTORIZED
+      LOOP END
+   LOOP END
+
+   LOOP BEGIN at src/auxiliaries/create_movie_AVS_DX.f90(366,35)
+      remark #15542: loop was not vectorized: inner loop was already vectorized
+
+      LOOP BEGIN at src/auxiliaries/create_movie_AVS_DX.f90(366,35)
+      <Peeled>
+         remark #15301: PEEL LOOP WAS VECTORIZED
+      LOOP END
+
+      LOOP BEGIN at src/auxiliaries/create_movie_AVS_DX.f90(366,35)
+         remark #15300: LOOP WAS VECTORIZED
+      LOOP END
+
+      LOOP BEGIN at src/auxiliaries/create_movie_AVS_DX.f90(366,35)
+      <Remainder>
+         remark #15301: REMAINDER LOOP WAS VECTORIZED
+      LOOP END
+   LOOP END
+
+   LOOP BEGIN at src/auxiliaries/create_movie_AVS_DX.f90(366,56)
+      remark #15542: loop was not vectorized: inner loop was already vectorized
+
+      LOOP BEGIN at src/auxiliaries/create_movie_AVS_DX.f90(366,56)
+      <Peeled>
+         remark #15301: PEEL LOOP WAS VECTORIZED
+      LOOP END
+
+      LOOP BEGIN at src/auxiliaries/create_movie_AVS_DX.f90(366,56)
+         remark #15300: LOOP WAS VECTORIZED
+      LOOP END
+
+      LOOP BEGIN at src/auxiliaries/create_movie_AVS_DX.f90(366,56)
+      <Remainder>
+         remark #15301: REMAINDER LOOP WAS VECTORIZED
+      LOOP END
+   LOOP END
+
+   LOOP BEGIN at src/auxiliaries/create_movie_AVS_DX.f90(373,5)
+      remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+      LOOP BEGIN at src/auxiliaries/create_movie_AVS_DX.f90(378,7)
+         remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+         LOOP BEGIN at src/auxiliaries/create_movie_AVS_DX.f90(381,9)
+            remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+            LOOP BEGIN at src/auxiliaries/create_movie_AVS_DX.f90(382,11)
+               remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+               remark #15346: vector dependence: assumed FLOW dependence between xcoord line 386 and xcoord line 401
+            LOOP END
+         LOOP END
+
+         LOOP BEGIN at src/auxiliaries/create_movie_AVS_DX.f90(461,9)
+            remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+            remark #15346: vector dependence: assumed OUTPUT dependence between XP line 477 and XP line 515
+
+            LOOP BEGIN at src/auxiliaries/create_movie_AVS_DX.f90(462,11)
+               remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+               remark #15346: vector dependence: assumed OUTPUT dependence between XP line 477 and XP line 515
+
+               LOOP BEGIN at src/auxiliaries/create_movie_AVS_DX.f90(480,55)
+                  remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+               LOOP END
+            LOOP END
+         LOOP END
+      LOOP END
+   LOOP END
+
+   LOOP BEGIN at src/auxiliaries/create_movie_AVS_DX.f90(594,27)
+   <Peeled>
+      remark #15301: PEEL LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/auxiliaries/create_movie_AVS_DX.f90(594,27)
+      remark #15300: LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/auxiliaries/create_movie_AVS_DX.f90(594,27)
+   <Remainder>
+      remark #15301: REMAINDER LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/auxiliaries/create_movie_AVS_DX.f90(595,27)
+   <Peeled>
+      remark #15301: PEEL LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/auxiliaries/create_movie_AVS_DX.f90(595,27)
+      remark #15300: LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/auxiliaries/create_movie_AVS_DX.f90(595,27)
+   <Remainder>
+      remark #15301: REMAINDER LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/auxiliaries/create_movie_AVS_DX.f90(609,5)
+      remark #15542: loop was not vectorized: inner loop was already vectorized
+
+      LOOP BEGIN at src/auxiliaries/create_movie_AVS_DX.f90(609,5)
+      <Peeled, Multiversioned v2>
+      LOOP END
+
+      LOOP BEGIN at src/auxiliaries/create_movie_AVS_DX.f90(609,5)
+      <Multiversioned v2>
+         remark #15300: LOOP WAS VECTORIZED
+      LOOP END
+
+      LOOP BEGIN at src/auxiliaries/create_movie_AVS_DX.f90(609,5)
+      <Alternate Alignment Vectorized Loop, Multiversioned v2>
+      LOOP END
+
+      LOOP BEGIN at src/auxiliaries/create_movie_AVS_DX.f90(609,5)
+      <Remainder, Multiversioned v2>
+      LOOP END
+   LOOP END
+
+   LOOP BEGIN at src/auxiliaries/create_movie_AVS_DX.f90(610,5)
+      remark #15542: loop was not vectorized: inner loop was already vectorized
+
+      LOOP BEGIN at src/auxiliaries/create_movie_AVS_DX.f90(610,5)
+      <Peeled, Multiversioned v2>
+      LOOP END
+
+      LOOP BEGIN at src/auxiliaries/create_movie_AVS_DX.f90(610,5)
+      <Multiversioned v2>
+         remark #15300: LOOP WAS VECTORIZED
+      LOOP END
+
+      LOOP BEGIN at src/auxiliaries/create_movie_AVS_DX.f90(610,5)
+      <Alternate Alignment Vectorized Loop, Multiversioned v2>
+      LOOP END
+
+      LOOP BEGIN at src/auxiliaries/create_movie_AVS_DX.f90(610,5)
+      <Remainder, Multiversioned v2>
+      LOOP END
+   LOOP END
+
+   LOOP BEGIN at src/auxiliaries/create_movie_AVS_DX.f90(611,5)
+      remark #15542: loop was not vectorized: inner loop was already vectorized
+
+      LOOP BEGIN at src/auxiliaries/create_movie_AVS_DX.f90(611,5)
+      <Peeled, Multiversioned v2>
+      LOOP END
+
+      LOOP BEGIN at src/auxiliaries/create_movie_AVS_DX.f90(611,5)
+      <Multiversioned v2>
+         remark #15300: LOOP WAS VECTORIZED
+      LOOP END
+
+      LOOP BEGIN at src/auxiliaries/create_movie_AVS_DX.f90(611,5)
+      <Alternate Alignment Vectorized Loop, Multiversioned v2>
+      LOOP END
+
+      LOOP BEGIN at src/auxiliaries/create_movie_AVS_DX.f90(611,5)
+      <Remainder, Multiversioned v2>
+      LOOP END
+   LOOP END
+
+   LOOP BEGIN at src/auxiliaries/create_movie_AVS_DX.f90(675,7)
+      remark #15398: loop was not vectorized: loop was transformed to memset or memcpy
+   LOOP END
+
+   LOOP BEGIN at src/auxiliaries/create_movie_AVS_DX.f90(676,7)
+      remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+      remark #15346: vector dependence: assumed FLOW dependence between xcoord line 683 and xcoord line 688
+
+      LOOP BEGIN at src/auxiliaries/create_movie_AVS_DX.f90(679,9)
+         remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+         remark #15346: vector dependence: assumed FLOW dependence between xcoord line 683 and xcoord line 688
+      LOOP END
+   LOOP END
+
+   LOOP BEGIN at src/auxiliaries/create_movie_AVS_DX.f90(709,9)
+      remark #15398: loop was not vectorized: loop was transformed to memset or memcpy
+   LOOP END
+
+   LOOP BEGIN at src/auxiliaries/create_movie_AVS_DX.f90(711,9)
+      remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+      remark #15346: vector dependence: assumed FLOW dependence between IREORDER line 718 and IREORDER line 723
+
+      LOOP BEGIN at src/auxiliaries/create_movie_AVS_DX.f90(720,17)
+      LOOP END
+   LOOP END
+
+   LOOP BEGIN at src/auxiliaries/create_movie_AVS_DX.f90(735,9)
+      remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+      remark #15346: vector dependence: assumed FLOW dependence between 284 line 744 and 284 line 744
+   LOOP END
+
+   LOOP BEGIN at src/auxiliaries/create_movie_AVS_DX.f90(735,9)
+      remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+      remark #15346: vector dependence: assumed FLOW dependence between 284 line 747 and 284 line 747
+   LOOP END
+
+   LOOP BEGIN at src/auxiliaries/create_movie_AVS_DX.f90(780,7)
+      remark #15398: loop was not vectorized: loop was transformed to memset or memcpy
+   LOOP END
+
+   LOOP BEGIN at src/auxiliaries/create_movie_AVS_DX.f90(783,7)
+      remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+      remark #15346: vector dependence: assumed FLOW dependence between 284 line 797 and 284 line 801
+
+      LOOP BEGIN at src/auxiliaries/create_movie_AVS_DX.f90(786,9)
+      LOOP END
+   LOOP END
+LOOP END
+===========================================================================

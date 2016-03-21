@@ -1,0 +1,14 @@
+ 
+ total number of stations:           11
+ 
+ II.AAK epicentral distance    18.82376      deg
+ II.ABKT epicentral distance    8.807908      deg
+ II.GAR epicentral distance    14.04827      deg
+ II.KIV epicentral distance    19.34102      deg
+ II.NIL epicentral distance    13.61516      deg
+ II.RAYN epicentral distance    12.69914      deg
+ II.UOSS epicentral distance    4.519025      deg
+ IU.AAE epicentral distance    27.07244      deg
+ IU.ANTO epicentral distance    23.48943      deg
+ IU.FURI epicentral distance    27.22898      deg
+ IU.GNI epicentral distance    15.62973      deg

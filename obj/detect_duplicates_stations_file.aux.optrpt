@@ -1,0 +1,58 @@
+
+Begin optimization report for: DETECT_DUPLICATES_STATIONS_FILE
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/auxiliaries/detect_duplicates_stations_file.f90(40,3)
+   remark #15521: loop was not vectorized: explicitly compute the iteration count before executing the loop or try using canonical loop form
+LOOP END
+
+LOOP BEGIN at src/auxiliaries/detect_duplicates_stations_file.f90(58,3)
+   remark #15398: loop was not vectorized: loop was transformed to memset or memcpy
+LOOP END
+
+LOOP BEGIN at src/auxiliaries/detect_duplicates_stations_file.f90(62,3)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed OUTPUT dependence between 73 line 63 and 73 line 63
+LOOP END
+
+LOOP BEGIN at src/auxiliaries/detect_duplicates_stations_file.f90(69,3)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed OUTPUT dependence between 73 line 74 and 73 line 74
+
+   LOOP BEGIN at src/auxiliaries/detect_duplicates_stations_file.f90(71,5)
+      remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+      remark #15346: vector dependence: assumed OUTPUT dependence between 73 line 74 and 73 line 74
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/auxiliaries/detect_duplicates_stations_file.f90(87,3)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed OUTPUT dependence between 73 line 92 and 73 line 92
+
+   LOOP BEGIN at src/auxiliaries/detect_duplicates_stations_file.f90(89,5)
+      remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+      remark #15346: vector dependence: assumed OUTPUT dependence between 73 line 92 and 73 line 92
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/auxiliaries/detect_duplicates_stations_file.f90(103,43)
+<Peeled>
+   remark #15301: PEEL LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/auxiliaries/detect_duplicates_stations_file.f90(103,43)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/auxiliaries/detect_duplicates_stations_file.f90(103,43)
+<Remainder>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/auxiliaries/detect_duplicates_stations_file.f90(109,3)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed ANTI dependence between ARGBLOCK_REC_42 line 110 and ARGBLOCK_REC_42 line 110
+LOOP END
+===========================================================================

@@ -1,0 +1,22 @@
+
+Begin optimization report for: CREATE_DOUBLING_ELEMENTS
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/meshfem3D/create_doubling_elements.f90(188,3)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at src/meshfem3D/create_doubling_elements.f90(189,5)
+      remark #15542: loop was not vectorized: inner loop was already vectorized
+
+      LOOP BEGIN at src/meshfem3D/create_doubling_elements.f90(255,7)
+         remark #15542: loop was not vectorized: inner loop was already vectorized
+
+         LOOP BEGIN at src/meshfem3D/create_doubling_elements.f90(261,11)
+            remark #15300: LOOP WAS VECTORIZED
+         LOOP END
+      LOOP END
+   LOOP END
+LOOP END
+===========================================================================

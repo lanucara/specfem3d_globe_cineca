@@ -1,0 +1,13 @@
+        !COMPILER-GENERATED INTERFACE MODULE: Fri Mar 11 15:55:10 2016
+        MODULE NORM_ROT_BACK__genmod
+          INTERFACE 
+            SUBROUTINE NORM_ROT_BACK(THN,PHN,TH,PH,TH_OLD,PH_OLD)
+              REAL(KIND=8), INTENT(IN) :: THN
+              REAL(KIND=8), INTENT(IN) :: PHN
+              REAL(KIND=8), INTENT(IN) :: TH
+              REAL(KIND=8), INTENT(IN) :: PH
+              REAL(KIND=8), INTENT(OUT) :: TH_OLD
+              REAL(KIND=8), INTENT(OUT) :: PH_OLD
+            END SUBROUTINE NORM_ROT_BACK
+          END INTERFACE 
+        END MODULE NORM_ROT_BACK__genmod

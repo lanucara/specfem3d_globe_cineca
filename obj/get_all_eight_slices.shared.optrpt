@@ -1,0 +1,98 @@
+
+Begin optimization report for: GET_ALL_EIGHT_SLICES
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/shared/get_all_eight_slices.f90(181,3) inlined into src/shared/get_all_eight_slices.f90(128,10)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/shared/get_all_eight_slices.f90(182,3) inlined into src/shared/get_all_eight_slices.f90(128,10)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/shared/get_all_eight_slices.f90(183,3) inlined into src/shared/get_all_eight_slices.f90(128,10)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/shared/get_all_eight_slices.f90(184,3) inlined into src/shared/get_all_eight_slices.f90(128,10)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/shared/get_all_eight_slices.f90(186,3) inlined into src/shared/get_all_eight_slices.f90(128,10)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/shared/get_all_eight_slices.f90(187,3) inlined into src/shared/get_all_eight_slices.f90(128,10)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/shared/get_all_eight_slices.f90(188,3) inlined into src/shared/get_all_eight_slices.f90(128,10)
+   remark #15301: FUSED LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/shared/get_all_eight_slices.f90(189,3) inlined into src/shared/get_all_eight_slices.f90(128,10)
+LOOP END
+
+LOOP BEGIN at src/shared/get_all_eight_slices.f90(191,3) inlined into src/shared/get_all_eight_slices.f90(128,10)
+LOOP END
+
+LOOP BEGIN at src/shared/get_all_eight_slices.f90(192,3) inlined into src/shared/get_all_eight_slices.f90(128,10)
+LOOP END
+
+LOOP BEGIN at src/shared/get_all_eight_slices.f90(193,3) inlined into src/shared/get_all_eight_slices.f90(128,10)
+LOOP END
+
+LOOP BEGIN at src/shared/get_all_eight_slices.f90(194,3) inlined into src/shared/get_all_eight_slices.f90(128,10)
+LOOP END
+===========================================================================
+
+Begin optimization report for: GET_LRBT_SLICES
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/shared/get_all_eight_slices.f90(181,3)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/shared/get_all_eight_slices.f90(182,3)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/shared/get_all_eight_slices.f90(183,3)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/shared/get_all_eight_slices.f90(184,3)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/shared/get_all_eight_slices.f90(186,3)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/shared/get_all_eight_slices.f90(187,3)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/shared/get_all_eight_slices.f90(188,3)
+   remark #15301: FUSED LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/shared/get_all_eight_slices.f90(189,3)
+LOOP END
+
+LOOP BEGIN at src/shared/get_all_eight_slices.f90(191,3)
+LOOP END
+
+LOOP BEGIN at src/shared/get_all_eight_slices.f90(192,3)
+LOOP END
+
+LOOP BEGIN at src/shared/get_all_eight_slices.f90(193,3)
+LOOP END
+
+LOOP BEGIN at src/shared/get_all_eight_slices.f90(194,3)
+LOOP END
+===========================================================================

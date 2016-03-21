@@ -1,0 +1,22 @@
+
+Begin optimization report for: READ_HETEROGEN_MANTLE_MODEL
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/meshfem3D/model_heterogen_mantle.f90(116,3)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed OUTPUT dependence between 82 line 117 and 82 line 117
+LOOP END
+===========================================================================
+
+Begin optimization report for: MODEL_HETEROGEN_MNTL_BROADCAST
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/meshfem3D/model_heterogen_mantle.f90(116,3) inlined into src/meshfem3D/model_heterogen_mantle.f90(72,11)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed OUTPUT dependence between 82 line 117 and 82 line 117
+LOOP END
+===========================================================================

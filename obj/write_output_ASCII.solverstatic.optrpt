@@ -1,0 +1,11 @@
+
+Begin optimization report for: WRITE_OUTPUT_ASCII
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/specfem3D/write_output_ASCII.f90(84,3)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed OUTPUT dependence between 13 line 102 and 13 line 105
+LOOP END
+===========================================================================

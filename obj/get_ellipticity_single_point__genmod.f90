@@ -1,0 +1,15 @@
+        !COMPILER-GENERATED INTERFACE MODULE: Fri Mar 11 15:45:47 2016
+        MODULE GET_ELLIPTICITY_SINGLE_POINT__genmod
+          INTERFACE 
+            SUBROUTINE GET_ELLIPTICITY_SINGLE_POINT(X,Y,Z,NSPL,RSPL,ESPL&
+     &,ESPL2)
+              REAL(KIND=8) :: X
+              REAL(KIND=8) :: Y
+              REAL(KIND=8) :: Z
+              INTEGER(KIND=4) :: NSPL
+              REAL(KIND=8) :: RSPL(640)
+              REAL(KIND=8) :: ESPL(640)
+              REAL(KIND=8) :: ESPL2(640)
+            END SUBROUTINE GET_ELLIPTICITY_SINGLE_POINT
+          END INTERFACE 
+        END MODULE GET_ELLIPTICITY_SINGLE_POINT__genmod

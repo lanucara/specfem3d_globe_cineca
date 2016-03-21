@@ -1,0 +1,18 @@
+        !COMPILER-GENERATED INTERFACE MODULE: Fri Mar 11 15:46:05 2016
+        MODULE ATTENUATION_INVERT_BY_SIMPLEX__genmod
+          INTERFACE 
+            SUBROUTINE ATTENUATION_INVERT_BY_SIMPLEX(T2,T1,N,Q_REAL,    &
+     &OMEGA_NOT,TAU_S,TAU_E,AS_V)
+              USE MESHFEM3D_MODELS_PAR, ONLY :                          &
+     &          ATTENUATION_SIMPLEX_VARIABLES
+              INTEGER(KIND=4) :: N
+              REAL(KIND=8) :: T2
+              REAL(KIND=8) :: T1
+              REAL(KIND=8) :: Q_REAL
+              REAL(KIND=8) :: OMEGA_NOT
+              REAL(KIND=8) :: TAU_S(N)
+              REAL(KIND=8) :: TAU_E(N)
+              TYPE (ATTENUATION_SIMPLEX_VARIABLES) :: AS_V
+            END SUBROUTINE ATTENUATION_INVERT_BY_SIMPLEX
+          END INTERFACE 
+        END MODULE ATTENUATION_INVERT_BY_SIMPLEX__genmod

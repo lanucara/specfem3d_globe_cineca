@@ -1,0 +1,189 @@
+
+Begin optimization report for: COMPUTE_SEISMOGRAMS
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/specfem3D/compute_seismograms.F90(62,3)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at src/specfem3D/compute_seismograms.F90(74,5)
+      remark #15300: LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/specfem3D/compute_seismograms.F90(88,5)
+   LOOP END
+
+   LOOP BEGIN at src/specfem3D/compute_seismograms.F90(74,5)
+   <Remainder>
+      remark #15301: REMAINDER LOOP WAS VECTORIZED
+   LOOP END
+LOOP END
+===========================================================================
+
+Begin optimization report for: COMPUTE_SEISMOGRAMS_ADJOINT
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/specfem3D/compute_seismograms.F90(176,3)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at src/specfem3D/compute_seismograms.F90(207,7)
+      remark #15301: FUSED LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/specfem3D/compute_seismograms.F90(208,7)
+   LOOP END
+
+   LOOP BEGIN at src/specfem3D/compute_seismograms.F90(209,7)
+   LOOP END
+
+   LOOP BEGIN at src/specfem3D/compute_seismograms.F90(210,7)
+   LOOP END
+
+   LOOP BEGIN at src/specfem3D/compute_seismograms.F90(211,7)
+   LOOP END
+
+   LOOP BEGIN at src/specfem3D/compute_seismograms.F90(212,7)
+   LOOP END
+
+   LOOP BEGIN at src/specfem3D/compute_seismograms.F90(207,7)
+   <Remainder>
+      remark #15301: REMAINDER LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/specfem3D/compute_seismograms.F90(220,19)
+      remark #15300: LOOP WAS VECTORIZED
+
+      LOOP BEGIN at src/specfem3D/compute_seismograms.F90(234,7)
+      LOOP END
+   LOOP END
+
+   LOOP BEGIN at src/specfem3D/compute_seismograms.F90(220,19)
+   <Remainder>
+      remark #15301: REMAINDER LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/specfem3D/compute_seismograms.F90(248,5)
+      remark #15300: LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/specfem3D/compute_seismograms.F90(250,31)
+      remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+      LOOP BEGIN at src/specfem3D/compute_seismograms.F90(250,31)
+         remark #15398: loop was not vectorized: loop was transformed to memset or memcpy
+      LOOP END
+   LOOP END
+
+   LOOP BEGIN at src/specfem3D/compute_seismograms.F90(250,31)
+      remark #15542: loop was not vectorized: inner loop was already vectorized
+
+      LOOP BEGIN at src/specfem3D/compute_seismograms.F90(250,31)
+         remark #15542: loop was not vectorized: inner loop was already vectorized
+
+         LOOP BEGIN at src/specfem3D/compute_seismograms.F90(250,31)
+         <Peeled>
+            remark #15301: PEEL LOOP WAS VECTORIZED
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/compute_seismograms.F90(250,31)
+            remark #15300: LOOP WAS VECTORIZED
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/compute_seismograms.F90(250,31)
+         <Alternate Alignment Vectorized Loop>
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/compute_seismograms.F90(250,31)
+         <Remainder>
+            remark #15301: REMAINDER LOOP WAS VECTORIZED
+         LOOP END
+      LOOP END
+   LOOP END
+
+   LOOP BEGIN at src/specfem3D/compute_seismograms.F90(250,24)
+      remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+      LOOP BEGIN at src/specfem3D/compute_seismograms.F90(250,24)
+         remark #15398: loop was not vectorized: loop was transformed to memset or memcpy
+      LOOP END
+   LOOP END
+
+   LOOP BEGIN at src/specfem3D/compute_seismograms.F90(250,24)
+      remark #15542: loop was not vectorized: inner loop was already vectorized
+
+      LOOP BEGIN at src/specfem3D/compute_seismograms.F90(250,24)
+         remark #15542: loop was not vectorized: inner loop was already vectorized
+
+         LOOP BEGIN at src/specfem3D/compute_seismograms.F90(250,24)
+         <Peeled>
+            remark #15301: PEEL LOOP WAS VECTORIZED
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/compute_seismograms.F90(250,24)
+            remark #15300: LOOP WAS VECTORIZED
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/compute_seismograms.F90(250,24)
+         <Alternate Alignment Vectorized Loop>
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/compute_seismograms.F90(250,24)
+         <Remainder>
+            remark #15301: REMAINDER LOOP WAS VECTORIZED
+         LOOP END
+      LOOP END
+   LOOP END
+
+   LOOP BEGIN at src/specfem3D/compute_seismograms.F90(248,5)
+   <Remainder>
+   LOOP END
+
+   LOOP BEGIN at src/specfem3D/compute_seismograms.F90(250,5)
+      remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+
+      LOOP BEGIN at src/specfem3D/compute_seismograms.F90(250,5)
+         remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+      LOOP END
+
+      LOOP BEGIN at src/specfem3D/compute_seismograms.F90(250,5)
+      LOOP END
+
+      LOOP BEGIN at src/specfem3D/compute_seismograms.F90(250,5)
+      LOOP END
+   LOOP END
+
+   LOOP BEGIN at src/specfem3D/compute_seismograms.F90(259,5)
+      remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+   LOOP END
+
+   LOOP BEGIN at src/specfem3D/compute_seismograms.F90(267,5)
+      remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+   LOOP END
+
+   LOOP BEGIN at src/specfem3D/compute_seismograms.F90(268,5)
+   LOOP END
+
+   LOOP BEGIN at src/specfem3D/compute_seismograms.F90(269,5)
+   LOOP END
+
+   LOOP BEGIN at src/specfem3D/compute_seismograms.F90(270,5)
+   LOOP END
+
+   LOOP BEGIN at src/specfem3D/compute_seismograms.F90(271,5)
+   LOOP END
+
+   LOOP BEGIN at src/specfem3D/compute_seismograms.F90(272,5)
+   LOOP END
+
+   LOOP BEGIN at src/specfem3D/compute_seismograms.F90(287,5)
+      remark #15300: LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/specfem3D/compute_seismograms.F90(288,5)
+      remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+   LOOP END
+LOOP END
+===========================================================================

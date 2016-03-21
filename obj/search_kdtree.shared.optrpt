@@ -1,0 +1,572 @@
+
+Begin optimization report for: KDTREE_SEARCH::KDTREE_SETUP
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/shared/search_kdtree.f90(184,3)
+   remark #15521: loop was not vectorized: explicitly compute the iteration count before executing the loop or try using canonical loop form
+LOOP END
+
+LOOP BEGIN at src/shared/search_kdtree.f90(200,3)
+<Peeled>
+   remark #15301: PEEL LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/shared/search_kdtree.f90(200,3)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/shared/search_kdtree.f90(200,3)
+<Remainder>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/shared/search_kdtree.f90(210,8)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at src/shared/search_kdtree.f90(210,8)
+      remark #15542: loop was not vectorized: inner loop was already vectorized
+
+      LOOP BEGIN at src/shared/search_kdtree.f90(210,8)
+      <Peeled, Multiversioned v2>
+      LOOP END
+
+      LOOP BEGIN at src/shared/search_kdtree.f90(210,8)
+      <Multiversioned v2>
+         remark #15300: LOOP WAS VECTORIZED
+      LOOP END
+
+      LOOP BEGIN at src/shared/search_kdtree.f90(210,8)
+      <Alternate Alignment Vectorized Loop, Multiversioned v2>
+      LOOP END
+
+      LOOP BEGIN at src/shared/search_kdtree.f90(210,8)
+      <Remainder, Multiversioned v2>
+      LOOP END
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/shared/search_kdtree.f90(711,11) inlined into src/shared/search_kdtree.f90(210,8)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at src/shared/search_kdtree.f90(710,11) inlined into src/shared/search_kdtree.f90(210,8)
+   <Peeled>
+      remark #15301: PEEL LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/shared/search_kdtree.f90(710,11) inlined into src/shared/search_kdtree.f90(210,8)
+      remark #15300: LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/shared/search_kdtree.f90(710,11) inlined into src/shared/search_kdtree.f90(210,8)
+   <Remainder>
+      remark #15301: REMAINDER LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/shared/search_kdtree.f90(711,11) inlined into src/shared/search_kdtree.f90(210,8)
+   <Peeled>
+      remark #15301: PEEL LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/shared/search_kdtree.f90(711,11) inlined into src/shared/search_kdtree.f90(210,8)
+      remark #15300: LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/shared/search_kdtree.f90(711,11) inlined into src/shared/search_kdtree.f90(210,8)
+   <Remainder>
+      remark #15301: REMAINDER LOOP WAS VECTORIZED
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/shared/search_kdtree.f90(739,3) inlined into src/shared/search_kdtree.f90(210,8)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed OUTPUT dependence between WORKINDEX line 743 and WORKINDEX line 746
+LOOP END
+
+LOOP BEGIN at src/shared/search_kdtree.f90(739,3) inlined into src/shared/search_kdtree.f90(210,8)
+<Remainder>
+LOOP END
+
+LOOP BEGIN at src/shared/search_kdtree.f90(757,3) inlined into src/shared/search_kdtree.f90(210,8)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at src/shared/search_kdtree.f90(757,3) inlined into src/shared/search_kdtree.f90(210,8)
+   <Peeled, Multiversioned v2>
+      remark #15301: PEEL LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/shared/search_kdtree.f90(757,3) inlined into src/shared/search_kdtree.f90(210,8)
+   <Multiversioned v2>
+      remark #15300: LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/shared/search_kdtree.f90(757,3) inlined into src/shared/search_kdtree.f90(210,8)
+   <Alternate Alignment Vectorized Loop, Multiversioned v2>
+   LOOP END
+
+   LOOP BEGIN at src/shared/search_kdtree.f90(757,3) inlined into src/shared/search_kdtree.f90(210,8)
+   <Remainder, Multiversioned v2>
+   LOOP END
+LOOP END
+===========================================================================
+
+Begin optimization report for: KDTREE_SEARCH::CREATE_KDTREE
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/shared/search_kdtree.f90(711,11)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at src/shared/search_kdtree.f90(710,11)
+   <Peeled>
+      remark #15301: PEEL LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/shared/search_kdtree.f90(710,11)
+      remark #15300: LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/shared/search_kdtree.f90(710,11)
+   <Remainder>
+      remark #15301: REMAINDER LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/shared/search_kdtree.f90(711,11)
+   <Peeled>
+      remark #15301: PEEL LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/shared/search_kdtree.f90(711,11)
+      remark #15300: LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/shared/search_kdtree.f90(711,11)
+   <Remainder>
+      remark #15301: REMAINDER LOOP WAS VECTORIZED
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/shared/search_kdtree.f90(739,3)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed OUTPUT dependence between WORKINDEX line 743 and WORKINDEX line 746
+LOOP END
+
+LOOP BEGIN at src/shared/search_kdtree.f90(739,3)
+<Remainder>
+LOOP END
+
+LOOP BEGIN at src/shared/search_kdtree.f90(757,3)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at src/shared/search_kdtree.f90(757,3)
+   <Peeled, Multiversioned v2>
+      remark #15301: PEEL LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/shared/search_kdtree.f90(757,3)
+   <Multiversioned v2>
+      remark #15300: LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/shared/search_kdtree.f90(757,3)
+   <Alternate Alignment Vectorized Loop, Multiversioned v2>
+   LOOP END
+
+   LOOP BEGIN at src/shared/search_kdtree.f90(757,3)
+   <Remainder, Multiversioned v2>
+   LOOP END
+LOOP END
+===========================================================================
+
+Begin optimization report for: KDTREE_SEARCH::KDTREE_FIND_NEAREST_NEIGHBOR
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/shared/search_kdtree.f90(1293,10) inlined into src/shared/search_kdtree.f90(296,8)
+   remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at src/shared/search_kdtree.f90(1293,10) inlined into src/shared/search_kdtree.f90(296,8)
+   remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at src/shared/search_kdtree.f90(1293,10) inlined into src/shared/search_kdtree.f90(296,8)
+   remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+===========================================================================
+
+Begin optimization report for: KDTREE_SEARCH::FIND_NEAREST_NODE
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/shared/search_kdtree.f90(1293,10) inlined into src/shared/search_kdtree.f90(966,16)
+   remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at src/shared/search_kdtree.f90(1293,10) inlined into src/shared/search_kdtree.f90(983,16)
+   remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at src/shared/search_kdtree.f90(1293,10) inlined into src/shared/search_kdtree.f90(923,12)
+   remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+
+Non-optimizable loops:
+
+
+LOOP BEGIN at src/shared/search_kdtree.f90(976,14)
+   remark #15341: loop was not vectorized: nonstandard loop is not a vectorization candidate
+LOOP END
+===========================================================================
+
+Begin optimization report for: KDTREE_SEARCH::KDTREE_FIND_NEAREST_N_NEIGHBORS
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/shared/search_kdtree.f90(360,3)
+   remark #15398: loop was not vectorized: loop was transformed to memset or memcpy
+LOOP END
+
+LOOP BEGIN at src/shared/search_kdtree.f90(1034,5) inlined into src/shared/search_kdtree.f90(366,8)
+   remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at src/shared/search_kdtree.f90(1293,10) inlined into src/shared/search_kdtree.f90(366,8)
+LOOP END
+
+LOOP BEGIN at src/shared/search_kdtree.f90(1082,9) inlined into src/shared/search_kdtree.f90(366,8)
+   remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at src/shared/search_kdtree.f90(1293,10) inlined into src/shared/search_kdtree.f90(366,8)
+LOOP END
+
+LOOP BEGIN at src/shared/search_kdtree.f90(1106,9) inlined into src/shared/search_kdtree.f90(366,8)
+   remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at src/shared/search_kdtree.f90(1293,10) inlined into src/shared/search_kdtree.f90(366,8)
+LOOP END
+
+LOOP BEGIN at src/shared/search_kdtree.f90(373,7)
+<Peeled>
+   remark #15301: PEEL LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/shared/search_kdtree.f90(373,7)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/shared/search_kdtree.f90(373,7)
+<Remainder>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+===========================================================================
+
+Begin optimization report for: KDTREE_SEARCH::FIND_NEAREST_N_NODES
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/shared/search_kdtree.f90(1082,9)
+   remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at src/shared/search_kdtree.f90(1293,10) inlined into src/shared/search_kdtree.f90(1083,16)
+LOOP END
+
+LOOP BEGIN at src/shared/search_kdtree.f90(1106,9)
+   remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at src/shared/search_kdtree.f90(1293,10) inlined into src/shared/search_kdtree.f90(1107,16)
+LOOP END
+
+LOOP BEGIN at src/shared/search_kdtree.f90(1034,5)
+   remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at src/shared/search_kdtree.f90(1293,10) inlined into src/shared/search_kdtree.f90(1037,12)
+LOOP END
+
+
+Non-optimizable loops:
+
+
+LOOP BEGIN at src/shared/search_kdtree.f90(1099,14)
+   remark #15341: loop was not vectorized: nonstandard loop is not a vectorization candidate
+LOOP END
+===========================================================================
+
+Begin optimization report for: KDTREE_SEARCH::KDTREE_COUNT_NEAREST_N_NEIGHBORS
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/shared/search_kdtree.f90(1034,5) inlined into src/shared/search_kdtree.f90(419,8)
+   remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at src/shared/search_kdtree.f90(1293,10) inlined into src/shared/search_kdtree.f90(419,8)
+LOOP END
+
+LOOP BEGIN at src/shared/search_kdtree.f90(1082,9) inlined into src/shared/search_kdtree.f90(419,8)
+   remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at src/shared/search_kdtree.f90(1293,10) inlined into src/shared/search_kdtree.f90(419,8)
+LOOP END
+
+LOOP BEGIN at src/shared/search_kdtree.f90(1106,9) inlined into src/shared/search_kdtree.f90(419,8)
+   remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at src/shared/search_kdtree.f90(1293,10) inlined into src/shared/search_kdtree.f90(419,8)
+LOOP END
+===========================================================================
+
+Begin optimization report for: KDTREE_SEARCH::KDTREE_GET_NEAREST_N_NEIGHBORS
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/shared/search_kdtree.f90(471,3)
+   remark #15398: loop was not vectorized: loop was transformed to memset or memcpy
+LOOP END
+
+LOOP BEGIN at src/shared/search_kdtree.f90(1034,5) inlined into src/shared/search_kdtree.f90(477,8)
+   remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at src/shared/search_kdtree.f90(1293,10) inlined into src/shared/search_kdtree.f90(477,8)
+LOOP END
+
+LOOP BEGIN at src/shared/search_kdtree.f90(1082,9) inlined into src/shared/search_kdtree.f90(477,8)
+   remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at src/shared/search_kdtree.f90(1293,10) inlined into src/shared/search_kdtree.f90(477,8)
+LOOP END
+
+LOOP BEGIN at src/shared/search_kdtree.f90(1106,9) inlined into src/shared/search_kdtree.f90(477,8)
+   remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at src/shared/search_kdtree.f90(1293,10) inlined into src/shared/search_kdtree.f90(477,8)
+LOOP END
+
+LOOP BEGIN at src/shared/search_kdtree.f90(484,5)
+   remark #15398: loop was not vectorized: loop was transformed to memset or memcpy
+LOOP END
+
+LOOP BEGIN at src/shared/search_kdtree.f90(488,7)
+<Peeled>
+   remark #15301: PEEL LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/shared/search_kdtree.f90(488,7)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/shared/search_kdtree.f90(488,7)
+<Remainder>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+===========================================================================
+
+Begin optimization report for: KDTREE_SEARCH::KDTREE_COUNT_NEAREST_N_NEIGHBORS_ELLIP
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/shared/search_kdtree.f90(1164,5) inlined into src/shared/search_kdtree.f90(536,8)
+   remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at src/shared/search_kdtree.f90(1319,14) inlined into src/shared/search_kdtree.f90(536,8)
+LOOP END
+
+LOOP BEGIN at src/shared/search_kdtree.f90(1320,14) inlined into src/shared/search_kdtree.f90(536,8)
+LOOP END
+
+LOOP BEGIN at src/shared/search_kdtree.f90(1331,11) inlined into src/shared/search_kdtree.f90(536,8)
+LOOP END
+
+LOOP BEGIN at src/shared/search_kdtree.f90(1214,9) inlined into src/shared/search_kdtree.f90(536,8)
+   remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at src/shared/search_kdtree.f90(1319,14) inlined into src/shared/search_kdtree.f90(536,8)
+LOOP END
+
+LOOP BEGIN at src/shared/search_kdtree.f90(1320,14) inlined into src/shared/search_kdtree.f90(536,8)
+LOOP END
+
+LOOP BEGIN at src/shared/search_kdtree.f90(1331,11) inlined into src/shared/search_kdtree.f90(536,8)
+LOOP END
+
+LOOP BEGIN at src/shared/search_kdtree.f90(1239,9) inlined into src/shared/search_kdtree.f90(536,8)
+   remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at src/shared/search_kdtree.f90(1319,14) inlined into src/shared/search_kdtree.f90(536,8)
+LOOP END
+
+LOOP BEGIN at src/shared/search_kdtree.f90(1320,14) inlined into src/shared/search_kdtree.f90(536,8)
+LOOP END
+
+LOOP BEGIN at src/shared/search_kdtree.f90(1331,11) inlined into src/shared/search_kdtree.f90(536,8)
+LOOP END
+===========================================================================
+
+Begin optimization report for: KDTREE_SEARCH::FIND_NEAREST_N_NODES_ELLIP
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/shared/search_kdtree.f90(1214,9)
+   remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at src/shared/search_kdtree.f90(1319,14) inlined into src/shared/search_kdtree.f90(1215,14)
+LOOP END
+
+LOOP BEGIN at src/shared/search_kdtree.f90(1320,14) inlined into src/shared/search_kdtree.f90(1215,14)
+LOOP END
+
+LOOP BEGIN at src/shared/search_kdtree.f90(1331,11) inlined into src/shared/search_kdtree.f90(1215,14)
+LOOP END
+
+LOOP BEGIN at src/shared/search_kdtree.f90(1239,9)
+   remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at src/shared/search_kdtree.f90(1319,14) inlined into src/shared/search_kdtree.f90(1240,14)
+LOOP END
+
+LOOP BEGIN at src/shared/search_kdtree.f90(1320,14) inlined into src/shared/search_kdtree.f90(1240,14)
+LOOP END
+
+LOOP BEGIN at src/shared/search_kdtree.f90(1331,11) inlined into src/shared/search_kdtree.f90(1240,14)
+LOOP END
+
+LOOP BEGIN at src/shared/search_kdtree.f90(1164,5)
+   remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at src/shared/search_kdtree.f90(1319,14) inlined into src/shared/search_kdtree.f90(1167,10)
+LOOP END
+
+LOOP BEGIN at src/shared/search_kdtree.f90(1320,14) inlined into src/shared/search_kdtree.f90(1167,10)
+LOOP END
+
+LOOP BEGIN at src/shared/search_kdtree.f90(1331,11) inlined into src/shared/search_kdtree.f90(1167,10)
+LOOP END
+
+
+Non-optimizable loops:
+
+
+LOOP BEGIN at src/shared/search_kdtree.f90(1231,14)
+   remark #15341: loop was not vectorized: nonstandard loop is not a vectorization candidate
+LOOP END
+===========================================================================
+
+Begin optimization report for: KDTREE_SEARCH::KDTREE_GET_NEAREST_N_NEIGHBORS_ELLIP
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/shared/search_kdtree.f90(590,3)
+   remark #15398: loop was not vectorized: loop was transformed to memset or memcpy
+LOOP END
+
+LOOP BEGIN at src/shared/search_kdtree.f90(1164,5) inlined into src/shared/search_kdtree.f90(597,8)
+   remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at src/shared/search_kdtree.f90(1319,14) inlined into src/shared/search_kdtree.f90(597,8)
+LOOP END
+
+LOOP BEGIN at src/shared/search_kdtree.f90(1320,14) inlined into src/shared/search_kdtree.f90(597,8)
+LOOP END
+
+LOOP BEGIN at src/shared/search_kdtree.f90(1331,11) inlined into src/shared/search_kdtree.f90(597,8)
+LOOP END
+
+LOOP BEGIN at src/shared/search_kdtree.f90(1214,9) inlined into src/shared/search_kdtree.f90(597,8)
+   remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at src/shared/search_kdtree.f90(1319,14) inlined into src/shared/search_kdtree.f90(597,8)
+LOOP END
+
+LOOP BEGIN at src/shared/search_kdtree.f90(1320,14) inlined into src/shared/search_kdtree.f90(597,8)
+LOOP END
+
+LOOP BEGIN at src/shared/search_kdtree.f90(1331,11) inlined into src/shared/search_kdtree.f90(597,8)
+LOOP END
+
+LOOP BEGIN at src/shared/search_kdtree.f90(1239,9) inlined into src/shared/search_kdtree.f90(597,8)
+   remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at src/shared/search_kdtree.f90(1319,14) inlined into src/shared/search_kdtree.f90(597,8)
+LOOP END
+
+LOOP BEGIN at src/shared/search_kdtree.f90(1320,14) inlined into src/shared/search_kdtree.f90(597,8)
+LOOP END
+
+LOOP BEGIN at src/shared/search_kdtree.f90(1331,11) inlined into src/shared/search_kdtree.f90(597,8)
+LOOP END
+
+LOOP BEGIN at src/shared/search_kdtree.f90(605,5)
+   remark #15398: loop was not vectorized: loop was transformed to memset or memcpy
+LOOP END
+
+LOOP BEGIN at src/shared/search_kdtree.f90(609,7)
+<Peeled>
+   remark #15301: PEEL LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/shared/search_kdtree.f90(609,7)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/shared/search_kdtree.f90(609,7)
+<Remainder>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+===========================================================================
+
+Begin optimization report for: KDTREE_SEARCH::GET_DISTANCE_SQUARED
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/shared/search_kdtree.f90(1293,10)
+   remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+===========================================================================
+
+Begin optimization report for: KDTREE_SEARCH::GET_DISTANCE_ELLIP
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/shared/search_kdtree.f90(1319,14)
+   remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at src/shared/search_kdtree.f90(1320,14)
+LOOP END
+
+LOOP BEGIN at src/shared/search_kdtree.f90(1331,11)
+LOOP END
+===========================================================================

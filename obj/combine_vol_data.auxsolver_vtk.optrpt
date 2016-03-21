@@ -1,0 +1,480 @@
+
+Begin optimization report for: COMBINE_VOL_DATA
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/auxiliaries/combine_vol_data.F90(147,3)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed OUTPUT dependence between 377 line 148 and 377 line 148
+LOOP END
+
+LOOP BEGIN at src/auxiliaries/combine_vol_data.F90(183,11)
+   remark #15522: loop was not vectorized: loop control flow is too complex. Try using canonical loop form.
+LOOP END
+
+LOOP BEGIN at src/auxiliaries/combine_vol_data.F90(260,3)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at src/auxiliaries/combine_vol_data.F90(281,5)
+      remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+      remark #15346: vector dependence: assumed FLOW dependence between 218 line 285 and 218 line 299
+   LOOP END
+
+   LOOP BEGIN at src/auxiliaries/combine_vol_data.F90(331,42)
+      remark #15300: LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/auxiliaries/combine_vol_data.F90(331,42)
+   <Remainder>
+      remark #15301: REMAINDER LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/auxiliaries/combine_vol_data.F90(332,44)
+      remark #15300: LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/auxiliaries/combine_vol_data.F90(332,44)
+   <Remainder>
+      remark #15301: REMAINDER LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/auxiliaries/combine_vol_data.F90(335,24)
+      remark #15300: LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/auxiliaries/combine_vol_data.F90(335,24)
+   <Remainder>
+      remark #15301: REMAINDER LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/auxiliaries/combine_vol_data.F90(335,24)
+      remark #15300: LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/auxiliaries/combine_vol_data.F90(335,24)
+   <Remainder>
+      remark #15301: REMAINDER LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/auxiliaries/combine_vol_data.F90(337,5)
+      remark #15398: loop was not vectorized: loop was transformed to memset or memcpy
+   LOOP END
+
+   LOOP BEGIN at src/auxiliaries/combine_vol_data.F90(338,30)
+      remark #15300: LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/auxiliaries/combine_vol_data.F90(338,30)
+   <Remainder>
+      remark #15301: REMAINDER LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/auxiliaries/combine_vol_data.F90(338,30)
+      remark #15300: LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/auxiliaries/combine_vol_data.F90(338,30)
+   <Remainder>
+      remark #15301: REMAINDER LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/auxiliaries/combine_vol_data.F90(340,5)
+      remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+      remark #15346: vector dependence: assumed FLOW dependence between 742 line 340 and 742 line 340
+
+      LOOP BEGIN at src/auxiliaries/combine_vol_data.F90(340,5)
+         remark #15398: loop was not vectorized: loop was transformed to memset or memcpy
+      LOOP END
+   LOOP END
+
+   LOOP BEGIN at src/auxiliaries/combine_vol_data.F90(341,30)
+      remark #15300: LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/auxiliaries/combine_vol_data.F90(341,30)
+   <Remainder>
+      remark #15301: REMAINDER LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/auxiliaries/combine_vol_data.F90(341,30)
+      remark #15300: LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/auxiliaries/combine_vol_data.F90(341,30)
+   <Remainder>
+      remark #15301: REMAINDER LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/auxiliaries/combine_vol_data.F90(343,5)
+      remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+      remark #15346: vector dependence: assumed FLOW dependence between 768 line 343 and 768 line 343
+
+      LOOP BEGIN at src/auxiliaries/combine_vol_data.F90(343,5)
+         remark #15398: loop was not vectorized: loop was transformed to memset or memcpy
+      LOOP END
+   LOOP END
+
+   LOOP BEGIN at src/auxiliaries/combine_vol_data.F90(353,5)
+      remark #15542: loop was not vectorized: inner loop was already vectorized
+
+      LOOP BEGIN at src/auxiliaries/combine_vol_data.F90(358,7)
+         remark #15542: loop was not vectorized: inner loop was already vectorized
+
+         LOOP BEGIN at src/auxiliaries/combine_vol_data.F90(358,7)
+            remark #15542: loop was not vectorized: inner loop was already vectorized
+
+            LOOP BEGIN at src/auxiliaries/combine_vol_data.F90(358,7)
+               remark #15542: loop was not vectorized: inner loop was already vectorized
+
+               LOOP BEGIN at src/auxiliaries/combine_vol_data.F90(358,7)
+                  remark #15300: LOOP WAS VECTORIZED
+               LOOP END
+            LOOP END
+
+            LOOP BEGIN at src/auxiliaries/combine_vol_data.F90(358,7)
+            LOOP END
+
+            LOOP BEGIN at src/auxiliaries/combine_vol_data.F90(358,7)
+            LOOP END
+
+            LOOP BEGIN at src/auxiliaries/combine_vol_data.F90(358,7)
+            LOOP END
+
+            LOOP BEGIN at src/auxiliaries/combine_vol_data.F90(358,7)
+            LOOP END
+         LOOP END
+      LOOP END
+
+      LOOP BEGIN at src/auxiliaries/combine_vol_data.F90(390,35)
+         remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+         LOOP BEGIN at src/auxiliaries/combine_vol_data.F90(390,35)
+            remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+            LOOP BEGIN at src/auxiliaries/combine_vol_data.F90(390,35)
+               remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+               LOOP BEGIN at src/auxiliaries/combine_vol_data.F90(390,35)
+                  remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+               LOOP END
+
+               LOOP BEGIN at src/auxiliaries/combine_vol_data.F90(390,35)
+               LOOP END
+
+               LOOP BEGIN at src/auxiliaries/combine_vol_data.F90(390,35)
+               LOOP END
+
+               LOOP BEGIN at src/auxiliaries/combine_vol_data.F90(390,35)
+               LOOP END
+
+               LOOP BEGIN at src/auxiliaries/combine_vol_data.F90(390,35)
+               LOOP END
+            LOOP END
+
+            LOOP BEGIN at src/auxiliaries/combine_vol_data.F90(390,35)
+
+               LOOP BEGIN at src/auxiliaries/combine_vol_data.F90(390,35)
+               LOOP END
+
+               LOOP BEGIN at src/auxiliaries/combine_vol_data.F90(390,35)
+               LOOP END
+
+               LOOP BEGIN at src/auxiliaries/combine_vol_data.F90(390,35)
+               LOOP END
+
+               LOOP BEGIN at src/auxiliaries/combine_vol_data.F90(390,35)
+               LOOP END
+
+               LOOP BEGIN at src/auxiliaries/combine_vol_data.F90(390,35)
+               LOOP END
+            LOOP END
+
+            LOOP BEGIN at src/auxiliaries/combine_vol_data.F90(390,35)
+
+               LOOP BEGIN at src/auxiliaries/combine_vol_data.F90(390,35)
+               LOOP END
+
+               LOOP BEGIN at src/auxiliaries/combine_vol_data.F90(390,35)
+               LOOP END
+
+               LOOP BEGIN at src/auxiliaries/combine_vol_data.F90(390,35)
+               LOOP END
+
+               LOOP BEGIN at src/auxiliaries/combine_vol_data.F90(390,35)
+               LOOP END
+
+               LOOP BEGIN at src/auxiliaries/combine_vol_data.F90(390,35)
+               LOOP END
+            LOOP END
+
+            LOOP BEGIN at src/auxiliaries/combine_vol_data.F90(390,35)
+
+               LOOP BEGIN at src/auxiliaries/combine_vol_data.F90(390,35)
+               LOOP END
+
+               LOOP BEGIN at src/auxiliaries/combine_vol_data.F90(390,35)
+               LOOP END
+
+               LOOP BEGIN at src/auxiliaries/combine_vol_data.F90(390,35)
+               LOOP END
+
+               LOOP BEGIN at src/auxiliaries/combine_vol_data.F90(390,35)
+               LOOP END
+
+               LOOP BEGIN at src/auxiliaries/combine_vol_data.F90(390,35)
+               LOOP END
+            LOOP END
+
+            LOOP BEGIN at src/auxiliaries/combine_vol_data.F90(390,35)
+
+               LOOP BEGIN at src/auxiliaries/combine_vol_data.F90(390,35)
+               LOOP END
+
+               LOOP BEGIN at src/auxiliaries/combine_vol_data.F90(390,35)
+               LOOP END
+
+               LOOP BEGIN at src/auxiliaries/combine_vol_data.F90(390,35)
+               LOOP END
+
+               LOOP BEGIN at src/auxiliaries/combine_vol_data.F90(390,35)
+               LOOP END
+
+               LOOP BEGIN at src/auxiliaries/combine_vol_data.F90(390,35)
+               LOOP END
+            LOOP END
+         LOOP END
+      LOOP END
+
+      LOOP BEGIN at src/auxiliaries/combine_vol_data.F90(390,67)
+         remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+         LOOP BEGIN at src/auxiliaries/combine_vol_data.F90(390,67)
+            remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+            LOOP BEGIN at src/auxiliaries/combine_vol_data.F90(390,67)
+               remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+               LOOP BEGIN at src/auxiliaries/combine_vol_data.F90(390,67)
+                  remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+               LOOP END
+
+               LOOP BEGIN at src/auxiliaries/combine_vol_data.F90(390,67)
+               LOOP END
+
+               LOOP BEGIN at src/auxiliaries/combine_vol_data.F90(390,67)
+               LOOP END
+
+               LOOP BEGIN at src/auxiliaries/combine_vol_data.F90(390,67)
+               LOOP END
+
+               LOOP BEGIN at src/auxiliaries/combine_vol_data.F90(390,67)
+               LOOP END
+            LOOP END
+
+            LOOP BEGIN at src/auxiliaries/combine_vol_data.F90(390,67)
+
+               LOOP BEGIN at src/auxiliaries/combine_vol_data.F90(390,67)
+               LOOP END
+
+               LOOP BEGIN at src/auxiliaries/combine_vol_data.F90(390,67)
+               LOOP END
+
+               LOOP BEGIN at src/auxiliaries/combine_vol_data.F90(390,67)
+               LOOP END
+
+               LOOP BEGIN at src/auxiliaries/combine_vol_data.F90(390,67)
+               LOOP END
+
+               LOOP BEGIN at src/auxiliaries/combine_vol_data.F90(390,67)
+               LOOP END
+            LOOP END
+
+            LOOP BEGIN at src/auxiliaries/combine_vol_data.F90(390,67)
+
+               LOOP BEGIN at src/auxiliaries/combine_vol_data.F90(390,67)
+               LOOP END
+
+               LOOP BEGIN at src/auxiliaries/combine_vol_data.F90(390,67)
+               LOOP END
+
+               LOOP BEGIN at src/auxiliaries/combine_vol_data.F90(390,67)
+               LOOP END
+
+               LOOP BEGIN at src/auxiliaries/combine_vol_data.F90(390,67)
+               LOOP END
+
+               LOOP BEGIN at src/auxiliaries/combine_vol_data.F90(390,67)
+               LOOP END
+            LOOP END
+
+            LOOP BEGIN at src/auxiliaries/combine_vol_data.F90(390,67)
+
+               LOOP BEGIN at src/auxiliaries/combine_vol_data.F90(390,67)
+               LOOP END
+
+               LOOP BEGIN at src/auxiliaries/combine_vol_data.F90(390,67)
+               LOOP END
+
+               LOOP BEGIN at src/auxiliaries/combine_vol_data.F90(390,67)
+               LOOP END
+
+               LOOP BEGIN at src/auxiliaries/combine_vol_data.F90(390,67)
+               LOOP END
+
+               LOOP BEGIN at src/auxiliaries/combine_vol_data.F90(390,67)
+               LOOP END
+            LOOP END
+
+            LOOP BEGIN at src/auxiliaries/combine_vol_data.F90(390,67)
+
+               LOOP BEGIN at src/auxiliaries/combine_vol_data.F90(390,67)
+               LOOP END
+
+               LOOP BEGIN at src/auxiliaries/combine_vol_data.F90(390,67)
+               LOOP END
+
+               LOOP BEGIN at src/auxiliaries/combine_vol_data.F90(390,67)
+               LOOP END
+
+               LOOP BEGIN at src/auxiliaries/combine_vol_data.F90(390,67)
+               LOOP END
+
+               LOOP BEGIN at src/auxiliaries/combine_vol_data.F90(390,67)
+               LOOP END
+            LOOP END
+         LOOP END
+      LOOP END
+
+      LOOP BEGIN at src/auxiliaries/combine_vol_data.F90(404,7)
+         remark #15398: loop was not vectorized: loop was transformed to memset or memcpy
+      LOOP END
+
+      LOOP BEGIN at src/auxiliaries/combine_vol_data.F90(405,7)
+         remark #15398: loop was not vectorized: loop was transformed to memset or memcpy
+      LOOP END
+
+      LOOP BEGIN at src/auxiliaries/combine_vol_data.F90(406,7)
+         remark #15398: loop was not vectorized: loop was transformed to memset or memcpy
+      LOOP END
+
+      LOOP BEGIN at src/auxiliaries/combine_vol_data.F90(407,7)
+         remark #15301: OUTER LOOP WAS VECTORIZED
+
+         LOOP BEGIN at src/auxiliaries/combine_vol_data.F90(407,7)
+            remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+
+            LOOP BEGIN at src/auxiliaries/combine_vol_data.F90(407,7)
+               remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+
+               LOOP BEGIN at src/auxiliaries/combine_vol_data.F90(407,7)
+                  remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+               LOOP END
+            LOOP END
+         LOOP END
+      LOOP END
+
+      LOOP BEGIN at src/auxiliaries/combine_vol_data.F90(463,7)
+         remark #15398: loop was not vectorized: loop was transformed to memset or memcpy
+      LOOP END
+
+      LOOP BEGIN at src/auxiliaries/combine_vol_data.F90(464,7)
+         remark #15398: loop was not vectorized: loop was transformed to memset or memcpy
+      LOOP END
+
+      LOOP BEGIN at src/auxiliaries/combine_vol_data.F90(468,7)
+         remark #15542: loop was not vectorized: inner loop was already vectorized
+
+         LOOP BEGIN at src/auxiliaries/combine_vol_data.F90(477,9)
+            remark #15542: loop was not vectorized: inner loop was already vectorized
+
+            LOOP BEGIN at src/auxiliaries/combine_vol_data.F90(478,11)
+            <Distributed chunk1>
+               remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+               remark #15346: vector dependence: assumed OUTPUT dependence between x line 485 and x line 485
+
+               LOOP BEGIN at src/auxiliaries/combine_vol_data.F90(479,13)
+                  remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+                  remark #15346: vector dependence: assumed FLOW dependence between mask_ibool line 512 and mask_ibool line 483
+               LOOP END
+            LOOP END
+
+            LOOP BEGIN at src/auxiliaries/combine_vol_data.F90(478,11)
+            <Distributed chunk2>
+               remark #15301: PARTIAL LOOP WAS VECTORIZED
+            LOOP END
+
+            LOOP BEGIN at src/auxiliaries/combine_vol_data.F90(478,11)
+            <Remainder, Distributed chunk2>
+            LOOP END
+         LOOP END
+      LOOP END
+
+      LOOP BEGIN at src/auxiliaries/combine_vol_data.F90(536,7)
+         remark #15542: loop was not vectorized: inner loop was already vectorized
+
+         LOOP BEGIN at src/auxiliaries/combine_vol_data.F90(570,9)
+            remark #15542: loop was not vectorized: inner loop was already vectorized
+
+            LOOP BEGIN at src/auxiliaries/combine_vol_data.F90(571,11)
+            <Distributed chunk1>
+               remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+               remark #15346: vector dependence: assumed OUTPUT dependence between TOTAL_DAT_CON line 597 and TOTAL_DAT_CON line 597
+
+               LOOP BEGIN at src/auxiliaries/combine_vol_data.F90(572,13)
+                  remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+                  remark #15346: vector dependence: assumed FLOW dependence between numpoin line 574 and numpoin line 597
+               LOOP END
+            LOOP END
+
+            LOOP BEGIN at src/auxiliaries/combine_vol_data.F90(571,11)
+            <Distributed chunk2>
+               remark #15301: PARTIAL LOOP WAS VECTORIZED
+            LOOP END
+
+            LOOP BEGIN at src/auxiliaries/combine_vol_data.F90(571,11)
+            <Remainder, Distributed chunk2>
+            LOOP END
+         LOOP END
+      LOOP END
+   LOOP END
+
+   LOOP BEGIN at src/auxiliaries/combine_vol_data.F90(626,15)
+      remark #15300: LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/auxiliaries/combine_vol_data.F90(626,15)
+   <Remainder>
+      remark #15301: REMAINDER LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/auxiliaries/combine_vol_data.F90(627,15)
+      remark #15300: LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/auxiliaries/combine_vol_data.F90(627,15)
+   <Remainder>
+      remark #15301: REMAINDER LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/auxiliaries/combine_vol_data.F90(647,5)
+      remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+      remark #15346: vector dependence: assumed FLOW dependence between 218 line 648 and 218 line 648
+   LOOP END
+
+   LOOP BEGIN at src/auxiliaries/combine_vol_data.F90(655,5)
+      remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+      remark #15346: vector dependence: assumed FLOW dependence between 218 line 656 and 218 line 656
+   LOOP END
+
+   LOOP BEGIN at src/auxiliaries/combine_vol_data.F90(663,5)
+      remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+      remark #15346: vector dependence: assumed FLOW dependence between ARGBLOCK_REC_131 line 663 and ARGBLOCK_REC_131 line 663
+   LOOP END
+
+   LOOP BEGIN at src/auxiliaries/combine_vol_data.F90(669,5)
+      remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+      remark #15346: vector dependence: assumed FLOW dependence between 218 line 670 and 218 line 670
+   LOOP END
+LOOP END
+===========================================================================

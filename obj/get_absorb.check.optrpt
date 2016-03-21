@@ -1,0 +1,11 @@
+
+Begin optimization report for: GET_ABSORB
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/meshfem3D/get_absorb.f90(68,3)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed OUTPUT dependence between nkmin_xi line 82 and nkmin_xi line 83
+LOOP END
+===========================================================================

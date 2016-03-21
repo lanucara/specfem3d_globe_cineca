@@ -1,0 +1,7 @@
+        !COMPILER-GENERATED INTERFACE MODULE: Fri Mar 11 15:45:26 2016
+        MODULE INIT_MPI__genmod
+          INTERFACE 
+            SUBROUTINE INIT_MPI
+            END SUBROUTINE INIT_MPI
+          END INTERFACE 
+        END MODULE INIT_MPI__genmod

@@ -1,0 +1,9 @@
+ 
+ total number of stations:            6
+ 
+ IU.GRFO epicentral distance    15.24724      deg
+ YL.BEKI epicentral distance    9.849280      deg
+ SR.BGIO epicentral distance    11.37525      deg
+ HT.LIT epicentral distance    3.130283      deg
+ GE.ZKR epicentral distance    3.289320      deg
+ XS.S001 epicentral distance   0.9690613      deg

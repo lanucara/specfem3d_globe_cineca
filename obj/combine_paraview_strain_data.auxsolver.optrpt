@@ -1,0 +1,59 @@
+
+Begin optimization report for: COMBINE_PARAVIEW_MOVIE_DATA
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/auxiliaries/combine_paraview_strain_data.f90(53,3)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed FLOW dependence between 260 line 54 and 260 line 54
+LOOP END
+
+LOOP BEGIN at src/auxiliaries/combine_paraview_strain_data.f90(83,3)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed FLOW dependence between 175 line 85 and 175 line 96
+LOOP END
+
+LOOP BEGIN at src/auxiliaries/combine_paraview_strain_data.f90(99,18)
+   remark #15301: FUSED LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/auxiliaries/combine_paraview_strain_data.f90(100,18)
+LOOP END
+
+LOOP BEGIN at src/auxiliaries/combine_paraview_strain_data.f90(99,18)
+<Remainder>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/auxiliaries/combine_paraview_strain_data.f90(105,3)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at src/auxiliaries/combine_paraview_strain_data.f90(116,5)
+      remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+      LOOP BEGIN at src/auxiliaries/combine_paraview_strain_data.f90(245,5)
+         remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+         remark #15346: vector dependence: assumed OUTPUT dependence between x line 247 and x line 251
+      LOOP END
+   LOOP END
+
+   LOOP BEGIN at src/auxiliaries/combine_paraview_strain_data.f90(270,3)
+      remark #15542: loop was not vectorized: inner loop was already vectorized
+
+      LOOP BEGIN at src/auxiliaries/combine_paraview_strain_data.f90(278,12)
+         remark #15300: LOOP WAS VECTORIZED
+      LOOP END
+
+      LOOP BEGIN at src/auxiliaries/combine_paraview_strain_data.f90(278,12)
+      <Remainder>
+         remark #15301: REMAINDER LOOP WAS VECTORIZED
+      LOOP END
+
+      LOOP BEGIN at src/auxiliaries/combine_paraview_strain_data.f90(301,5)
+         remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+         remark #15346: vector dependence: assumed OUTPUT dependence between 175 line 302 and 175 line 304
+      LOOP END
+   LOOP END
+LOOP END
+===========================================================================

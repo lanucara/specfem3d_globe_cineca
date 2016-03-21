@@ -1,0 +1,723 @@
+
+Begin optimization report for: INTERPOLATE_MODEL
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/interpolate_model.F90(206,5)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed OUTPUT dependence between 1681 line 207 and 1681 line 207
+LOOP END
+
+LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/interpolate_model.F90(232,3)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed OUTPUT dependence between 1738 line 233 and 1738 line 233
+LOOP END
+
+LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/interpolate_model.F90(293,5)
+   remark #15527: loop was not vectorized: function call to memcpy cannot be vectorized
+LOOP END
+
+LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/interpolate_model.F90(328,5)
+   remark #15521: loop was not vectorized: explicitly compute the iteration count before executing the loop or try using canonical loop form
+LOOP END
+
+LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/interpolate_model.F90(372,5)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed FLOW dependence between 2014 line 372 and 2014 line 372
+LOOP END
+
+LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/interpolate_model.F90(466,3)
+   remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+   LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/interpolate_model.F90(466,3)
+      remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+      LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/interpolate_model.F90(466,3)
+         remark #15398: loop was not vectorized: loop was transformed to memset or memcpy
+      LOOP END
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/interpolate_model.F90(467,3)
+   remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+
+   LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/interpolate_model.F90(467,3)
+      remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+   LOOP END
+
+   LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/interpolate_model.F90(467,3)
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/interpolate_model.F90(470,5)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/interpolate_model.F90(471,7)
+      remark #15300: LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/interpolate_model.F90(471,7)
+   <Remainder>
+      remark #15301: REMAINDER LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/interpolate_model.F90(471,7)
+   <Remainder>
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/interpolate_model.F90(478,5)
+   remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+
+   LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/interpolate_model.F90(479,7)
+      remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+   LOOP END
+
+   LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/interpolate_model.F90(479,7)
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/interpolate_model.F90(497,9)
+   remark #15541: outer loop was not auto-vectorized: consider using SIMD directive   [ src/tomography/postprocess_sensitivity_kernels/interpolate_model.F90(492,7) ]
+
+   LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/interpolate_model.F90(492,7)
+      remark #15521: loop was not vectorized: explicitly compute the iteration count before executing the loop or try using canonical loop form
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/interpolate_model.F90(518,3)
+   remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+   LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/interpolate_model.F90(518,3)
+      remark #15398: loop was not vectorized: loop was transformed to memset or memcpy
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/interpolate_model.F90(519,3)
+   remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+   LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/interpolate_model.F90(519,3)
+      remark #15398: loop was not vectorized: loop was transformed to memset or memcpy
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/interpolate_model.F90(520,3)
+   remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+   LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/interpolate_model.F90(520,3)
+      remark #15398: loop was not vectorized: loop was transformed to memset or memcpy
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/interpolate_model.F90(521,3)
+   remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+   LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/interpolate_model.F90(521,3)
+      remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+      LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/interpolate_model.F90(521,3)
+         remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+         LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/interpolate_model.F90(521,3)
+            remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+            LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/interpolate_model.F90(521,3)
+               remark #15398: loop was not vectorized: loop was transformed to memset or memcpy
+            LOOP END
+         LOOP END
+      LOOP END
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/interpolate_model.F90(524,3)
+   remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+   LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/interpolate_model.F90(525,5)
+      remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+      remark #15346: vector dependence: assumed OUTPUT dependence between 1451 line 534 and 1451 line 558
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/interpolate_model.F90(572,5)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed OUTPUT dependence between 1451 line 573 and 1451 line 573
+LOOP END
+
+LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/interpolate_model.F90(579,3)
+   remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+   LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/interpolate_model.F90(579,3)
+      remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+      LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/interpolate_model.F90(579,3)
+         remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+         LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/interpolate_model.F90(579,3)
+            remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+            LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/interpolate_model.F90(579,3)
+               remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+               LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/interpolate_model.F90(579,3)
+                  remark #15398: loop was not vectorized: loop was transformed to memset or memcpy
+               LOOP END
+            LOOP END
+         LOOP END
+      LOOP END
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/interpolate_model.F90(581,3)
+   remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+   LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/interpolate_model.F90(582,5)
+      remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+      LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/interpolate_model.F90(595,7)
+         remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+         remark #15346: vector dependence: assumed FLOW dependence between 2552 line 599 and 2552 line 599
+      LOOP END
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/interpolate_model.F90(657,7)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/interpolate_model.F90(657,7)
+   <Peeled>
+      remark #15301: PEEL LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/interpolate_model.F90(657,7)
+      remark #15300: LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/interpolate_model.F90(657,7)
+   <Remainder>
+      remark #15301: REMAINDER LOOP WAS VECTORIZED
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/interpolate_model.F90(657,29)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/interpolate_model.F90(657,53)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/interpolate_model.F90(657,53)
+   <Peeled>
+      remark #15301: PEEL LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/interpolate_model.F90(657,53)
+      remark #15300: LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/interpolate_model.F90(657,53)
+   <Remainder>
+      remark #15301: REMAINDER LOOP WAS VECTORIZED
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/interpolate_model.F90(657,75)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/interpolate_model.F90(659,28)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/interpolate_model.F90(659,28)
+   <Peeled>
+      remark #15301: PEEL LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/interpolate_model.F90(659,28)
+      remark #15300: LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/interpolate_model.F90(659,28)
+   <Remainder>
+      remark #15301: REMAINDER LOOP WAS VECTORIZED
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/interpolate_model.F90(659,47)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/interpolate_model.F90(659,47)
+   <Peeled>
+      remark #15301: PEEL LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/interpolate_model.F90(659,47)
+      remark #15300: LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/interpolate_model.F90(659,47)
+   <Remainder>
+      remark #15301: REMAINDER LOOP WAS VECTORIZED
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/interpolate_model.F90(660,28)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/interpolate_model.F90(660,47)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/interpolate_model.F90(667,30)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/interpolate_model.F90(667,56)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/interpolate_model.F90(672,3)
+   remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+   LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/interpolate_model.F90(672,3)
+      remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+      LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/interpolate_model.F90(672,3)
+         remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+         LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/interpolate_model.F90(672,3)
+            remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+            LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/interpolate_model.F90(672,3)
+               remark #15398: loop was not vectorized: loop was transformed to memset or memcpy
+            LOOP END
+         LOOP END
+      LOOP END
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/interpolate_model.F90(676,15)
+   remark #15301: FUSED LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/interpolate_model.F90(676,34)
+LOOP END
+
+LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/interpolate_model.F90(680,43)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/interpolate_model.F90(696,5)
+   remark #15398: loop was not vectorized: loop was transformed to memset or memcpy
+LOOP END
+
+LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/interpolate_model.F90(703,7)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/interpolate_model.F90(704,9)
+      remark #15542: loop was not vectorized: inner loop was already vectorized
+
+      LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/interpolate_model.F90(708,11)
+      <Peeled>
+         remark #15301: PEEL LOOP WAS VECTORIZED
+      LOOP END
+
+      LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/interpolate_model.F90(708,11)
+         remark #15300: LOOP WAS VECTORIZED
+      LOOP END
+
+      LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/interpolate_model.F90(708,11)
+      <Remainder>
+         remark #15301: REMAINDER LOOP WAS VECTORIZED
+      LOOP END
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/interpolate_model.F90(746,7)
+   remark #15398: loop was not vectorized: loop was transformed to memset or memcpy
+LOOP END
+
+LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/interpolate_model.F90(747,7)
+   remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+   LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/interpolate_model.F90(747,7)
+      remark #15398: loop was not vectorized: loop was transformed to memset or memcpy
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/interpolate_model.F90(752,7)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed OUTPUT dependence between ispec line 759 and ispec line 759
+
+   LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/interpolate_model.F90(753,9)
+      remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+      remark #15346: vector dependence: assumed OUTPUT dependence between  line 774 and  line 774
+
+      LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/interpolate_model.F90(759,11)
+         remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+         remark #15346: vector dependence: assumed OUTPUT dependence between  line 774 and  line 774
+
+         LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/interpolate_model.F90(767,15)
+            remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+            remark #15346: vector dependence: assumed OUTPUT dependence between  line 774 and  line 774
+
+            LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/interpolate_model.F90(768,17)
+               remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+               remark #15346: vector dependence: assumed OUTPUT dependence between  line 774 and  line 774
+
+               LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/interpolate_model.F90(769,19)
+                  remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+                  remark #15346: vector dependence: assumed OUTPUT dependence between kdtree_search_mp_kdtree_nodes_lo line 780 and kdtree_search_mp_kdtree_nodes_lo line 782
+               LOOP END
+
+               LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/interpolate_model.F90(769,19)
+               LOOP END
+
+               LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/interpolate_model.F90(769,19)
+               LOOP END
+            LOOP END
+         LOOP END
+      LOOP END
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/interpolate_model.F90(831,5)
+   remark #15521: loop was not vectorized: explicitly compute the iteration count before executing the loop or try using canonical loop form
+LOOP END
+
+LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/interpolate_model.F90(874,5)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+LOOP END
+
+LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/interpolate_model.F90(900,3)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed OUTPUT dependence between 1451 line 903 and 1451 line 913
+LOOP END
+
+
+Non-optimizable loops:
+
+
+LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/interpolate_model.F90(882,3)
+   remark #15534: loop was not vectorized: loop contains arithmetic if or computed goto. Consider using if-then-else statement.    [ src/tomography/postprocess_sensitivity_kernels/interpolate_model.F90(681,20) ]
+LOOP END
+===========================================================================
+
+Begin optimization report for: GET_MODEL_VALUES_BRUTEFORCE
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/interpolate_model.F90(1509,3) inlined into src/tomography/postprocess_sensitivity_kernels/interpolate_model.F90(1940,14)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed OUTPUT dependence between ispec_selected line 1535 and ispec_selected line 1535
+
+   LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/interpolate_model.F90(1510,5) inlined into src/tomography/postprocess_sensitivity_kernels/interpolate_model.F90(1940,14)
+      remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+      remark #15346: vector dependence: assumed OUTPUT dependence between ispec_selected line 1535 and ispec_selected line 1535
+
+      LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/interpolate_model.F90(1523,7) inlined into src/tomography/postprocess_sensitivity_kernels/interpolate_model.F90(1940,14)
+         remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+         remark #15346: vector dependence: assumed OUTPUT dependence between ispec_selected line 1535 and ispec_selected line 1535
+
+         LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/interpolate_model.F90(1524,9) inlined into src/tomography/postprocess_sensitivity_kernels/interpolate_model.F90(1940,14)
+            remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+            remark #15346: vector dependence: assumed OUTPUT dependence between ispec_selected line 1535 and ispec_selected line 1535
+
+            LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/interpolate_model.F90(1525,11) inlined into src/tomography/postprocess_sensitivity_kernels/interpolate_model.F90(1940,14)
+               remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+               remark #15346: vector dependence: assumed ANTI dependence between distmin line 1532 and distmin line 1533
+            LOOP END
+
+            LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/interpolate_model.F90(1525,11) inlined into src/tomography/postprocess_sensitivity_kernels/interpolate_model.F90(1940,14)
+            LOOP END
+
+            LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/interpolate_model.F90(1525,11) inlined into src/tomography/postprocess_sensitivity_kernels/interpolate_model.F90(1940,14)
+            LOOP END
+         LOOP END
+
+         LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/interpolate_model.F90(1524,9) inlined into src/tomography/postprocess_sensitivity_kernels/interpolate_model.F90(1940,14)
+
+            LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/interpolate_model.F90(1525,11) inlined into src/tomography/postprocess_sensitivity_kernels/interpolate_model.F90(1940,14)
+            LOOP END
+
+            LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/interpolate_model.F90(1525,11) inlined into src/tomography/postprocess_sensitivity_kernels/interpolate_model.F90(1940,14)
+            LOOP END
+
+            LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/interpolate_model.F90(1525,11) inlined into src/tomography/postprocess_sensitivity_kernels/interpolate_model.F90(1940,14)
+            LOOP END
+         LOOP END
+
+         LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/interpolate_model.F90(1524,9) inlined into src/tomography/postprocess_sensitivity_kernels/interpolate_model.F90(1940,14)
+
+            LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/interpolate_model.F90(1525,11) inlined into src/tomography/postprocess_sensitivity_kernels/interpolate_model.F90(1940,14)
+            LOOP END
+
+            LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/interpolate_model.F90(1525,11) inlined into src/tomography/postprocess_sensitivity_kernels/interpolate_model.F90(1940,14)
+            LOOP END
+
+            LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/interpolate_model.F90(1525,11) inlined into src/tomography/postprocess_sensitivity_kernels/interpolate_model.F90(1940,14)
+            LOOP END
+         LOOP END
+      LOOP END
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/interpolate_model.F90(1645,3) inlined into src/tomography/postprocess_sensitivity_kernels/interpolate_model.F90(1940,14)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed ANTI dependence between distmin line 1655 and distmin line 1656
+
+   LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/interpolate_model.F90(1646,5) inlined into src/tomography/postprocess_sensitivity_kernels/interpolate_model.F90(1940,14)
+      remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+      remark #15346: vector dependence: assumed ANTI dependence between distmin line 1655 and distmin line 1656
+
+      LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/interpolate_model.F90(1647,7) inlined into src/tomography/postprocess_sensitivity_kernels/interpolate_model.F90(1940,14)
+         remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+         remark #15346: vector dependence: assumed ANTI dependence between distmin line 1655 and distmin line 1656
+      LOOP END
+
+      LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/interpolate_model.F90(1647,7) inlined into src/tomography/postprocess_sensitivity_kernels/interpolate_model.F90(1940,14)
+      LOOP END
+
+      LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/interpolate_model.F90(1647,7) inlined into src/tomography/postprocess_sensitivity_kernels/interpolate_model.F90(1940,14)
+      LOOP END
+
+      LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/interpolate_model.F90(1647,7) inlined into src/tomography/postprocess_sensitivity_kernels/interpolate_model.F90(1940,14)
+      LOOP END
+
+      LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/interpolate_model.F90(1647,7) inlined into src/tomography/postprocess_sensitivity_kernels/interpolate_model.F90(1940,14)
+      LOOP END
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/interpolate_model.F90(1685,5) inlined into src/tomography/postprocess_sensitivity_kernels/interpolate_model.F90(1940,14)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed OUTPUT dependence between  line 1693 and  line 1711
+LOOP END
+
+LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/interpolate_model.F90(1726,5) inlined into src/tomography/postprocess_sensitivity_kernels/interpolate_model.F90(1940,14)
+   remark #15520: loop was not vectorized: loop with early exits cannot be vectorized unless it meets search loop idiom criteria
+LOOP END
+
+LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/interpolate_model.F90(1018,9)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+LOOP END
+
+LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/interpolate_model.F90(1028,9)
+<Peeled>
+   remark #15301: PEEL LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/interpolate_model.F90(1028,9)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/interpolate_model.F90(1028,9)
+<Remainder>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/interpolate_model.F90(1028,9)
+<Remainder>
+LOOP END
+
+
+Non-optimizable loops:
+
+
+LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/interpolate_model.F90(1038,3)
+   remark #15536: loop was not vectorized: inner loop throttling prevents vectorization of this outer loop. Refer to inner loop message for more details.
+
+   LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/interpolate_model.F90(1037,5)
+      remark #15536: loop was not vectorized: inner loop throttling prevents vectorization of this outer loop. Refer to inner loop message for more details.
+
+      LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/interpolate_model.F90(1036,7)
+         remark #15529: loop was not vectorized: volatile assignment was not vectorized. Try using non-volatile assignment.   [ src/tomography/postprocess_sensitivity_kernels/interpolate_model.F90(1455,14) ]
+      LOOP END
+   LOOP END
+LOOP END
+===========================================================================
+
+Begin optimization report for: GET_MODEL_VALUES_KDTREE
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/interpolate_model.F90(1350,11)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/interpolate_model.F90(1219,5)
+      remark #15542: loop was not vectorized: inner loop was already vectorized
+
+      LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/interpolate_model.F90(1220,7)
+         remark #15542: loop was not vectorized: inner loop was already vectorized
+
+         LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/interpolate_model.F90(1349,9)
+            remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+         LOOP END
+
+         LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/interpolate_model.F90(1349,9)
+            remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+         LOOP END
+
+         LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/interpolate_model.F90(1366,9)
+         <Peeled>
+            remark #15301: PEEL LOOP WAS VECTORIZED
+         LOOP END
+
+         LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/interpolate_model.F90(1366,9)
+            remark #15300: LOOP WAS VECTORIZED
+         LOOP END
+
+         LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/interpolate_model.F90(1366,9)
+         <Remainder>
+            remark #15301: REMAINDER LOOP WAS VECTORIZED
+         LOOP END
+
+         LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/interpolate_model.F90(1366,9)
+         <Remainder>
+         LOOP END
+      LOOP END
+   LOOP END
+LOOP END
+===========================================================================
+
+Begin optimization report for: LOCATE_SINGLE
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/interpolate_model.F90(1651,15)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed ANTI dependence between distmin line 1655 and distmin line 1656
+
+   LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/interpolate_model.F90(1646,5)
+      remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+      remark #15346: vector dependence: assumed ANTI dependence between distmin line 1655 and distmin line 1656
+
+      LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/interpolate_model.F90(1647,7)
+         remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+         remark #15346: vector dependence: assumed ANTI dependence between distmin line 1655 and distmin line 1656
+      LOOP END
+
+      LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/interpolate_model.F90(1647,7)
+      LOOP END
+
+      LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/interpolate_model.F90(1647,7)
+      LOOP END
+
+      LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/interpolate_model.F90(1647,7)
+      LOOP END
+
+      LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/interpolate_model.F90(1647,7)
+      LOOP END
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/interpolate_model.F90(1686,21)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed OUTPUT dependence between  line 1693 and  line 1711
+LOOP END
+
+LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/interpolate_model.F90(1726,5)
+   remark #15520: loop was not vectorized: loop with early exits cannot be vectorized unless it meets search loop idiom criteria
+LOOP END
+===========================================================================
+
+Begin optimization report for: LOCATE
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/interpolate_model.F90(1509,3)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed OUTPUT dependence between rank_selected line 1534 and rank_selected line 1534
+
+   LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/interpolate_model.F90(1510,5)
+      remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+      remark #15346: vector dependence: assumed OUTPUT dependence between rank_selected line 1534 and rank_selected line 1534
+
+      LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/interpolate_model.F90(1523,7)
+         remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+         remark #15346: vector dependence: assumed OUTPUT dependence between rank_selected line 1534 and rank_selected line 1534
+
+         LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/interpolate_model.F90(1524,9)
+            remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+            remark #15346: vector dependence: assumed OUTPUT dependence between rank_selected line 1534 and rank_selected line 1534
+
+            LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/interpolate_model.F90(1525,11)
+               remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+               remark #15346: vector dependence: assumed ANTI dependence between distmin line 1532 and distmin line 1533
+            LOOP END
+
+            LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/interpolate_model.F90(1525,11)
+            LOOP END
+
+            LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/interpolate_model.F90(1525,11)
+            LOOP END
+         LOOP END
+
+         LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/interpolate_model.F90(1524,9)
+
+            LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/interpolate_model.F90(1525,11)
+            LOOP END
+
+            LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/interpolate_model.F90(1525,11)
+            LOOP END
+
+            LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/interpolate_model.F90(1525,11)
+            LOOP END
+         LOOP END
+
+         LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/interpolate_model.F90(1524,9)
+
+            LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/interpolate_model.F90(1525,11)
+            LOOP END
+
+            LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/interpolate_model.F90(1525,11)
+            LOOP END
+
+            LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/interpolate_model.F90(1525,11)
+            LOOP END
+         LOOP END
+      LOOP END
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/interpolate_model.F90(1645,3) inlined into src/tomography/postprocess_sensitivity_kernels/interpolate_model.F90(2479,8)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed ANTI dependence between distmin line 1655 and distmin line 1656
+
+   LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/interpolate_model.F90(1646,5) inlined into src/tomography/postprocess_sensitivity_kernels/interpolate_model.F90(2479,8)
+      remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+      remark #15346: vector dependence: assumed ANTI dependence between distmin line 1655 and distmin line 1656
+
+      LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/interpolate_model.F90(1647,7) inlined into src/tomography/postprocess_sensitivity_kernels/interpolate_model.F90(2479,8)
+         remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+         remark #15346: vector dependence: assumed ANTI dependence between distmin line 1655 and distmin line 1656
+      LOOP END
+
+      LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/interpolate_model.F90(1647,7) inlined into src/tomography/postprocess_sensitivity_kernels/interpolate_model.F90(2479,8)
+      LOOP END
+
+      LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/interpolate_model.F90(1647,7) inlined into src/tomography/postprocess_sensitivity_kernels/interpolate_model.F90(2479,8)
+      LOOP END
+
+      LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/interpolate_model.F90(1647,7) inlined into src/tomography/postprocess_sensitivity_kernels/interpolate_model.F90(2479,8)
+      LOOP END
+
+      LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/interpolate_model.F90(1647,7) inlined into src/tomography/postprocess_sensitivity_kernels/interpolate_model.F90(2479,8)
+      LOOP END
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/interpolate_model.F90(1686,21) inlined into src/tomography/postprocess_sensitivity_kernels/interpolate_model.F90(2479,8)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed OUTPUT dependence between  line 1693 and  line 1711
+LOOP END
+
+LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/interpolate_model.F90(1726,5) inlined into src/tomography/postprocess_sensitivity_kernels/interpolate_model.F90(2479,8)
+   remark #15520: loop was not vectorized: loop with early exits cannot be vectorized unless it meets search loop idiom criteria
+LOOP END
+===========================================================================

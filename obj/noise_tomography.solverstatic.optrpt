@@ -1,0 +1,435 @@
+
+Begin optimization report for: READ_PARAMETERS_NOISE
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/specfem3D/noise_tomography.f90(243,3)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed FLOW dependence between xcoord line 54 and xcoord line 64
+
+   LOOP BEGIN at src/specfem3D/noise_tomography.f90(248,5)
+      remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+      remark #15346: vector dependence: assumed FLOW dependence between xcoord line 54 and xcoord line 64
+
+      LOOP BEGIN at src/specfem3D/noise_tomography.f90(249,7)
+         remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+      LOOP END
+   LOOP END
+LOOP END
+===========================================================================
+
+Begin optimization report for: COMPUTE_ARRAYS_SOURCE_NOISE
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/specfem3D/noise_tomography.f90(416,3)
+   remark #15398: loop was not vectorized: loop was transformed to memset or memcpy
+LOOP END
+
+LOOP BEGIN at src/specfem3D/noise_tomography.f90(417,3)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed FLOW dependence between 381 line 418 and 381 line 420
+LOOP END
+
+LOOP BEGIN at src/specfem3D/noise_tomography.f90(434,3)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed FLOW dependence between 381 line 435 and 381 line 437
+LOOP END
+
+LOOP BEGIN at src/specfem3D/noise_tomography.f90(451,3)
+   remark #15300: LOOP WAS VECTORIZED
+
+   LOOP BEGIN at src/specfem3D/noise_tomography.f90(452,5)
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/specfem3D/noise_tomography.f90(451,3)
+<Remainder>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/noise_tomography.f90(466,9)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at src/specfem3D/noise_tomography.f90(464,5)
+      remark #15542: loop was not vectorized: inner loop was already vectorized
+
+      LOOP BEGIN at src/specfem3D/noise_tomography.f90(465,7)
+         remark #15542: loop was not vectorized: inner loop was already vectorized
+
+         LOOP BEGIN at src/specfem3D/noise_tomography.f90(466,9)
+            remark #15300: LOOP WAS VECTORIZED
+
+            LOOP BEGIN at src/specfem3D/noise_tomography.f90(467,11)
+            LOOP END
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/noise_tomography.f90(466,9)
+         <Remainder>
+            remark #15301: REMAINDER LOOP WAS VECTORIZED
+         LOOP END
+      LOOP END
+   LOOP END
+
+   LOOP BEGIN at src/specfem3D/noise_tomography.f90(464,5)
+   <Remainder>
+      remark #15542: loop was not vectorized: inner loop was already vectorized
+
+      LOOP BEGIN at src/specfem3D/noise_tomography.f90(465,7)
+         remark #15542: loop was not vectorized: inner loop was already vectorized
+
+         LOOP BEGIN at src/specfem3D/noise_tomography.f90(466,9)
+            remark #15300: LOOP WAS VECTORIZED
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/noise_tomography.f90(466,9)
+         <Remainder>
+            remark #15301: REMAINDER LOOP WAS VECTORIZED
+         LOOP END
+      LOOP END
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/specfem3D/noise_tomography.f90(466,9)
+<Remainder>
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at src/specfem3D/noise_tomography.f90(464,5)
+      remark #15542: loop was not vectorized: inner loop was already vectorized
+
+      LOOP BEGIN at src/specfem3D/noise_tomography.f90(465,7)
+         remark #15542: loop was not vectorized: inner loop was already vectorized
+
+         LOOP BEGIN at src/specfem3D/noise_tomography.f90(466,9)
+            remark #15300: LOOP WAS VECTORIZED
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/noise_tomography.f90(466,9)
+         <Remainder>
+            remark #15301: REMAINDER LOOP WAS VECTORIZED
+         LOOP END
+      LOOP END
+   LOOP END
+LOOP END
+===========================================================================
+
+Begin optimization report for: SAVE_MASK_NOISE
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/specfem3D/noise_tomography.f90(318,3)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed OUTPUT dependence between val_x line 327 and val_x line 327
+
+   LOOP BEGIN at src/specfem3D/noise_tomography.f90(322,5)
+      remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+      remark #15346: vector dependence: assumed OUTPUT dependence between val_x line 327 and val_x line 327
+
+      LOOP BEGIN at src/specfem3D/noise_tomography.f90(323,7)
+         remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+      LOOP END
+   LOOP END
+LOOP END
+===========================================================================
+
+Begin optimization report for: PRINT_MASTER_DISTANCES_NOISE
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/specfem3D/noise_tomography.f90(517,3)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed OUTPUT dependence between lat line 519 and lat line 527
+LOOP END
+
+LOOP BEGIN at src/specfem3D/noise_tomography.f90(546,5)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed OUTPUT dependence between 827 line 548 and 827 line 548
+LOOP END
+===========================================================================
+
+Begin optimization report for: NOISE_ADD_SOURCE_MASTER_REC
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/specfem3D/noise_tomography.f90(594,11)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed OUTPUT dependence between accel_crust_mantle line 594 and accel_crust_mantle line 594
+
+   LOOP BEGIN at src/specfem3D/noise_tomography.f90(591,7)
+      remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+      remark #15346: vector dependence: assumed OUTPUT dependence between accel_crust_mantle line 594 and accel_crust_mantle line 594
+
+      LOOP BEGIN at src/specfem3D/noise_tomography.f90(592,9)
+         remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+         remark #15346: vector dependence: assumed OUTPUT dependence between accel_crust_mantle line 594 and accel_crust_mantle line 594
+
+         LOOP BEGIN at src/specfem3D/noise_tomography.f90(594,11)
+            remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/noise_tomography.f90(594,11)
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/noise_tomography.f90(594,11)
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/noise_tomography.f90(594,11)
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/noise_tomography.f90(594,11)
+         LOOP END
+      LOOP END
+
+      LOOP BEGIN at src/specfem3D/noise_tomography.f90(592,9)
+
+         LOOP BEGIN at src/specfem3D/noise_tomography.f90(594,11)
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/noise_tomography.f90(594,11)
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/noise_tomography.f90(594,11)
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/noise_tomography.f90(594,11)
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/noise_tomography.f90(594,11)
+         LOOP END
+      LOOP END
+
+      LOOP BEGIN at src/specfem3D/noise_tomography.f90(592,9)
+
+         LOOP BEGIN at src/specfem3D/noise_tomography.f90(594,11)
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/noise_tomography.f90(594,11)
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/noise_tomography.f90(594,11)
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/noise_tomography.f90(594,11)
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/noise_tomography.f90(594,11)
+         LOOP END
+      LOOP END
+
+      LOOP BEGIN at src/specfem3D/noise_tomography.f90(592,9)
+
+         LOOP BEGIN at src/specfem3D/noise_tomography.f90(594,11)
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/noise_tomography.f90(594,11)
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/noise_tomography.f90(594,11)
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/noise_tomography.f90(594,11)
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/noise_tomography.f90(594,11)
+         LOOP END
+      LOOP END
+
+      LOOP BEGIN at src/specfem3D/noise_tomography.f90(592,9)
+
+         LOOP BEGIN at src/specfem3D/noise_tomography.f90(594,11)
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/noise_tomography.f90(594,11)
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/noise_tomography.f90(594,11)
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/noise_tomography.f90(594,11)
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/noise_tomography.f90(594,11)
+         LOOP END
+      LOOP END
+   LOOP END
+LOOP END
+===========================================================================
+
+Begin optimization report for: NOISE_SAVE_SURFACE_MOVIE
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/specfem3D/noise_tomography.f90(639,5)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed ANTI dependence between specfem_par_noise_mp_noise_surfa line 645 and specfem_par_noise_mp_noise_surfa line 645
+
+   LOOP BEGIN at src/specfem3D/noise_tomography.f90(642,7)
+      remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+      remark #15346: vector dependence: assumed ANTI dependence between specfem_par_noise_mp_noise_surfa line 645 and specfem_par_noise_mp_noise_surfa line 645
+
+      LOOP BEGIN at src/specfem3D/noise_tomography.f90(643,9)
+         remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+         remark #15346: vector dependence: assumed ANTI dependence between specfem_par_noise_mp_noise_surfa line 645 and specfem_par_noise_mp_noise_surfa line 645
+
+         LOOP BEGIN at src/specfem3D/noise_tomography.f90(645,11)
+            remark #15398: loop was not vectorized: loop was transformed to memset or memcpy
+
+            LOOP BEGIN at src/specfem3D/noise_tomography.f90(645,11)
+            <Multiversioned v2>
+            LOOP END
+
+            LOOP BEGIN at src/specfem3D/noise_tomography.f90(645,11)
+            <Remainder, Multiversioned v2>
+            LOOP END
+         LOOP END
+      LOOP END
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/specfem3D/noise_tomography.f90(691,3)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at src/specfem3D/noise_tomography.f90(691,3)
+      remark #15542: loop was not vectorized: inner loop was already vectorized
+
+      LOOP BEGIN at src/specfem3D/noise_tomography.f90(691,3)
+         remark #15542: loop was not vectorized: inner loop was already vectorized
+
+         LOOP BEGIN at src/specfem3D/noise_tomography.f90(691,3)
+            remark #15542: loop was not vectorized: inner loop was already vectorized
+
+            LOOP BEGIN at src/specfem3D/noise_tomography.f90(691,3)
+            <Peeled, Multiversioned v2>
+               remark #15301: PEEL LOOP WAS VECTORIZED
+            LOOP END
+
+            LOOP BEGIN at src/specfem3D/noise_tomography.f90(691,3)
+            <Multiversioned v2>
+               remark #15300: LOOP WAS VECTORIZED
+            LOOP END
+
+            LOOP BEGIN at src/specfem3D/noise_tomography.f90(691,3)
+            <Alternate Alignment Vectorized Loop, Multiversioned v2>
+            LOOP END
+
+            LOOP BEGIN at src/specfem3D/noise_tomography.f90(691,3)
+            <Remainder, Multiversioned v2>
+            LOOP END
+         LOOP END
+      LOOP END
+   LOOP END
+LOOP END
+===========================================================================
+
+Begin optimization report for: NOISE_READ_ADD_SURFACE_MOVIE
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/specfem3D/noise_tomography.f90(853,3)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at src/specfem3D/noise_tomography.f90(853,3)
+      remark #15542: loop was not vectorized: inner loop was already vectorized
+
+      LOOP BEGIN at src/specfem3D/noise_tomography.f90(853,3)
+         remark #15542: loop was not vectorized: inner loop was already vectorized
+
+         LOOP BEGIN at src/specfem3D/noise_tomography.f90(853,3)
+            remark #15542: loop was not vectorized: inner loop was already vectorized
+
+            LOOP BEGIN at src/specfem3D/noise_tomography.f90(853,3)
+            <Peeled, Multiversioned v2>
+               remark #15301: PEEL LOOP WAS VECTORIZED
+            LOOP END
+
+            LOOP BEGIN at src/specfem3D/noise_tomography.f90(853,3)
+            <Multiversioned v2>
+               remark #15300: LOOP WAS VECTORIZED
+            LOOP END
+
+            LOOP BEGIN at src/specfem3D/noise_tomography.f90(853,3)
+            <Alternate Alignment Vectorized Loop, Multiversioned v2>
+            LOOP END
+
+            LOOP BEGIN at src/specfem3D/noise_tomography.f90(853,3)
+            <Remainder, Multiversioned v2>
+            LOOP END
+         LOOP END
+      LOOP END
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/specfem3D/noise_tomography.f90(867,5)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed FLOW dependence between accel line 892 and accel line 892
+
+   LOOP BEGIN at src/specfem3D/noise_tomography.f90(873,7)
+      remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+      remark #15346: vector dependence: assumed FLOW dependence between accel line 892 and accel line 892
+
+      LOOP BEGIN at src/specfem3D/noise_tomography.f90(874,9)
+         remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+         remark #15346: vector dependence: assumed FLOW dependence between accel line 892 and accel line 892
+      LOOP END
+   LOOP END
+LOOP END
+===========================================================================
+
+Begin optimization report for: COMPUTE_KERNELS_STRENGTH_NOISE
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/specfem3D/noise_tomography.f90(948,5)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed OUTPUT dependence between specfem_par_noise_mp_sigma_kl_cr line 972 and specfem_par_noise_mp_sigma_kl_cr line 972
+
+   LOOP BEGIN at src/specfem3D/noise_tomography.f90(954,7)
+      remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+      remark #15346: vector dependence: assumed FLOW dependence between ipoin line 956 and ipoin line 955
+
+      LOOP BEGIN at src/specfem3D/noise_tomography.f90(955,9)
+         remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+      LOOP END
+   LOOP END
+LOOP END
+===========================================================================
+
+Begin optimization report for: SAVE_KERNELS_STRENGTH_NOISE
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/specfem3D/noise_tomography.f90(1008,3)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at src/specfem3D/noise_tomography.f90(1008,3)
+      remark #15542: loop was not vectorized: inner loop was already vectorized
+
+      LOOP BEGIN at src/specfem3D/noise_tomography.f90(1008,3)
+         remark #15542: loop was not vectorized: inner loop was already vectorized
+
+         LOOP BEGIN at src/specfem3D/noise_tomography.f90(1008,3)
+         <Peeled>
+            remark #15301: PEEL LOOP WAS VECTORIZED
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/noise_tomography.f90(1008,3)
+            remark #15300: LOOP WAS VECTORIZED
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/noise_tomography.f90(1008,3)
+         <Remainder>
+            remark #15301: REMAINDER LOOP WAS VECTORIZED
+         LOOP END
+      LOOP END
+   LOOP END
+LOOP END
+===========================================================================

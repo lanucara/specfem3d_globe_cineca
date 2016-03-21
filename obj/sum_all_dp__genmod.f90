@@ -1,0 +1,9 @@
+        !COMPILER-GENERATED INTERFACE MODULE: Fri Mar 11 15:45:27 2016
+        MODULE SUM_ALL_DP__genmod
+          INTERFACE 
+            SUBROUTINE SUM_ALL_DP(SENDBUF,RECVBUF)
+              REAL(KIND=8) :: SENDBUF
+              REAL(KIND=8) :: RECVBUF
+            END SUBROUTINE SUM_ALL_DP
+          END INTERFACE 
+        END MODULE SUM_ALL_DP__genmod

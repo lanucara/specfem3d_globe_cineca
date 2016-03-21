@@ -1,0 +1,534 @@
+
+Begin optimization report for: TEST_MPI_NEIGHBOURS
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/meshfem3D/test_MPI_interfaces.f90(90,3)
+   remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+   LOOP BEGIN at src/meshfem3D/test_MPI_interfaces.f90(97,5)
+      remark #15398: loop was not vectorized: loop was transformed to memset or memcpy
+   LOOP END
+
+   LOOP BEGIN at src/meshfem3D/test_MPI_interfaces.f90(100,5)
+      remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+      remark #15346: vector dependence: assumed FLOW dependence between 81 line 105 and 81 line 121
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/test_MPI_interfaces.f90(140,5)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at src/meshfem3D/test_MPI_interfaces.f90(140,5)
+   <Peeled>
+   LOOP END
+
+   LOOP BEGIN at src/meshfem3D/test_MPI_interfaces.f90(140,5)
+      remark #15300: LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/meshfem3D/test_MPI_interfaces.f90(140,5)
+   <Remainder>
+      remark #15301: REMAINDER LOOP WAS VECTORIZED
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/test_MPI_interfaces.f90(144,5)
+   remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+   LOOP BEGIN at src/meshfem3D/test_MPI_interfaces.f90(144,5)
+      remark #15398: loop was not vectorized: loop was transformed to memset or memcpy
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/test_MPI_interfaces.f90(149,5)
+   remark #15398: loop was not vectorized: loop was transformed to memset or memcpy
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/test_MPI_interfaces.f90(152,5)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at src/meshfem3D/test_MPI_interfaces.f90(152,5)
+   <Peeled, Multiversioned v2>
+      remark #15301: PEEL LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/meshfem3D/test_MPI_interfaces.f90(152,5)
+   <Multiversioned v2>
+      remark #15300: LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/meshfem3D/test_MPI_interfaces.f90(152,5)
+   <Alternate Alignment Vectorized Loop, Multiversioned v2>
+   LOOP END
+
+   LOOP BEGIN at src/meshfem3D/test_MPI_interfaces.f90(152,5)
+   <Remainder, Multiversioned v2>
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/test_MPI_interfaces.f90(153,5)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at src/meshfem3D/test_MPI_interfaces.f90(153,5)
+   <Peeled, Multiversioned v2>
+      remark #15301: PEEL LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/meshfem3D/test_MPI_interfaces.f90(153,5)
+   <Multiversioned v2>
+      remark #15300: LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/meshfem3D/test_MPI_interfaces.f90(153,5)
+   <Alternate Alignment Vectorized Loop, Multiversioned v2>
+   LOOP END
+
+   LOOP BEGIN at src/meshfem3D/test_MPI_interfaces.f90(153,5)
+   <Remainder, Multiversioned v2>
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/test_MPI_interfaces.f90(159,12)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at src/meshfem3D/test_MPI_interfaces.f90(162,14)
+      remark #15542: loop was not vectorized: inner loop was already vectorized
+
+      LOOP BEGIN at src/meshfem3D/test_MPI_interfaces.f90(162,14)
+      <Multiversioned v2>
+         remark #15300: LOOP WAS VECTORIZED
+      LOOP END
+
+      LOOP BEGIN at src/meshfem3D/test_MPI_interfaces.f90(162,14)
+      <Remainder, Multiversioned v2>
+      LOOP END
+   LOOP END
+
+   LOOP BEGIN at src/meshfem3D/test_MPI_interfaces.f90(162,21)
+      remark #15542: loop was not vectorized: inner loop was already vectorized
+
+      LOOP BEGIN at src/meshfem3D/test_MPI_interfaces.f90(162,21)
+      <Multiversioned v2>
+         remark #15300: LOOP WAS VECTORIZED
+      LOOP END
+
+      LOOP BEGIN at src/meshfem3D/test_MPI_interfaces.f90(162,21)
+      <Alternate Alignment Vectorized Loop, Multiversioned v2>
+      LOOP END
+
+      LOOP BEGIN at src/meshfem3D/test_MPI_interfaces.f90(162,21)
+      <Remainder, Multiversioned v2>
+      LOOP END
+   LOOP END
+
+   LOOP BEGIN at src/meshfem3D/test_MPI_interfaces.f90(163,14)
+      remark #15300: LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/meshfem3D/test_MPI_interfaces.f90(163,14)
+   <Remainder>
+      remark #15301: REMAINDER LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/meshfem3D/test_MPI_interfaces.f90(163,21)
+      remark #15300: LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/meshfem3D/test_MPI_interfaces.f90(163,21)
+   <Alternate Alignment Vectorized Loop>
+   LOOP END
+
+   LOOP BEGIN at src/meshfem3D/test_MPI_interfaces.f90(163,21)
+   <Remainder>
+      remark #15301: REMAINDER LOOP WAS VECTORIZED
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/test_MPI_interfaces.f90(181,16)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at src/meshfem3D/test_MPI_interfaces.f90(181,7)
+      remark #15542: loop was not vectorized: inner loop was already vectorized
+
+      LOOP BEGIN at src/meshfem3D/test_MPI_interfaces.f90(198,9)
+         remark #15520: loop was not vectorized: loop with early exits cannot be vectorized unless it meets search loop idiom criteria
+      LOOP END
+
+      LOOP BEGIN at src/meshfem3D/test_MPI_interfaces.f90(215,11)
+         remark #15300: LOOP WAS VECTORIZED
+      LOOP END
+
+      LOOP BEGIN at src/meshfem3D/test_MPI_interfaces.f90(215,11)
+      <Remainder>
+         remark #15301: REMAINDER LOOP WAS VECTORIZED
+      LOOP END
+
+      LOOP BEGIN at src/meshfem3D/test_MPI_interfaces.f90(217,11)
+         remark #15542: loop was not vectorized: inner loop was already vectorized
+
+         LOOP BEGIN at src/meshfem3D/test_MPI_interfaces.f90(217,11)
+         <Multiversioned v2>
+            remark #15300: LOOP WAS VECTORIZED
+         LOOP END
+
+         LOOP BEGIN at src/meshfem3D/test_MPI_interfaces.f90(217,11)
+         <Remainder, Multiversioned v2>
+         LOOP END
+      LOOP END
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/test_MPI_interfaces.f90(225,59)
+<Peeled>
+   remark #15301: PEEL LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/test_MPI_interfaces.f90(225,59)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/test_MPI_interfaces.f90(225,59)
+<Remainder>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+===========================================================================
+
+Begin optimization report for: TEST_MPI_CM
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/meshfem3D/test_MPI_interfaces.f90(264,3)
+   remark #15398: loop was not vectorized: loop was transformed to memset or memcpy
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/test_MPI_interfaces.f90(265,3)
+   remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+   LOOP BEGIN at src/meshfem3D/test_MPI_interfaces.f90(265,3)
+      remark #15398: loop was not vectorized: loop was transformed to memset or memcpy
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/test_MPI_interfaces.f90(266,3)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed OUTPUT dependence between TEST_FLAG_VECTOR line 270 and TEST_FLAG_VECTOR line 270
+
+   LOOP BEGIN at src/meshfem3D/test_MPI_interfaces.f90(267,5)
+      remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+      remark #15346: vector dependence: assumed FLOW dependence between VALENCE line 272 and VALENCE line 272
+   LOOP END
+
+   LOOP BEGIN at src/meshfem3D/test_MPI_interfaces.f90(267,5)
+   <Remainder>
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/test_MPI_interfaces.f90(276,7)
+<Peeled>
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/test_MPI_interfaces.f90(276,7)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/test_MPI_interfaces.f90(276,7)
+<Remainder>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/test_MPI_interfaces.f90(280,13)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at src/meshfem3D/test_MPI_interfaces.f90(280,13)
+   <Peeled>
+      remark #15301: PEEL LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/meshfem3D/test_MPI_interfaces.f90(280,13)
+      remark #15300: LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/meshfem3D/test_MPI_interfaces.f90(280,13)
+   <Remainder>
+      remark #15301: REMAINDER LOOP WAS VECTORIZED
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/test_MPI_interfaces.f90(285,7)
+<Peeled>
+   remark #15301: PEEL LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/test_MPI_interfaces.f90(285,7)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/test_MPI_interfaces.f90(285,7)
+<Remainder>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/test_MPI_interfaces.f90(297,3)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at src/meshfem3D/test_MPI_interfaces.f90(297,3)
+   <Peeled>
+      remark #15301: PEEL LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/meshfem3D/test_MPI_interfaces.f90(297,3)
+      remark #15300: LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/meshfem3D/test_MPI_interfaces.f90(297,3)
+   <Remainder>
+      remark #15301: REMAINDER LOOP WAS VECTORIZED
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/test_MPI_interfaces.f90(307,3)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at src/meshfem3D/test_MPI_interfaces.f90(307,3)
+   <Peeled>
+      remark #15301: PEEL LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/meshfem3D/test_MPI_interfaces.f90(307,3)
+      remark #15300: LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/meshfem3D/test_MPI_interfaces.f90(307,3)
+   <Remainder>
+      remark #15301: REMAINDER LOOP WAS VECTORIZED
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/test_MPI_interfaces.f90(311,3)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed FLOW dependence between i line 313 and i line 313
+LOOP END
+===========================================================================
+
+Begin optimization report for: TEST_MPI_OC
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/meshfem3D/test_MPI_interfaces.f90(380,3)
+   remark #15398: loop was not vectorized: loop was transformed to memset or memcpy
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/test_MPI_interfaces.f90(381,3)
+   remark #15398: loop was not vectorized: loop was transformed to memset or memcpy
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/test_MPI_interfaces.f90(382,3)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed OUTPUT dependence between TEST_FLAG line 385 and TEST_FLAG line 385
+
+   LOOP BEGIN at src/meshfem3D/test_MPI_interfaces.f90(383,5)
+      remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+      remark #15346: vector dependence: assumed FLOW dependence between VALENCE line 387 and VALENCE line 387
+   LOOP END
+
+   LOOP BEGIN at src/meshfem3D/test_MPI_interfaces.f90(383,5)
+   <Remainder>
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/test_MPI_interfaces.f90(390,7)
+<Peeled>
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/test_MPI_interfaces.f90(390,7)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/test_MPI_interfaces.f90(390,7)
+<Remainder>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/test_MPI_interfaces.f90(393,13)
+<Peeled>
+   remark #15301: PEEL LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/test_MPI_interfaces.f90(393,13)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/test_MPI_interfaces.f90(393,13)
+<Remainder>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/test_MPI_interfaces.f90(398,7)
+<Peeled>
+   remark #15301: PEEL LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/test_MPI_interfaces.f90(398,7)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/test_MPI_interfaces.f90(398,7)
+<Remainder>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/test_MPI_interfaces.f90(408,3)
+<Peeled>
+   remark #15301: PEEL LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/test_MPI_interfaces.f90(408,3)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/test_MPI_interfaces.f90(408,3)
+<Remainder>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/test_MPI_interfaces.f90(419,3)
+<Peeled>
+   remark #15301: PEEL LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/test_MPI_interfaces.f90(419,3)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/test_MPI_interfaces.f90(419,3)
+<Remainder>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/test_MPI_interfaces.f90(423,3)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed FLOW dependence between i line 425 and i line 425
+LOOP END
+===========================================================================
+
+Begin optimization report for: TEST_MPI_IC
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/meshfem3D/test_MPI_interfaces.f90(489,3)
+   remark #15398: loop was not vectorized: loop was transformed to memset or memcpy
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/test_MPI_interfaces.f90(490,3)
+   remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+   LOOP BEGIN at src/meshfem3D/test_MPI_interfaces.f90(490,3)
+      remark #15398: loop was not vectorized: loop was transformed to memset or memcpy
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/test_MPI_interfaces.f90(491,3)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed OUTPUT dependence between TEST_FLAG_VECTOR line 495 and TEST_FLAG_VECTOR line 495
+
+   LOOP BEGIN at src/meshfem3D/test_MPI_interfaces.f90(492,5)
+      remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+      remark #15346: vector dependence: assumed FLOW dependence between VALENCE line 497 and VALENCE line 497
+   LOOP END
+
+   LOOP BEGIN at src/meshfem3D/test_MPI_interfaces.f90(492,5)
+   <Remainder>
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/test_MPI_interfaces.f90(500,7)
+<Peeled>
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/test_MPI_interfaces.f90(500,7)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/test_MPI_interfaces.f90(500,7)
+<Remainder>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/test_MPI_interfaces.f90(503,13)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at src/meshfem3D/test_MPI_interfaces.f90(503,13)
+   <Peeled>
+      remark #15301: PEEL LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/meshfem3D/test_MPI_interfaces.f90(503,13)
+      remark #15300: LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/meshfem3D/test_MPI_interfaces.f90(503,13)
+   <Remainder>
+      remark #15301: REMAINDER LOOP WAS VECTORIZED
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/test_MPI_interfaces.f90(508,7)
+<Peeled>
+   remark #15301: PEEL LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/test_MPI_interfaces.f90(508,7)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/test_MPI_interfaces.f90(508,7)
+<Remainder>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/test_MPI_interfaces.f90(518,3)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at src/meshfem3D/test_MPI_interfaces.f90(518,3)
+   <Peeled>
+      remark #15301: PEEL LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/meshfem3D/test_MPI_interfaces.f90(518,3)
+      remark #15300: LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/meshfem3D/test_MPI_interfaces.f90(518,3)
+   <Remainder>
+      remark #15301: REMAINDER LOOP WAS VECTORIZED
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/test_MPI_interfaces.f90(528,3)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at src/meshfem3D/test_MPI_interfaces.f90(528,3)
+   <Peeled>
+      remark #15301: PEEL LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/meshfem3D/test_MPI_interfaces.f90(528,3)
+      remark #15300: LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/meshfem3D/test_MPI_interfaces.f90(528,3)
+   <Remainder>
+      remark #15301: REMAINDER LOOP WAS VECTORIZED
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/test_MPI_interfaces.f90(532,3)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed FLOW dependence between i line 534 and i line 534
+LOOP END
+===========================================================================

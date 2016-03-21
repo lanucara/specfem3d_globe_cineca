@@ -1,0 +1,52 @@
+
+Begin optimization report for: COMPUTE_COORD_MAIN_MESH
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/meshfem3D/compute_coordinates_grid.f90(240,9)
+<Peeled, Distributed chunk1>
+   remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/compute_coordinates_grid.f90(240,9)
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/compute_coordinates_grid.f90(254,9)
+<Peeled, Distributed chunk1>
+   remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/compute_coordinates_grid.f90(254,9)
+LOOP END
+
+
+Non-optimizable loops:
+
+
+LOOP BEGIN at src/meshfem3D/compute_coordinates_grid.f90(273,3)
+   remark #15534: loop was not vectorized: loop contains arithmetic if or computed goto. Consider using if-then-else statement.    [ src/meshfem3D/compute_coordinates_grid.f90(166,20) ]
+LOOP END
+===========================================================================
+
+Begin optimization report for: COMPUTE_OBSERVATION_SURFACE
+
+    Report from: Vector optimizations [vec]
+
+
+
+Non-optimizable loops:
+
+
+LOOP BEGIN at src/meshfem3D/compute_coordinates_grid.f90(516,3)
+   remark #15536: loop was not vectorized: inner loop throttling prevents vectorization of this outer loop. Refer to inner loop message for more details.
+
+   LOOP BEGIN at src/meshfem3D/compute_coordinates_grid.f90(515,5)
+      remark #15536: loop was not vectorized: inner loop throttling prevents vectorization of this outer loop. Refer to inner loop message for more details.
+
+      LOOP BEGIN at src/meshfem3D/compute_coordinates_grid.f90(514,7)
+         remark #15534: loop was not vectorized: loop contains arithmetic if or computed goto. Consider using if-then-else statement.    [ src/meshfem3D/compute_coordinates_grid.f90(432,20) ]
+      LOOP END
+   LOOP END
+LOOP END
+===========================================================================

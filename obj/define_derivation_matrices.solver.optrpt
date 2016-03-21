@@ -1,0 +1,87 @@
+
+Begin optimization report for: DEFINE_DERIVATION_MATRICES
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/specfem3D/define_derivation_matrices.f90(68,3)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed FLOW dependence between 30 line 70 and 30 line 70
+
+   LOOP BEGIN at src/specfem3D/define_derivation_matrices.f90(69,5)
+      remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+      remark #15346: vector dependence: assumed FLOW dependence between 30 line 70 and 30 line 70
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/specfem3D/define_derivation_matrices.f90(75,3)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed FLOW dependence between 38 line 77 and 38 line 77
+
+   LOOP BEGIN at src/specfem3D/define_derivation_matrices.f90(76,5)
+      remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+      remark #15346: vector dependence: assumed FLOW dependence between 38 line 77 and 38 line 77
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/specfem3D/define_derivation_matrices.f90(82,3)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed FLOW dependence between 46 line 84 and 46 line 84
+
+   LOOP BEGIN at src/specfem3D/define_derivation_matrices.f90(83,5)
+      remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+      remark #15346: vector dependence: assumed FLOW dependence between 46 line 84 and 46 line 84
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/specfem3D/define_derivation_matrices.f90(90,5)
+<Peeled>
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at src/specfem3D/define_derivation_matrices.f90(89,3)
+   <Peeled>
+      remark #15301: PARTIAL LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/specfem3D/define_derivation_matrices.f90(95,3)
+   <Peeled>
+   LOOP END
+
+   LOOP BEGIN at src/specfem3D/define_derivation_matrices.f90(101,3)
+   <Peeled>
+   LOOP END
+
+   LOOP BEGIN at src/specfem3D/define_derivation_matrices.f90(107,3)
+   LOOP END
+
+   LOOP BEGIN at src/specfem3D/define_derivation_matrices.f90(107,3)
+   <Peeled>
+   LOOP END
+
+   LOOP BEGIN at src/specfem3D/define_derivation_matrices.f90(107,3)
+   <Peeled>
+   LOOP END
+
+   LOOP BEGIN at src/specfem3D/define_derivation_matrices.f90(107,3)
+   <Peeled>
+   LOOP END
+
+   LOOP BEGIN at src/specfem3D/define_derivation_matrices.f90(107,3)
+   LOOP END
+
+   LOOP BEGIN at src/specfem3D/define_derivation_matrices.f90(89,3)
+   <Peeled, Distributed chunk2>
+      remark #15301: PARTIAL LOOP WAS VECTORIZED
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/specfem3D/define_derivation_matrices.f90(96,5)
+<Peeled>
+LOOP END
+
+LOOP BEGIN at src/specfem3D/define_derivation_matrices.f90(102,5)
+LOOP END
+
+LOOP BEGIN at src/specfem3D/define_derivation_matrices.f90(108,5)
+LOOP END
+===========================================================================

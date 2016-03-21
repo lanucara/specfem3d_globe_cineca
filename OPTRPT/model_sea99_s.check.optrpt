@@ -1,0 +1,60 @@
+
+Begin optimization report for: MODEL_SEA99_S
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/meshfem3D/model_sea99_s.f90(179,6)
+   remark #15520: loop was not vectorized: loop with early exits cannot be vectorized unless it meets search loop idiom criteria
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_sea99_s.f90(211,12)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_sea99_s.f90(211,12)
+<Remainder>
+LOOP END
+===========================================================================
+
+Begin optimization report for: READ_SEA99_S_MODEL
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/meshfem3D/model_sea99_s.f90(122,3)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed OUTPUT dependence between 114 line 123 and 114 line 123
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_sea99_s.f90(138,3)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed OUTPUT dependence between 114 line 140 and 114 line 140
+
+   LOOP BEGIN at src/meshfem3D/model_sea99_s.f90(139,6)
+      remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+      remark #15346: vector dependence: assumed OUTPUT dependence between 114 line 140 and 114 line 140
+   LOOP END
+LOOP END
+===========================================================================
+
+Begin optimization report for: MODEL_SEA99_S_BROADCAST
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/meshfem3D/model_sea99_s.f90(122,3) inlined into src/meshfem3D/model_sea99_s.f90(82,20)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed OUTPUT dependence between 114 line 123 and 114 line 123
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_sea99_s.f90(138,3) inlined into src/meshfem3D/model_sea99_s.f90(82,20)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed OUTPUT dependence between 114 line 140 and 114 line 140
+
+   LOOP BEGIN at src/meshfem3D/model_sea99_s.f90(139,6) inlined into src/meshfem3D/model_sea99_s.f90(82,20)
+      remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+      remark #15346: vector dependence: assumed OUTPUT dependence between 114 line 140 and 114 line 140
+   LOOP END
+LOOP END
+===========================================================================

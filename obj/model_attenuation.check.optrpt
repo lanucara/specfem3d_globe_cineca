@@ -1,0 +1,1543 @@
+
+Begin optimization report for: ATTENUATION_TAU_SIGMA
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/meshfem3D/model_attenuation.f90(410,3)
+<Peeled>
+   remark #15301: PEEL LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_attenuation.f90(410,3)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_attenuation.f90(410,3)
+<Remainder>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+===========================================================================
+
+Begin optimization report for: ATTENUATION_SIMPLEX_SETUP
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/meshfem3D/model_attenuation.f90(543,3)
+<Peeled, Multiversioned v1>
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_attenuation.f90(543,3)
+<Multiversioned v1>
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_attenuation.f90(543,3)
+<Alternate Alignment Vectorized Loop, Multiversioned v1>
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_attenuation.f90(543,3)
+<Remainder, Multiversioned v1>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_attenuation.f90(543,3)
+<Peeled, Multiversioned v2>
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_attenuation.f90(543,3)
+<Multiversioned v2>
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_attenuation.f90(543,3)
+<Remainder, Multiversioned v2>
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_attenuation.f90(546,3)
+<Peeled, Multiversioned v1>
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_attenuation.f90(546,3)
+<Multiversioned v1>
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_attenuation.f90(546,3)
+<Alternate Alignment Vectorized Loop, Multiversioned v1>
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_attenuation.f90(546,3)
+<Remainder, Multiversioned v1>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_attenuation.f90(546,3)
+<Peeled, Multiversioned v2>
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_attenuation.f90(546,3)
+<Multiversioned v2>
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_attenuation.f90(546,3)
+<Remainder, Multiversioned v2>
+LOOP END
+===========================================================================
+
+Begin optimization report for: ATTENUATION_MAXWELL
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/meshfem3D/model_attenuation.f90(598,3)
+<Peeled>
+   remark #15301: PEEL LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_attenuation.f90(598,3)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_attenuation.f90(598,3)
+<Remainder>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_attenuation.f90(599,3)
+   remark #15398: loop was not vectorized: loop was transformed to memset or memcpy
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_attenuation.f90(600,3)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at src/meshfem3D/model_attenuation.f90(602,6)
+   <Peeled>
+      remark #15301: PEEL LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/meshfem3D/model_attenuation.f90(602,6)
+      remark #15300: LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/meshfem3D/model_attenuation.f90(602,6)
+   <Remainder>
+      remark #15301: REMAINDER LOOP WAS VECTORIZED
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_attenuation.f90(600,3)
+<Remainder>
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at src/meshfem3D/model_attenuation.f90(602,6)
+   <Peeled>
+      remark #15301: PEEL LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/meshfem3D/model_attenuation.f90(602,6)
+      remark #15300: LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/meshfem3D/model_attenuation.f90(602,6)
+   <Remainder>
+      remark #15301: REMAINDER LOOP WAS VECTORIZED
+   LOOP END
+LOOP END
+===========================================================================
+
+Begin optimization report for: READ_ATTENUATION_MODEL
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/meshfem3D/model_attenuation.f90(110,8)
+<Multiversioned v1>
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_attenuation.f90(110,8)
+<Remainder, Multiversioned v1>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_attenuation.f90(110,8)
+<Multiversioned v2>
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_attenuation.f90(110,8)
+<Remainder, Multiversioned v2>
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_attenuation.f90(410,3) inlined into src/meshfem3D/model_attenuation.f90(110,8)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_attenuation.f90(110,30)
+<Multiversioned v1>
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_attenuation.f90(110,30)
+<Alternate Alignment Vectorized Loop, Multiversioned v1>
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_attenuation.f90(110,30)
+<Remainder, Multiversioned v1>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_attenuation.f90(110,30)
+<Multiversioned v2>
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_attenuation.f90(110,30)
+<Remainder, Multiversioned v2>
+LOOP END
+===========================================================================
+
+Begin optimization report for: ATTENUATION_EVAL
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/meshfem3D/model_attenuation.f90(652,3)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at src/meshfem3D/model_attenuation.f90(652,3)
+   <Multiversioned v2>
+      remark #15300: LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/meshfem3D/model_attenuation.f90(652,3)
+   <Remainder, Multiversioned v2>
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_attenuation.f90(654,8)
+<Multiversioned v1>
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_attenuation.f90(654,8)
+<Remainder, Multiversioned v1>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_attenuation.f90(654,8)
+<Multiversioned v2>
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_attenuation.f90(654,8)
+<Remainder, Multiversioned v2>
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_attenuation.f90(654,46)
+<Multiversioned v1>
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_attenuation.f90(654,46)
+<Remainder, Multiversioned v1>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_attenuation.f90(654,46)
+<Multiversioned v2>
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_attenuation.f90(654,46)
+<Remainder, Multiversioned v2>
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_attenuation.f90(598,3) inlined into src/meshfem3D/model_attenuation.f90(654,8)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_attenuation.f90(598,3) inlined into src/meshfem3D/model_attenuation.f90(654,8)
+<Remainder>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_attenuation.f90(599,3) inlined into src/meshfem3D/model_attenuation.f90(654,8)
+   remark #15398: loop was not vectorized: loop was transformed to memset or memcpy
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_attenuation.f90(600,3) inlined into src/meshfem3D/model_attenuation.f90(654,8)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at src/meshfem3D/model_attenuation.f90(602,6) inlined into src/meshfem3D/model_attenuation.f90(654,8)
+   <Peeled>
+      remark #15301: PEEL LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/meshfem3D/model_attenuation.f90(602,6) inlined into src/meshfem3D/model_attenuation.f90(654,8)
+      remark #15300: LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/meshfem3D/model_attenuation.f90(602,6) inlined into src/meshfem3D/model_attenuation.f90(654,8)
+   <Remainder>
+      remark #15301: REMAINDER LOOP WAS VECTORIZED
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_attenuation.f90(600,3) inlined into src/meshfem3D/model_attenuation.f90(654,8)
+<Remainder>
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at src/meshfem3D/model_attenuation.f90(602,6) inlined into src/meshfem3D/model_attenuation.f90(654,8)
+      remark #15300: LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/meshfem3D/model_attenuation.f90(602,6) inlined into src/meshfem3D/model_attenuation.f90(654,8)
+   <Remainder>
+      remark #15301: REMAINDER LOOP WAS VECTORIZED
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_attenuation.f90(654,46)
+<Multiversioned v1>
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_attenuation.f90(654,46)
+<Alternate Alignment Vectorized Loop, Multiversioned v1>
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_attenuation.f90(654,46)
+<Remainder, Multiversioned v1>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_attenuation.f90(654,46)
+<Multiversioned v2>
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_attenuation.f90(654,46)
+<Remainder, Multiversioned v2>
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_attenuation.f90(654,53)
+<Multiversioned v1>
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_attenuation.f90(654,53)
+<Alternate Alignment Vectorized Loop, Multiversioned v1>
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_attenuation.f90(654,53)
+<Remainder, Multiversioned v1>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_attenuation.f90(654,53)
+<Multiversioned v2>
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_attenuation.f90(654,53)
+<Remainder, Multiversioned v2>
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_attenuation.f90(656,3)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_attenuation.f90(656,3)
+<Remainder>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_attenuation.f90(660,3)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_attenuation.f90(660,3)
+<Remainder>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+===========================================================================
+
+Begin optimization report for: MODEL_ATTENUATION_BROADCAST
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/meshfem3D/model_attenuation.f90(110,8) inlined into src/meshfem3D/model_attenuation.f90(82,20)
+<Multiversioned v1>
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_attenuation.f90(110,8) inlined into src/meshfem3D/model_attenuation.f90(82,20)
+<Remainder, Multiversioned v1>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_attenuation.f90(110,8) inlined into src/meshfem3D/model_attenuation.f90(82,20)
+<Multiversioned v2>
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_attenuation.f90(110,8) inlined into src/meshfem3D/model_attenuation.f90(82,20)
+<Remainder, Multiversioned v2>
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_attenuation.f90(410,3) inlined into src/meshfem3D/model_attenuation.f90(82,20)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_attenuation.f90(110,30) inlined into src/meshfem3D/model_attenuation.f90(82,20)
+<Multiversioned v1>
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_attenuation.f90(110,30) inlined into src/meshfem3D/model_attenuation.f90(82,20)
+<Alternate Alignment Vectorized Loop, Multiversioned v1>
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_attenuation.f90(110,30) inlined into src/meshfem3D/model_attenuation.f90(82,20)
+<Remainder, Multiversioned v1>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_attenuation.f90(110,30) inlined into src/meshfem3D/model_attenuation.f90(82,20)
+<Multiversioned v2>
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_attenuation.f90(110,30) inlined into src/meshfem3D/model_attenuation.f90(82,20)
+<Remainder, Multiversioned v2>
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_attenuation.f90(88,8)
+<Multiversioned v1>
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_attenuation.f90(88,8)
+<Remainder, Multiversioned v1>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_attenuation.f90(88,8)
+<Multiversioned v2>
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_attenuation.f90(88,8)
+<Remainder, Multiversioned v2>
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_attenuation.f90(88,21)
+<Multiversioned v1>
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_attenuation.f90(88,21)
+<Alternate Alignment Vectorized Loop, Multiversioned v1>
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_attenuation.f90(88,21)
+<Remainder, Multiversioned v1>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_attenuation.f90(88,21)
+<Multiversioned v2>
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_attenuation.f90(88,21)
+<Remainder, Multiversioned v2>
+LOOP END
+===========================================================================
+
+Begin optimization report for: MODEL_ATTENUATION_SETUP
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/meshfem3D/model_attenuation.f90(217,5)
+<Peeled, Multiversioned v1>
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_attenuation.f90(217,5)
+<Multiversioned v1>
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_attenuation.f90(217,5)
+<Alternate Alignment Vectorized Loop, Multiversioned v1>
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_attenuation.f90(217,5)
+<Remainder, Multiversioned v1>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_attenuation.f90(217,5)
+<Peeled, Multiversioned v2>
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_attenuation.f90(217,5)
+<Multiversioned v2>
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_attenuation.f90(217,5)
+<Remainder, Multiversioned v2>
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_attenuation.f90(218,5)
+<Peeled, Multiversioned v1>
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_attenuation.f90(218,5)
+<Multiversioned v1>
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_attenuation.f90(218,5)
+<Alternate Alignment Vectorized Loop, Multiversioned v1>
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_attenuation.f90(218,5)
+<Remainder, Multiversioned v1>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_attenuation.f90(218,5)
+<Peeled, Multiversioned v2>
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_attenuation.f90(218,5)
+<Multiversioned v2>
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_attenuation.f90(218,5)
+<Remainder, Multiversioned v2>
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_attenuation.f90(214,5)
+<Multiversioned v1>
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_attenuation.f90(214,5)
+<Remainder, Multiversioned v1>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_attenuation.f90(214,5)
+<Multiversioned v2>
+   remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_attenuation.f90(214,5)
+<Remainder, Multiversioned v2>
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_attenuation.f90(215,5)
+<Multiversioned v1>
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_attenuation.f90(215,5)
+<Remainder, Multiversioned v1>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_attenuation.f90(215,5)
+<Multiversioned v2>
+   remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_attenuation.f90(215,5)
+<Remainder, Multiversioned v2>
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_attenuation.f90(211,5)
+<Peeled, Multiversioned v1>
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_attenuation.f90(211,5)
+<Multiversioned v1>
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_attenuation.f90(211,5)
+<Alternate Alignment Vectorized Loop, Multiversioned v1>
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_attenuation.f90(211,5)
+<Remainder, Multiversioned v1>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_attenuation.f90(211,5)
+<Peeled, Multiversioned v2>
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_attenuation.f90(211,5)
+<Multiversioned v2>
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_attenuation.f90(211,5)
+<Remainder, Multiversioned v2>
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_attenuation.f90(212,5)
+<Peeled, Multiversioned v1>
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_attenuation.f90(212,5)
+<Multiversioned v1>
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_attenuation.f90(212,5)
+<Alternate Alignment Vectorized Loop, Multiversioned v1>
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_attenuation.f90(212,5)
+<Remainder, Multiversioned v1>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_attenuation.f90(212,5)
+<Peeled, Multiversioned v2>
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_attenuation.f90(212,5)
+<Multiversioned v2>
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_attenuation.f90(212,5)
+<Remainder, Multiversioned v2>
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_attenuation.f90(205,5)
+<Peeled, Multiversioned v1>
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_attenuation.f90(205,5)
+<Multiversioned v1>
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_attenuation.f90(205,5)
+<Alternate Alignment Vectorized Loop, Multiversioned v1>
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_attenuation.f90(205,5)
+<Remainder, Multiversioned v1>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_attenuation.f90(205,5)
+<Peeled, Multiversioned v2>
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_attenuation.f90(205,5)
+<Multiversioned v2>
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_attenuation.f90(205,5)
+<Remainder, Multiversioned v2>
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_attenuation.f90(206,5)
+<Peeled, Multiversioned v1>
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_attenuation.f90(206,5)
+<Multiversioned v1>
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_attenuation.f90(206,5)
+<Alternate Alignment Vectorized Loop, Multiversioned v1>
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_attenuation.f90(206,5)
+<Remainder, Multiversioned v1>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_attenuation.f90(206,5)
+<Peeled, Multiversioned v2>
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_attenuation.f90(206,5)
+<Multiversioned v2>
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_attenuation.f90(206,5)
+<Remainder, Multiversioned v2>
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_attenuation.f90(208,5)
+<Peeled, Multiversioned v1>
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_attenuation.f90(208,5)
+<Multiversioned v1>
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_attenuation.f90(208,5)
+<Alternate Alignment Vectorized Loop, Multiversioned v1>
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_attenuation.f90(208,5)
+<Remainder, Multiversioned v1>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_attenuation.f90(208,5)
+<Peeled, Multiversioned v2>
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_attenuation.f90(208,5)
+<Multiversioned v2>
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_attenuation.f90(208,5)
+<Remainder, Multiversioned v2>
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_attenuation.f90(209,5)
+<Peeled, Multiversioned v1>
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_attenuation.f90(209,5)
+<Multiversioned v1>
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_attenuation.f90(209,5)
+<Alternate Alignment Vectorized Loop, Multiversioned v1>
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_attenuation.f90(209,5)
+<Remainder, Multiversioned v1>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_attenuation.f90(209,5)
+<Peeled, Multiversioned v2>
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_attenuation.f90(209,5)
+<Multiversioned v2>
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_attenuation.f90(209,5)
+<Remainder, Multiversioned v2>
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_attenuation.f90(202,5)
+<Multiversioned v1>
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_attenuation.f90(202,5)
+<Remainder, Multiversioned v1>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_attenuation.f90(202,5)
+<Multiversioned v2>
+   remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_attenuation.f90(202,5)
+<Remainder, Multiversioned v2>
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_attenuation.f90(203,5)
+<Multiversioned v1>
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_attenuation.f90(203,5)
+<Remainder, Multiversioned v1>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_attenuation.f90(203,5)
+<Multiversioned v2>
+   remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_attenuation.f90(203,5)
+<Remainder, Multiversioned v2>
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_attenuation.f90(199,5)
+<Multiversioned v1>
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_attenuation.f90(199,5)
+<Remainder, Multiversioned v1>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_attenuation.f90(199,5)
+<Multiversioned v2>
+   remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_attenuation.f90(199,5)
+<Remainder, Multiversioned v2>
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_attenuation.f90(200,5)
+<Multiversioned v1>
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_attenuation.f90(200,5)
+<Remainder, Multiversioned v1>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_attenuation.f90(200,5)
+<Multiversioned v2>
+   remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_attenuation.f90(200,5)
+<Remainder, Multiversioned v2>
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_attenuation.f90(221,3)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at src/meshfem3D/model_attenuation.f90(222,10)
+      remark #15300: LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/meshfem3D/model_attenuation.f90(222,10)
+   <Remainder>
+   LOOP END
+
+   LOOP BEGIN at src/meshfem3D/model_attenuation.f90(222,73)
+      remark #15300: LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/meshfem3D/model_attenuation.f90(222,73)
+   <Remainder>
+   LOOP END
+
+   LOOP BEGIN at src/meshfem3D/model_attenuation.f90(223,5)
+      remark #15300: LOOP WAS VECTORIZED
+   LOOP END
+LOOP END
+===========================================================================
+
+Begin optimization report for: ATTENUATION_INVERT_BY_SIMPLEX
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/meshfem3D/model_attenuation.f90(470,18)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_attenuation.f90(470,18)
+<Remainder>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_attenuation.f90(475,3)
+<Peeled>
+   remark #15301: PEEL LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_attenuation.f90(475,3)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_attenuation.f90(475,3)
+<Remainder>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_attenuation.f90(543,3) inlined into src/meshfem3D/model_attenuation.f90(480,8)
+<Peeled, Multiversioned v1>
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_attenuation.f90(543,3) inlined into src/meshfem3D/model_attenuation.f90(480,8)
+<Multiversioned v1>
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_attenuation.f90(543,3) inlined into src/meshfem3D/model_attenuation.f90(480,8)
+<Alternate Alignment Vectorized Loop, Multiversioned v1>
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_attenuation.f90(543,3) inlined into src/meshfem3D/model_attenuation.f90(480,8)
+<Remainder, Multiversioned v1>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_attenuation.f90(543,3) inlined into src/meshfem3D/model_attenuation.f90(480,8)
+<Peeled, Multiversioned v2>
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_attenuation.f90(543,3) inlined into src/meshfem3D/model_attenuation.f90(480,8)
+<Multiversioned v2>
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_attenuation.f90(543,3) inlined into src/meshfem3D/model_attenuation.f90(480,8)
+<Remainder, Multiversioned v2>
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_attenuation.f90(546,3) inlined into src/meshfem3D/model_attenuation.f90(480,8)
+<Peeled, Multiversioned v1>
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_attenuation.f90(546,3) inlined into src/meshfem3D/model_attenuation.f90(480,8)
+<Multiversioned v1>
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_attenuation.f90(546,3) inlined into src/meshfem3D/model_attenuation.f90(480,8)
+<Alternate Alignment Vectorized Loop, Multiversioned v1>
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_attenuation.f90(546,3) inlined into src/meshfem3D/model_attenuation.f90(480,8)
+<Remainder, Multiversioned v1>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_attenuation.f90(546,3) inlined into src/meshfem3D/model_attenuation.f90(480,8)
+<Peeled, Multiversioned v2>
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_attenuation.f90(546,3) inlined into src/meshfem3D/model_attenuation.f90(480,8)
+<Multiversioned v2>
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_attenuation.f90(546,3) inlined into src/meshfem3D/model_attenuation.f90(480,8)
+<Remainder, Multiversioned v2>
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_attenuation.f90(486,3)
+<Peeled>
+   remark #15301: PEEL LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_attenuation.f90(486,3)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_attenuation.f90(486,3)
+<Alternate Alignment Vectorized Loop>
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_attenuation.f90(486,3)
+<Remainder>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+===========================================================================
+
+Begin optimization report for: FMINSEARCH
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/meshfem3D/model_attenuation.f90(762,3)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at src/meshfem3D/model_attenuation.f90(762,3)
+   <Multiversioned v2>
+      remark #15300: LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/meshfem3D/model_attenuation.f90(762,3)
+   <Remainder, Multiversioned v2>
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_attenuation.f90(763,3)
+   remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+   LOOP BEGIN at src/meshfem3D/model_attenuation.f90(763,3)
+      remark #15398: loop was not vectorized: loop was transformed to memset or memcpy
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_attenuation.f90(764,3)
+   remark #15398: loop was not vectorized: loop was transformed to memset or memcpy
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_attenuation.f90(766,3)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at src/meshfem3D/model_attenuation.f90(766,3)
+   <Multiversioned v2>
+      remark #15300: LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/meshfem3D/model_attenuation.f90(766,3)
+   <Remainder, Multiversioned v2>
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_attenuation.f90(767,3)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at src/meshfem3D/model_attenuation.f90(767,3)
+   <Multiversioned v2>
+      remark #15300: LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/meshfem3D/model_attenuation.f90(767,3)
+   <Alternate Alignment Vectorized Loop, Multiversioned v2>
+   LOOP END
+
+   LOOP BEGIN at src/meshfem3D/model_attenuation.f90(767,3)
+   <Remainder, Multiversioned v2>
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_attenuation.f90(774,3)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at src/meshfem3D/model_attenuation.f90(775,6)
+      remark #15542: loop was not vectorized: inner loop was already vectorized
+
+      LOOP BEGIN at src/meshfem3D/model_attenuation.f90(775,6)
+      <Multiversioned v2>
+         remark #15300: LOOP WAS VECTORIZED
+      LOOP END
+
+      LOOP BEGIN at src/meshfem3D/model_attenuation.f90(775,6)
+      <Remainder, Multiversioned v2>
+      LOOP END
+   LOOP END
+
+   LOOP BEGIN at src/meshfem3D/model_attenuation.f90(781,6)
+      remark #15542: loop was not vectorized: inner loop was already vectorized
+
+      LOOP BEGIN at src/meshfem3D/model_attenuation.f90(781,6)
+      <Multiversioned v2>
+         remark #15300: LOOP WAS VECTORIZED
+      LOOP END
+
+      LOOP BEGIN at src/meshfem3D/model_attenuation.f90(781,6)
+      <Alternate Alignment Vectorized Loop, Multiversioned v2>
+      LOOP END
+
+      LOOP BEGIN at src/meshfem3D/model_attenuation.f90(781,6)
+      <Remainder, Multiversioned v2>
+      LOOP END
+   LOOP END
+
+   LOOP BEGIN at src/meshfem3D/model_attenuation.f90(782,6)
+      remark #15542: loop was not vectorized: inner loop was already vectorized
+
+      LOOP BEGIN at src/meshfem3D/model_attenuation.f90(782,6)
+      <Multiversioned v2>
+         remark #15300: LOOP WAS VECTORIZED
+      LOOP END
+
+      LOOP BEGIN at src/meshfem3D/model_attenuation.f90(782,6)
+      <Alternate Alignment Vectorized Loop, Multiversioned v2>
+      LOOP END
+
+      LOOP BEGIN at src/meshfem3D/model_attenuation.f90(782,6)
+      <Remainder, Multiversioned v2>
+      LOOP END
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_attenuation.f90(788,3)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at src/meshfem3D/model_attenuation.f90(789,5)
+   <Peeled>
+   LOOP END
+
+   LOOP BEGIN at src/meshfem3D/model_attenuation.f90(789,5)
+      remark #15300: LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/meshfem3D/model_attenuation.f90(789,5)
+   <Alternate Alignment Vectorized Loop>
+   LOOP END
+
+   LOOP BEGIN at src/meshfem3D/model_attenuation.f90(789,5)
+   <Remainder>
+      remark #15301: REMAINDER LOOP WAS VECTORIZED
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_attenuation.f90(791,3)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at src/meshfem3D/model_attenuation.f90(791,3)
+   <Multiversioned v2>
+      remark #15300: LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/meshfem3D/model_attenuation.f90(791,3)
+   <Remainder, Multiversioned v2>
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_attenuation.f90(807,3)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at src/meshfem3D/model_attenuation.f90(817,6)
+      remark #15398: loop was not vectorized: loop was transformed to memset or memcpy
+   LOOP END
+
+   LOOP BEGIN at src/meshfem3D/model_attenuation.f90(819,9)
+   <Distributed chunk1>
+      remark #15542: loop was not vectorized: inner loop was already vectorized
+
+      LOOP BEGIN at src/meshfem3D/model_attenuation.f90(818,6)
+         remark #15301: PERMUTED LOOP WAS VECTORIZED
+      LOOP END
+
+      LOOP BEGIN at src/meshfem3D/model_attenuation.f90(818,6)
+      <Remainder>
+         remark #15301: REMAINDER LOOP WAS VECTORIZED
+      LOOP END
+   LOOP END
+
+   LOOP BEGIN at src/meshfem3D/model_attenuation.f90(818,6)
+   <Distributed chunk2>
+      remark #15301: PARTIAL LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/meshfem3D/model_attenuation.f90(818,6)
+   <Remainder, Distributed chunk2>
+      remark #15301: REMAINDER LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/meshfem3D/model_attenuation.f90(824,6)
+      remark #15300: LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/meshfem3D/model_attenuation.f90(824,6)
+   <Remainder>
+      remark #15301: REMAINDER LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/meshfem3D/model_attenuation.f90(825,6)
+      remark #15542: loop was not vectorized: inner loop was already vectorized
+
+      LOOP BEGIN at src/meshfem3D/model_attenuation.f90(825,6)
+      <Multiversioned v2>
+         remark #15300: LOOP WAS VECTORIZED
+      LOOP END
+
+      LOOP BEGIN at src/meshfem3D/model_attenuation.f90(825,6)
+      <Alternate Alignment Vectorized Loop, Multiversioned v2>
+      LOOP END
+
+      LOOP BEGIN at src/meshfem3D/model_attenuation.f90(825,6)
+      <Remainder, Multiversioned v2>
+      LOOP END
+   LOOP END
+
+   LOOP BEGIN at src/meshfem3D/model_attenuation.f90(830,9)
+      remark #15300: LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/meshfem3D/model_attenuation.f90(830,9)
+   <Remainder>
+      remark #15301: REMAINDER LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/meshfem3D/model_attenuation.f90(831,9)
+      remark #15542: loop was not vectorized: inner loop was already vectorized
+
+      LOOP BEGIN at src/meshfem3D/model_attenuation.f90(831,9)
+      <Multiversioned v2>
+         remark #15300: LOOP WAS VECTORIZED
+      LOOP END
+
+      LOOP BEGIN at src/meshfem3D/model_attenuation.f90(831,9)
+      <Alternate Alignment Vectorized Loop, Multiversioned v2>
+      LOOP END
+
+      LOOP BEGIN at src/meshfem3D/model_attenuation.f90(831,9)
+      <Remainder, Multiversioned v2>
+      LOOP END
+   LOOP END
+
+   LOOP BEGIN at src/meshfem3D/model_attenuation.f90(835,12)
+      remark #15300: LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/meshfem3D/model_attenuation.f90(835,12)
+   <Alternate Alignment Vectorized Loop>
+   LOOP END
+
+   LOOP BEGIN at src/meshfem3D/model_attenuation.f90(835,12)
+   <Remainder>
+      remark #15301: REMAINDER LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/meshfem3D/model_attenuation.f90(839,12)
+      remark #15300: LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/meshfem3D/model_attenuation.f90(839,12)
+   <Alternate Alignment Vectorized Loop>
+   LOOP END
+
+   LOOP BEGIN at src/meshfem3D/model_attenuation.f90(839,12)
+   <Remainder>
+      remark #15301: REMAINDER LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/meshfem3D/model_attenuation.f90(845,12)
+      remark #15542: loop was not vectorized: inner loop was already vectorized
+
+      LOOP BEGIN at src/meshfem3D/model_attenuation.f90(845,12)
+      <Multiversioned v2>
+         remark #15300: LOOP WAS VECTORIZED
+      LOOP END
+
+      LOOP BEGIN at src/meshfem3D/model_attenuation.f90(845,12)
+      <Alternate Alignment Vectorized Loop, Multiversioned v2>
+      LOOP END
+
+      LOOP BEGIN at src/meshfem3D/model_attenuation.f90(845,12)
+      <Remainder, Multiversioned v2>
+      LOOP END
+   LOOP END
+
+   LOOP BEGIN at src/meshfem3D/model_attenuation.f90(852,15)
+      remark #15300: LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/meshfem3D/model_attenuation.f90(852,15)
+   <Remainder>
+      remark #15301: REMAINDER LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/meshfem3D/model_attenuation.f90(853,15)
+      remark #15542: loop was not vectorized: inner loop was already vectorized
+
+      LOOP BEGIN at src/meshfem3D/model_attenuation.f90(853,15)
+      <Multiversioned v2>
+         remark #15300: LOOP WAS VECTORIZED
+      LOOP END
+
+      LOOP BEGIN at src/meshfem3D/model_attenuation.f90(853,15)
+      <Alternate Alignment Vectorized Loop, Multiversioned v2>
+      LOOP END
+
+      LOOP BEGIN at src/meshfem3D/model_attenuation.f90(853,15)
+      <Remainder, Multiversioned v2>
+      LOOP END
+   LOOP END
+
+   LOOP BEGIN at src/meshfem3D/model_attenuation.f90(858,18)
+      remark #15300: LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/meshfem3D/model_attenuation.f90(858,18)
+   <Alternate Alignment Vectorized Loop>
+   LOOP END
+
+   LOOP BEGIN at src/meshfem3D/model_attenuation.f90(858,18)
+   <Remainder>
+      remark #15301: REMAINDER LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/meshfem3D/model_attenuation.f90(867,15)
+      remark #15300: LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/meshfem3D/model_attenuation.f90(867,15)
+   <Remainder>
+      remark #15301: REMAINDER LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/meshfem3D/model_attenuation.f90(868,15)
+      remark #15542: loop was not vectorized: inner loop was already vectorized
+
+      LOOP BEGIN at src/meshfem3D/model_attenuation.f90(868,15)
+      <Multiversioned v2>
+         remark #15300: LOOP WAS VECTORIZED
+      LOOP END
+
+      LOOP BEGIN at src/meshfem3D/model_attenuation.f90(868,15)
+      <Alternate Alignment Vectorized Loop, Multiversioned v2>
+      LOOP END
+
+      LOOP BEGIN at src/meshfem3D/model_attenuation.f90(868,15)
+      <Remainder, Multiversioned v2>
+      LOOP END
+   LOOP END
+
+   LOOP BEGIN at src/meshfem3D/model_attenuation.f90(873,18)
+      remark #15300: LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/meshfem3D/model_attenuation.f90(873,18)
+   <Alternate Alignment Vectorized Loop>
+   LOOP END
+
+   LOOP BEGIN at src/meshfem3D/model_attenuation.f90(873,18)
+   <Remainder>
+      remark #15301: REMAINDER LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/meshfem3D/model_attenuation.f90(882,15)
+      remark #15542: loop was not vectorized: inner loop was already vectorized
+
+      LOOP BEGIN at src/meshfem3D/model_attenuation.f90(883,18)
+         remark #15300: LOOP WAS VECTORIZED
+      LOOP END
+
+      LOOP BEGIN at src/meshfem3D/model_attenuation.f90(883,18)
+      <Remainder>
+         remark #15301: REMAINDER LOOP WAS VECTORIZED
+      LOOP END
+
+      LOOP BEGIN at src/meshfem3D/model_attenuation.f90(884,18)
+         remark #15542: loop was not vectorized: inner loop was already vectorized
+
+         LOOP BEGIN at src/meshfem3D/model_attenuation.f90(884,18)
+         <Peeled, Multiversioned v2>
+         LOOP END
+
+         LOOP BEGIN at src/meshfem3D/model_attenuation.f90(884,18)
+         <Multiversioned v2>
+            remark #15300: LOOP WAS VECTORIZED
+         LOOP END
+
+         LOOP BEGIN at src/meshfem3D/model_attenuation.f90(884,18)
+         <Alternate Alignment Vectorized Loop, Multiversioned v2>
+         LOOP END
+
+         LOOP BEGIN at src/meshfem3D/model_attenuation.f90(884,18)
+         <Remainder, Multiversioned v2>
+         LOOP END
+      LOOP END
+   LOOP END
+
+   LOOP BEGIN at src/meshfem3D/model_attenuation.f90(894,6)
+      remark #15542: loop was not vectorized: inner loop was already vectorized
+
+      LOOP BEGIN at src/meshfem3D/model_attenuation.f90(895,8)
+      <Peeled>
+      LOOP END
+
+      LOOP BEGIN at src/meshfem3D/model_attenuation.f90(895,8)
+         remark #15300: LOOP WAS VECTORIZED
+      LOOP END
+
+      LOOP BEGIN at src/meshfem3D/model_attenuation.f90(895,8)
+      <Alternate Alignment Vectorized Loop>
+      LOOP END
+
+      LOOP BEGIN at src/meshfem3D/model_attenuation.f90(895,8)
+      <Remainder>
+         remark #15301: REMAINDER LOOP WAS VECTORIZED
+      LOOP END
+   LOOP END
+
+   LOOP BEGIN at src/meshfem3D/model_attenuation.f90(897,6)
+      remark #15542: loop was not vectorized: inner loop was already vectorized
+
+      LOOP BEGIN at src/meshfem3D/model_attenuation.f90(897,6)
+      <Multiversioned v2>
+         remark #15300: LOOP WAS VECTORIZED
+      LOOP END
+
+      LOOP BEGIN at src/meshfem3D/model_attenuation.f90(897,6)
+      <Remainder, Multiversioned v2>
+      LOOP END
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_attenuation.f90(921,3)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at src/meshfem3D/model_attenuation.f90(921,3)
+   <Multiversioned v2>
+      remark #15300: LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/meshfem3D/model_attenuation.f90(921,3)
+   <Alternate Alignment Vectorized Loop, Multiversioned v2>
+   LOOP END
+
+   LOOP BEGIN at src/meshfem3D/model_attenuation.f90(921,3)
+   <Remainder, Multiversioned v2>
+   LOOP END
+LOOP END
+===========================================================================
+
+Begin optimization report for: MAX_VALUE
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/meshfem3D/model_attenuation.f90(951,3)
+<Peeled>
+   remark #15301: PEEL LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_attenuation.f90(951,3)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_attenuation.f90(951,3)
+<Remainder>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+===========================================================================
+
+Begin optimization report for: MAX_SIZE_SIMPLEX
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/meshfem3D/model_attenuation.f90(986,6)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at src/meshfem3D/model_attenuation.f90(985,3)
+   <Peeled>
+      remark #15301: PEEL LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/meshfem3D/model_attenuation.f90(985,3)
+      remark #15301: PERMUTED LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/meshfem3D/model_attenuation.f90(985,3)
+   <Alternate Alignment Vectorized Loop>
+   LOOP END
+
+   LOOP BEGIN at src/meshfem3D/model_attenuation.f90(985,3)
+   <Remainder>
+      remark #15301: REMAINDER LOOP WAS VECTORIZED
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_attenuation.f90(986,6)
+<Remainder>
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at src/meshfem3D/model_attenuation.f90(985,3)
+   <Peeled>
+      remark #15301: PEEL LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/meshfem3D/model_attenuation.f90(985,3)
+      remark #15301: PERMUTED LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/meshfem3D/model_attenuation.f90(985,3)
+   <Alternate Alignment Vectorized Loop>
+   LOOP END
+
+   LOOP BEGIN at src/meshfem3D/model_attenuation.f90(985,3)
+   <Remainder>
+      remark #15301: REMAINDER LOOP WAS VECTORIZED
+   LOOP END
+LOOP END
+===========================================================================
+
+Begin optimization report for: MODEL_ATTENUATION_STORAGE
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/meshfem3D/model_attenuation.f90(312,6)
+<Peeled, Multiversioned v1>
+   remark #15301: PEEL LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_attenuation.f90(312,6)
+<Multiversioned v1>
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_attenuation.f90(312,6)
+<Remainder, Multiversioned v1>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_attenuation.f90(312,6)
+<Multiversioned v2>
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_attenuation.f90(312,6)
+<Remainder, Multiversioned v2>
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_attenuation.f90(327,6)
+   remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_attenuation.f90(347,7)
+<Multiversioned v1>
+   remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_attenuation.f90(347,7)
+<Multiversioned v2>
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_attenuation.f90(356,5)
+<Peeled, Multiversioned v1>
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_attenuation.f90(356,5)
+<Multiversioned v1>
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_attenuation.f90(356,5)
+<Alternate Alignment Vectorized Loop, Multiversioned v1>
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_attenuation.f90(356,5)
+<Remainder, Multiversioned v1>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_attenuation.f90(356,5)
+<Peeled, Multiversioned v2>
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_attenuation.f90(356,5)
+<Multiversioned v2>
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_attenuation.f90(356,5)
+<Remainder, Multiversioned v2>
+LOOP END
+===========================================================================

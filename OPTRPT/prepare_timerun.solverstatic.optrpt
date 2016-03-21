@@ -1,0 +1,3278 @@
+
+Begin optimization report for: PREPARE_TIMERUN_CONVERT_COORD
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/specfem3D/prepare_timerun.f90(479,3)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+LOOP END
+
+LOOP BEGIN at src/specfem3D/prepare_timerun.f90(487,3)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+LOOP END
+
+LOOP BEGIN at src/specfem3D/prepare_timerun.f90(495,3)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+LOOP END
+===========================================================================
+
+Begin optimization report for: PREPARE_FUSED_ARRAY
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/specfem3D/prepare_timerun.f90(3536,3)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at src/specfem3D/prepare_timerun.f90(3537,5)
+      remark #15300: LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/specfem3D/prepare_timerun.f90(3537,5)
+   <Remainder>
+      remark #15301: REMAINDER LOOP WAS VECTORIZED
+   LOOP END
+LOOP END
+===========================================================================
+
+Begin optimization report for: PREPARE_TIMERUN
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/specfem3D/prepare_timerun.f90(479,3) inlined into src/specfem3D/prepare_timerun.f90(50,8)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+LOOP END
+
+LOOP BEGIN at src/specfem3D/prepare_timerun.f90(487,3) inlined into src/specfem3D/prepare_timerun.f90(50,8)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+LOOP END
+
+LOOP BEGIN at src/specfem3D/prepare_timerun.f90(495,3) inlined into src/specfem3D/prepare_timerun.f90(50,8)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+LOOP END
+
+LOOP BEGIN at src/specfem3D/prepare_timerun.f90(3536,3) inlined into src/specfem3D/prepare_timerun.f90(92,8)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at src/specfem3D/prepare_timerun.f90(3537,5) inlined into src/specfem3D/prepare_timerun.f90(92,8)
+      remark #15300: LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/specfem3D/prepare_timerun.f90(3537,5) inlined into src/specfem3D/prepare_timerun.f90(92,8)
+   <Remainder>
+      remark #15301: REMAINDER LOOP WAS VECTORIZED
+   LOOP END
+LOOP END
+===========================================================================
+
+Begin optimization report for: PREPARE_TIMERUN_MASS_MATRICES
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/specfem3D/prepare_timerun.f90(250,9)
+<Peeled>
+   remark #15301: PEEL LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/prepare_timerun.f90(250,9)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/prepare_timerun.f90(250,9)
+<Remainder>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/prepare_timerun.f90(257,7)
+<Peeled, Multiversioned v1>
+   remark #15301: PEEL LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/prepare_timerun.f90(257,7)
+<Multiversioned v1>
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/prepare_timerun.f90(257,7)
+<Remainder, Multiversioned v1>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/prepare_timerun.f90(257,7)
+<Multiversioned v2>
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/prepare_timerun.f90(257,7)
+<Remainder, Multiversioned v2>
+LOOP END
+
+LOOP BEGIN at src/specfem3D/prepare_timerun.f90(259,7)
+<Peeled, Multiversioned v1>
+   remark #15301: PEEL LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/prepare_timerun.f90(259,7)
+<Multiversioned v1>
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/prepare_timerun.f90(259,7)
+<Remainder, Multiversioned v1>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/prepare_timerun.f90(259,7)
+<Multiversioned v2>
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/prepare_timerun.f90(259,7)
+<Remainder, Multiversioned v2>
+LOOP END
+
+LOOP BEGIN at src/specfem3D/prepare_timerun.f90(261,7)
+<Peeled>
+   remark #15301: PEEL LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/prepare_timerun.f90(261,7)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/prepare_timerun.f90(261,7)
+<Remainder>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/prepare_timerun.f90(265,9)
+<Peeled, Multiversioned v1>
+   remark #15301: PEEL LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/prepare_timerun.f90(265,9)
+<Multiversioned v1>
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/prepare_timerun.f90(265,9)
+<Remainder, Multiversioned v1>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/prepare_timerun.f90(265,9)
+<Multiversioned v2>
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/prepare_timerun.f90(265,9)
+<Remainder, Multiversioned v2>
+LOOP END
+
+LOOP BEGIN at src/specfem3D/prepare_timerun.f90(267,9)
+<Peeled, Multiversioned v1>
+   remark #15301: PEEL LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/prepare_timerun.f90(267,9)
+<Multiversioned v1>
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/prepare_timerun.f90(267,9)
+<Remainder, Multiversioned v1>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/prepare_timerun.f90(267,9)
+<Multiversioned v2>
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/prepare_timerun.f90(267,9)
+<Remainder, Multiversioned v2>
+LOOP END
+
+LOOP BEGIN at src/specfem3D/prepare_timerun.f90(269,9)
+<Peeled, Multiversioned v1>
+   remark #15301: PEEL LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/prepare_timerun.f90(269,9)
+<Multiversioned v1>
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/prepare_timerun.f90(269,9)
+<Remainder, Multiversioned v1>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/prepare_timerun.f90(269,9)
+<Multiversioned v2>
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/prepare_timerun.f90(269,9)
+<Remainder, Multiversioned v2>
+LOOP END
+
+LOOP BEGIN at src/specfem3D/prepare_timerun.f90(275,7)
+<Peeled, Multiversioned v1>
+   remark #15301: PEEL LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/prepare_timerun.f90(275,7)
+<Multiversioned v1>
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/prepare_timerun.f90(275,7)
+<Remainder, Multiversioned v1>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/prepare_timerun.f90(275,7)
+<Multiversioned v2>
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/prepare_timerun.f90(275,7)
+<Remainder, Multiversioned v2>
+LOOP END
+
+LOOP BEGIN at src/specfem3D/prepare_timerun.f90(277,7)
+<Peeled, Multiversioned v1>
+   remark #15301: PEEL LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/prepare_timerun.f90(277,7)
+<Multiversioned v1>
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/prepare_timerun.f90(277,7)
+<Remainder, Multiversioned v1>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/prepare_timerun.f90(277,7)
+<Multiversioned v2>
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/prepare_timerun.f90(277,7)
+<Remainder, Multiversioned v2>
+LOOP END
+
+LOOP BEGIN at src/specfem3D/prepare_timerun.f90(279,7)
+<Peeled>
+   remark #15301: PEEL LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/prepare_timerun.f90(279,7)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/prepare_timerun.f90(279,7)
+<Remainder>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/prepare_timerun.f90(283,9)
+<Peeled, Multiversioned v1>
+   remark #15301: PEEL LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/prepare_timerun.f90(283,9)
+<Multiversioned v1>
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/prepare_timerun.f90(283,9)
+<Remainder, Multiversioned v1>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/prepare_timerun.f90(283,9)
+<Multiversioned v2>
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/prepare_timerun.f90(283,9)
+<Remainder, Multiversioned v2>
+LOOP END
+
+LOOP BEGIN at src/specfem3D/prepare_timerun.f90(285,9)
+<Peeled, Multiversioned v1>
+   remark #15301: PEEL LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/prepare_timerun.f90(285,9)
+<Multiversioned v1>
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/prepare_timerun.f90(285,9)
+<Remainder, Multiversioned v1>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/prepare_timerun.f90(285,9)
+<Multiversioned v2>
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/prepare_timerun.f90(285,9)
+<Remainder, Multiversioned v2>
+LOOP END
+
+LOOP BEGIN at src/specfem3D/prepare_timerun.f90(287,9)
+<Peeled, Multiversioned v1>
+   remark #15301: PEEL LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/prepare_timerun.f90(287,9)
+<Multiversioned v1>
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/prepare_timerun.f90(287,9)
+<Remainder, Multiversioned v1>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/prepare_timerun.f90(287,9)
+<Multiversioned v2>
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/prepare_timerun.f90(287,9)
+<Remainder, Multiversioned v2>
+LOOP END
+
+LOOP BEGIN at src/specfem3D/prepare_timerun.f90(292,7)
+<Peeled>
+   remark #15301: PEEL LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/prepare_timerun.f90(292,7)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/prepare_timerun.f90(292,7)
+<Remainder>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/prepare_timerun.f90(295,9)
+<Peeled, Multiversioned v1>
+   remark #15301: PEEL LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/prepare_timerun.f90(295,9)
+<Multiversioned v1>
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/prepare_timerun.f90(295,9)
+<Remainder, Multiversioned v1>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/prepare_timerun.f90(295,9)
+<Multiversioned v2>
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/prepare_timerun.f90(295,9)
+<Remainder, Multiversioned v2>
+LOOP END
+
+LOOP BEGIN at src/specfem3D/prepare_timerun.f90(302,19)
+<Peeled>
+   remark #15301: PEEL LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/prepare_timerun.f90(302,19)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/prepare_timerun.f90(302,19)
+<Remainder>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/prepare_timerun.f90(308,6)
+<Peeled, Multiversioned v1>
+   remark #15301: PEEL LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/prepare_timerun.f90(308,6)
+<Multiversioned v1>
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/prepare_timerun.f90(308,6)
+<Remainder, Multiversioned v1>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/prepare_timerun.f90(308,6)
+<Multiversioned v2>
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/prepare_timerun.f90(308,6)
+<Remainder, Multiversioned v2>
+LOOP END
+
+LOOP BEGIN at src/specfem3D/prepare_timerun.f90(309,6)
+<Peeled, Multiversioned v1>
+   remark #15301: PEEL LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/prepare_timerun.f90(309,6)
+<Multiversioned v1>
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/prepare_timerun.f90(309,6)
+<Remainder, Multiversioned v1>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/prepare_timerun.f90(309,6)
+<Multiversioned v2>
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/prepare_timerun.f90(309,6)
+<Remainder, Multiversioned v2>
+LOOP END
+
+LOOP BEGIN at src/specfem3D/prepare_timerun.f90(317,3)
+<Peeled>
+   remark #15301: PEEL LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/prepare_timerun.f90(317,3)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/prepare_timerun.f90(317,3)
+<Remainder>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/prepare_timerun.f90(327,3)
+<Peeled>
+   remark #15301: PEEL LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/prepare_timerun.f90(327,3)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/prepare_timerun.f90(327,3)
+<Remainder>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/prepare_timerun.f90(329,3)
+<Peeled>
+   remark #15301: PEEL LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/prepare_timerun.f90(329,3)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/prepare_timerun.f90(329,3)
+<Remainder>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+===========================================================================
+
+Begin optimization report for: PREPARE_TIMERUN_RMASS_ASSEMBLY
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/specfem3D/prepare_timerun.f90(368,10)
+<Multiversioned v1>
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/prepare_timerun.f90(368,10)
+<Remainder, Multiversioned v1>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/prepare_timerun.f90(368,10)
+<Multiversioned v2>
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/prepare_timerun.f90(368,10)
+<Remainder, Multiversioned v2>
+LOOP END
+
+LOOP BEGIN at src/specfem3D/prepare_timerun.f90(369,28)
+<Multiversioned v1>
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/prepare_timerun.f90(369,28)
+<Alternate Alignment Vectorized Loop, Multiversioned v1>
+LOOP END
+
+LOOP BEGIN at src/specfem3D/prepare_timerun.f90(369,28)
+<Remainder, Multiversioned v1>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/prepare_timerun.f90(369,28)
+<Multiversioned v2>
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/prepare_timerun.f90(369,28)
+<Remainder, Multiversioned v2>
+LOOP END
+
+LOOP BEGIN at src/specfem3D/prepare_timerun.f90(374,10)
+<Multiversioned v1>
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/prepare_timerun.f90(374,10)
+<Remainder, Multiversioned v1>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/prepare_timerun.f90(374,10)
+<Multiversioned v2>
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/prepare_timerun.f90(374,10)
+<Remainder, Multiversioned v2>
+LOOP END
+
+LOOP BEGIN at src/specfem3D/prepare_timerun.f90(375,28)
+<Multiversioned v1>
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/prepare_timerun.f90(375,28)
+<Alternate Alignment Vectorized Loop, Multiversioned v1>
+LOOP END
+
+LOOP BEGIN at src/specfem3D/prepare_timerun.f90(375,28)
+<Remainder, Multiversioned v1>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/prepare_timerun.f90(375,28)
+<Multiversioned v2>
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/prepare_timerun.f90(375,28)
+<Remainder, Multiversioned v2>
+LOOP END
+
+LOOP BEGIN at src/specfem3D/prepare_timerun.f90(445,52)
+<Peeled>
+   remark #15301: PEEL LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/prepare_timerun.f90(445,52)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/prepare_timerun.f90(445,52)
+<Remainder>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+===========================================================================
+
+Begin optimization report for: PREPARE_TIMERUN_GRAVITY
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/specfem3D/prepare_timerun.f90(772,5)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed OUTPUT dependence between radius line 773 and radius line 778
+LOOP END
+
+LOOP BEGIN at src/specfem3D/prepare_timerun.f90(796,7)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed FLOW dependence between minus_rho_g_over_kappa_fluid line 795 and minus_rho_g_over_kappa_fluid line 797
+LOOP END
+===========================================================================
+
+Begin optimization report for: PREPARE_TIMERUN_ATTENUATION
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/specfem3D/prepare_timerun.f90(937,17)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at src/specfem3D/prepare_timerun.f90(904,5)
+      remark #15542: loop was not vectorized: inner loop was already vectorized
+
+      LOOP BEGIN at src/specfem3D/prepare_timerun.f90(905,7)
+         remark #15542: loop was not vectorized: inner loop was already vectorized
+
+         LOOP BEGIN at src/specfem3D/prepare_timerun.f90(906,9)
+            remark #15300: LOOP WAS VECTORIZED
+         LOOP END
+      LOOP END
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/specfem3D/prepare_timerun.f90(957,3)
+<Peeled>
+   remark #15301: PEEL LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/prepare_timerun.f90(957,3)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/prepare_timerun.f90(957,3)
+<Alternate Alignment Vectorized Loop>
+LOOP END
+
+LOOP BEGIN at src/specfem3D/prepare_timerun.f90(957,3)
+<Remainder>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/prepare_timerun.f90(993,3)
+   remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at src/specfem3D/prepare_timerun.f90(994,3)
+LOOP END
+
+LOOP BEGIN at src/specfem3D/prepare_timerun.f90(995,3)
+LOOP END
+
+LOOP BEGIN at src/specfem3D/prepare_timerun.f90(999,4)
+   remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1000,4)
+LOOP END
+
+LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1001,4)
+LOOP END
+
+LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1005,5)
+   remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1009,4)
+   remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1010,4)
+LOOP END
+
+LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1011,4)
+LOOP END
+===========================================================================
+
+Begin optimization report for: PREPARE_TIMERUN_NOISE
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1838,3)
+   remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+   LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1838,3)
+      remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+      LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1838,3)
+         remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+         LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1838,3)
+            remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+            LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1838,3)
+               remark #15398: loop was not vectorized: loop was transformed to memset or memcpy
+            LOOP END
+         LOOP END
+      LOOP END
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1849,3)
+   remark #15398: loop was not vectorized: loop was transformed to memset or memcpy
+LOOP END
+
+LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1850,3)
+   remark #15398: loop was not vectorized: loop was transformed to memset or memcpy
+LOOP END
+
+LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1851,3)
+   remark #15398: loop was not vectorized: loop was transformed to memset or memcpy
+LOOP END
+
+LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1852,3)
+   remark #15398: loop was not vectorized: loop was transformed to memset or memcpy
+LOOP END
+
+LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1853,3)
+   remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+   LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1853,3)
+      remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+      LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1853,3)
+         remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+         LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1853,3)
+            remark #15398: loop was not vectorized: loop was transformed to memset or memcpy
+         LOOP END
+      LOOP END
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1871,3)
+   remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+   LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1871,3)
+      remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+      LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1871,3)
+         remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+         LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1871,3)
+            remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+            LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1871,3)
+               remark #15398: loop was not vectorized: loop was transformed to memset or memcpy
+            LOOP END
+         LOOP END
+      LOOP END
+   LOOP END
+LOOP END
+===========================================================================
+
+Begin optimization report for: PREPARE_TIMERUN_GPU
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/specfem3D/prepare_timerun.f90(2030,3)
+<Peeled>
+   remark #15301: PEEL LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/prepare_timerun.f90(2030,3)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/prepare_timerun.f90(2030,3)
+<Alternate Alignment Vectorized Loop>
+LOOP END
+
+LOOP BEGIN at src/specfem3D/prepare_timerun.f90(2030,3)
+<Remainder>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/prepare_timerun.f90(2032,3)
+<Peeled>
+   remark #15301: PEEL LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/prepare_timerun.f90(2032,3)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/prepare_timerun.f90(2032,3)
+<Alternate Alignment Vectorized Loop>
+LOOP END
+
+LOOP BEGIN at src/specfem3D/prepare_timerun.f90(2032,3)
+<Remainder>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/prepare_timerun.f90(2033,3)
+<Peeled>
+   remark #15301: PEEL LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/prepare_timerun.f90(2033,3)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/prepare_timerun.f90(2033,3)
+<Alternate Alignment Vectorized Loop>
+LOOP END
+
+LOOP BEGIN at src/specfem3D/prepare_timerun.f90(2033,3)
+<Remainder>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/prepare_timerun.f90(2034,3)
+<Peeled>
+   remark #15301: PEEL LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/prepare_timerun.f90(2034,3)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/prepare_timerun.f90(2034,3)
+<Alternate Alignment Vectorized Loop>
+LOOP END
+
+LOOP BEGIN at src/specfem3D/prepare_timerun.f90(2034,3)
+<Remainder>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/prepare_timerun.f90(2035,3)
+<Peeled>
+   remark #15301: PEEL LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/prepare_timerun.f90(2035,3)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/prepare_timerun.f90(2035,3)
+<Alternate Alignment Vectorized Loop>
+LOOP END
+
+LOOP BEGIN at src/specfem3D/prepare_timerun.f90(2035,3)
+<Remainder>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/prepare_timerun.f90(2036,3)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at src/specfem3D/prepare_timerun.f90(2036,3)
+      remark #15542: loop was not vectorized: inner loop was already vectorized
+
+      LOOP BEGIN at src/specfem3D/prepare_timerun.f90(2036,3)
+         remark #15300: LOOP WAS VECTORIZED
+      LOOP END
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/specfem3D/prepare_timerun.f90(2036,3)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at src/specfem3D/prepare_timerun.f90(2036,3)
+      remark #15542: loop was not vectorized: inner loop was already vectorized
+
+      LOOP BEGIN at src/specfem3D/prepare_timerun.f90(2036,3)
+         remark #15300: LOOP WAS VECTORIZED
+      LOOP END
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/specfem3D/prepare_timerun.f90(2231,5)
+   remark #15398: loop was not vectorized: loop was transformed to memset or memcpy
+LOOP END
+
+LOOP BEGIN at src/specfem3D/prepare_timerun.f90(2233,5)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed OUTPUT dependence between updated_dof_ocean_load line 2242 and updated_dof_ocean_load line 2242
+
+   LOOP BEGIN at src/specfem3D/prepare_timerun.f90(2236,7)
+      remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+      remark #15346: vector dependence: assumed OUTPUT dependence between updated_dof_ocean_load line 2242 and updated_dof_ocean_load line 2242
+
+      LOOP BEGIN at src/specfem3D/prepare_timerun.f90(2237,9)
+         remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+         remark #15346: vector dependence: assumed FLOW dependence between updated_dof_ocean_load line 2242 and updated_dof_ocean_load line 2240
+      LOOP END
+
+      LOOP BEGIN at src/specfem3D/prepare_timerun.f90(2237,9)
+      LOOP END
+
+      LOOP BEGIN at src/specfem3D/prepare_timerun.f90(2237,9)
+      LOOP END
+
+      LOOP BEGIN at src/specfem3D/prepare_timerun.f90(2237,9)
+      LOOP END
+
+      LOOP BEGIN at src/specfem3D/prepare_timerun.f90(2237,9)
+      LOOP END
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/specfem3D/prepare_timerun.f90(2257,5)
+   remark #15398: loop was not vectorized: loop was transformed to memset or memcpy
+LOOP END
+
+LOOP BEGIN at src/specfem3D/prepare_timerun.f90(2259,5)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed OUTPUT dependence between specfem_par_mp_ibool_ocean_load_ line 2269 and specfem_par_mp_ibool_ocean_load_ line 2269
+
+   LOOP BEGIN at src/specfem3D/prepare_timerun.f90(2262,7)
+      remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+      remark #15346: vector dependence: assumed OUTPUT dependence between specfem_par_mp_ibool_ocean_load_ line 2269 and specfem_par_mp_ibool_ocean_load_ line 2269
+
+      LOOP BEGIN at src/specfem3D/prepare_timerun.f90(2263,9)
+         remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+         remark #15346: vector dependence: assumed ANTI dependence between specfem_par_mp_normal_ocean_load line 2271 and specfem_par_mp_normal_ocean_load line 2271
+
+         LOOP BEGIN at src/specfem3D/prepare_timerun.f90(2271,13)
+            remark #15398: loop was not vectorized: loop was transformed to memset or memcpy
+
+            LOOP BEGIN at src/specfem3D/prepare_timerun.f90(2271,13)
+            <Multiversioned v2>
+            LOOP END
+
+            LOOP BEGIN at src/specfem3D/prepare_timerun.f90(2271,13)
+            <Remainder, Multiversioned v2>
+            LOOP END
+         LOOP END
+      LOOP END
+   LOOP END
+LOOP END
+===========================================================================
+
+Begin optimization report for: PREPARE_TIMERUN_IBOOL_INV_TBL:MAKE_INV_TABLE..0
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/specfem3D/prepare_timerun.f90(3465,5)
+   remark #15398: loop was not vectorized: loop was transformed to memset or memcpy
+LOOP END
+
+LOOP BEGIN at src/specfem3D/prepare_timerun.f90(3469,5)
+<Multiversioned v1>
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed FLOW dependence between _1 line 3473 and _1 line 3474
+
+   LOOP BEGIN at src/specfem3D/prepare_timerun.f90(3471,7)
+      remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+      remark #15346: vector dependence: assumed FLOW dependence between _1 line 3473 and _1 line 3474
+   LOOP END
+
+   LOOP BEGIN at src/specfem3D/prepare_timerun.f90(3471,7)
+   <Remainder>
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/specfem3D/prepare_timerun.f90(3469,5)
+<Multiversioned v2>
+   remark #15304: loop was not vectorized: non-vectorizable loop instance from multiversioning
+
+   LOOP BEGIN at src/specfem3D/prepare_timerun.f90(3471,7)
+      remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+      remark #15346: vector dependence: assumed FLOW dependence between _1 line 3473 and _1 line 3474
+   LOOP END
+
+   LOOP BEGIN at src/specfem3D/prepare_timerun.f90(3471,7)
+   <Remainder>
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/specfem3D/prepare_timerun.f90(3482,5)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at src/specfem3D/prepare_timerun.f90(3490,9)
+      remark #15542: loop was not vectorized: inner loop was already vectorized
+
+      LOOP BEGIN at src/specfem3D/prepare_timerun.f90(3490,9)
+      <Peeled, Multiversioned v2>
+         remark #15301: PEEL LOOP WAS VECTORIZED
+      LOOP END
+
+      LOOP BEGIN at src/specfem3D/prepare_timerun.f90(3490,9)
+      <Multiversioned v2>
+         remark #15300: LOOP WAS VECTORIZED
+      LOOP END
+
+      LOOP BEGIN at src/specfem3D/prepare_timerun.f90(3490,9)
+      <Alternate Alignment Vectorized Loop, Multiversioned v2>
+      LOOP END
+
+      LOOP BEGIN at src/specfem3D/prepare_timerun.f90(3490,9)
+      <Remainder, Multiversioned v2>
+      LOOP END
+   LOOP END
+LOOP END
+===========================================================================
+
+Begin optimization report for: PREPARE_TIMERUN_IBOOL_INV_TBL:MAKE_INV_TABLE..1
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/specfem3D/prepare_timerun.f90(3465,5)
+   remark #15398: loop was not vectorized: loop was transformed to memset or memcpy
+LOOP END
+
+LOOP BEGIN at src/specfem3D/prepare_timerun.f90(3469,5)
+<Multiversioned v1>
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed FLOW dependence between _1 line 3473 and _1 line 3474
+
+   LOOP BEGIN at src/specfem3D/prepare_timerun.f90(3471,7)
+      remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+      remark #15346: vector dependence: assumed FLOW dependence between _1 line 3473 and _1 line 3474
+   LOOP END
+
+   LOOP BEGIN at src/specfem3D/prepare_timerun.f90(3471,7)
+   <Remainder>
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/specfem3D/prepare_timerun.f90(3469,5)
+<Multiversioned v2>
+   remark #15304: loop was not vectorized: non-vectorizable loop instance from multiversioning
+
+   LOOP BEGIN at src/specfem3D/prepare_timerun.f90(3471,7)
+      remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+      remark #15346: vector dependence: assumed FLOW dependence between _1 line 3473 and _1 line 3474
+   LOOP END
+
+   LOOP BEGIN at src/specfem3D/prepare_timerun.f90(3471,7)
+   <Remainder>
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/specfem3D/prepare_timerun.f90(3482,5)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at src/specfem3D/prepare_timerun.f90(3490,9)
+      remark #15542: loop was not vectorized: inner loop was already vectorized
+
+      LOOP BEGIN at src/specfem3D/prepare_timerun.f90(3490,9)
+      <Peeled, Multiversioned v2>
+         remark #15301: PEEL LOOP WAS VECTORIZED
+      LOOP END
+
+      LOOP BEGIN at src/specfem3D/prepare_timerun.f90(3490,9)
+      <Multiversioned v2>
+         remark #15300: LOOP WAS VECTORIZED
+      LOOP END
+
+      LOOP BEGIN at src/specfem3D/prepare_timerun.f90(3490,9)
+      <Alternate Alignment Vectorized Loop, Multiversioned v2>
+      LOOP END
+
+      LOOP BEGIN at src/specfem3D/prepare_timerun.f90(3490,9)
+      <Remainder, Multiversioned v2>
+      LOOP END
+   LOOP END
+LOOP END
+===========================================================================
+
+Begin optimization report for: PREPARE_TIMERUN_IBOOL_INV_TBL:MAKE_INV_TABLE..2
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/specfem3D/prepare_timerun.f90(3465,5)
+   remark #15398: loop was not vectorized: loop was transformed to memset or memcpy
+LOOP END
+
+LOOP BEGIN at src/specfem3D/prepare_timerun.f90(3469,5)
+<Multiversioned v1>
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed FLOW dependence between _1 line 3473 and _1 line 3474
+
+   LOOP BEGIN at src/specfem3D/prepare_timerun.f90(3471,7)
+      remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+      remark #15346: vector dependence: assumed FLOW dependence between _1 line 3473 and _1 line 3474
+   LOOP END
+
+   LOOP BEGIN at src/specfem3D/prepare_timerun.f90(3471,7)
+   <Remainder>
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/specfem3D/prepare_timerun.f90(3469,5)
+<Multiversioned v2>
+   remark #15304: loop was not vectorized: non-vectorizable loop instance from multiversioning
+
+   LOOP BEGIN at src/specfem3D/prepare_timerun.f90(3471,7)
+      remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+      remark #15346: vector dependence: assumed FLOW dependence between _1 line 3473 and _1 line 3474
+   LOOP END
+
+   LOOP BEGIN at src/specfem3D/prepare_timerun.f90(3471,7)
+   <Remainder>
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/specfem3D/prepare_timerun.f90(3482,5)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at src/specfem3D/prepare_timerun.f90(3490,9)
+      remark #15542: loop was not vectorized: inner loop was already vectorized
+
+      LOOP BEGIN at src/specfem3D/prepare_timerun.f90(3490,9)
+      <Peeled, Multiversioned v2>
+         remark #15301: PEEL LOOP WAS VECTORIZED
+      LOOP END
+
+      LOOP BEGIN at src/specfem3D/prepare_timerun.f90(3490,9)
+      <Multiversioned v2>
+         remark #15300: LOOP WAS VECTORIZED
+      LOOP END
+
+      LOOP BEGIN at src/specfem3D/prepare_timerun.f90(3490,9)
+      <Alternate Alignment Vectorized Loop, Multiversioned v2>
+      LOOP END
+
+      LOOP BEGIN at src/specfem3D/prepare_timerun.f90(3490,9)
+      <Remainder, Multiversioned v2>
+      LOOP END
+   LOOP END
+LOOP END
+===========================================================================
+
+Begin optimization report for: PREPARE_TIMERUN_INIT_WAVEFIELD
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1053,3)
+   remark #15301: FUSED LOOP WAS VECTORIZED
+
+   LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1053,3)
+      remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+   LOOP END
+
+   LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1054,3)
+   LOOP END
+
+   LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1055,3)
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1054,3)
+LOOP END
+
+LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1055,3)
+LOOP END
+
+LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1053,3)
+<Remainder>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+
+   LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1053,3)
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1057,3)
+<Peeled>
+   remark #15301: PEEL LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1057,3)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1057,3)
+<Remainder>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1058,3)
+   remark #15398: loop was not vectorized: loop was transformed to memset or memcpy
+LOOP END
+
+LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1059,3)
+   remark #15398: loop was not vectorized: loop was transformed to memset or memcpy
+LOOP END
+
+LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1061,3)
+   remark #15301: FUSED LOOP WAS VECTORIZED
+
+   LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1061,3)
+      remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+   LOOP END
+
+   LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1062,3)
+   LOOP END
+
+   LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1063,3)
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1062,3)
+LOOP END
+
+LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1063,3)
+LOOP END
+
+LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1061,3)
+<Remainder>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+
+   LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1061,3)
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1083,5)
+<Peeled>
+   remark #15301: PEEL LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1083,5)
+   remark #15301: FUSED LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1084,5)
+LOOP END
+
+LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1085,5)
+LOOP END
+
+LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1083,5)
+<Alternate Alignment Vectorized Loop>
+LOOP END
+
+LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1083,5)
+<Remainder>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1091,7)
+   remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+   LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1091,7)
+      remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+      LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1091,7)
+         remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+         LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1091,7)
+            remark #15398: loop was not vectorized: loop was transformed to memset or memcpy
+         LOOP END
+      LOOP END
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1098,7)
+   remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+   LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1098,7)
+      remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+      LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1098,7)
+         remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+         LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1098,7)
+            remark #15398: loop was not vectorized: loop was transformed to memset or memcpy
+         LOOP END
+      LOOP END
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1105,7)
+   remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+   LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1105,7)
+      remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+      LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1105,7)
+         remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+         LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1105,7)
+            remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+            LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1105,7)
+               remark #15398: loop was not vectorized: loop was transformed to memset or memcpy
+            LOOP END
+         LOOP END
+      LOOP END
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1108,5)
+   remark #15301: FUSED LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1109,5)
+LOOP END
+
+LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1111,5)
+LOOP END
+
+LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1112,5)
+LOOP END
+
+LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1113,5)
+LOOP END
+
+LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1115,5)
+LOOP END
+
+LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1108,5)
+<Remainder>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1125,5)
+   remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+   LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1125,5)
+      remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+      LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1125,5)
+         remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+         LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1125,5)
+            remark #15398: loop was not vectorized: loop was transformed to memset or memcpy
+         LOOP END
+      LOOP END
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1130,3)
+<Peeled>
+   remark #15301: PEEL LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1130,3)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1130,3)
+<Remainder>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1131,3)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1131,3)
+      remark #15542: loop was not vectorized: inner loop was already vectorized
+
+      LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1131,3)
+         remark #15542: loop was not vectorized: inner loop was already vectorized
+
+         LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1131,3)
+            remark #15300: LOOP WAS VECTORIZED
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1132,3)
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1133,3)
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1134,3)
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1135,3)
+         LOOP END
+      LOOP END
+
+      LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1132,3)
+      LOOP END
+
+      LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1133,3)
+      LOOP END
+
+      LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1134,3)
+      LOOP END
+
+      LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1135,3)
+      LOOP END
+   LOOP END
+
+   LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1132,3)
+   LOOP END
+
+   LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1133,3)
+   LOOP END
+
+   LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1134,3)
+   LOOP END
+
+   LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1135,3)
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1132,3)
+LOOP END
+
+LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1133,3)
+LOOP END
+
+LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1134,3)
+LOOP END
+
+LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1135,3)
+LOOP END
+
+LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1185,3)
+<Peeled>
+   remark #15301: PEEL LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1185,3)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1185,3)
+<Remainder>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1186,3)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1186,3)
+      remark #15542: loop was not vectorized: inner loop was already vectorized
+
+      LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1186,3)
+         remark #15542: loop was not vectorized: inner loop was already vectorized
+
+         LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1186,3)
+            remark #15300: LOOP WAS VECTORIZED
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1187,3)
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1188,3)
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1189,3)
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1190,3)
+         LOOP END
+      LOOP END
+
+      LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1187,3)
+      LOOP END
+
+      LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1188,3)
+      LOOP END
+
+      LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1189,3)
+      LOOP END
+
+      LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1190,3)
+      LOOP END
+   LOOP END
+
+   LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1187,3)
+   LOOP END
+
+   LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1188,3)
+   LOOP END
+
+   LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1189,3)
+   LOOP END
+
+   LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1190,3)
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1187,3)
+LOOP END
+
+LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1188,3)
+LOOP END
+
+LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1189,3)
+LOOP END
+
+LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1190,3)
+LOOP END
+
+LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1194,7)
+   remark #15301: FUSED LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1195,7)
+LOOP END
+
+LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1196,7)
+LOOP END
+
+LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1197,7)
+LOOP END
+
+LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1198,7)
+LOOP END
+
+LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1199,7)
+LOOP END
+
+LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1194,7)
+<Remainder>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1205,5)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1205,5)
+      remark #15542: loop was not vectorized: inner loop was already vectorized
+
+      LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1205,5)
+         remark #15542: loop was not vectorized: inner loop was already vectorized
+
+         LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1205,5)
+            remark #15542: loop was not vectorized: inner loop was already vectorized
+
+            LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1205,5)
+               remark #15300: LOOP WAS VECTORIZED
+            LOOP END
+
+            LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1206,5)
+            LOOP END
+
+            LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1207,5)
+            LOOP END
+
+            LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1208,5)
+            LOOP END
+
+            LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1209,5)
+            LOOP END
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1206,5)
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1207,5)
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1208,5)
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1209,5)
+         LOOP END
+      LOOP END
+
+      LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1206,5)
+      LOOP END
+
+      LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1207,5)
+      LOOP END
+
+      LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1208,5)
+      LOOP END
+
+      LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1209,5)
+      LOOP END
+   LOOP END
+
+   LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1206,5)
+   LOOP END
+
+   LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1207,5)
+   LOOP END
+
+   LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1208,5)
+   LOOP END
+
+   LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1209,5)
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1206,5)
+LOOP END
+
+LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1207,5)
+LOOP END
+
+LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1208,5)
+LOOP END
+
+LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1209,5)
+LOOP END
+
+LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1211,5)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1211,5)
+      remark #15542: loop was not vectorized: inner loop was already vectorized
+
+      LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1211,5)
+         remark #15542: loop was not vectorized: inner loop was already vectorized
+
+         LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1211,5)
+            remark #15542: loop was not vectorized: inner loop was already vectorized
+
+            LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1211,5)
+               remark #15300: LOOP WAS VECTORIZED
+            LOOP END
+
+            LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1212,5)
+            LOOP END
+
+            LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1213,5)
+            LOOP END
+
+            LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1214,5)
+            LOOP END
+
+            LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1215,5)
+            LOOP END
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1212,5)
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1213,5)
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1214,5)
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1215,5)
+         LOOP END
+      LOOP END
+
+      LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1212,5)
+      LOOP END
+
+      LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1213,5)
+      LOOP END
+
+      LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1214,5)
+      LOOP END
+
+      LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1215,5)
+      LOOP END
+   LOOP END
+
+   LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1212,5)
+   LOOP END
+
+   LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1213,5)
+   LOOP END
+
+   LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1214,5)
+   LOOP END
+
+   LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1215,5)
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1212,5)
+LOOP END
+
+LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1213,5)
+LOOP END
+
+LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1214,5)
+LOOP END
+
+LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1215,5)
+LOOP END
+
+LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1219,5)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1219,5)
+      remark #15542: loop was not vectorized: inner loop was already vectorized
+
+      LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1219,5)
+         remark #15542: loop was not vectorized: inner loop was already vectorized
+
+         LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1219,5)
+            remark #15300: LOOP WAS VECTORIZED
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1220,5)
+         LOOP END
+      LOOP END
+
+      LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1220,5)
+      LOOP END
+   LOOP END
+
+   LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1220,5)
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1220,5)
+LOOP END
+
+LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1226,5)
+   remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1227,5)
+LOOP END
+
+LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1228,5)
+LOOP END
+
+LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1230,5)
+LOOP END
+
+LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1231,5)
+LOOP END
+
+LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1232,5)
+LOOP END
+
+LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1238,5)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1238,5)
+      remark #15542: loop was not vectorized: inner loop was already vectorized
+
+      LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1238,5)
+      <Multiversioned v1>
+         remark #15542: loop was not vectorized: inner loop was already vectorized
+
+         LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1238,5)
+         <Peeled>
+            remark #15301: PEEL LOOP WAS VECTORIZED
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1238,5)
+            remark #15300: LOOP WAS VECTORIZED
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1238,5)
+         <Remainder>
+            remark #15301: REMAINDER LOOP WAS VECTORIZED
+         LOOP END
+      LOOP END
+
+      LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1238,5)
+      <Multiversioned v2>
+         remark #15542: loop was not vectorized: inner loop was already vectorized
+
+         LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1238,5)
+            remark #15300: LOOP WAS VECTORIZED
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1238,5)
+         <Remainder>
+            remark #15301: REMAINDER LOOP WAS VECTORIZED
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1238,5)
+         <Remainder>
+         LOOP END
+      LOOP END
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1239,5)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1239,5)
+      remark #15542: loop was not vectorized: inner loop was already vectorized
+
+      LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1239,5)
+      <Multiversioned v1>
+         remark #15542: loop was not vectorized: inner loop was already vectorized
+
+         LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1239,5)
+         <Peeled>
+            remark #15301: PEEL LOOP WAS VECTORIZED
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1239,5)
+            remark #15300: LOOP WAS VECTORIZED
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1239,5)
+         <Remainder>
+            remark #15301: REMAINDER LOOP WAS VECTORIZED
+         LOOP END
+      LOOP END
+
+      LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1239,5)
+      <Multiversioned v2>
+         remark #15542: loop was not vectorized: inner loop was already vectorized
+
+         LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1239,5)
+            remark #15300: LOOP WAS VECTORIZED
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1239,5)
+         <Remainder>
+            remark #15301: REMAINDER LOOP WAS VECTORIZED
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1239,5)
+         <Remainder>
+         LOOP END
+      LOOP END
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1240,5)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1240,5)
+      remark #15542: loop was not vectorized: inner loop was already vectorized
+
+      LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1240,5)
+      <Multiversioned v1>
+         remark #15542: loop was not vectorized: inner loop was already vectorized
+
+         LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1240,5)
+         <Peeled>
+            remark #15301: PEEL LOOP WAS VECTORIZED
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1240,5)
+            remark #15300: LOOP WAS VECTORIZED
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1240,5)
+         <Remainder>
+            remark #15301: REMAINDER LOOP WAS VECTORIZED
+         LOOP END
+      LOOP END
+
+      LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1240,5)
+      <Multiversioned v2>
+         remark #15542: loop was not vectorized: inner loop was already vectorized
+
+         LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1240,5)
+            remark #15300: LOOP WAS VECTORIZED
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1240,5)
+         <Remainder>
+            remark #15301: REMAINDER LOOP WAS VECTORIZED
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1240,5)
+         <Remainder>
+         LOOP END
+      LOOP END
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1241,5)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1241,5)
+      remark #15542: loop was not vectorized: inner loop was already vectorized
+
+      LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1241,5)
+      <Multiversioned v1>
+         remark #15542: loop was not vectorized: inner loop was already vectorized
+
+         LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1241,5)
+         <Peeled>
+            remark #15301: PEEL LOOP WAS VECTORIZED
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1241,5)
+            remark #15300: LOOP WAS VECTORIZED
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1241,5)
+         <Remainder>
+            remark #15301: REMAINDER LOOP WAS VECTORIZED
+         LOOP END
+      LOOP END
+
+      LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1241,5)
+      <Multiversioned v2>
+         remark #15542: loop was not vectorized: inner loop was already vectorized
+
+         LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1241,5)
+            remark #15300: LOOP WAS VECTORIZED
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1241,5)
+         <Remainder>
+            remark #15301: REMAINDER LOOP WAS VECTORIZED
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1241,5)
+         <Remainder>
+         LOOP END
+      LOOP END
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1242,5)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1242,5)
+      remark #15542: loop was not vectorized: inner loop was already vectorized
+
+      LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1242,5)
+      <Multiversioned v1>
+         remark #15542: loop was not vectorized: inner loop was already vectorized
+
+         LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1242,5)
+         <Peeled>
+            remark #15301: PEEL LOOP WAS VECTORIZED
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1242,5)
+            remark #15300: LOOP WAS VECTORIZED
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1242,5)
+         <Remainder>
+            remark #15301: REMAINDER LOOP WAS VECTORIZED
+         LOOP END
+      LOOP END
+
+      LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1242,5)
+      <Multiversioned v2>
+         remark #15542: loop was not vectorized: inner loop was already vectorized
+
+         LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1242,5)
+            remark #15300: LOOP WAS VECTORIZED
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1242,5)
+         <Remainder>
+            remark #15301: REMAINDER LOOP WAS VECTORIZED
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1242,5)
+         <Remainder>
+         LOOP END
+      LOOP END
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1243,5)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1243,5)
+      remark #15542: loop was not vectorized: inner loop was already vectorized
+
+      LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1243,5)
+      <Multiversioned v1>
+         remark #15542: loop was not vectorized: inner loop was already vectorized
+
+         LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1243,5)
+         <Peeled>
+            remark #15301: PEEL LOOP WAS VECTORIZED
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1243,5)
+            remark #15300: LOOP WAS VECTORIZED
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1243,5)
+         <Remainder>
+            remark #15301: REMAINDER LOOP WAS VECTORIZED
+         LOOP END
+      LOOP END
+
+      LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1243,5)
+      <Multiversioned v2>
+         remark #15542: loop was not vectorized: inner loop was already vectorized
+
+         LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1243,5)
+            remark #15300: LOOP WAS VECTORIZED
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1243,5)
+         <Remainder>
+            remark #15301: REMAINDER LOOP WAS VECTORIZED
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1243,5)
+         <Remainder>
+         LOOP END
+      LOOP END
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1245,5)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1245,5)
+      remark #15542: loop was not vectorized: inner loop was already vectorized
+
+      LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1245,5)
+      <Multiversioned v1>
+         remark #15542: loop was not vectorized: inner loop was already vectorized
+
+         LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1245,5)
+         <Peeled>
+            remark #15301: PEEL LOOP WAS VECTORIZED
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1245,5)
+            remark #15300: LOOP WAS VECTORIZED
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1245,5)
+         <Remainder>
+            remark #15301: REMAINDER LOOP WAS VECTORIZED
+         LOOP END
+      LOOP END
+
+      LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1245,5)
+      <Multiversioned v2>
+         remark #15542: loop was not vectorized: inner loop was already vectorized
+
+         LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1245,5)
+            remark #15300: LOOP WAS VECTORIZED
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1245,5)
+         <Remainder>
+            remark #15301: REMAINDER LOOP WAS VECTORIZED
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1245,5)
+         <Remainder>
+         LOOP END
+      LOOP END
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1246,5)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1246,5)
+      remark #15542: loop was not vectorized: inner loop was already vectorized
+
+      LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1246,5)
+      <Multiversioned v1>
+         remark #15542: loop was not vectorized: inner loop was already vectorized
+
+         LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1246,5)
+         <Peeled>
+            remark #15301: PEEL LOOP WAS VECTORIZED
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1246,5)
+            remark #15300: LOOP WAS VECTORIZED
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1246,5)
+         <Remainder>
+            remark #15301: REMAINDER LOOP WAS VECTORIZED
+         LOOP END
+      LOOP END
+
+      LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1246,5)
+      <Multiversioned v2>
+         remark #15542: loop was not vectorized: inner loop was already vectorized
+
+         LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1246,5)
+            remark #15300: LOOP WAS VECTORIZED
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1246,5)
+         <Remainder>
+            remark #15301: REMAINDER LOOP WAS VECTORIZED
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1246,5)
+         <Remainder>
+         LOOP END
+      LOOP END
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1247,5)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1247,5)
+      remark #15542: loop was not vectorized: inner loop was already vectorized
+
+      LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1247,5)
+      <Multiversioned v1>
+         remark #15542: loop was not vectorized: inner loop was already vectorized
+
+         LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1247,5)
+         <Peeled>
+            remark #15301: PEEL LOOP WAS VECTORIZED
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1247,5)
+            remark #15300: LOOP WAS VECTORIZED
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1247,5)
+         <Remainder>
+            remark #15301: REMAINDER LOOP WAS VECTORIZED
+         LOOP END
+      LOOP END
+
+      LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1247,5)
+      <Multiversioned v2>
+         remark #15542: loop was not vectorized: inner loop was already vectorized
+
+         LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1247,5)
+            remark #15300: LOOP WAS VECTORIZED
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1247,5)
+         <Remainder>
+            remark #15301: REMAINDER LOOP WAS VECTORIZED
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1247,5)
+         <Remainder>
+         LOOP END
+      LOOP END
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1248,5)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1248,5)
+      remark #15542: loop was not vectorized: inner loop was already vectorized
+
+      LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1248,5)
+      <Multiversioned v1>
+         remark #15542: loop was not vectorized: inner loop was already vectorized
+
+         LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1248,5)
+         <Peeled>
+            remark #15301: PEEL LOOP WAS VECTORIZED
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1248,5)
+            remark #15300: LOOP WAS VECTORIZED
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1248,5)
+         <Remainder>
+            remark #15301: REMAINDER LOOP WAS VECTORIZED
+         LOOP END
+      LOOP END
+
+      LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1248,5)
+      <Multiversioned v2>
+         remark #15542: loop was not vectorized: inner loop was already vectorized
+
+         LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1248,5)
+            remark #15300: LOOP WAS VECTORIZED
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1248,5)
+         <Remainder>
+            remark #15301: REMAINDER LOOP WAS VECTORIZED
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1248,5)
+         <Remainder>
+         LOOP END
+      LOOP END
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1249,5)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1249,5)
+      remark #15542: loop was not vectorized: inner loop was already vectorized
+
+      LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1249,5)
+      <Multiversioned v1>
+         remark #15542: loop was not vectorized: inner loop was already vectorized
+
+         LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1249,5)
+         <Peeled>
+            remark #15301: PEEL LOOP WAS VECTORIZED
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1249,5)
+            remark #15300: LOOP WAS VECTORIZED
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1249,5)
+         <Remainder>
+            remark #15301: REMAINDER LOOP WAS VECTORIZED
+         LOOP END
+      LOOP END
+
+      LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1249,5)
+      <Multiversioned v2>
+         remark #15542: loop was not vectorized: inner loop was already vectorized
+
+         LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1249,5)
+            remark #15300: LOOP WAS VECTORIZED
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1249,5)
+         <Remainder>
+            remark #15301: REMAINDER LOOP WAS VECTORIZED
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1249,5)
+         <Remainder>
+         LOOP END
+      LOOP END
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1250,5)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1250,5)
+      remark #15542: loop was not vectorized: inner loop was already vectorized
+
+      LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1250,5)
+      <Multiversioned v1>
+         remark #15542: loop was not vectorized: inner loop was already vectorized
+
+         LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1250,5)
+         <Peeled>
+            remark #15301: PEEL LOOP WAS VECTORIZED
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1250,5)
+            remark #15300: LOOP WAS VECTORIZED
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1250,5)
+         <Remainder>
+            remark #15301: REMAINDER LOOP WAS VECTORIZED
+         LOOP END
+      LOOP END
+
+      LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1250,5)
+      <Multiversioned v2>
+         remark #15542: loop was not vectorized: inner loop was already vectorized
+
+         LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1250,5)
+            remark #15300: LOOP WAS VECTORIZED
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1250,5)
+         <Remainder>
+            remark #15301: REMAINDER LOOP WAS VECTORIZED
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1250,5)
+         <Remainder>
+         LOOP END
+      LOOP END
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1253,7)
+<Peeled>
+   remark #15301: PEEL LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1253,7)
+   remark #15301: FUSED LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1254,7)
+LOOP END
+
+LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1253,7)
+<Alternate Alignment Vectorized Loop>
+LOOP END
+
+LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1253,7)
+<Remainder>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1258,7)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1258,7)
+      remark #15542: loop was not vectorized: inner loop was already vectorized
+
+      LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1258,7)
+         remark #15542: loop was not vectorized: inner loop was already vectorized
+
+         LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1258,7)
+            remark #15300: LOOP WAS VECTORIZED
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1259,7)
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1260,7)
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1261,7)
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1262,7)
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1264,7)
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1265,7)
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1266,7)
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1267,7)
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1268,7)
+         LOOP END
+      LOOP END
+
+      LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1259,7)
+      LOOP END
+
+      LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1260,7)
+      LOOP END
+
+      LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1261,7)
+      LOOP END
+
+      LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1262,7)
+      LOOP END
+
+      LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1264,7)
+      LOOP END
+
+      LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1265,7)
+      LOOP END
+
+      LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1266,7)
+      LOOP END
+
+      LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1267,7)
+      LOOP END
+
+      LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1268,7)
+      LOOP END
+   LOOP END
+
+   LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1259,7)
+   LOOP END
+
+   LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1260,7)
+   LOOP END
+
+   LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1261,7)
+   LOOP END
+
+   LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1262,7)
+   LOOP END
+
+   LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1264,7)
+   LOOP END
+
+   LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1265,7)
+   LOOP END
+
+   LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1266,7)
+   LOOP END
+
+   LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1267,7)
+   LOOP END
+
+   LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1268,7)
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1259,7)
+LOOP END
+
+LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1260,7)
+LOOP END
+
+LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1261,7)
+LOOP END
+
+LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1262,7)
+LOOP END
+
+LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1264,7)
+LOOP END
+
+LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1265,7)
+LOOP END
+
+LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1266,7)
+LOOP END
+
+LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1267,7)
+LOOP END
+
+LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1268,7)
+LOOP END
+
+LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1296,5)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1296,5)
+   <Peeled>
+      remark #15301: PEEL LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1296,5)
+      remark #15300: LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1296,5)
+   <Remainder>
+      remark #15301: REMAINDER LOOP WAS VECTORIZED
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1297,5)
+   remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+   LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1297,5)
+      remark #15398: loop was not vectorized: loop was transformed to memset or memcpy
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1299,5)
+<Peeled>
+   remark #15301: PEEL LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1299,5)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1299,5)
+<Remainder>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1300,5)
+   remark #15398: loop was not vectorized: loop was transformed to memset or memcpy
+LOOP END
+
+LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1302,5)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1302,5)
+   <Peeled>
+      remark #15301: PEEL LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1302,5)
+      remark #15300: LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1302,5)
+   <Remainder>
+      remark #15301: REMAINDER LOOP WAS VECTORIZED
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1303,5)
+   remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+   LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1303,5)
+      remark #15398: loop was not vectorized: loop was transformed to memset or memcpy
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1319,7)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1319,7)
+   <Peeled>
+      remark #15301: PEEL LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1319,7)
+      remark #15300: LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1319,7)
+   <Remainder>
+      remark #15301: REMAINDER LOOP WAS VECTORIZED
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1320,7)
+   remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+   LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1320,7)
+      remark #15398: loop was not vectorized: loop was transformed to memset or memcpy
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1321,7)
+<Peeled>
+   remark #15301: PEEL LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1321,7)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1321,7)
+<Remainder>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1322,7)
+   remark #15398: loop was not vectorized: loop was transformed to memset or memcpy
+LOOP END
+
+LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1323,7)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1323,7)
+   <Peeled>
+      remark #15301: PEEL LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1323,7)
+      remark #15300: LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1323,7)
+   <Remainder>
+      remark #15301: REMAINDER LOOP WAS VECTORIZED
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1324,7)
+   remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+   LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1324,7)
+      remark #15398: loop was not vectorized: loop was transformed to memset or memcpy
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1324,7)
+   remark #15423: loop was not vectorized: has only one iteration
+
+   LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1324,7)
+      remark #15423: loop was not vectorized: has only one iteration
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1333,7)
+   remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+   LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1333,7)
+      remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+      LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1333,7)
+         remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+         LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1333,7)
+            remark #15398: loop was not vectorized: loop was transformed to memset or memcpy
+         LOOP END
+      LOOP END
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1334,7)
+   remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+   LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1334,7)
+      remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+      LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1334,7)
+         remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+         LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1334,7)
+            remark #15398: loop was not vectorized: loop was transformed to memset or memcpy
+         LOOP END
+      LOOP END
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1342,9)
+   remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+   LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1342,9)
+      remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+      LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1342,9)
+         remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+         LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1342,9)
+            remark #15398: loop was not vectorized: loop was transformed to memset or memcpy
+         LOOP END
+      LOOP END
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1343,9)
+   remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+   LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1343,9)
+      remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+      LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1343,9)
+         remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+         LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1343,9)
+            remark #15398: loop was not vectorized: loop was transformed to memset or memcpy
+         LOOP END
+      LOOP END
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1343,9)
+   remark #15423: loop was not vectorized: has only one iteration
+
+   LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1343,9)
+      remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+      LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1343,9)
+         remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+         LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1343,9)
+            remark #15423: loop was not vectorized: has only one iteration
+         LOOP END
+      LOOP END
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1365,7)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1365,7)
+      remark #15542: loop was not vectorized: inner loop was already vectorized
+
+      LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1365,7)
+         remark #15542: loop was not vectorized: inner loop was already vectorized
+
+         LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1365,7)
+            remark #15542: loop was not vectorized: inner loop was already vectorized
+
+            LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1365,7)
+            <Peeled>
+               remark #15301: PEEL LOOP WAS VECTORIZED
+            LOOP END
+
+            LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1365,7)
+               remark #15300: LOOP WAS VECTORIZED
+            LOOP END
+
+            LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1365,7)
+            <Remainder>
+               remark #15301: REMAINDER LOOP WAS VECTORIZED
+            LOOP END
+         LOOP END
+      LOOP END
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1366,7)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1366,7)
+      remark #15542: loop was not vectorized: inner loop was already vectorized
+
+      LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1366,7)
+         remark #15542: loop was not vectorized: inner loop was already vectorized
+
+         LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1366,7)
+            remark #15542: loop was not vectorized: inner loop was already vectorized
+
+            LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1366,7)
+            <Peeled>
+               remark #15301: PEEL LOOP WAS VECTORIZED
+            LOOP END
+
+            LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1366,7)
+               remark #15300: LOOP WAS VECTORIZED
+            LOOP END
+
+            LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1366,7)
+            <Remainder>
+               remark #15301: REMAINDER LOOP WAS VECTORIZED
+            LOOP END
+         LOOP END
+      LOOP END
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1367,7)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1367,7)
+      remark #15542: loop was not vectorized: inner loop was already vectorized
+
+      LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1367,7)
+         remark #15542: loop was not vectorized: inner loop was already vectorized
+
+         LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1367,7)
+            remark #15542: loop was not vectorized: inner loop was already vectorized
+
+            LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1367,7)
+            <Peeled>
+               remark #15301: PEEL LOOP WAS VECTORIZED
+            LOOP END
+
+            LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1367,7)
+               remark #15300: LOOP WAS VECTORIZED
+            LOOP END
+
+            LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1367,7)
+            <Remainder>
+               remark #15301: REMAINDER LOOP WAS VECTORIZED
+            LOOP END
+         LOOP END
+      LOOP END
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1368,7)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1368,7)
+      remark #15542: loop was not vectorized: inner loop was already vectorized
+
+      LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1368,7)
+         remark #15542: loop was not vectorized: inner loop was already vectorized
+
+         LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1368,7)
+            remark #15542: loop was not vectorized: inner loop was already vectorized
+
+            LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1368,7)
+            <Peeled>
+               remark #15301: PEEL LOOP WAS VECTORIZED
+            LOOP END
+
+            LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1368,7)
+               remark #15300: LOOP WAS VECTORIZED
+            LOOP END
+
+            LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1368,7)
+            <Remainder>
+               remark #15301: REMAINDER LOOP WAS VECTORIZED
+            LOOP END
+         LOOP END
+      LOOP END
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1369,7)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1369,7)
+      remark #15542: loop was not vectorized: inner loop was already vectorized
+
+      LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1369,7)
+         remark #15542: loop was not vectorized: inner loop was already vectorized
+
+         LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1369,7)
+            remark #15542: loop was not vectorized: inner loop was already vectorized
+
+            LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1369,7)
+            <Peeled>
+               remark #15301: PEEL LOOP WAS VECTORIZED
+            LOOP END
+
+            LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1369,7)
+               remark #15300: LOOP WAS VECTORIZED
+            LOOP END
+
+            LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1369,7)
+            <Remainder>
+               remark #15301: REMAINDER LOOP WAS VECTORIZED
+            LOOP END
+         LOOP END
+      LOOP END
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1371,7)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1371,7)
+      remark #15542: loop was not vectorized: inner loop was already vectorized
+
+      LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1371,7)
+         remark #15542: loop was not vectorized: inner loop was already vectorized
+
+         LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1371,7)
+            remark #15542: loop was not vectorized: inner loop was already vectorized
+
+            LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1371,7)
+            <Peeled>
+               remark #15301: PEEL LOOP WAS VECTORIZED
+            LOOP END
+
+            LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1371,7)
+               remark #15300: LOOP WAS VECTORIZED
+            LOOP END
+
+            LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1371,7)
+            <Remainder>
+               remark #15301: REMAINDER LOOP WAS VECTORIZED
+            LOOP END
+         LOOP END
+      LOOP END
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1372,7)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1372,7)
+      remark #15542: loop was not vectorized: inner loop was already vectorized
+
+      LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1372,7)
+         remark #15542: loop was not vectorized: inner loop was already vectorized
+
+         LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1372,7)
+            remark #15542: loop was not vectorized: inner loop was already vectorized
+
+            LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1372,7)
+            <Peeled>
+               remark #15301: PEEL LOOP WAS VECTORIZED
+            LOOP END
+
+            LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1372,7)
+               remark #15300: LOOP WAS VECTORIZED
+            LOOP END
+
+            LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1372,7)
+            <Remainder>
+               remark #15301: REMAINDER LOOP WAS VECTORIZED
+            LOOP END
+         LOOP END
+      LOOP END
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1373,7)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1373,7)
+      remark #15542: loop was not vectorized: inner loop was already vectorized
+
+      LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1373,7)
+         remark #15542: loop was not vectorized: inner loop was already vectorized
+
+         LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1373,7)
+            remark #15542: loop was not vectorized: inner loop was already vectorized
+
+            LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1373,7)
+            <Peeled>
+               remark #15301: PEEL LOOP WAS VECTORIZED
+            LOOP END
+
+            LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1373,7)
+               remark #15300: LOOP WAS VECTORIZED
+            LOOP END
+
+            LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1373,7)
+            <Remainder>
+               remark #15301: REMAINDER LOOP WAS VECTORIZED
+            LOOP END
+         LOOP END
+      LOOP END
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1374,7)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1374,7)
+      remark #15542: loop was not vectorized: inner loop was already vectorized
+
+      LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1374,7)
+         remark #15542: loop was not vectorized: inner loop was already vectorized
+
+         LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1374,7)
+            remark #15542: loop was not vectorized: inner loop was already vectorized
+
+            LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1374,7)
+            <Peeled>
+               remark #15301: PEEL LOOP WAS VECTORIZED
+            LOOP END
+
+            LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1374,7)
+               remark #15300: LOOP WAS VECTORIZED
+            LOOP END
+
+            LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1374,7)
+            <Remainder>
+               remark #15301: REMAINDER LOOP WAS VECTORIZED
+            LOOP END
+         LOOP END
+      LOOP END
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1375,7)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1375,7)
+      remark #15542: loop was not vectorized: inner loop was already vectorized
+
+      LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1375,7)
+         remark #15542: loop was not vectorized: inner loop was already vectorized
+
+         LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1375,7)
+            remark #15542: loop was not vectorized: inner loop was already vectorized
+
+            LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1375,7)
+            <Peeled>
+               remark #15301: PEEL LOOP WAS VECTORIZED
+            LOOP END
+
+            LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1375,7)
+               remark #15300: LOOP WAS VECTORIZED
+            LOOP END
+
+            LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1375,7)
+            <Remainder>
+               remark #15301: REMAINDER LOOP WAS VECTORIZED
+            LOOP END
+         LOOP END
+      LOOP END
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1395,9)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1395,9)
+      remark #15542: loop was not vectorized: inner loop was already vectorized
+
+      LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1395,9)
+         remark #15542: loop was not vectorized: inner loop was already vectorized
+
+         LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1395,9)
+            remark #15542: loop was not vectorized: inner loop was already vectorized
+
+            LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1395,9)
+            <Peeled>
+               remark #15301: PEEL LOOP WAS VECTORIZED
+            LOOP END
+
+            LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1395,9)
+               remark #15300: LOOP WAS VECTORIZED
+            LOOP END
+
+            LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1395,9)
+            <Remainder>
+               remark #15301: REMAINDER LOOP WAS VECTORIZED
+            LOOP END
+         LOOP END
+      LOOP END
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1396,9)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1396,9)
+      remark #15542: loop was not vectorized: inner loop was already vectorized
+
+      LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1396,9)
+         remark #15542: loop was not vectorized: inner loop was already vectorized
+
+         LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1396,9)
+            remark #15542: loop was not vectorized: inner loop was already vectorized
+
+            LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1396,9)
+            <Peeled>
+               remark #15301: PEEL LOOP WAS VECTORIZED
+            LOOP END
+
+            LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1396,9)
+               remark #15300: LOOP WAS VECTORIZED
+            LOOP END
+
+            LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1396,9)
+            <Remainder>
+               remark #15301: REMAINDER LOOP WAS VECTORIZED
+            LOOP END
+         LOOP END
+      LOOP END
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1397,9)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1397,9)
+      remark #15542: loop was not vectorized: inner loop was already vectorized
+
+      LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1397,9)
+         remark #15542: loop was not vectorized: inner loop was already vectorized
+
+         LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1397,9)
+            remark #15542: loop was not vectorized: inner loop was already vectorized
+
+            LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1397,9)
+            <Peeled>
+               remark #15301: PEEL LOOP WAS VECTORIZED
+            LOOP END
+
+            LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1397,9)
+               remark #15300: LOOP WAS VECTORIZED
+            LOOP END
+
+            LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1397,9)
+            <Remainder>
+               remark #15301: REMAINDER LOOP WAS VECTORIZED
+            LOOP END
+         LOOP END
+      LOOP END
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1398,9)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1398,9)
+      remark #15542: loop was not vectorized: inner loop was already vectorized
+
+      LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1398,9)
+         remark #15542: loop was not vectorized: inner loop was already vectorized
+
+         LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1398,9)
+            remark #15542: loop was not vectorized: inner loop was already vectorized
+
+            LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1398,9)
+            <Peeled>
+               remark #15301: PEEL LOOP WAS VECTORIZED
+            LOOP END
+
+            LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1398,9)
+               remark #15300: LOOP WAS VECTORIZED
+            LOOP END
+
+            LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1398,9)
+            <Remainder>
+               remark #15301: REMAINDER LOOP WAS VECTORIZED
+            LOOP END
+         LOOP END
+      LOOP END
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1399,9)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1399,9)
+      remark #15542: loop was not vectorized: inner loop was already vectorized
+
+      LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1399,9)
+         remark #15542: loop was not vectorized: inner loop was already vectorized
+
+         LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1399,9)
+            remark #15542: loop was not vectorized: inner loop was already vectorized
+
+            LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1399,9)
+            <Peeled>
+               remark #15301: PEEL LOOP WAS VECTORIZED
+            LOOP END
+
+            LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1399,9)
+               remark #15300: LOOP WAS VECTORIZED
+            LOOP END
+
+            LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1399,9)
+            <Remainder>
+               remark #15301: REMAINDER LOOP WAS VECTORIZED
+            LOOP END
+         LOOP END
+      LOOP END
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1401,9)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1401,9)
+      remark #15542: loop was not vectorized: inner loop was already vectorized
+
+      LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1401,9)
+         remark #15542: loop was not vectorized: inner loop was already vectorized
+
+         LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1401,9)
+            remark #15542: loop was not vectorized: inner loop was already vectorized
+
+            LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1401,9)
+            <Peeled>
+               remark #15301: PEEL LOOP WAS VECTORIZED
+            LOOP END
+
+            LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1401,9)
+               remark #15300: LOOP WAS VECTORIZED
+            LOOP END
+
+            LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1401,9)
+            <Remainder>
+               remark #15301: REMAINDER LOOP WAS VECTORIZED
+            LOOP END
+         LOOP END
+      LOOP END
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1402,9)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1402,9)
+      remark #15542: loop was not vectorized: inner loop was already vectorized
+
+      LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1402,9)
+         remark #15542: loop was not vectorized: inner loop was already vectorized
+
+         LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1402,9)
+            remark #15542: loop was not vectorized: inner loop was already vectorized
+
+            LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1402,9)
+            <Peeled>
+               remark #15301: PEEL LOOP WAS VECTORIZED
+            LOOP END
+
+            LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1402,9)
+               remark #15300: LOOP WAS VECTORIZED
+            LOOP END
+
+            LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1402,9)
+            <Remainder>
+               remark #15301: REMAINDER LOOP WAS VECTORIZED
+            LOOP END
+         LOOP END
+      LOOP END
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1403,9)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1403,9)
+      remark #15542: loop was not vectorized: inner loop was already vectorized
+
+      LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1403,9)
+         remark #15542: loop was not vectorized: inner loop was already vectorized
+
+         LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1403,9)
+            remark #15542: loop was not vectorized: inner loop was already vectorized
+
+            LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1403,9)
+            <Peeled>
+               remark #15301: PEEL LOOP WAS VECTORIZED
+            LOOP END
+
+            LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1403,9)
+               remark #15300: LOOP WAS VECTORIZED
+            LOOP END
+
+            LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1403,9)
+            <Remainder>
+               remark #15301: REMAINDER LOOP WAS VECTORIZED
+            LOOP END
+         LOOP END
+      LOOP END
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1404,9)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1404,9)
+      remark #15542: loop was not vectorized: inner loop was already vectorized
+
+      LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1404,9)
+         remark #15542: loop was not vectorized: inner loop was already vectorized
+
+         LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1404,9)
+            remark #15542: loop was not vectorized: inner loop was already vectorized
+
+            LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1404,9)
+            <Peeled>
+               remark #15301: PEEL LOOP WAS VECTORIZED
+            LOOP END
+
+            LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1404,9)
+               remark #15300: LOOP WAS VECTORIZED
+            LOOP END
+
+            LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1404,9)
+            <Remainder>
+               remark #15301: REMAINDER LOOP WAS VECTORIZED
+            LOOP END
+         LOOP END
+      LOOP END
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1405,9)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1405,9)
+      remark #15542: loop was not vectorized: inner loop was already vectorized
+
+      LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1405,9)
+         remark #15542: loop was not vectorized: inner loop was already vectorized
+
+         LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1405,9)
+            remark #15542: loop was not vectorized: inner loop was already vectorized
+
+            LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1405,9)
+            <Peeled>
+               remark #15301: PEEL LOOP WAS VECTORIZED
+            LOOP END
+
+            LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1405,9)
+               remark #15300: LOOP WAS VECTORIZED
+            LOOP END
+
+            LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1405,9)
+            <Remainder>
+               remark #15301: REMAINDER LOOP WAS VECTORIZED
+            LOOP END
+         LOOP END
+      LOOP END
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1405,9)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1405,9)
+      remark #15542: loop was not vectorized: inner loop was already vectorized
+
+      LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1405,9)
+         remark #15542: loop was not vectorized: inner loop was already vectorized
+
+         LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1405,9)
+            remark #15542: loop was not vectorized: inner loop was already vectorized
+
+            LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1405,9)
+            <Peeled>
+               remark #15301: PEEL LOOP WAS VECTORIZED
+            LOOP END
+
+            LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1405,9)
+               remark #15300: LOOP WAS VECTORIZED
+            LOOP END
+
+            LOOP BEGIN at src/specfem3D/prepare_timerun.f90(1405,9)
+            <Remainder>
+               remark #15301: REMAINDER LOOP WAS VECTORIZED
+            LOOP END
+         LOOP END
+      LOOP END
+   LOOP END
+LOOP END
+Optimization 'OSR' reduced: function size or variable count limit exceeded: use -override_limits / -Qoverride_limits to override
+===========================================================================

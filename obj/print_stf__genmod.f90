@@ -1,0 +1,21 @@
+        !COMPILER-GENERATED INTERFACE MODULE: Fri Mar 11 15:54:00 2016
+        MODULE PRINT_STF__genmod
+          INTERFACE 
+            SUBROUTINE PRINT_STF(NSOURCES,ISOURCE,MXX,MYY,MZZ,MXY,MXZ,  &
+     &MYZ,TSHIFT_CMT,HDUR,MIN_TSHIFT_CMT_ORIGINAL,NSTEP,DT)
+              INTEGER(KIND=4) :: NSOURCES
+              INTEGER(KIND=4) :: ISOURCE
+              REAL(KIND=8) :: MXX(NSOURCES)
+              REAL(KIND=8) :: MYY(NSOURCES)
+              REAL(KIND=8) :: MZZ(NSOURCES)
+              REAL(KIND=8) :: MXY(NSOURCES)
+              REAL(KIND=8) :: MXZ(NSOURCES)
+              REAL(KIND=8) :: MYZ(NSOURCES)
+              REAL(KIND=8) :: TSHIFT_CMT(NSOURCES)
+              REAL(KIND=8) :: HDUR(NSOURCES)
+              REAL(KIND=8) :: MIN_TSHIFT_CMT_ORIGINAL
+              INTEGER(KIND=4) :: NSTEP
+              REAL(KIND=8) :: DT
+            END SUBROUTINE PRINT_STF
+          END INTERFACE 
+        END MODULE PRINT_STF__genmod

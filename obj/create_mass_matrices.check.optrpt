@@ -1,0 +1,636 @@
+
+Begin optimization report for: CREATE_MASS_MATRICES
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/meshfem3D/create_mass_matrices.f90(93,3)
+   remark #15398: loop was not vectorized: loop was transformed to memset or memcpy
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/create_mass_matrices.f90(94,3)
+   remark #15398: loop was not vectorized: loop was transformed to memset or memcpy
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/create_mass_matrices.f90(95,3)
+   remark #15398: loop was not vectorized: loop was transformed to memset or memcpy
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/create_mass_matrices.f90(97,3)
+   remark #15398: loop was not vectorized: loop was transformed to memset or memcpy
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/create_mass_matrices.f90(98,3)
+   remark #15398: loop was not vectorized: loop was transformed to memset or memcpy
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/create_mass_matrices.f90(103,3)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed OUTPUT dependence between create_regions_mesh_par2_mp_rmas line 144 and create_regions_mesh_par2_mp_rmas line 135
+
+   LOOP BEGIN at src/meshfem3D/create_mass_matrices.f90(108,5)
+      remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+      remark #15346: vector dependence: assumed OUTPUT dependence between create_regions_mesh_par2_mp_rmas line 144 and create_regions_mesh_par2_mp_rmas line 135
+
+      LOOP BEGIN at src/meshfem3D/create_mass_matrices.f90(109,7)
+         remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+         remark #15346: vector dependence: assumed OUTPUT dependence between create_regions_mesh_par2_mp_rmas line 144 and create_regions_mesh_par2_mp_rmas line 135
+
+         LOOP BEGIN at src/meshfem3D/create_mass_matrices.f90(110,9)
+            remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+            remark #15346: vector dependence: assumed OUTPUT dependence between create_regions_mesh_par2_mp_rmas line 144 and create_regions_mesh_par2_mp_rmas line 135
+         LOOP END
+      LOOP END
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/create_mass_matrices.f90(160,5)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at src/meshfem3D/create_mass_matrices.f90(160,5)
+   <Peeled, Multiversioned v2>
+      remark #15301: PEEL LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/meshfem3D/create_mass_matrices.f90(160,5)
+   <Multiversioned v2>
+      remark #15300: LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/meshfem3D/create_mass_matrices.f90(160,5)
+   <Alternate Alignment Vectorized Loop, Multiversioned v2>
+   LOOP END
+
+   LOOP BEGIN at src/meshfem3D/create_mass_matrices.f90(160,5)
+   <Remainder, Multiversioned v2>
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/create_mass_matrices.f90(161,5)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at src/meshfem3D/create_mass_matrices.f90(161,5)
+   <Peeled, Multiversioned v2>
+      remark #15301: PEEL LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/meshfem3D/create_mass_matrices.f90(161,5)
+   <Multiversioned v2>
+      remark #15300: LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/meshfem3D/create_mass_matrices.f90(161,5)
+   <Alternate Alignment Vectorized Loop, Multiversioned v2>
+   LOOP END
+
+   LOOP BEGIN at src/meshfem3D/create_mass_matrices.f90(161,5)
+   <Remainder, Multiversioned v2>
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/create_mass_matrices.f90(163,5)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at src/meshfem3D/create_mass_matrices.f90(163,5)
+   <Peeled, Multiversioned v2>
+      remark #15301: PEEL LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/meshfem3D/create_mass_matrices.f90(163,5)
+   <Multiversioned v2>
+      remark #15300: LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/meshfem3D/create_mass_matrices.f90(163,5)
+   <Alternate Alignment Vectorized Loop, Multiversioned v2>
+   LOOP END
+
+   LOOP BEGIN at src/meshfem3D/create_mass_matrices.f90(163,5)
+   <Remainder, Multiversioned v2>
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/create_mass_matrices.f90(164,5)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at src/meshfem3D/create_mass_matrices.f90(164,5)
+   <Peeled, Multiversioned v2>
+      remark #15301: PEEL LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/meshfem3D/create_mass_matrices.f90(164,5)
+   <Multiversioned v2>
+      remark #15300: LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/meshfem3D/create_mass_matrices.f90(164,5)
+   <Alternate Alignment Vectorized Loop, Multiversioned v2>
+   LOOP END
+
+   LOOP BEGIN at src/meshfem3D/create_mass_matrices.f90(164,5)
+   <Remainder, Multiversioned v2>
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/create_mass_matrices.f90(181,9)
+<Peeled>
+   remark #15301: PEEL LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/create_mass_matrices.f90(181,9)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/create_mass_matrices.f90(181,9)
+<Remainder>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/create_mass_matrices.f90(184,11)
+<Peeled>
+   remark #15301: PEEL LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/create_mass_matrices.f90(184,11)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/create_mass_matrices.f90(184,11)
+<Remainder>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/create_mass_matrices.f90(185,11)
+<Peeled>
+   remark #15301: PEEL LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/create_mass_matrices.f90(185,11)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/create_mass_matrices.f90(185,11)
+<Remainder>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/create_mass_matrices.f90(186,11)
+<Peeled>
+   remark #15301: PEEL LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/create_mass_matrices.f90(186,11)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/create_mass_matrices.f90(186,11)
+<Remainder>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/create_mass_matrices.f90(187,11)
+<Peeled>
+   remark #15301: PEEL LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/create_mass_matrices.f90(187,11)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/create_mass_matrices.f90(187,11)
+<Remainder>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/create_mass_matrices.f90(191,9)
+<Peeled>
+   remark #15301: PEEL LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/create_mass_matrices.f90(191,9)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/create_mass_matrices.f90(191,9)
+<Remainder>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/create_mass_matrices.f90(194,11)
+<Peeled>
+   remark #15301: PEEL LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/create_mass_matrices.f90(194,11)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/create_mass_matrices.f90(194,11)
+<Remainder>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/create_mass_matrices.f90(195,11)
+<Peeled>
+   remark #15301: PEEL LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/create_mass_matrices.f90(195,11)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/create_mass_matrices.f90(195,11)
+<Remainder>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/create_mass_matrices.f90(196,11)
+<Peeled>
+   remark #15301: PEEL LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/create_mass_matrices.f90(196,11)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/create_mass_matrices.f90(196,11)
+<Remainder>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/create_mass_matrices.f90(197,11)
+<Peeled>
+   remark #15301: PEEL LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/create_mass_matrices.f90(197,11)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/create_mass_matrices.f90(197,11)
+<Remainder>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+===========================================================================
+
+Begin optimization report for: CREATE_MASS_MATRICES_ROTATION
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/meshfem3D/create_mass_matrices.f90(280,5)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed FLOW dependence between create_regions_mesh_par2_mp_rmas line 308 and create_regions_mesh_par2_mp_rmas line 308
+
+   LOOP BEGIN at src/meshfem3D/create_mass_matrices.f90(285,7)
+      remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+      remark #15346: vector dependence: assumed FLOW dependence between create_regions_mesh_par2_mp_rmas line 308 and create_regions_mesh_par2_mp_rmas line 308
+
+      LOOP BEGIN at src/meshfem3D/create_mass_matrices.f90(286,9)
+         remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+         remark #15346: vector dependence: assumed FLOW dependence between create_regions_mesh_par2_mp_rmas line 308 and create_regions_mesh_par2_mp_rmas line 308
+
+         LOOP BEGIN at src/meshfem3D/create_mass_matrices.f90(287,11)
+            remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+            remark #15346: vector dependence: assumed FLOW dependence between create_regions_mesh_par2_mp_rmas line 308 and create_regions_mesh_par2_mp_rmas line 308
+         LOOP END
+      LOOP END
+   LOOP END
+LOOP END
+===========================================================================
+
+Begin optimization report for: CREATE_MASS_MATRICES_STACEY
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/meshfem3D/create_mass_matrices.f90(396,5)
+<Peeled>
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at src/meshfem3D/create_mass_matrices.f90(395,3)
+   <Peeled>
+      remark #15301: PERMUTED LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/meshfem3D/create_mass_matrices.f90(400,3)
+   <Peeled>
+   LOOP END
+
+   LOOP BEGIN at src/meshfem3D/create_mass_matrices.f90(405,3)
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/create_mass_matrices.f90(401,5)
+<Peeled>
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/create_mass_matrices.f90(406,5)
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/create_mass_matrices.f90(415,5)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at src/meshfem3D/create_mass_matrices.f90(415,5)
+   <Peeled, Multiversioned v2>
+      remark #15301: PEEL LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/meshfem3D/create_mass_matrices.f90(415,5)
+   <Multiversioned v2>
+      remark #15300: LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/meshfem3D/create_mass_matrices.f90(415,5)
+   <Alternate Alignment Vectorized Loop, Multiversioned v2>
+   LOOP END
+
+   LOOP BEGIN at src/meshfem3D/create_mass_matrices.f90(415,5)
+   <Remainder, Multiversioned v2>
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/create_mass_matrices.f90(416,5)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at src/meshfem3D/create_mass_matrices.f90(416,5)
+   <Peeled, Multiversioned v2>
+      remark #15301: PEEL LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/meshfem3D/create_mass_matrices.f90(416,5)
+   <Multiversioned v2>
+      remark #15300: LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/meshfem3D/create_mass_matrices.f90(416,5)
+   <Alternate Alignment Vectorized Loop, Multiversioned v2>
+   LOOP END
+
+   LOOP BEGIN at src/meshfem3D/create_mass_matrices.f90(416,5)
+   <Remainder, Multiversioned v2>
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/create_mass_matrices.f90(422,8)
+   remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+   LOOP BEGIN at src/meshfem3D/create_mass_matrices.f90(430,11)
+      remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+      remark #15346: vector dependence: assumed OUTPUT dependence between create_regions_mesh_par2_mp_rmas line 446 and create_regions_mesh_par2_mp_rmas line 446
+
+      LOOP BEGIN at src/meshfem3D/create_mass_matrices.f90(431,14)
+         remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+         remark #15346: vector dependence: assumed FLOW dependence between create_regions_mesh_par2_mp_rmas line 446 and create_regions_mesh_par2_mp_rmas line 446
+      LOOP END
+
+      LOOP BEGIN at src/meshfem3D/create_mass_matrices.f90(431,14)
+         remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+         remark #15346: vector dependence: assumed FLOW dependence between create_regions_mesh_par2_mp_rmas line 446 and create_regions_mesh_par2_mp_rmas line 446
+      LOOP END
+
+      LOOP BEGIN at src/meshfem3D/create_mass_matrices.f90(431,14)
+         remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+         remark #15346: vector dependence: assumed FLOW dependence between create_regions_mesh_par2_mp_rmas line 446 and create_regions_mesh_par2_mp_rmas line 446
+      LOOP END
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/create_mass_matrices.f90(463,8)
+   remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+   LOOP BEGIN at src/meshfem3D/create_mass_matrices.f90(471,11)
+      remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+      remark #15346: vector dependence: assumed OUTPUT dependence between create_regions_mesh_par2_mp_rmas line 487 and create_regions_mesh_par2_mp_rmas line 487
+
+      LOOP BEGIN at src/meshfem3D/create_mass_matrices.f90(472,14)
+         remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+         remark #15346: vector dependence: assumed FLOW dependence between create_regions_mesh_par2_mp_rmas line 487 and create_regions_mesh_par2_mp_rmas line 487
+      LOOP END
+
+      LOOP BEGIN at src/meshfem3D/create_mass_matrices.f90(472,14)
+         remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+         remark #15346: vector dependence: assumed FLOW dependence between create_regions_mesh_par2_mp_rmas line 487 and create_regions_mesh_par2_mp_rmas line 487
+      LOOP END
+
+      LOOP BEGIN at src/meshfem3D/create_mass_matrices.f90(472,14)
+         remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+         remark #15346: vector dependence: assumed FLOW dependence between create_regions_mesh_par2_mp_rmas line 487 and create_regions_mesh_par2_mp_rmas line 487
+      LOOP END
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/create_mass_matrices.f90(501,5)
+   remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+   LOOP BEGIN at src/meshfem3D/create_mass_matrices.f90(509,8)
+      remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+      remark #15346: vector dependence: assumed OUTPUT dependence between create_regions_mesh_par2_mp_rmas line 525 and create_regions_mesh_par2_mp_rmas line 525
+
+      LOOP BEGIN at src/meshfem3D/create_mass_matrices.f90(510,11)
+         remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+         remark #15346: vector dependence: assumed FLOW dependence between create_regions_mesh_par2_mp_rmas line 525 and create_regions_mesh_par2_mp_rmas line 525
+      LOOP END
+
+      LOOP BEGIN at src/meshfem3D/create_mass_matrices.f90(510,11)
+         remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+         remark #15346: vector dependence: assumed FLOW dependence between create_regions_mesh_par2_mp_rmas line 525 and create_regions_mesh_par2_mp_rmas line 525
+      LOOP END
+
+      LOOP BEGIN at src/meshfem3D/create_mass_matrices.f90(510,11)
+         remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+         remark #15346: vector dependence: assumed FLOW dependence between create_regions_mesh_par2_mp_rmas line 525 and create_regions_mesh_par2_mp_rmas line 525
+      LOOP END
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/create_mass_matrices.f90(537,5)
+   remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+   LOOP BEGIN at src/meshfem3D/create_mass_matrices.f90(545,8)
+      remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+      remark #15346: vector dependence: assumed OUTPUT dependence between create_regions_mesh_par2_mp_rmas line 561 and create_regions_mesh_par2_mp_rmas line 561
+
+      LOOP BEGIN at src/meshfem3D/create_mass_matrices.f90(546,11)
+         remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+         remark #15346: vector dependence: assumed FLOW dependence between create_regions_mesh_par2_mp_rmas line 561 and create_regions_mesh_par2_mp_rmas line 561
+      LOOP END
+
+      LOOP BEGIN at src/meshfem3D/create_mass_matrices.f90(546,11)
+         remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+         remark #15346: vector dependence: assumed FLOW dependence between create_regions_mesh_par2_mp_rmas line 561 and create_regions_mesh_par2_mp_rmas line 561
+      LOOP END
+
+      LOOP BEGIN at src/meshfem3D/create_mass_matrices.f90(546,11)
+         remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+         remark #15346: vector dependence: assumed FLOW dependence between create_regions_mesh_par2_mp_rmas line 561 and create_regions_mesh_par2_mp_rmas line 561
+      LOOP END
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/create_mass_matrices.f90(573,9)
+<Peeled>
+   remark #15301: PEEL LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/create_mass_matrices.f90(573,9)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/create_mass_matrices.f90(573,9)
+<Remainder>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/create_mass_matrices.f90(574,9)
+<Peeled>
+   remark #15301: PEEL LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/create_mass_matrices.f90(574,9)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/create_mass_matrices.f90(574,9)
+<Remainder>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/create_mass_matrices.f90(582,8)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+
+   LOOP BEGIN at src/meshfem3D/create_mass_matrices.f90(590,11)
+      remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+      remark #15346: vector dependence: assumed OUTPUT dependence between create_regions_mesh_par2_mp_rmas line 598 and create_regions_mesh_par2_mp_rmas line 598
+
+      LOOP BEGIN at src/meshfem3D/create_mass_matrices.f90(591,14)
+         remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+         remark #15346: vector dependence: assumed FLOW dependence between create_regions_mesh_par2_mp_rmas line 598 and create_regions_mesh_par2_mp_rmas line 598
+      LOOP END
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/create_mass_matrices.f90(609,8)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+
+   LOOP BEGIN at src/meshfem3D/create_mass_matrices.f90(617,11)
+      remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+      remark #15346: vector dependence: assumed OUTPUT dependence between create_regions_mesh_par2_mp_rmas line 625 and create_regions_mesh_par2_mp_rmas line 625
+
+      LOOP BEGIN at src/meshfem3D/create_mass_matrices.f90(618,14)
+         remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+         remark #15346: vector dependence: assumed FLOW dependence between create_regions_mesh_par2_mp_rmas line 625 and create_regions_mesh_par2_mp_rmas line 625
+      LOOP END
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/create_mass_matrices.f90(633,5)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+
+   LOOP BEGIN at src/meshfem3D/create_mass_matrices.f90(641,8)
+      remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+      remark #15346: vector dependence: assumed OUTPUT dependence between create_regions_mesh_par2_mp_rmas line 649 and create_regions_mesh_par2_mp_rmas line 649
+
+      LOOP BEGIN at src/meshfem3D/create_mass_matrices.f90(642,11)
+         remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+         remark #15346: vector dependence: assumed FLOW dependence between create_regions_mesh_par2_mp_rmas line 649 and create_regions_mesh_par2_mp_rmas line 649
+      LOOP END
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/create_mass_matrices.f90(655,5)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+
+   LOOP BEGIN at src/meshfem3D/create_mass_matrices.f90(663,8)
+      remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+      remark #15346: vector dependence: assumed OUTPUT dependence between create_regions_mesh_par2_mp_rmas line 671 and create_regions_mesh_par2_mp_rmas line 671
+
+      LOOP BEGIN at src/meshfem3D/create_mass_matrices.f90(664,11)
+         remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+         remark #15346: vector dependence: assumed FLOW dependence between create_regions_mesh_par2_mp_rmas line 671 and create_regions_mesh_par2_mp_rmas line 671
+      LOOP END
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/create_mass_matrices.f90(677,5)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed OUTPUT dependence between create_regions_mesh_par2_mp_rmas line 690 and create_regions_mesh_par2_mp_rmas line 690
+
+   LOOP BEGIN at src/meshfem3D/create_mass_matrices.f90(682,8)
+      remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+      remark #15346: vector dependence: assumed OUTPUT dependence between create_regions_mesh_par2_mp_rmas line 690 and create_regions_mesh_par2_mp_rmas line 690
+
+      LOOP BEGIN at src/meshfem3D/create_mass_matrices.f90(683,11)
+         remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+         remark #15346: vector dependence: assumed FLOW dependence between create_regions_mesh_par2_mp_rmas line 690 and create_regions_mesh_par2_mp_rmas line 690
+      LOOP END
+
+      LOOP BEGIN at src/meshfem3D/create_mass_matrices.f90(683,11)
+      LOOP END
+
+      LOOP BEGIN at src/meshfem3D/create_mass_matrices.f90(683,11)
+      LOOP END
+
+      LOOP BEGIN at src/meshfem3D/create_mass_matrices.f90(683,11)
+      LOOP END
+
+      LOOP BEGIN at src/meshfem3D/create_mass_matrices.f90(683,11)
+      LOOP END
+   LOOP END
+LOOP END
+===========================================================================
+
+Begin optimization report for: CREATE_MASS_MATRICES_OCEAN_LOAD
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/meshfem3D/create_mass_matrices.f90(769,3)
+   remark #15398: loop was not vectorized: loop was transformed to memset or memcpy
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/create_mass_matrices.f90(773,3)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed OUTPUT dependence between x line 789 and x line 795
+
+   LOOP BEGIN at src/meshfem3D/create_mass_matrices.f90(782,5)
+      remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+      remark #15346: vector dependence: assumed OUTPUT dependence between x line 789 and x line 795
+
+      LOOP BEGIN at src/meshfem3D/create_mass_matrices.f90(783,7)
+         remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+         remark #15346: vector dependence: assumed OUTPUT dependence between x line 789 and x line 795
+      LOOP END
+
+      LOOP BEGIN at src/meshfem3D/create_mass_matrices.f90(783,7)
+      LOOP END
+
+      LOOP BEGIN at src/meshfem3D/create_mass_matrices.f90(783,7)
+      LOOP END
+
+      LOOP BEGIN at src/meshfem3D/create_mass_matrices.f90(783,7)
+      LOOP END
+
+      LOOP BEGIN at src/meshfem3D/create_mass_matrices.f90(783,7)
+      LOOP END
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/create_mass_matrices.f90(857,3)
+<Peeled>
+   remark #15301: PEEL LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/create_mass_matrices.f90(857,3)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/create_mass_matrices.f90(857,3)
+<Alternate Alignment Vectorized Loop>
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/create_mass_matrices.f90(857,3)
+<Remainder>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+===========================================================================

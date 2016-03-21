@@ -1,0 +1,343 @@
+
+Begin optimization report for: COMPUTE_FORCES_OUTER_CORE_DEV
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/specfem3D/compute_forces_outer_core_Dev.F90(158,5)
+   remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at src/specfem3D/compute_forces_outer_core_Dev.F90(159,5)
+LOOP END
+
+LOOP BEGIN at src/specfem3D/compute_forces_outer_core_Dev.F90(195,7)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/compute_forces_outer_core_Dev.F90(195,7)
+<Remainder>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/compute_forces_outer_core_Dev.F90(493,17) inlined into src/specfem3D/compute_forces_outer_core_Dev.F90(359,10)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed FLOW dependence between tempx1 line 493 and dummyx_loc line 493
+
+   LOOP BEGIN at src/specfem3D/compute_forces_outer_core_Dev.F90(492,5) inlined into src/specfem3D/compute_forces_outer_core_Dev.F90(359,10)
+      remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+      remark #15346: vector dependence: assumed FLOW dependence between tempx1 line 493 and dummyx_loc line 493
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/specfem3D/compute_forces_outer_core_Dev.F90(527,21) inlined into src/specfem3D/compute_forces_outer_core_Dev.F90(361,10)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed FLOW dependence between tempx2 line 527 and dummyx_loc line 527
+
+   LOOP BEGIN at src/specfem3D/compute_forces_outer_core_Dev.F90(524,5) inlined into src/specfem3D/compute_forces_outer_core_Dev.F90(361,10)
+      remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+      remark #15346: vector dependence: assumed FLOW dependence between tempx2 line 527 and dummyx_loc line 527
+
+      LOOP BEGIN at src/specfem3D/compute_forces_outer_core_Dev.F90(526,7) inlined into src/specfem3D/compute_forces_outer_core_Dev.F90(361,10)
+         remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+         remark #15346: vector dependence: assumed FLOW dependence between tempx2 line 527 and dummyx_loc line 527
+      LOOP END
+
+      LOOP BEGIN at src/specfem3D/compute_forces_outer_core_Dev.F90(526,7) inlined into src/specfem3D/compute_forces_outer_core_Dev.F90(361,10)
+      LOOP END
+
+      LOOP BEGIN at src/specfem3D/compute_forces_outer_core_Dev.F90(526,7) inlined into src/specfem3D/compute_forces_outer_core_Dev.F90(361,10)
+      LOOP END
+
+      LOOP BEGIN at src/specfem3D/compute_forces_outer_core_Dev.F90(526,7) inlined into src/specfem3D/compute_forces_outer_core_Dev.F90(361,10)
+      LOOP END
+
+      LOOP BEGIN at src/specfem3D/compute_forces_outer_core_Dev.F90(526,7) inlined into src/specfem3D/compute_forces_outer_core_Dev.F90(361,10)
+      LOOP END
+   LOOP END
+
+   LOOP BEGIN at src/specfem3D/compute_forces_outer_core_Dev.F90(524,5) inlined into src/specfem3D/compute_forces_outer_core_Dev.F90(361,10)
+
+      LOOP BEGIN at src/specfem3D/compute_forces_outer_core_Dev.F90(526,7) inlined into src/specfem3D/compute_forces_outer_core_Dev.F90(361,10)
+      LOOP END
+
+      LOOP BEGIN at src/specfem3D/compute_forces_outer_core_Dev.F90(526,7) inlined into src/specfem3D/compute_forces_outer_core_Dev.F90(361,10)
+      LOOP END
+
+      LOOP BEGIN at src/specfem3D/compute_forces_outer_core_Dev.F90(526,7) inlined into src/specfem3D/compute_forces_outer_core_Dev.F90(361,10)
+      LOOP END
+
+      LOOP BEGIN at src/specfem3D/compute_forces_outer_core_Dev.F90(526,7) inlined into src/specfem3D/compute_forces_outer_core_Dev.F90(361,10)
+      LOOP END
+
+      LOOP BEGIN at src/specfem3D/compute_forces_outer_core_Dev.F90(526,7) inlined into src/specfem3D/compute_forces_outer_core_Dev.F90(361,10)
+      LOOP END
+   LOOP END
+
+   LOOP BEGIN at src/specfem3D/compute_forces_outer_core_Dev.F90(524,5) inlined into src/specfem3D/compute_forces_outer_core_Dev.F90(361,10)
+
+      LOOP BEGIN at src/specfem3D/compute_forces_outer_core_Dev.F90(526,7) inlined into src/specfem3D/compute_forces_outer_core_Dev.F90(361,10)
+      LOOP END
+
+      LOOP BEGIN at src/specfem3D/compute_forces_outer_core_Dev.F90(526,7) inlined into src/specfem3D/compute_forces_outer_core_Dev.F90(361,10)
+      LOOP END
+
+      LOOP BEGIN at src/specfem3D/compute_forces_outer_core_Dev.F90(526,7) inlined into src/specfem3D/compute_forces_outer_core_Dev.F90(361,10)
+      LOOP END
+
+      LOOP BEGIN at src/specfem3D/compute_forces_outer_core_Dev.F90(526,7) inlined into src/specfem3D/compute_forces_outer_core_Dev.F90(361,10)
+      LOOP END
+
+      LOOP BEGIN at src/specfem3D/compute_forces_outer_core_Dev.F90(526,7) inlined into src/specfem3D/compute_forces_outer_core_Dev.F90(361,10)
+      LOOP END
+   LOOP END
+
+   LOOP BEGIN at src/specfem3D/compute_forces_outer_core_Dev.F90(524,5) inlined into src/specfem3D/compute_forces_outer_core_Dev.F90(361,10)
+
+      LOOP BEGIN at src/specfem3D/compute_forces_outer_core_Dev.F90(526,7) inlined into src/specfem3D/compute_forces_outer_core_Dev.F90(361,10)
+      LOOP END
+
+      LOOP BEGIN at src/specfem3D/compute_forces_outer_core_Dev.F90(526,7) inlined into src/specfem3D/compute_forces_outer_core_Dev.F90(361,10)
+      LOOP END
+
+      LOOP BEGIN at src/specfem3D/compute_forces_outer_core_Dev.F90(526,7) inlined into src/specfem3D/compute_forces_outer_core_Dev.F90(361,10)
+      LOOP END
+
+      LOOP BEGIN at src/specfem3D/compute_forces_outer_core_Dev.F90(526,7) inlined into src/specfem3D/compute_forces_outer_core_Dev.F90(361,10)
+      LOOP END
+
+      LOOP BEGIN at src/specfem3D/compute_forces_outer_core_Dev.F90(526,7) inlined into src/specfem3D/compute_forces_outer_core_Dev.F90(361,10)
+      LOOP END
+   LOOP END
+
+   LOOP BEGIN at src/specfem3D/compute_forces_outer_core_Dev.F90(524,5) inlined into src/specfem3D/compute_forces_outer_core_Dev.F90(361,10)
+
+      LOOP BEGIN at src/specfem3D/compute_forces_outer_core_Dev.F90(526,7) inlined into src/specfem3D/compute_forces_outer_core_Dev.F90(361,10)
+      LOOP END
+
+      LOOP BEGIN at src/specfem3D/compute_forces_outer_core_Dev.F90(526,7) inlined into src/specfem3D/compute_forces_outer_core_Dev.F90(361,10)
+      LOOP END
+
+      LOOP BEGIN at src/specfem3D/compute_forces_outer_core_Dev.F90(526,7) inlined into src/specfem3D/compute_forces_outer_core_Dev.F90(361,10)
+      LOOP END
+
+      LOOP BEGIN at src/specfem3D/compute_forces_outer_core_Dev.F90(526,7) inlined into src/specfem3D/compute_forces_outer_core_Dev.F90(361,10)
+      LOOP END
+
+      LOOP BEGIN at src/specfem3D/compute_forces_outer_core_Dev.F90(526,7) inlined into src/specfem3D/compute_forces_outer_core_Dev.F90(361,10)
+      LOOP END
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/specfem3D/compute_forces_outer_core_Dev.F90(493,17) inlined into src/specfem3D/compute_forces_outer_core_Dev.F90(363,10)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed FLOW dependence between tempx3 line 493 and hprime_xxt line 493
+
+   LOOP BEGIN at src/specfem3D/compute_forces_outer_core_Dev.F90(492,5) inlined into src/specfem3D/compute_forces_outer_core_Dev.F90(363,10)
+      remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+      remark #15346: vector dependence: assumed FLOW dependence between tempx3 line 493 and hprime_xxt line 493
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/specfem3D/compute_forces_outer_core_Dev.F90(267,9)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/compute_forces_outer_core_Dev.F90(267,9)
+<Remainder>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/compute_forces_outer_core_Dev.F90(493,17) inlined into src/specfem3D/compute_forces_outer_core_Dev.F90(503,10)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed FLOW dependence between newtempx1 line 493 and tempx1 line 493
+
+   LOOP BEGIN at src/specfem3D/compute_forces_outer_core_Dev.F90(492,5) inlined into src/specfem3D/compute_forces_outer_core_Dev.F90(503,10)
+      remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+      remark #15346: vector dependence: assumed FLOW dependence between newtempx1 line 493 and tempx1 line 493
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/specfem3D/compute_forces_outer_core_Dev.F90(527,21) inlined into src/specfem3D/compute_forces_outer_core_Dev.F90(505,10)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed FLOW dependence between newtempx2 line 527 and tempx2 line 527
+
+   LOOP BEGIN at src/specfem3D/compute_forces_outer_core_Dev.F90(524,5) inlined into src/specfem3D/compute_forces_outer_core_Dev.F90(505,10)
+      remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+      remark #15346: vector dependence: assumed FLOW dependence between newtempx2 line 527 and tempx2 line 527
+
+      LOOP BEGIN at src/specfem3D/compute_forces_outer_core_Dev.F90(526,7) inlined into src/specfem3D/compute_forces_outer_core_Dev.F90(505,10)
+         remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+         remark #15346: vector dependence: assumed FLOW dependence between newtempx2 line 527 and tempx2 line 527
+      LOOP END
+
+      LOOP BEGIN at src/specfem3D/compute_forces_outer_core_Dev.F90(526,7) inlined into src/specfem3D/compute_forces_outer_core_Dev.F90(505,10)
+      LOOP END
+
+      LOOP BEGIN at src/specfem3D/compute_forces_outer_core_Dev.F90(526,7) inlined into src/specfem3D/compute_forces_outer_core_Dev.F90(505,10)
+      LOOP END
+
+      LOOP BEGIN at src/specfem3D/compute_forces_outer_core_Dev.F90(526,7) inlined into src/specfem3D/compute_forces_outer_core_Dev.F90(505,10)
+      LOOP END
+
+      LOOP BEGIN at src/specfem3D/compute_forces_outer_core_Dev.F90(526,7) inlined into src/specfem3D/compute_forces_outer_core_Dev.F90(505,10)
+      LOOP END
+   LOOP END
+
+   LOOP BEGIN at src/specfem3D/compute_forces_outer_core_Dev.F90(524,5) inlined into src/specfem3D/compute_forces_outer_core_Dev.F90(505,10)
+
+      LOOP BEGIN at src/specfem3D/compute_forces_outer_core_Dev.F90(526,7) inlined into src/specfem3D/compute_forces_outer_core_Dev.F90(505,10)
+      LOOP END
+
+      LOOP BEGIN at src/specfem3D/compute_forces_outer_core_Dev.F90(526,7) inlined into src/specfem3D/compute_forces_outer_core_Dev.F90(505,10)
+      LOOP END
+
+      LOOP BEGIN at src/specfem3D/compute_forces_outer_core_Dev.F90(526,7) inlined into src/specfem3D/compute_forces_outer_core_Dev.F90(505,10)
+      LOOP END
+
+      LOOP BEGIN at src/specfem3D/compute_forces_outer_core_Dev.F90(526,7) inlined into src/specfem3D/compute_forces_outer_core_Dev.F90(505,10)
+      LOOP END
+
+      LOOP BEGIN at src/specfem3D/compute_forces_outer_core_Dev.F90(526,7) inlined into src/specfem3D/compute_forces_outer_core_Dev.F90(505,10)
+      LOOP END
+   LOOP END
+
+   LOOP BEGIN at src/specfem3D/compute_forces_outer_core_Dev.F90(524,5) inlined into src/specfem3D/compute_forces_outer_core_Dev.F90(505,10)
+
+      LOOP BEGIN at src/specfem3D/compute_forces_outer_core_Dev.F90(526,7) inlined into src/specfem3D/compute_forces_outer_core_Dev.F90(505,10)
+      LOOP END
+
+      LOOP BEGIN at src/specfem3D/compute_forces_outer_core_Dev.F90(526,7) inlined into src/specfem3D/compute_forces_outer_core_Dev.F90(505,10)
+      LOOP END
+
+      LOOP BEGIN at src/specfem3D/compute_forces_outer_core_Dev.F90(526,7) inlined into src/specfem3D/compute_forces_outer_core_Dev.F90(505,10)
+      LOOP END
+
+      LOOP BEGIN at src/specfem3D/compute_forces_outer_core_Dev.F90(526,7) inlined into src/specfem3D/compute_forces_outer_core_Dev.F90(505,10)
+      LOOP END
+
+      LOOP BEGIN at src/specfem3D/compute_forces_outer_core_Dev.F90(526,7) inlined into src/specfem3D/compute_forces_outer_core_Dev.F90(505,10)
+      LOOP END
+   LOOP END
+
+   LOOP BEGIN at src/specfem3D/compute_forces_outer_core_Dev.F90(524,5) inlined into src/specfem3D/compute_forces_outer_core_Dev.F90(505,10)
+
+      LOOP BEGIN at src/specfem3D/compute_forces_outer_core_Dev.F90(526,7) inlined into src/specfem3D/compute_forces_outer_core_Dev.F90(505,10)
+      LOOP END
+
+      LOOP BEGIN at src/specfem3D/compute_forces_outer_core_Dev.F90(526,7) inlined into src/specfem3D/compute_forces_outer_core_Dev.F90(505,10)
+      LOOP END
+
+      LOOP BEGIN at src/specfem3D/compute_forces_outer_core_Dev.F90(526,7) inlined into src/specfem3D/compute_forces_outer_core_Dev.F90(505,10)
+      LOOP END
+
+      LOOP BEGIN at src/specfem3D/compute_forces_outer_core_Dev.F90(526,7) inlined into src/specfem3D/compute_forces_outer_core_Dev.F90(505,10)
+      LOOP END
+
+      LOOP BEGIN at src/specfem3D/compute_forces_outer_core_Dev.F90(526,7) inlined into src/specfem3D/compute_forces_outer_core_Dev.F90(505,10)
+      LOOP END
+   LOOP END
+
+   LOOP BEGIN at src/specfem3D/compute_forces_outer_core_Dev.F90(524,5) inlined into src/specfem3D/compute_forces_outer_core_Dev.F90(505,10)
+
+      LOOP BEGIN at src/specfem3D/compute_forces_outer_core_Dev.F90(526,7) inlined into src/specfem3D/compute_forces_outer_core_Dev.F90(505,10)
+      LOOP END
+
+      LOOP BEGIN at src/specfem3D/compute_forces_outer_core_Dev.F90(526,7) inlined into src/specfem3D/compute_forces_outer_core_Dev.F90(505,10)
+      LOOP END
+
+      LOOP BEGIN at src/specfem3D/compute_forces_outer_core_Dev.F90(526,7) inlined into src/specfem3D/compute_forces_outer_core_Dev.F90(505,10)
+      LOOP END
+
+      LOOP BEGIN at src/specfem3D/compute_forces_outer_core_Dev.F90(526,7) inlined into src/specfem3D/compute_forces_outer_core_Dev.F90(505,10)
+      LOOP END
+
+      LOOP BEGIN at src/specfem3D/compute_forces_outer_core_Dev.F90(526,7) inlined into src/specfem3D/compute_forces_outer_core_Dev.F90(505,10)
+      LOOP END
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/specfem3D/compute_forces_outer_core_Dev.F90(493,17) inlined into src/specfem3D/compute_forces_outer_core_Dev.F90(507,10)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed FLOW dependence between newtempx3 line 493 and hprimewgll_xx line 493
+
+   LOOP BEGIN at src/specfem3D/compute_forces_outer_core_Dev.F90(492,5) inlined into src/specfem3D/compute_forces_outer_core_Dev.F90(507,10)
+      remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+      remark #15346: vector dependence: assumed FLOW dependence between newtempx3 line 493 and hprimewgll_xx line 493
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/specfem3D/compute_forces_outer_core_Dev.F90(386,5)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/compute_forces_outer_core_Dev.F90(386,5)
+<Remainder>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/compute_forces_outer_core_Dev.F90(397,7)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/compute_forces_outer_core_Dev.F90(397,7)
+<Alternate Alignment Vectorized Loop>
+LOOP END
+
+LOOP BEGIN at src/specfem3D/compute_forces_outer_core_Dev.F90(397,7)
+<Remainder>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/compute_forces_outer_core_Dev.F90(421,51)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/compute_forces_outer_core_Dev.F90(421,51)
+<Remainder>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/compute_forces_outer_core_Dev.F90(433,11)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/compute_forces_outer_core_Dev.F90(433,11)
+<Alternate Alignment Vectorized Loop>
+LOOP END
+
+LOOP BEGIN at src/specfem3D/compute_forces_outer_core_Dev.F90(433,11)
+<Remainder>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/compute_forces_outer_core_Dev.F90(445,3)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at src/specfem3D/compute_forces_outer_core_Dev.F90(447,5)
+   <Peeled>
+      remark #15301: PEEL LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/specfem3D/compute_forces_outer_core_Dev.F90(447,5)
+      remark #15300: LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/specfem3D/compute_forces_outer_core_Dev.F90(447,5)
+   <Remainder>
+      remark #15301: REMAINDER LOOP WAS VECTORIZED
+   LOOP END
+LOOP END
+
+
+Non-optimizable loops:
+
+
+LOOP BEGIN at src/specfem3D/compute_forces_outer_core_Dev.F90(184,3)
+   remark #15536: loop was not vectorized: inner loop throttling prevents vectorization of this outer loop. Refer to inner loop message for more details.
+
+   LOOP BEGIN at src/specfem3D/compute_forces_outer_core_Dev.F90(184,3)
+      remark #15529: loop was not vectorized: volatile assignment was not vectorized. Try using non-volatile assignment.   [ src/specfem3D/compute_forces_outer_core_Dev.F90(474,14) ]
+   LOOP END
+LOOP END
+===========================================================================

@@ -1,0 +1,29 @@
+        !COMPILER-GENERATED INTERFACE MODULE: Fri Mar 11 15:46:50 2016
+        MODULE COMPUTE_ELEMENT_ATT_MEMORY_IC_LDDRK__genmod
+          INTERFACE 
+            SUBROUTINE COMPUTE_ELEMENT_ATT_MEMORY_IC_LDDRK(ISPEC,R_XX,  &
+     &R_YY,R_XY,R_XZ,R_YZ,R_XX_LDDRK,R_YY_LDDRK,R_XY_LDDRK,R_XZ_LDDRK,  &
+     &R_YZ_LDDRK,VX,VY,VZ,VNSPEC,FACTOR_COMMON,MUVSTORE,EPSILONDEV_LOC, &
+     &DELTAT)
+              INTEGER(KIND=4) :: VNSPEC
+              INTEGER(KIND=4) :: VZ
+              INTEGER(KIND=4) :: VY
+              INTEGER(KIND=4) :: VX
+              INTEGER(KIND=4) :: ISPEC
+              REAL(KIND=4) :: R_XX(5,5,5,3,48)
+              REAL(KIND=4) :: R_YY(5,5,5,3,48)
+              REAL(KIND=4) :: R_XY(5,5,5,3,48)
+              REAL(KIND=4) :: R_XZ(5,5,5,3,48)
+              REAL(KIND=4) :: R_YZ(5,5,5,3,48)
+              REAL(KIND=4) :: R_XX_LDDRK(5,5,5,3,48)
+              REAL(KIND=4) :: R_YY_LDDRK(5,5,5,3,48)
+              REAL(KIND=4) :: R_XY_LDDRK(5,5,5,3,48)
+              REAL(KIND=4) :: R_XZ_LDDRK(5,5,5,3,48)
+              REAL(KIND=4) :: R_YZ_LDDRK(5,5,5,3,48)
+              REAL(KIND=4) :: FACTOR_COMMON(VX,VY,VZ,3,VNSPEC)
+              REAL(KIND=4) :: MUVSTORE(5,5,5,48)
+              REAL(KIND=4) :: EPSILONDEV_LOC(5,5,5,5)
+              REAL(KIND=4) :: DELTAT
+            END SUBROUTINE COMPUTE_ELEMENT_ATT_MEMORY_IC_LDDRK
+          END INTERFACE 
+        END MODULE COMPUTE_ELEMENT_ATT_MEMORY_IC_LDDRK__genmod

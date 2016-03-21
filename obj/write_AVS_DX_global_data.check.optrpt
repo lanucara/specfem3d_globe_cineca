@@ -1,0 +1,109 @@
+
+Begin optimization report for: WRITE_AVS_DX_GLOBAL_DATA_GLL
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/meshfem3D/write_AVS_DX_global_data.f90(244,3)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed FLOW dependence between 7 line 249 and 7 line 249
+
+   LOOP BEGIN at src/meshfem3D/write_AVS_DX_global_data.f90(245,9)
+      remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+      remark #15346: vector dependence: assumed FLOW dependence between 7 line 249 and 7 line 249
+
+      LOOP BEGIN at src/meshfem3D/write_AVS_DX_global_data.f90(246,9)
+         remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+         remark #15346: vector dependence: assumed FLOW dependence between 7 line 249 and 7 line 249
+
+         LOOP BEGIN at src/meshfem3D/write_AVS_DX_global_data.f90(247,9)
+            remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+            remark #15346: vector dependence: assumed FLOW dependence between 7 line 249 and 7 line 249
+         LOOP END
+      LOOP END
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/write_AVS_DX_global_data.f90(268,3)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed FLOW dependence between 7 line 282 and 7 line 282
+
+   LOOP BEGIN at src/meshfem3D/write_AVS_DX_global_data.f90(269,5)
+      remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+      remark #15346: vector dependence: assumed FLOW dependence between 7 line 282 and 7 line 282
+
+      LOOP BEGIN at src/meshfem3D/write_AVS_DX_global_data.f90(270,7)
+         remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+         remark #15346: vector dependence: assumed FLOW dependence between 7 line 282 and 7 line 282
+
+         LOOP BEGIN at src/meshfem3D/write_AVS_DX_global_data.f90(271,9)
+            remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+            remark #15346: vector dependence: assumed FLOW dependence between 7 line 282 and 7 line 282
+         LOOP END
+      LOOP END
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/write_AVS_DX_global_data.f90(300,3)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed FLOW dependence between 7 line 356 and 7 line 358
+
+   LOOP BEGIN at src/meshfem3D/write_AVS_DX_global_data.f90(301,9)
+      remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+      remark #15346: vector dependence: assumed FLOW dependence between 7 line 356 and 7 line 358
+
+      LOOP BEGIN at src/meshfem3D/write_AVS_DX_global_data.f90(302,9)
+         remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+         remark #15346: vector dependence: assumed FLOW dependence between 7 line 356 and 7 line 358
+
+         LOOP BEGIN at src/meshfem3D/write_AVS_DX_global_data.f90(303,9)
+            remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+            remark #15346: vector dependence: assumed FLOW dependence between 7 line 356 and 7 line 358
+         LOOP END
+      LOOP END
+   LOOP END
+LOOP END
+===========================================================================
+
+Begin optimization report for: WRITE_AVS_DX_GLOBAL_DATA
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/meshfem3D/write_AVS_DX_global_data.f90(63,3)
+   remark #15398: loop was not vectorized: loop was transformed to memset or memcpy
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/write_AVS_DX_global_data.f90(66,3)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed OUTPUT dependence between mask_ibool line 75 and mask_ibool line 82
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/write_AVS_DX_global_data.f90(86,11)
+<Peeled>
+   remark #15301: PEEL LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/write_AVS_DX_global_data.f90(86,11)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/write_AVS_DX_global_data.f90(86,11)
+<Remainder>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/write_AVS_DX_global_data.f90(92,3)
+   remark #15398: loop was not vectorized: loop was transformed to memset or memcpy
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/write_AVS_DX_global_data.f90(96,3)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed OUTPUT dependence between num_ibool_avs_dx line 107 and num_ibool_avs_dx line 149
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/write_AVS_DX_global_data.f90(176,3)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed OUTPUT dependence between 192 line 185 and 192 line 185
+LOOP END
+===========================================================================

@@ -1,0 +1,12 @@
+        !COMPILER-GENERATED INTERFACE MODULE: Fri Mar 11 15:46:09 2016
+        MODULE EU_CAP_SMOOTHING__genmod
+          INTERFACE 
+            SUBROUTINE EU_CAP_SMOOTHING(LAT,LON,RADIUS,VALUE,FOUND)
+              REAL(KIND=8) :: LAT
+              REAL(KIND=8) :: LON
+              REAL(KIND=8) :: RADIUS
+              REAL(KIND=8) :: VALUE
+              LOGICAL(KIND=4) :: FOUND
+            END SUBROUTINE EU_CAP_SMOOTHING
+          END INTERFACE 
+        END MODULE EU_CAP_SMOOTHING__genmod

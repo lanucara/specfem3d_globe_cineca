@@ -1,0 +1,406 @@
+
+Begin optimization report for: ASSEMBLE_MPI_SCALAR_BLOCK
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/meshfem3D/assemble_MPI_scalar_mesh.f90(116,5)
+<Peeled>
+   remark #15301: PEEL LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/assemble_MPI_scalar_mesh.f90(116,5)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/assemble_MPI_scalar_mesh.f90(116,5)
+<Alternate Alignment Vectorized Loop>
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/assemble_MPI_scalar_mesh.f90(116,5)
+<Remainder>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/assemble_MPI_scalar_mesh.f90(136,7)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed FLOW dependence between array_val line 137 and array_val line 137
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/assemble_MPI_scalar_mesh.f90(136,7)
+<Remainder>
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/assemble_MPI_scalar_mesh.f90(145,5)
+<Peeled>
+   remark #15301: PEEL LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/assemble_MPI_scalar_mesh.f90(145,5)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/assemble_MPI_scalar_mesh.f90(145,5)
+<Alternate Alignment Vectorized Loop>
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/assemble_MPI_scalar_mesh.f90(145,5)
+<Remainder>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/assemble_MPI_scalar_mesh.f90(165,7)
+<Peeled>
+   remark #15301: PEEL LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/assemble_MPI_scalar_mesh.f90(165,7)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/assemble_MPI_scalar_mesh.f90(165,7)
+<Alternate Alignment Vectorized Loop>
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/assemble_MPI_scalar_mesh.f90(165,7)
+<Remainder>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/assemble_MPI_scalar_mesh.f90(180,5)
+<Peeled>
+   remark #15301: PEEL LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/assemble_MPI_scalar_mesh.f90(180,5)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/assemble_MPI_scalar_mesh.f90(180,5)
+<Alternate Alignment Vectorized Loop>
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/assemble_MPI_scalar_mesh.f90(180,5)
+<Remainder>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/assemble_MPI_scalar_mesh.f90(200,7)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed FLOW dependence between array_val line 201 and array_val line 201
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/assemble_MPI_scalar_mesh.f90(200,7)
+<Remainder>
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/assemble_MPI_scalar_mesh.f90(209,5)
+<Peeled>
+   remark #15301: PEEL LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/assemble_MPI_scalar_mesh.f90(209,5)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/assemble_MPI_scalar_mesh.f90(209,5)
+<Alternate Alignment Vectorized Loop>
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/assemble_MPI_scalar_mesh.f90(209,5)
+<Remainder>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/assemble_MPI_scalar_mesh.f90(229,7)
+<Peeled>
+   remark #15301: PEEL LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/assemble_MPI_scalar_mesh.f90(229,7)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/assemble_MPI_scalar_mesh.f90(229,7)
+<Alternate Alignment Vectorized Loop>
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/assemble_MPI_scalar_mesh.f90(229,7)
+<Remainder>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/assemble_MPI_scalar_mesh.f90(253,3)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at src/meshfem3D/assemble_MPI_scalar_mesh.f90(256,5)
+      remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+      remark #15346: vector dependence: assumed OUTPUT dependence between sender line 260 and sender line 262
+
+      LOOP BEGIN at src/meshfem3D/assemble_MPI_scalar_mesh.f90(264,9)
+         remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+         remark #15346: vector dependence: assumed FLOW dependence between array_val line 265 and array_val line 265
+      LOOP END
+
+      LOOP BEGIN at src/meshfem3D/assemble_MPI_scalar_mesh.f90(264,9)
+      <Remainder>
+      LOOP END
+   LOOP END
+
+   LOOP BEGIN at src/meshfem3D/assemble_MPI_scalar_mesh.f90(274,5)
+      remark #15542: loop was not vectorized: inner loop was already vectorized
+
+      LOOP BEGIN at src/meshfem3D/assemble_MPI_scalar_mesh.f90(280,9)
+      <Peeled>
+         remark #15301: PEEL LOOP WAS VECTORIZED
+      LOOP END
+
+      LOOP BEGIN at src/meshfem3D/assemble_MPI_scalar_mesh.f90(280,9)
+         remark #15300: LOOP WAS VECTORIZED
+      LOOP END
+
+      LOOP BEGIN at src/meshfem3D/assemble_MPI_scalar_mesh.f90(280,9)
+      <Alternate Alignment Vectorized Loop>
+      LOOP END
+
+      LOOP BEGIN at src/meshfem3D/assemble_MPI_scalar_mesh.f90(280,9)
+      <Remainder>
+         remark #15301: REMAINDER LOOP WAS VECTORIZED
+      LOOP END
+   LOOP END
+
+   LOOP BEGIN at src/meshfem3D/assemble_MPI_scalar_mesh.f90(295,5)
+      remark #15542: loop was not vectorized: inner loop was already vectorized
+
+      LOOP BEGIN at src/meshfem3D/assemble_MPI_scalar_mesh.f90(303,9)
+      <Peeled>
+         remark #15301: PEEL LOOP WAS VECTORIZED
+      LOOP END
+
+      LOOP BEGIN at src/meshfem3D/assemble_MPI_scalar_mesh.f90(303,9)
+         remark #15300: LOOP WAS VECTORIZED
+      LOOP END
+
+      LOOP BEGIN at src/meshfem3D/assemble_MPI_scalar_mesh.f90(303,9)
+      <Alternate Alignment Vectorized Loop>
+      LOOP END
+
+      LOOP BEGIN at src/meshfem3D/assemble_MPI_scalar_mesh.f90(303,9)
+      <Remainder>
+         remark #15301: REMAINDER LOOP WAS VECTORIZED
+      LOOP END
+   LOOP END
+
+   LOOP BEGIN at src/meshfem3D/assemble_MPI_scalar_mesh.f90(312,5)
+      remark #15542: loop was not vectorized: inner loop was already vectorized
+
+      LOOP BEGIN at src/meshfem3D/assemble_MPI_scalar_mesh.f90(318,9)
+      <Peeled>
+         remark #15301: PEEL LOOP WAS VECTORIZED
+      LOOP END
+
+      LOOP BEGIN at src/meshfem3D/assemble_MPI_scalar_mesh.f90(318,9)
+         remark #15300: LOOP WAS VECTORIZED
+      LOOP END
+
+      LOOP BEGIN at src/meshfem3D/assemble_MPI_scalar_mesh.f90(318,9)
+      <Alternate Alignment Vectorized Loop>
+      LOOP END
+
+      LOOP BEGIN at src/meshfem3D/assemble_MPI_scalar_mesh.f90(318,9)
+      <Remainder>
+         remark #15301: REMAINDER LOOP WAS VECTORIZED
+      LOOP END
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/assemble_MPI_scalar_mesh.f90(340,3)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at src/meshfem3D/assemble_MPI_scalar_mesh.f90(353,7)
+      remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+      remark #15346: vector dependence: assumed FLOW dependence between array_val line 354 and array_val line 354
+   LOOP END
+
+   LOOP BEGIN at src/meshfem3D/assemble_MPI_scalar_mesh.f90(353,7)
+   <Remainder>
+   LOOP END
+
+   LOOP BEGIN at src/meshfem3D/assemble_MPI_scalar_mesh.f90(363,9)
+      remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+      remark #15346: vector dependence: assumed FLOW dependence between array_val line 364 and array_val line 364
+   LOOP END
+
+   LOOP BEGIN at src/meshfem3D/assemble_MPI_scalar_mesh.f90(363,9)
+   <Remainder>
+   LOOP END
+
+   LOOP BEGIN at src/meshfem3D/assemble_MPI_scalar_mesh.f90(376,7)
+   <Peeled>
+      remark #15301: PEEL LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/meshfem3D/assemble_MPI_scalar_mesh.f90(376,7)
+      remark #15300: LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/meshfem3D/assemble_MPI_scalar_mesh.f90(376,7)
+   <Alternate Alignment Vectorized Loop>
+   LOOP END
+
+   LOOP BEGIN at src/meshfem3D/assemble_MPI_scalar_mesh.f90(376,7)
+   <Remainder>
+      remark #15301: REMAINDER LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/meshfem3D/assemble_MPI_scalar_mesh.f90(395,7)
+   <Peeled>
+      remark #15301: PEEL LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/meshfem3D/assemble_MPI_scalar_mesh.f90(395,7)
+      remark #15300: LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/meshfem3D/assemble_MPI_scalar_mesh.f90(395,7)
+   <Alternate Alignment Vectorized Loop>
+   LOOP END
+
+   LOOP BEGIN at src/meshfem3D/assemble_MPI_scalar_mesh.f90(395,7)
+   <Remainder>
+      remark #15301: REMAINDER LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/meshfem3D/assemble_MPI_scalar_mesh.f90(404,7)
+   <Peeled>
+      remark #15301: PEEL LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/meshfem3D/assemble_MPI_scalar_mesh.f90(404,7)
+      remark #15300: LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/meshfem3D/assemble_MPI_scalar_mesh.f90(404,7)
+   <Alternate Alignment Vectorized Loop>
+   LOOP END
+
+   LOOP BEGIN at src/meshfem3D/assemble_MPI_scalar_mesh.f90(404,7)
+   <Remainder>
+      remark #15301: REMAINDER LOOP WAS VECTORIZED
+   LOOP END
+LOOP END
+===========================================================================
+
+Begin optimization report for: ASSEMBLE_MPI_SCALAR
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/meshfem3D/assemble_MPI_scalar_mesh.f90(473,5)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at src/meshfem3D/assemble_MPI_scalar_mesh.f90(474,7)
+   <Peeled>
+      remark #15301: PEEL LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/meshfem3D/assemble_MPI_scalar_mesh.f90(474,7)
+      remark #15300: LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/meshfem3D/assemble_MPI_scalar_mesh.f90(474,7)
+   <Alternate Alignment Vectorized Loop>
+   LOOP END
+
+   LOOP BEGIN at src/meshfem3D/assemble_MPI_scalar_mesh.f90(474,7)
+   <Remainder>
+      remark #15301: REMAINDER LOOP WAS VECTORIZED
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/assemble_MPI_scalar_mesh.f90(480,5)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at src/meshfem3D/assemble_MPI_scalar_mesh.f90(482,12)
+      remark #15542: loop was not vectorized: inner loop was already vectorized
+
+      LOOP BEGIN at src/meshfem3D/assemble_MPI_scalar_mesh.f90(482,12)
+      <Multiversioned v2>
+         remark #15300: LOOP WAS VECTORIZED
+      LOOP END
+
+      LOOP BEGIN at src/meshfem3D/assemble_MPI_scalar_mesh.f90(482,12)
+      <Remainder, Multiversioned v2>
+      LOOP END
+   LOOP END
+
+   LOOP BEGIN at src/meshfem3D/assemble_MPI_scalar_mesh.f90(482,21)
+      remark #15542: loop was not vectorized: inner loop was already vectorized
+
+      LOOP BEGIN at src/meshfem3D/assemble_MPI_scalar_mesh.f90(482,21)
+      <Multiversioned v2>
+         remark #15300: LOOP WAS VECTORIZED
+      LOOP END
+
+      LOOP BEGIN at src/meshfem3D/assemble_MPI_scalar_mesh.f90(482,21)
+      <Alternate Alignment Vectorized Loop, Multiversioned v2>
+      LOOP END
+
+      LOOP BEGIN at src/meshfem3D/assemble_MPI_scalar_mesh.f90(482,21)
+      <Remainder, Multiversioned v2>
+      LOOP END
+   LOOP END
+
+   LOOP BEGIN at src/meshfem3D/assemble_MPI_scalar_mesh.f90(489,12)
+      remark #15542: loop was not vectorized: inner loop was already vectorized
+
+      LOOP BEGIN at src/meshfem3D/assemble_MPI_scalar_mesh.f90(489,12)
+      <Multiversioned v2>
+         remark #15300: LOOP WAS VECTORIZED
+      LOOP END
+
+      LOOP BEGIN at src/meshfem3D/assemble_MPI_scalar_mesh.f90(489,12)
+      <Remainder, Multiversioned v2>
+      LOOP END
+   LOOP END
+
+   LOOP BEGIN at src/meshfem3D/assemble_MPI_scalar_mesh.f90(489,21)
+      remark #15542: loop was not vectorized: inner loop was already vectorized
+
+      LOOP BEGIN at src/meshfem3D/assemble_MPI_scalar_mesh.f90(489,21)
+      <Multiversioned v2>
+         remark #15300: LOOP WAS VECTORIZED
+      LOOP END
+
+      LOOP BEGIN at src/meshfem3D/assemble_MPI_scalar_mesh.f90(489,21)
+      <Alternate Alignment Vectorized Loop, Multiversioned v2>
+      LOOP END
+
+      LOOP BEGIN at src/meshfem3D/assemble_MPI_scalar_mesh.f90(489,21)
+      <Remainder, Multiversioned v2>
+      LOOP END
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/assemble_MPI_scalar_mesh.f90(498,5)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/assemble_MPI_scalar_mesh.f90(503,5)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed OUTPUT dependence between array_val line 505 and array_val line 505
+
+   LOOP BEGIN at src/meshfem3D/assemble_MPI_scalar_mesh.f90(504,7)
+      remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+      remark #15346: vector dependence: assumed FLOW dependence between array_val line 505 and array_val line 505
+   LOOP END
+
+   LOOP BEGIN at src/meshfem3D/assemble_MPI_scalar_mesh.f90(504,7)
+   <Remainder>
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/assemble_MPI_scalar_mesh.f90(511,5)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+LOOP END
+===========================================================================

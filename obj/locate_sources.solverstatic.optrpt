@@ -1,0 +1,283 @@
+
+Begin optimization report for: LOCATE_SOURCES
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/specfem3D/locate_sources.f90(147,3)
+   remark #15398: loop was not vectorized: loop was transformed to memset or memcpy
+LOOP END
+
+LOOP BEGIN at src/specfem3D/locate_sources.f90(148,3)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/locate_sources.f90(148,3)
+<Remainder>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/locate_sources.f90(181,5)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at src/specfem3D/locate_sources.f90(181,5)
+      remark #15542: loop was not vectorized: inner loop was already vectorized
+
+      LOOP BEGIN at src/specfem3D/locate_sources.f90(181,5)
+         remark #15542: loop was not vectorized: inner loop was already vectorized
+
+         LOOP BEGIN at src/specfem3D/locate_sources.f90(181,5)
+         <Peeled>
+            remark #15301: PEEL LOOP WAS VECTORIZED
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/locate_sources.f90(181,5)
+            remark #15300: LOOP WAS VECTORIZED
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/locate_sources.f90(181,5)
+         <Remainder>
+            remark #15301: REMAINDER LOOP WAS VECTORIZED
+         LOOP END
+      LOOP END
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/specfem3D/locate_sources.f90(195,3)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at src/specfem3D/locate_sources.f90(236,5)
+      remark #15542: loop was not vectorized: inner loop was already vectorized
+
+      LOOP BEGIN at src/specfem3D/locate_sources.f90(236,5)
+      <Peeled>
+      LOOP END
+
+      LOOP BEGIN at src/specfem3D/locate_sources.f90(236,5)
+         remark #15300: LOOP WAS VECTORIZED
+      LOOP END
+
+      LOOP BEGIN at src/specfem3D/locate_sources.f90(236,5)
+      <Remainder>
+         remark #15301: REMAINDER LOOP WAS VECTORIZED
+      LOOP END
+   LOOP END
+
+   LOOP BEGIN at src/specfem3D/locate_sources.f90(239,5)
+      remark #15398: loop was not vectorized: loop was transformed to memset or memcpy
+   LOOP END
+
+   LOOP BEGIN at src/specfem3D/locate_sources.f90(240,5)
+   <Peeled>
+      remark #15301: PEEL LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/specfem3D/locate_sources.f90(240,5)
+      remark #15300: LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/specfem3D/locate_sources.f90(240,5)
+   <Remainder>
+      remark #15301: REMAINDER LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/specfem3D/locate_sources.f90(241,5)
+      remark #15542: loop was not vectorized: inner loop was already vectorized
+
+      LOOP BEGIN at src/specfem3D/locate_sources.f90(241,5)
+      <Peeled>
+         remark #15301: PEEL LOOP WAS VECTORIZED
+      LOOP END
+
+      LOOP BEGIN at src/specfem3D/locate_sources.f90(241,5)
+         remark #15300: LOOP WAS VECTORIZED
+      LOOP END
+
+      LOOP BEGIN at src/specfem3D/locate_sources.f90(241,5)
+      <Remainder>
+         remark #15301: REMAINDER LOOP WAS VECTORIZED
+      LOOP END
+   LOOP END
+
+   LOOP BEGIN at src/specfem3D/locate_sources.f90(244,5)
+      remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+      LOOP BEGIN at src/specfem3D/locate_sources.f90(356,7)
+         remark #15523: loop was not vectorized: cannot compute loop iteration count before executing the loop.
+
+         LOOP BEGIN at src/specfem3D/locate_sources.f90(434,9)
+            remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+            remark #15346: vector dependence: assumed OUTPUT dependence between ISPEC_SELECTED_SOURCE_SUBSET line 406 and ISPEC_SELECTED_SOURCE_SUBSET line 406
+
+            LOOP BEGIN at src/specfem3D/locate_sources.f90(434,9)
+               remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+               remark #15346: vector dependence: assumed OUTPUT dependence between ISPEC_SELECTED_SOURCE_SUBSET line 406 and ISPEC_SELECTED_SOURCE_SUBSET line 406
+
+               LOOP BEGIN at src/specfem3D/locate_sources.f90(396,13)
+                  remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+                  remark #15346: vector dependence: assumed OUTPUT dependence between ISPEC_SELECTED_SOURCE_SUBSET line 406 and ISPEC_SELECTED_SOURCE_SUBSET line 406
+               LOOP END
+
+               LOOP BEGIN at src/specfem3D/locate_sources.f90(396,13)
+               LOOP END
+
+               LOOP BEGIN at src/specfem3D/locate_sources.f90(396,13)
+               LOOP END
+            LOOP END
+
+            LOOP BEGIN at src/specfem3D/locate_sources.f90(434,9)
+
+               LOOP BEGIN at src/specfem3D/locate_sources.f90(396,13)
+               LOOP END
+
+               LOOP BEGIN at src/specfem3D/locate_sources.f90(396,13)
+               LOOP END
+
+               LOOP BEGIN at src/specfem3D/locate_sources.f90(396,13)
+               LOOP END
+            LOOP END
+
+            LOOP BEGIN at src/specfem3D/locate_sources.f90(434,9)
+
+               LOOP BEGIN at src/specfem3D/locate_sources.f90(396,13)
+               LOOP END
+
+               LOOP BEGIN at src/specfem3D/locate_sources.f90(396,13)
+               LOOP END
+
+               LOOP BEGIN at src/specfem3D/locate_sources.f90(396,13)
+               LOOP END
+            LOOP END
+         LOOP END
+      LOOP END
+
+      LOOP BEGIN at src/specfem3D/locate_sources.f90(465,9)
+         remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+      LOOP END
+
+      LOOP BEGIN at src/specfem3D/locate_sources.f90(513,9)
+         remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+      LOOP END
+
+      LOOP BEGIN at src/specfem3D/locate_sources.f90(282,7)
+         remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+      LOOP END
+   LOOP END
+
+   LOOP BEGIN at src/specfem3D/locate_sources.f90(584,11)
+      remark #15542: loop was not vectorized: inner loop was already vectorized
+
+      LOOP BEGIN at src/specfem3D/locate_sources.f90(584,11)
+      <Peeled>
+         remark #15301: PEEL LOOP WAS VECTORIZED
+      LOOP END
+
+      LOOP BEGIN at src/specfem3D/locate_sources.f90(584,11)
+         remark #15300: LOOP WAS VECTORIZED
+      LOOP END
+
+      LOOP BEGIN at src/specfem3D/locate_sources.f90(584,11)
+      <Remainder>
+         remark #15301: REMAINDER LOOP WAS VECTORIZED
+      LOOP END
+   LOOP END
+
+   LOOP BEGIN at src/specfem3D/locate_sources.f90(610,7)
+      remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+      LOOP BEGIN at src/specfem3D/locate_sources.f90(625,37)
+         remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+         remark #15346: vector dependence: assumed OUTPUT dependence between specfem_par_mp_islice_selected_s line 621 and specfem_par_mp_islice_selected_s line 621
+      LOOP END
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/specfem3D/locate_sources.f90(762,70)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/locate_sources.f90(762,70)
+<Remainder>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+===========================================================================
+
+Begin optimization report for: CALC_MASK_SOURCE
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/specfem3D/locate_sources.f90(843,22)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at src/specfem3D/locate_sources.f90(837,5)
+      remark #15542: loop was not vectorized: inner loop was already vectorized
+
+      LOOP BEGIN at src/specfem3D/locate_sources.f90(838,7)
+         remark #15300: LOOP WAS VECTORIZED
+      LOOP END
+   LOOP END
+LOOP END
+===========================================================================
+
+Begin optimization report for: PRINT_STF
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/specfem3D/locate_sources.f90(959,16)
+<Peeled, Distributed chunk1>
+   remark #15301: PEEL LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/locate_sources.f90(959,16)
+<Distributed chunk1>
+   remark #15301: PARTIAL LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/locate_sources.f90(959,16)
+<Alternate Alignment Vectorized Loop, Distributed chunk1>
+LOOP END
+
+LOOP BEGIN at src/specfem3D/locate_sources.f90(959,16)
+<Remainder, Distributed chunk1>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/locate_sources.f90(959,16)
+<Distributed chunk2>
+   remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at src/specfem3D/locate_sources.f90(962,3)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at src/specfem3D/locate_sources.f90(962,3)
+   <Multiversioned v2>
+      remark #15300: LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/specfem3D/locate_sources.f90(962,3)
+   <Remainder, Multiversioned v2>
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/specfem3D/locate_sources.f90(972,3)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/locate_sources.f90(972,3)
+<Remainder>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/locate_sources.f90(975,3)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed OUTPUT dependence between time_source line 976 and time_source line 985
+LOOP END
+
+LOOP BEGIN at src/specfem3D/locate_sources.f90(1011,3)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed OUTPUT dependence between om line 1012 and om line 1014
+LOOP END
+===========================================================================

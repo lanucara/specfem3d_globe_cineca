@@ -1,0 +1,199 @@
+
+Begin optimization report for: WRITE_VTK_DATA_POINTS
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/shared/write_VTK_file.f90(75,3)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed OUTPUT dependence between _TEMPLATE_CONCAT_TABLE_1 line 78 and _TEMPLATE_CONCAT_TABLE_1 line 78
+LOOP END
+===========================================================================
+
+Begin optimization report for: WRITE_VTK_DATA_ELEM_L
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/shared/write_VTK_file.f90(197,3)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed OUTPUT dependence between 213 line 198 and 213 line 198
+LOOP END
+
+LOOP BEGIN at src/shared/write_VTK_file.f90(204,3)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed OUTPUT dependence between 213 line 205 and 213 line 205
+LOOP END
+
+LOOP BEGIN at src/shared/write_VTK_file.f90(213,3)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed OUTPUT dependence between ARGBLOCK_REC_40 line 213 and ARGBLOCK_REC_40 line 213
+LOOP END
+
+LOOP BEGIN at src/shared/write_VTK_file.f90(219,3)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed OUTPUT dependence between 213 line 221 and 213 line 223
+LOOP END
+===========================================================================
+
+Begin optimization report for: WRITE_VTK_DATA_ELEM_I
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/shared/write_VTK_file.f90(276,3)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed OUTPUT dependence between 483 line 277 and 483 line 277
+LOOP END
+
+LOOP BEGIN at src/shared/write_VTK_file.f90(283,3)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed OUTPUT dependence between 483 line 284 and 483 line 284
+LOOP END
+
+LOOP BEGIN at src/shared/write_VTK_file.f90(292,3)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed OUTPUT dependence between ARGBLOCK_REC_72 line 292 and ARGBLOCK_REC_72 line 292
+LOOP END
+
+LOOP BEGIN at src/shared/write_VTK_file.f90(298,3)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed OUTPUT dependence between 483 line 299 and 483 line 299
+LOOP END
+===========================================================================
+
+Begin optimization report for: WRITE_VTK_DATA_ELEM_CR
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/shared/write_VTK_file.f90(718,5)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed OUTPUT dependence between 787 line 723 and 787 line 723
+
+   LOOP BEGIN at src/shared/write_VTK_file.f90(719,7)
+      remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+      remark #15346: vector dependence: assumed OUTPUT dependence between 787 line 723 and 787 line 723
+
+      LOOP BEGIN at src/shared/write_VTK_file.f90(720,9)
+         remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+         remark #15346: vector dependence: assumed OUTPUT dependence between 787 line 723 and 787 line 723
+
+         LOOP BEGIN at src/shared/write_VTK_file.f90(721,11)
+            remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+            remark #15346: vector dependence: assumed OUTPUT dependence between 787 line 723 and 787 line 723
+         LOOP END
+
+         LOOP BEGIN at src/shared/write_VTK_file.f90(721,11)
+         LOOP END
+
+         LOOP BEGIN at src/shared/write_VTK_file.f90(721,11)
+         LOOP END
+
+         LOOP BEGIN at src/shared/write_VTK_file.f90(721,11)
+         LOOP END
+
+         LOOP BEGIN at src/shared/write_VTK_file.f90(721,11)
+         LOOP END
+      LOOP END
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/shared/write_VTK_file.f90(741,5)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed OUTPUT dependence between 787 line 745 and 787 line 745
+
+   LOOP BEGIN at src/shared/write_VTK_file.f90(742,7)
+      remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+      remark #15346: vector dependence: assumed OUTPUT dependence between 787 line 745 and 787 line 745
+
+      LOOP BEGIN at src/shared/write_VTK_file.f90(743,9)
+         remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+         remark #15346: vector dependence: assumed OUTPUT dependence between 787 line 745 and 787 line 745
+
+         LOOP BEGIN at src/shared/write_VTK_file.f90(744,11)
+            remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+            remark #15346: vector dependence: assumed OUTPUT dependence between 787 line 745 and 787 line 745
+         LOOP END
+      LOOP END
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/shared/write_VTK_file.f90(767,5)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed OUTPUT dependence between ARGBLOCK_REC_145 line 767 and ARGBLOCK_REC_145 line 767
+LOOP END
+
+LOOP BEGIN at src/shared/write_VTK_file.f90(806,5)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed OUTPUT dependence between 787 line 810 and 787 line 810
+
+   LOOP BEGIN at src/shared/write_VTK_file.f90(807,7)
+      remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+      remark #15346: vector dependence: assumed OUTPUT dependence between 787 line 810 and 787 line 810
+
+      LOOP BEGIN at src/shared/write_VTK_file.f90(808,9)
+         remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+         remark #15346: vector dependence: assumed OUTPUT dependence between 787 line 810 and 787 line 810
+
+         LOOP BEGIN at src/shared/write_VTK_file.f90(809,11)
+            remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+            remark #15346: vector dependence: assumed OUTPUT dependence between 787 line 810 and 787 line 810
+         LOOP END
+
+         LOOP BEGIN at src/shared/write_VTK_file.f90(809,11)
+         LOOP END
+
+         LOOP BEGIN at src/shared/write_VTK_file.f90(809,11)
+         LOOP END
+
+         LOOP BEGIN at src/shared/write_VTK_file.f90(809,11)
+         LOOP END
+
+         LOOP BEGIN at src/shared/write_VTK_file.f90(809,11)
+         LOOP END
+      LOOP END
+   LOOP END
+LOOP END
+===========================================================================
+
+Begin optimization report for: WRITE_VTK_DATA_CR
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/shared/write_VTK_file.f90(349,3)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed OUTPUT dependence between rval line 352 and rval line 355
+LOOP END
+
+LOOP BEGIN at src/shared/write_VTK_file.f90(364,3)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed OUTPUT dependence between 1287 line 370 and 1287 line 381
+LOOP END
+
+LOOP BEGIN at src/shared/write_VTK_file.f90(396,3)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed OUTPUT dependence between ARGBLOCK_REC_195 line 396 and ARGBLOCK_REC_195 line 396
+LOOP END
+
+LOOP BEGIN at src/shared/write_VTK_file.f90(403,3)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed OUTPUT dependence between 1287 line 404 and 1287 line 404
+LOOP END
+
+LOOP BEGIN at src/shared/write_VTK_file.f90(409,3)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed OUTPUT dependence between 1287 line 410 and 1287 line 410
+LOOP END
+
+LOOP BEGIN at src/shared/write_VTK_file.f90(415,3)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed OUTPUT dependence between 1287 line 416 and 1287 line 416
+LOOP END
+
+LOOP BEGIN at src/shared/write_VTK_file.f90(421,3)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed OUTPUT dependence between 1287 line 422 and 1287 line 422
+LOOP END
+===========================================================================

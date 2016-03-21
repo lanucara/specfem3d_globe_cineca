@@ -1,0 +1,163 @@
+
+Begin optimization report for: UPDATE_DISPL_LDDRK
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/specfem3D/update_displacement_LDDRK.f90(40,3)
+<Peeled>
+   remark #15301: PEEL LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/update_displacement_LDDRK.f90(40,3)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/update_displacement_LDDRK.f90(40,3)
+<Remainder>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/update_displacement_LDDRK.f90(42,3)
+   remark #15398: loop was not vectorized: loop was transformed to memset or memcpy
+LOOP END
+
+LOOP BEGIN at src/specfem3D/update_displacement_LDDRK.f90(44,3)
+<Peeled>
+   remark #15301: PEEL LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/update_displacement_LDDRK.f90(44,3)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/update_displacement_LDDRK.f90(44,3)
+<Remainder>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+===========================================================================
+
+Begin optimization report for: UPDATE_DISPL_LDDRK_BACKWARD
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/specfem3D/update_displacement_LDDRK.f90(67,3)
+   remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at src/specfem3D/update_displacement_LDDRK.f90(71,3)
+LOOP END
+===========================================================================
+
+Begin optimization report for: UPDATE_ACOUSTIC_LDDRK
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/specfem3D/update_displacement_LDDRK.f90(162,3)
+<Peeled>
+   remark #15301: PEEL LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/update_displacement_LDDRK.f90(162,3)
+   remark #15301: FUSED LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/update_displacement_LDDRK.f90(167,3)
+LOOP END
+
+LOOP BEGIN at src/specfem3D/update_displacement_LDDRK.f90(162,3)
+<Remainder>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+===========================================================================
+
+Begin optimization report for: UPDATE_VELOC_ACOUSTIC_LDDRK
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/specfem3D/update_displacement_LDDRK.f90(100,8)
+<Peeled>
+   remark #15301: PEEL LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/update_displacement_LDDRK.f90(100,8)
+   remark #15301: FUSED LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/update_displacement_LDDRK.f90(167,3) inlined into src/specfem3D/update_displacement_LDDRK.f90(100,8)
+LOOP END
+
+LOOP BEGIN at src/specfem3D/update_displacement_LDDRK.f90(100,8)
+<Remainder>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+===========================================================================
+
+Begin optimization report for: UPDATE_VELOC_ELASTIC_LDDRK
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/specfem3D/update_displacement_LDDRK.f90(206,8)
+<Peeled>
+   remark #15301: PEEL LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/update_displacement_LDDRK.f90(206,8)
+   remark #15301: FUSED LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/update_displacement_LDDRK.f90(206,8)
+LOOP END
+
+LOOP BEGIN at src/specfem3D/update_displacement_LDDRK.f90(206,8)
+<Remainder>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+===========================================================================
+
+Begin optimization report for: UPDATE_ELASTIC_LDDRK
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/specfem3D/update_displacement_LDDRK.f90(279,5)
+<Peeled>
+   remark #15301: PEEL LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/update_displacement_LDDRK.f90(279,5)
+   remark #15301: FUSED LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/update_displacement_LDDRK.f90(284,5)
+LOOP END
+
+LOOP BEGIN at src/specfem3D/update_displacement_LDDRK.f90(279,5)
+<Remainder>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+===========================================================================
+
+Begin optimization report for: UPDATE_VELOC_ELASTIC_LDDRK_BACKWARD
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/specfem3D/update_displacement_LDDRK.f90(235,8)
+   remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at src/specfem3D/update_displacement_LDDRK.f90(284,5) inlined into src/specfem3D/update_displacement_LDDRK.f90(235,8)
+LOOP END
+
+LOOP BEGIN at src/specfem3D/update_displacement_LDDRK.f90(240,8)
+   remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at src/specfem3D/update_displacement_LDDRK.f90(284,5) inlined into src/specfem3D/update_displacement_LDDRK.f90(240,8)
+LOOP END
+===========================================================================

@@ -1,0 +1,326 @@
+
+Begin optimization report for: UPDATE_DISPL_ACOUSTIC
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/specfem3D/update_displacement_Newmark.f90(218,16)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at src/specfem3D/update_displacement_Newmark.f90(216,3)
+   <Peeled>
+      remark #15301: PEEL LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/specfem3D/update_displacement_Newmark.f90(216,3)
+      remark #15300: LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/specfem3D/update_displacement_Newmark.f90(216,3)
+   <Alternate Alignment Vectorized Loop>
+   LOOP END
+
+   LOOP BEGIN at src/specfem3D/update_displacement_Newmark.f90(216,3)
+   <Remainder>
+      remark #15301: REMAINDER LOOP WAS VECTORIZED
+   LOOP END
+LOOP END
+===========================================================================
+
+Begin optimization report for: UPDATE_VELOC_ACOUSTIC
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/specfem3D/update_displacement_Newmark.f90(307,3)
+<Peeled>
+   remark #15301: PEEL LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/update_displacement_Newmark.f90(307,3)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/update_displacement_Newmark.f90(307,3)
+<Alternate Alignment Vectorized Loop>
+LOOP END
+
+LOOP BEGIN at src/specfem3D/update_displacement_Newmark.f90(307,3)
+<Remainder>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+===========================================================================
+
+Begin optimization report for: UPDATE_VELOC_ELASTIC
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/specfem3D/update_displacement_Newmark.f90(419,33)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at src/specfem3D/update_displacement_Newmark.f90(418,5)
+   <Peeled>
+   LOOP END
+
+   LOOP BEGIN at src/specfem3D/update_displacement_Newmark.f90(418,5)
+      remark #15300: LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/specfem3D/update_displacement_Newmark.f90(418,5)
+   <Alternate Alignment Vectorized Loop>
+   LOOP END
+
+   LOOP BEGIN at src/specfem3D/update_displacement_Newmark.f90(418,5)
+   <Remainder>
+      remark #15301: REMAINDER LOOP WAS VECTORIZED
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/specfem3D/update_displacement_Newmark.f90(426,31)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at src/specfem3D/update_displacement_Newmark.f90(425,5)
+   <Peeled>
+   LOOP END
+
+   LOOP BEGIN at src/specfem3D/update_displacement_Newmark.f90(425,5)
+      remark #15300: LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/specfem3D/update_displacement_Newmark.f90(425,5)
+   <Alternate Alignment Vectorized Loop>
+   LOOP END
+
+   LOOP BEGIN at src/specfem3D/update_displacement_Newmark.f90(425,5)
+   <Remainder>
+      remark #15301: REMAINDER LOOP WAS VECTORIZED
+   LOOP END
+LOOP END
+===========================================================================
+
+Begin optimization report for: UPDATE_DISPL_NEWMARK
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/specfem3D/update_displacement_Newmark.f90(215,7) inlined into src/specfem3D/update_displacement_Newmark.f90(81,10)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at src/specfem3D/update_displacement_Newmark.f90(216,3) inlined into src/specfem3D/update_displacement_Newmark.f90(81,10)
+   <Peeled>
+      remark #15301: PEEL LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/specfem3D/update_displacement_Newmark.f90(216,3) inlined into src/specfem3D/update_displacement_Newmark.f90(81,10)
+      remark #15300: LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/specfem3D/update_displacement_Newmark.f90(216,3) inlined into src/specfem3D/update_displacement_Newmark.f90(81,10)
+   <Alternate Alignment Vectorized Loop>
+   LOOP END
+
+   LOOP BEGIN at src/specfem3D/update_displacement_Newmark.f90(216,3) inlined into src/specfem3D/update_displacement_Newmark.f90(81,10)
+   <Remainder>
+      remark #15301: REMAINDER LOOP WAS VECTORIZED
+   LOOP END
+LOOP END
+===========================================================================
+
+Begin optimization report for: UPDATE_DISPL_ELASTIC
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/specfem3D/update_displacement_Newmark.f90(172,20)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at src/specfem3D/update_displacement_Newmark.f90(170,5)
+   <Peeled>
+      remark #15301: PEEL LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/specfem3D/update_displacement_Newmark.f90(170,5)
+      remark #15300: LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/specfem3D/update_displacement_Newmark.f90(170,5)
+   <Alternate Alignment Vectorized Loop>
+   LOOP END
+
+   LOOP BEGIN at src/specfem3D/update_displacement_Newmark.f90(170,5)
+   <Remainder>
+      remark #15301: REMAINDER LOOP WAS VECTORIZED
+   LOOP END
+LOOP END
+===========================================================================
+
+Begin optimization report for: UPDATE_DISPL_NEWMARK_BACKWARD
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/specfem3D/update_displacement_Newmark.f90(215,7) inlined into src/specfem3D/update_displacement_Newmark.f90(124,10)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at src/specfem3D/update_displacement_Newmark.f90(216,3) inlined into src/specfem3D/update_displacement_Newmark.f90(124,10)
+   <Peeled>
+      remark #15301: PEEL LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/specfem3D/update_displacement_Newmark.f90(216,3) inlined into src/specfem3D/update_displacement_Newmark.f90(124,10)
+      remark #15300: LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/specfem3D/update_displacement_Newmark.f90(216,3) inlined into src/specfem3D/update_displacement_Newmark.f90(124,10)
+   <Alternate Alignment Vectorized Loop>
+   LOOP END
+
+   LOOP BEGIN at src/specfem3D/update_displacement_Newmark.f90(216,3) inlined into src/specfem3D/update_displacement_Newmark.f90(124,10)
+   <Remainder>
+      remark #15301: REMAINDER LOOP WAS VECTORIZED
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/specfem3D/update_displacement_Newmark.f90(169,7) inlined into src/specfem3D/update_displacement_Newmark.f90(127,10)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at src/specfem3D/update_displacement_Newmark.f90(170,5) inlined into src/specfem3D/update_displacement_Newmark.f90(127,10)
+   <Peeled>
+      remark #15301: PEEL LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/specfem3D/update_displacement_Newmark.f90(170,5) inlined into src/specfem3D/update_displacement_Newmark.f90(127,10)
+      remark #15300: LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/specfem3D/update_displacement_Newmark.f90(170,5) inlined into src/specfem3D/update_displacement_Newmark.f90(127,10)
+   <Alternate Alignment Vectorized Loop>
+   LOOP END
+
+   LOOP BEGIN at src/specfem3D/update_displacement_Newmark.f90(170,5) inlined into src/specfem3D/update_displacement_Newmark.f90(127,10)
+   <Remainder>
+      remark #15301: REMAINDER LOOP WAS VECTORIZED
+   LOOP END
+LOOP END
+===========================================================================
+
+Begin optimization report for: UPDATE_VELOC_ACOUSTIC_NEWMARK
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/specfem3D/update_displacement_Newmark.f90(245,10)
+<Peeled>
+   remark #15301: PEEL LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/update_displacement_Newmark.f90(245,10)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/update_displacement_Newmark.f90(245,10)
+<Alternate Alignment Vectorized Loop>
+LOOP END
+
+LOOP BEGIN at src/specfem3D/update_displacement_Newmark.f90(245,10)
+<Remainder>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+===========================================================================
+
+Begin optimization report for: UPDATE_VELOC_ELASTIC_NEWMARK
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/specfem3D/update_displacement_Newmark.f90(417,7) inlined into src/specfem3D/update_displacement_Newmark.f90(331,10)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at src/specfem3D/update_displacement_Newmark.f90(418,5) inlined into src/specfem3D/update_displacement_Newmark.f90(331,10)
+   <Peeled>
+   LOOP END
+
+   LOOP BEGIN at src/specfem3D/update_displacement_Newmark.f90(418,5) inlined into src/specfem3D/update_displacement_Newmark.f90(331,10)
+      remark #15300: LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/specfem3D/update_displacement_Newmark.f90(418,5) inlined into src/specfem3D/update_displacement_Newmark.f90(331,10)
+   <Alternate Alignment Vectorized Loop>
+   LOOP END
+
+   LOOP BEGIN at src/specfem3D/update_displacement_Newmark.f90(418,5) inlined into src/specfem3D/update_displacement_Newmark.f90(331,10)
+   <Remainder>
+      remark #15301: REMAINDER LOOP WAS VECTORIZED
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/specfem3D/update_displacement_Newmark.f90(423,7) inlined into src/specfem3D/update_displacement_Newmark.f90(331,10)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at src/specfem3D/update_displacement_Newmark.f90(425,5) inlined into src/specfem3D/update_displacement_Newmark.f90(331,10)
+   <Peeled>
+   LOOP END
+
+   LOOP BEGIN at src/specfem3D/update_displacement_Newmark.f90(425,5) inlined into src/specfem3D/update_displacement_Newmark.f90(331,10)
+      remark #15300: LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/specfem3D/update_displacement_Newmark.f90(425,5) inlined into src/specfem3D/update_displacement_Newmark.f90(331,10)
+   <Alternate Alignment Vectorized Loop>
+   LOOP END
+
+   LOOP BEGIN at src/specfem3D/update_displacement_Newmark.f90(425,5) inlined into src/specfem3D/update_displacement_Newmark.f90(331,10)
+   <Remainder>
+      remark #15301: REMAINDER LOOP WAS VECTORIZED
+   LOOP END
+LOOP END
+===========================================================================
+
+Begin optimization report for: UPDATE_VELOC_ELASTIC_NEWMARK_BACKWARD
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/specfem3D/update_displacement_Newmark.f90(417,7) inlined into src/specfem3D/update_displacement_Newmark.f90(360,10)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at src/specfem3D/update_displacement_Newmark.f90(418,5) inlined into src/specfem3D/update_displacement_Newmark.f90(360,10)
+   <Peeled>
+   LOOP END
+
+   LOOP BEGIN at src/specfem3D/update_displacement_Newmark.f90(418,5) inlined into src/specfem3D/update_displacement_Newmark.f90(360,10)
+      remark #15300: LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/specfem3D/update_displacement_Newmark.f90(418,5) inlined into src/specfem3D/update_displacement_Newmark.f90(360,10)
+   <Alternate Alignment Vectorized Loop>
+   LOOP END
+
+   LOOP BEGIN at src/specfem3D/update_displacement_Newmark.f90(418,5) inlined into src/specfem3D/update_displacement_Newmark.f90(360,10)
+   <Remainder>
+      remark #15301: REMAINDER LOOP WAS VECTORIZED
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/specfem3D/update_displacement_Newmark.f90(423,7) inlined into src/specfem3D/update_displacement_Newmark.f90(360,10)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at src/specfem3D/update_displacement_Newmark.f90(425,5) inlined into src/specfem3D/update_displacement_Newmark.f90(360,10)
+   <Peeled>
+   LOOP END
+
+   LOOP BEGIN at src/specfem3D/update_displacement_Newmark.f90(425,5) inlined into src/specfem3D/update_displacement_Newmark.f90(360,10)
+      remark #15300: LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/specfem3D/update_displacement_Newmark.f90(425,5) inlined into src/specfem3D/update_displacement_Newmark.f90(360,10)
+   <Alternate Alignment Vectorized Loop>
+   LOOP END
+
+   LOOP BEGIN at src/specfem3D/update_displacement_Newmark.f90(425,5) inlined into src/specfem3D/update_displacement_Newmark.f90(360,10)
+   <Remainder>
+      remark #15301: REMAINDER LOOP WAS VECTORIZED
+   LOOP END
+LOOP END
+===========================================================================

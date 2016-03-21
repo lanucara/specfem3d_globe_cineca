@@ -1,0 +1,40 @@
+
+Begin optimization report for: GET_EVENT_INFO_SERIAL
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/specfem3D/get_event_info.f90(179,3)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed OUTPUT dependence between 33 line 182 and 33 line 221
+LOOP END
+
+LOOP BEGIN at src/specfem3D/get_event_info.f90(244,15)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/get_event_info.f90(244,15)
+<Remainder>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+===========================================================================
+
+Begin optimization report for: GET_EVENT_INFO_PARALLEL
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/specfem3D/get_event_info.f90(179,3) inlined into src/specfem3D/get_event_info.f90(66,10)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed OUTPUT dependence between 33 line 182 and 33 line 221
+LOOP END
+
+LOOP BEGIN at src/specfem3D/get_event_info.f90(244,15) inlined into src/specfem3D/get_event_info.f90(66,10)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/get_event_info.f90(244,15) inlined into src/specfem3D/get_event_info.f90(66,10)
+<Remainder>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+===========================================================================

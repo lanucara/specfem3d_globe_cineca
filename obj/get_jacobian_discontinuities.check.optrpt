@@ -1,0 +1,46 @@
+
+Begin optimization report for: GET_JACOBIAN_DISCONTINUITIES
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/meshfem3D/get_jacobian_discontinuities.f90(110,5)
+   remark #15301: FUSED LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/get_jacobian_discontinuities.f90(111,5)
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/get_jacobian_discontinuities.f90(112,5)
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/get_jacobian_discontinuities.f90(113,5)
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/get_jacobian_discontinuities.f90(116,7)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/get_jacobian_discontinuities.f90(119,7)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/get_jacobian_discontinuities.f90(121,5)
+   remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/get_jacobian_discontinuities.f90(122,5)
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/get_jacobian_discontinuities.f90(124,5)
+   remark #15398: loop was not vectorized: loop was transformed to memset or memcpy
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/get_jacobian_discontinuities.f90(125,5)
+   remark #15398: loop was not vectorized: loop was transformed to memset or memcpy
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/get_jacobian_discontinuities.f90(127,5)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+===========================================================================

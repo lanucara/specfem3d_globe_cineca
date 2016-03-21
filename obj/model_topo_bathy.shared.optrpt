@@ -1,0 +1,120 @@
+
+Begin optimization report for: READ_TOPO_BATHY_FILE
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/shared/model_topo_bathy.f90(105,3)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed OUTPUT dependence between indx line 107 and indx line 108
+
+   LOOP BEGIN at src/shared/model_topo_bathy.f90(106,5)
+      remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+      remark #15346: vector dependence: assumed OUTPUT dependence between indx line 107 and indx line 108
+   LOOP END
+LOOP END
+===========================================================================
+
+Begin optimization report for: READ_TOPO_BATHY_DATABASE
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/shared/model_topo_bathy.f90(105,3) inlined into src/shared/model_topo_bathy.f90(205,10)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed OUTPUT dependence between indx line 107 and indx line 108
+
+   LOOP BEGIN at src/shared/model_topo_bathy.f90(106,5) inlined into src/shared/model_topo_bathy.f90(205,10)
+      remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+      remark #15346: vector dependence: assumed OUTPUT dependence between indx line 107 and indx line 108
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/shared/model_topo_bathy.f90(216,58)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at src/shared/model_topo_bathy.f90(216,58)
+   <Peeled>
+      remark #15301: PEEL LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/shared/model_topo_bathy.f90(216,58)
+      remark #15300: LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/shared/model_topo_bathy.f90(216,58)
+   <Remainder>
+      remark #15301: REMAINDER LOOP WAS VECTORIZED
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/shared/model_topo_bathy.f90(216,78)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at src/shared/model_topo_bathy.f90(216,78)
+   <Peeled>
+      remark #15301: PEEL LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/shared/model_topo_bathy.f90(216,78)
+      remark #15300: LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/shared/model_topo_bathy.f90(216,78)
+   <Remainder>
+      remark #15301: REMAINDER LOOP WAS VECTORIZED
+   LOOP END
+LOOP END
+===========================================================================
+
+Begin optimization report for: MODEL_TOPO_BATHY_BROADCAST
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/shared/model_topo_bathy.f90(105,3) inlined into src/shared/model_topo_bathy.f90(58,10)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed OUTPUT dependence between indx line 107 and indx line 108
+
+   LOOP BEGIN at src/shared/model_topo_bathy.f90(106,5) inlined into src/shared/model_topo_bathy.f90(58,10)
+      remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+      remark #15346: vector dependence: assumed OUTPUT dependence between indx line 107 and indx line 108
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/shared/model_topo_bathy.f90(61,58)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at src/shared/model_topo_bathy.f90(61,58)
+   <Peeled>
+      remark #15301: PEEL LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/shared/model_topo_bathy.f90(61,58)
+      remark #15300: LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/shared/model_topo_bathy.f90(61,58)
+   <Remainder>
+      remark #15301: REMAINDER LOOP WAS VECTORIZED
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/shared/model_topo_bathy.f90(61,78)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at src/shared/model_topo_bathy.f90(61,78)
+   <Peeled>
+      remark #15301: PEEL LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/shared/model_topo_bathy.f90(61,78)
+      remark #15300: LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/shared/model_topo_bathy.f90(61,78)
+   <Remainder>
+      remark #15301: REMAINDER LOOP WAS VECTORIZED
+   LOOP END
+LOOP END
+===========================================================================

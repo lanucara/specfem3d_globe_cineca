@@ -1,0 +1,130 @@
+
+Begin optimization report for: MULTIPLY_ACCEL_ELASTIC
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/specfem3D/multiply_arrays_source.f90(98,7)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at src/specfem3D/multiply_arrays_source.f90(99,5)
+   <Peeled>
+      remark #15301: PEEL LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/specfem3D/multiply_arrays_source.f90(99,5)
+      remark #15300: LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/specfem3D/multiply_arrays_source.f90(99,5)
+   <Alternate Alignment Vectorized Loop>
+   LOOP END
+
+   LOOP BEGIN at src/specfem3D/multiply_arrays_source.f90(99,5)
+   <Remainder>
+      remark #15301: REMAINDER LOOP WAS VECTORIZED
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/specfem3D/multiply_arrays_source.f90(86,7)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at src/specfem3D/multiply_arrays_source.f90(87,5)
+   <Peeled>
+      remark #15301: PEEL LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/specfem3D/multiply_arrays_source.f90(87,5)
+      remark #15300: LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/specfem3D/multiply_arrays_source.f90(87,5)
+   <Alternate Alignment Vectorized Loop>
+   LOOP END
+
+   LOOP BEGIN at src/specfem3D/multiply_arrays_source.f90(87,5)
+   <Remainder>
+      remark #15301: REMAINDER LOOP WAS VECTORIZED
+   LOOP END
+LOOP END
+===========================================================================
+
+Begin optimization report for: MULTIPLY_ACCEL_ACOUSTIC
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/specfem3D/multiply_arrays_source.f90(142,3)
+<Peeled>
+   remark #15301: PEEL LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/multiply_arrays_source.f90(142,3)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/multiply_arrays_source.f90(142,3)
+<Alternate Alignment Vectorized Loop>
+LOOP END
+
+LOOP BEGIN at src/specfem3D/multiply_arrays_source.f90(142,3)
+<Remainder>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+===========================================================================
+
+Begin optimization report for: MULTIPLY_ARRAYS_SOURCE
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/specfem3D/multiply_arrays_source.f90(176,3)
+   remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at src/specfem3D/multiply_arrays_source.f90(178,3)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at src/specfem3D/multiply_arrays_source.f90(179,5)
+      remark #15301: OUTER LOOP WAS VECTORIZED
+
+      LOOP BEGIN at src/specfem3D/multiply_arrays_source.f90(180,7)
+         remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+      LOOP END
+   LOOP END
+LOOP END
+===========================================================================
+
+Begin optimization report for: MULTIPLY_ARRAYS_ADJOINT
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/specfem3D/multiply_arrays_source.f90(222,3)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at src/specfem3D/multiply_arrays_source.f90(223,5)
+      remark #15542: loop was not vectorized: inner loop was already vectorized
+
+      LOOP BEGIN at src/specfem3D/multiply_arrays_source.f90(224,7)
+         remark #15542: loop was not vectorized: inner loop was already vectorized
+
+         LOOP BEGIN at src/specfem3D/multiply_arrays_source.f90(225,9)
+            remark #15300: LOOP WAS VECTORIZED
+         LOOP END
+      LOOP END
+
+      LOOP BEGIN at src/specfem3D/multiply_arrays_source.f90(224,7)
+      LOOP END
+
+      LOOP BEGIN at src/specfem3D/multiply_arrays_source.f90(224,7)
+      LOOP END
+
+      LOOP BEGIN at src/specfem3D/multiply_arrays_source.f90(224,7)
+      LOOP END
+
+      LOOP BEGIN at src/specfem3D/multiply_arrays_source.f90(224,7)
+      LOOP END
+   LOOP END
+LOOP END
+===========================================================================

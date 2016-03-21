@@ -1,0 +1,45 @@
+
+Begin optimization report for: LAGRANGE_ANY
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/shared/lagrange_poly.f90(50,3)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at src/shared/lagrange_poly.f90(57,5)
+      remark #15542: loop was not vectorized: inner loop was already vectorized
+
+      LOOP BEGIN at src/shared/lagrange_poly.f90(76,9)
+      <Peeled>
+         remark #15301: PEEL LOOP WAS VECTORIZED
+      LOOP END
+
+      LOOP BEGIN at src/shared/lagrange_poly.f90(76,9)
+         remark #15300: LOOP WAS VECTORIZED
+      LOOP END
+
+      LOOP BEGIN at src/shared/lagrange_poly.f90(76,9)
+      <Remainder>
+         remark #15301: REMAINDER LOOP WAS VECTORIZED
+      LOOP END
+
+      LOOP BEGIN at src/shared/lagrange_poly.f90(76,9)
+      <Peeled>
+         remark #15301: PEEL LOOP WAS VECTORIZED
+      LOOP END
+
+      LOOP BEGIN at src/shared/lagrange_poly.f90(76,9)
+         remark #15300: LOOP WAS VECTORIZED
+      LOOP END
+
+      LOOP BEGIN at src/shared/lagrange_poly.f90(76,9)
+      <Remainder>
+         remark #15301: REMAINDER LOOP WAS VECTORIZED
+      LOOP END
+   LOOP END
+
+   LOOP BEGIN at src/shared/lagrange_poly.f90(73,5)
+   LOOP END
+LOOP END
+===========================================================================

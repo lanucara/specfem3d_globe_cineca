@@ -1,0 +1,140 @@
+
+Begin optimization report for: CLIP_SEM_GLOBE
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/clip_sem.f90(125,3)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed OUTPUT dependence between 172 line 126 and 172 line 126
+LOOP END
+
+LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/clip_sem.f90(139,5)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed FLOW dependence between 222 line 139 and 222 line 139
+LOOP END
+
+LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/clip_sem.f90(156,3)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/clip_sem.f90(173,16)
+      remark #15542: loop was not vectorized: inner loop was already vectorized
+
+      LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/clip_sem.f90(173,16)
+         remark #15542: loop was not vectorized: inner loop was already vectorized
+
+         LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/clip_sem.f90(173,16)
+            remark #15542: loop was not vectorized: inner loop was already vectorized
+
+            LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/clip_sem.f90(173,16)
+            <Peeled>
+               remark #15301: PEEL LOOP WAS VECTORIZED
+            LOOP END
+
+            LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/clip_sem.f90(173,16)
+               remark #15300: LOOP WAS VECTORIZED
+            LOOP END
+
+            LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/clip_sem.f90(173,16)
+            <Remainder>
+               remark #15301: REMAINDER LOOP WAS VECTORIZED
+            LOOP END
+         LOOP END
+      LOOP END
+   LOOP END
+
+   LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/clip_sem.f90(174,16)
+      remark #15542: loop was not vectorized: inner loop was already vectorized
+
+      LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/clip_sem.f90(174,16)
+         remark #15542: loop was not vectorized: inner loop was already vectorized
+
+         LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/clip_sem.f90(174,16)
+            remark #15542: loop was not vectorized: inner loop was already vectorized
+
+            LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/clip_sem.f90(174,16)
+            <Peeled>
+               remark #15301: PEEL LOOP WAS VECTORIZED
+            LOOP END
+
+            LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/clip_sem.f90(174,16)
+               remark #15300: LOOP WAS VECTORIZED
+            LOOP END
+
+            LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/clip_sem.f90(174,16)
+            <Remainder>
+               remark #15301: REMAINDER LOOP WAS VECTORIZED
+            LOOP END
+         LOOP END
+      LOOP END
+   LOOP END
+
+   LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/clip_sem.f90(194,17)
+      remark #15542: loop was not vectorized: inner loop was already vectorized
+
+      LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/clip_sem.f90(186,7)
+         remark #15542: loop was not vectorized: inner loop was already vectorized
+
+         LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/clip_sem.f90(187,9)
+            remark #15542: loop was not vectorized: inner loop was already vectorized
+
+            LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/clip_sem.f90(188,11)
+               remark #15300: LOOP WAS VECTORIZED
+            LOOP END
+         LOOP END
+      LOOP END
+   LOOP END
+
+   LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/clip_sem.f90(213,16)
+      remark #15542: loop was not vectorized: inner loop was already vectorized
+
+      LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/clip_sem.f90(213,16)
+         remark #15542: loop was not vectorized: inner loop was already vectorized
+
+         LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/clip_sem.f90(213,16)
+            remark #15542: loop was not vectorized: inner loop was already vectorized
+
+            LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/clip_sem.f90(213,16)
+            <Peeled>
+               remark #15301: PEEL LOOP WAS VECTORIZED
+            LOOP END
+
+            LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/clip_sem.f90(213,16)
+               remark #15300: LOOP WAS VECTORIZED
+            LOOP END
+
+            LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/clip_sem.f90(213,16)
+            <Remainder>
+               remark #15301: REMAINDER LOOP WAS VECTORIZED
+            LOOP END
+         LOOP END
+      LOOP END
+   LOOP END
+
+   LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/clip_sem.f90(214,16)
+      remark #15542: loop was not vectorized: inner loop was already vectorized
+
+      LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/clip_sem.f90(214,16)
+         remark #15542: loop was not vectorized: inner loop was already vectorized
+
+         LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/clip_sem.f90(214,16)
+            remark #15542: loop was not vectorized: inner loop was already vectorized
+
+            LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/clip_sem.f90(214,16)
+            <Peeled>
+               remark #15301: PEEL LOOP WAS VECTORIZED
+            LOOP END
+
+            LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/clip_sem.f90(214,16)
+               remark #15300: LOOP WAS VECTORIZED
+            LOOP END
+
+            LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/clip_sem.f90(214,16)
+            <Remainder>
+               remark #15301: REMAINDER LOOP WAS VECTORIZED
+            LOOP END
+         LOOP END
+      LOOP END
+   LOOP END
+LOOP END
+===========================================================================

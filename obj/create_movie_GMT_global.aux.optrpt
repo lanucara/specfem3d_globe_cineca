@@ -1,0 +1,355 @@
+
+Begin optimization report for: CREATE_MOVIE_GMT_GLOBAL
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/auxiliaries/create_movie_GMT_global.f90(218,3)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/auxiliaries/create_movie_GMT_global.f90(218,3)
+<Remainder>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/auxiliaries/create_movie_GMT_global.f90(262,5)
+   remark #15398: loop was not vectorized: loop was transformed to memset or memcpy
+LOOP END
+
+LOOP BEGIN at src/auxiliaries/create_movie_GMT_global.f90(398,35)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at src/auxiliaries/create_movie_GMT_global.f90(398,35)
+   <Peeled>
+      remark #15301: PEEL LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/auxiliaries/create_movie_GMT_global.f90(398,35)
+      remark #15300: LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/auxiliaries/create_movie_GMT_global.f90(398,35)
+   <Remainder>
+      remark #15301: REMAINDER LOOP WAS VECTORIZED
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/auxiliaries/create_movie_GMT_global.f90(398,56)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at src/auxiliaries/create_movie_GMT_global.f90(398,56)
+   <Peeled>
+      remark #15301: PEEL LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/auxiliaries/create_movie_GMT_global.f90(398,56)
+      remark #15300: LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/auxiliaries/create_movie_GMT_global.f90(398,56)
+   <Remainder>
+      remark #15301: REMAINDER LOOP WAS VECTORIZED
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/auxiliaries/create_movie_GMT_global.f90(399,35)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at src/auxiliaries/create_movie_GMT_global.f90(399,35)
+   <Peeled>
+      remark #15301: PEEL LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/auxiliaries/create_movie_GMT_global.f90(399,35)
+      remark #15300: LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/auxiliaries/create_movie_GMT_global.f90(399,35)
+   <Remainder>
+      remark #15301: REMAINDER LOOP WAS VECTORIZED
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/auxiliaries/create_movie_GMT_global.f90(399,56)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at src/auxiliaries/create_movie_GMT_global.f90(399,56)
+   <Peeled>
+      remark #15301: PEEL LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/auxiliaries/create_movie_GMT_global.f90(399,56)
+      remark #15300: LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/auxiliaries/create_movie_GMT_global.f90(399,56)
+   <Remainder>
+      remark #15301: REMAINDER LOOP WAS VECTORIZED
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/auxiliaries/create_movie_GMT_global.f90(400,35)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at src/auxiliaries/create_movie_GMT_global.f90(400,35)
+   <Peeled>
+      remark #15301: PEEL LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/auxiliaries/create_movie_GMT_global.f90(400,35)
+      remark #15300: LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/auxiliaries/create_movie_GMT_global.f90(400,35)
+   <Remainder>
+      remark #15301: REMAINDER LOOP WAS VECTORIZED
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/auxiliaries/create_movie_GMT_global.f90(400,56)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at src/auxiliaries/create_movie_GMT_global.f90(400,56)
+   <Peeled>
+      remark #15301: PEEL LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/auxiliaries/create_movie_GMT_global.f90(400,56)
+      remark #15300: LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/auxiliaries/create_movie_GMT_global.f90(400,56)
+   <Remainder>
+      remark #15301: REMAINDER LOOP WAS VECTORIZED
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/auxiliaries/create_movie_GMT_global.f90(467,11)
+   remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+   LOOP BEGIN at src/auxiliaries/create_movie_GMT_global.f90(468,14)
+      remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+      remark #15346: vector dependence: assumed OUTPUT dependence between xcoord line 472 and xcoord line 484
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/auxiliaries/create_movie_GMT_global.f90(681,25)
+<Peeled>
+   remark #15301: PEEL LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/auxiliaries/create_movie_GMT_global.f90(681,25)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/auxiliaries/create_movie_GMT_global.f90(681,25)
+<Remainder>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/auxiliaries/create_movie_GMT_global.f90(682,25)
+<Peeled>
+   remark #15301: PEEL LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/auxiliaries/create_movie_GMT_global.f90(682,25)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/auxiliaries/create_movie_GMT_global.f90(682,25)
+<Remainder>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/auxiliaries/create_movie_GMT_global.f90(703,21)
+<Peeled>
+LOOP END
+
+LOOP BEGIN at src/auxiliaries/create_movie_GMT_global.f90(703,21)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/auxiliaries/create_movie_GMT_global.f90(703,21)
+<Remainder>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/auxiliaries/create_movie_GMT_global.f90(716,45)
+<Peeled>
+   remark #15301: PEEL LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/auxiliaries/create_movie_GMT_global.f90(716,45)
+   remark #15301: FUSED LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/auxiliaries/create_movie_GMT_global.f90(717,47)
+LOOP END
+
+LOOP BEGIN at src/auxiliaries/create_movie_GMT_global.f90(716,45)
+<Remainder>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/auxiliaries/create_movie_GMT_global.f90(742,51)
+<Peeled>
+   remark #15301: PEEL LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/auxiliaries/create_movie_GMT_global.f90(742,51)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/auxiliaries/create_movie_GMT_global.f90(742,51)
+<Remainder>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/auxiliaries/create_movie_GMT_global.f90(743,53)
+<Peeled>
+   remark #15301: PEEL LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/auxiliaries/create_movie_GMT_global.f90(743,53)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/auxiliaries/create_movie_GMT_global.f90(743,53)
+<Remainder>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/auxiliaries/create_movie_GMT_global.f90(749,29)
+<Peeled>
+   remark #15301: PEEL LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/auxiliaries/create_movie_GMT_global.f90(749,29)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/auxiliaries/create_movie_GMT_global.f90(749,29)
+<Remainder>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/auxiliaries/create_movie_GMT_global.f90(750,29)
+<Peeled>
+   remark #15301: PEEL LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/auxiliaries/create_movie_GMT_global.f90(750,29)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/auxiliaries/create_movie_GMT_global.f90(750,29)
+<Remainder>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/auxiliaries/create_movie_GMT_global.f90(756,9)
+<Peeled>
+   remark #15301: PEEL LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/auxiliaries/create_movie_GMT_global.f90(756,9)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/auxiliaries/create_movie_GMT_global.f90(756,9)
+<Remainder>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/auxiliaries/create_movie_GMT_global.f90(759,47)
+<Peeled>
+   remark #15301: PEEL LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/auxiliaries/create_movie_GMT_global.f90(759,47)
+   remark #15301: FUSED LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/auxiliaries/create_movie_GMT_global.f90(760,49)
+LOOP END
+
+LOOP BEGIN at src/auxiliaries/create_movie_GMT_global.f90(759,47)
+<Remainder>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/auxiliaries/create_movie_GMT_global.f90(769,46)
+<Peeled>
+   remark #15301: PEEL LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/auxiliaries/create_movie_GMT_global.f90(769,46)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/auxiliaries/create_movie_GMT_global.f90(769,46)
+<Remainder>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/auxiliaries/create_movie_GMT_global.f90(796,46)
+<Peeled>
+   remark #15301: PEEL LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/auxiliaries/create_movie_GMT_global.f90(796,46)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/auxiliaries/create_movie_GMT_global.f90(796,46)
+<Remainder>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/auxiliaries/create_movie_GMT_global.f90(853,5)
+   remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+   LOOP BEGIN at src/auxiliaries/create_movie_GMT_global.f90(854,7)
+      remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+      LOOP BEGIN at src/auxiliaries/create_movie_GMT_global.f90(862,9)
+         remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+         LOOP BEGIN at src/auxiliaries/create_movie_GMT_global.f90(863,11)
+            remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+            remark #15346: vector dependence: assumed FLOW dependence between xcoord line 873 and xcoord line 878
+         LOOP END
+
+         LOOP BEGIN at src/auxiliaries/create_movie_GMT_global.f90(863,11)
+            remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+            remark #15346: vector dependence: assumed FLOW dependence between 178 line 894 and 178 line 898
+         LOOP END
+      LOOP END
+   LOOP END
+LOOP END
+
+
+Non-optimizable loops:
+
+
+LOOP BEGIN at src/auxiliaries/create_movie_GMT_global.f90(368,3)
+   remark #15536: loop was not vectorized: inner loop throttling prevents vectorization of this outer loop. Refer to inner loop message for more details.
+
+   LOOP BEGIN at src/auxiliaries/create_movie_GMT_global.f90(678,5)
+      remark #15536: loop was not vectorized: inner loop throttling prevents vectorization of this outer loop. Refer to inner loop message for more details.
+
+      LOOP BEGIN at src/auxiliaries/create_movie_GMT_global.f90(676,8)
+         remark #15536: loop was not vectorized: inner loop throttling prevents vectorization of this outer loop. Refer to inner loop message for more details.
+
+         LOOP BEGIN at src/auxiliaries/create_movie_GMT_global.f90(674,11)
+            remark #15536: loop was not vectorized: inner loop throttling prevents vectorization of this outer loop. Refer to inner loop message for more details.
+
+            LOOP BEGIN at src/auxiliaries/create_movie_GMT_global.f90(673,14)
+               remark #15534: loop was not vectorized: loop contains arithmetic if or computed goto. Consider using if-then-else statement.    [ src/auxiliaries/create_movie_GMT_global.f90(609,45) ]
+            LOOP END
+         LOOP END
+      LOOP END
+   LOOP END
+LOOP END
+===========================================================================

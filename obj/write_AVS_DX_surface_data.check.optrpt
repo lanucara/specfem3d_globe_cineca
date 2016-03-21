@@ -1,0 +1,55 @@
+
+Begin optimization report for: WRITE_AVS_DX_SURFACE_DATA
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/meshfem3D/write_AVS_DX_surface_data.f90(90,3)
+   remark #15398: loop was not vectorized: loop was transformed to memset or memcpy
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/write_AVS_DX_surface_data.f90(95,3)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed OUTPUT dependence between mask_ibool line 106 and mask_ibool line 109
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/write_AVS_DX_surface_data.f90(115,11)
+<Peeled>
+   remark #15301: PEEL LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/write_AVS_DX_surface_data.f90(115,11)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/write_AVS_DX_surface_data.f90(115,11)
+<Remainder>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/write_AVS_DX_surface_data.f90(121,3)
+   remark #15398: loop was not vectorized: loop was transformed to memset or memcpy
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/write_AVS_DX_surface_data.f90(125,3)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed OUTPUT dependence between num_ibool_avs_dx line 139 and num_ibool_avs_dx line 160
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/write_AVS_DX_surface_data.f90(192,3)
+   remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+   LOOP BEGIN at src/meshfem3D/write_AVS_DX_surface_data.f90(210,15)
+      remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+      LOOP BEGIN at src/meshfem3D/write_AVS_DX_surface_data.f90(211,18)
+         remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+         LOOP BEGIN at src/meshfem3D/write_AVS_DX_surface_data.f90(212,21)
+            remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+            remark #15346: vector dependence: assumed OUTPUT dependence between x line 214 and x line 220
+         LOOP END
+      LOOP END
+   LOOP END
+LOOP END
+===========================================================================

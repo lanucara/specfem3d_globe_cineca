@@ -1,0 +1,25 @@
+
+Begin optimization report for: WRITE_OUTPUT_SAC
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/specfem3D/write_output_SAC.f90(445,7)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed OUTPUT dependence between 82 line 451 and 82 line 451
+LOOP END
+
+LOOP BEGIN at src/specfem3D/write_output_SAC.f90(455,7)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed OUTPUT dependence between 82 line 461 and 82 line 461
+LOOP END
+
+LOOP BEGIN at src/specfem3D/write_output_SAC.f90(648,5)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/write_output_SAC.f90(648,5)
+<Remainder>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+===========================================================================

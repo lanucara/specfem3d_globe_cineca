@@ -1,0 +1,10 @@
+
+Begin optimization report for: INITIALIZE_SIMULATION
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/specfem3D/initialize_simulation.f90(234,5)
+   remark #15521: loop was not vectorized: explicitly compute the iteration count before executing the loop or try using canonical loop form
+LOOP END
+===========================================================================

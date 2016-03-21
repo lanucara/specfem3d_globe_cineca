@@ -1,0 +1,915 @@
+
+Begin optimization report for: DIFFERENCE_SEM
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/difference_sem.f90(83,3)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed OUTPUT dependence between 205 line 84 and 205 line 84
+LOOP END
+
+LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/difference_sem.f90(153,3)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/difference_sem.f90(157,5)
+      remark #15542: loop was not vectorized: inner loop was already vectorized
+
+      LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/difference_sem.f90(157,5)
+         remark #15542: loop was not vectorized: inner loop was already vectorized
+
+         LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/difference_sem.f90(157,5)
+            remark #15542: loop was not vectorized: inner loop was already vectorized
+
+            LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/difference_sem.f90(157,5)
+               remark #15300: LOOP WAS VECTORIZED
+            LOOP END
+
+            LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/difference_sem.f90(158,5)
+            LOOP END
+         LOOP END
+
+         LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/difference_sem.f90(158,5)
+         LOOP END
+      LOOP END
+
+      LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/difference_sem.f90(158,5)
+      LOOP END
+   LOOP END
+
+   LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/difference_sem.f90(158,5)
+   LOOP END
+
+   LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/difference_sem.f90(205,45)
+      remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+      LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/difference_sem.f90(205,45)
+         remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+         LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/difference_sem.f90(205,45)
+            remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+            LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/difference_sem.f90(205,45)
+               remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+            LOOP END
+
+            LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/difference_sem.f90(205,45)
+            LOOP END
+
+            LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/difference_sem.f90(205,45)
+            LOOP END
+
+            LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/difference_sem.f90(205,45)
+            LOOP END
+
+            LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/difference_sem.f90(205,45)
+            LOOP END
+         LOOP END
+
+         LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/difference_sem.f90(205,45)
+
+            LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/difference_sem.f90(205,45)
+            LOOP END
+
+            LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/difference_sem.f90(205,45)
+            LOOP END
+
+            LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/difference_sem.f90(205,45)
+            LOOP END
+
+            LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/difference_sem.f90(205,45)
+            LOOP END
+
+            LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/difference_sem.f90(205,45)
+            LOOP END
+         LOOP END
+
+         LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/difference_sem.f90(205,45)
+
+            LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/difference_sem.f90(205,45)
+            LOOP END
+
+            LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/difference_sem.f90(205,45)
+            LOOP END
+
+            LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/difference_sem.f90(205,45)
+            LOOP END
+
+            LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/difference_sem.f90(205,45)
+            LOOP END
+
+            LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/difference_sem.f90(205,45)
+            LOOP END
+         LOOP END
+
+         LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/difference_sem.f90(205,45)
+
+            LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/difference_sem.f90(205,45)
+            LOOP END
+
+            LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/difference_sem.f90(205,45)
+            LOOP END
+
+            LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/difference_sem.f90(205,45)
+            LOOP END
+
+            LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/difference_sem.f90(205,45)
+            LOOP END
+
+            LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/difference_sem.f90(205,45)
+            LOOP END
+         LOOP END
+
+         LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/difference_sem.f90(205,45)
+
+            LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/difference_sem.f90(205,45)
+            LOOP END
+
+            LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/difference_sem.f90(205,45)
+            LOOP END
+
+            LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/difference_sem.f90(205,45)
+            LOOP END
+
+            LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/difference_sem.f90(205,45)
+            LOOP END
+
+            LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/difference_sem.f90(205,45)
+            LOOP END
+         LOOP END
+      LOOP END
+   LOOP END
+
+   LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/difference_sem.f90(205,77)
+      remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+      LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/difference_sem.f90(205,77)
+         remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+         LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/difference_sem.f90(205,77)
+            remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+            LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/difference_sem.f90(205,77)
+               remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+            LOOP END
+
+            LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/difference_sem.f90(205,77)
+            LOOP END
+
+            LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/difference_sem.f90(205,77)
+            LOOP END
+
+            LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/difference_sem.f90(205,77)
+            LOOP END
+
+            LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/difference_sem.f90(205,77)
+            LOOP END
+         LOOP END
+
+         LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/difference_sem.f90(205,77)
+
+            LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/difference_sem.f90(205,77)
+            LOOP END
+
+            LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/difference_sem.f90(205,77)
+            LOOP END
+
+            LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/difference_sem.f90(205,77)
+            LOOP END
+
+            LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/difference_sem.f90(205,77)
+            LOOP END
+
+            LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/difference_sem.f90(205,77)
+            LOOP END
+         LOOP END
+
+         LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/difference_sem.f90(205,77)
+
+            LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/difference_sem.f90(205,77)
+            LOOP END
+
+            LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/difference_sem.f90(205,77)
+            LOOP END
+
+            LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/difference_sem.f90(205,77)
+            LOOP END
+
+            LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/difference_sem.f90(205,77)
+            LOOP END
+
+            LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/difference_sem.f90(205,77)
+            LOOP END
+         LOOP END
+
+         LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/difference_sem.f90(205,77)
+
+            LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/difference_sem.f90(205,77)
+            LOOP END
+
+            LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/difference_sem.f90(205,77)
+            LOOP END
+
+            LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/difference_sem.f90(205,77)
+            LOOP END
+
+            LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/difference_sem.f90(205,77)
+            LOOP END
+
+            LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/difference_sem.f90(205,77)
+            LOOP END
+         LOOP END
+
+         LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/difference_sem.f90(205,77)
+
+            LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/difference_sem.f90(205,77)
+            LOOP END
+
+            LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/difference_sem.f90(205,77)
+            LOOP END
+
+            LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/difference_sem.f90(205,77)
+            LOOP END
+
+            LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/difference_sem.f90(205,77)
+            LOOP END
+
+            LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/difference_sem.f90(205,77)
+            LOOP END
+         LOOP END
+      LOOP END
+   LOOP END
+
+   LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/difference_sem.f90(206,45)
+      remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+      LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/difference_sem.f90(206,45)
+         remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+         LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/difference_sem.f90(206,45)
+            remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+            LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/difference_sem.f90(206,45)
+               remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+            LOOP END
+
+            LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/difference_sem.f90(206,45)
+            LOOP END
+
+            LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/difference_sem.f90(206,45)
+            LOOP END
+
+            LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/difference_sem.f90(206,45)
+            LOOP END
+
+            LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/difference_sem.f90(206,45)
+            LOOP END
+         LOOP END
+
+         LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/difference_sem.f90(206,45)
+
+            LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/difference_sem.f90(206,45)
+            LOOP END
+
+            LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/difference_sem.f90(206,45)
+            LOOP END
+
+            LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/difference_sem.f90(206,45)
+            LOOP END
+
+            LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/difference_sem.f90(206,45)
+            LOOP END
+
+            LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/difference_sem.f90(206,45)
+            LOOP END
+         LOOP END
+
+         LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/difference_sem.f90(206,45)
+
+            LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/difference_sem.f90(206,45)
+            LOOP END
+
+            LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/difference_sem.f90(206,45)
+            LOOP END
+
+            LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/difference_sem.f90(206,45)
+            LOOP END
+
+            LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/difference_sem.f90(206,45)
+            LOOP END
+
+            LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/difference_sem.f90(206,45)
+            LOOP END
+         LOOP END
+
+         LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/difference_sem.f90(206,45)
+
+            LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/difference_sem.f90(206,45)
+            LOOP END
+
+            LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/difference_sem.f90(206,45)
+            LOOP END
+
+            LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/difference_sem.f90(206,45)
+            LOOP END
+
+            LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/difference_sem.f90(206,45)
+            LOOP END
+
+            LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/difference_sem.f90(206,45)
+            LOOP END
+         LOOP END
+
+         LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/difference_sem.f90(206,45)
+
+            LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/difference_sem.f90(206,45)
+            LOOP END
+
+            LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/difference_sem.f90(206,45)
+            LOOP END
+
+            LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/difference_sem.f90(206,45)
+            LOOP END
+
+            LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/difference_sem.f90(206,45)
+            LOOP END
+
+            LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/difference_sem.f90(206,45)
+            LOOP END
+         LOOP END
+      LOOP END
+   LOOP END
+
+   LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/difference_sem.f90(206,79)
+      remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+      LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/difference_sem.f90(206,79)
+         remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+         LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/difference_sem.f90(206,79)
+            remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+            LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/difference_sem.f90(206,79)
+               remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+            LOOP END
+
+            LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/difference_sem.f90(206,79)
+            LOOP END
+
+            LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/difference_sem.f90(206,79)
+            LOOP END
+
+            LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/difference_sem.f90(206,79)
+            LOOP END
+
+            LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/difference_sem.f90(206,79)
+            LOOP END
+         LOOP END
+
+         LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/difference_sem.f90(206,79)
+
+            LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/difference_sem.f90(206,79)
+            LOOP END
+
+            LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/difference_sem.f90(206,79)
+            LOOP END
+
+            LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/difference_sem.f90(206,79)
+            LOOP END
+
+            LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/difference_sem.f90(206,79)
+            LOOP END
+
+            LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/difference_sem.f90(206,79)
+            LOOP END
+         LOOP END
+
+         LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/difference_sem.f90(206,79)
+
+            LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/difference_sem.f90(206,79)
+            LOOP END
+
+            LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/difference_sem.f90(206,79)
+            LOOP END
+
+            LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/difference_sem.f90(206,79)
+            LOOP END
+
+            LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/difference_sem.f90(206,79)
+            LOOP END
+
+            LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/difference_sem.f90(206,79)
+            LOOP END
+         LOOP END
+
+         LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/difference_sem.f90(206,79)
+
+            LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/difference_sem.f90(206,79)
+            LOOP END
+
+            LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/difference_sem.f90(206,79)
+            LOOP END
+
+            LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/difference_sem.f90(206,79)
+            LOOP END
+
+            LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/difference_sem.f90(206,79)
+            LOOP END
+
+            LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/difference_sem.f90(206,79)
+            LOOP END
+         LOOP END
+
+         LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/difference_sem.f90(206,79)
+
+            LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/difference_sem.f90(206,79)
+            LOOP END
+
+            LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/difference_sem.f90(206,79)
+            LOOP END
+
+            LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/difference_sem.f90(206,79)
+            LOOP END
+
+            LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/difference_sem.f90(206,79)
+            LOOP END
+
+            LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/difference_sem.f90(206,79)
+            LOOP END
+         LOOP END
+      LOOP END
+   LOOP END
+
+   LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/difference_sem.f90(223,5)
+      remark #15301: OUTER LOOP WAS VECTORIZED
+
+      LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/difference_sem.f90(223,5)
+         remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+
+         LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/difference_sem.f90(223,5)
+            remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+
+            LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/difference_sem.f90(223,5)
+               remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+            LOOP END
+         LOOP END
+      LOOP END
+   LOOP END
+
+   LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/difference_sem.f90(223,5)
+   <Remainder>
+      remark #15301: REMAINDER LOOP WAS VECTORIZED
+
+      LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/difference_sem.f90(223,5)
+         remark #25460: No loop optimizations reported
+
+         LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/difference_sem.f90(223,5)
+            remark #25460: No loop optimizations reported
+
+            LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/difference_sem.f90(223,5)
+            LOOP END
+         LOOP END
+      LOOP END
+   LOOP END
+
+   LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/difference_sem.f90(229,15)
+      remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+      LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/difference_sem.f90(229,15)
+         remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+         LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/difference_sem.f90(229,15)
+            remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+            LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/difference_sem.f90(229,15)
+               remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+            LOOP END
+
+            LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/difference_sem.f90(229,15)
+            LOOP END
+
+            LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/difference_sem.f90(229,15)
+            LOOP END
+
+            LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/difference_sem.f90(229,15)
+            LOOP END
+
+            LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/difference_sem.f90(229,15)
+            LOOP END
+         LOOP END
+
+         LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/difference_sem.f90(229,15)
+
+            LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/difference_sem.f90(229,15)
+            LOOP END
+
+            LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/difference_sem.f90(229,15)
+            LOOP END
+
+            LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/difference_sem.f90(229,15)
+            LOOP END
+
+            LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/difference_sem.f90(229,15)
+            LOOP END
+
+            LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/difference_sem.f90(229,15)
+            LOOP END
+         LOOP END
+
+         LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/difference_sem.f90(229,15)
+
+            LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/difference_sem.f90(229,15)
+            LOOP END
+
+            LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/difference_sem.f90(229,15)
+            LOOP END
+
+            LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/difference_sem.f90(229,15)
+            LOOP END
+
+            LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/difference_sem.f90(229,15)
+            LOOP END
+
+            LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/difference_sem.f90(229,15)
+            LOOP END
+         LOOP END
+
+         LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/difference_sem.f90(229,15)
+
+            LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/difference_sem.f90(229,15)
+            LOOP END
+
+            LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/difference_sem.f90(229,15)
+            LOOP END
+
+            LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/difference_sem.f90(229,15)
+            LOOP END
+
+            LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/difference_sem.f90(229,15)
+            LOOP END
+
+            LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/difference_sem.f90(229,15)
+            LOOP END
+         LOOP END
+
+         LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/difference_sem.f90(229,15)
+
+            LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/difference_sem.f90(229,15)
+            LOOP END
+
+            LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/difference_sem.f90(229,15)
+            LOOP END
+
+            LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/difference_sem.f90(229,15)
+            LOOP END
+
+            LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/difference_sem.f90(229,15)
+            LOOP END
+
+            LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/difference_sem.f90(229,15)
+            LOOP END
+         LOOP END
+      LOOP END
+   LOOP END
+
+   LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/difference_sem.f90(230,15)
+      remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+      LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/difference_sem.f90(230,15)
+         remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+         LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/difference_sem.f90(230,15)
+            remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+            LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/difference_sem.f90(230,15)
+               remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+            LOOP END
+
+            LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/difference_sem.f90(230,15)
+            LOOP END
+
+            LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/difference_sem.f90(230,15)
+            LOOP END
+
+            LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/difference_sem.f90(230,15)
+            LOOP END
+
+            LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/difference_sem.f90(230,15)
+            LOOP END
+         LOOP END
+
+         LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/difference_sem.f90(230,15)
+
+            LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/difference_sem.f90(230,15)
+            LOOP END
+
+            LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/difference_sem.f90(230,15)
+            LOOP END
+
+            LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/difference_sem.f90(230,15)
+            LOOP END
+
+            LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/difference_sem.f90(230,15)
+            LOOP END
+
+            LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/difference_sem.f90(230,15)
+            LOOP END
+         LOOP END
+
+         LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/difference_sem.f90(230,15)
+
+            LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/difference_sem.f90(230,15)
+            LOOP END
+
+            LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/difference_sem.f90(230,15)
+            LOOP END
+
+            LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/difference_sem.f90(230,15)
+            LOOP END
+
+            LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/difference_sem.f90(230,15)
+            LOOP END
+
+            LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/difference_sem.f90(230,15)
+            LOOP END
+         LOOP END
+
+         LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/difference_sem.f90(230,15)
+
+            LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/difference_sem.f90(230,15)
+            LOOP END
+
+            LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/difference_sem.f90(230,15)
+            LOOP END
+
+            LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/difference_sem.f90(230,15)
+            LOOP END
+
+            LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/difference_sem.f90(230,15)
+            LOOP END
+
+            LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/difference_sem.f90(230,15)
+            LOOP END
+         LOOP END
+
+         LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/difference_sem.f90(230,15)
+
+            LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/difference_sem.f90(230,15)
+            LOOP END
+
+            LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/difference_sem.f90(230,15)
+            LOOP END
+
+            LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/difference_sem.f90(230,15)
+            LOOP END
+
+            LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/difference_sem.f90(230,15)
+            LOOP END
+
+            LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/difference_sem.f90(230,15)
+            LOOP END
+         LOOP END
+      LOOP END
+   LOOP END
+
+   LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/difference_sem.f90(244,5)
+      remark #15542: loop was not vectorized: inner loop was already vectorized
+
+      LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/difference_sem.f90(244,5)
+         remark #15542: loop was not vectorized: inner loop was already vectorized
+
+         LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/difference_sem.f90(244,5)
+            remark #15542: loop was not vectorized: inner loop was already vectorized
+
+            LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/difference_sem.f90(244,5)
+               remark #15300: LOOP WAS VECTORIZED
+            LOOP END
+
+            LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/difference_sem.f90(245,7)
+            LOOP END
+
+            LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/difference_sem.f90(247,7)
+            LOOP END
+         LOOP END
+
+         LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/difference_sem.f90(245,7)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/difference_sem.f90(247,7)
+         LOOP END
+      LOOP END
+
+      LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/difference_sem.f90(245,7)
+      LOOP END
+
+      LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/difference_sem.f90(247,7)
+      LOOP END
+   LOOP END
+
+   LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/difference_sem.f90(245,7)
+   LOOP END
+
+   LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/difference_sem.f90(247,7)
+   LOOP END
+
+   LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/difference_sem.f90(254,15)
+      remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+      LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/difference_sem.f90(254,15)
+         remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+         LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/difference_sem.f90(254,15)
+            remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+            LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/difference_sem.f90(254,15)
+               remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+            LOOP END
+
+            LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/difference_sem.f90(254,15)
+            LOOP END
+
+            LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/difference_sem.f90(254,15)
+            LOOP END
+
+            LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/difference_sem.f90(254,15)
+            LOOP END
+
+            LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/difference_sem.f90(254,15)
+            LOOP END
+         LOOP END
+
+         LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/difference_sem.f90(254,15)
+
+            LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/difference_sem.f90(254,15)
+            LOOP END
+
+            LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/difference_sem.f90(254,15)
+            LOOP END
+
+            LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/difference_sem.f90(254,15)
+            LOOP END
+
+            LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/difference_sem.f90(254,15)
+            LOOP END
+
+            LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/difference_sem.f90(254,15)
+            LOOP END
+         LOOP END
+
+         LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/difference_sem.f90(254,15)
+
+            LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/difference_sem.f90(254,15)
+            LOOP END
+
+            LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/difference_sem.f90(254,15)
+            LOOP END
+
+            LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/difference_sem.f90(254,15)
+            LOOP END
+
+            LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/difference_sem.f90(254,15)
+            LOOP END
+
+            LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/difference_sem.f90(254,15)
+            LOOP END
+         LOOP END
+
+         LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/difference_sem.f90(254,15)
+
+            LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/difference_sem.f90(254,15)
+            LOOP END
+
+            LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/difference_sem.f90(254,15)
+            LOOP END
+
+            LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/difference_sem.f90(254,15)
+            LOOP END
+
+            LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/difference_sem.f90(254,15)
+            LOOP END
+
+            LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/difference_sem.f90(254,15)
+            LOOP END
+         LOOP END
+
+         LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/difference_sem.f90(254,15)
+
+            LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/difference_sem.f90(254,15)
+            LOOP END
+
+            LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/difference_sem.f90(254,15)
+            LOOP END
+
+            LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/difference_sem.f90(254,15)
+            LOOP END
+
+            LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/difference_sem.f90(254,15)
+            LOOP END
+
+            LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/difference_sem.f90(254,15)
+            LOOP END
+         LOOP END
+      LOOP END
+   LOOP END
+
+   LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/difference_sem.f90(255,15)
+      remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+      LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/difference_sem.f90(255,15)
+         remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+         LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/difference_sem.f90(255,15)
+            remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+            LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/difference_sem.f90(255,15)
+               remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+            LOOP END
+
+            LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/difference_sem.f90(255,15)
+            LOOP END
+
+            LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/difference_sem.f90(255,15)
+            LOOP END
+
+            LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/difference_sem.f90(255,15)
+            LOOP END
+
+            LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/difference_sem.f90(255,15)
+            LOOP END
+         LOOP END
+
+         LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/difference_sem.f90(255,15)
+
+            LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/difference_sem.f90(255,15)
+            LOOP END
+
+            LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/difference_sem.f90(255,15)
+            LOOP END
+
+            LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/difference_sem.f90(255,15)
+            LOOP END
+
+            LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/difference_sem.f90(255,15)
+            LOOP END
+
+            LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/difference_sem.f90(255,15)
+            LOOP END
+         LOOP END
+
+         LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/difference_sem.f90(255,15)
+
+            LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/difference_sem.f90(255,15)
+            LOOP END
+
+            LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/difference_sem.f90(255,15)
+            LOOP END
+
+            LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/difference_sem.f90(255,15)
+            LOOP END
+
+            LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/difference_sem.f90(255,15)
+            LOOP END
+
+            LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/difference_sem.f90(255,15)
+            LOOP END
+         LOOP END
+
+         LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/difference_sem.f90(255,15)
+
+            LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/difference_sem.f90(255,15)
+            LOOP END
+
+            LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/difference_sem.f90(255,15)
+            LOOP END
+
+            LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/difference_sem.f90(255,15)
+            LOOP END
+
+            LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/difference_sem.f90(255,15)
+            LOOP END
+
+            LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/difference_sem.f90(255,15)
+            LOOP END
+         LOOP END
+
+         LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/difference_sem.f90(255,15)
+
+            LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/difference_sem.f90(255,15)
+            LOOP END
+
+            LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/difference_sem.f90(255,15)
+            LOOP END
+
+            LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/difference_sem.f90(255,15)
+            LOOP END
+
+            LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/difference_sem.f90(255,15)
+            LOOP END
+
+            LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/difference_sem.f90(255,15)
+            LOOP END
+         LOOP END
+      LOOP END
+   LOOP END
+LOOP END
+===========================================================================

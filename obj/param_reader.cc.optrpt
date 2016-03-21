@@ -1,0 +1,10 @@
+
+Begin optimization report for: param_read_(char *, int *, char *, int *, int *)
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/shared/param_reader.c(163,3)
+   remark #15521: loop was not vectorized: explicitly compute the iteration count before executing the loop or try using canonical loop form
+LOOP END
+===========================================================================

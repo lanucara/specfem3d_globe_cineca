@@ -1,0 +1,33 @@
+
+Begin optimization report for: RECOMPUTE_JACOBIAN
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/shared/recompute_jacobian.f90(234,3)
+<Distributed chunk1>
+   remark #15301: PARTIAL LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/shared/recompute_jacobian.f90(234,3)
+<Remainder, Distributed chunk1>
+LOOP END
+
+LOOP BEGIN at src/shared/recompute_jacobian.f90(234,3)
+<Distributed chunk2>
+   remark #15301: PARTIAL LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/shared/recompute_jacobian.f90(234,3)
+<Remainder, Distributed chunk2>
+LOOP END
+
+LOOP BEGIN at src/shared/recompute_jacobian.f90(234,3)
+<Distributed chunk3>
+   remark #15301: PARTIAL LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/shared/recompute_jacobian.f90(234,3)
+<Remainder, Distributed chunk3>
+LOOP END
+===========================================================================

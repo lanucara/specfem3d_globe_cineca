@@ -1,0 +1,40 @@
+
+Begin optimization report for: GET_SHAPE2D
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/meshfem3D/get_shape2D.f90(60,3)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at src/meshfem3D/get_shape2D.f90(72,3)
+   <Peeled>
+      remark #15301: PEEL LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/meshfem3D/get_shape2D.f90(72,3)
+      remark #15300: LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/meshfem3D/get_shape2D.f90(72,3)
+   <Remainder>
+      remark #15301: REMAINDER LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/meshfem3D/get_shape2D.f90(72,3)
+   <Remainder>
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/get_shape2D.f90(129,3)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed OUTPUT dependence between  line 147 and  line 154
+
+   LOOP BEGIN at src/meshfem3D/get_shape2D.f90(130,5)
+      remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+
+      LOOP BEGIN at src/meshfem3D/get_shape2D.f90(137,5)
+      LOOP END
+   LOOP END
+LOOP END
+===========================================================================

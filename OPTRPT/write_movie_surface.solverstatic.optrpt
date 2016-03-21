@@ -1,0 +1,68 @@
+
+Begin optimization report for: MOVIE_SURFACE_COUNT_POINTS
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/specfem3D/write_movie_surface.f90(42,3)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+
+   LOOP BEGIN at src/specfem3D/write_movie_surface.f90(44,5)
+      remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+      remark #15346: vector dependence: assumed FLOW dependence between npoin line 46 and npoin line 45
+
+      LOOP BEGIN at src/specfem3D/write_movie_surface.f90(45,7)
+         remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+      LOOP END
+
+      LOOP BEGIN at src/specfem3D/write_movie_surface.f90(45,7)
+      <Remainder>
+      LOOP END
+   LOOP END
+LOOP END
+===========================================================================
+
+Begin optimization report for: WRITE_MOVIE_SURFACE_MESH
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/specfem3D/write_movie_surface.f90(102,3)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+
+   LOOP BEGIN at src/specfem3D/write_movie_surface.f90(110,5)
+      remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+      remark #15346: vector dependence: assumed OUTPUT dependence between STORE_VAL_X line 115 and STORE_VAL_X line 115
+
+      LOOP BEGIN at src/specfem3D/write_movie_surface.f90(111,7)
+         remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+         remark #15346: vector dependence: assumed FLOW dependence between ipoin line 112 and ipoin line 115
+      LOOP END
+   LOOP END
+LOOP END
+===========================================================================
+
+Begin optimization report for: WRITE_MOVIE_SURFACE
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/specfem3D/write_movie_surface.f90(171,3)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+
+   LOOP BEGIN at src/specfem3D/write_movie_surface.f90(181,5)
+      remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+      remark #15346: vector dependence: assumed OUTPUT dependence between specfem_par_movie_mp_store_val_u line 189 and specfem_par_movie_mp_store_val_u line 194
+
+      LOOP BEGIN at src/specfem3D/write_movie_surface.f90(182,7)
+         remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+         remark #15346: vector dependence: assumed FLOW dependence between ipoin line 183 and ipoin line 189
+      LOOP END
+
+      LOOP BEGIN at src/specfem3D/write_movie_surface.f90(182,7)
+         remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+         remark #15346: vector dependence: assumed FLOW dependence between ipoin line 183 and ipoin line 194
+      LOOP END
+   LOOP END
+LOOP END
+===========================================================================

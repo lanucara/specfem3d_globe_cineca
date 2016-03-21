@@ -1,0 +1,186 @@
+
+Begin optimization report for: SETUP_COUNTERS
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/meshfem3D/setup_counters.f90(73,3)
+<Distributed chunk1>
+   remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+
+   LOOP BEGIN at src/meshfem3D/setup_counters.f90(77,5)
+      remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+   LOOP END
+
+   LOOP BEGIN at src/meshfem3D/setup_counters.f90(77,5)
+   LOOP END
+
+   LOOP BEGIN at src/meshfem3D/setup_counters.f90(77,5)
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/setup_counters.f90(73,3)
+<Distributed chunk2>
+   remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+
+   LOOP BEGIN at src/meshfem3D/setup_counters.f90(76,5)
+      remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+   LOOP END
+
+   LOOP BEGIN at src/meshfem3D/setup_counters.f90(76,5)
+   LOOP END
+
+   LOOP BEGIN at src/meshfem3D/setup_counters.f90(76,5)
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/setup_counters.f90(73,3)
+<Distributed chunk3>
+   remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+
+   LOOP BEGIN at src/meshfem3D/setup_counters.f90(75,5)
+      remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+   LOOP END
+
+   LOOP BEGIN at src/meshfem3D/setup_counters.f90(75,5)
+   LOOP END
+
+   LOOP BEGIN at src/meshfem3D/setup_counters.f90(75,5)
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/setup_counters.f90(73,3)
+<Distributed chunk4>
+   remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+
+   LOOP BEGIN at src/meshfem3D/setup_counters.f90(74,5)
+      remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+   LOOP END
+
+   LOOP BEGIN at src/meshfem3D/setup_counters.f90(74,5)
+   LOOP END
+
+   LOOP BEGIN at src/meshfem3D/setup_counters.f90(74,5)
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/setup_counters.f90(84,11)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/setup_counters.f90(85,11)
+   remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/setup_counters.f90(86,11)
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/setup_counters.f90(87,11)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/setup_counters.f90(90,11)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/setup_counters.f90(91,11)
+   remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/setup_counters.f90(92,11)
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/setup_counters.f90(93,11)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/setup_counters.f90(98,11)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/setup_counters.f90(99,11)
+   remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/setup_counters.f90(100,11)
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/setup_counters.f90(101,11)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/setup_counters.f90(104,11)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/setup_counters.f90(105,11)
+   remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/setup_counters.f90(106,11)
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/setup_counters.f90(107,11)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/setup_counters.f90(113,11)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/setup_counters.f90(114,11)
+   remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/setup_counters.f90(115,11)
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/setup_counters.f90(116,11)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/setup_counters.f90(119,9)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/setup_counters.f90(120,9)
+   remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/setup_counters.f90(121,9)
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/setup_counters.f90(122,9)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/setup_counters.f90(129,11)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/setup_counters.f90(130,11)
+   remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/setup_counters.f90(131,11)
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/setup_counters.f90(132,11)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/setup_counters.f90(135,11)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/setup_counters.f90(136,11)
+   remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/setup_counters.f90(137,11)
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/setup_counters.f90(138,11)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+===========================================================================

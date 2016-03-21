@@ -1,0 +1,12 @@
+        !COMPILER-GENERATED INTERFACE MODULE: Fri Mar 11 15:45:27 2016
+        MODULE SUM_ALL_3DARRAY_DP__genmod
+          INTERFACE 
+            SUBROUTINE SUM_ALL_3DARRAY_DP(SENDBUF,RECVBUF,NX,NY,NZ)
+              INTEGER(KIND=4) :: NZ
+              INTEGER(KIND=4) :: NY
+              INTEGER(KIND=4) :: NX
+              REAL(KIND=8) :: SENDBUF(NX,NY,NZ)
+              REAL(KIND=8) :: RECVBUF(NX,NY,NZ)
+            END SUBROUTINE SUM_ALL_3DARRAY_DP
+          END INTERFACE 
+        END MODULE SUM_ALL_3DARRAY_DP__genmod

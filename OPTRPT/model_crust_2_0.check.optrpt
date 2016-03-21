@@ -1,0 +1,182 @@
+
+Begin optimization report for: GET_CRUST_2_0_STRUCTURE
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/meshfem3D/model_crust_2_0.f90(490,5)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+===========================================================================
+
+Begin optimization report for: READ_CRUST_2_0_MODEL
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/meshfem3D/model_crust_2_0.f90(263,3)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed OUTPUT dependence between 80 line 264 and 80 line 264
+
+   LOOP BEGIN at src/meshfem3D/model_crust_2_0.f90(264,5)
+      remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+      remark #15346: vector dependence: assumed OUTPUT dependence between ARGBLOCK_REC_7 line 264 and ARGBLOCK_REC_7 line 264
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_crust_2_0.f90(277,3)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed OUTPUT dependence between 80 line 278 and 80 line 282
+LOOP END
+===========================================================================
+
+Begin optimization report for: MODEL_CRUST_2_0_BROADCAST
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/meshfem3D/model_crust_2_0.f90(93,3)
+   remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+   LOOP BEGIN at src/meshfem3D/model_crust_2_0.f90(93,3)
+      remark #15398: loop was not vectorized: loop was transformed to memset or memcpy
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_crust_2_0.f90(94,3)
+   remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+   LOOP BEGIN at src/meshfem3D/model_crust_2_0.f90(94,3)
+      remark #15398: loop was not vectorized: loop was transformed to memset or memcpy
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_crust_2_0.f90(95,3)
+   remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+   LOOP BEGIN at src/meshfem3D/model_crust_2_0.f90(95,3)
+      remark #15398: loop was not vectorized: loop was transformed to memset or memcpy
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_crust_2_0.f90(96,3)
+   remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+   LOOP BEGIN at src/meshfem3D/model_crust_2_0.f90(96,3)
+      remark #15398: loop was not vectorized: loop was transformed to memset or memcpy
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_crust_2_0.f90(263,3) inlined into src/meshfem3D/model_crust_2_0.f90(99,20)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed OUTPUT dependence between 80 line 264 and 80 line 264
+
+   LOOP BEGIN at src/meshfem3D/model_crust_2_0.f90(264,5) inlined into src/meshfem3D/model_crust_2_0.f90(99,20)
+      remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+      remark #15346: vector dependence: assumed OUTPUT dependence between ARGBLOCK_REC_7 line 264 and ARGBLOCK_REC_7 line 264
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_crust_2_0.f90(277,3) inlined into src/meshfem3D/model_crust_2_0.f90(99,20)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed OUTPUT dependence between 80 line 278 and 80 line 282
+LOOP END
+===========================================================================
+
+Begin optimization report for: CRUST_2_0_CAPSMOOTHED
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/meshfem3D/model_crust_2_0.f90(363,3)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_crust_2_0.f90(368,3)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed ANTI dependence between crustalhash_to_key line 366 and crustalhash_to_key line 367
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_crust_2_0.f90(403,3)
+   remark #15301: FUSED LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_crust_2_0.f90(404,3)
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_crust_2_0.f90(405,3)
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_crust_2_0.f90(406,3)
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_crust_2_0.f90(446,3)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at src/meshfem3D/model_crust_2_0.f90(489,3) inlined into src/meshfem3D/model_crust_2_0.f90(420,10)
+      remark #15300: LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/meshfem3D/model_crust_2_0.f90(442,5)
+      remark #15301: FUSED LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/meshfem3D/model_crust_2_0.f90(443,5)
+   LOOP END
+
+   LOOP BEGIN at src/meshfem3D/model_crust_2_0.f90(444,5)
+   LOOP END
+
+   LOOP BEGIN at src/meshfem3D/model_crust_2_0.f90(445,5)
+   LOOP END
+LOOP END
+===========================================================================
+
+Begin optimization report for: MODEL_CRUST_2_0
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/meshfem3D/model_crust_2_0.f90(363,3) inlined into src/meshfem3D/model_crust_2_0.f90(142,8)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_crust_2_0.f90(368,3) inlined into src/meshfem3D/model_crust_2_0.f90(142,8)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed ANTI dependence between crustalhash_to_key line 366 and crustalhash_to_key line 367
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_crust_2_0.f90(403,3) inlined into src/meshfem3D/model_crust_2_0.f90(142,8)
+   remark #15301: FUSED LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_crust_2_0.f90(404,3) inlined into src/meshfem3D/model_crust_2_0.f90(142,8)
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_crust_2_0.f90(405,3) inlined into src/meshfem3D/model_crust_2_0.f90(142,8)
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_crust_2_0.f90(406,3) inlined into src/meshfem3D/model_crust_2_0.f90(142,8)
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_crust_2_0.f90(446,3) inlined into src/meshfem3D/model_crust_2_0.f90(142,8)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at src/meshfem3D/model_crust_2_0.f90(489,3) inlined into src/meshfem3D/model_crust_2_0.f90(142,8)
+      remark #15300: LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/meshfem3D/model_crust_2_0.f90(442,5) inlined into src/meshfem3D/model_crust_2_0.f90(142,8)
+      remark #15301: FUSED LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/meshfem3D/model_crust_2_0.f90(443,5) inlined into src/meshfem3D/model_crust_2_0.f90(142,8)
+   LOOP END
+
+   LOOP BEGIN at src/meshfem3D/model_crust_2_0.f90(444,5) inlined into src/meshfem3D/model_crust_2_0.f90(142,8)
+   LOOP END
+
+   LOOP BEGIN at src/meshfem3D/model_crust_2_0.f90(445,5) inlined into src/meshfem3D/model_crust_2_0.f90(142,8)
+   LOOP END
+LOOP END
+===========================================================================

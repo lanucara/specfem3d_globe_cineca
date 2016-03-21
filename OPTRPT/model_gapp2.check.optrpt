@@ -1,0 +1,150 @@
+
+Begin optimization report for: D2ID
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/meshfem3D/model_gapp2.f90(260,8)
+   remark #15520: loop was not vectorized: loop with early exits cannot be vectorized unless it meets search loop idiom criteria
+LOOP END
+===========================================================================
+
+Begin optimization report for: READ_MANTLE_GAPMODEL
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/meshfem3D/model_gapp2.f90(147,3)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed FLOW dependence between 101 line 150 and 101 line 150
+
+   LOOP BEGIN at src/meshfem3D/model_gapp2.f90(148,5)
+      remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+      remark #15346: vector dependence: assumed FLOW dependence between 101 line 150 and 101 line 156
+   LOOP END
+
+   LOOP BEGIN at src/meshfem3D/model_gapp2.f90(148,5)
+      remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+      remark #15346: vector dependence: assumed FLOW dependence between 101 line 150 and 101 line 150
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_gapp2.f90(165,44)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at src/meshfem3D/model_gapp2.f90(165,44)
+      remark #15542: loop was not vectorized: inner loop was already vectorized
+
+      LOOP BEGIN at src/meshfem3D/model_gapp2.f90(165,44)
+      <Peeled>
+         remark #15301: PEEL LOOP WAS VECTORIZED
+      LOOP END
+
+      LOOP BEGIN at src/meshfem3D/model_gapp2.f90(165,44)
+         remark #15300: LOOP WAS VECTORIZED
+      LOOP END
+
+      LOOP BEGIN at src/meshfem3D/model_gapp2.f90(165,44)
+      <Remainder>
+         remark #15301: REMAINDER LOOP WAS VECTORIZED
+      LOOP END
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_gapp2.f90(165,56)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at src/meshfem3D/model_gapp2.f90(165,56)
+      remark #15542: loop was not vectorized: inner loop was already vectorized
+
+      LOOP BEGIN at src/meshfem3D/model_gapp2.f90(165,56)
+      <Peeled>
+         remark #15301: PEEL LOOP WAS VECTORIZED
+      LOOP END
+
+      LOOP BEGIN at src/meshfem3D/model_gapp2.f90(165,56)
+         remark #15300: LOOP WAS VECTORIZED
+      LOOP END
+
+      LOOP BEGIN at src/meshfem3D/model_gapp2.f90(165,56)
+      <Remainder>
+         remark #15301: REMAINDER LOOP WAS VECTORIZED
+      LOOP END
+   LOOP END
+LOOP END
+===========================================================================
+
+Begin optimization report for: MODEL_GAPP2_BROADCAST
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/meshfem3D/model_gapp2.f90(147,3) inlined into src/meshfem3D/model_gapp2.f90(71,20)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed FLOW dependence between 101 line 150 and 101 line 150
+
+   LOOP BEGIN at src/meshfem3D/model_gapp2.f90(148,5) inlined into src/meshfem3D/model_gapp2.f90(71,20)
+      remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+      remark #15346: vector dependence: assumed FLOW dependence between 101 line 150 and 101 line 156
+   LOOP END
+
+   LOOP BEGIN at src/meshfem3D/model_gapp2.f90(148,5) inlined into src/meshfem3D/model_gapp2.f90(71,20)
+      remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+      remark #15346: vector dependence: assumed FLOW dependence between 101 line 150 and 101 line 150
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_gapp2.f90(165,44) inlined into src/meshfem3D/model_gapp2.f90(71,20)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at src/meshfem3D/model_gapp2.f90(165,44) inlined into src/meshfem3D/model_gapp2.f90(71,20)
+      remark #15542: loop was not vectorized: inner loop was already vectorized
+
+      LOOP BEGIN at src/meshfem3D/model_gapp2.f90(165,44) inlined into src/meshfem3D/model_gapp2.f90(71,20)
+      <Peeled>
+         remark #15301: PEEL LOOP WAS VECTORIZED
+      LOOP END
+
+      LOOP BEGIN at src/meshfem3D/model_gapp2.f90(165,44) inlined into src/meshfem3D/model_gapp2.f90(71,20)
+         remark #15300: LOOP WAS VECTORIZED
+      LOOP END
+
+      LOOP BEGIN at src/meshfem3D/model_gapp2.f90(165,44) inlined into src/meshfem3D/model_gapp2.f90(71,20)
+      <Remainder>
+         remark #15301: REMAINDER LOOP WAS VECTORIZED
+      LOOP END
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_gapp2.f90(165,56) inlined into src/meshfem3D/model_gapp2.f90(71,20)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at src/meshfem3D/model_gapp2.f90(165,56) inlined into src/meshfem3D/model_gapp2.f90(71,20)
+      remark #15542: loop was not vectorized: inner loop was already vectorized
+
+      LOOP BEGIN at src/meshfem3D/model_gapp2.f90(165,56) inlined into src/meshfem3D/model_gapp2.f90(71,20)
+      <Peeled>
+         remark #15301: PEEL LOOP WAS VECTORIZED
+      LOOP END
+
+      LOOP BEGIN at src/meshfem3D/model_gapp2.f90(165,56) inlined into src/meshfem3D/model_gapp2.f90(71,20)
+         remark #15300: LOOP WAS VECTORIZED
+      LOOP END
+
+      LOOP BEGIN at src/meshfem3D/model_gapp2.f90(165,56) inlined into src/meshfem3D/model_gapp2.f90(71,20)
+      <Remainder>
+         remark #15301: REMAINDER LOOP WAS VECTORIZED
+      LOOP END
+   LOOP END
+LOOP END
+===========================================================================
+
+Begin optimization report for: MANTLE_GAPMODEL
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/meshfem3D/model_gapp2.f90(260,8) inlined into src/meshfem3D/model_gapp2.f90(207,8)
+   remark #15520: loop was not vectorized: loop with early exits cannot be vectorized unless it meets search loop idiom criteria
+LOOP END
+===========================================================================

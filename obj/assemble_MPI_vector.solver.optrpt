@@ -1,0 +1,86 @@
+
+Begin optimization report for: ASSEMBLE_MPI_VECTOR_S
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/specfem3D/assemble_MPI_vector.f90(71,6)
+   remark #15541: outer loop was not auto-vectorized: consider using SIMD directive   [ src/specfem3D/assemble_MPI_vector.f90(72,9) ]
+
+   LOOP BEGIN at src/specfem3D/assemble_MPI_vector.f90(72,9)
+      remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+
+      LOOP BEGIN at src/specfem3D/assemble_MPI_vector.f90(73,12)
+         remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+      LOOP END
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/specfem3D/assemble_MPI_vector.f90(79,6)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed OUTPUT dependence between 83 line 80 and 83 line 80
+LOOP END
+===========================================================================
+
+Begin optimization report for: ASSEMBLE_MPI_VECTOR_W
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/specfem3D/assemble_MPI_vector.f90(137,5)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+LOOP END
+
+LOOP BEGIN at src/specfem3D/assemble_MPI_vector.f90(142,5)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed OUTPUT dependence between array_val line 144 and array_val line 144
+
+   LOOP BEGIN at src/specfem3D/assemble_MPI_vector.f90(143,7)
+      remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+      remark #15346: vector dependence: assumed OUTPUT dependence between array_val line 144 and array_val line 144
+
+      LOOP BEGIN at src/specfem3D/assemble_MPI_vector.f90(144,9)
+         remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+      LOOP END
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/specfem3D/assemble_MPI_vector.f90(151,5)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+LOOP END
+===========================================================================
+
+Begin optimization report for: ASSEMBLE_MPI_VECTOR_SEND_GPU
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/specfem3D/assemble_MPI_vector.f90(206,5)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed OUTPUT dependence between 216 line 207 and 216 line 207
+LOOP END
+===========================================================================
+
+Begin optimization report for: ASSEMBLE_MPI_VECTOR_WRITE_GPU
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/specfem3D/assemble_MPI_vector.f90(262,5)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+LOOP END
+
+LOOP BEGIN at src/specfem3D/assemble_MPI_vector.f90(280,5)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+LOOP END
+===========================================================================
+
+Begin optimization report for: TRANSFER_BOUNDARY_TO_DEVICE
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/specfem3D/assemble_MPI_vector.f90(329,5)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+LOOP END
+===========================================================================

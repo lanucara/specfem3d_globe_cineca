@@ -1,0 +1,681 @@
+
+Begin optimization report for: CREATE_CHUNK_BUFFERS
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/meshfem3D/create_chunk_buffers.f90(198,3)
+<Peeled>
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/create_chunk_buffers.f90(198,3)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/create_chunk_buffers.f90(198,3)
+<Remainder>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/create_chunk_buffers.f90(199,3)
+<Peeled>
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/create_chunk_buffers.f90(199,3)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/create_chunk_buffers.f90(199,3)
+<Remainder>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/create_chunk_buffers.f90(200,3)
+   remark #15398: loop was not vectorized: loop was transformed to memset or memcpy
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/create_chunk_buffers.f90(202,3)
+<Peeled>
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/create_chunk_buffers.f90(202,3)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/create_chunk_buffers.f90(202,3)
+<Remainder>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/create_chunk_buffers.f90(203,3)
+<Peeled>
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/create_chunk_buffers.f90(203,3)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/create_chunk_buffers.f90(203,3)
+<Remainder>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/create_chunk_buffers.f90(204,3)
+<Peeled>
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/create_chunk_buffers.f90(204,3)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/create_chunk_buffers.f90(204,3)
+<Remainder>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/create_chunk_buffers.f90(262,3)
+   remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/create_chunk_buffers.f90(263,3)
+   remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+   LOOP BEGIN at src/meshfem3D/create_chunk_buffers.f90(263,3)
+      remark #15398: loop was not vectorized: loop was transformed to memset or memcpy
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/create_chunk_buffers.f90(266,3)
+   remark #15398: loop was not vectorized: loop was transformed to memset or memcpy
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/create_chunk_buffers.f90(267,3)
+   remark #15398: loop was not vectorized: loop was transformed to memset or memcpy
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/create_chunk_buffers.f90(282,3)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at src/meshfem3D/create_chunk_buffers.f90(283,5)
+      remark #15542: loop was not vectorized: inner loop was already vectorized
+
+      LOOP BEGIN at src/meshfem3D/create_chunk_buffers.f90(284,7)
+         remark #15542: loop was not vectorized: inner loop was already vectorized
+
+         LOOP BEGIN at src/meshfem3D/create_chunk_buffers.f90(482,9)
+            remark #15542: loop was not vectorized: inner loop was already vectorized
+
+            LOOP BEGIN at src/meshfem3D/create_chunk_buffers.f90(525,17)
+               remark #15301: FUSED LOOP WAS VECTORIZED
+
+               LOOP BEGIN at src/meshfem3D/create_chunk_buffers.f90(525,17)
+                  remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+
+                  LOOP BEGIN at src/meshfem3D/create_chunk_buffers.f90(525,17)
+                     remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+
+                     LOOP BEGIN at src/meshfem3D/create_chunk_buffers.f90(525,17)
+                        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+                     LOOP END
+
+                     LOOP BEGIN at src/meshfem3D/create_chunk_buffers.f90(525,56)
+                     LOOP END
+                  LOOP END
+
+                  LOOP BEGIN at src/meshfem3D/create_chunk_buffers.f90(525,56)
+                  LOOP END
+               LOOP END
+
+               LOOP BEGIN at src/meshfem3D/create_chunk_buffers.f90(525,56)
+               LOOP END
+            LOOP END
+
+            LOOP BEGIN at src/meshfem3D/create_chunk_buffers.f90(525,56)
+            LOOP END
+
+            LOOP BEGIN at src/meshfem3D/create_chunk_buffers.f90(525,17)
+            <Remainder>
+               remark #15301: REMAINDER LOOP WAS VECTORIZED
+
+               LOOP BEGIN at src/meshfem3D/create_chunk_buffers.f90(525,17)
+                  remark #25460: No loop optimizations reported
+
+                  LOOP BEGIN at src/meshfem3D/create_chunk_buffers.f90(525,17)
+                     remark #25460: No loop optimizations reported
+
+                     LOOP BEGIN at src/meshfem3D/create_chunk_buffers.f90(525,17)
+                     LOOP END
+                  LOOP END
+               LOOP END
+            LOOP END
+
+            LOOP BEGIN at src/meshfem3D/create_chunk_buffers.f90(529,13)
+               remark #15398: loop was not vectorized: loop was transformed to memset or memcpy
+            LOOP END
+
+            LOOP BEGIN at src/meshfem3D/create_chunk_buffers.f90(539,17)
+            <Peeled>
+               remark #15301: PEEL LOOP WAS VECTORIZED
+            LOOP END
+
+            LOOP BEGIN at src/meshfem3D/create_chunk_buffers.f90(539,17)
+               remark #15300: LOOP WAS VECTORIZED
+            LOOP END
+
+            LOOP BEGIN at src/meshfem3D/create_chunk_buffers.f90(539,17)
+            <Remainder>
+               remark #15301: REMAINDER LOOP WAS VECTORIZED
+            LOOP END
+
+            LOOP BEGIN at src/meshfem3D/create_chunk_buffers.f90(545,17)
+            <Peeled>
+               remark #15301: PEEL LOOP WAS VECTORIZED
+            LOOP END
+
+            LOOP BEGIN at src/meshfem3D/create_chunk_buffers.f90(545,17)
+               remark #15300: LOOP WAS VECTORIZED
+            LOOP END
+
+            LOOP BEGIN at src/meshfem3D/create_chunk_buffers.f90(545,17)
+            <Remainder>
+               remark #15301: REMAINDER LOOP WAS VECTORIZED
+            LOOP END
+
+            LOOP BEGIN at src/meshfem3D/create_chunk_buffers.f90(550,15)
+               remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+               remark #15346: vector dependence: assumed OUTPUT dependence between MASK_IBOOL line 564 and MASK_IBOOL line 564
+
+               LOOP BEGIN at src/meshfem3D/create_chunk_buffers.f90(560,17)
+                  remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+                  remark #15346: vector dependence: assumed OUTPUT dependence between MASK_IBOOL line 564 and MASK_IBOOL line 564
+
+                  LOOP BEGIN at src/meshfem3D/create_chunk_buffers.f90(561,19)
+                     remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+                     remark #15346: vector dependence: assumed FLOW dependence between MASK_IBOOL line 564 and MASK_IBOOL line 562
+                  LOOP END
+               LOOP END
+            LOOP END
+
+            LOOP BEGIN at src/meshfem3D/create_chunk_buffers.f90(583,17)
+            <Peeled>
+               remark #15301: PEEL LOOP WAS VECTORIZED
+            LOOP END
+
+            LOOP BEGIN at src/meshfem3D/create_chunk_buffers.f90(583,17)
+               remark #15300: LOOP WAS VECTORIZED
+            LOOP END
+
+            LOOP BEGIN at src/meshfem3D/create_chunk_buffers.f90(583,17)
+            <Remainder>
+               remark #15301: REMAINDER LOOP WAS VECTORIZED
+            LOOP END
+
+            LOOP BEGIN at src/meshfem3D/create_chunk_buffers.f90(589,17)
+            <Peeled>
+               remark #15301: PEEL LOOP WAS VECTORIZED
+            LOOP END
+
+            LOOP BEGIN at src/meshfem3D/create_chunk_buffers.f90(589,17)
+               remark #15300: LOOP WAS VECTORIZED
+            LOOP END
+
+            LOOP BEGIN at src/meshfem3D/create_chunk_buffers.f90(589,17)
+            <Remainder>
+               remark #15301: REMAINDER LOOP WAS VECTORIZED
+            LOOP END
+
+            LOOP BEGIN at src/meshfem3D/create_chunk_buffers.f90(594,15)
+               remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+               remark #15346: vector dependence: assumed OUTPUT dependence between MASK_IBOOL line 608 and MASK_IBOOL line 608
+
+               LOOP BEGIN at src/meshfem3D/create_chunk_buffers.f90(604,17)
+                  remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+                  remark #15346: vector dependence: assumed OUTPUT dependence between MASK_IBOOL line 608 and MASK_IBOOL line 608
+
+                  LOOP BEGIN at src/meshfem3D/create_chunk_buffers.f90(605,19)
+                     remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+                     remark #15346: vector dependence: assumed FLOW dependence between MASK_IBOOL line 608 and MASK_IBOOL line 606
+                  LOOP END
+               LOOP END
+            LOOP END
+
+            LOOP BEGIN at src/meshfem3D/create_chunk_buffers.f90(627,17)
+            <Peeled>
+               remark #15301: PEEL LOOP WAS VECTORIZED
+            LOOP END
+
+            LOOP BEGIN at src/meshfem3D/create_chunk_buffers.f90(627,17)
+               remark #15300: LOOP WAS VECTORIZED
+            LOOP END
+
+            LOOP BEGIN at src/meshfem3D/create_chunk_buffers.f90(627,17)
+            <Remainder>
+               remark #15301: REMAINDER LOOP WAS VECTORIZED
+            LOOP END
+
+            LOOP BEGIN at src/meshfem3D/create_chunk_buffers.f90(633,17)
+            <Peeled>
+               remark #15301: PEEL LOOP WAS VECTORIZED
+            LOOP END
+
+            LOOP BEGIN at src/meshfem3D/create_chunk_buffers.f90(633,17)
+               remark #15300: LOOP WAS VECTORIZED
+            LOOP END
+
+            LOOP BEGIN at src/meshfem3D/create_chunk_buffers.f90(633,17)
+            <Remainder>
+               remark #15301: REMAINDER LOOP WAS VECTORIZED
+            LOOP END
+
+            LOOP BEGIN at src/meshfem3D/create_chunk_buffers.f90(638,15)
+               remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+               remark #15346: vector dependence: assumed OUTPUT dependence between MASK_IBOOL line 652 and MASK_IBOOL line 652
+
+               LOOP BEGIN at src/meshfem3D/create_chunk_buffers.f90(648,17)
+                  remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+                  remark #15346: vector dependence: assumed OUTPUT dependence between MASK_IBOOL line 652 and MASK_IBOOL line 652
+
+                  LOOP BEGIN at src/meshfem3D/create_chunk_buffers.f90(649,19)
+                     remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+                     remark #15346: vector dependence: assumed FLOW dependence between MASK_IBOOL line 652 and MASK_IBOOL line 650
+                  LOOP END
+               LOOP END
+            LOOP END
+
+            LOOP BEGIN at src/meshfem3D/create_chunk_buffers.f90(671,17)
+            <Peeled>
+               remark #15301: PEEL LOOP WAS VECTORIZED
+            LOOP END
+
+            LOOP BEGIN at src/meshfem3D/create_chunk_buffers.f90(671,17)
+               remark #15300: LOOP WAS VECTORIZED
+            LOOP END
+
+            LOOP BEGIN at src/meshfem3D/create_chunk_buffers.f90(671,17)
+            <Remainder>
+               remark #15301: REMAINDER LOOP WAS VECTORIZED
+            LOOP END
+
+            LOOP BEGIN at src/meshfem3D/create_chunk_buffers.f90(677,17)
+            <Peeled>
+               remark #15301: PEEL LOOP WAS VECTORIZED
+            LOOP END
+
+            LOOP BEGIN at src/meshfem3D/create_chunk_buffers.f90(677,17)
+               remark #15300: LOOP WAS VECTORIZED
+            LOOP END
+
+            LOOP BEGIN at src/meshfem3D/create_chunk_buffers.f90(677,17)
+            <Remainder>
+               remark #15301: REMAINDER LOOP WAS VECTORIZED
+            LOOP END
+
+            LOOP BEGIN at src/meshfem3D/create_chunk_buffers.f90(682,15)
+               remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+               remark #15346: vector dependence: assumed OUTPUT dependence between MASK_IBOOL line 696 and MASK_IBOOL line 696
+
+               LOOP BEGIN at src/meshfem3D/create_chunk_buffers.f90(692,17)
+                  remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+                  remark #15346: vector dependence: assumed OUTPUT dependence between MASK_IBOOL line 696 and MASK_IBOOL line 696
+
+                  LOOP BEGIN at src/meshfem3D/create_chunk_buffers.f90(693,19)
+                     remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+                     remark #15346: vector dependence: assumed FLOW dependence between MASK_IBOOL line 696 and MASK_IBOOL line 694
+                  LOOP END
+               LOOP END
+            LOOP END
+
+            LOOP BEGIN at src/meshfem3D/create_chunk_buffers.f90(744,13)
+               remark #15542: loop was not vectorized: inner loop was already vectorized
+
+               LOOP BEGIN at src/meshfem3D/create_chunk_buffers.f90(744,13)
+               <Peeled, Multiversioned v2>
+                  remark #15301: PEEL LOOP WAS VECTORIZED
+               LOOP END
+
+               LOOP BEGIN at src/meshfem3D/create_chunk_buffers.f90(744,13)
+               <Multiversioned v2>
+                  remark #15300: LOOP WAS VECTORIZED
+               LOOP END
+
+               LOOP BEGIN at src/meshfem3D/create_chunk_buffers.f90(744,13)
+               <Alternate Alignment Vectorized Loop, Multiversioned v2>
+               LOOP END
+
+               LOOP BEGIN at src/meshfem3D/create_chunk_buffers.f90(744,13)
+               <Remainder, Multiversioned v2>
+               LOOP END
+            LOOP END
+         LOOP END
+      LOOP END
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/create_chunk_buffers.f90(794,3)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed FLOW dependence between npoin2d_send_local line 796 and npoin2d_send_local line 798
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/create_chunk_buffers.f90(807,3)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/create_chunk_buffers.f90(807,3)
+<Remainder>
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/create_chunk_buffers.f90(832,3)
+   remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+   LOOP BEGIN at src/meshfem3D/create_chunk_buffers.f90(832,3)
+      remark #15398: loop was not vectorized: loop was transformed to memset or memcpy
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/create_chunk_buffers.f90(833,3)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at src/meshfem3D/create_chunk_buffers.f90(833,3)
+   <Peeled>
+   LOOP END
+
+   LOOP BEGIN at src/meshfem3D/create_chunk_buffers.f90(833,3)
+      remark #15300: LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/meshfem3D/create_chunk_buffers.f90(833,3)
+   <Remainder>
+      remark #15301: REMAINDER LOOP WAS VECTORIZED
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/create_chunk_buffers.f90(834,3)
+   remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+   LOOP BEGIN at src/meshfem3D/create_chunk_buffers.f90(834,3)
+      remark #15398: loop was not vectorized: loop was transformed to memset or memcpy
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/create_chunk_buffers.f90(837,3)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at src/meshfem3D/create_chunk_buffers.f90(837,3)
+      remark #15301: OUTER LOOP WAS VECTORIZED
+
+      LOOP BEGIN at src/meshfem3D/create_chunk_buffers.f90(837,3)
+         remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+      LOOP END
+   LOOP END
+
+   LOOP BEGIN at src/meshfem3D/create_chunk_buffers.f90(837,3)
+   <Remainder>
+
+      LOOP BEGIN at src/meshfem3D/create_chunk_buffers.f90(837,3)
+      LOOP END
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/create_chunk_buffers.f90(838,3)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at src/meshfem3D/create_chunk_buffers.f90(838,3)
+      remark #15542: loop was not vectorized: inner loop was already vectorized
+
+      LOOP BEGIN at src/meshfem3D/create_chunk_buffers.f90(838,3)
+         remark #15542: loop was not vectorized: inner loop was already vectorized
+
+         LOOP BEGIN at src/meshfem3D/create_chunk_buffers.f90(838,3)
+         <Peeled, Multiversioned v2>
+            remark #15301: PEEL LOOP WAS VECTORIZED
+         LOOP END
+
+         LOOP BEGIN at src/meshfem3D/create_chunk_buffers.f90(838,3)
+         <Multiversioned v2>
+            remark #15300: LOOP WAS VECTORIZED
+         LOOP END
+
+         LOOP BEGIN at src/meshfem3D/create_chunk_buffers.f90(838,3)
+         <Alternate Alignment Vectorized Loop, Multiversioned v2>
+         LOOP END
+
+         LOOP BEGIN at src/meshfem3D/create_chunk_buffers.f90(838,3)
+         <Remainder, Multiversioned v2>
+         LOOP END
+      LOOP END
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/create_chunk_buffers.f90(932,3)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at src/meshfem3D/create_chunk_buffers.f90(986,11)
+      remark #15542: loop was not vectorized: inner loop was already vectorized
+
+      LOOP BEGIN at src/meshfem3D/create_chunk_buffers.f90(983,11)
+         remark #15542: loop was not vectorized: inner loop was already vectorized
+
+         LOOP BEGIN at src/meshfem3D/create_chunk_buffers.f90(983,11)
+         <Multiversioned v2>
+            remark #15300: LOOP WAS VECTORIZED
+         LOOP END
+
+         LOOP BEGIN at src/meshfem3D/create_chunk_buffers.f90(983,11)
+         <Remainder, Multiversioned v2>
+         LOOP END
+      LOOP END
+
+      LOOP BEGIN at src/meshfem3D/create_chunk_buffers.f90(984,11)
+         remark #15542: loop was not vectorized: inner loop was already vectorized
+
+         LOOP BEGIN at src/meshfem3D/create_chunk_buffers.f90(984,11)
+         <Multiversioned v2>
+            remark #15300: LOOP WAS VECTORIZED
+         LOOP END
+
+         LOOP BEGIN at src/meshfem3D/create_chunk_buffers.f90(984,11)
+         <Remainder, Multiversioned v2>
+         LOOP END
+      LOOP END
+
+      LOOP BEGIN at src/meshfem3D/create_chunk_buffers.f90(985,11)
+         remark #15542: loop was not vectorized: inner loop was already vectorized
+
+         LOOP BEGIN at src/meshfem3D/create_chunk_buffers.f90(985,11)
+         <Multiversioned v2>
+            remark #15300: LOOP WAS VECTORIZED
+         LOOP END
+
+         LOOP BEGIN at src/meshfem3D/create_chunk_buffers.f90(985,11)
+         <Remainder, Multiversioned v2>
+         LOOP END
+      LOOP END
+
+      LOOP BEGIN at src/meshfem3D/create_chunk_buffers.f90(986,11)
+         remark #15542: loop was not vectorized: inner loop was already vectorized
+
+         LOOP BEGIN at src/meshfem3D/create_chunk_buffers.f90(986,11)
+         <Multiversioned v2>
+            remark #15300: LOOP WAS VECTORIZED
+         LOOP END
+
+         LOOP BEGIN at src/meshfem3D/create_chunk_buffers.f90(986,11)
+         <Remainder, Multiversioned v2>
+         LOOP END
+      LOOP END
+
+      LOOP BEGIN at src/meshfem3D/create_chunk_buffers.f90(991,11)
+         remark #15542: loop was not vectorized: inner loop was already vectorized
+
+         LOOP BEGIN at src/meshfem3D/create_chunk_buffers.f90(991,11)
+         <Multiversioned v2>
+            remark #15300: LOOP WAS VECTORIZED
+         LOOP END
+
+         LOOP BEGIN at src/meshfem3D/create_chunk_buffers.f90(991,11)
+         <Remainder, Multiversioned v2>
+         LOOP END
+      LOOP END
+
+      LOOP BEGIN at src/meshfem3D/create_chunk_buffers.f90(992,11)
+         remark #15542: loop was not vectorized: inner loop was already vectorized
+
+         LOOP BEGIN at src/meshfem3D/create_chunk_buffers.f90(992,11)
+         <Multiversioned v2>
+            remark #15300: LOOP WAS VECTORIZED
+         LOOP END
+
+         LOOP BEGIN at src/meshfem3D/create_chunk_buffers.f90(992,11)
+         <Remainder, Multiversioned v2>
+         LOOP END
+      LOOP END
+
+      LOOP BEGIN at src/meshfem3D/create_chunk_buffers.f90(993,11)
+         remark #15542: loop was not vectorized: inner loop was already vectorized
+
+         LOOP BEGIN at src/meshfem3D/create_chunk_buffers.f90(993,11)
+         <Multiversioned v2>
+            remark #15300: LOOP WAS VECTORIZED
+         LOOP END
+
+         LOOP BEGIN at src/meshfem3D/create_chunk_buffers.f90(993,11)
+         <Remainder, Multiversioned v2>
+         LOOP END
+      LOOP END
+
+      LOOP BEGIN at src/meshfem3D/create_chunk_buffers.f90(994,11)
+         remark #15542: loop was not vectorized: inner loop was already vectorized
+
+         LOOP BEGIN at src/meshfem3D/create_chunk_buffers.f90(994,11)
+         <Multiversioned v2>
+            remark #15300: LOOP WAS VECTORIZED
+         LOOP END
+
+         LOOP BEGIN at src/meshfem3D/create_chunk_buffers.f90(994,11)
+         <Remainder, Multiversioned v2>
+         LOOP END
+      LOOP END
+
+      LOOP BEGIN at src/meshfem3D/create_chunk_buffers.f90(999,11)
+         remark #15542: loop was not vectorized: inner loop was already vectorized
+
+         LOOP BEGIN at src/meshfem3D/create_chunk_buffers.f90(999,11)
+         <Multiversioned v2>
+            remark #15300: LOOP WAS VECTORIZED
+         LOOP END
+
+         LOOP BEGIN at src/meshfem3D/create_chunk_buffers.f90(999,11)
+         <Remainder, Multiversioned v2>
+         LOOP END
+      LOOP END
+
+      LOOP BEGIN at src/meshfem3D/create_chunk_buffers.f90(1000,11)
+         remark #15542: loop was not vectorized: inner loop was already vectorized
+
+         LOOP BEGIN at src/meshfem3D/create_chunk_buffers.f90(1000,11)
+         <Multiversioned v2>
+            remark #15300: LOOP WAS VECTORIZED
+         LOOP END
+
+         LOOP BEGIN at src/meshfem3D/create_chunk_buffers.f90(1000,11)
+         <Remainder, Multiversioned v2>
+         LOOP END
+      LOOP END
+
+      LOOP BEGIN at src/meshfem3D/create_chunk_buffers.f90(1001,11)
+         remark #15542: loop was not vectorized: inner loop was already vectorized
+
+         LOOP BEGIN at src/meshfem3D/create_chunk_buffers.f90(1001,11)
+         <Multiversioned v2>
+            remark #15300: LOOP WAS VECTORIZED
+         LOOP END
+
+         LOOP BEGIN at src/meshfem3D/create_chunk_buffers.f90(1001,11)
+         <Remainder, Multiversioned v2>
+         LOOP END
+      LOOP END
+
+      LOOP BEGIN at src/meshfem3D/create_chunk_buffers.f90(1002,11)
+         remark #15542: loop was not vectorized: inner loop was already vectorized
+
+         LOOP BEGIN at src/meshfem3D/create_chunk_buffers.f90(1002,11)
+         <Multiversioned v2>
+            remark #15300: LOOP WAS VECTORIZED
+         LOOP END
+
+         LOOP BEGIN at src/meshfem3D/create_chunk_buffers.f90(1002,11)
+         <Remainder, Multiversioned v2>
+         LOOP END
+      LOOP END
+
+      LOOP BEGIN at src/meshfem3D/create_chunk_buffers.f90(1007,11)
+         remark #15542: loop was not vectorized: inner loop was already vectorized
+
+         LOOP BEGIN at src/meshfem3D/create_chunk_buffers.f90(1007,11)
+         <Multiversioned v2>
+            remark #15300: LOOP WAS VECTORIZED
+         LOOP END
+
+         LOOP BEGIN at src/meshfem3D/create_chunk_buffers.f90(1007,11)
+         <Remainder, Multiversioned v2>
+         LOOP END
+      LOOP END
+
+      LOOP BEGIN at src/meshfem3D/create_chunk_buffers.f90(1008,11)
+         remark #15542: loop was not vectorized: inner loop was already vectorized
+
+         LOOP BEGIN at src/meshfem3D/create_chunk_buffers.f90(1008,11)
+         <Multiversioned v2>
+            remark #15300: LOOP WAS VECTORIZED
+         LOOP END
+
+         LOOP BEGIN at src/meshfem3D/create_chunk_buffers.f90(1008,11)
+         <Remainder, Multiversioned v2>
+         LOOP END
+      LOOP END
+
+      LOOP BEGIN at src/meshfem3D/create_chunk_buffers.f90(1009,11)
+         remark #15542: loop was not vectorized: inner loop was already vectorized
+
+         LOOP BEGIN at src/meshfem3D/create_chunk_buffers.f90(1009,11)
+         <Multiversioned v2>
+            remark #15300: LOOP WAS VECTORIZED
+         LOOP END
+
+         LOOP BEGIN at src/meshfem3D/create_chunk_buffers.f90(1009,11)
+         <Remainder, Multiversioned v2>
+         LOOP END
+      LOOP END
+
+      LOOP BEGIN at src/meshfem3D/create_chunk_buffers.f90(1010,11)
+         remark #15542: loop was not vectorized: inner loop was already vectorized
+
+         LOOP BEGIN at src/meshfem3D/create_chunk_buffers.f90(1010,11)
+         <Multiversioned v2>
+            remark #15300: LOOP WAS VECTORIZED
+         LOOP END
+
+         LOOP BEGIN at src/meshfem3D/create_chunk_buffers.f90(1010,11)
+         <Remainder, Multiversioned v2>
+         LOOP END
+      LOOP END
+
+      LOOP BEGIN at src/meshfem3D/create_chunk_buffers.f90(1047,9)
+         remark #15542: loop was not vectorized: inner loop was already vectorized
+
+         LOOP BEGIN at src/meshfem3D/create_chunk_buffers.f90(1047,9)
+         <Multiversioned v2>
+            remark #15300: LOOP WAS VECTORIZED
+         LOOP END
+
+         LOOP BEGIN at src/meshfem3D/create_chunk_buffers.f90(1047,9)
+         <Alternate Alignment Vectorized Loop, Multiversioned v2>
+         LOOP END
+
+         LOOP BEGIN at src/meshfem3D/create_chunk_buffers.f90(1047,9)
+         <Remainder, Multiversioned v2>
+         LOOP END
+      LOOP END
+   LOOP END
+LOOP END
+===========================================================================

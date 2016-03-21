@@ -1,0 +1,148 @@
+
+Begin optimization report for: COMPUTE_FORCES_CRUST_MANTLE_DEV
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/specfem3D/compute_forces_crust_mantle_Dev.F90(198,3)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at src/specfem3D/compute_forces_crust_mantle_Dev.F90(207,7)
+      remark #15300: LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/specfem3D/compute_forces_crust_mantle_Dev.F90(207,7)
+   <Remainder>
+      remark #15301: REMAINDER LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/specfem3D/compute_forces_crust_mantle_Dev.F90(296,36)
+      remark #15300: LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/specfem3D/compute_forces_crust_mantle_Dev.F90(296,36)
+   <Remainder>
+      remark #15301: REMAINDER LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/specfem3D/compute_forces_crust_mantle_Dev.F90(306,7)
+      remark #15300: LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/specfem3D/compute_forces_crust_mantle_Dev.F90(306,7)
+   <Alternate Alignment Vectorized Loop>
+   LOOP END
+
+   LOOP BEGIN at src/specfem3D/compute_forces_crust_mantle_Dev.F90(306,7)
+   <Remainder>
+      remark #15301: REMAINDER LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/specfem3D/compute_forces_crust_mantle_Dev.F90(360,7)
+      remark #15301: FUSED LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/specfem3D/compute_forces_crust_mantle_Dev.F90(361,7)
+   LOOP END
+
+   LOOP BEGIN at src/specfem3D/compute_forces_crust_mantle_Dev.F90(362,7)
+   LOOP END
+
+   LOOP BEGIN at src/specfem3D/compute_forces_crust_mantle_Dev.F90(363,7)
+   LOOP END
+
+   LOOP BEGIN at src/specfem3D/compute_forces_crust_mantle_Dev.F90(364,7)
+   LOOP END
+
+   LOOP BEGIN at src/specfem3D/compute_forces_crust_mantle_Dev.F90(360,7)
+   <Remainder>
+      remark #15301: REMAINDER LOOP WAS VECTORIZED
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/specfem3D/compute_forces_crust_mantle_Dev.F90(372,3)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at src/specfem3D/compute_forces_crust_mantle_Dev.F90(374,5)
+   <Peeled>
+      remark #15301: PEEL LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/specfem3D/compute_forces_crust_mantle_Dev.F90(374,5)
+      remark #15300: LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/specfem3D/compute_forces_crust_mantle_Dev.F90(374,5)
+   <Remainder>
+      remark #15301: REMAINDER LOOP WAS VECTORIZED
+   LOOP END
+LOOP END
+
+
+Non-optimizable loops:
+
+
+LOOP BEGIN at src/specfem3D/compute_forces_crust_mantle_Dev.F90(198,3)
+   remark #15341: loop was not vectorized: nonstandard loop is not a vectorization candidate
+LOOP END
+===========================================================================
+
+Begin optimization report for: COMPUTE_FORCES_CRUST_MANTLE_DEV:MXM5_3COMP_SINGLEA
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/specfem3D/compute_forces_crust_mantle_Dev.F90(435,16)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at src/specfem3D/compute_forces_crust_mantle_Dev.F90(424,5)
+      remark #15300: LOOP WAS VECTORIZED
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/specfem3D/compute_forces_crust_mantle_Dev.F90(435,16)
+<Remainder>
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at src/specfem3D/compute_forces_crust_mantle_Dev.F90(424,5)
+      remark #15300: LOOP WAS VECTORIZED
+   LOOP END
+LOOP END
+===========================================================================
+
+Begin optimization report for: COMPUTE_FORCES_CRUST_MANTLE_DEV:MXM5_3COMP_3DMAT_SINGLEB
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/specfem3D/compute_forces_crust_mantle_Dev.F90(527,20)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at src/specfem3D/compute_forces_crust_mantle_Dev.F90(513,5)
+      remark #15542: loop was not vectorized: inner loop was already vectorized
+
+      LOOP BEGIN at src/specfem3D/compute_forces_crust_mantle_Dev.F90(515,7)
+         remark #15300: LOOP WAS VECTORIZED
+      LOOP END
+   LOOP END
+LOOP END
+===========================================================================
+
+Begin optimization report for: COMPUTE_FORCES_CRUST_MANTLE_DEV:MXM5_3COMP_SINGLEB
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/specfem3D/compute_forces_crust_mantle_Dev.F90(480,16)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at src/specfem3D/compute_forces_crust_mantle_Dev.F90(469,5)
+      remark #15300: LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/specfem3D/compute_forces_crust_mantle_Dev.F90(469,5)
+   <Remainder>
+      remark #15301: REMAINDER LOOP WAS VECTORIZED
+   LOOP END
+LOOP END
+===========================================================================

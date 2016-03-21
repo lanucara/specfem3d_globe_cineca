@@ -1,0 +1,49 @@
+
+Begin optimization report for: CONVTIME
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/specfem3D/convert_time.f90(70,3)
+   remark #15398: loop was not vectorized: loop was transformed to memset or memcpy
+LOOP END
+
+LOOP BEGIN at src/specfem3D/convert_time.f90(71,3)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed FLOW dependence between 27 line 72 and 27 line 72
+LOOP END
+===========================================================================
+
+Begin optimization report for: INVTIME
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/specfem3D/convert_time.f90(151,3)
+   remark #15398: loop was not vectorized: loop was transformed to memset or memcpy
+LOOP END
+
+LOOP BEGIN at src/specfem3D/convert_time.f90(152,3)
+   remark #15521: loop was not vectorized: explicitly compute the iteration count before executing the loop or try using canonical loop form
+LOOP END
+
+LOOP BEGIN at src/specfem3D/convert_time.f90(165,3)
+   remark #15523: loop was not vectorized: cannot compute loop iteration count before executing the loop.
+LOOP END
+
+LOOP BEGIN at src/specfem3D/convert_time.f90(186,7)
+   remark #15523: loop was not vectorized: cannot compute loop iteration count before executing the loop.
+LOOP END
+
+LOOP BEGIN at src/specfem3D/convert_time.f90(186,7)
+   remark #15523: loop was not vectorized: cannot compute loop iteration count before executing the loop.
+LOOP END
+
+LOOP BEGIN at src/specfem3D/convert_time.f90(241,13)
+   remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at src/specfem3D/convert_time.f90(257,13)
+   remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+===========================================================================

@@ -1,0 +1,346 @@
+
+Begin optimization report for: SUM_PRECONDITIONED_KERNELS_GLOBE
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/tomography/sum_preconditioned_kernels.f90(75,11)
+   remark #15521: loop was not vectorized: explicitly compute the iteration count before executing the loop or try using canonical loop form
+LOOP END
+===========================================================================
+
+Begin optimization report for: SUM_KERNEL_PRE
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/tomography/sum_preconditioned_kernels.f90(200,5)
+<Peeled>
+   remark #15301: PEEL LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/tomography/sum_preconditioned_kernels.f90(200,5)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/tomography/sum_preconditioned_kernels.f90(200,5)
+<Remainder>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/tomography/sum_preconditioned_kernels.f90(209,3)
+   remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+   LOOP BEGIN at src/tomography/sum_preconditioned_kernels.f90(209,3)
+      remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+      LOOP BEGIN at src/tomography/sum_preconditioned_kernels.f90(209,3)
+         remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+         LOOP BEGIN at src/tomography/sum_preconditioned_kernels.f90(209,3)
+            remark #15398: loop was not vectorized: loop was transformed to memset or memcpy
+         LOOP END
+      LOOP END
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/tomography/sum_preconditioned_kernels.f90(210,3)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at src/tomography/sum_preconditioned_kernels.f90(219,5)
+      remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+      remark #15346: vector dependence: assumed FLOW dependence between 433 line 219 and 433 line 219
+
+      LOOP BEGIN at src/tomography/sum_preconditioned_kernels.f90(219,5)
+         remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+         remark #15346: vector dependence: assumed FLOW dependence between 431 line 219 and 431 line 219
+
+         LOOP BEGIN at src/tomography/sum_preconditioned_kernels.f90(219,5)
+            remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+            remark #15346: vector dependence: assumed FLOW dependence between 429 line 219 and 429 line 219
+
+            LOOP BEGIN at src/tomography/sum_preconditioned_kernels.f90(219,5)
+               remark #15398: loop was not vectorized: loop was transformed to memset or memcpy
+            LOOP END
+         LOOP END
+      LOOP END
+   LOOP END
+
+   LOOP BEGIN at src/tomography/sum_preconditioned_kernels.f90(231,12)
+      remark #15542: loop was not vectorized: inner loop was already vectorized
+
+      LOOP BEGIN at src/tomography/sum_preconditioned_kernels.f90(231,12)
+         remark #15542: loop was not vectorized: inner loop was already vectorized
+
+         LOOP BEGIN at src/tomography/sum_preconditioned_kernels.f90(231,12)
+            remark #15542: loop was not vectorized: inner loop was already vectorized
+
+            LOOP BEGIN at src/tomography/sum_preconditioned_kernels.f90(231,12)
+            <Peeled>
+               remark #15301: PEEL LOOP WAS VECTORIZED
+            LOOP END
+
+            LOOP BEGIN at src/tomography/sum_preconditioned_kernels.f90(231,12)
+               remark #15300: LOOP WAS VECTORIZED
+            LOOP END
+
+            LOOP BEGIN at src/tomography/sum_preconditioned_kernels.f90(231,12)
+            <Remainder>
+               remark #15301: REMAINDER LOOP WAS VECTORIZED
+            LOOP END
+         LOOP END
+      LOOP END
+   LOOP END
+
+   LOOP BEGIN at src/tomography/sum_preconditioned_kernels.f90(238,5)
+      remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+      remark #15346: vector dependence: assumed FLOW dependence between 541 line 238 and 541 line 238
+
+      LOOP BEGIN at src/tomography/sum_preconditioned_kernels.f90(238,5)
+         remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+         remark #15346: vector dependence: assumed FLOW dependence between 539 line 238 and 539 line 238
+
+         LOOP BEGIN at src/tomography/sum_preconditioned_kernels.f90(238,5)
+            remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+            remark #15346: vector dependence: assumed FLOW dependence between 537 line 238 and 537 line 238
+
+            LOOP BEGIN at src/tomography/sum_preconditioned_kernels.f90(238,5)
+               remark #15398: loop was not vectorized: loop was transformed to memset or memcpy
+            LOOP END
+         LOOP END
+      LOOP END
+   LOOP END
+
+   LOOP BEGIN at src/tomography/sum_preconditioned_kernels.f90(251,12)
+      remark #15542: loop was not vectorized: inner loop was already vectorized
+
+      LOOP BEGIN at src/tomography/sum_preconditioned_kernels.f90(251,12)
+         remark #15542: loop was not vectorized: inner loop was already vectorized
+
+         LOOP BEGIN at src/tomography/sum_preconditioned_kernels.f90(251,12)
+            remark #15542: loop was not vectorized: inner loop was already vectorized
+
+            LOOP BEGIN at src/tomography/sum_preconditioned_kernels.f90(251,12)
+            <Peeled>
+               remark #15301: PEEL LOOP WAS VECTORIZED
+            LOOP END
+
+            LOOP BEGIN at src/tomography/sum_preconditioned_kernels.f90(251,12)
+               remark #15300: LOOP WAS VECTORIZED
+            LOOP END
+
+            LOOP BEGIN at src/tomography/sum_preconditioned_kernels.f90(251,12)
+            <Remainder>
+               remark #15301: REMAINDER LOOP WAS VECTORIZED
+            LOOP END
+         LOOP END
+      LOOP END
+   LOOP END
+
+   LOOP BEGIN at src/tomography/sum_preconditioned_kernels.f90(258,5)
+      remark #15542: loop was not vectorized: inner loop was already vectorized
+
+      LOOP BEGIN at src/tomography/sum_preconditioned_kernels.f90(258,5)
+         remark #15542: loop was not vectorized: inner loop was already vectorized
+
+         LOOP BEGIN at src/tomography/sum_preconditioned_kernels.f90(258,5)
+            remark #15542: loop was not vectorized: inner loop was already vectorized
+
+            LOOP BEGIN at src/tomography/sum_preconditioned_kernels.f90(258,5)
+            <Peeled>
+               remark #15301: PEEL LOOP WAS VECTORIZED
+            LOOP END
+
+            LOOP BEGIN at src/tomography/sum_preconditioned_kernels.f90(258,5)
+               remark #15300: LOOP WAS VECTORIZED
+            LOOP END
+
+            LOOP BEGIN at src/tomography/sum_preconditioned_kernels.f90(258,5)
+            <Remainder>
+               remark #15301: REMAINDER LOOP WAS VECTORIZED
+            LOOP END
+         LOOP END
+      LOOP END
+   LOOP END
+
+   LOOP BEGIN at src/tomography/sum_preconditioned_kernels.f90(281,7)
+      remark #15542: loop was not vectorized: inner loop was already vectorized
+
+      LOOP BEGIN at src/tomography/sum_preconditioned_kernels.f90(281,7)
+         remark #15542: loop was not vectorized: inner loop was already vectorized
+
+         LOOP BEGIN at src/tomography/sum_preconditioned_kernels.f90(281,7)
+            remark #15542: loop was not vectorized: inner loop was already vectorized
+
+            LOOP BEGIN at src/tomography/sum_preconditioned_kernels.f90(281,7)
+            <Peeled>
+               remark #15301: PEEL LOOP WAS VECTORIZED
+            LOOP END
+
+            LOOP BEGIN at src/tomography/sum_preconditioned_kernels.f90(281,7)
+               remark #15300: LOOP WAS VECTORIZED
+            LOOP END
+
+            LOOP BEGIN at src/tomography/sum_preconditioned_kernels.f90(281,7)
+            <Alternate Alignment Vectorized Loop>
+            LOOP END
+
+            LOOP BEGIN at src/tomography/sum_preconditioned_kernels.f90(281,7)
+            <Remainder>
+               remark #15301: REMAINDER LOOP WAS VECTORIZED
+            LOOP END
+         LOOP END
+      LOOP END
+   LOOP END
+
+   LOOP BEGIN at src/tomography/sum_preconditioned_kernels.f90(294,5)
+      remark #15542: loop was not vectorized: inner loop was already vectorized
+
+      LOOP BEGIN at src/tomography/sum_preconditioned_kernels.f90(294,5)
+         remark #15542: loop was not vectorized: inner loop was already vectorized
+
+         LOOP BEGIN at src/tomography/sum_preconditioned_kernels.f90(294,5)
+            remark #15542: loop was not vectorized: inner loop was already vectorized
+
+            LOOP BEGIN at src/tomography/sum_preconditioned_kernels.f90(294,5)
+            <Peeled>
+               remark #15301: PEEL LOOP WAS VECTORIZED
+            LOOP END
+
+            LOOP BEGIN at src/tomography/sum_preconditioned_kernels.f90(294,5)
+               remark #15300: LOOP WAS VECTORIZED
+            LOOP END
+
+            LOOP BEGIN at src/tomography/sum_preconditioned_kernels.f90(294,5)
+            <Alternate Alignment Vectorized Loop>
+            LOOP END
+
+            LOOP BEGIN at src/tomography/sum_preconditioned_kernels.f90(294,5)
+            <Remainder>
+               remark #15301: REMAINDER LOOP WAS VECTORIZED
+            LOOP END
+         LOOP END
+      LOOP END
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/tomography/sum_preconditioned_kernels.f90(306,7)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at src/tomography/sum_preconditioned_kernels.f90(306,7)
+      remark #15542: loop was not vectorized: inner loop was already vectorized
+
+      LOOP BEGIN at src/tomography/sum_preconditioned_kernels.f90(306,7)
+         remark #15542: loop was not vectorized: inner loop was already vectorized
+
+         LOOP BEGIN at src/tomography/sum_preconditioned_kernels.f90(306,7)
+         <Peeled>
+            remark #15301: PEEL LOOP WAS VECTORIZED
+         LOOP END
+
+         LOOP BEGIN at src/tomography/sum_preconditioned_kernels.f90(306,7)
+            remark #15300: LOOP WAS VECTORIZED
+         LOOP END
+
+         LOOP BEGIN at src/tomography/sum_preconditioned_kernels.f90(306,7)
+         <Alternate Alignment Vectorized Loop>
+         LOOP END
+
+         LOOP BEGIN at src/tomography/sum_preconditioned_kernels.f90(306,7)
+         <Remainder>
+            remark #15301: REMAINDER LOOP WAS VECTORIZED
+         LOOP END
+      LOOP END
+   LOOP END
+LOOP END
+===========================================================================
+
+Begin optimization report for: INVERT_HESS
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/tomography/sum_preconditioned_kernels.f90(366,10)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at src/tomography/sum_preconditioned_kernels.f90(366,10)
+      remark #15542: loop was not vectorized: inner loop was already vectorized
+
+      LOOP BEGIN at src/tomography/sum_preconditioned_kernels.f90(366,10)
+         remark #15301: OUTER LOOP WAS VECTORIZED
+
+         LOOP BEGIN at src/tomography/sum_preconditioned_kernels.f90(366,10)
+            remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+         LOOP END
+      LOOP END
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/tomography/sum_preconditioned_kernels.f90(381,5)
+<Peeled>
+   remark #15301: PEEL LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/tomography/sum_preconditioned_kernels.f90(381,5)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/tomography/sum_preconditioned_kernels.f90(381,5)
+<Remainder>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/tomography/sum_preconditioned_kernels.f90(385,5)
+<Peeled>
+   remark #15301: PEEL LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/tomography/sum_preconditioned_kernels.f90(385,5)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/tomography/sum_preconditioned_kernels.f90(385,5)
+<Remainder>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/tomography/sum_preconditioned_kernels.f90(390,3)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at src/tomography/sum_preconditioned_kernels.f90(390,3)
+      remark #15542: loop was not vectorized: inner loop was already vectorized
+
+      LOOP BEGIN at src/tomography/sum_preconditioned_kernels.f90(390,3)
+         remark #15542: loop was not vectorized: inner loop was already vectorized
+
+         LOOP BEGIN at src/tomography/sum_preconditioned_kernels.f90(390,3)
+            remark #15300: LOOP WAS VECTORIZED
+         LOOP END
+
+         LOOP BEGIN at src/tomography/sum_preconditioned_kernels.f90(391,5)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/sum_preconditioned_kernels.f90(393,5)
+         LOOP END
+      LOOP END
+
+      LOOP BEGIN at src/tomography/sum_preconditioned_kernels.f90(391,5)
+      LOOP END
+
+      LOOP BEGIN at src/tomography/sum_preconditioned_kernels.f90(393,5)
+      LOOP END
+   LOOP END
+
+   LOOP BEGIN at src/tomography/sum_preconditioned_kernels.f90(391,5)
+   LOOP END
+
+   LOOP BEGIN at src/tomography/sum_preconditioned_kernels.f90(393,5)
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/tomography/sum_preconditioned_kernels.f90(391,5)
+LOOP END
+
+LOOP BEGIN at src/tomography/sum_preconditioned_kernels.f90(393,5)
+LOOP END
+===========================================================================

@@ -1,0 +1,38 @@
+
+Begin optimization report for: COUNT_POINTS
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/shared/count_points.f90(87,3)
+   remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at src/shared/count_points.f90(97,3)
+LOOP END
+
+LOOP BEGIN at src/shared/count_points.f90(98,3)
+LOOP END
+
+LOOP BEGIN at src/shared/count_points.f90(109,3)
+LOOP END
+
+LOOP BEGIN at src/shared/count_points.f90(143,17)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at src/shared/count_points.f90(134,7)
+   <Distributed chunk1>
+      remark #15301: PARTIAL LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/shared/count_points.f90(134,7)
+   <Remainder, Distributed chunk1>
+   LOOP END
+
+   LOOP BEGIN at src/shared/count_points.f90(134,7)
+   <Distributed chunk2>
+      remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+      remark #15346: vector dependence: assumed OUTPUT dependence between nglob_int_surf_eta line 135 and nglob_int_surf_eta line 151
+   LOOP END
+LOOP END
+===========================================================================

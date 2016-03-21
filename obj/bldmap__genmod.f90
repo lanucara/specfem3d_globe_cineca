@@ -1,0 +1,7 @@
+        !COMPILER-GENERATED INTERFACE MODULE: Fri Mar 11 15:46:19 2016
+        MODULE BLDMAP__genmod
+          INTERFACE 
+            SUBROUTINE BLDMAP
+            END SUBROUTINE BLDMAP
+          END INTERFACE 
+        END MODULE BLDMAP__genmod

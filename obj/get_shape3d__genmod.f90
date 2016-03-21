@@ -1,0 +1,14 @@
+        !COMPILER-GENERATED INTERFACE MODULE: Fri Mar 11 15:45:51 2016
+        MODULE GET_SHAPE3D__genmod
+          INTERFACE 
+            SUBROUTINE GET_SHAPE3D(MYRANK,SHAPE3D,DERSHAPE3D,XIGLL,YIGLL&
+     &,ZIGLL)
+              INTEGER(KIND=4) :: MYRANK
+              REAL(KIND=8) :: SHAPE3D(27,5,5,5)
+              REAL(KIND=8) :: DERSHAPE3D(3,27,5,5,5)
+              REAL(KIND=8) :: XIGLL(5)
+              REAL(KIND=8) :: YIGLL(5)
+              REAL(KIND=8) :: ZIGLL(5)
+            END SUBROUTINE GET_SHAPE3D
+          END INTERFACE 
+        END MODULE GET_SHAPE3D__genmod

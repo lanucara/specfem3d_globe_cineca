@@ -1,0 +1,292 @@
+
+Begin optimization report for: READ_ADJOINT_SOURCES_LOCAL
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/specfem3D/read_adjoint_sources.f90(145,3)
+   remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+   LOOP BEGIN at src/specfem3D/read_adjoint_sources.f90(145,3)
+      remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+      LOOP BEGIN at src/specfem3D/read_adjoint_sources.f90(145,3)
+         remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+         remark #15346: vector dependence: assumed FLOW dependence between 175 line 145 and 175 line 145
+
+         LOOP BEGIN at src/specfem3D/read_adjoint_sources.f90(145,3)
+            remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+            remark #15346: vector dependence: assumed FLOW dependence between 173 line 145 and 173 line 145
+
+            LOOP BEGIN at src/specfem3D/read_adjoint_sources.f90(145,3)
+               remark #15398: loop was not vectorized: loop was transformed to memset or memcpy
+            LOOP END
+         LOOP END
+      LOOP END
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/specfem3D/read_adjoint_sources.f90(151,3)
+   remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+   LOOP BEGIN at src/specfem3D/read_adjoint_sources.f90(178,7)
+      remark #15541: outer loop was not auto-vectorized: consider using SIMD directive   [ src/specfem3D/read_adjoint_sources.f90(179,9) ]
+
+      LOOP BEGIN at src/specfem3D/read_adjoint_sources.f90(179,9)
+         remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+         remark #15346: vector dependence: assumed FLOW dependence between 226 line 179 and 226 line 179
+
+         LOOP BEGIN at src/specfem3D/read_adjoint_sources.f90(179,9)
+            remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+            remark #15346: vector dependence: assumed FLOW dependence between 224 line 179 and 224 line 179
+
+            LOOP BEGIN at src/specfem3D/read_adjoint_sources.f90(179,9)
+               remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+               remark #15346: vector dependence: assumed FLOW dependence between 222 line 179 and 222 line 179
+
+               LOOP BEGIN at src/specfem3D/read_adjoint_sources.f90(179,9)
+                  remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+               LOOP END
+
+               LOOP BEGIN at src/specfem3D/read_adjoint_sources.f90(179,9)
+               LOOP END
+
+               LOOP BEGIN at src/specfem3D/read_adjoint_sources.f90(179,9)
+               LOOP END
+
+               LOOP BEGIN at src/specfem3D/read_adjoint_sources.f90(179,9)
+               LOOP END
+
+               LOOP BEGIN at src/specfem3D/read_adjoint_sources.f90(179,9)
+               LOOP END
+            LOOP END
+
+            LOOP BEGIN at src/specfem3D/read_adjoint_sources.f90(179,9)
+
+               LOOP BEGIN at src/specfem3D/read_adjoint_sources.f90(179,9)
+               LOOP END
+
+               LOOP BEGIN at src/specfem3D/read_adjoint_sources.f90(179,9)
+               LOOP END
+
+               LOOP BEGIN at src/specfem3D/read_adjoint_sources.f90(179,9)
+               LOOP END
+
+               LOOP BEGIN at src/specfem3D/read_adjoint_sources.f90(179,9)
+               LOOP END
+
+               LOOP BEGIN at src/specfem3D/read_adjoint_sources.f90(179,9)
+               LOOP END
+            LOOP END
+
+            LOOP BEGIN at src/specfem3D/read_adjoint_sources.f90(179,9)
+
+               LOOP BEGIN at src/specfem3D/read_adjoint_sources.f90(179,9)
+               LOOP END
+
+               LOOP BEGIN at src/specfem3D/read_adjoint_sources.f90(179,9)
+               LOOP END
+
+               LOOP BEGIN at src/specfem3D/read_adjoint_sources.f90(179,9)
+               LOOP END
+
+               LOOP BEGIN at src/specfem3D/read_adjoint_sources.f90(179,9)
+               LOOP END
+
+               LOOP BEGIN at src/specfem3D/read_adjoint_sources.f90(179,9)
+               LOOP END
+            LOOP END
+
+            LOOP BEGIN at src/specfem3D/read_adjoint_sources.f90(179,9)
+
+               LOOP BEGIN at src/specfem3D/read_adjoint_sources.f90(179,9)
+               LOOP END
+
+               LOOP BEGIN at src/specfem3D/read_adjoint_sources.f90(179,9)
+               LOOP END
+
+               LOOP BEGIN at src/specfem3D/read_adjoint_sources.f90(179,9)
+               LOOP END
+
+               LOOP BEGIN at src/specfem3D/read_adjoint_sources.f90(179,9)
+               LOOP END
+
+               LOOP BEGIN at src/specfem3D/read_adjoint_sources.f90(179,9)
+               LOOP END
+            LOOP END
+
+            LOOP BEGIN at src/specfem3D/read_adjoint_sources.f90(179,9)
+
+               LOOP BEGIN at src/specfem3D/read_adjoint_sources.f90(179,9)
+               LOOP END
+
+               LOOP BEGIN at src/specfem3D/read_adjoint_sources.f90(179,9)
+               LOOP END
+
+               LOOP BEGIN at src/specfem3D/read_adjoint_sources.f90(179,9)
+               LOOP END
+
+               LOOP BEGIN at src/specfem3D/read_adjoint_sources.f90(179,9)
+               LOOP END
+
+               LOOP BEGIN at src/specfem3D/read_adjoint_sources.f90(179,9)
+               LOOP END
+            LOOP END
+         LOOP END
+      LOOP END
+   LOOP END
+LOOP END
+===========================================================================
+
+Begin optimization report for: READ_ADJOINT_SOURCES
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/specfem3D/read_adjoint_sources.f90(145,3) inlined into src/specfem3D/read_adjoint_sources.f90(95,10)
+   remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+   LOOP BEGIN at src/specfem3D/read_adjoint_sources.f90(145,3) inlined into src/specfem3D/read_adjoint_sources.f90(95,10)
+      remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+      LOOP BEGIN at src/specfem3D/read_adjoint_sources.f90(145,3) inlined into src/specfem3D/read_adjoint_sources.f90(95,10)
+         remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+         remark #15346: vector dependence: assumed FLOW dependence between 175 line 145 and 175 line 145
+
+         LOOP BEGIN at src/specfem3D/read_adjoint_sources.f90(145,3) inlined into src/specfem3D/read_adjoint_sources.f90(95,10)
+            remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+            remark #15346: vector dependence: assumed FLOW dependence between 173 line 145 and 173 line 145
+
+            LOOP BEGIN at src/specfem3D/read_adjoint_sources.f90(145,3) inlined into src/specfem3D/read_adjoint_sources.f90(95,10)
+               remark #15398: loop was not vectorized: loop was transformed to memset or memcpy
+            LOOP END
+         LOOP END
+      LOOP END
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/specfem3D/read_adjoint_sources.f90(151,3) inlined into src/specfem3D/read_adjoint_sources.f90(95,10)
+   remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+   LOOP BEGIN at src/specfem3D/read_adjoint_sources.f90(178,7) inlined into src/specfem3D/read_adjoint_sources.f90(95,10)
+      remark #15541: outer loop was not auto-vectorized: consider using SIMD directive   [ src/specfem3D/read_adjoint_sources.f90(179,9) ]
+
+      LOOP BEGIN at src/specfem3D/read_adjoint_sources.f90(179,9) inlined into src/specfem3D/read_adjoint_sources.f90(95,10)
+         remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+         remark #15346: vector dependence: assumed FLOW dependence between 226 line 179 and 226 line 179
+
+         LOOP BEGIN at src/specfem3D/read_adjoint_sources.f90(179,9) inlined into src/specfem3D/read_adjoint_sources.f90(95,10)
+            remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+            remark #15346: vector dependence: assumed FLOW dependence between 224 line 179 and 224 line 179
+
+            LOOP BEGIN at src/specfem3D/read_adjoint_sources.f90(179,9) inlined into src/specfem3D/read_adjoint_sources.f90(95,10)
+               remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+               remark #15346: vector dependence: assumed FLOW dependence between 222 line 179 and 222 line 179
+
+               LOOP BEGIN at src/specfem3D/read_adjoint_sources.f90(179,9) inlined into src/specfem3D/read_adjoint_sources.f90(95,10)
+                  remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+               LOOP END
+
+               LOOP BEGIN at src/specfem3D/read_adjoint_sources.f90(179,9) inlined into src/specfem3D/read_adjoint_sources.f90(95,10)
+               LOOP END
+
+               LOOP BEGIN at src/specfem3D/read_adjoint_sources.f90(179,9) inlined into src/specfem3D/read_adjoint_sources.f90(95,10)
+               LOOP END
+
+               LOOP BEGIN at src/specfem3D/read_adjoint_sources.f90(179,9) inlined into src/specfem3D/read_adjoint_sources.f90(95,10)
+               LOOP END
+
+               LOOP BEGIN at src/specfem3D/read_adjoint_sources.f90(179,9) inlined into src/specfem3D/read_adjoint_sources.f90(95,10)
+               LOOP END
+            LOOP END
+
+            LOOP BEGIN at src/specfem3D/read_adjoint_sources.f90(179,9) inlined into src/specfem3D/read_adjoint_sources.f90(95,10)
+
+               LOOP BEGIN at src/specfem3D/read_adjoint_sources.f90(179,9) inlined into src/specfem3D/read_adjoint_sources.f90(95,10)
+               LOOP END
+
+               LOOP BEGIN at src/specfem3D/read_adjoint_sources.f90(179,9) inlined into src/specfem3D/read_adjoint_sources.f90(95,10)
+               LOOP END
+
+               LOOP BEGIN at src/specfem3D/read_adjoint_sources.f90(179,9) inlined into src/specfem3D/read_adjoint_sources.f90(95,10)
+               LOOP END
+
+               LOOP BEGIN at src/specfem3D/read_adjoint_sources.f90(179,9) inlined into src/specfem3D/read_adjoint_sources.f90(95,10)
+               LOOP END
+
+               LOOP BEGIN at src/specfem3D/read_adjoint_sources.f90(179,9) inlined into src/specfem3D/read_adjoint_sources.f90(95,10)
+               LOOP END
+            LOOP END
+
+            LOOP BEGIN at src/specfem3D/read_adjoint_sources.f90(179,9) inlined into src/specfem3D/read_adjoint_sources.f90(95,10)
+
+               LOOP BEGIN at src/specfem3D/read_adjoint_sources.f90(179,9) inlined into src/specfem3D/read_adjoint_sources.f90(95,10)
+               LOOP END
+
+               LOOP BEGIN at src/specfem3D/read_adjoint_sources.f90(179,9) inlined into src/specfem3D/read_adjoint_sources.f90(95,10)
+               LOOP END
+
+               LOOP BEGIN at src/specfem3D/read_adjoint_sources.f90(179,9) inlined into src/specfem3D/read_adjoint_sources.f90(95,10)
+               LOOP END
+
+               LOOP BEGIN at src/specfem3D/read_adjoint_sources.f90(179,9) inlined into src/specfem3D/read_adjoint_sources.f90(95,10)
+               LOOP END
+
+               LOOP BEGIN at src/specfem3D/read_adjoint_sources.f90(179,9) inlined into src/specfem3D/read_adjoint_sources.f90(95,10)
+               LOOP END
+            LOOP END
+
+            LOOP BEGIN at src/specfem3D/read_adjoint_sources.f90(179,9) inlined into src/specfem3D/read_adjoint_sources.f90(95,10)
+
+               LOOP BEGIN at src/specfem3D/read_adjoint_sources.f90(179,9) inlined into src/specfem3D/read_adjoint_sources.f90(95,10)
+               LOOP END
+
+               LOOP BEGIN at src/specfem3D/read_adjoint_sources.f90(179,9) inlined into src/specfem3D/read_adjoint_sources.f90(95,10)
+               LOOP END
+
+               LOOP BEGIN at src/specfem3D/read_adjoint_sources.f90(179,9) inlined into src/specfem3D/read_adjoint_sources.f90(95,10)
+               LOOP END
+
+               LOOP BEGIN at src/specfem3D/read_adjoint_sources.f90(179,9) inlined into src/specfem3D/read_adjoint_sources.f90(95,10)
+               LOOP END
+
+               LOOP BEGIN at src/specfem3D/read_adjoint_sources.f90(179,9) inlined into src/specfem3D/read_adjoint_sources.f90(95,10)
+               LOOP END
+            LOOP END
+
+            LOOP BEGIN at src/specfem3D/read_adjoint_sources.f90(179,9) inlined into src/specfem3D/read_adjoint_sources.f90(95,10)
+
+               LOOP BEGIN at src/specfem3D/read_adjoint_sources.f90(179,9) inlined into src/specfem3D/read_adjoint_sources.f90(95,10)
+               LOOP END
+
+               LOOP BEGIN at src/specfem3D/read_adjoint_sources.f90(179,9) inlined into src/specfem3D/read_adjoint_sources.f90(95,10)
+               LOOP END
+
+               LOOP BEGIN at src/specfem3D/read_adjoint_sources.f90(179,9) inlined into src/specfem3D/read_adjoint_sources.f90(95,10)
+               LOOP END
+
+               LOOP BEGIN at src/specfem3D/read_adjoint_sources.f90(179,9) inlined into src/specfem3D/read_adjoint_sources.f90(95,10)
+               LOOP END
+
+               LOOP BEGIN at src/specfem3D/read_adjoint_sources.f90(179,9) inlined into src/specfem3D/read_adjoint_sources.f90(95,10)
+               LOOP END
+            LOOP END
+         LOOP END
+      LOOP END
+   LOOP END
+LOOP END
+===========================================================================
+
+Begin optimization report for: CHECK_ADJOINT_SOURCES
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/specfem3D/read_adjoint_sources.f90(229,3)
+   remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+   LOOP BEGIN at src/specfem3D/read_adjoint_sources.f90(251,5)
+      remark #15521: loop was not vectorized: explicitly compute the iteration count before executing the loop or try using canonical loop form
+   LOOP END
+LOOP END
+===========================================================================

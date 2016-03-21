@@ -1,0 +1,136 @@
+
+Begin optimization report for: READ_MESH_DATABASES_CM
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/specfem3D/read_mesh_databases.F90(279,7)
+   remark #15301: OUTER LOOP WAS VECTORIZED
+
+   LOOP BEGIN at src/specfem3D/read_mesh_databases.F90(279,7)
+      remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+
+      LOOP BEGIN at src/specfem3D/read_mesh_databases.F90(279,7)
+         remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+
+         LOOP BEGIN at src/specfem3D/read_mesh_databases.F90(279,7)
+            remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+         LOOP END
+      LOOP END
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/specfem3D/read_mesh_databases.F90(281,7)
+   remark #15301: OUTER LOOP WAS VECTORIZED
+
+   LOOP BEGIN at src/specfem3D/read_mesh_databases.F90(281,7)
+      remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+
+      LOOP BEGIN at src/specfem3D/read_mesh_databases.F90(281,7)
+         remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+
+         LOOP BEGIN at src/specfem3D/read_mesh_databases.F90(281,7)
+            remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+         LOOP END
+      LOOP END
+   LOOP END
+LOOP END
+===========================================================================
+
+Begin optimization report for: READ_MESH_DATABASES_OC
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/specfem3D/read_mesh_databases.F90(436,7)
+   remark #15301: OUTER LOOP WAS VECTORIZED
+
+   LOOP BEGIN at src/specfem3D/read_mesh_databases.F90(436,7)
+      remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+
+      LOOP BEGIN at src/specfem3D/read_mesh_databases.F90(436,7)
+         remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+
+         LOOP BEGIN at src/specfem3D/read_mesh_databases.F90(436,7)
+            remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+         LOOP END
+      LOOP END
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/specfem3D/read_mesh_databases.F90(438,7)
+   remark #15301: OUTER LOOP WAS VECTORIZED
+
+   LOOP BEGIN at src/specfem3D/read_mesh_databases.F90(438,7)
+      remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+
+      LOOP BEGIN at src/specfem3D/read_mesh_databases.F90(438,7)
+         remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+
+         LOOP BEGIN at src/specfem3D/read_mesh_databases.F90(438,7)
+            remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+         LOOP END
+      LOOP END
+   LOOP END
+LOOP END
+===========================================================================
+
+Begin optimization report for: READ_MESH_DATABASES_IC
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/specfem3D/read_mesh_databases.F90(561,7)
+   remark #15301: FUSED LOOP WAS VECTORIZED
+
+   LOOP BEGIN at src/specfem3D/read_mesh_databases.F90(561,7)
+      remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+
+      LOOP BEGIN at src/specfem3D/read_mesh_databases.F90(561,7)
+         remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+
+         LOOP BEGIN at src/specfem3D/read_mesh_databases.F90(561,7)
+            remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/read_mesh_databases.F90(561,51)
+         LOOP END
+      LOOP END
+
+      LOOP BEGIN at src/specfem3D/read_mesh_databases.F90(561,51)
+      LOOP END
+   LOOP END
+
+   LOOP BEGIN at src/specfem3D/read_mesh_databases.F90(561,51)
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/specfem3D/read_mesh_databases.F90(561,51)
+LOOP END
+===========================================================================
+
+Begin optimization report for: READ_MESH_DATABASES_ADDRESSING
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/specfem3D/read_mesh_databases.F90(841,7)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed OUTPUT dependence between 90 line 842 and 90 line 842
+LOOP END
+===========================================================================
+
+Begin optimization report for: READ_MESH_DATABASES_REGULAR_KL
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/specfem3D/read_mesh_databases.F90(1401,5)
+   remark #15521: loop was not vectorized: explicitly compute the iteration count before executing the loop or try using canonical loop form
+
+   LOOP BEGIN at src/specfem3D/read_mesh_databases.F90(1403,7)
+      remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+      remark #15346: vector dependence: assumed ANTI dependence between npoints_slice line 1405 and npoints_slice line 1405
+   LOOP END
+LOOP END
+===========================================================================

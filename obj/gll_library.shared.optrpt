@@ -1,0 +1,171 @@
+
+Begin optimization report for: JACOBF
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/shared/gll_library.f90(280,3)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed FLOW dependence between pdern line 294 and  line 288
+LOOP END
+===========================================================================
+
+Begin optimization report for: PNDLEG
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/shared/gll_library.f90(330,3)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed FLOW dependence between p2d line 337 and p2d line 333
+LOOP END
+===========================================================================
+
+Begin optimization report for: PNLEG
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/shared/gll_library.f90(368,3)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed FLOW dependence between p2 line 372 and p2 line 370
+LOOP END
+===========================================================================
+
+Begin optimization report for: ZWGLJD
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/shared/gll_library.f90(550,3)
+<Peeled>
+   remark #15301: PEEL LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/shared/gll_library.f90(550,3)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/shared/gll_library.f90(550,3)
+<Alternate Alignment Vectorized Loop>
+LOOP END
+
+LOOP BEGIN at src/shared/gll_library.f90(550,3)
+<Remainder>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/shared/gll_library.f90(280,3) inlined into src/shared/gll_library.f90(554,8)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed FLOW dependence between pd line 294 and pd line 288
+LOOP END
+
+LOOP BEGIN at src/shared/gll_library.f90(280,3) inlined into src/shared/gll_library.f90(556,8)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed FLOW dependence between pd line 294 and pd line 288
+LOOP END
+===========================================================================
+
+Begin optimization report for: ZWGJD
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/shared/gll_library.f90(481,3)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed ANTI dependence between pdm1 line 483 and pdm1 line 298
+
+   LOOP BEGIN at src/shared/gll_library.f90(280,3) inlined into src/shared/gll_library.f90(482,10)
+      remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+      remark #15346: vector dependence: assumed FLOW dependence between pd line 294 and pd line 288
+   LOOP END
+LOOP END
+===========================================================================
+
+Begin optimization report for: JACG
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/shared/gll_library.f90(206,3)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at src/shared/gll_library.f90(224,4)
+      remark #15542: loop was not vectorized: inner loop was already vectorized
+
+      LOOP BEGIN at src/shared/gll_library.f90(280,3) inlined into src/shared/gll_library.f90(215,12)
+         remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+         remark #15346: vector dependence: assumed FLOW dependence between pd line 294 and pd line 288
+      LOOP END
+
+      LOOP BEGIN at src/shared/gll_library.f90(218,7)
+      <Peeled>
+         remark #15301: PEEL LOOP WAS VECTORIZED
+      LOOP END
+
+      LOOP BEGIN at src/shared/gll_library.f90(218,7)
+         remark #15301: REVERSED LOOP WAS VECTORIZED
+      LOOP END
+
+      LOOP BEGIN at src/shared/gll_library.f90(218,7)
+      <Remainder>
+         remark #15301: REMAINDER LOOP WAS VECTORIZED
+      LOOP END
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/shared/gll_library.f90(229,3)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at src/shared/gll_library.f90(231,4)
+   <Peeled>
+      remark #15301: PEEL LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/shared/gll_library.f90(231,4)
+      remark #15300: LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/shared/gll_library.f90(231,4)
+   <Remainder>
+      remark #15301: REMAINDER LOOP WAS VECTORIZED
+   LOOP END
+LOOP END
+===========================================================================
+
+Begin optimization report for: PNORMJ
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/shared/gll_library.f90(411,3)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/shared/gll_library.f90(411,3)
+<Remainder>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+===========================================================================
+
+Begin optimization report for: ENDW1
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/shared/gll_library.f90(69,3)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed FLOW dependence between f2 line 78 and f2 line 76
+LOOP END
+===========================================================================
+
+Begin optimization report for: ENDW2
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/shared/gll_library.f90(121,3)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed FLOW dependence between f2 line 130 and f2 line 128
+LOOP END
+===========================================================================

@@ -1,0 +1,14 @@
+        !COMPILER-GENERATED INTERFACE MODULE: Fri Mar 11 15:46:19 2016
+        MODULE MODEL_HETEROGEN_MANTLE__genmod
+          INTERFACE 
+            SUBROUTINE MODEL_HETEROGEN_MANTLE(RADIUS,THETA,PHI,DVS,DVP, &
+     &DRHO)
+              REAL(KIND=8) :: RADIUS
+              REAL(KIND=8) :: THETA
+              REAL(KIND=8) :: PHI
+              REAL(KIND=8) :: DVS
+              REAL(KIND=8) :: DVP
+              REAL(KIND=8) :: DRHO
+            END SUBROUTINE MODEL_HETEROGEN_MANTLE
+          END INTERFACE 
+        END MODULE MODEL_HETEROGEN_MANTLE__genmod

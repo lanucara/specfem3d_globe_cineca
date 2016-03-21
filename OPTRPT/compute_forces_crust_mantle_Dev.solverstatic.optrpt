@@ -1,0 +1,153 @@
+
+Begin optimization report for: COMPUTE_FORCES_CRUST_MANTLE_DEV
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/specfem3D/compute_forces_crust_mantle_Dev.F90(198,3)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at src/specfem3D/compute_forces_crust_mantle_Dev.F90(207,7)
+      remark #15300: LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/specfem3D/compute_forces_crust_mantle_Dev.F90(207,7)
+   <Remainder>
+      remark #15301: REMAINDER LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/specfem3D/compute_forces_crust_mantle_Dev.F90(296,36)
+      remark #15300: LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/specfem3D/compute_forces_crust_mantle_Dev.F90(296,36)
+   <Remainder>
+      remark #15301: REMAINDER LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/specfem3D/compute_forces_crust_mantle_Dev.F90(306,7)
+      remark #15300: LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/specfem3D/compute_forces_crust_mantle_Dev.F90(306,7)
+   <Alternate Alignment Vectorized Loop>
+   LOOP END
+
+   LOOP BEGIN at src/specfem3D/compute_forces_crust_mantle_Dev.F90(306,7)
+   <Remainder>
+      remark #15301: REMAINDER LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/specfem3D/compute_forces_crust_mantle_Dev.F90(360,7)
+      remark #15301: FUSED LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/specfem3D/compute_forces_crust_mantle_Dev.F90(361,7)
+   LOOP END
+
+   LOOP BEGIN at src/specfem3D/compute_forces_crust_mantle_Dev.F90(362,7)
+   LOOP END
+
+   LOOP BEGIN at src/specfem3D/compute_forces_crust_mantle_Dev.F90(363,7)
+   LOOP END
+
+   LOOP BEGIN at src/specfem3D/compute_forces_crust_mantle_Dev.F90(364,7)
+   LOOP END
+
+   LOOP BEGIN at src/specfem3D/compute_forces_crust_mantle_Dev.F90(360,7)
+   <Remainder>
+      remark #15301: REMAINDER LOOP WAS VECTORIZED
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/specfem3D/compute_forces_crust_mantle_Dev.F90(372,3)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at src/specfem3D/compute_forces_crust_mantle_Dev.F90(374,5)
+   <Peeled>
+      remark #15301: PEEL LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/specfem3D/compute_forces_crust_mantle_Dev.F90(374,5)
+      remark #15300: LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/specfem3D/compute_forces_crust_mantle_Dev.F90(374,5)
+   <Remainder>
+      remark #15301: REMAINDER LOOP WAS VECTORIZED
+   LOOP END
+LOOP END
+
+
+Non-optimizable loops:
+
+
+LOOP BEGIN at src/specfem3D/compute_forces_crust_mantle_Dev.F90(198,3)
+   remark #15341: loop was not vectorized: nonstandard loop is not a vectorization candidate
+LOOP END
+===========================================================================
+
+Begin optimization report for: COMPUTE_FORCES_CRUST_MANTLE_DEV:MXM5_3COMP_SINGLEA
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/specfem3D/compute_forces_crust_mantle_Dev.F90(434,16)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed OUTPUT dependence between c1 line 424 and c3 line 436
+
+   LOOP BEGIN at src/specfem3D/compute_forces_crust_mantle_Dev.F90(423,5)
+      remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+      remark #15346: vector dependence: assumed OUTPUT dependence between c1 line 424 and c3 line 436
+   LOOP END
+LOOP END
+===========================================================================
+
+Begin optimization report for: COMPUTE_FORCES_CRUST_MANTLE_DEV:MXM5_3COMP_3DMAT_SINGLEB
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/specfem3D/compute_forces_crust_mantle_Dev.F90(524,20)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed OUTPUT dependence between c1 line 514 and c3 line 526
+
+   LOOP BEGIN at src/specfem3D/compute_forces_crust_mantle_Dev.F90(511,5)
+      remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+      remark #15346: vector dependence: assumed OUTPUT dependence between c1 line 514 and c3 line 526
+
+      LOOP BEGIN at src/specfem3D/compute_forces_crust_mantle_Dev.F90(513,7)
+         remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+         remark #15346: vector dependence: assumed OUTPUT dependence between c1 line 514 and c3 line 526
+      LOOP END
+
+      LOOP BEGIN at src/specfem3D/compute_forces_crust_mantle_Dev.F90(513,7)
+      LOOP END
+
+      LOOP BEGIN at src/specfem3D/compute_forces_crust_mantle_Dev.F90(513,7)
+      LOOP END
+
+      LOOP BEGIN at src/specfem3D/compute_forces_crust_mantle_Dev.F90(513,7)
+      LOOP END
+
+      LOOP BEGIN at src/specfem3D/compute_forces_crust_mantle_Dev.F90(513,7)
+      LOOP END
+   LOOP END
+LOOP END
+===========================================================================
+
+Begin optimization report for: COMPUTE_FORCES_CRUST_MANTLE_DEV:MXM5_3COMP_SINGLEB
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/specfem3D/compute_forces_crust_mantle_Dev.F90(478,16)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed OUTPUT dependence between c1 line 468 and c3 line 480
+
+   LOOP BEGIN at src/specfem3D/compute_forces_crust_mantle_Dev.F90(467,5)
+      remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+      remark #15346: vector dependence: assumed OUTPUT dependence between c1 line 468 and c3 line 480
+   LOOP END
+LOOP END
+===========================================================================

@@ -1,0 +1,1488 @@
+
+Begin optimization report for: COMPUTE_STRAIN_PRODUCT
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/specfem3D/compute_kernels.F90(737,3)
+   remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at src/specfem3D/compute_kernels.F90(743,3)
+LOOP END
+
+LOOP BEGIN at src/specfem3D/compute_kernels.F90(751,3)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed OUTPUT dependence between prod line 753 and prod line 756
+
+   LOOP BEGIN at src/specfem3D/compute_kernels.F90(752,5)
+      remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+   LOOP END
+
+   LOOP BEGIN at src/specfem3D/compute_kernels.F90(752,5)
+      remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+   LOOP END
+LOOP END
+===========================================================================
+
+Begin optimization report for: COMPUTE_KERNELS_HESSIAN
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/specfem3D/compute_kernels.F90(792,50)
+   remark #15301: OUTER LOOP WAS VECTORIZED
+
+   LOOP BEGIN at src/specfem3D/compute_kernels.F90(785,7)
+      remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+
+      LOOP BEGIN at src/specfem3D/compute_kernels.F90(786,9)
+         remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+
+         LOOP BEGIN at src/specfem3D/compute_kernels.F90(787,11)
+            remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+         LOOP END
+      LOOP END
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/specfem3D/compute_kernels.F90(792,50)
+<Remainder>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+
+   LOOP BEGIN at src/specfem3D/compute_kernels.F90(785,7)
+      remark #25460: No loop optimizations reported
+
+      LOOP BEGIN at src/specfem3D/compute_kernels.F90(786,9)
+         remark #25460: No loop optimizations reported
+
+         LOOP BEGIN at src/specfem3D/compute_kernels.F90(787,11)
+         LOOP END
+      LOOP END
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/specfem3D/compute_kernels.F90(792,50)
+<Remainder>
+
+   LOOP BEGIN at src/specfem3D/compute_kernels.F90(785,7)
+      remark #25460: No loop optimizations reported
+
+      LOOP BEGIN at src/specfem3D/compute_kernels.F90(786,9)
+         remark #25460: No loop optimizations reported
+
+         LOOP BEGIN at src/specfem3D/compute_kernels.F90(787,11)
+         LOOP END
+      LOOP END
+   LOOP END
+LOOP END
+===========================================================================
+
+Begin optimization report for: COMPUTE_KERNELS
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/specfem3D/compute_kernels.F90(792,50) inlined into src/specfem3D/compute_kernels.F90(63,29)
+   remark #15301: OUTER LOOP WAS VECTORIZED
+
+   LOOP BEGIN at src/specfem3D/compute_kernels.F90(785,7) inlined into src/specfem3D/compute_kernels.F90(63,29)
+      remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+
+      LOOP BEGIN at src/specfem3D/compute_kernels.F90(786,9) inlined into src/specfem3D/compute_kernels.F90(63,29)
+         remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+
+         LOOP BEGIN at src/specfem3D/compute_kernels.F90(787,11) inlined into src/specfem3D/compute_kernels.F90(63,29)
+            remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+         LOOP END
+      LOOP END
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/specfem3D/compute_kernels.F90(792,50) inlined into src/specfem3D/compute_kernels.F90(63,29)
+<Remainder>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+
+   LOOP BEGIN at src/specfem3D/compute_kernels.F90(785,7) inlined into src/specfem3D/compute_kernels.F90(63,29)
+      remark #25460: No loop optimizations reported
+
+      LOOP BEGIN at src/specfem3D/compute_kernels.F90(786,9) inlined into src/specfem3D/compute_kernels.F90(63,29)
+         remark #25460: No loop optimizations reported
+
+         LOOP BEGIN at src/specfem3D/compute_kernels.F90(787,11) inlined into src/specfem3D/compute_kernels.F90(63,29)
+         LOOP END
+      LOOP END
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/specfem3D/compute_kernels.F90(792,50) inlined into src/specfem3D/compute_kernels.F90(63,29)
+<Remainder>
+
+   LOOP BEGIN at src/specfem3D/compute_kernels.F90(785,7) inlined into src/specfem3D/compute_kernels.F90(63,29)
+      remark #25460: No loop optimizations reported
+
+      LOOP BEGIN at src/specfem3D/compute_kernels.F90(786,9) inlined into src/specfem3D/compute_kernels.F90(63,29)
+         remark #25460: No loop optimizations reported
+
+         LOOP BEGIN at src/specfem3D/compute_kernels.F90(787,11) inlined into src/specfem3D/compute_kernels.F90(63,29)
+         LOOP END
+      LOOP END
+   LOOP END
+LOOP END
+===========================================================================
+
+Begin optimization report for: COMPUTE_KERNELS_CRUST_MANTLE
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/specfem3D/compute_kernels.F90(96,5)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at src/specfem3D/compute_kernels.F90(172,15)
+      remark #15542: loop was not vectorized: inner loop was already vectorized
+
+      LOOP BEGIN at src/specfem3D/compute_kernels.F90(134,11)
+         remark #15542: loop was not vectorized: inner loop was already vectorized
+
+         LOOP BEGIN at src/specfem3D/compute_kernels.F90(135,13)
+            remark #15542: loop was not vectorized: inner loop was already vectorized
+
+            LOOP BEGIN at src/specfem3D/compute_kernels.F90(172,15)
+               remark #15300: LOOP WAS VECTORIZED
+            LOOP END
+
+            LOOP BEGIN at src/specfem3D/compute_kernels.F90(172,15)
+            <Remainder>
+               remark #15301: REMAINDER LOOP WAS VECTORIZED
+            LOOP END
+
+            LOOP BEGIN at src/specfem3D/compute_kernels.F90(737,3) inlined into src/specfem3D/compute_kernels.F90(169,20)
+               remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+            LOOP END
+
+            LOOP BEGIN at src/specfem3D/compute_kernels.F90(743,3) inlined into src/specfem3D/compute_kernels.F90(169,20)
+            LOOP END
+
+            LOOP BEGIN at src/specfem3D/compute_kernels.F90(751,3) inlined into src/specfem3D/compute_kernels.F90(169,20)
+
+               LOOP BEGIN at src/specfem3D/compute_kernels.F90(752,5) inlined into src/specfem3D/compute_kernels.F90(169,20)
+               LOOP END
+
+               LOOP BEGIN at src/specfem3D/compute_kernels.F90(752,5) inlined into src/specfem3D/compute_kernels.F90(169,20)
+               LOOP END
+
+               LOOP BEGIN at src/specfem3D/compute_kernels.F90(752,5) inlined into src/specfem3D/compute_kernels.F90(169,20)
+               LOOP END
+
+               LOOP BEGIN at src/specfem3D/compute_kernels.F90(752,5) inlined into src/specfem3D/compute_kernels.F90(169,20)
+               LOOP END
+
+               LOOP BEGIN at src/specfem3D/compute_kernels.F90(752,5) inlined into src/specfem3D/compute_kernels.F90(169,20)
+               LOOP END
+
+               LOOP BEGIN at src/specfem3D/compute_kernels.F90(752,5) inlined into src/specfem3D/compute_kernels.F90(169,20)
+               LOOP END
+            LOOP END
+         LOOP END
+      LOOP END
+   LOOP END
+
+   LOOP BEGIN at src/specfem3D/compute_kernels.F90(204,51)
+      remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+      remark #15346: vector dependence: assumed ANTI dependence between epsilondev_loc line 225 and epsilondev_loc line 211
+   LOOP END
+
+   LOOP BEGIN at src/specfem3D/compute_kernels.F90(121,9)
+      remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+      remark #15346: vector dependence: assumed FLOW dependence between 95 line 121 and 95 line 121
+
+      LOOP BEGIN at src/specfem3D/compute_kernels.F90(121,9)
+         remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+         remark #15346: vector dependence: assumed FLOW dependence between 93 line 121 and 93 line 121
+
+         LOOP BEGIN at src/specfem3D/compute_kernels.F90(121,9)
+            remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/compute_kernels.F90(121,9)
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/compute_kernels.F90(121,9)
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/compute_kernels.F90(121,9)
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/compute_kernels.F90(121,9)
+         LOOP END
+      LOOP END
+
+      LOOP BEGIN at src/specfem3D/compute_kernels.F90(121,9)
+
+         LOOP BEGIN at src/specfem3D/compute_kernels.F90(121,9)
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/compute_kernels.F90(121,9)
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/compute_kernels.F90(121,9)
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/compute_kernels.F90(121,9)
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/compute_kernels.F90(121,9)
+         LOOP END
+      LOOP END
+
+      LOOP BEGIN at src/specfem3D/compute_kernels.F90(121,9)
+
+         LOOP BEGIN at src/specfem3D/compute_kernels.F90(121,9)
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/compute_kernels.F90(121,9)
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/compute_kernels.F90(121,9)
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/compute_kernels.F90(121,9)
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/compute_kernels.F90(121,9)
+         LOOP END
+      LOOP END
+
+      LOOP BEGIN at src/specfem3D/compute_kernels.F90(121,9)
+
+         LOOP BEGIN at src/specfem3D/compute_kernels.F90(121,9)
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/compute_kernels.F90(121,9)
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/compute_kernels.F90(121,9)
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/compute_kernels.F90(121,9)
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/compute_kernels.F90(121,9)
+         LOOP END
+      LOOP END
+
+      LOOP BEGIN at src/specfem3D/compute_kernels.F90(121,9)
+
+         LOOP BEGIN at src/specfem3D/compute_kernels.F90(121,9)
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/compute_kernels.F90(121,9)
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/compute_kernels.F90(121,9)
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/compute_kernels.F90(121,9)
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/compute_kernels.F90(121,9)
+         LOOP END
+      LOOP END
+   LOOP END
+
+   LOOP BEGIN at src/specfem3D/compute_kernels.F90(122,9)
+      remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+      remark #15346: vector dependence: assumed FLOW dependence between 107 line 122 and 107 line 122
+
+      LOOP BEGIN at src/specfem3D/compute_kernels.F90(122,9)
+         remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+         remark #15346: vector dependence: assumed FLOW dependence between 105 line 122 and 105 line 122
+
+         LOOP BEGIN at src/specfem3D/compute_kernels.F90(122,9)
+            remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/compute_kernels.F90(122,9)
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/compute_kernels.F90(122,9)
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/compute_kernels.F90(122,9)
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/compute_kernels.F90(122,9)
+         LOOP END
+      LOOP END
+
+      LOOP BEGIN at src/specfem3D/compute_kernels.F90(122,9)
+
+         LOOP BEGIN at src/specfem3D/compute_kernels.F90(122,9)
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/compute_kernels.F90(122,9)
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/compute_kernels.F90(122,9)
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/compute_kernels.F90(122,9)
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/compute_kernels.F90(122,9)
+         LOOP END
+      LOOP END
+
+      LOOP BEGIN at src/specfem3D/compute_kernels.F90(122,9)
+
+         LOOP BEGIN at src/specfem3D/compute_kernels.F90(122,9)
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/compute_kernels.F90(122,9)
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/compute_kernels.F90(122,9)
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/compute_kernels.F90(122,9)
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/compute_kernels.F90(122,9)
+         LOOP END
+      LOOP END
+
+      LOOP BEGIN at src/specfem3D/compute_kernels.F90(122,9)
+
+         LOOP BEGIN at src/specfem3D/compute_kernels.F90(122,9)
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/compute_kernels.F90(122,9)
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/compute_kernels.F90(122,9)
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/compute_kernels.F90(122,9)
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/compute_kernels.F90(122,9)
+         LOOP END
+      LOOP END
+
+      LOOP BEGIN at src/specfem3D/compute_kernels.F90(122,9)
+
+         LOOP BEGIN at src/specfem3D/compute_kernels.F90(122,9)
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/compute_kernels.F90(122,9)
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/compute_kernels.F90(122,9)
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/compute_kernels.F90(122,9)
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/compute_kernels.F90(122,9)
+         LOOP END
+      LOOP END
+   LOOP END
+
+   LOOP BEGIN at src/specfem3D/compute_kernels.F90(123,9)
+      remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+      remark #15346: vector dependence: assumed FLOW dependence between 119 line 123 and 119 line 123
+
+      LOOP BEGIN at src/specfem3D/compute_kernels.F90(123,9)
+         remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+         remark #15346: vector dependence: assumed FLOW dependence between 117 line 123 and 117 line 123
+
+         LOOP BEGIN at src/specfem3D/compute_kernels.F90(123,9)
+            remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/compute_kernels.F90(123,9)
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/compute_kernels.F90(123,9)
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/compute_kernels.F90(123,9)
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/compute_kernels.F90(123,9)
+         LOOP END
+      LOOP END
+
+      LOOP BEGIN at src/specfem3D/compute_kernels.F90(123,9)
+
+         LOOP BEGIN at src/specfem3D/compute_kernels.F90(123,9)
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/compute_kernels.F90(123,9)
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/compute_kernels.F90(123,9)
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/compute_kernels.F90(123,9)
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/compute_kernels.F90(123,9)
+         LOOP END
+      LOOP END
+
+      LOOP BEGIN at src/specfem3D/compute_kernels.F90(123,9)
+
+         LOOP BEGIN at src/specfem3D/compute_kernels.F90(123,9)
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/compute_kernels.F90(123,9)
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/compute_kernels.F90(123,9)
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/compute_kernels.F90(123,9)
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/compute_kernels.F90(123,9)
+         LOOP END
+      LOOP END
+
+      LOOP BEGIN at src/specfem3D/compute_kernels.F90(123,9)
+
+         LOOP BEGIN at src/specfem3D/compute_kernels.F90(123,9)
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/compute_kernels.F90(123,9)
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/compute_kernels.F90(123,9)
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/compute_kernels.F90(123,9)
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/compute_kernels.F90(123,9)
+         LOOP END
+      LOOP END
+
+      LOOP BEGIN at src/specfem3D/compute_kernels.F90(123,9)
+
+         LOOP BEGIN at src/specfem3D/compute_kernels.F90(123,9)
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/compute_kernels.F90(123,9)
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/compute_kernels.F90(123,9)
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/compute_kernels.F90(123,9)
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/compute_kernels.F90(123,9)
+         LOOP END
+      LOOP END
+   LOOP END
+
+   LOOP BEGIN at src/specfem3D/compute_kernels.F90(124,9)
+      remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+      remark #15346: vector dependence: assumed FLOW dependence between 131 line 124 and 131 line 124
+
+      LOOP BEGIN at src/specfem3D/compute_kernels.F90(124,9)
+         remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+         remark #15346: vector dependence: assumed FLOW dependence between 129 line 124 and 129 line 124
+
+         LOOP BEGIN at src/specfem3D/compute_kernels.F90(124,9)
+            remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/compute_kernels.F90(124,9)
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/compute_kernels.F90(124,9)
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/compute_kernels.F90(124,9)
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/compute_kernels.F90(124,9)
+         LOOP END
+      LOOP END
+
+      LOOP BEGIN at src/specfem3D/compute_kernels.F90(124,9)
+
+         LOOP BEGIN at src/specfem3D/compute_kernels.F90(124,9)
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/compute_kernels.F90(124,9)
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/compute_kernels.F90(124,9)
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/compute_kernels.F90(124,9)
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/compute_kernels.F90(124,9)
+         LOOP END
+      LOOP END
+
+      LOOP BEGIN at src/specfem3D/compute_kernels.F90(124,9)
+
+         LOOP BEGIN at src/specfem3D/compute_kernels.F90(124,9)
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/compute_kernels.F90(124,9)
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/compute_kernels.F90(124,9)
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/compute_kernels.F90(124,9)
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/compute_kernels.F90(124,9)
+         LOOP END
+      LOOP END
+
+      LOOP BEGIN at src/specfem3D/compute_kernels.F90(124,9)
+
+         LOOP BEGIN at src/specfem3D/compute_kernels.F90(124,9)
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/compute_kernels.F90(124,9)
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/compute_kernels.F90(124,9)
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/compute_kernels.F90(124,9)
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/compute_kernels.F90(124,9)
+         LOOP END
+      LOOP END
+
+      LOOP BEGIN at src/specfem3D/compute_kernels.F90(124,9)
+
+         LOOP BEGIN at src/specfem3D/compute_kernels.F90(124,9)
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/compute_kernels.F90(124,9)
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/compute_kernels.F90(124,9)
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/compute_kernels.F90(124,9)
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/compute_kernels.F90(124,9)
+         LOOP END
+      LOOP END
+   LOOP END
+
+   LOOP BEGIN at src/specfem3D/compute_kernels.F90(125,9)
+      remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+      remark #15346: vector dependence: assumed FLOW dependence between 143 line 125 and 143 line 125
+
+      LOOP BEGIN at src/specfem3D/compute_kernels.F90(125,9)
+         remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+         remark #15346: vector dependence: assumed FLOW dependence between 141 line 125 and 141 line 125
+
+         LOOP BEGIN at src/specfem3D/compute_kernels.F90(125,9)
+            remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/compute_kernels.F90(125,9)
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/compute_kernels.F90(125,9)
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/compute_kernels.F90(125,9)
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/compute_kernels.F90(125,9)
+         LOOP END
+      LOOP END
+
+      LOOP BEGIN at src/specfem3D/compute_kernels.F90(125,9)
+
+         LOOP BEGIN at src/specfem3D/compute_kernels.F90(125,9)
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/compute_kernels.F90(125,9)
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/compute_kernels.F90(125,9)
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/compute_kernels.F90(125,9)
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/compute_kernels.F90(125,9)
+         LOOP END
+      LOOP END
+
+      LOOP BEGIN at src/specfem3D/compute_kernels.F90(125,9)
+
+         LOOP BEGIN at src/specfem3D/compute_kernels.F90(125,9)
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/compute_kernels.F90(125,9)
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/compute_kernels.F90(125,9)
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/compute_kernels.F90(125,9)
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/compute_kernels.F90(125,9)
+         LOOP END
+      LOOP END
+
+      LOOP BEGIN at src/specfem3D/compute_kernels.F90(125,9)
+
+         LOOP BEGIN at src/specfem3D/compute_kernels.F90(125,9)
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/compute_kernels.F90(125,9)
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/compute_kernels.F90(125,9)
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/compute_kernels.F90(125,9)
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/compute_kernels.F90(125,9)
+         LOOP END
+      LOOP END
+
+      LOOP BEGIN at src/specfem3D/compute_kernels.F90(125,9)
+
+         LOOP BEGIN at src/specfem3D/compute_kernels.F90(125,9)
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/compute_kernels.F90(125,9)
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/compute_kernels.F90(125,9)
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/compute_kernels.F90(125,9)
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/compute_kernels.F90(125,9)
+         LOOP END
+      LOOP END
+   LOOP END
+
+   LOOP BEGIN at src/specfem3D/compute_kernels.F90(126,9)
+      remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+      remark #15346: vector dependence: assumed FLOW dependence between 155 line 126 and 155 line 126
+
+      LOOP BEGIN at src/specfem3D/compute_kernels.F90(126,9)
+         remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+         remark #15346: vector dependence: assumed FLOW dependence between 153 line 126 and 153 line 126
+
+         LOOP BEGIN at src/specfem3D/compute_kernels.F90(126,9)
+            remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/compute_kernels.F90(126,9)
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/compute_kernels.F90(126,9)
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/compute_kernels.F90(126,9)
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/compute_kernels.F90(126,9)
+         LOOP END
+      LOOP END
+
+      LOOP BEGIN at src/specfem3D/compute_kernels.F90(126,9)
+
+         LOOP BEGIN at src/specfem3D/compute_kernels.F90(126,9)
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/compute_kernels.F90(126,9)
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/compute_kernels.F90(126,9)
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/compute_kernels.F90(126,9)
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/compute_kernels.F90(126,9)
+         LOOP END
+      LOOP END
+
+      LOOP BEGIN at src/specfem3D/compute_kernels.F90(126,9)
+
+         LOOP BEGIN at src/specfem3D/compute_kernels.F90(126,9)
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/compute_kernels.F90(126,9)
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/compute_kernels.F90(126,9)
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/compute_kernels.F90(126,9)
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/compute_kernels.F90(126,9)
+         LOOP END
+      LOOP END
+
+      LOOP BEGIN at src/specfem3D/compute_kernels.F90(126,9)
+
+         LOOP BEGIN at src/specfem3D/compute_kernels.F90(126,9)
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/compute_kernels.F90(126,9)
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/compute_kernels.F90(126,9)
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/compute_kernels.F90(126,9)
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/compute_kernels.F90(126,9)
+         LOOP END
+      LOOP END
+
+      LOOP BEGIN at src/specfem3D/compute_kernels.F90(126,9)
+
+         LOOP BEGIN at src/specfem3D/compute_kernels.F90(126,9)
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/compute_kernels.F90(126,9)
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/compute_kernels.F90(126,9)
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/compute_kernels.F90(126,9)
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/compute_kernels.F90(126,9)
+         LOOP END
+      LOOP END
+   LOOP END
+LOOP END
+===========================================================================
+
+Begin optimization report for: COMPUTE_KERNELS_OUTER_CORE
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/specfem3D/compute_kernels.F90(323,5)
+   remark #15398: loop was not vectorized: loop was transformed to memset or memcpy
+LOOP END
+
+LOOP BEGIN at src/specfem3D/compute_kernels.F90(395,19)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed OUTPUT dependence between MASK_IBOOL line 338 and MASK_IBOOL line 338
+
+   LOOP BEGIN at src/specfem3D/compute_kernels.F90(327,7)
+      remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+      remark #15346: vector dependence: assumed OUTPUT dependence between MASK_IBOOL line 338 and MASK_IBOOL line 338
+
+      LOOP BEGIN at src/specfem3D/compute_kernels.F90(328,9)
+         remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+         remark #15346: vector dependence: assumed OUTPUT dependence between MASK_IBOOL line 338 and MASK_IBOOL line 338
+
+         LOOP BEGIN at src/specfem3D/compute_kernels.F90(329,11)
+            remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+            remark #15346: vector dependence: assumed FLOW dependence between MASK_IBOOL line 338 and MASK_IBOOL line 335
+
+            LOOP BEGIN at src/specfem3D/compute_kernels.F90(354,15)
+               remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+            LOOP END
+
+            LOOP BEGIN at src/specfem3D/compute_kernels.F90(357,15)
+            LOOP END
+
+            LOOP BEGIN at src/specfem3D/compute_kernels.F90(360,15)
+            LOOP END
+
+            LOOP BEGIN at src/specfem3D/compute_kernels.F90(376,15)
+            LOOP END
+
+            LOOP BEGIN at src/specfem3D/compute_kernels.F90(379,15)
+            LOOP END
+
+            LOOP BEGIN at src/specfem3D/compute_kernels.F90(382,15)
+            LOOP END
+
+            LOOP BEGIN at src/specfem3D/compute_kernels.F90(399,17)
+               remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+            LOOP END
+
+            LOOP BEGIN at src/specfem3D/compute_kernels.F90(402,17)
+            LOOP END
+
+            LOOP BEGIN at src/specfem3D/compute_kernels.F90(405,17)
+            LOOP END
+         LOOP END
+      LOOP END
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/specfem3D/compute_kernels.F90(443,46)
+<Peeled>
+   remark #15301: PEEL LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/compute_kernels.F90(443,46)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/compute_kernels.F90(443,46)
+<Remainder>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/compute_kernels.F90(460,7)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at src/specfem3D/compute_kernels.F90(461,9)
+      remark #15542: loop was not vectorized: inner loop was already vectorized
+
+      LOOP BEGIN at src/specfem3D/compute_kernels.F90(462,11)
+         remark #15542: loop was not vectorized: inner loop was already vectorized
+
+         LOOP BEGIN at src/specfem3D/compute_kernels.F90(463,13)
+            remark #15301: OUTER LOOP WAS VECTORIZED
+
+            LOOP BEGIN at src/specfem3D/compute_kernels.F90(477,15)
+               remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+            LOOP END
+
+            LOOP BEGIN at src/specfem3D/compute_kernels.F90(533,15)
+               remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+            LOOP END
+         LOOP END
+      LOOP END
+   LOOP END
+LOOP END
+===========================================================================
+
+Begin optimization report for: COMPUTE_KERNELS_INNER_CORE
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/specfem3D/compute_kernels.F90(627,5)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at src/specfem3D/compute_kernels.F90(663,47)
+      remark #15300: LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/specfem3D/compute_kernels.F90(663,47)
+   <Remainder>
+      remark #15301: REMAINDER LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/specfem3D/compute_kernels.F90(650,9)
+      remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+      remark #15346: vector dependence: assumed FLOW dependence between 335 line 650 and 335 line 650
+
+      LOOP BEGIN at src/specfem3D/compute_kernels.F90(650,9)
+         remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+         remark #15346: vector dependence: assumed FLOW dependence between 333 line 650 and 333 line 650
+
+         LOOP BEGIN at src/specfem3D/compute_kernels.F90(650,9)
+            remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/compute_kernels.F90(650,9)
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/compute_kernels.F90(650,9)
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/compute_kernels.F90(650,9)
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/compute_kernels.F90(650,9)
+         LOOP END
+      LOOP END
+
+      LOOP BEGIN at src/specfem3D/compute_kernels.F90(650,9)
+
+         LOOP BEGIN at src/specfem3D/compute_kernels.F90(650,9)
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/compute_kernels.F90(650,9)
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/compute_kernels.F90(650,9)
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/compute_kernels.F90(650,9)
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/compute_kernels.F90(650,9)
+         LOOP END
+      LOOP END
+
+      LOOP BEGIN at src/specfem3D/compute_kernels.F90(650,9)
+
+         LOOP BEGIN at src/specfem3D/compute_kernels.F90(650,9)
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/compute_kernels.F90(650,9)
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/compute_kernels.F90(650,9)
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/compute_kernels.F90(650,9)
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/compute_kernels.F90(650,9)
+         LOOP END
+      LOOP END
+
+      LOOP BEGIN at src/specfem3D/compute_kernels.F90(650,9)
+
+         LOOP BEGIN at src/specfem3D/compute_kernels.F90(650,9)
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/compute_kernels.F90(650,9)
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/compute_kernels.F90(650,9)
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/compute_kernels.F90(650,9)
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/compute_kernels.F90(650,9)
+         LOOP END
+      LOOP END
+
+      LOOP BEGIN at src/specfem3D/compute_kernels.F90(650,9)
+
+         LOOP BEGIN at src/specfem3D/compute_kernels.F90(650,9)
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/compute_kernels.F90(650,9)
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/compute_kernels.F90(650,9)
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/compute_kernels.F90(650,9)
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/compute_kernels.F90(650,9)
+         LOOP END
+      LOOP END
+   LOOP END
+
+   LOOP BEGIN at src/specfem3D/compute_kernels.F90(651,9)
+      remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+      remark #15346: vector dependence: assumed FLOW dependence between 347 line 651 and 347 line 651
+
+      LOOP BEGIN at src/specfem3D/compute_kernels.F90(651,9)
+         remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+         remark #15346: vector dependence: assumed FLOW dependence between 345 line 651 and 345 line 651
+
+         LOOP BEGIN at src/specfem3D/compute_kernels.F90(651,9)
+            remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/compute_kernels.F90(651,9)
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/compute_kernels.F90(651,9)
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/compute_kernels.F90(651,9)
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/compute_kernels.F90(651,9)
+         LOOP END
+      LOOP END
+
+      LOOP BEGIN at src/specfem3D/compute_kernels.F90(651,9)
+
+         LOOP BEGIN at src/specfem3D/compute_kernels.F90(651,9)
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/compute_kernels.F90(651,9)
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/compute_kernels.F90(651,9)
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/compute_kernels.F90(651,9)
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/compute_kernels.F90(651,9)
+         LOOP END
+      LOOP END
+
+      LOOP BEGIN at src/specfem3D/compute_kernels.F90(651,9)
+
+         LOOP BEGIN at src/specfem3D/compute_kernels.F90(651,9)
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/compute_kernels.F90(651,9)
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/compute_kernels.F90(651,9)
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/compute_kernels.F90(651,9)
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/compute_kernels.F90(651,9)
+         LOOP END
+      LOOP END
+
+      LOOP BEGIN at src/specfem3D/compute_kernels.F90(651,9)
+
+         LOOP BEGIN at src/specfem3D/compute_kernels.F90(651,9)
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/compute_kernels.F90(651,9)
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/compute_kernels.F90(651,9)
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/compute_kernels.F90(651,9)
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/compute_kernels.F90(651,9)
+         LOOP END
+      LOOP END
+
+      LOOP BEGIN at src/specfem3D/compute_kernels.F90(651,9)
+
+         LOOP BEGIN at src/specfem3D/compute_kernels.F90(651,9)
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/compute_kernels.F90(651,9)
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/compute_kernels.F90(651,9)
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/compute_kernels.F90(651,9)
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/compute_kernels.F90(651,9)
+         LOOP END
+      LOOP END
+   LOOP END
+
+   LOOP BEGIN at src/specfem3D/compute_kernels.F90(652,9)
+      remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+      remark #15346: vector dependence: assumed FLOW dependence between 359 line 652 and 359 line 652
+
+      LOOP BEGIN at src/specfem3D/compute_kernels.F90(652,9)
+         remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+         remark #15346: vector dependence: assumed FLOW dependence between 357 line 652 and 357 line 652
+
+         LOOP BEGIN at src/specfem3D/compute_kernels.F90(652,9)
+            remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/compute_kernels.F90(652,9)
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/compute_kernels.F90(652,9)
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/compute_kernels.F90(652,9)
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/compute_kernels.F90(652,9)
+         LOOP END
+      LOOP END
+
+      LOOP BEGIN at src/specfem3D/compute_kernels.F90(652,9)
+
+         LOOP BEGIN at src/specfem3D/compute_kernels.F90(652,9)
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/compute_kernels.F90(652,9)
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/compute_kernels.F90(652,9)
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/compute_kernels.F90(652,9)
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/compute_kernels.F90(652,9)
+         LOOP END
+      LOOP END
+
+      LOOP BEGIN at src/specfem3D/compute_kernels.F90(652,9)
+
+         LOOP BEGIN at src/specfem3D/compute_kernels.F90(652,9)
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/compute_kernels.F90(652,9)
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/compute_kernels.F90(652,9)
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/compute_kernels.F90(652,9)
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/compute_kernels.F90(652,9)
+         LOOP END
+      LOOP END
+
+      LOOP BEGIN at src/specfem3D/compute_kernels.F90(652,9)
+
+         LOOP BEGIN at src/specfem3D/compute_kernels.F90(652,9)
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/compute_kernels.F90(652,9)
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/compute_kernels.F90(652,9)
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/compute_kernels.F90(652,9)
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/compute_kernels.F90(652,9)
+         LOOP END
+      LOOP END
+
+      LOOP BEGIN at src/specfem3D/compute_kernels.F90(652,9)
+
+         LOOP BEGIN at src/specfem3D/compute_kernels.F90(652,9)
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/compute_kernels.F90(652,9)
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/compute_kernels.F90(652,9)
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/compute_kernels.F90(652,9)
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/compute_kernels.F90(652,9)
+         LOOP END
+      LOOP END
+   LOOP END
+
+   LOOP BEGIN at src/specfem3D/compute_kernels.F90(653,9)
+      remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+      remark #15346: vector dependence: assumed FLOW dependence between 371 line 653 and 371 line 653
+
+      LOOP BEGIN at src/specfem3D/compute_kernels.F90(653,9)
+         remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+         remark #15346: vector dependence: assumed FLOW dependence between 369 line 653 and 369 line 653
+
+         LOOP BEGIN at src/specfem3D/compute_kernels.F90(653,9)
+            remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/compute_kernels.F90(653,9)
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/compute_kernels.F90(653,9)
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/compute_kernels.F90(653,9)
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/compute_kernels.F90(653,9)
+         LOOP END
+      LOOP END
+
+      LOOP BEGIN at src/specfem3D/compute_kernels.F90(653,9)
+
+         LOOP BEGIN at src/specfem3D/compute_kernels.F90(653,9)
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/compute_kernels.F90(653,9)
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/compute_kernels.F90(653,9)
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/compute_kernels.F90(653,9)
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/compute_kernels.F90(653,9)
+         LOOP END
+      LOOP END
+
+      LOOP BEGIN at src/specfem3D/compute_kernels.F90(653,9)
+
+         LOOP BEGIN at src/specfem3D/compute_kernels.F90(653,9)
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/compute_kernels.F90(653,9)
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/compute_kernels.F90(653,9)
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/compute_kernels.F90(653,9)
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/compute_kernels.F90(653,9)
+         LOOP END
+      LOOP END
+
+      LOOP BEGIN at src/specfem3D/compute_kernels.F90(653,9)
+
+         LOOP BEGIN at src/specfem3D/compute_kernels.F90(653,9)
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/compute_kernels.F90(653,9)
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/compute_kernels.F90(653,9)
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/compute_kernels.F90(653,9)
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/compute_kernels.F90(653,9)
+         LOOP END
+      LOOP END
+
+      LOOP BEGIN at src/specfem3D/compute_kernels.F90(653,9)
+
+         LOOP BEGIN at src/specfem3D/compute_kernels.F90(653,9)
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/compute_kernels.F90(653,9)
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/compute_kernels.F90(653,9)
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/compute_kernels.F90(653,9)
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/compute_kernels.F90(653,9)
+         LOOP END
+      LOOP END
+   LOOP END
+
+   LOOP BEGIN at src/specfem3D/compute_kernels.F90(654,9)
+      remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+      remark #15346: vector dependence: assumed FLOW dependence between 383 line 654 and 383 line 654
+
+      LOOP BEGIN at src/specfem3D/compute_kernels.F90(654,9)
+         remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+         remark #15346: vector dependence: assumed FLOW dependence between 381 line 654 and 381 line 654
+
+         LOOP BEGIN at src/specfem3D/compute_kernels.F90(654,9)
+            remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/compute_kernels.F90(654,9)
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/compute_kernels.F90(654,9)
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/compute_kernels.F90(654,9)
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/compute_kernels.F90(654,9)
+         LOOP END
+      LOOP END
+
+      LOOP BEGIN at src/specfem3D/compute_kernels.F90(654,9)
+
+         LOOP BEGIN at src/specfem3D/compute_kernels.F90(654,9)
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/compute_kernels.F90(654,9)
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/compute_kernels.F90(654,9)
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/compute_kernels.F90(654,9)
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/compute_kernels.F90(654,9)
+         LOOP END
+      LOOP END
+
+      LOOP BEGIN at src/specfem3D/compute_kernels.F90(654,9)
+
+         LOOP BEGIN at src/specfem3D/compute_kernels.F90(654,9)
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/compute_kernels.F90(654,9)
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/compute_kernels.F90(654,9)
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/compute_kernels.F90(654,9)
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/compute_kernels.F90(654,9)
+         LOOP END
+      LOOP END
+
+      LOOP BEGIN at src/specfem3D/compute_kernels.F90(654,9)
+
+         LOOP BEGIN at src/specfem3D/compute_kernels.F90(654,9)
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/compute_kernels.F90(654,9)
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/compute_kernels.F90(654,9)
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/compute_kernels.F90(654,9)
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/compute_kernels.F90(654,9)
+         LOOP END
+      LOOP END
+
+      LOOP BEGIN at src/specfem3D/compute_kernels.F90(654,9)
+
+         LOOP BEGIN at src/specfem3D/compute_kernels.F90(654,9)
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/compute_kernels.F90(654,9)
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/compute_kernels.F90(654,9)
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/compute_kernels.F90(654,9)
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/compute_kernels.F90(654,9)
+         LOOP END
+      LOOP END
+   LOOP END
+
+   LOOP BEGIN at src/specfem3D/compute_kernels.F90(655,9)
+      remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+      remark #15346: vector dependence: assumed FLOW dependence between 395 line 655 and 395 line 655
+
+      LOOP BEGIN at src/specfem3D/compute_kernels.F90(655,9)
+         remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+         remark #15346: vector dependence: assumed FLOW dependence between 393 line 655 and 393 line 655
+
+         LOOP BEGIN at src/specfem3D/compute_kernels.F90(655,9)
+            remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/compute_kernels.F90(655,9)
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/compute_kernels.F90(655,9)
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/compute_kernels.F90(655,9)
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/compute_kernels.F90(655,9)
+         LOOP END
+      LOOP END
+
+      LOOP BEGIN at src/specfem3D/compute_kernels.F90(655,9)
+
+         LOOP BEGIN at src/specfem3D/compute_kernels.F90(655,9)
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/compute_kernels.F90(655,9)
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/compute_kernels.F90(655,9)
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/compute_kernels.F90(655,9)
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/compute_kernels.F90(655,9)
+         LOOP END
+      LOOP END
+
+      LOOP BEGIN at src/specfem3D/compute_kernels.F90(655,9)
+
+         LOOP BEGIN at src/specfem3D/compute_kernels.F90(655,9)
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/compute_kernels.F90(655,9)
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/compute_kernels.F90(655,9)
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/compute_kernels.F90(655,9)
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/compute_kernels.F90(655,9)
+         LOOP END
+      LOOP END
+
+      LOOP BEGIN at src/specfem3D/compute_kernels.F90(655,9)
+
+         LOOP BEGIN at src/specfem3D/compute_kernels.F90(655,9)
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/compute_kernels.F90(655,9)
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/compute_kernels.F90(655,9)
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/compute_kernels.F90(655,9)
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/compute_kernels.F90(655,9)
+         LOOP END
+      LOOP END
+
+      LOOP BEGIN at src/specfem3D/compute_kernels.F90(655,9)
+
+         LOOP BEGIN at src/specfem3D/compute_kernels.F90(655,9)
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/compute_kernels.F90(655,9)
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/compute_kernels.F90(655,9)
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/compute_kernels.F90(655,9)
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/compute_kernels.F90(655,9)
+         LOOP END
+      LOOP END
+   LOOP END
+LOOP END
+===========================================================================

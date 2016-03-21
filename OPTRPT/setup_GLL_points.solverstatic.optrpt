@@ -1,0 +1,45 @@
+
+Begin optimization report for: SETUP_GLL_POINTS
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/specfem3D/setup_GLL_points.f90(45,5)
+<Peeled>
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at src/specfem3D/setup_GLL_points.f90(46,7)
+      remark #15300: LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/specfem3D/setup_GLL_points.f90(46,7)
+   LOOP END
+
+   LOOP BEGIN at src/specfem3D/setup_GLL_points.f90(46,7)
+   LOOP END
+
+   LOOP BEGIN at src/specfem3D/setup_GLL_points.f90(46,7)
+   LOOP END
+
+   LOOP BEGIN at src/specfem3D/setup_GLL_points.f90(46,7)
+   <Distributed chunk2>
+      remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+   LOOP END
+
+   LOOP BEGIN at src/specfem3D/setup_GLL_points.f90(46,7)
+   <Peeled>
+      remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+   LOOP END
+
+   LOOP BEGIN at src/specfem3D/setup_GLL_points.f90(60,5)
+   LOOP END
+
+   LOOP BEGIN at src/specfem3D/setup_GLL_points.f90(46,7)
+   <Peeled, Distributed chunk2>
+      remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/specfem3D/setup_GLL_points.f90(61,7)
+LOOP END
+===========================================================================

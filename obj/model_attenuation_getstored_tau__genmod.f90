@@ -1,0 +1,19 @@
+        !COMPILER-GENERATED INTERFACE MODULE: Fri Mar 11 15:46:05 2016
+        MODULE MODEL_ATTENUATION_GETSTORED_TAU__genmod
+          INTERFACE 
+            SUBROUTINE MODEL_ATTENUATION_GETSTORED_TAU(QMU_IN,T_C_SOURCE&
+     &,TAU_S,TAU_E,AM_V,AM_S,AS_V)
+              USE MESHFEM3D_MODELS_PAR, ONLY :                          &
+     &          MODEL_ATTENUATION_VARIABLES,                            &
+     &          MODEL_ATTENUATION_STORAGE_VAR,                          &
+     &          ATTENUATION_SIMPLEX_VARIABLES
+              REAL(KIND=8) :: QMU_IN
+              REAL(KIND=8) :: T_C_SOURCE
+              REAL(KIND=8) :: TAU_S(3)
+              REAL(KIND=8) :: TAU_E(3)
+              TYPE (MODEL_ATTENUATION_VARIABLES) :: AM_V
+              TYPE (MODEL_ATTENUATION_STORAGE_VAR) :: AM_S
+              TYPE (ATTENUATION_SIMPLEX_VARIABLES) :: AS_V
+            END SUBROUTINE MODEL_ATTENUATION_GETSTORED_TAU
+          END INTERFACE 
+        END MODULE MODEL_ATTENUATION_GETSTORED_TAU__genmod

@@ -1,0 +1,208 @@
+
+Begin optimization report for: COMPUTE_FORCES_INNER_CORE_DEV
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/specfem3D/compute_forces_inner_core_Dev.F90(199,3)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at src/specfem3D/compute_forces_inner_core_Dev.F90(211,9)
+      remark #15300: LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/specfem3D/compute_forces_inner_core_Dev.F90(211,9)
+   <Remainder>
+      remark #15301: REMAINDER LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/specfem3D/compute_forces_inner_core_Dev.F90(336,9)
+   <Peeled, Distributed chunk1>
+      remark #15542: loop was not vectorized: inner loop was already vectorized
+
+      LOOP BEGIN at src/specfem3D/compute_forces_inner_core_Dev.F90(336,9)
+      <Peeled, Distributed chunk1>
+         remark #15301: PARTIAL LOOP WAS VECTORIZED
+      LOOP END
+
+      LOOP BEGIN at src/specfem3D/compute_forces_inner_core_Dev.F90(336,9)
+      <Peeled, Remainder, Distributed chunk1>
+         remark #15301: REMAINDER LOOP WAS VECTORIZED
+      LOOP END
+
+      LOOP BEGIN at src/specfem3D/compute_forces_inner_core_Dev.F90(336,9)
+      <Peeled, Distributed chunk1>
+         remark #15301: PARTIAL LOOP WAS VECTORIZED
+      LOOP END
+
+      LOOP BEGIN at src/specfem3D/compute_forces_inner_core_Dev.F90(336,9)
+      <Peeled, Remainder, Distributed chunk1>
+         remark #15301: REMAINDER LOOP WAS VECTORIZED
+      LOOP END
+
+      LOOP BEGIN at src/specfem3D/compute_forces_inner_core_Dev.F90(336,9)
+      <Peeled, Distributed chunk1>
+         remark #15301: PARTIAL LOOP WAS VECTORIZED
+      LOOP END
+
+      LOOP BEGIN at src/specfem3D/compute_forces_inner_core_Dev.F90(336,9)
+      <Peeled, Remainder, Distributed chunk1>
+         remark #15301: REMAINDER LOOP WAS VECTORIZED
+      LOOP END
+
+      LOOP BEGIN at src/specfem3D/compute_forces_inner_core_Dev.F90(336,9)
+      <Peeled, Distributed chunk2>
+         remark #15301: PARTIAL LOOP WAS VECTORIZED
+      LOOP END
+
+      LOOP BEGIN at src/specfem3D/compute_forces_inner_core_Dev.F90(336,9)
+      <Peeled, Remainder, Distributed chunk2>
+         remark #15301: REMAINDER LOOP WAS VECTORIZED
+      LOOP END
+
+      LOOP BEGIN at src/specfem3D/compute_forces_inner_core_Dev.F90(336,9)
+      <Peeled, Distributed chunk3>
+         remark #15301: PARTIAL LOOP WAS VECTORIZED
+      LOOP END
+
+      LOOP BEGIN at src/specfem3D/compute_forces_inner_core_Dev.F90(336,9)
+      <Peeled, Remainder, Distributed chunk3>
+         remark #15301: REMAINDER LOOP WAS VECTORIZED
+      LOOP END
+   LOOP END
+
+   LOOP BEGIN at src/specfem3D/compute_forces_inner_core_Dev.F90(655,38)
+      remark #15300: LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/specfem3D/compute_forces_inner_core_Dev.F90(655,38)
+   <Remainder>
+      remark #15301: REMAINDER LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/specfem3D/compute_forces_inner_core_Dev.F90(665,9)
+      remark #15300: LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/specfem3D/compute_forces_inner_core_Dev.F90(665,9)
+   <Alternate Alignment Vectorized Loop>
+   LOOP END
+
+   LOOP BEGIN at src/specfem3D/compute_forces_inner_core_Dev.F90(665,9)
+   <Remainder>
+      remark #15301: REMAINDER LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/specfem3D/compute_forces_inner_core_Dev.F90(719,9)
+      remark #15301: FUSED LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/specfem3D/compute_forces_inner_core_Dev.F90(720,9)
+   LOOP END
+
+   LOOP BEGIN at src/specfem3D/compute_forces_inner_core_Dev.F90(721,9)
+   LOOP END
+
+   LOOP BEGIN at src/specfem3D/compute_forces_inner_core_Dev.F90(722,9)
+   LOOP END
+
+   LOOP BEGIN at src/specfem3D/compute_forces_inner_core_Dev.F90(723,9)
+   LOOP END
+
+   LOOP BEGIN at src/specfem3D/compute_forces_inner_core_Dev.F90(719,9)
+   <Remainder>
+      remark #15301: REMAINDER LOOP WAS VECTORIZED
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/specfem3D/compute_forces_inner_core_Dev.F90(733,3)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at src/specfem3D/compute_forces_inner_core_Dev.F90(735,5)
+   <Peeled>
+      remark #15301: PEEL LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/specfem3D/compute_forces_inner_core_Dev.F90(735,5)
+      remark #15300: LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/specfem3D/compute_forces_inner_core_Dev.F90(735,5)
+   <Remainder>
+      remark #15301: REMAINDER LOOP WAS VECTORIZED
+   LOOP END
+LOOP END
+
+
+Non-optimizable loops:
+
+
+LOOP BEGIN at src/specfem3D/compute_forces_inner_core_Dev.F90(199,3)
+   remark #15341: loop was not vectorized: nonstandard loop is not a vectorization candidate
+LOOP END
+===========================================================================
+
+Begin optimization report for: COMPUTE_FORCES_INNER_CORE_DEV:MXM5_3COMP_SINGLEA
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/specfem3D/compute_forces_inner_core_Dev.F90(796,16)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed OUTPUT dependence between c1 line 786 and c3 line 798
+
+   LOOP BEGIN at src/specfem3D/compute_forces_inner_core_Dev.F90(785,5)
+      remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+      remark #15346: vector dependence: assumed OUTPUT dependence between c1 line 786 and c3 line 798
+   LOOP END
+LOOP END
+===========================================================================
+
+Begin optimization report for: COMPUTE_FORCES_INNER_CORE_DEV:MXM5_3COMP_3DMAT_SINGLEB
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/specfem3D/compute_forces_inner_core_Dev.F90(886,20)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed OUTPUT dependence between c1 line 876 and c3 line 888
+
+   LOOP BEGIN at src/specfem3D/compute_forces_inner_core_Dev.F90(873,5)
+      remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+      remark #15346: vector dependence: assumed OUTPUT dependence between c1 line 876 and c3 line 888
+
+      LOOP BEGIN at src/specfem3D/compute_forces_inner_core_Dev.F90(875,7)
+         remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+         remark #15346: vector dependence: assumed OUTPUT dependence between c1 line 876 and c3 line 888
+      LOOP END
+
+      LOOP BEGIN at src/specfem3D/compute_forces_inner_core_Dev.F90(875,7)
+      LOOP END
+
+      LOOP BEGIN at src/specfem3D/compute_forces_inner_core_Dev.F90(875,7)
+      LOOP END
+
+      LOOP BEGIN at src/specfem3D/compute_forces_inner_core_Dev.F90(875,7)
+      LOOP END
+
+      LOOP BEGIN at src/specfem3D/compute_forces_inner_core_Dev.F90(875,7)
+      LOOP END
+   LOOP END
+LOOP END
+===========================================================================
+
+Begin optimization report for: COMPUTE_FORCES_INNER_CORE_DEV:MXM5_3COMP_SINGLEB
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/specfem3D/compute_forces_inner_core_Dev.F90(840,16)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed OUTPUT dependence between c1 line 830 and c3 line 842
+
+   LOOP BEGIN at src/specfem3D/compute_forces_inner_core_Dev.F90(829,5)
+      remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+      remark #15346: vector dependence: assumed OUTPUT dependence between c1 line 830 and c3 line 842
+   LOOP END
+LOOP END
+===========================================================================

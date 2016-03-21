@@ -1,0 +1,35 @@
+        !COMPILER-GENERATED INTERFACE MODULE: Fri Mar 11 15:46:39 2016
+        MODULE GET_EVENT_INFO_SERIAL__genmod
+          INTERFACE 
+            SUBROUTINE GET_EVENT_INFO_SERIAL(YR,JDA,MO,DA,HO,MI,SEC,    &
+     &EVENT_NAME,TSHIFT_CMT,T_SHIFT,ELAT_PDE,ELON_PDE,DEPTH_PDE,MB,     &
+     &CMT_LAT,CMT_LON,CMT_DEPTH,CMT_HDUR,NSOURCES,MRR,MTT,MPP,MRT,MRP,  &
+     &MTP)
+              INTEGER(KIND=4), INTENT(IN) :: NSOURCES
+              INTEGER(KIND=4), INTENT(OUT) :: YR
+              INTEGER(KIND=4), INTENT(OUT) :: JDA
+              INTEGER(KIND=4), INTENT(OUT) :: MO
+              INTEGER(KIND=4), INTENT(OUT) :: DA
+              INTEGER(KIND=4), INTENT(OUT) :: HO
+              INTEGER(KIND=4), INTENT(OUT) :: MI
+              REAL(KIND=8), INTENT(OUT) :: SEC
+              CHARACTER(LEN=20), INTENT(OUT) :: EVENT_NAME
+              REAL(KIND=8), INTENT(OUT) :: TSHIFT_CMT
+              REAL(KIND=8), INTENT(OUT) :: T_SHIFT
+              REAL(KIND=8), INTENT(OUT) :: ELAT_PDE
+              REAL(KIND=8), INTENT(OUT) :: ELON_PDE
+              REAL(KIND=8), INTENT(OUT) :: DEPTH_PDE
+              REAL(KIND=4), INTENT(OUT) :: MB
+              REAL(KIND=8), INTENT(OUT) :: CMT_LAT
+              REAL(KIND=8), INTENT(OUT) :: CMT_LON
+              REAL(KIND=8), INTENT(OUT) :: CMT_DEPTH
+              REAL(KIND=8), INTENT(OUT) :: CMT_HDUR
+              REAL(KIND=8), INTENT(OUT) :: MRR
+              REAL(KIND=8), INTENT(OUT) :: MTT
+              REAL(KIND=8), INTENT(OUT) :: MPP
+              REAL(KIND=8), INTENT(OUT) :: MRT
+              REAL(KIND=8), INTENT(OUT) :: MRP
+              REAL(KIND=8), INTENT(OUT) :: MTP
+            END SUBROUTINE GET_EVENT_INFO_SERIAL
+          END INTERFACE 
+        END MODULE GET_EVENT_INFO_SERIAL__genmod

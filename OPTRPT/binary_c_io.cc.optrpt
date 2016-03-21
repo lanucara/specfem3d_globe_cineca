@@ -1,0 +1,80 @@
+
+Begin optimization report for: write_abs_fbin(int *, char *, int *, int *)
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/shared/binary_c_io.c(299,3)
+   remark #15521: loop was not vectorized: explicitly compute the iteration count before executing the loop or try using canonical loop form
+LOOP END
+===========================================================================
+
+Begin optimization report for: write_abs_buffer_fbin(int *, char *, int *, int *, int *)
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/shared/binary_c_io.c(330,3)
+   remark #15521: loop was not vectorized: explicitly compute the iteration count before executing the loop or try using canonical loop form
+LOOP END
+===========================================================================
+
+Begin optimization report for: read_abs_fbin(int *, char *, int *, int *)
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/shared/binary_c_io.c(369,3)
+   remark #15521: loop was not vectorized: explicitly compute the iteration count before executing the loop or try using canonical loop form
+LOOP END
+===========================================================================
+
+Begin optimization report for: read_abs_buffer_fbin(int *, char *, int *, int *, int *)
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/shared/binary_c_io.c(416,3)
+   remark #15521: loop was not vectorized: explicitly compute the iteration count before executing the loop or try using canonical loop form
+LOOP END
+===========================================================================
+
+Begin optimization report for: write_abs_(int *, char *, int *, int *)
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/shared/binary_c_io.c(299,3) inlined into src/shared/binary_c_io.c(723,3)
+   remark #15521: loop was not vectorized: explicitly compute the iteration count before executing the loop or try using canonical loop form
+LOOP END
+===========================================================================
+
+Begin optimization report for: read_abs_(int *, char *, int *, int *)
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/shared/binary_c_io.c(369,3) inlined into src/shared/binary_c_io.c(733,3)
+   remark #15521: loop was not vectorized: explicitly compute the iteration count before executing the loop or try using canonical loop form
+LOOP END
+===========================================================================
+
+Begin optimization report for: write_abs_buffer_(int *, char *, int *, int *, int *)
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/shared/binary_c_io.c(330,3) inlined into src/shared/binary_c_io.c(744,3)
+   remark #15521: loop was not vectorized: explicitly compute the iteration count before executing the loop or try using canonical loop form
+LOOP END
+===========================================================================
+
+Begin optimization report for: read_abs_buffer_(int *, char *, int *, int *, int *)
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/shared/binary_c_io.c(416,3) inlined into src/shared/binary_c_io.c(754,3)
+   remark #15521: loop was not vectorized: explicitly compute the iteration count before executing the loop or try using canonical loop form
+LOOP END
+===========================================================================

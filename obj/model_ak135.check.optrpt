@@ -1,0 +1,32 @@
+
+Begin optimization report for: MODEL_AK135
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/meshfem3D/model_ak135.f90(131,3)
+   remark #15523: loop was not vectorized: cannot compute loop iteration count before executing the loop.
+LOOP END
+===========================================================================
+
+Begin optimization report for: DEFINE_MODEL_AK135
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/meshfem3D/model_ak135.f90(1019,5)
+   remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_ak135.f90(1020,5)
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_ak135.f90(1021,5)
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_ak135.f90(1022,5)
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_ak135.f90(1023,5)
+LOOP END
+===========================================================================

@@ -1,0 +1,85 @@
+
+Begin optimization report for: GET_GLOBAL_INDIRECT_ADDRESSING
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/shared/get_global.f90(98,3)
+<Peeled>
+LOOP END
+
+LOOP BEGIN at src/shared/get_global.f90(98,3)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/shared/get_global.f90(98,3)
+<Remainder>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/shared/get_global.f90(99,3)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at src/shared/get_global.f90(99,3)
+      remark #15542: loop was not vectorized: inner loop was already vectorized
+
+      LOOP BEGIN at src/shared/get_global.f90(99,3)
+         remark #15542: loop was not vectorized: inner loop was already vectorized
+
+         LOOP BEGIN at src/shared/get_global.f90(99,3)
+            remark #15542: loop was not vectorized: inner loop was already vectorized
+
+            LOOP BEGIN at src/shared/get_global.f90(99,3)
+            <Peeled, Multiversioned v2>
+               remark #15301: PEEL LOOP WAS VECTORIZED
+            LOOP END
+
+            LOOP BEGIN at src/shared/get_global.f90(99,3)
+            <Multiversioned v2>
+               remark #15300: LOOP WAS VECTORIZED
+            LOOP END
+
+            LOOP BEGIN at src/shared/get_global.f90(99,3)
+            <Alternate Alignment Vectorized Loop, Multiversioned v2>
+            LOOP END
+
+            LOOP BEGIN at src/shared/get_global.f90(99,3)
+            <Remainder, Multiversioned v2>
+            LOOP END
+         LOOP END
+      LOOP END
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/shared/get_global.f90(103,3)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed FLOW dependence between MASK_IBOOL line 111 and MASK_IBOOL line 114
+
+   LOOP BEGIN at src/shared/get_global.f90(104,5)
+      remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+      remark #15346: vector dependence: assumed FLOW dependence between MASK_IBOOL line 111 and MASK_IBOOL line 114
+
+      LOOP BEGIN at src/shared/get_global.f90(105,7)
+         remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+         remark #15346: vector dependence: assumed FLOW dependence between MASK_IBOOL line 111 and MASK_IBOOL line 114
+
+         LOOP BEGIN at src/shared/get_global.f90(106,9)
+            remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+            remark #15346: vector dependence: assumed FLOW dependence between MASK_IBOOL line 111 and MASK_IBOOL line 114
+         LOOP END
+
+         LOOP BEGIN at src/shared/get_global.f90(106,9)
+         LOOP END
+
+         LOOP BEGIN at src/shared/get_global.f90(106,9)
+         LOOP END
+
+         LOOP BEGIN at src/shared/get_global.f90(106,9)
+         LOOP END
+
+         LOOP BEGIN at src/shared/get_global.f90(106,9)
+         LOOP END
+      LOOP END
+   LOOP END
+LOOP END
+===========================================================================

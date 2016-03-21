@@ -1,0 +1,381 @@
+
+Begin optimization report for: CREATE_CENTRAL_CUBE_BUFFERS
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/meshfem3D/create_central_cube_buffers.f90(101,7)
+   remark #15301: FUSED LOOP WAS VECTORIZED
+
+   LOOP BEGIN at src/meshfem3D/create_central_cube_buffers.f90(101,7)
+      remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+
+      LOOP BEGIN at src/meshfem3D/create_central_cube_buffers.f90(101,7)
+         remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+
+         LOOP BEGIN at src/meshfem3D/create_central_cube_buffers.f90(101,7)
+            remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+         LOOP END
+
+         LOOP BEGIN at src/meshfem3D/create_central_cube_buffers.f90(101,51)
+         LOOP END
+      LOOP END
+
+      LOOP BEGIN at src/meshfem3D/create_central_cube_buffers.f90(101,51)
+      LOOP END
+   LOOP END
+
+   LOOP BEGIN at src/meshfem3D/create_central_cube_buffers.f90(101,51)
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/create_central_cube_buffers.f90(101,51)
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/create_central_cube_buffers.f90(101,7)
+<Remainder>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+
+   LOOP BEGIN at src/meshfem3D/create_central_cube_buffers.f90(101,7)
+      remark #25460: No loop optimizations reported
+
+      LOOP BEGIN at src/meshfem3D/create_central_cube_buffers.f90(101,7)
+         remark #25460: No loop optimizations reported
+
+         LOOP BEGIN at src/meshfem3D/create_central_cube_buffers.f90(101,7)
+         LOOP END
+      LOOP END
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/create_central_cube_buffers.f90(149,7)
+<Peeled>
+   remark #15301: PEEL LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/create_central_cube_buffers.f90(149,7)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/create_central_cube_buffers.f90(149,7)
+<Remainder>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/create_central_cube_buffers.f90(149,7)
+<Remainder>
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/create_central_cube_buffers.f90(157,7)
+<Peeled>
+   remark #15301: PEEL LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/create_central_cube_buffers.f90(157,7)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/create_central_cube_buffers.f90(157,7)
+<Remainder>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/create_central_cube_buffers.f90(157,7)
+<Remainder>
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/create_central_cube_buffers.f90(165,7)
+<Peeled>
+   remark #15301: PEEL LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/create_central_cube_buffers.f90(165,7)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/create_central_cube_buffers.f90(165,7)
+<Remainder>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/create_central_cube_buffers.f90(165,7)
+<Remainder>
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/create_central_cube_buffers.f90(173,7)
+<Peeled>
+   remark #15301: PEEL LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/create_central_cube_buffers.f90(173,7)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/create_central_cube_buffers.f90(173,7)
+<Remainder>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/create_central_cube_buffers.f90(173,7)
+<Remainder>
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/create_central_cube_buffers.f90(196,7)
+<Peeled>
+   remark #15301: PEEL LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/create_central_cube_buffers.f90(196,7)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/create_central_cube_buffers.f90(196,7)
+<Remainder>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/create_central_cube_buffers.f90(196,7)
+<Remainder>
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/create_central_cube_buffers.f90(204,7)
+<Peeled>
+   remark #15301: PEEL LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/create_central_cube_buffers.f90(204,7)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/create_central_cube_buffers.f90(204,7)
+<Remainder>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/create_central_cube_buffers.f90(204,7)
+<Remainder>
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/create_central_cube_buffers.f90(212,7)
+<Peeled>
+   remark #15301: PEEL LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/create_central_cube_buffers.f90(212,7)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/create_central_cube_buffers.f90(212,7)
+<Remainder>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/create_central_cube_buffers.f90(212,7)
+<Remainder>
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/create_central_cube_buffers.f90(220,7)
+<Peeled>
+   remark #15301: PEEL LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/create_central_cube_buffers.f90(220,7)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/create_central_cube_buffers.f90(220,7)
+<Remainder>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/create_central_cube_buffers.f90(220,7)
+<Remainder>
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/create_central_cube_buffers.f90(275,5)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed FLOW dependence between sender line 278 and sender line 279
+
+   LOOP BEGIN at src/meshfem3D/create_central_cube_buffers.f90(282,5)
+      remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+   LOOP END
+
+   LOOP BEGIN at src/meshfem3D/create_central_cube_buffers.f90(282,5)
+   <Remainder>
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/create_central_cube_buffers.f90(291,5)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed OUTPUT dependence between buffer_slices line 301 and buffer_slices line 301
+
+   LOOP BEGIN at src/meshfem3D/create_central_cube_buffers.f90(297,7)
+      remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+      remark #15346: vector dependence: assumed OUTPUT dependence between buffer_slices line 301 and buffer_slices line 301
+
+      LOOP BEGIN at src/meshfem3D/create_central_cube_buffers.f90(298,9)
+         remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+      LOOP END
+
+      LOOP BEGIN at src/meshfem3D/create_central_cube_buffers.f90(298,9)
+      LOOP END
+
+      LOOP BEGIN at src/meshfem3D/create_central_cube_buffers.f90(298,9)
+      LOOP END
+
+      LOOP BEGIN at src/meshfem3D/create_central_cube_buffers.f90(298,9)
+      LOOP END
+
+      LOOP BEGIN at src/meshfem3D/create_central_cube_buffers.f90(298,9)
+      LOOP END
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/create_central_cube_buffers.f90(324,5)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed OUTPUT dependence between buffer_slices line 331 and buffer_slices line 331
+
+   LOOP BEGIN at src/meshfem3D/create_central_cube_buffers.f90(327,9)
+      remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+      remark #15346: vector dependence: assumed OUTPUT dependence between buffer_slices line 331 and buffer_slices line 331
+
+      LOOP BEGIN at src/meshfem3D/create_central_cube_buffers.f90(328,11)
+         remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+      LOOP END
+
+      LOOP BEGIN at src/meshfem3D/create_central_cube_buffers.f90(328,11)
+      LOOP END
+
+      LOOP BEGIN at src/meshfem3D/create_central_cube_buffers.f90(328,11)
+      LOOP END
+
+      LOOP BEGIN at src/meshfem3D/create_central_cube_buffers.f90(328,11)
+      LOOP END
+
+      LOOP BEGIN at src/meshfem3D/create_central_cube_buffers.f90(328,11)
+      LOOP END
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/create_central_cube_buffers.f90(348,5)
+   remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/create_central_cube_buffers.f90(348,5)
+<Remainder>
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/create_central_cube_buffers.f90(353,3)
+<Peeled>
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/create_central_cube_buffers.f90(353,3)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/create_central_cube_buffers.f90(353,3)
+<Remainder>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/create_central_cube_buffers.f90(376,11)
+   remark #15521: loop was not vectorized: explicitly compute the iteration count before executing the loop or try using canonical loop form
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/create_central_cube_buffers.f90(401,11)
+   remark #15521: loop was not vectorized: explicitly compute the iteration count before executing the loop or try using canonical loop form
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/create_central_cube_buffers.f90(426,11)
+   remark #15521: loop was not vectorized: explicitly compute the iteration count before executing the loop or try using canonical loop form
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/create_central_cube_buffers.f90(451,11)
+   remark #15521: loop was not vectorized: explicitly compute the iteration count before executing the loop or try using canonical loop form
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/create_central_cube_buffers.f90(471,11)
+   remark #15521: loop was not vectorized: explicitly compute the iteration count before executing the loop or try using canonical loop form
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/create_central_cube_buffers.f90(500,11)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/create_central_cube_buffers.f90(500,11)
+<Remainder>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/create_central_cube_buffers.f90(500,11)
+<Remainder>
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/create_central_cube_buffers.f90(516,15)
+   remark #15521: loop was not vectorized: explicitly compute the iteration count before executing the loop or try using canonical loop form
+LOOP END
+
+
+Non-optimizable loops:
+
+
+LOOP BEGIN at src/meshfem3D/create_central_cube_buffers.f90(537,4)
+   remark #15536: loop was not vectorized: inner loop throttling prevents vectorization of this outer loop. Refer to inner loop message for more details.
+
+   LOOP BEGIN at src/meshfem3D/create_central_cube_buffers.f90(496,5)
+      remark #15536: loop was not vectorized: inner loop throttling prevents vectorization of this outer loop. Refer to inner loop message for more details.
+
+      LOOP BEGIN at src/meshfem3D/create_central_cube_buffers.f90(366,7)
+         remark #15536: loop was not vectorized: inner loop throttling prevents vectorization of this outer loop. Refer to inner loop message for more details.
+
+         LOOP BEGIN at src/meshfem3D/create_central_cube_buffers.f90(387,9)
+            remark #15341: loop was not vectorized: nonstandard loop is not a vectorization candidate
+         LOOP END
+      LOOP END
+
+      LOOP BEGIN at src/meshfem3D/create_central_cube_buffers.f90(391,7)
+         remark #15536: loop was not vectorized: inner loop throttling prevents vectorization of this outer loop. Refer to inner loop message for more details.
+
+         LOOP BEGIN at src/meshfem3D/create_central_cube_buffers.f90(412,9)
+            remark #15341: loop was not vectorized: nonstandard loop is not a vectorization candidate
+         LOOP END
+      LOOP END
+
+      LOOP BEGIN at src/meshfem3D/create_central_cube_buffers.f90(416,7)
+         remark #15536: loop was not vectorized: inner loop throttling prevents vectorization of this outer loop. Refer to inner loop message for more details.
+
+         LOOP BEGIN at src/meshfem3D/create_central_cube_buffers.f90(437,9)
+            remark #15341: loop was not vectorized: nonstandard loop is not a vectorization candidate
+         LOOP END
+      LOOP END
+
+      LOOP BEGIN at src/meshfem3D/create_central_cube_buffers.f90(441,7)
+         remark #15536: loop was not vectorized: inner loop throttling prevents vectorization of this outer loop. Refer to inner loop message for more details.
+
+         LOOP BEGIN at src/meshfem3D/create_central_cube_buffers.f90(462,9)
+            remark #15341: loop was not vectorized: nonstandard loop is not a vectorization candidate
+         LOOP END
+      LOOP END
+
+      LOOP BEGIN at src/meshfem3D/create_central_cube_buffers.f90(466,7)
+         remark #15536: loop was not vectorized: inner loop throttling prevents vectorization of this outer loop. Refer to inner loop message for more details.
+
+         LOOP BEGIN at src/meshfem3D/create_central_cube_buffers.f90(482,9)
+            remark #15341: loop was not vectorized: nonstandard loop is not a vectorization candidate
+         LOOP END
+      LOOP END
+   LOOP END
+
+   LOOP BEGIN at src/meshfem3D/create_central_cube_buffers.f90(532,9)
+      remark #15536: loop was not vectorized: inner loop throttling prevents vectorization of this outer loop. Refer to inner loop message for more details.
+
+      LOOP BEGIN at src/meshfem3D/create_central_cube_buffers.f90(511,11)
+         remark #15536: loop was not vectorized: inner loop throttling prevents vectorization of this outer loop. Refer to inner loop message for more details.
+
+         LOOP BEGIN at src/meshfem3D/create_central_cube_buffers.f90(527,13)
+            remark #15341: loop was not vectorized: nonstandard loop is not a vectorization candidate
+         LOOP END
+      LOOP END
+   LOOP END
+LOOP END
+===========================================================================

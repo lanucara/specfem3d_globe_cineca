@@ -1,0 +1,11 @@
+        !COMPILER-GENERATED INTERFACE MODULE: Fri Mar 11 15:46:07 2016
+        MODULE ICOLAT_ILON__genmod
+          INTERFACE 
+            SUBROUTINE ICOLAT_ILON(XLAT,XLON,ICOLAT,ILON)
+              REAL(KIND=8) :: XLAT
+              REAL(KIND=8) :: XLON
+              INTEGER(KIND=4) :: ICOLAT
+              INTEGER(KIND=4) :: ILON
+            END SUBROUTINE ICOLAT_ILON
+          END INTERFACE 
+        END MODULE ICOLAT_ILON__genmod

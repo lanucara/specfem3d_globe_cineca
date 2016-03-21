@@ -1,0 +1,57 @@
+
+Begin optimization report for: BROADCAST_COMPUTED_PARAMETERS
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/shared/broadcast_computed_parameters.f90(49,3)
+   remark #15398: loop was not vectorized: loop was transformed to memset or memcpy
+LOOP END
+
+LOOP BEGIN at src/shared/broadcast_computed_parameters.f90(50,3)
+   remark #15398: loop was not vectorized: loop was transformed to memset or memcpy
+LOOP END
+
+LOOP BEGIN at src/shared/broadcast_computed_parameters.f90(51,3)
+   remark #15398: loop was not vectorized: loop was transformed to memset or memcpy
+LOOP END
+
+LOOP BEGIN at src/shared/broadcast_computed_parameters.f90(58,5)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at src/shared/broadcast_computed_parameters.f90(58,5)
+   <Multiversioned v2>
+      remark #15300: LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/shared/broadcast_computed_parameters.f90(58,5)
+   <Remainder, Multiversioned v2>
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/shared/broadcast_computed_parameters.f90(80,5)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at src/shared/broadcast_computed_parameters.f90(80,5)
+   <Multiversioned v2>
+      remark #15300: LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/shared/broadcast_computed_parameters.f90(80,5)
+   <Remainder, Multiversioned v2>
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/shared/broadcast_computed_parameters.f90(105,5)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at src/shared/broadcast_computed_parameters.f90(105,5)
+   <Multiversioned v2>
+      remark #15300: LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/shared/broadcast_computed_parameters.f90(105,5)
+   <Remainder, Multiversioned v2>
+   LOOP END
+LOOP END
+===========================================================================

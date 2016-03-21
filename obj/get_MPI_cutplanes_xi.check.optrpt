@@ -1,0 +1,76 @@
+
+Begin optimization report for: GET_MPI_CUTPLANES_XI
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/meshfem3D/get_MPI_cutplanes_xi.f90(110,3)
+   remark #15398: loop was not vectorized: loop was transformed to memset or memcpy
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/get_MPI_cutplanes_xi.f90(113,3)
+   remark #15398: loop was not vectorized: loop was transformed to memset or memcpy
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/get_MPI_cutplanes_xi.f90(119,3)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed OUTPUT dependence between mask_ibool line 128 and mask_ibool line 128
+
+   LOOP BEGIN at src/meshfem3D/get_MPI_cutplanes_xi.f90(124,7)
+      remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+      remark #15346: vector dependence: assumed OUTPUT dependence between mask_ibool line 128 and mask_ibool line 128
+
+      LOOP BEGIN at src/meshfem3D/get_MPI_cutplanes_xi.f90(125,11)
+         remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+         remark #15346: vector dependence: assumed FLOW dependence between mask_ibool line 128 and mask_ibool line 127
+      LOOP END
+
+      LOOP BEGIN at src/meshfem3D/get_MPI_cutplanes_xi.f90(125,11)
+      LOOP END
+
+      LOOP BEGIN at src/meshfem3D/get_MPI_cutplanes_xi.f90(125,11)
+      LOOP END
+
+      LOOP BEGIN at src/meshfem3D/get_MPI_cutplanes_xi.f90(125,11)
+      LOOP END
+
+      LOOP BEGIN at src/meshfem3D/get_MPI_cutplanes_xi.f90(125,11)
+      LOOP END
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/get_MPI_cutplanes_xi.f90(179,3)
+   remark #15398: loop was not vectorized: loop was transformed to memset or memcpy
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/get_MPI_cutplanes_xi.f90(182,3)
+   remark #15398: loop was not vectorized: loop was transformed to memset or memcpy
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/get_MPI_cutplanes_xi.f90(188,3)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed OUTPUT dependence between mask_ibool line 197 and mask_ibool line 197
+
+   LOOP BEGIN at src/meshfem3D/get_MPI_cutplanes_xi.f90(193,7)
+      remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+      remark #15346: vector dependence: assumed OUTPUT dependence between mask_ibool line 197 and mask_ibool line 197
+
+      LOOP BEGIN at src/meshfem3D/get_MPI_cutplanes_xi.f90(194,9)
+         remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+         remark #15346: vector dependence: assumed FLOW dependence between mask_ibool line 197 and mask_ibool line 196
+      LOOP END
+
+      LOOP BEGIN at src/meshfem3D/get_MPI_cutplanes_xi.f90(194,9)
+      LOOP END
+
+      LOOP BEGIN at src/meshfem3D/get_MPI_cutplanes_xi.f90(194,9)
+      LOOP END
+
+      LOOP BEGIN at src/meshfem3D/get_MPI_cutplanes_xi.f90(194,9)
+      LOOP END
+
+      LOOP BEGIN at src/meshfem3D/get_MPI_cutplanes_xi.f90(194,9)
+      LOOP END
+   LOOP END
+LOOP END
+===========================================================================

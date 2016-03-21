@@ -1,0 +1,89 @@
+
+Begin optimization report for: COMPUTE_COUPLING_FLUID_CMB
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/specfem3D/compute_coupling.f90(62,3)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed FLOW dependence between accel_outer_core line 97 and accel_outer_core line 97
+
+   LOOP BEGIN at src/specfem3D/compute_coupling.f90(73,5)
+      remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+      remark #15346: vector dependence: assumed FLOW dependence between accel_outer_core line 97 and accel_outer_core line 97
+   LOOP END
+LOOP END
+===========================================================================
+
+Begin optimization report for: COMPUTE_COUPLING_FLUID_ICB
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/specfem3D/compute_coupling.f90(143,3)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed FLOW dependence between accel_outer_core line 178 and accel_outer_core line 178
+
+   LOOP BEGIN at src/specfem3D/compute_coupling.f90(153,5)
+      remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+      remark #15346: vector dependence: assumed FLOW dependence between accel_outer_core line 178 and accel_outer_core line 178
+   LOOP END
+LOOP END
+===========================================================================
+
+Begin optimization report for: COMPUTE_COUPLING_CMB_FLUID
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/specfem3D/compute_coupling.f90(227,3)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed FLOW dependence between accel_crust_mantle line 262 and accel_crust_mantle line 262
+
+   LOOP BEGIN at src/specfem3D/compute_coupling.f90(237,5)
+      remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+      remark #15346: vector dependence: assumed FLOW dependence between accel_crust_mantle line 262 and accel_crust_mantle line 262
+   LOOP END
+LOOP END
+===========================================================================
+
+Begin optimization report for: COMPUTE_COUPLING_ICB_FLUID
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/specfem3D/compute_coupling.f90(314,3)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed FLOW dependence between accel_inner_core line 349 and accel_inner_core line 349
+
+   LOOP BEGIN at src/specfem3D/compute_coupling.f90(324,5)
+      remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+      remark #15346: vector dependence: assumed FLOW dependence between accel_inner_core line 349 and accel_inner_core line 349
+   LOOP END
+LOOP END
+===========================================================================
+
+Begin optimization report for: COMPUTE_COUPLING_OCEAN
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/specfem3D/compute_coupling.f90(406,3)
+   remark #15398: loop was not vectorized: loop was transformed to memset or memcpy
+LOOP END
+
+LOOP BEGIN at src/specfem3D/compute_coupling.f90(409,3)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed ANTI dependence between accel_crust_mantle line 433 and accel_crust_mantle line 441
+
+   LOOP BEGIN at src/specfem3D/compute_coupling.f90(416,5)
+      remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+      remark #15346: vector dependence: assumed ANTI dependence between accel_crust_mantle line 433 and accel_crust_mantle line 441
+
+      LOOP BEGIN at src/specfem3D/compute_coupling.f90(417,7)
+         remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+         remark #15346: vector dependence: assumed ANTI dependence between accel_crust_mantle line 433 and accel_crust_mantle line 441
+      LOOP END
+   LOOP END
+LOOP END
+===========================================================================

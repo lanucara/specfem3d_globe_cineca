@@ -1,0 +1,10 @@
+
+Begin optimization report for: COUNT_NUMBER_OF_SOURCES
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/shared/count_number_of_sources.f90(59,3)
+   remark #15521: loop was not vectorized: explicitly compute the iteration count before executing the loop or try using canonical loop form
+LOOP END
+===========================================================================

@@ -1,0 +1,26 @@
+
+Begin optimization report for: ADD_MISSING_NODES
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/meshfem3D/add_missing_nodes.f90(123,3)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed FLOW dependence between offset_x line 128 and offset_x line 128
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/add_missing_nodes.f90(137,3)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed FLOW dependence between offset_x line 142 and offset_x line 142
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/add_missing_nodes.f90(160,18)
+   remark #15301: FUSED LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/add_missing_nodes.f90(161,18)
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/add_missing_nodes.f90(162,18)
+LOOP END
+===========================================================================

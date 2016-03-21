@@ -1,0 +1,9 @@
+        !COMPILER-GENERATED INTERFACE MODULE: Fri Mar 11 15:45:23 2016
+        MODULE EXIT_MPI__genmod
+          INTERFACE 
+            SUBROUTINE EXIT_MPI(MYRANK,ERROR_MSG)
+              INTEGER(KIND=4) :: MYRANK
+              CHARACTER(*) :: ERROR_MSG
+            END SUBROUTINE EXIT_MPI
+          END INTERFACE 
+        END MODULE EXIT_MPI__genmod

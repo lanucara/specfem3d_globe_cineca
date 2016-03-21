@@ -1,0 +1,96 @@
+
+Begin optimization report for: DEFINE_SUPERBRICK
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/meshfem3D/define_superbrick.f90(598,3)
+<Peeled>
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/define_superbrick.f90(598,3)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/define_superbrick.f90(598,3)
+<Remainder>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+===========================================================================
+
+Begin optimization report for: DEFINE_SUPERBRICK_ONE_LAYER
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/meshfem3D/define_superbrick.f90(1153,3)
+<Peeled>
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/define_superbrick.f90(1153,3)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/define_superbrick.f90(1153,3)
+<Remainder>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+===========================================================================
+
+Begin optimization report for: DEFINE_BASIC_DOUBLING_BRICK
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/meshfem3D/define_superbrick.f90(1398,11)
+<Peeled>
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/define_superbrick.f90(1398,11)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/define_superbrick.f90(1398,11)
+<Remainder>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/define_superbrick.f90(1604,11)
+<Peeled>
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/define_superbrick.f90(1604,11)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/define_superbrick.f90(1604,11)
+<Remainder>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/define_superbrick.f90(1810,11)
+<Peeled>
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/define_superbrick.f90(1810,11)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/define_superbrick.f90(1810,11)
+<Remainder>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/define_superbrick.f90(2016,11)
+<Peeled>
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/define_superbrick.f90(2016,11)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/define_superbrick.f90(2016,11)
+<Remainder>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+===========================================================================

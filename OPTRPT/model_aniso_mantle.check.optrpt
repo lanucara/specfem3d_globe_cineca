@@ -1,0 +1,291 @@
+
+Begin optimization report for: BUILD_CIJ
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/meshfem3D/model_aniso_mantle.f90(180,3)
+<Peeled>
+   remark #15301: PEEL LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_aniso_mantle.f90(180,3)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_aniso_mantle.f90(180,3)
+<Remainder>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_aniso_mantle.f90(205,3)
+   remark #15301: FUSED LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_aniso_mantle.f90(244,3)
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_aniso_mantle.f90(205,3)
+<Remainder>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_aniso_mantle.f90(205,3)
+   remark #15301: FUSED LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_aniso_mantle.f90(205,3)
+<Remainder>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+===========================================================================
+
+Begin optimization report for: MODEL_ANISO_MANTLE
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/meshfem3D/model_aniso_mantle.f90(180,3) inlined into src/meshfem3D/model_aniso_mantle.f90(117,8)
+<Peeled>
+   remark #15301: PEEL LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_aniso_mantle.f90(180,3) inlined into src/meshfem3D/model_aniso_mantle.f90(117,8)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_aniso_mantle.f90(180,3) inlined into src/meshfem3D/model_aniso_mantle.f90(117,8)
+<Remainder>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_aniso_mantle.f90(205,3) inlined into src/meshfem3D/model_aniso_mantle.f90(117,8)
+   remark #15301: FUSED LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_aniso_mantle.f90(244,3) inlined into src/meshfem3D/model_aniso_mantle.f90(117,8)
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_aniso_mantle.f90(205,3) inlined into src/meshfem3D/model_aniso_mantle.f90(117,8)
+<Remainder>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_aniso_mantle.f90(205,3) inlined into src/meshfem3D/model_aniso_mantle.f90(117,8)
+   remark #15301: FUSED LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_aniso_mantle.f90(205,3) inlined into src/meshfem3D/model_aniso_mantle.f90(117,8)
+<Remainder>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+===========================================================================
+
+Begin optimization report for: READ_ANISO_MANTLE_MODEL
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/meshfem3D/model_aniso_mantle.f90(424,7)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at src/meshfem3D/model_aniso_mantle.f90(434,9)
+      remark #15300: LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/meshfem3D/model_aniso_mantle.f90(434,9)
+   <Remainder>
+      remark #15301: REMAINDER LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/meshfem3D/model_aniso_mantle.f90(434,9)
+   <Remainder>
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_aniso_mantle.f90(472,7)
+   remark #15520: loop was not vectorized: loop with early exits cannot be vectorized unless it meets search loop idiom criteria
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_aniso_mantle.f90(476,7)
+   remark #15520: loop was not vectorized: loop with early exits cannot be vectorized unless it meets search loop idiom criteria
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_aniso_mantle.f90(480,7)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at src/meshfem3D/model_aniso_mantle.f90(481,9)
+      remark #15300: LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/meshfem3D/model_aniso_mantle.f90(481,9)
+   <Remainder>
+      remark #15301: REMAINDER LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/meshfem3D/model_aniso_mantle.f90(481,9)
+   <Remainder>
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_aniso_mantle.f90(497,7)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at src/meshfem3D/model_aniso_mantle.f90(496,5)
+      remark #15542: loop was not vectorized: inner loop was already vectorized
+
+      LOOP BEGIN at src/meshfem3D/model_aniso_mantle.f90(495,3)
+         remark #15301: PERMUTED LOOP WAS VECTORIZED
+
+         LOOP BEGIN at src/meshfem3D/model_aniso_mantle.f90(521,9)
+         LOOP END
+      LOOP END
+
+      LOOP BEGIN at src/meshfem3D/model_aniso_mantle.f90(495,3)
+      <Remainder>
+      LOOP END
+   LOOP END
+LOOP END
+
+
+Non-optimizable loops:
+
+
+LOOP BEGIN at src/meshfem3D/model_aniso_mantle.f90(445,4)
+   remark #15536: loop was not vectorized: inner loop throttling prevents vectorization of this outer loop. Refer to inner loop message for more details.
+
+   LOOP BEGIN at src/meshfem3D/model_aniso_mantle.f90(444,6)
+      remark #15341: loop was not vectorized: nonstandard loop is not a vectorization candidate
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_aniso_mantle.f90(491,3)
+   remark #15536: loop was not vectorized: inner loop throttling prevents vectorization of this outer loop. Refer to inner loop message for more details.
+
+   LOOP BEGIN at src/meshfem3D/model_aniso_mantle.f90(490,5)
+      remark #15341: loop was not vectorized: nonstandard loop is not a vectorization candidate
+   LOOP END
+LOOP END
+===========================================================================
+
+Begin optimization report for: LECMOD
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/meshfem3D/model_aniso_mantle.f90(565,6)
+   remark #15520: loop was not vectorized: loop with early exits cannot be vectorized unless it meets search loop idiom criteria
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_aniso_mantle.f90(569,6)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_aniso_mantle.f90(569,6)
+<Remainder>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_aniso_mantle.f90(573,6)
+   remark #15300: LOOP WAS VECTORIZED
+
+   LOOP BEGIN at src/meshfem3D/model_aniso_mantle.f90(592,8)
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_aniso_mantle.f90(573,6)
+<Remainder>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_aniso_mantle.f90(605,3)
+   remark #15520: loop was not vectorized: loop with early exits cannot be vectorized unless it meets search loop idiom criteria
+LOOP END
+===========================================================================
+
+Begin optimization report for: MODEL_ANISO_MANTLE_BROADCAST
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/meshfem3D/model_aniso_mantle.f90(424,7) inlined into src/meshfem3D/model_aniso_mantle.f90(75,20)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at src/meshfem3D/model_aniso_mantle.f90(434,9) inlined into src/meshfem3D/model_aniso_mantle.f90(75,20)
+      remark #15300: LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/meshfem3D/model_aniso_mantle.f90(434,9) inlined into src/meshfem3D/model_aniso_mantle.f90(75,20)
+   <Remainder>
+      remark #15301: REMAINDER LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/meshfem3D/model_aniso_mantle.f90(434,9) inlined into src/meshfem3D/model_aniso_mantle.f90(75,20)
+   <Remainder>
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_aniso_mantle.f90(472,7) inlined into src/meshfem3D/model_aniso_mantle.f90(75,20)
+   remark #15520: loop was not vectorized: loop with early exits cannot be vectorized unless it meets search loop idiom criteria
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_aniso_mantle.f90(476,7) inlined into src/meshfem3D/model_aniso_mantle.f90(75,20)
+   remark #15520: loop was not vectorized: loop with early exits cannot be vectorized unless it meets search loop idiom criteria
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_aniso_mantle.f90(480,7) inlined into src/meshfem3D/model_aniso_mantle.f90(75,20)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at src/meshfem3D/model_aniso_mantle.f90(481,9) inlined into src/meshfem3D/model_aniso_mantle.f90(75,20)
+      remark #15300: LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/meshfem3D/model_aniso_mantle.f90(481,9) inlined into src/meshfem3D/model_aniso_mantle.f90(75,20)
+   <Remainder>
+      remark #15301: REMAINDER LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/meshfem3D/model_aniso_mantle.f90(481,9) inlined into src/meshfem3D/model_aniso_mantle.f90(75,20)
+   <Remainder>
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_aniso_mantle.f90(497,7) inlined into src/meshfem3D/model_aniso_mantle.f90(75,20)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at src/meshfem3D/model_aniso_mantle.f90(496,5) inlined into src/meshfem3D/model_aniso_mantle.f90(75,20)
+      remark #15542: loop was not vectorized: inner loop was already vectorized
+
+      LOOP BEGIN at src/meshfem3D/model_aniso_mantle.f90(495,3) inlined into src/meshfem3D/model_aniso_mantle.f90(75,20)
+         remark #15301: PERMUTED LOOP WAS VECTORIZED
+
+         LOOP BEGIN at src/meshfem3D/model_aniso_mantle.f90(521,9) inlined into src/meshfem3D/model_aniso_mantle.f90(75,20)
+         LOOP END
+      LOOP END
+
+      LOOP BEGIN at src/meshfem3D/model_aniso_mantle.f90(495,3) inlined into src/meshfem3D/model_aniso_mantle.f90(75,20)
+      <Remainder>
+      LOOP END
+   LOOP END
+LOOP END
+
+
+Non-optimizable loops:
+
+
+LOOP BEGIN at src/meshfem3D/model_aniso_mantle.f90(445,4) inlined into src/meshfem3D/model_aniso_mantle.f90(75,20)
+   remark #15536: loop was not vectorized: inner loop throttling prevents vectorization of this outer loop. Refer to inner loop message for more details.
+
+   LOOP BEGIN at src/meshfem3D/model_aniso_mantle.f90(444,6) inlined into src/meshfem3D/model_aniso_mantle.f90(75,20)
+      remark #15341: loop was not vectorized: nonstandard loop is not a vectorization candidate
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_aniso_mantle.f90(491,3) inlined into src/meshfem3D/model_aniso_mantle.f90(75,20)
+   remark #15536: loop was not vectorized: inner loop throttling prevents vectorization of this outer loop. Refer to inner loop message for more details.
+
+   LOOP BEGIN at src/meshfem3D/model_aniso_mantle.f90(490,5) inlined into src/meshfem3D/model_aniso_mantle.f90(75,20)
+      remark #15341: loop was not vectorized: nonstandard loop is not a vectorization candidate
+   LOOP END
+LOOP END
+===========================================================================

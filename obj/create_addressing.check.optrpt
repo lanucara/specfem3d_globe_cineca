@@ -1,0 +1,111 @@
+
+Begin optimization report for: CREATE_ADDRESSING
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/meshfem3D/create_addressing.f90(48,3)
+   remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+   LOOP BEGIN at src/meshfem3D/create_addressing.f90(48,3)
+      remark #15398: loop was not vectorized: loop was transformed to memset or memcpy
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/create_addressing.f90(49,3)
+   remark #15398: loop was not vectorized: loop was transformed to memset or memcpy
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/create_addressing.f90(50,3)
+   remark #15398: loop was not vectorized: loop was transformed to memset or memcpy
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/create_addressing.f90(51,3)
+   remark #15398: loop was not vectorized: loop was transformed to memset or memcpy
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/create_addressing.f90(62,3)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at src/meshfem3D/create_addressing.f90(63,5)
+      remark #15542: loop was not vectorized: inner loop was already vectorized
+
+      LOOP BEGIN at src/meshfem3D/create_addressing.f90(64,7)
+         remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+         remark #15346: vector dependence: assumed FLOW dependence between 80 line 70 and 80 line 70
+      LOOP END
+
+      LOOP BEGIN at src/meshfem3D/create_addressing.f90(64,7)
+      <Peeled>
+         remark #15301: PEEL LOOP WAS VECTORIZED
+      LOOP END
+
+      LOOP BEGIN at src/meshfem3D/create_addressing.f90(64,7)
+         remark #15300: LOOP WAS VECTORIZED
+      LOOP END
+
+      LOOP BEGIN at src/meshfem3D/create_addressing.f90(64,7)
+      <Alternate Alignment Vectorized Loop>
+      LOOP END
+
+      LOOP BEGIN at src/meshfem3D/create_addressing.f90(64,7)
+      <Remainder>
+         remark #15301: REMAINDER LOOP WAS VECTORIZED
+      LOOP END
+
+      LOOP BEGIN at src/meshfem3D/create_addressing.f90(64,7)
+      <Remainder>
+      LOOP END
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/create_addressing.f90(81,7)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed FLOW dependence between 80 line 82 and 80 line 87
+
+   LOOP BEGIN at src/meshfem3D/create_addressing.f90(83,9)
+      remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+      remark #15346: vector dependence: assumed FLOW dependence between 80 line 85 and 80 line 85
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/create_addressing.f90(90,7)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed FLOW dependence between 80 line 91 and 80 line 106
+
+   LOOP BEGIN at src/meshfem3D/create_addressing.f90(92,9)
+      remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+      remark #15346: vector dependence: assumed FLOW dependence between 80 line 94 and 80 line 94
+   LOOP END
+
+   LOOP BEGIN at src/meshfem3D/create_addressing.f90(97,9)
+      remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+      remark #15346: vector dependence: assumed FLOW dependence between 80 line 99 and 80 line 99
+   LOOP END
+
+   LOOP BEGIN at src/meshfem3D/create_addressing.f90(102,9)
+      remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+      remark #15346: vector dependence: assumed FLOW dependence between 80 line 104 and 80 line 104
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/create_addressing.f90(109,7)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed FLOW dependence between 80 line 110 and 80 line 115
+
+   LOOP BEGIN at src/meshfem3D/create_addressing.f90(111,9)
+      remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+      remark #15346: vector dependence: assumed FLOW dependence between 80 line 113 and 80 line 113
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/create_addressing.f90(118,7)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed FLOW dependence between 80 line 119 and 80 line 124
+
+   LOOP BEGIN at src/meshfem3D/create_addressing.f90(120,9)
+      remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+      remark #15346: vector dependence: assumed FLOW dependence between 80 line 122 and 80 line 122
+   LOOP END
+LOOP END
+===========================================================================

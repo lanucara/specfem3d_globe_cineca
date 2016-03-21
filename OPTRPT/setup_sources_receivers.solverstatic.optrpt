@@ -1,0 +1,445 @@
+
+Begin optimization report for: SETUP_SOURCES_RECEIVERS_ADJINDX
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/specfem3D/setup_sources_receivers.f90(827,3)
+   remark #15398: loop was not vectorized: loop was transformed to memset or memcpy
+LOOP END
+
+LOOP BEGIN at src/specfem3D/setup_sources_receivers.f90(828,3)
+   remark #15398: loop was not vectorized: loop was transformed to memset or memcpy
+LOOP END
+
+LOOP BEGIN at src/specfem3D/setup_sources_receivers.f90(845,3)
+<Distributed chunk1>
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed FLOW dependence between iadjsrc_len line 865 and iadjsrc_len line 879
+LOOP END
+
+LOOP BEGIN at src/specfem3D/setup_sources_receivers.f90(845,3)
+<Peeled, Distributed chunk2>
+   remark #15301: PEEL LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/setup_sources_receivers.f90(845,3)
+<Distributed chunk2>
+   remark #15301: PARTIAL LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/setup_sources_receivers.f90(845,3)
+<Remainder, Distributed chunk2>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+===========================================================================
+
+Begin optimization report for: SETUP_SOURCES
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/specfem3D/setup_sources_receivers.f90(146,11)
+<Peeled>
+   remark #15301: PEEL LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/setup_sources_receivers.f90(146,11)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/setup_sources_receivers.f90(146,11)
+<Remainder>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/setup_sources_receivers.f90(152,5)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details   [ src/specfem3D/setup_sources_receivers.f90(153,54) ]
+LOOP END
+
+LOOP BEGIN at src/specfem3D/setup_sources_receivers.f90(152,5)
+<Remainder>
+LOOP END
+
+LOOP BEGIN at src/specfem3D/setup_sources_receivers.f90(167,5)
+<Peeled>
+   remark #15301: PEEL LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/setup_sources_receivers.f90(167,5)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/setup_sources_receivers.f90(167,5)
+<Remainder>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/setup_sources_receivers.f90(176,3)
+<Peeled>
+   remark #15301: PEEL LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/setup_sources_receivers.f90(176,3)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/setup_sources_receivers.f90(176,3)
+<Alternate Alignment Vectorized Loop>
+LOOP END
+
+LOOP BEGIN at src/specfem3D/setup_sources_receivers.f90(176,3)
+<Remainder>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/setup_sources_receivers.f90(179,16)
+<Peeled>
+   remark #15301: PEEL LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/setup_sources_receivers.f90(179,16)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/setup_sources_receivers.f90(179,16)
+<Alternate Alignment Vectorized Loop>
+LOOP END
+
+LOOP BEGIN at src/specfem3D/setup_sources_receivers.f90(179,16)
+<Remainder>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/setup_sources_receivers.f90(252,5)
+   remark #15521: loop was not vectorized: explicitly compute the iteration count before executing the loop or try using canonical loop form
+LOOP END
+===========================================================================
+
+Begin optimization report for: SETUP_RECEIVERS
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/specfem3D/setup_sources_receivers.f90(420,5)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details   [ src/specfem3D/setup_sources_receivers.f90(421,48) ]
+LOOP END
+
+LOOP BEGIN at src/specfem3D/setup_sources_receivers.f90(420,5)
+<Remainder>
+LOOP END
+
+LOOP BEGIN at src/specfem3D/setup_sources_receivers.f90(425,5)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details   [ src/specfem3D/setup_sources_receivers.f90(426,54) ]
+LOOP END
+
+LOOP BEGIN at src/specfem3D/setup_sources_receivers.f90(425,5)
+<Remainder>
+LOOP END
+
+LOOP BEGIN at src/specfem3D/setup_sources_receivers.f90(437,5)
+   remark #15521: loop was not vectorized: explicitly compute the iteration count before executing the loop or try using canonical loop form
+LOOP END
+
+LOOP BEGIN at src/specfem3D/setup_sources_receivers.f90(517,3)
+   remark #15398: loop was not vectorized: loop was transformed to memset or memcpy
+LOOP END
+
+LOOP BEGIN at src/specfem3D/setup_sources_receivers.f90(525,14)
+<Peeled>
+   remark #15301: PEEL LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/setup_sources_receivers.f90(525,14)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/setup_sources_receivers.f90(525,14)
+<Remainder>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/setup_sources_receivers.f90(526,15)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed ANTI dependence between 878 line 526 and 878 line 526
+LOOP END
+
+LOOP BEGIN at src/specfem3D/setup_sources_receivers.f90(526,15)
+<Remainder>
+LOOP END
+
+LOOP BEGIN at src/specfem3D/setup_sources_receivers.f90(553,5)
+   remark #15398: loop was not vectorized: loop was transformed to memset or memcpy
+LOOP END
+
+LOOP BEGIN at src/specfem3D/setup_sources_receivers.f90(561,16)
+<Peeled>
+   remark #15301: PEEL LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/setup_sources_receivers.f90(561,16)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/setup_sources_receivers.f90(561,16)
+<Remainder>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/setup_sources_receivers.f90(562,17)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed ANTI dependence between 957 line 562 and 957 line 562
+LOOP END
+
+LOOP BEGIN at src/specfem3D/setup_sources_receivers.f90(562,17)
+<Remainder>
+LOOP END
+===========================================================================
+
+Begin optimization report for: SETUP_SOURCES_PRECOMPUTE_ARRAYS
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/specfem3D/setup_sources_receivers.f90(666,5)
+   remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+   LOOP BEGIN at src/specfem3D/setup_sources_receivers.f90(666,5)
+      remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+      LOOP BEGIN at src/specfem3D/setup_sources_receivers.f90(666,5)
+         remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+         LOOP BEGIN at src/specfem3D/setup_sources_receivers.f90(666,5)
+            remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+            LOOP BEGIN at src/specfem3D/setup_sources_receivers.f90(666,5)
+               remark #15398: loop was not vectorized: loop was transformed to memset or memcpy
+            LOOP END
+         LOOP END
+      LOOP END
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/specfem3D/setup_sources_receivers.f90(679,5)
+<Peeled>
+   remark #15301: PEEL LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/setup_sources_receivers.f90(679,5)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/setup_sources_receivers.f90(679,5)
+<Remainder>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/setup_sources_receivers.f90(696,7)
+   remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+   LOOP BEGIN at src/specfem3D/setup_sources_receivers.f90(696,7)
+      remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+      LOOP BEGIN at src/specfem3D/setup_sources_receivers.f90(696,7)
+         remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+         LOOP BEGIN at src/specfem3D/setup_sources_receivers.f90(696,7)
+            remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+            LOOP BEGIN at src/specfem3D/setup_sources_receivers.f90(696,7)
+               remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+               LOOP BEGIN at src/specfem3D/setup_sources_receivers.f90(696,7)
+                  remark #15398: loop was not vectorized: loop was transformed to memset or memcpy
+               LOOP END
+            LOOP END
+         LOOP END
+      LOOP END
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/specfem3D/setup_sources_receivers.f90(827,3) inlined into src/specfem3D/setup_sources_receivers.f90(722,12)
+   remark #15398: loop was not vectorized: loop was transformed to memset or memcpy
+LOOP END
+
+LOOP BEGIN at src/specfem3D/setup_sources_receivers.f90(828,3) inlined into src/specfem3D/setup_sources_receivers.f90(722,12)
+   remark #15398: loop was not vectorized: loop was transformed to memset or memcpy
+LOOP END
+
+LOOP BEGIN at src/specfem3D/setup_sources_receivers.f90(845,3) inlined into src/specfem3D/setup_sources_receivers.f90(722,12)
+<Distributed chunk1>
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at src/specfem3D/setup_sources_receivers.f90(845,3) inlined into src/specfem3D/setup_sources_receivers.f90(722,12)
+   <Distributed chunk1>
+      remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+      remark #15346: vector dependence: assumed FLOW dependence between iadjsrc_len line 865 and iadjsrc_len line 879
+   LOOP END
+
+   LOOP BEGIN at src/specfem3D/setup_sources_receivers.f90(845,3) inlined into src/specfem3D/setup_sources_receivers.f90(722,12)
+   <Peeled, Distributed chunk2>
+      remark #15301: PEEL LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/specfem3D/setup_sources_receivers.f90(845,3) inlined into src/specfem3D/setup_sources_receivers.f90(722,12)
+   <Distributed chunk2>
+      remark #15301: PARTIAL LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/specfem3D/setup_sources_receivers.f90(845,3) inlined into src/specfem3D/setup_sources_receivers.f90(722,12)
+   <Remainder, Distributed chunk2>
+      remark #15301: REMAINDER LOOP WAS VECTORIZED
+   LOOP END
+LOOP END
+===========================================================================
+
+Begin optimization report for: SETUP_SOURCES_RECEIVERS_SRCARR
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/specfem3D/setup_sources_receivers.f90(746,3)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at src/specfem3D/setup_sources_receivers.f90(749,5)
+      remark #15300: LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/specfem3D/setup_sources_receivers.f90(749,5)
+   <Remainder>
+      remark #15301: REMAINDER LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/specfem3D/setup_sources_receivers.f90(797,7)
+      remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+      remark #15346: vector dependence: assumed ANTI dependence between specfem_par_mp_sourcearrays_ line 797 and specfem_par_mp_sourcearrays_ line 797
+
+      LOOP BEGIN at src/specfem3D/setup_sources_receivers.f90(797,7)
+         remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+         remark #15346: vector dependence: assumed ANTI dependence between specfem_par_mp_sourcearrays_ line 797 and specfem_par_mp_sourcearrays_ line 797
+
+         LOOP BEGIN at src/specfem3D/setup_sources_receivers.f90(797,7)
+            remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+            remark #15346: vector dependence: assumed ANTI dependence between specfem_par_mp_sourcearrays_ line 797 and specfem_par_mp_sourcearrays_ line 797
+
+            LOOP BEGIN at src/specfem3D/setup_sources_receivers.f90(797,7)
+               remark #15398: loop was not vectorized: loop was transformed to memset or memcpy
+
+               LOOP BEGIN at src/specfem3D/setup_sources_receivers.f90(797,7)
+               <Multiversioned v2>
+               LOOP END
+
+               LOOP BEGIN at src/specfem3D/setup_sources_receivers.f90(797,7)
+               <Remainder, Multiversioned v2>
+               LOOP END
+            LOOP END
+         LOOP END
+      LOOP END
+   LOOP END
+LOOP END
+===========================================================================
+
+Begin optimization report for: SETUP_RECEIVERS_PRECOMPUTE_INTP
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/specfem3D/setup_sources_receivers.f90(954,7)
+   remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+   LOOP BEGIN at src/specfem3D/setup_sources_receivers.f90(954,7)
+      remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+      LOOP BEGIN at src/specfem3D/setup_sources_receivers.f90(954,7)
+         remark #15398: loop was not vectorized: loop was transformed to memset or memcpy
+      LOOP END
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/specfem3D/setup_sources_receivers.f90(955,7)
+   remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+   LOOP BEGIN at src/specfem3D/setup_sources_receivers.f90(955,7)
+      remark #15398: loop was not vectorized: loop was transformed to memset or memcpy
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/specfem3D/setup_sources_receivers.f90(956,7)
+   remark #15398: loop was not vectorized: loop was transformed to memset or memcpy
+LOOP END
+
+LOOP BEGIN at src/specfem3D/setup_sources_receivers.f90(957,7)
+   remark #15398: loop was not vectorized: loop was transformed to memset or memcpy
+LOOP END
+
+LOOP BEGIN at src/specfem3D/setup_sources_receivers.f90(960,5)
+   remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+   LOOP BEGIN at src/specfem3D/setup_sources_receivers.f90(960,5)
+      remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+      LOOP BEGIN at src/specfem3D/setup_sources_receivers.f90(960,5)
+         remark #15398: loop was not vectorized: loop was transformed to memset or memcpy
+      LOOP END
+   LOOP END
+LOOP END
+===========================================================================
+
+Begin optimization report for: SETUP_SOURCES_RECEIVERS_INTP
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/specfem3D/setup_sources_receivers.f90(1030,5)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+LOOP END
+
+LOOP BEGIN at src/specfem3D/setup_sources_receivers.f90(1030,5)
+<Remainder>
+LOOP END
+
+LOOP BEGIN at src/specfem3D/setup_sources_receivers.f90(1040,5)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+LOOP END
+
+LOOP BEGIN at src/specfem3D/setup_sources_receivers.f90(1040,5)
+<Remainder>
+LOOP END
+
+LOOP BEGIN at src/specfem3D/setup_sources_receivers.f90(1054,3)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at src/specfem3D/setup_sources_receivers.f90(1074,5)
+      remark #15542: loop was not vectorized: inner loop was already vectorized
+
+      LOOP BEGIN at src/specfem3D/setup_sources_receivers.f90(1075,7)
+         remark #15542: loop was not vectorized: inner loop was already vectorized
+
+         LOOP BEGIN at src/specfem3D/setup_sources_receivers.f90(1076,9)
+            remark #15300: LOOP WAS VECTORIZED
+         LOOP END
+      LOOP END
+   LOOP END
+
+   LOOP BEGIN at src/specfem3D/setup_sources_receivers.f90(1070,5)
+      remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+   LOOP END
+
+   LOOP BEGIN at src/specfem3D/setup_sources_receivers.f90(1071,5)
+   LOOP END
+
+   LOOP BEGIN at src/specfem3D/setup_sources_receivers.f90(1072,5)
+   LOOP END
+
+   LOOP BEGIN at src/specfem3D/setup_sources_receivers.f90(1084,7)
+      remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+   LOOP END
+
+   LOOP BEGIN at src/specfem3D/setup_sources_receivers.f90(1085,7)
+   LOOP END
+
+   LOOP BEGIN at src/specfem3D/setup_sources_receivers.f90(1086,7)
+   LOOP END
+LOOP END
+===========================================================================

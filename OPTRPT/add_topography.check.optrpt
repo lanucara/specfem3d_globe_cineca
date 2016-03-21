@@ -1,0 +1,32 @@
+
+Begin optimization report for: ADD_TOPOGRAPHY
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/meshfem3D/add_topography.f90(53,3)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed OUTPUT dependence between x line 55 and x line 60
+LOOP END
+===========================================================================
+
+Begin optimization report for: ADD_TOPOGRAPHY_GLL
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/meshfem3D/add_topography.f90(117,9)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed OUTPUT dependence between x line 117 and x line 122
+
+   LOOP BEGIN at src/meshfem3D/add_topography.f90(114,5)
+      remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+      remark #15346: vector dependence: assumed OUTPUT dependence between x line 117 and x line 122
+
+      LOOP BEGIN at src/meshfem3D/add_topography.f90(115,7)
+         remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+         remark #15346: vector dependence: assumed OUTPUT dependence between x line 117 and x line 122
+      LOOP END
+   LOOP END
+LOOP END
+===========================================================================

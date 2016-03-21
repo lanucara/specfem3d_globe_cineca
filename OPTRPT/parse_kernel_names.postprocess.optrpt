@@ -1,0 +1,45 @@
+
+Begin optimization report for: STRTOK
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/parse_kernel_names.f90(129,5)
+   remark #15522: loop was not vectorized: loop control flow is too complex. Try using canonical loop form.
+LOOP END
+
+LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/parse_kernel_names.f90(144,3)
+   remark #15522: loop was not vectorized: loop control flow is too complex. Try using canonical loop form.
+LOOP END
+===========================================================================
+
+Begin optimization report for: PARSE_KERNEL_NAMES
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/parse_kernel_names.f90(129,5) inlined into src/tomography/postprocess_sensitivity_kernels/parse_kernel_names.f90(46,8)
+   remark #15522: loop was not vectorized: loop control flow is too complex. Try using canonical loop form.
+LOOP END
+
+LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/parse_kernel_names.f90(144,3) inlined into src/tomography/postprocess_sensitivity_kernels/parse_kernel_names.f90(46,8)
+   remark #15522: loop was not vectorized: loop control flow is too complex. Try using canonical loop form.
+LOOP END
+
+LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/parse_kernel_names.f90(52,3)
+   remark #15523: loop was not vectorized: cannot compute loop iteration count before executing the loop.
+
+   LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/parse_kernel_names.f90(129,5) inlined into src/tomography/postprocess_sensitivity_kernels/parse_kernel_names.f90(56,10)
+      remark #15522: loop was not vectorized: loop control flow is too complex. Try using canonical loop form.
+   LOOP END
+
+   LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/parse_kernel_names.f90(144,3) inlined into src/tomography/postprocess_sensitivity_kernels/parse_kernel_names.f90(56,10)
+      remark #15522: loop was not vectorized: loop control flow is too complex. Try using canonical loop form.
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/parse_kernel_names.f90(63,3)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed OUTPUT dependence between 23 line 65 and 23 line 66
+LOOP END
+===========================================================================

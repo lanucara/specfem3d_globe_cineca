@@ -1,0 +1,818 @@
+
+Begin optimization report for: SPLCON
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/meshfem3D/model_s362ani.f90(1113,3)
+<Peeled>
+   remark #15301: PEEL LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_s362ani.f90(1113,3)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_s362ani.f90(1113,3)
+<Remainder>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_s362ani.f90(1126,3)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed OUTPUT dependence between con line 1137 and con line 1141
+LOOP END
+===========================================================================
+
+Begin optimization report for: LEGNDR
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/meshfem3D/model_s362ani.f90(1810,3)
+<Peeled>
+   remark #15301: PEEL LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_s362ani.f90(1810,3)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_s362ani.f90(1810,3)
+<Alternate Alignment Vectorized Loop>
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_s362ani.f90(1810,3)
+<Remainder>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_s362ani.f90(1830,3)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed FLOW dependence between x2 line 1833 and x2 line 1831
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_s362ani.f90(1853,3)
+   remark #15520: loop was not vectorized: loop with early exits cannot be vectorized unless it meets search loop idiom criteria
+LOOP END
+===========================================================================
+
+Begin optimization report for: GT3DMODL
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/meshfem3D/model_s362ani.f90(974,3) inlined into src/meshfem3D/model_s362ani.f90(847,8)
+   remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+   LOOP BEGIN at src/meshfem3D/model_s362ani.f90(982,7) inlined into src/meshfem3D/model_s362ani.f90(847,8)
+      remark #15523: loop was not vectorized: cannot compute loop iteration count before executing the loop.
+   LOOP END
+
+   LOOP BEGIN at src/meshfem3D/model_s362ani.f90(994,7) inlined into src/meshfem3D/model_s362ani.f90(847,8)
+      remark #15523: loop was not vectorized: cannot compute loop iteration count before executing the loop.
+   LOOP END
+
+   LOOP BEGIN at src/meshfem3D/model_s362ani.f90(1013,7) inlined into src/meshfem3D/model_s362ani.f90(847,8)
+      remark #15523: loop was not vectorized: cannot compute loop iteration count before executing the loop.
+   LOOP END
+
+   LOOP BEGIN at src/meshfem3D/model_s362ani.f90(1031,7) inlined into src/meshfem3D/model_s362ani.f90(847,8)
+      remark #15523: loop was not vectorized: cannot compute loop iteration count before executing the loop.
+   LOOP END
+
+   LOOP BEGIN at src/meshfem3D/model_s362ani.f90(1046,9) inlined into src/meshfem3D/model_s362ani.f90(847,8)
+      remark #15523: loop was not vectorized: cannot compute loop iteration count before executing the loop.
+   LOOP END
+
+   LOOP BEGIN at src/meshfem3D/model_s362ani.f90(1051,9) inlined into src/meshfem3D/model_s362ani.f90(847,8)
+      remark #15523: loop was not vectorized: cannot compute loop iteration count before executing the loop.
+   LOOP END
+
+   LOOP BEGIN at src/meshfem3D/model_s362ani.f90(1058,9) inlined into src/meshfem3D/model_s362ani.f90(847,8)
+      remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+      remark #15346: vector dependence: assumed OUTPUT dependence between 368 line 1059 and 368 line 1059
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_s362ani.f90(865,3)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at src/meshfem3D/model_s362ani.f90(868,5)
+      remark #15542: loop was not vectorized: inner loop was already vectorized
+
+      LOOP BEGIN at src/meshfem3D/model_s362ani.f90(868,5)
+      <Multiversioned v2>
+         remark #15300: LOOP WAS VECTORIZED
+      LOOP END
+
+      LOOP BEGIN at src/meshfem3D/model_s362ani.f90(868,5)
+      <Alternate Alignment Vectorized Loop, Multiversioned v2>
+      LOOP END
+
+      LOOP BEGIN at src/meshfem3D/model_s362ani.f90(868,5)
+      <Remainder, Multiversioned v2>
+      LOOP END
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_s362ani.f90(874,3)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at src/meshfem3D/model_s362ani.f90(879,7)
+      remark #15300: LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/meshfem3D/model_s362ani.f90(879,7)
+   <Alternate Alignment Vectorized Loop>
+   LOOP END
+
+   LOOP BEGIN at src/meshfem3D/model_s362ani.f90(879,7)
+   <Remainder>
+      remark #15301: REMAINDER LOOP WAS VECTORIZED
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_s362ani.f90(890,3)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed OUTPUT dependence between string line 891 and string line 905
+
+   LOOP BEGIN at src/meshfem3D/model_s362ani.f90(894,5)
+      remark #15523: loop was not vectorized: cannot compute loop iteration count before executing the loop.
+   LOOP END
+
+   LOOP BEGIN at src/meshfem3D/model_s362ani.f90(898,5)
+      remark #15313: loop was not vectorized: unsupported data type   [ src/meshfem3D/model_s362ani.f90(899,23) ]
+   LOOP END
+LOOP END
+===========================================================================
+
+Begin optimization report for: YLM
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/meshfem3D/model_s362ani.f90(1810,3) inlined into src/meshfem3D/model_s362ani.f90(1757,10)
+<Peeled>
+   remark #15301: PEEL LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_s362ani.f90(1810,3) inlined into src/meshfem3D/model_s362ani.f90(1757,10)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_s362ani.f90(1810,3) inlined into src/meshfem3D/model_s362ani.f90(1757,10)
+<Alternate Alignment Vectorized Loop>
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_s362ani.f90(1810,3) inlined into src/meshfem3D/model_s362ani.f90(1757,10)
+<Remainder>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_s362ani.f90(1830,3) inlined into src/meshfem3D/model_s362ani.f90(1757,10)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed FLOW dependence between x2 line 1833 and x2 line 1831
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_s362ani.f90(1853,3) inlined into src/meshfem3D/model_s362ani.f90(1757,10)
+   remark #15520: loop was not vectorized: loop with early exits cannot be vectorized unless it meets search loop idiom criteria
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_s362ani.f90(1763,5)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed OUTPUT dependence between y line 1767 and y line 1770
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_s362ani.f90(1763,5)
+<Remainder>
+LOOP END
+
+
+Non-optimizable loops:
+
+
+LOOP BEGIN at src/meshfem3D/model_s362ani.f90(1774,3)
+   remark #15529: loop was not vectorized: volatile assignment was not vectorized. Try using non-volatile assignment.   [ src/meshfem3D/model_s362ani.f90(1782,14) ]
+LOOP END
+===========================================================================
+
+Begin optimization report for: READ_MODEL_S362ANI
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/meshfem3D/model_s362ani.f90(974,3) inlined into src/meshfem3D/model_s362ani.f90(180,10)
+   remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+   LOOP BEGIN at src/meshfem3D/model_s362ani.f90(982,7) inlined into src/meshfem3D/model_s362ani.f90(180,10)
+      remark #15523: loop was not vectorized: cannot compute loop iteration count before executing the loop.
+   LOOP END
+
+   LOOP BEGIN at src/meshfem3D/model_s362ani.f90(994,7) inlined into src/meshfem3D/model_s362ani.f90(180,10)
+      remark #15523: loop was not vectorized: cannot compute loop iteration count before executing the loop.
+   LOOP END
+
+   LOOP BEGIN at src/meshfem3D/model_s362ani.f90(1013,7) inlined into src/meshfem3D/model_s362ani.f90(180,10)
+      remark #15523: loop was not vectorized: cannot compute loop iteration count before executing the loop.
+   LOOP END
+
+   LOOP BEGIN at src/meshfem3D/model_s362ani.f90(1031,7) inlined into src/meshfem3D/model_s362ani.f90(180,10)
+      remark #15523: loop was not vectorized: cannot compute loop iteration count before executing the loop.
+   LOOP END
+
+   LOOP BEGIN at src/meshfem3D/model_s362ani.f90(1046,9) inlined into src/meshfem3D/model_s362ani.f90(180,10)
+      remark #15523: loop was not vectorized: cannot compute loop iteration count before executing the loop.
+   LOOP END
+
+   LOOP BEGIN at src/meshfem3D/model_s362ani.f90(1051,9) inlined into src/meshfem3D/model_s362ani.f90(180,10)
+      remark #15523: loop was not vectorized: cannot compute loop iteration count before executing the loop.
+   LOOP END
+
+   LOOP BEGIN at src/meshfem3D/model_s362ani.f90(1058,9) inlined into src/meshfem3D/model_s362ani.f90(180,10)
+      remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+      remark #15346: vector dependence: assumed OUTPUT dependence between 368 line 1059 and 368 line 1059
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_s362ani.f90(865,3) inlined into src/meshfem3D/model_s362ani.f90(180,10)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at src/meshfem3D/model_s362ani.f90(868,5) inlined into src/meshfem3D/model_s362ani.f90(180,10)
+      remark #15542: loop was not vectorized: inner loop was already vectorized
+
+      LOOP BEGIN at src/meshfem3D/model_s362ani.f90(868,5) inlined into src/meshfem3D/model_s362ani.f90(180,10)
+      <Multiversioned v2>
+         remark #15300: LOOP WAS VECTORIZED
+      LOOP END
+
+      LOOP BEGIN at src/meshfem3D/model_s362ani.f90(868,5) inlined into src/meshfem3D/model_s362ani.f90(180,10)
+      <Alternate Alignment Vectorized Loop, Multiversioned v2>
+      LOOP END
+
+      LOOP BEGIN at src/meshfem3D/model_s362ani.f90(868,5) inlined into src/meshfem3D/model_s362ani.f90(180,10)
+      <Remainder, Multiversioned v2>
+      LOOP END
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_s362ani.f90(874,3) inlined into src/meshfem3D/model_s362ani.f90(180,10)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at src/meshfem3D/model_s362ani.f90(879,7) inlined into src/meshfem3D/model_s362ani.f90(180,10)
+      remark #15300: LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/meshfem3D/model_s362ani.f90(879,7) inlined into src/meshfem3D/model_s362ani.f90(180,10)
+   <Alternate Alignment Vectorized Loop>
+   LOOP END
+
+   LOOP BEGIN at src/meshfem3D/model_s362ani.f90(879,7) inlined into src/meshfem3D/model_s362ani.f90(180,10)
+   <Remainder>
+      remark #15301: REMAINDER LOOP WAS VECTORIZED
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_s362ani.f90(890,3) inlined into src/meshfem3D/model_s362ani.f90(180,10)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed OUTPUT dependence between string line 891 and string line 905
+
+   LOOP BEGIN at src/meshfem3D/model_s362ani.f90(894,5) inlined into src/meshfem3D/model_s362ani.f90(180,10)
+      remark #15523: loop was not vectorized: cannot compute loop iteration count before executing the loop.
+   LOOP END
+
+   LOOP BEGIN at src/meshfem3D/model_s362ani.f90(898,5) inlined into src/meshfem3D/model_s362ani.f90(180,10)
+      remark #15313: loop was not vectorized: unsupported data type   [ src/meshfem3D/model_s362ani.f90(899,23) ]
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_s362ani.f90(193,3)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed OUTPUT dependence between  line 195 and  line 199
+LOOP END
+===========================================================================
+
+Begin optimization report for: MODEL_S362ANI_SUBSHSV
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/meshfem3D/model_s362ani.f90(1810,3) inlined into src/meshfem3D/model_s362ani.f90(1204,14)
+<Peeled>
+   remark #15301: PEEL LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_s362ani.f90(1810,3) inlined into src/meshfem3D/model_s362ani.f90(1204,14)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_s362ani.f90(1810,3) inlined into src/meshfem3D/model_s362ani.f90(1204,14)
+<Alternate Alignment Vectorized Loop>
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_s362ani.f90(1810,3) inlined into src/meshfem3D/model_s362ani.f90(1204,14)
+<Remainder>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_s362ani.f90(1830,3) inlined into src/meshfem3D/model_s362ani.f90(1204,14)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed FLOW dependence between x2 line 1833 and x2 line 1831
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_s362ani.f90(1853,3) inlined into src/meshfem3D/model_s362ani.f90(1204,14)
+   remark #15520: loop was not vectorized: loop with early exits cannot be vectorized unless it meets search loop idiom criteria
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_s362ani.f90(1763,5) inlined into src/meshfem3D/model_s362ani.f90(1204,14)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed OUTPUT dependence between y line 1767 and y line 1770
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_s362ani.f90(1763,5) inlined into src/meshfem3D/model_s362ani.f90(1204,14)
+<Remainder>
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_s362ani.f90(1113,3) inlined into src/meshfem3D/model_s362ani.f90(1208,14)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_s362ani.f90(1113,3) inlined into src/meshfem3D/model_s362ani.f90(1208,14)
+<Remainder>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_s362ani.f90(1126,3) inlined into src/meshfem3D/model_s362ani.f90(1208,14)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed OUTPUT dependence between con line 1137 and con line 1141
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_s362ani.f90(1221,5)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at src/meshfem3D/model_s362ani.f90(1223,7)
+      remark #15542: loop was not vectorized: inner loop was already vectorized
+
+      LOOP BEGIN at src/meshfem3D/model_s362ani.f90(1244,15)
+      <Peeled>
+         remark #15301: PEEL LOOP WAS VECTORIZED
+      LOOP END
+
+      LOOP BEGIN at src/meshfem3D/model_s362ani.f90(1244,15)
+         remark #15300: LOOP WAS VECTORIZED
+      LOOP END
+
+      LOOP BEGIN at src/meshfem3D/model_s362ani.f90(1244,15)
+      <Alternate Alignment Vectorized Loop>
+      LOOP END
+
+      LOOP BEGIN at src/meshfem3D/model_s362ani.f90(1244,15)
+      <Remainder>
+         remark #15301: REMAINDER LOOP WAS VECTORIZED
+      LOOP END
+
+      LOOP BEGIN at src/meshfem3D/model_s362ani.f90(1249,15)
+      <Peeled>
+         remark #15301: PEEL LOOP WAS VECTORIZED
+      LOOP END
+
+      LOOP BEGIN at src/meshfem3D/model_s362ani.f90(1249,15)
+         remark #15300: LOOP WAS VECTORIZED
+      LOOP END
+
+      LOOP BEGIN at src/meshfem3D/model_s362ani.f90(1249,15)
+      <Alternate Alignment Vectorized Loop>
+      LOOP END
+
+      LOOP BEGIN at src/meshfem3D/model_s362ani.f90(1249,15)
+      <Remainder>
+         remark #15301: REMAINDER LOOP WAS VECTORIZED
+      LOOP END
+   LOOP END
+LOOP END
+
+
+Non-optimizable loops:
+
+
+LOOP BEGIN at src/meshfem3D/model_s362ani.f90(1272,3)
+   remark #15536: loop was not vectorized: inner loop throttling prevents vectorization of this outer loop. Refer to inner loop message for more details.
+
+   LOOP BEGIN at src/meshfem3D/model_s362ani.f90(1214,5)
+      remark #15529: loop was not vectorized: volatile assignment was not vectorized. Try using non-volatile assignment.   [ src/meshfem3D/model_s362ani.f90(1080,14) ]
+
+      LOOP BEGIN at src/meshfem3D/model_s362ani.f90(1774,3) inlined into src/meshfem3D/model_s362ani.f90(1204,14)
+         remark #15529: loop was not vectorized: volatile assignment was not vectorized. Try using non-volatile assignment.   [ src/meshfem3D/model_s362ani.f90(1782,14) ]
+      LOOP END
+   LOOP END
+LOOP END
+===========================================================================
+
+Begin optimization report for: EVRADKER
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/meshfem3D/model_s362ani.f90(258,3)
+<Peeled>
+   remark #15301: PEEL LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_s362ani.f90(258,3)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_s362ani.f90(258,3)
+<Alternate Alignment Vectorized Loop>
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_s362ani.f90(258,3)
+<Remainder>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_s362ani.f90(772,3) inlined into src/meshfem3D/model_s362ani.f90(271,12)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed FLOW dependence between chebyshev line 773 and chebyshev line 773
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_s362ani.f90(776,3) inlined into src/meshfem3D/model_s362ani.f90(271,12)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_s362ani.f90(272,7)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_s362ani.f90(276,7)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_s362ani.f90(284,7)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_s362ani.f90(288,7)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_s362ani.f90(315,5)
+   remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_s362ani.f90(416,7)
+   remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_s362ani.f90(431,7)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_s362ani.f90(480,7)
+   remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_s362ani.f90(495,7)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_s362ani.f90(516,7)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_s362ani.f90(531,7)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_s362ani.f90(552,7)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_s362ani.f90(567,7)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_s362ani.f90(710,7)
+   remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_s362ani.f90(714,7)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_s362ani.f90(718,7)
+   remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_s362ani.f90(642,7)
+   remark #15301: FUSED LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_s362ani.f90(646,7)
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_s362ani.f90(650,7)
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_s362ani.f90(654,7)
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_s362ani.f90(658,7)
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_s362ani.f90(673,7)
+   remark #15301: FUSED LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_s362ani.f90(677,7)
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_s362ani.f90(681,7)
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_s362ani.f90(685,7)
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_s362ani.f90(689,7)
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_s362ani.f90(589,7)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_s362ani.f90(593,7)
+   remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_s362ani.f90(597,7)
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_s362ani.f90(601,7)
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_s362ani.f90(605,7)
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_s362ani.f90(620,7)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_s362ani.f90(451,7)
+   remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_s362ani.f90(387,7)
+   remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+===========================================================================
+
+Begin optimization report for: CHEBYFUN
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/meshfem3D/model_s362ani.f90(772,3)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed FLOW dependence between f line 773 and f line 773
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_s362ani.f90(772,3)
+<Remainder>
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_s362ani.f90(776,3)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+===========================================================================
+
+Begin optimization report for: VBSPL
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/meshfem3D/model_s362ani.f90(1412,3)
+   remark #15523: loop was not vectorized: cannot compute loop iteration count before executing the loop.
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_s362ani.f90(1420,3)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_s362ani.f90(1420,3)
+<Remainder>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+===========================================================================
+
+Begin optimization report for: MODEL_S362ANI_SUBTOPO
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/meshfem3D/model_s362ani.f90(1810,3) inlined into src/meshfem3D/model_s362ani.f90(1318,12)
+<Peeled>
+   remark #15301: PEEL LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_s362ani.f90(1810,3) inlined into src/meshfem3D/model_s362ani.f90(1318,12)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_s362ani.f90(1810,3) inlined into src/meshfem3D/model_s362ani.f90(1318,12)
+<Alternate Alignment Vectorized Loop>
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_s362ani.f90(1810,3) inlined into src/meshfem3D/model_s362ani.f90(1318,12)
+<Remainder>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_s362ani.f90(1830,3) inlined into src/meshfem3D/model_s362ani.f90(1318,12)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed FLOW dependence between x2 line 1833 and x2 line 1831
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_s362ani.f90(1853,3) inlined into src/meshfem3D/model_s362ani.f90(1318,12)
+   remark #15520: loop was not vectorized: loop with early exits cannot be vectorized unless it meets search loop idiom criteria
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_s362ani.f90(1763,5) inlined into src/meshfem3D/model_s362ani.f90(1318,12)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed OUTPUT dependence between y line 1767 and y line 1770
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_s362ani.f90(1763,5) inlined into src/meshfem3D/model_s362ani.f90(1318,12)
+<Remainder>
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_s362ani.f90(1113,3) inlined into src/meshfem3D/model_s362ani.f90(1321,12)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_s362ani.f90(1113,3) inlined into src/meshfem3D/model_s362ani.f90(1321,12)
+<Remainder>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_s362ani.f90(1126,3) inlined into src/meshfem3D/model_s362ani.f90(1321,12)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed OUTPUT dependence between con line 1137 and con line 1141
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_s362ani.f90(1334,3)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at src/meshfem3D/model_s362ani.f90(1336,5)
+      remark #15542: loop was not vectorized: inner loop was already vectorized
+
+      LOOP BEGIN at src/meshfem3D/model_s362ani.f90(1354,11)
+      <Peeled>
+         remark #15301: PEEL LOOP WAS VECTORIZED
+      LOOP END
+
+      LOOP BEGIN at src/meshfem3D/model_s362ani.f90(1354,11)
+         remark #15300: LOOP WAS VECTORIZED
+      LOOP END
+
+      LOOP BEGIN at src/meshfem3D/model_s362ani.f90(1354,11)
+      <Alternate Alignment Vectorized Loop>
+      LOOP END
+
+      LOOP BEGIN at src/meshfem3D/model_s362ani.f90(1354,11)
+      <Remainder>
+         remark #15301: REMAINDER LOOP WAS VECTORIZED
+      LOOP END
+
+      LOOP BEGIN at src/meshfem3D/model_s362ani.f90(1359,11)
+      <Peeled>
+         remark #15301: PEEL LOOP WAS VECTORIZED
+      LOOP END
+
+      LOOP BEGIN at src/meshfem3D/model_s362ani.f90(1359,11)
+         remark #15300: LOOP WAS VECTORIZED
+      LOOP END
+
+      LOOP BEGIN at src/meshfem3D/model_s362ani.f90(1359,11)
+      <Alternate Alignment Vectorized Loop>
+      LOOP END
+
+      LOOP BEGIN at src/meshfem3D/model_s362ani.f90(1359,11)
+      <Remainder>
+         remark #15301: REMAINDER LOOP WAS VECTORIZED
+      LOOP END
+   LOOP END
+LOOP END
+
+
+Non-optimizable loops:
+
+
+LOOP BEGIN at src/meshfem3D/model_s362ani.f90(1327,3)
+   remark #15529: loop was not vectorized: volatile assignment was not vectorized. Try using non-volatile assignment.   [ src/meshfem3D/model_s362ani.f90(1080,14) ]
+
+   LOOP BEGIN at src/meshfem3D/model_s362ani.f90(1774,3) inlined into src/meshfem3D/model_s362ani.f90(1318,12)
+      remark #15529: loop was not vectorized: volatile assignment was not vectorized. Try using non-volatile assignment.   [ src/meshfem3D/model_s362ani.f90(1782,14) ]
+   LOOP END
+LOOP END
+===========================================================================
+
+Begin optimization report for: MODEL_S362ANI_BROADCAST
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/meshfem3D/model_s362ani.f90(865,3) inlined into src/meshfem3D/model_s362ani.f90(118,20)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at src/meshfem3D/model_s362ani.f90(868,5) inlined into src/meshfem3D/model_s362ani.f90(118,20)
+      remark #15542: loop was not vectorized: inner loop was already vectorized
+
+      LOOP BEGIN at src/meshfem3D/model_s362ani.f90(868,5) inlined into src/meshfem3D/model_s362ani.f90(118,20)
+      <Multiversioned v2>
+         remark #15300: LOOP WAS VECTORIZED
+      LOOP END
+
+      LOOP BEGIN at src/meshfem3D/model_s362ani.f90(868,5) inlined into src/meshfem3D/model_s362ani.f90(118,20)
+      <Alternate Alignment Vectorized Loop, Multiversioned v2>
+      LOOP END
+
+      LOOP BEGIN at src/meshfem3D/model_s362ani.f90(868,5) inlined into src/meshfem3D/model_s362ani.f90(118,20)
+      <Remainder, Multiversioned v2>
+      LOOP END
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_s362ani.f90(874,3) inlined into src/meshfem3D/model_s362ani.f90(118,20)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at src/meshfem3D/model_s362ani.f90(879,7) inlined into src/meshfem3D/model_s362ani.f90(118,20)
+      remark #15300: LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/meshfem3D/model_s362ani.f90(879,7) inlined into src/meshfem3D/model_s362ani.f90(118,20)
+   <Alternate Alignment Vectorized Loop>
+   LOOP END
+
+   LOOP BEGIN at src/meshfem3D/model_s362ani.f90(879,7) inlined into src/meshfem3D/model_s362ani.f90(118,20)
+   <Remainder>
+      remark #15301: REMAINDER LOOP WAS VECTORIZED
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_s362ani.f90(890,3) inlined into src/meshfem3D/model_s362ani.f90(118,20)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed OUTPUT dependence between string line 891 and string line 905
+
+   LOOP BEGIN at src/meshfem3D/model_s362ani.f90(894,5) inlined into src/meshfem3D/model_s362ani.f90(118,20)
+      remark #15523: loop was not vectorized: cannot compute loop iteration count before executing the loop.
+   LOOP END
+
+   LOOP BEGIN at src/meshfem3D/model_s362ani.f90(898,5) inlined into src/meshfem3D/model_s362ani.f90(118,20)
+      remark #15313: loop was not vectorized: unsupported data type   [ src/meshfem3D/model_s362ani.f90(899,23) ]
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_s362ani.f90(193,3) inlined into src/meshfem3D/model_s362ani.f90(118,20)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed OUTPUT dependence between  line 195 and  line 199
+LOOP END
+===========================================================================
+
+Begin optimization report for: RD3DMODL
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/meshfem3D/model_s362ani.f90(974,3)
+   remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+   LOOP BEGIN at src/meshfem3D/model_s362ani.f90(982,7)
+      remark #15523: loop was not vectorized: cannot compute loop iteration count before executing the loop.
+   LOOP END
+
+   LOOP BEGIN at src/meshfem3D/model_s362ani.f90(994,7)
+      remark #15523: loop was not vectorized: cannot compute loop iteration count before executing the loop.
+   LOOP END
+
+   LOOP BEGIN at src/meshfem3D/model_s362ani.f90(1013,7)
+      remark #15523: loop was not vectorized: cannot compute loop iteration count before executing the loop.
+   LOOP END
+
+   LOOP BEGIN at src/meshfem3D/model_s362ani.f90(1031,7)
+      remark #15523: loop was not vectorized: cannot compute loop iteration count before executing the loop.
+   LOOP END
+
+   LOOP BEGIN at src/meshfem3D/model_s362ani.f90(1046,9)
+      remark #15523: loop was not vectorized: cannot compute loop iteration count before executing the loop.
+   LOOP END
+
+   LOOP BEGIN at src/meshfem3D/model_s362ani.f90(1051,9)
+      remark #15523: loop was not vectorized: cannot compute loop iteration count before executing the loop.
+   LOOP END
+
+   LOOP BEGIN at src/meshfem3D/model_s362ani.f90(1058,9)
+      remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+      remark #15346: vector dependence: assumed OUTPUT dependence between 368 line 1059 and 368 line 1059
+   LOOP END
+LOOP END
+===========================================================================

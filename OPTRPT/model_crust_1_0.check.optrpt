@@ -1,0 +1,247 @@
+
+Begin optimization report for: GET_CRUST_1_0_STRUCTURE
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/meshfem3D/model_crust_1_0.f90(594,3)
+   remark #15301: FUSED LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_crust_1_0.f90(595,3)
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_crust_1_0.f90(596,3)
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_crust_1_0.f90(597,3)
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_crust_1_0.f90(594,3)
+<Remainder>
+LOOP END
+===========================================================================
+
+Begin optimization report for: MODEL_CRUST_1_0
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/meshfem3D/model_crust_1_0.f90(514,3) inlined into src/meshfem3D/model_crust_1_0.f90(144,8)
+   remark #15301: FUSED LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_crust_1_0.f90(515,3) inlined into src/meshfem3D/model_crust_1_0.f90(144,8)
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_crust_1_0.f90(516,3) inlined into src/meshfem3D/model_crust_1_0.f90(144,8)
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_crust_1_0.f90(517,3) inlined into src/meshfem3D/model_crust_1_0.f90(144,8)
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_crust_1_0.f90(514,3) inlined into src/meshfem3D/model_crust_1_0.f90(144,8)
+<Remainder>
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_crust_1_0.f90(597,3) inlined into src/meshfem3D/model_crust_1_0.f90(144,8)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at src/meshfem3D/model_crust_1_0.f90(594,3) inlined into src/meshfem3D/model_crust_1_0.f90(144,8)
+      remark #15301: FUSED LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/meshfem3D/model_crust_1_0.f90(595,3) inlined into src/meshfem3D/model_crust_1_0.f90(144,8)
+   LOOP END
+
+   LOOP BEGIN at src/meshfem3D/model_crust_1_0.f90(596,3) inlined into src/meshfem3D/model_crust_1_0.f90(144,8)
+   LOOP END
+
+   LOOP BEGIN at src/meshfem3D/model_crust_1_0.f90(597,3) inlined into src/meshfem3D/model_crust_1_0.f90(144,8)
+   LOOP END
+
+   LOOP BEGIN at src/meshfem3D/model_crust_1_0.f90(570,5) inlined into src/meshfem3D/model_crust_1_0.f90(144,8)
+      remark #15301: FUSED LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/meshfem3D/model_crust_1_0.f90(571,5) inlined into src/meshfem3D/model_crust_1_0.f90(144,8)
+   LOOP END
+
+   LOOP BEGIN at src/meshfem3D/model_crust_1_0.f90(572,5) inlined into src/meshfem3D/model_crust_1_0.f90(144,8)
+   LOOP END
+
+   LOOP BEGIN at src/meshfem3D/model_crust_1_0.f90(573,5) inlined into src/meshfem3D/model_crust_1_0.f90(144,8)
+   LOOP END
+
+   LOOP BEGIN at src/meshfem3D/model_crust_1_0.f90(594,3) inlined into src/meshfem3D/model_crust_1_0.f90(144,8)
+   <Remainder>
+   LOOP END
+
+   LOOP BEGIN at src/meshfem3D/model_crust_1_0.f90(570,5) inlined into src/meshfem3D/model_crust_1_0.f90(144,8)
+   <Remainder>
+   LOOP END
+LOOP END
+===========================================================================
+
+Begin optimization report for: MODEL_CRUST_1_0_BROADCAST
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/meshfem3D/model_crust_1_0.f90(98,3)
+   remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+   LOOP BEGIN at src/meshfem3D/model_crust_1_0.f90(98,3)
+      remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+      LOOP BEGIN at src/meshfem3D/model_crust_1_0.f90(98,3)
+         remark #15398: loop was not vectorized: loop was transformed to memset or memcpy
+      LOOP END
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_crust_1_0.f90(99,3)
+   remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+   LOOP BEGIN at src/meshfem3D/model_crust_1_0.f90(99,3)
+      remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+      LOOP BEGIN at src/meshfem3D/model_crust_1_0.f90(99,3)
+         remark #15398: loop was not vectorized: loop was transformed to memset or memcpy
+      LOOP END
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_crust_1_0.f90(100,3)
+   remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+   LOOP BEGIN at src/meshfem3D/model_crust_1_0.f90(100,3)
+      remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+      LOOP BEGIN at src/meshfem3D/model_crust_1_0.f90(100,3)
+         remark #15398: loop was not vectorized: loop was transformed to memset or memcpy
+      LOOP END
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_crust_1_0.f90(101,3)
+   remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+   LOOP BEGIN at src/meshfem3D/model_crust_1_0.f90(101,3)
+      remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+      LOOP BEGIN at src/meshfem3D/model_crust_1_0.f90(101,3)
+         remark #15398: loop was not vectorized: loop was transformed to memset or memcpy
+      LOOP END
+   LOOP END
+LOOP END
+===========================================================================
+
+Begin optimization report for: READ_CRUST_1_0_MODEL
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/meshfem3D/model_crust_1_0.f90(276,3)
+   remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+   LOOP BEGIN at src/meshfem3D/model_crust_1_0.f90(276,3)
+      remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+      LOOP BEGIN at src/meshfem3D/model_crust_1_0.f90(276,3)
+         remark #15398: loop was not vectorized: loop was transformed to memset or memcpy
+      LOOP END
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_crust_1_0.f90(304,3)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed FLOW dependence between 224 line 306 and 224 line 309
+
+   LOOP BEGIN at src/meshfem3D/model_crust_1_0.f90(305,5)
+      remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+      remark #15346: vector dependence: assumed FLOW dependence between 224 line 306 and 224 line 309
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_crust_1_0.f90(324,5)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at src/meshfem3D/model_crust_1_0.f90(326,9)
+      remark #15301: PERMUTED LOOP WAS VECTORIZED
+
+      LOOP BEGIN at src/meshfem3D/model_crust_1_0.f90(325,7)
+      LOOP END
+   LOOP END
+
+   LOOP BEGIN at src/meshfem3D/model_crust_1_0.f90(326,9)
+   <Remainder>
+      remark #15301: REMAINDER LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/meshfem3D/model_crust_1_0.f90(326,9)
+   <Remainder>
+   LOOP END
+LOOP END
+===========================================================================
+
+Begin optimization report for: CRUST_1_0_CAPSMOOTHED
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/meshfem3D/model_crust_1_0.f90(514,3)
+   remark #15301: FUSED LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_crust_1_0.f90(515,3)
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_crust_1_0.f90(516,3)
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_crust_1_0.f90(517,3)
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_crust_1_0.f90(514,3)
+<Remainder>
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_crust_1_0.f90(597,3) inlined into src/meshfem3D/model_crust_1_0.f90(546,10)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at src/meshfem3D/model_crust_1_0.f90(594,3) inlined into src/meshfem3D/model_crust_1_0.f90(546,10)
+      remark #15301: FUSED LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/meshfem3D/model_crust_1_0.f90(595,3) inlined into src/meshfem3D/model_crust_1_0.f90(546,10)
+   LOOP END
+
+   LOOP BEGIN at src/meshfem3D/model_crust_1_0.f90(596,3) inlined into src/meshfem3D/model_crust_1_0.f90(546,10)
+   LOOP END
+
+   LOOP BEGIN at src/meshfem3D/model_crust_1_0.f90(597,3) inlined into src/meshfem3D/model_crust_1_0.f90(546,10)
+   LOOP END
+
+   LOOP BEGIN at src/meshfem3D/model_crust_1_0.f90(570,5)
+      remark #15301: FUSED LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/meshfem3D/model_crust_1_0.f90(571,5)
+   LOOP END
+
+   LOOP BEGIN at src/meshfem3D/model_crust_1_0.f90(572,5)
+   LOOP END
+
+   LOOP BEGIN at src/meshfem3D/model_crust_1_0.f90(573,5)
+   LOOP END
+
+   LOOP BEGIN at src/meshfem3D/model_crust_1_0.f90(594,3) inlined into src/meshfem3D/model_crust_1_0.f90(546,10)
+   <Remainder>
+   LOOP END
+
+   LOOP BEGIN at src/meshfem3D/model_crust_1_0.f90(570,5)
+   <Remainder>
+   LOOP END
+LOOP END
+===========================================================================

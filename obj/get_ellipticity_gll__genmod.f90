@@ -1,0 +1,17 @@
+        !COMPILER-GENERATED INTERFACE MODULE: Fri Mar 11 15:45:47 2016
+        MODULE GET_ELLIPTICITY_GLL__genmod
+          INTERFACE 
+            SUBROUTINE GET_ELLIPTICITY_GLL(XSTORE,YSTORE,ZSTORE,ISPEC,  &
+     &NSPEC,NSPL,RSPL,ESPL,ESPL2)
+              INTEGER(KIND=4) :: NSPEC
+              REAL(KIND=8) :: XSTORE(5,5,5,NSPEC)
+              REAL(KIND=8) :: YSTORE(5,5,5,NSPEC)
+              REAL(KIND=8) :: ZSTORE(5,5,5,NSPEC)
+              INTEGER(KIND=4) :: ISPEC
+              INTEGER(KIND=4) :: NSPL
+              REAL(KIND=8) :: RSPL(640)
+              REAL(KIND=8) :: ESPL(640)
+              REAL(KIND=8) :: ESPL2(640)
+            END SUBROUTINE GET_ELLIPTICITY_GLL
+          END INTERFACE 
+        END MODULE GET_ELLIPTICITY_GLL__genmod

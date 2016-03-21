@@ -1,0 +1,9 @@
+        !COMPILER-GENERATED INTERFACE MODULE: Fri Mar 11 15:45:20 2016
+        MODULE REDUCE__genmod
+          INTERFACE 
+            SUBROUTINE REDUCE(THETA,PHI)
+              REAL(KIND=8), INTENT(INOUT) :: THETA
+              REAL(KIND=8), INTENT(INOUT) :: PHI
+            END SUBROUTINE REDUCE
+          END INTERFACE 
+        END MODULE REDUCE__genmod

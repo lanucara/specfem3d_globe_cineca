@@ -1,0 +1,64 @@
+
+Begin optimization report for: HEAP_SORT
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/shared/heap_sort.f90(80,3) inlined into src/shared/heap_sort.f90(47,10)
+   remark #15523: loop was not vectorized: cannot compute loop iteration count before executing the loop.
+LOOP END
+
+LOOP BEGIN at src/shared/heap_sort.f90(80,3) inlined into src/shared/heap_sort.f90(56,10)
+   remark #15523: loop was not vectorized: cannot compute loop iteration count before executing the loop.
+LOOP END
+
+
+Non-optimizable loops:
+
+
+LOOP BEGIN at src/shared/heap_sort.f90(48,3)
+   remark #15529: loop was not vectorized: volatile assignment was not vectorized. Try using non-volatile assignment.   [ src/shared/heap_sort.f90(65,14) ]
+LOOP END
+
+LOOP BEGIN at src/shared/heap_sort.f90(57,3)
+   remark #15529: loop was not vectorized: volatile assignment was not vectorized. Try using non-volatile assignment.   [ src/shared/heap_sort.f90(65,14) ]
+LOOP END
+===========================================================================
+
+Begin optimization report for: HEAP_SORT_LOCAL
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/shared/heap_sort.f90(134,3)
+<Peeled>
+   remark #15301: PEEL LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/shared/heap_sort.f90(134,3)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/shared/heap_sort.f90(134,3)
+<Remainder>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/shared/heap_sort.f90(142,3)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed ANTI dependence between x line 177 and x line 196
+
+   LOOP BEGIN at src/shared/heap_sort.f90(181,5) inlined into src/shared/heap_sort.f90(143,10)
+      remark #15523: loop was not vectorized: cannot compute loop iteration count before executing the loop.
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/shared/heap_sort.f90(147,3)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed ANTI dependence between x line 149 and x line 196
+
+   LOOP BEGIN at src/shared/heap_sort.f90(181,5) inlined into src/shared/heap_sort.f90(156,10)
+      remark #15523: loop was not vectorized: cannot compute loop iteration count before executing the loop.
+   LOOP END
+LOOP END
+===========================================================================

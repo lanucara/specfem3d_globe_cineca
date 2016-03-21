@@ -1,0 +1,264 @@
+
+Begin optimization report for: ASSEMBLE_MPI_CENTRAL_CUBE_BLOCK
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/meshfem3D/assemble_MPI_central_cube_mesh.f90(85,5)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at src/meshfem3D/assemble_MPI_central_cube_mesh.f90(92,5)
+      remark #15542: loop was not vectorized: inner loop was already vectorized
+
+      LOOP BEGIN at src/meshfem3D/assemble_MPI_central_cube_mesh.f90(92,5)
+      <Peeled>
+      LOOP END
+
+      LOOP BEGIN at src/meshfem3D/assemble_MPI_central_cube_mesh.f90(92,5)
+         remark #15300: LOOP WAS VECTORIZED
+      LOOP END
+
+      LOOP BEGIN at src/meshfem3D/assemble_MPI_central_cube_mesh.f90(92,5)
+      <Remainder>
+      LOOP END
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/assemble_MPI_central_cube_mesh.f90(101,5)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at src/meshfem3D/assemble_MPI_central_cube_mesh.f90(107,7)
+      remark #15542: loop was not vectorized: inner loop was already vectorized
+
+      LOOP BEGIN at src/meshfem3D/assemble_MPI_central_cube_mesh.f90(110,11)
+         remark #15542: loop was not vectorized: inner loop was already vectorized
+
+         LOOP BEGIN at src/meshfem3D/assemble_MPI_central_cube_mesh.f90(110,11)
+         <Peeled>
+            remark #15301: PEEL LOOP WAS VECTORIZED
+         LOOP END
+
+         LOOP BEGIN at src/meshfem3D/assemble_MPI_central_cube_mesh.f90(110,11)
+            remark #15300: LOOP WAS VECTORIZED
+         LOOP END
+
+         LOOP BEGIN at src/meshfem3D/assemble_MPI_central_cube_mesh.f90(110,11)
+         <Remainder>
+            remark #15301: REMAINDER LOOP WAS VECTORIZED
+         LOOP END
+
+         LOOP BEGIN at src/meshfem3D/assemble_MPI_central_cube_mesh.f90(110,11)
+         <Remainder>
+         LOOP END
+      LOOP END
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/assemble_MPI_central_cube_mesh.f90(132,5)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at src/meshfem3D/assemble_MPI_central_cube_mesh.f90(135,9)
+      remark #15542: loop was not vectorized: inner loop was already vectorized
+
+      LOOP BEGIN at src/meshfem3D/assemble_MPI_central_cube_mesh.f90(138,13)
+         remark #15542: loop was not vectorized: inner loop was already vectorized
+
+         LOOP BEGIN at src/meshfem3D/assemble_MPI_central_cube_mesh.f90(138,13)
+         <Peeled>
+            remark #15301: PEEL LOOP WAS VECTORIZED
+         LOOP END
+
+         LOOP BEGIN at src/meshfem3D/assemble_MPI_central_cube_mesh.f90(138,13)
+            remark #15300: LOOP WAS VECTORIZED
+         LOOP END
+
+         LOOP BEGIN at src/meshfem3D/assemble_MPI_central_cube_mesh.f90(138,13)
+         <Remainder>
+            remark #15301: REMAINDER LOOP WAS VECTORIZED
+         LOOP END
+
+         LOOP BEGIN at src/meshfem3D/assemble_MPI_central_cube_mesh.f90(138,13)
+         <Remainder>
+         LOOP END
+      LOOP END
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/assemble_MPI_central_cube_mesh.f90(149,4)
+   remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/assemble_MPI_central_cube_mesh.f90(149,4)
+<Remainder>
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/assemble_MPI_central_cube_mesh.f90(157,5)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at src/meshfem3D/assemble_MPI_central_cube_mesh.f90(159,7)
+      remark #15398: loop was not vectorized: loop was transformed to memset or memcpy
+   LOOP END
+
+   LOOP BEGIN at src/meshfem3D/assemble_MPI_central_cube_mesh.f90(163,7)
+      remark #15542: loop was not vectorized: inner loop was already vectorized
+
+      LOOP BEGIN at src/meshfem3D/assemble_MPI_central_cube_mesh.f90(164,9)
+         remark #15300: LOOP WAS VECTORIZED
+      LOOP END
+
+      LOOP BEGIN at src/meshfem3D/assemble_MPI_central_cube_mesh.f90(164,9)
+      <Remainder>
+         remark #15301: REMAINDER LOOP WAS VECTORIZED
+      LOOP END
+
+      LOOP BEGIN at src/meshfem3D/assemble_MPI_central_cube_mesh.f90(164,9)
+      <Remainder>
+      LOOP END
+
+      LOOP BEGIN at src/meshfem3D/assemble_MPI_central_cube_mesh.f90(164,9)
+         remark #15300: LOOP WAS VECTORIZED
+      LOOP END
+
+      LOOP BEGIN at src/meshfem3D/assemble_MPI_central_cube_mesh.f90(164,9)
+      <Remainder>
+      LOOP END
+   LOOP END
+
+   LOOP BEGIN at src/meshfem3D/assemble_MPI_central_cube_mesh.f90(178,7)
+      remark #15398: loop was not vectorized: loop was transformed to memset or memcpy
+   LOOP END
+
+   LOOP BEGIN at src/meshfem3D/assemble_MPI_central_cube_mesh.f90(179,7)
+      remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+      remark #15346: vector dependence: assumed FLOW dependence between array_central_cube line 183 and array_central_cube line 183
+   LOOP END
+
+   LOOP BEGIN at src/meshfem3D/assemble_MPI_central_cube_mesh.f90(179,7)
+      remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+      remark #15346: vector dependence: assumed FLOW dependence between array_central_cube line 191 and array_central_cube line 191
+   LOOP END
+
+   LOOP BEGIN at src/meshfem3D/assemble_MPI_central_cube_mesh.f90(200,7)
+      remark #15542: loop was not vectorized: inner loop was already vectorized
+
+      LOOP BEGIN at src/meshfem3D/assemble_MPI_central_cube_mesh.f90(203,11)
+         remark #15300: LOOP WAS VECTORIZED
+      LOOP END
+
+      LOOP BEGIN at src/meshfem3D/assemble_MPI_central_cube_mesh.f90(203,11)
+      <Remainder>
+         remark #15301: REMAINDER LOOP WAS VECTORIZED
+      LOOP END
+   LOOP END
+
+   LOOP BEGIN at src/meshfem3D/assemble_MPI_central_cube_mesh.f90(212,7)
+      remark #15300: LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/meshfem3D/assemble_MPI_central_cube_mesh.f90(212,7)
+   <Remainder>
+      remark #15301: REMAINDER LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/meshfem3D/assemble_MPI_central_cube_mesh.f90(212,7)
+   <Remainder>
+   LOOP END
+
+   LOOP BEGIN at src/meshfem3D/assemble_MPI_central_cube_mesh.f90(216,9)
+      remark #15542: loop was not vectorized: inner loop was already vectorized
+
+      LOOP BEGIN at src/meshfem3D/assemble_MPI_central_cube_mesh.f90(215,7)
+      <Peeled>
+         remark #15301: PEEL LOOP WAS VECTORIZED
+      LOOP END
+
+      LOOP BEGIN at src/meshfem3D/assemble_MPI_central_cube_mesh.f90(215,7)
+         remark #15301: PERMUTED LOOP WAS VECTORIZED
+      LOOP END
+
+      LOOP BEGIN at src/meshfem3D/assemble_MPI_central_cube_mesh.f90(215,7)
+      <Alternate Alignment Vectorized Loop>
+      LOOP END
+
+      LOOP BEGIN at src/meshfem3D/assemble_MPI_central_cube_mesh.f90(215,7)
+      <Remainder>
+         remark #15301: REMAINDER LOOP WAS VECTORIZED
+      LOOP END
+
+      LOOP BEGIN at src/meshfem3D/assemble_MPI_central_cube_mesh.f90(215,7)
+         remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+      LOOP END
+
+      LOOP BEGIN at src/meshfem3D/assemble_MPI_central_cube_mesh.f90(215,7)
+      <Remainder>
+      LOOP END
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/assemble_MPI_central_cube_mesh.f90(248,7)
+<Peeled>
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/assemble_MPI_central_cube_mesh.f90(248,7)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/assemble_MPI_central_cube_mesh.f90(248,7)
+<Alternate Alignment Vectorized Loop>
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/assemble_MPI_central_cube_mesh.f90(248,7)
+<Remainder>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/assemble_MPI_central_cube_mesh.f90(253,5)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at src/meshfem3D/assemble_MPI_central_cube_mesh.f90(259,7)
+      remark #15542: loop was not vectorized: inner loop was already vectorized
+
+      LOOP BEGIN at src/meshfem3D/assemble_MPI_central_cube_mesh.f90(264,11)
+         remark #15542: loop was not vectorized: inner loop was already vectorized
+
+         LOOP BEGIN at src/meshfem3D/assemble_MPI_central_cube_mesh.f90(264,11)
+         <Peeled>
+            remark #15301: PEEL LOOP WAS VECTORIZED
+         LOOP END
+
+         LOOP BEGIN at src/meshfem3D/assemble_MPI_central_cube_mesh.f90(264,11)
+            remark #15300: LOOP WAS VECTORIZED
+         LOOP END
+
+         LOOP BEGIN at src/meshfem3D/assemble_MPI_central_cube_mesh.f90(264,11)
+         <Remainder>
+            remark #15301: REMAINDER LOOP WAS VECTORIZED
+         LOOP END
+
+         LOOP BEGIN at src/meshfem3D/assemble_MPI_central_cube_mesh.f90(264,11)
+         <Remainder>
+         LOOP END
+      LOOP END
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/assemble_MPI_central_cube_mesh.f90(278,4)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at src/meshfem3D/assemble_MPI_central_cube_mesh.f90(281,4)
+      remark #15542: loop was not vectorized: inner loop was already vectorized
+
+      LOOP BEGIN at src/meshfem3D/assemble_MPI_central_cube_mesh.f90(281,4)
+      <Peeled>
+      LOOP END
+
+      LOOP BEGIN at src/meshfem3D/assemble_MPI_central_cube_mesh.f90(281,4)
+         remark #15300: LOOP WAS VECTORIZED
+      LOOP END
+
+      LOOP BEGIN at src/meshfem3D/assemble_MPI_central_cube_mesh.f90(281,4)
+      <Remainder>
+      LOOP END
+   LOOP END
+LOOP END
+===========================================================================

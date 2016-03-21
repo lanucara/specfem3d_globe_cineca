@@ -1,0 +1,70 @@
+
+Begin optimization report for: COMPUTE_FORCES_ACOUSTIC
+
+    Report from: Vector optimizations [vec]
+
+
+
+Non-optimizable loops:
+
+
+LOOP BEGIN at src/specfem3D/compute_forces_acoustic_calling_routine.F90(223,3)
+   remark #15529: loop was not vectorized: volatile assignment was not vectorized. Try using non-volatile assignment.   [ src/specfem3D/compute_forces_acoustic_calling_routine.F90(512,14) ]
+LOOP END
+===========================================================================
+
+Begin optimization report for: COMPUTE_FORCES_ACOUSTIC_BACKWARD
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/specfem3D/compute_forces_acoustic_calling_routine.F90(490,78)
+<Multiversioned v1>
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/compute_forces_acoustic_calling_routine.F90(490,78)
+<Remainder, Multiversioned v1>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/compute_forces_acoustic_calling_routine.F90(490,78)
+<Multiversioned v2>
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/compute_forces_acoustic_calling_routine.F90(490,78)
+<Remainder, Multiversioned v2>
+LOOP END
+
+LOOP BEGIN at src/specfem3D/compute_forces_acoustic_calling_routine.F90(490,78)
+<Multiversioned v1>
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/compute_forces_acoustic_calling_routine.F90(490,78)
+<Alternate Alignment Vectorized Loop, Multiversioned v1>
+LOOP END
+
+LOOP BEGIN at src/specfem3D/compute_forces_acoustic_calling_routine.F90(490,78)
+<Remainder, Multiversioned v1>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/compute_forces_acoustic_calling_routine.F90(490,78)
+<Multiversioned v2>
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/compute_forces_acoustic_calling_routine.F90(490,78)
+<Remainder, Multiversioned v2>
+LOOP END
+
+
+Non-optimizable loops:
+
+
+LOOP BEGIN at src/specfem3D/compute_forces_acoustic_calling_routine.F90(485,3)
+   remark #15529: loop was not vectorized: volatile assignment was not vectorized. Try using non-volatile assignment.   [ src/specfem3D/compute_forces_acoustic_calling_routine.F90(512,14) ]
+LOOP END
+===========================================================================

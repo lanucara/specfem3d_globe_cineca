@@ -1,0 +1,536 @@
+
+Begin optimization report for: LOCATE_RECEIVERS
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/specfem3D/locate_receivers.f90(170,3)
+   remark #15398: loop was not vectorized: loop was transformed to memset or memcpy
+LOOP END
+
+LOOP BEGIN at src/specfem3D/locate_receivers.f90(206,3)
+<Peeled>
+   remark #15301: PEEL LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/locate_receivers.f90(206,3)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/locate_receivers.f90(206,3)
+<Remainder>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/locate_receivers.f90(220,5)
+   remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+   LOOP BEGIN at src/specfem3D/locate_receivers.f90(233,7)
+      remark #15521: loop was not vectorized: explicitly compute the iteration count before executing the loop or try using canonical loop form
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/specfem3D/locate_receivers.f90(268,5)
+   remark #15398: loop was not vectorized: loop was transformed to memset or memcpy
+LOOP END
+
+LOOP BEGIN at src/specfem3D/locate_receivers.f90(269,5)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed ANTI dependence between specfem_par_mp_station_name_ line 271 and specfem_par_mp_station_name_ line 276
+
+   LOOP BEGIN at src/specfem3D/locate_receivers.f90(270,7)
+      remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+      remark #15346: vector dependence: assumed ANTI dependence between specfem_par_mp_station_name_ line 271 and specfem_par_mp_station_name_ line 276
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/specfem3D/locate_receivers.f90(288,41)
+   remark #15398: loop was not vectorized: loop was transformed to memset or memcpy
+LOOP END
+
+LOOP BEGIN at src/specfem3D/locate_receivers.f90(326,5)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/locate_receivers.f90(326,5)
+<Remainder>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/locate_receivers.f90(326,5)
+<Remainder>
+LOOP END
+
+LOOP BEGIN at src/specfem3D/locate_receivers.f90(335,3)
+   remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+   LOOP BEGIN at src/specfem3D/locate_receivers.f90(449,9)
+      remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+      remark #15346: vector dependence: assumed OUTPUT dependence between specfem_par_mp_ispec_selected_re line 469 and specfem_par_mp_ispec_selected_re line 469
+
+      LOOP BEGIN at src/specfem3D/locate_receivers.f90(458,11)
+         remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+         remark #15346: vector dependence: assumed OUTPUT dependence between specfem_par_mp_ispec_selected_re line 469 and specfem_par_mp_ispec_selected_re line 469
+
+         LOOP BEGIN at src/specfem3D/locate_receivers.f90(459,13)
+            remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+            remark #15346: vector dependence: assumed OUTPUT dependence between specfem_par_mp_ispec_selected_re line 469 and specfem_par_mp_ispec_selected_re line 469
+
+            LOOP BEGIN at src/specfem3D/locate_receivers.f90(460,15)
+               remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+               remark #15346: vector dependence: assumed ANTI dependence between distmin_squared line 467 and distmin_squared line 468
+            LOOP END
+
+            LOOP BEGIN at src/specfem3D/locate_receivers.f90(460,15)
+            LOOP END
+
+            LOOP BEGIN at src/specfem3D/locate_receivers.f90(460,15)
+            LOOP END
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/locate_receivers.f90(459,13)
+
+            LOOP BEGIN at src/specfem3D/locate_receivers.f90(460,15)
+            LOOP END
+
+            LOOP BEGIN at src/specfem3D/locate_receivers.f90(460,15)
+            LOOP END
+
+            LOOP BEGIN at src/specfem3D/locate_receivers.f90(460,15)
+            LOOP END
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/locate_receivers.f90(459,13)
+
+            LOOP BEGIN at src/specfem3D/locate_receivers.f90(460,15)
+            LOOP END
+
+            LOOP BEGIN at src/specfem3D/locate_receivers.f90(460,15)
+            LOOP END
+
+            LOOP BEGIN at src/specfem3D/locate_receivers.f90(460,15)
+            LOOP END
+         LOOP END
+      LOOP END
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/specfem3D/locate_receivers.f90(524,5)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed OUTPUT dependence between 258 line 526 and 258 line 526
+LOOP END
+
+LOOP BEGIN at src/specfem3D/locate_receivers.f90(551,5)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed OUTPUT dependence between 258 line 554 and 258 line 573
+LOOP END
+
+LOOP BEGIN at src/specfem3D/locate_receivers.f90(592,3)
+<Peeled>
+LOOP END
+
+LOOP BEGIN at src/specfem3D/locate_receivers.f90(592,3)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/locate_receivers.f90(592,3)
+<Remainder>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/locate_receivers.f90(595,3)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at src/specfem3D/locate_receivers.f90(638,5)
+      remark #15542: loop was not vectorized: inner loop was already vectorized
+
+      LOOP BEGIN at src/specfem3D/locate_receivers.f90(638,5)
+      <Peeled>
+         remark #15301: PEEL LOOP WAS VECTORIZED
+      LOOP END
+
+      LOOP BEGIN at src/specfem3D/locate_receivers.f90(638,5)
+         remark #15300: LOOP WAS VECTORIZED
+      LOOP END
+
+      LOOP BEGIN at src/specfem3D/locate_receivers.f90(638,5)
+      <Remainder>
+         remark #15301: REMAINDER LOOP WAS VECTORIZED
+      LOOP END
+   LOOP END
+
+   LOOP BEGIN at src/specfem3D/locate_receivers.f90(639,5)
+   <Peeled>
+      remark #15301: PEEL LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/specfem3D/locate_receivers.f90(639,5)
+      remark #15300: LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/specfem3D/locate_receivers.f90(639,5)
+   <Remainder>
+      remark #15301: REMAINDER LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/specfem3D/locate_receivers.f90(642,5)
+      remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+      LOOP BEGIN at src/specfem3D/locate_receivers.f90(651,7)
+         remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+      LOOP END
+
+      LOOP BEGIN at src/specfem3D/locate_receivers.f90(706,7)
+         remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+      LOOP END
+   LOOP END
+
+   LOOP BEGIN at src/specfem3D/locate_receivers.f90(777,5)
+      remark #15542: loop was not vectorized: inner loop was already vectorized
+
+      LOOP BEGIN at src/specfem3D/locate_receivers.f90(777,5)
+      <Peeled>
+      LOOP END
+
+      LOOP BEGIN at src/specfem3D/locate_receivers.f90(777,5)
+         remark #15300: LOOP WAS VECTORIZED
+      LOOP END
+
+      LOOP BEGIN at src/specfem3D/locate_receivers.f90(777,5)
+      <Remainder>
+         remark #15301: REMAINDER LOOP WAS VECTORIZED
+      LOOP END
+   LOOP END
+
+   LOOP BEGIN at src/specfem3D/locate_receivers.f90(785,11)
+      remark #15542: loop was not vectorized: inner loop was already vectorized
+
+      LOOP BEGIN at src/specfem3D/locate_receivers.f90(785,11)
+      <Peeled>
+         remark #15301: PEEL LOOP WAS VECTORIZED
+      LOOP END
+
+      LOOP BEGIN at src/specfem3D/locate_receivers.f90(785,11)
+         remark #15300: LOOP WAS VECTORIZED
+      LOOP END
+
+      LOOP BEGIN at src/specfem3D/locate_receivers.f90(785,11)
+      <Remainder>
+         remark #15301: REMAINDER LOOP WAS VECTORIZED
+      LOOP END
+   LOOP END
+
+   LOOP BEGIN at src/specfem3D/locate_receivers.f90(800,7)
+   <Peeled>
+      remark #15301: PEEL LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/specfem3D/locate_receivers.f90(800,7)
+      remark #15300: LOOP WAS VECTORIZED
+
+      LOOP BEGIN at src/specfem3D/locate_receivers.f90(806,9)
+      LOOP END
+   LOOP END
+
+   LOOP BEGIN at src/specfem3D/locate_receivers.f90(800,7)
+   <Remainder>
+      remark #15301: REMAINDER LOOP WAS VECTORIZED
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/specfem3D/locate_receivers.f90(851,5)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/locate_receivers.f90(851,5)
+<Remainder>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/locate_receivers.f90(853,5)
+   remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+   LOOP BEGIN at src/specfem3D/locate_receivers.f90(893,9)
+      remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+      remark #15346: vector dependence: assumed FLOW dependence between 1720 line 893 and 1720 line 893
+
+      LOOP BEGIN at src/specfem3D/locate_receivers.f90(893,9)
+         remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+      LOOP END
+
+      LOOP BEGIN at src/specfem3D/locate_receivers.f90(893,9)
+      LOOP END
+
+      LOOP BEGIN at src/specfem3D/locate_receivers.f90(893,9)
+      LOOP END
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/specfem3D/locate_receivers.f90(906,26)
+<Peeled>
+   remark #15301: PEEL LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/locate_receivers.f90(906,26)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/locate_receivers.f90(906,26)
+<Remainder>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/locate_receivers.f90(925,5)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at src/specfem3D/locate_receivers.f90(925,5)
+   <Multiversioned v2>
+      remark #15300: LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/specfem3D/locate_receivers.f90(925,5)
+   <Alternate Alignment Vectorized Loop, Multiversioned v2>
+   LOOP END
+
+   LOOP BEGIN at src/specfem3D/locate_receivers.f90(925,5)
+   <Remainder, Multiversioned v2>
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/specfem3D/locate_receivers.f90(926,5)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at src/specfem3D/locate_receivers.f90(926,5)
+   <Multiversioned v2>
+      remark #15300: LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/specfem3D/locate_receivers.f90(926,5)
+   <Alternate Alignment Vectorized Loop, Multiversioned v2>
+   LOOP END
+
+   LOOP BEGIN at src/specfem3D/locate_receivers.f90(926,5)
+   <Remainder, Multiversioned v2>
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/specfem3D/locate_receivers.f90(927,5)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at src/specfem3D/locate_receivers.f90(927,5)
+   <Multiversioned v2>
+      remark #15300: LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/specfem3D/locate_receivers.f90(927,5)
+   <Alternate Alignment Vectorized Loop, Multiversioned v2>
+   LOOP END
+
+   LOOP BEGIN at src/specfem3D/locate_receivers.f90(927,5)
+   <Remainder, Multiversioned v2>
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/specfem3D/locate_receivers.f90(928,5)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at src/specfem3D/locate_receivers.f90(928,5)
+   <Multiversioned v2>
+      remark #15300: LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/specfem3D/locate_receivers.f90(928,5)
+   <Alternate Alignment Vectorized Loop, Multiversioned v2>
+   LOOP END
+
+   LOOP BEGIN at src/specfem3D/locate_receivers.f90(928,5)
+   <Remainder, Multiversioned v2>
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/specfem3D/locate_receivers.f90(929,5)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at src/specfem3D/locate_receivers.f90(929,5)
+   <Multiversioned v2>
+      remark #15300: LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/specfem3D/locate_receivers.f90(929,5)
+   <Alternate Alignment Vectorized Loop, Multiversioned v2>
+   LOOP END
+
+   LOOP BEGIN at src/specfem3D/locate_receivers.f90(929,5)
+   <Remainder, Multiversioned v2>
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/specfem3D/locate_receivers.f90(930,5)
+   remark #15527: loop was not vectorized: function call to memcpy cannot be vectorized
+LOOP END
+
+LOOP BEGIN at src/specfem3D/locate_receivers.f90(931,5)
+   remark #15527: loop was not vectorized: function call to memcpy cannot be vectorized
+LOOP END
+
+LOOP BEGIN at src/specfem3D/locate_receivers.f90(932,5)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at src/specfem3D/locate_receivers.f90(932,5)
+   <Multiversioned v2>
+      remark #15300: LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/specfem3D/locate_receivers.f90(932,5)
+   <Alternate Alignment Vectorized Loop, Multiversioned v2>
+   LOOP END
+
+   LOOP BEGIN at src/specfem3D/locate_receivers.f90(932,5)
+   <Remainder, Multiversioned v2>
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/specfem3D/locate_receivers.f90(933,5)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at src/specfem3D/locate_receivers.f90(933,5)
+   <Multiversioned v2>
+      remark #15300: LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/specfem3D/locate_receivers.f90(933,5)
+   <Alternate Alignment Vectorized Loop, Multiversioned v2>
+   LOOP END
+
+   LOOP BEGIN at src/specfem3D/locate_receivers.f90(933,5)
+   <Remainder, Multiversioned v2>
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/specfem3D/locate_receivers.f90(934,5)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at src/specfem3D/locate_receivers.f90(934,5)
+   <Multiversioned v2>
+      remark #15300: LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/specfem3D/locate_receivers.f90(934,5)
+   <Alternate Alignment Vectorized Loop, Multiversioned v2>
+   LOOP END
+
+   LOOP BEGIN at src/specfem3D/locate_receivers.f90(934,5)
+   <Remainder, Multiversioned v2>
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/specfem3D/locate_receivers.f90(935,5)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at src/specfem3D/locate_receivers.f90(935,5)
+   <Multiversioned v2>
+      remark #15300: LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/specfem3D/locate_receivers.f90(935,5)
+   <Alternate Alignment Vectorized Loop, Multiversioned v2>
+   LOOP END
+
+   LOOP BEGIN at src/specfem3D/locate_receivers.f90(935,5)
+   <Remainder, Multiversioned v2>
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/specfem3D/locate_receivers.f90(936,5)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at src/specfem3D/locate_receivers.f90(936,5)
+      remark #15542: loop was not vectorized: inner loop was already vectorized
+
+      LOOP BEGIN at src/specfem3D/locate_receivers.f90(936,5)
+         remark #15542: loop was not vectorized: inner loop was already vectorized
+
+         LOOP BEGIN at src/specfem3D/locate_receivers.f90(936,5)
+         <Peeled, Multiversioned v2>
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/locate_receivers.f90(936,5)
+         <Multiversioned v2>
+            remark #15300: LOOP WAS VECTORIZED
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/locate_receivers.f90(936,5)
+         <Alternate Alignment Vectorized Loop, Multiversioned v2>
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/locate_receivers.f90(936,5)
+         <Remainder, Multiversioned v2>
+         LOOP END
+      LOOP END
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/specfem3D/locate_receivers.f90(937,5)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at src/specfem3D/locate_receivers.f90(937,5)
+   <Multiversioned v2>
+      remark #15300: LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/specfem3D/locate_receivers.f90(937,5)
+   <Alternate Alignment Vectorized Loop, Multiversioned v2>
+   LOOP END
+
+   LOOP BEGIN at src/specfem3D/locate_receivers.f90(937,5)
+   <Remainder, Multiversioned v2>
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/specfem3D/locate_receivers.f90(946,5)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed OUTPUT dependence between 258 line 947 and 258 line 947
+LOOP END
+
+LOOP BEGIN at src/specfem3D/locate_receivers.f90(959,7)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed FLOW dependence between 1890 line 960 and 1890 line 960
+LOOP END
+===========================================================================
+
+Begin optimization report for: HEAP_SORT_DISTANCES
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/specfem3D/locate_receivers.f90(1047,3)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/locate_receivers.f90(1047,3)
+<Alternate Alignment Vectorized Loop>
+LOOP END
+
+LOOP BEGIN at src/specfem3D/locate_receivers.f90(1047,3)
+<Remainder>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/locate_receivers.f90(1056,3)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed ANTI dependence between x line 1087 and x line 1106
+
+   LOOP BEGIN at src/specfem3D/locate_receivers.f90(1091,5) inlined into src/specfem3D/locate_receivers.f90(1057,10)
+      remark #15523: loop was not vectorized: cannot compute loop iteration count before executing the loop.
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/specfem3D/locate_receivers.f90(1061,3)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed ANTI dependence between x line 1063 and y line 1107
+
+   LOOP BEGIN at src/specfem3D/locate_receivers.f90(1091,5) inlined into src/specfem3D/locate_receivers.f90(1070,10)
+      remark #15523: loop was not vectorized: cannot compute loop iteration count before executing the loop.
+   LOOP END
+LOOP END
+===========================================================================

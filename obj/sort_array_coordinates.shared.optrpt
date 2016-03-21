@@ -1,0 +1,171 @@
+
+Begin optimization report for: SORT_ARRAY_COORDINATES
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/shared/sort_array_coordinates.f90(52,3)
+<Peeled>
+   remark #15301: PEEL LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/shared/sort_array_coordinates.f90(52,3)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/shared/sort_array_coordinates.f90(52,3)
+<Remainder>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/shared/sort_array_coordinates.f90(56,3)
+   remark #15398: loop was not vectorized: loop was transformed to memset or memcpy
+LOOP END
+
+LOOP BEGIN at src/shared/sort_array_coordinates.f90(65,5)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+LOOP END
+
+LOOP BEGIN at src/shared/sort_array_coordinates.f90(80,7)
+<Peeled>
+   remark #15301: PEEL LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/shared/sort_array_coordinates.f90(80,7)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/shared/sort_array_coordinates.f90(80,7)
+<Alternate Alignment Vectorized Loop>
+LOOP END
+
+LOOP BEGIN at src/shared/sort_array_coordinates.f90(80,7)
+<Remainder>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/shared/sort_array_coordinates.f90(95,5)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed OUTPUT dependence between ninseg line 98 and ninseg line 100
+LOOP END
+
+LOOP BEGIN at src/shared/sort_array_coordinates.f90(95,5)
+<Remainder>
+LOOP END
+
+LOOP BEGIN at src/shared/sort_array_coordinates.f90(65,5)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+LOOP END
+
+LOOP BEGIN at src/shared/sort_array_coordinates.f90(84,7)
+<Peeled>
+   remark #15301: PEEL LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/shared/sort_array_coordinates.f90(84,7)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/shared/sort_array_coordinates.f90(84,7)
+<Alternate Alignment Vectorized Loop>
+LOOP END
+
+LOOP BEGIN at src/shared/sort_array_coordinates.f90(84,7)
+<Remainder>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/shared/sort_array_coordinates.f90(88,7)
+<Peeled>
+   remark #15301: PEEL LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/shared/sort_array_coordinates.f90(88,7)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/shared/sort_array_coordinates.f90(88,7)
+<Alternate Alignment Vectorized Loop>
+LOOP END
+
+LOOP BEGIN at src/shared/sort_array_coordinates.f90(88,7)
+<Remainder>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/shared/sort_array_coordinates.f90(95,5)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed OUTPUT dependence between ninseg line 98 and ninseg line 100
+LOOP END
+
+LOOP BEGIN at src/shared/sort_array_coordinates.f90(95,5)
+<Remainder>
+LOOP END
+
+LOOP BEGIN at src/shared/sort_array_coordinates.f90(62,3)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at src/shared/sort_array_coordinates.f90(65,5)
+      remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   LOOP END
+
+   LOOP BEGIN at src/shared/sort_array_coordinates.f90(88,7)
+   <Peeled>
+      remark #15301: PEEL LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/shared/sort_array_coordinates.f90(88,7)
+      remark #15300: LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/shared/sort_array_coordinates.f90(88,7)
+   <Alternate Alignment Vectorized Loop>
+   LOOP END
+
+   LOOP BEGIN at src/shared/sort_array_coordinates.f90(88,7)
+   <Remainder>
+      remark #15301: REMAINDER LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/shared/sort_array_coordinates.f90(95,5)
+      remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+      remark #15346: vector dependence: assumed OUTPUT dependence between ninseg line 98 and ninseg line 100
+   LOOP END
+
+   LOOP BEGIN at src/shared/sort_array_coordinates.f90(95,5)
+   <Remainder>
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/shared/sort_array_coordinates.f90(108,3)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed ANTI dependence between ig line 110 and ig line 109
+LOOP END
+
+LOOP BEGIN at src/shared/sort_array_coordinates.f90(108,3)
+<Remainder>
+LOOP END
+===========================================================================
+
+Begin optimization report for: HEAP_SORT_MULTI
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/shared/sort_array_coordinates.f90(142,3)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed ANTI dependence between dx line 197 and dx line 222
+
+   LOOP BEGIN at src/shared/sort_array_coordinates.f90(204,5) inlined into src/shared/sort_array_coordinates.f90(143,10)
+      remark #15523: loop was not vectorized: cannot compute loop iteration count before executing the loop.
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/shared/sort_array_coordinates.f90(147,3)
+   remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+   LOOP BEGIN at src/shared/sort_array_coordinates.f90(204,5) inlined into src/shared/sort_array_coordinates.f90(154,10)
+      remark #15523: loop was not vectorized: cannot compute loop iteration count before executing the loop.
+   LOOP END
+LOOP END
+===========================================================================

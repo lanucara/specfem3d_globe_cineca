@@ -1,0 +1,30 @@
+
+Begin optimization report for: SPLINE_CONSTRUCTION
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/shared/spline_routines.f90(54,3)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed FLOW dependence between spline_coefficients line 56 and spline_coefficients line 56
+LOOP END
+
+LOOP BEGIN at src/shared/spline_routines.f90(70,3)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed FLOW dependence between spline_coefficients line 71 and spline_coefficients line 71
+LOOP END
+
+LOOP BEGIN at src/shared/spline_routines.f90(70,3)
+<Remainder>
+LOOP END
+===========================================================================
+
+Begin optimization report for: SPLINE_EVALUATION
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/shared/spline_routines.f90(108,3)
+   remark #15521: loop was not vectorized: explicitly compute the iteration count before executing the loop or try using canonical loop form
+LOOP END
+===========================================================================

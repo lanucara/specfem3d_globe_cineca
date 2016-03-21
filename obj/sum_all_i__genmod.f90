@@ -1,0 +1,9 @@
+        !COMPILER-GENERATED INTERFACE MODULE: Fri Mar 11 15:45:27 2016
+        MODULE SUM_ALL_I__genmod
+          INTERFACE 
+            SUBROUTINE SUM_ALL_I(SENDBUF,RECVBUF)
+              INTEGER(KIND=4) :: SENDBUF
+              INTEGER(KIND=4) :: RECVBUF
+            END SUBROUTINE SUM_ALL_I
+          END INTERFACE 
+        END MODULE SUM_ALL_I__genmod

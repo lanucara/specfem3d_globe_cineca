@@ -1,0 +1,286 @@
+
+Begin optimization report for: COMPUTE_STACEY_OC_FORWARD
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/specfem3D/compute_stacey_outer_core.f90(84,9)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+
+   LOOP BEGIN at src/specfem3D/compute_stacey_outer_core.f90(92,11)
+      remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+      remark #15346: vector dependence: assumed OUTPUT dependence between accel_outer_core line 100 and accel_outer_core line 100
+
+      LOOP BEGIN at src/specfem3D/compute_stacey_outer_core.f90(93,13)
+         remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+         remark #15346: vector dependence: assumed FLOW dependence between accel_outer_core line 100 and accel_outer_core line 100
+      LOOP END
+
+      LOOP BEGIN at src/specfem3D/compute_stacey_outer_core.f90(93,13)
+         remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+         remark #15346: vector dependence: assumed FLOW dependence between accel_outer_core line 100 and accel_outer_core line 100
+      LOOP END
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/specfem3D/compute_stacey_outer_core.f90(128,9)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+
+   LOOP BEGIN at src/specfem3D/compute_stacey_outer_core.f90(136,11)
+      remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+      remark #15346: vector dependence: assumed OUTPUT dependence between accel_outer_core line 144 and accel_outer_core line 144
+
+      LOOP BEGIN at src/specfem3D/compute_stacey_outer_core.f90(137,13)
+         remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+         remark #15346: vector dependence: assumed FLOW dependence between accel_outer_core line 144 and accel_outer_core line 144
+      LOOP END
+
+      LOOP BEGIN at src/specfem3D/compute_stacey_outer_core.f90(137,13)
+         remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+         remark #15346: vector dependence: assumed FLOW dependence between accel_outer_core line 144 and accel_outer_core line 144
+      LOOP END
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/specfem3D/compute_stacey_outer_core.f90(171,7)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+
+   LOOP BEGIN at src/specfem3D/compute_stacey_outer_core.f90(179,9)
+      remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+      remark #15346: vector dependence: assumed OUTPUT dependence between accel_outer_core line 187 and accel_outer_core line 187
+
+      LOOP BEGIN at src/specfem3D/compute_stacey_outer_core.f90(180,11)
+         remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+         remark #15346: vector dependence: assumed FLOW dependence between accel_outer_core line 187 and accel_outer_core line 187
+      LOOP END
+
+      LOOP BEGIN at src/specfem3D/compute_stacey_outer_core.f90(180,11)
+         remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+         remark #15346: vector dependence: assumed FLOW dependence between accel_outer_core line 187 and accel_outer_core line 187
+      LOOP END
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/specfem3D/compute_stacey_outer_core.f90(211,7)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+
+   LOOP BEGIN at src/specfem3D/compute_stacey_outer_core.f90(219,9)
+      remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+      remark #15346: vector dependence: assumed OUTPUT dependence between accel_outer_core line 227 and accel_outer_core line 227
+
+      LOOP BEGIN at src/specfem3D/compute_stacey_outer_core.f90(220,11)
+         remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+         remark #15346: vector dependence: assumed FLOW dependence between accel_outer_core line 227 and accel_outer_core line 227
+      LOOP END
+
+      LOOP BEGIN at src/specfem3D/compute_stacey_outer_core.f90(220,11)
+         remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+         remark #15346: vector dependence: assumed FLOW dependence between accel_outer_core line 227 and accel_outer_core line 227
+      LOOP END
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/specfem3D/compute_stacey_outer_core.f90(253,7)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed OUTPUT dependence between accel_outer_core line 266 and accel_outer_core line 266
+
+   LOOP BEGIN at src/specfem3D/compute_stacey_outer_core.f90(258,9)
+      remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+      remark #15346: vector dependence: assumed OUTPUT dependence between accel_outer_core line 266 and accel_outer_core line 266
+
+      LOOP BEGIN at src/specfem3D/compute_stacey_outer_core.f90(259,11)
+         remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+         remark #15346: vector dependence: assumed FLOW dependence between accel_outer_core line 266 and accel_outer_core line 266
+      LOOP END
+
+      LOOP BEGIN at src/specfem3D/compute_stacey_outer_core.f90(259,11)
+      LOOP END
+
+      LOOP BEGIN at src/specfem3D/compute_stacey_outer_core.f90(259,11)
+      LOOP END
+
+      LOOP BEGIN at src/specfem3D/compute_stacey_outer_core.f90(259,11)
+      LOOP END
+
+      LOOP BEGIN at src/specfem3D/compute_stacey_outer_core.f90(259,11)
+      LOOP END
+   LOOP END
+LOOP END
+===========================================================================
+
+Begin optimization report for: COMPUTE_STACEY_OC_BACKWARD
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/specfem3D/compute_stacey_outer_core.f90(348,9)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+
+   LOOP BEGIN at src/specfem3D/compute_stacey_outer_core.f90(356,11)
+      remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+      remark #15346: vector dependence: assumed OUTPUT dependence between b_accel_outer_core line 360 and b_accel_outer_core line 360
+
+      LOOP BEGIN at src/specfem3D/compute_stacey_outer_core.f90(357,13)
+         remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+         remark #15346: vector dependence: assumed FLOW dependence between b_accel_outer_core line 360 and b_accel_outer_core line 360
+      LOOP END
+
+      LOOP BEGIN at src/specfem3D/compute_stacey_outer_core.f90(357,13)
+      <Remainder>
+      LOOP END
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/specfem3D/compute_stacey_outer_core.f90(381,9)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+
+   LOOP BEGIN at src/specfem3D/compute_stacey_outer_core.f90(389,11)
+      remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+      remark #15346: vector dependence: assumed OUTPUT dependence between b_accel_outer_core line 393 and b_accel_outer_core line 393
+
+      LOOP BEGIN at src/specfem3D/compute_stacey_outer_core.f90(390,13)
+         remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+         remark #15346: vector dependence: assumed FLOW dependence between b_accel_outer_core line 393 and b_accel_outer_core line 393
+      LOOP END
+
+      LOOP BEGIN at src/specfem3D/compute_stacey_outer_core.f90(390,13)
+      <Remainder>
+      LOOP END
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/specfem3D/compute_stacey_outer_core.f90(412,7)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+
+   LOOP BEGIN at src/specfem3D/compute_stacey_outer_core.f90(420,9)
+      remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+      remark #15346: vector dependence: assumed OUTPUT dependence between b_accel_outer_core line 424 and b_accel_outer_core line 424
+
+      LOOP BEGIN at src/specfem3D/compute_stacey_outer_core.f90(421,11)
+         remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+         remark #15346: vector dependence: assumed FLOW dependence between b_accel_outer_core line 424 and b_accel_outer_core line 424
+      LOOP END
+
+      LOOP BEGIN at src/specfem3D/compute_stacey_outer_core.f90(421,11)
+      <Remainder>
+      LOOP END
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/specfem3D/compute_stacey_outer_core.f90(442,7)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+
+   LOOP BEGIN at src/specfem3D/compute_stacey_outer_core.f90(450,9)
+      remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+      remark #15346: vector dependence: assumed OUTPUT dependence between b_accel_outer_core line 454 and b_accel_outer_core line 454
+
+      LOOP BEGIN at src/specfem3D/compute_stacey_outer_core.f90(451,11)
+         remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+         remark #15346: vector dependence: assumed FLOW dependence between b_accel_outer_core line 454 and b_accel_outer_core line 454
+      LOOP END
+
+      LOOP BEGIN at src/specfem3D/compute_stacey_outer_core.f90(451,11)
+      <Remainder>
+      LOOP END
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/specfem3D/compute_stacey_outer_core.f90(474,7)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed OUTPUT dependence between b_accel_outer_core line 483 and b_accel_outer_core line 483
+
+   LOOP BEGIN at src/specfem3D/compute_stacey_outer_core.f90(479,9)
+      remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+      remark #15346: vector dependence: assumed OUTPUT dependence between b_accel_outer_core line 483 and b_accel_outer_core line 483
+
+      LOOP BEGIN at src/specfem3D/compute_stacey_outer_core.f90(480,11)
+         remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+         remark #15346: vector dependence: assumed FLOW dependence between b_accel_outer_core line 483 and b_accel_outer_core line 483
+      LOOP END
+
+      LOOP BEGIN at src/specfem3D/compute_stacey_outer_core.f90(480,11)
+      LOOP END
+
+      LOOP BEGIN at src/specfem3D/compute_stacey_outer_core.f90(480,11)
+      LOOP END
+
+      LOOP BEGIN at src/specfem3D/compute_stacey_outer_core.f90(480,11)
+      LOOP END
+
+      LOOP BEGIN at src/specfem3D/compute_stacey_outer_core.f90(480,11)
+      LOOP END
+   LOOP END
+LOOP END
+===========================================================================
+
+Begin optimization report for: COMPUTE_STACEY_OC_BACKWARD_UNDOATT
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/specfem3D/compute_stacey_outer_core.f90(543,9)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+
+   LOOP BEGIN at src/specfem3D/compute_stacey_outer_core.f90(551,11)
+      remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+      remark #15346: vector dependence: assumed FLOW dependence between specfem_par_outercore_mp_b_accel line 559 and specfem_par_outercore_mp_b_accel line 559
+
+      LOOP BEGIN at src/specfem3D/compute_stacey_outer_core.f90(552,13)
+         remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+         remark #15346: vector dependence: assumed FLOW dependence between specfem_par_outercore_mp_b_accel line 559 and specfem_par_outercore_mp_b_accel line 559
+      LOOP END
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/specfem3D/compute_stacey_outer_core.f90(578,9)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+
+   LOOP BEGIN at src/specfem3D/compute_stacey_outer_core.f90(586,11)
+      remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+      remark #15346: vector dependence: assumed FLOW dependence between specfem_par_outercore_mp_b_accel line 594 and specfem_par_outercore_mp_b_accel line 594
+
+      LOOP BEGIN at src/specfem3D/compute_stacey_outer_core.f90(587,13)
+         remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+         remark #15346: vector dependence: assumed FLOW dependence between specfem_par_outercore_mp_b_accel line 594 and specfem_par_outercore_mp_b_accel line 594
+      LOOP END
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/specfem3D/compute_stacey_outer_core.f90(611,7)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+
+   LOOP BEGIN at src/specfem3D/compute_stacey_outer_core.f90(619,9)
+      remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+      remark #15346: vector dependence: assumed FLOW dependence between specfem_par_outercore_mp_b_accel line 627 and specfem_par_outercore_mp_b_accel line 627
+
+      LOOP BEGIN at src/specfem3D/compute_stacey_outer_core.f90(620,11)
+         remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+         remark #15346: vector dependence: assumed FLOW dependence between specfem_par_outercore_mp_b_accel line 627 and specfem_par_outercore_mp_b_accel line 627
+      LOOP END
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/specfem3D/compute_stacey_outer_core.f90(643,7)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+
+   LOOP BEGIN at src/specfem3D/compute_stacey_outer_core.f90(651,9)
+      remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+      remark #15346: vector dependence: assumed FLOW dependence between specfem_par_outercore_mp_b_accel line 659 and specfem_par_outercore_mp_b_accel line 659
+
+      LOOP BEGIN at src/specfem3D/compute_stacey_outer_core.f90(652,11)
+         remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+         remark #15346: vector dependence: assumed FLOW dependence between specfem_par_outercore_mp_b_accel line 659 and specfem_par_outercore_mp_b_accel line 659
+      LOOP END
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/specfem3D/compute_stacey_outer_core.f90(677,7)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed FLOW dependence between specfem_par_outercore_mp_b_accel line 690 and specfem_par_outercore_mp_b_accel line 690
+
+   LOOP BEGIN at src/specfem3D/compute_stacey_outer_core.f90(682,9)
+      remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+      remark #15346: vector dependence: assumed FLOW dependence between specfem_par_outercore_mp_b_accel line 690 and specfem_par_outercore_mp_b_accel line 690
+   LOOP END
+LOOP END
+===========================================================================

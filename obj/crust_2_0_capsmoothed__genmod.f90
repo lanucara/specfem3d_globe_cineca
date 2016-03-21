@@ -1,0 +1,20 @@
+        !COMPILER-GENERATED INTERFACE MODULE: Fri Mar 11 15:46:07 2016
+        MODULE CRUST_2_0_CAPSMOOTHED__genmod
+          INTERFACE 
+            SUBROUTINE CRUST_2_0_CAPSMOOTHED(LAT,LON,VELP,VELS,RHO,THICK&
+     &,ABBREVIATION,CODE,CRUST_THICKNESS,CRUST_VP,CRUST_VS,CRUST_RHO)
+              REAL(KIND=8) :: LAT
+              REAL(KIND=8) :: LON
+              REAL(KIND=8) :: VELP(8)
+              REAL(KIND=8) :: VELS(8)
+              REAL(KIND=8) :: RHO(8)
+              REAL(KIND=8) :: THICK(8)
+              CHARACTER(LEN=2) :: ABBREVIATION(90,180)
+              CHARACTER(LEN=2) :: CODE(359)
+              REAL(KIND=8) :: CRUST_THICKNESS(8,359)
+              REAL(KIND=8) :: CRUST_VP(8,359)
+              REAL(KIND=8) :: CRUST_VS(8,359)
+              REAL(KIND=8) :: CRUST_RHO(8,359)
+            END SUBROUTINE CRUST_2_0_CAPSMOOTHED
+          END INTERFACE 
+        END MODULE CRUST_2_0_CAPSMOOTHED__genmod

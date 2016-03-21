@@ -1,0 +1,21 @@
+        !COMPILER-GENERATED INTERFACE MODULE: Fri Mar 11 15:45:48 2016
+        MODULE GET_MODEL_CHECK_IDOUBLING__genmod
+          INTERFACE 
+            SUBROUTINE GET_MODEL_CHECK_IDOUBLING(R_PREM,X,Y,Z,RMIN,RMAX,&
+     &IDOUBLING,RICB,RCMB,RTOPDDOUBLEPRIME,R220,R670,MYRANK)
+              REAL(KIND=8) :: R_PREM
+              REAL(KIND=8) :: X
+              REAL(KIND=8) :: Y
+              REAL(KIND=8) :: Z
+              REAL(KIND=8) :: RMIN
+              REAL(KIND=8) :: RMAX
+              INTEGER(KIND=4) :: IDOUBLING
+              REAL(KIND=8) :: RICB
+              REAL(KIND=8) :: RCMB
+              REAL(KIND=8) :: RTOPDDOUBLEPRIME
+              REAL(KIND=8) :: R220
+              REAL(KIND=8) :: R670
+              INTEGER(KIND=4) :: MYRANK
+            END SUBROUTINE GET_MODEL_CHECK_IDOUBLING
+          END INTERFACE 
+        END MODULE GET_MODEL_CHECK_IDOUBLING__genmod

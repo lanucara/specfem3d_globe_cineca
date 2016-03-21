@@ -1,0 +1,29 @@
+
+Begin optimization report for: CONVOLVE_SOURCE_TIME_FUNCTION
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/auxiliaries/convolve_source_timefunction.f90(61,3)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed FLOW dependence between 16 line 62 and 16 line 62
+LOOP END
+
+LOOP BEGIN at src/auxiliaries/convolve_source_timefunction.f90(78,3)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at src/auxiliaries/convolve_source_timefunction.f90(82,5)
+      remark #15300: LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/auxiliaries/convolve_source_timefunction.f90(82,5)
+   <Remainder>
+      remark #15301: REMAINDER LOOP WAS VECTORIZED
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/auxiliaries/convolve_source_timefunction.f90(130,3)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed OUTPUT dependence between 16 line 131 and 16 line 131
+LOOP END
+===========================================================================

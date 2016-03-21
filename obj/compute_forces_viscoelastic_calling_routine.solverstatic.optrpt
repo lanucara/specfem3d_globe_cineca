@@ -1,0 +1,654 @@
+
+Begin optimization report for: COMPUTE_FORCES_VISCOELASTIC
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/specfem3D/compute_forces_viscoelastic_calling_routine.F90(363,33)
+<Multiversioned v1>
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/compute_forces_viscoelastic_calling_routine.F90(363,33)
+<Remainder, Multiversioned v1>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/compute_forces_viscoelastic_calling_routine.F90(363,33)
+<Multiversioned v2>
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/compute_forces_viscoelastic_calling_routine.F90(363,33)
+<Remainder, Multiversioned v2>
+LOOP END
+
+LOOP BEGIN at src/specfem3D/compute_forces_viscoelastic_calling_routine.F90(363,53)
+<Multiversioned v1>
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/compute_forces_viscoelastic_calling_routine.F90(363,53)
+<Remainder, Multiversioned v1>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/compute_forces_viscoelastic_calling_routine.F90(363,53)
+<Multiversioned v2>
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/compute_forces_viscoelastic_calling_routine.F90(363,53)
+<Remainder, Multiversioned v2>
+LOOP END
+
+LOOP BEGIN at src/specfem3D/compute_forces_viscoelastic_calling_routine.F90(363,33)
+<Multiversioned v1>
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/compute_forces_viscoelastic_calling_routine.F90(363,33)
+<Alternate Alignment Vectorized Loop, Multiversioned v1>
+LOOP END
+
+LOOP BEGIN at src/specfem3D/compute_forces_viscoelastic_calling_routine.F90(363,33)
+<Remainder, Multiversioned v1>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/compute_forces_viscoelastic_calling_routine.F90(363,33)
+<Multiversioned v2>
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/compute_forces_viscoelastic_calling_routine.F90(363,33)
+<Remainder, Multiversioned v2>
+LOOP END
+
+LOOP BEGIN at src/specfem3D/compute_forces_viscoelastic_calling_routine.F90(363,53)
+<Multiversioned v1>
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/compute_forces_viscoelastic_calling_routine.F90(363,53)
+<Alternate Alignment Vectorized Loop, Multiversioned v1>
+LOOP END
+
+LOOP BEGIN at src/specfem3D/compute_forces_viscoelastic_calling_routine.F90(363,53)
+<Remainder, Multiversioned v1>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/compute_forces_viscoelastic_calling_routine.F90(363,53)
+<Multiversioned v2>
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/compute_forces_viscoelastic_calling_routine.F90(363,53)
+<Remainder, Multiversioned v2>
+LOOP END
+
+LOOP BEGIN at src/specfem3D/compute_forces_viscoelastic_calling_routine.F90(367,33)
+<Multiversioned v1>
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/compute_forces_viscoelastic_calling_routine.F90(367,33)
+<Remainder, Multiversioned v1>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/compute_forces_viscoelastic_calling_routine.F90(367,33)
+<Multiversioned v2>
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/compute_forces_viscoelastic_calling_routine.F90(367,33)
+<Remainder, Multiversioned v2>
+LOOP END
+
+LOOP BEGIN at src/specfem3D/compute_forces_viscoelastic_calling_routine.F90(367,51)
+<Multiversioned v1>
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/compute_forces_viscoelastic_calling_routine.F90(367,51)
+<Remainder, Multiversioned v1>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/compute_forces_viscoelastic_calling_routine.F90(367,51)
+<Multiversioned v2>
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/compute_forces_viscoelastic_calling_routine.F90(367,51)
+<Remainder, Multiversioned v2>
+LOOP END
+
+LOOP BEGIN at src/specfem3D/compute_forces_viscoelastic_calling_routine.F90(367,33)
+<Multiversioned v1>
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/compute_forces_viscoelastic_calling_routine.F90(367,33)
+<Alternate Alignment Vectorized Loop, Multiversioned v1>
+LOOP END
+
+LOOP BEGIN at src/specfem3D/compute_forces_viscoelastic_calling_routine.F90(367,33)
+<Remainder, Multiversioned v1>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/compute_forces_viscoelastic_calling_routine.F90(367,33)
+<Multiversioned v2>
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/compute_forces_viscoelastic_calling_routine.F90(367,33)
+<Remainder, Multiversioned v2>
+LOOP END
+
+LOOP BEGIN at src/specfem3D/compute_forces_viscoelastic_calling_routine.F90(367,51)
+<Multiversioned v1>
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/compute_forces_viscoelastic_calling_routine.F90(367,51)
+<Alternate Alignment Vectorized Loop, Multiversioned v1>
+LOOP END
+
+LOOP BEGIN at src/specfem3D/compute_forces_viscoelastic_calling_routine.F90(367,51)
+<Remainder, Multiversioned v1>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/compute_forces_viscoelastic_calling_routine.F90(367,51)
+<Multiversioned v2>
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/compute_forces_viscoelastic_calling_routine.F90(367,51)
+<Remainder, Multiversioned v2>
+LOOP END
+
+LOOP BEGIN at src/specfem3D/compute_forces_viscoelastic_calling_routine.F90(379,12)
+<Multiversioned v1>
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/compute_forces_viscoelastic_calling_routine.F90(379,12)
+<Remainder, Multiversioned v1>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/compute_forces_viscoelastic_calling_routine.F90(379,12)
+<Multiversioned v2>
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/compute_forces_viscoelastic_calling_routine.F90(379,12)
+<Remainder, Multiversioned v2>
+LOOP END
+
+LOOP BEGIN at src/specfem3D/compute_forces_viscoelastic_calling_routine.F90(380,35)
+<Multiversioned v1>
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/compute_forces_viscoelastic_calling_routine.F90(380,35)
+<Remainder, Multiversioned v1>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/compute_forces_viscoelastic_calling_routine.F90(380,35)
+<Multiversioned v2>
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/compute_forces_viscoelastic_calling_routine.F90(380,35)
+<Remainder, Multiversioned v2>
+LOOP END
+
+LOOP BEGIN at src/specfem3D/compute_forces_viscoelastic_calling_routine.F90(380,35)
+<Multiversioned v1>
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/compute_forces_viscoelastic_calling_routine.F90(380,35)
+<Alternate Alignment Vectorized Loop, Multiversioned v1>
+LOOP END
+
+LOOP BEGIN at src/specfem3D/compute_forces_viscoelastic_calling_routine.F90(380,35)
+<Remainder, Multiversioned v1>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/compute_forces_viscoelastic_calling_routine.F90(380,35)
+<Multiversioned v2>
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/compute_forces_viscoelastic_calling_routine.F90(380,35)
+<Remainder, Multiversioned v2>
+LOOP END
+
+LOOP BEGIN at src/specfem3D/compute_forces_viscoelastic_calling_routine.F90(380,55)
+<Multiversioned v1>
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/compute_forces_viscoelastic_calling_routine.F90(380,55)
+<Alternate Alignment Vectorized Loop, Multiversioned v1>
+LOOP END
+
+LOOP BEGIN at src/specfem3D/compute_forces_viscoelastic_calling_routine.F90(380,55)
+<Remainder, Multiversioned v1>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/compute_forces_viscoelastic_calling_routine.F90(380,55)
+<Multiversioned v2>
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/compute_forces_viscoelastic_calling_routine.F90(380,55)
+<Remainder, Multiversioned v2>
+LOOP END
+
+
+Non-optimizable loops:
+
+
+LOOP BEGIN at src/specfem3D/compute_forces_viscoelastic_calling_routine.F90(355,3)
+   remark #15529: loop was not vectorized: volatile assignment was not vectorized. Try using non-volatile assignment.   [ src/specfem3D/compute_forces_viscoelastic_calling_routine.F90(825,14) ]
+LOOP END
+===========================================================================
+
+Begin optimization report for: COMPUTE_FORCES_VISCOELASTIC_BACKWARD
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/specfem3D/compute_forces_viscoelastic_calling_routine.F90(474,3)
+   remark #15521: loop was not vectorized: explicitly compute the iteration count before executing the loop or try using canonical loop form
+LOOP END
+
+LOOP BEGIN at src/specfem3D/compute_forces_viscoelastic_calling_routine.F90(766,33)
+<Multiversioned v1>
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/compute_forces_viscoelastic_calling_routine.F90(766,33)
+<Remainder, Multiversioned v1>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/compute_forces_viscoelastic_calling_routine.F90(766,33)
+<Multiversioned v2>
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/compute_forces_viscoelastic_calling_routine.F90(766,33)
+<Remainder, Multiversioned v2>
+LOOP END
+
+LOOP BEGIN at src/specfem3D/compute_forces_viscoelastic_calling_routine.F90(766,55)
+<Multiversioned v1>
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/compute_forces_viscoelastic_calling_routine.F90(766,55)
+<Remainder, Multiversioned v1>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/compute_forces_viscoelastic_calling_routine.F90(766,55)
+<Multiversioned v2>
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/compute_forces_viscoelastic_calling_routine.F90(766,55)
+<Remainder, Multiversioned v2>
+LOOP END
+
+LOOP BEGIN at src/specfem3D/compute_forces_viscoelastic_calling_routine.F90(766,77)
+<Multiversioned v1>
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/compute_forces_viscoelastic_calling_routine.F90(766,77)
+<Remainder, Multiversioned v1>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/compute_forces_viscoelastic_calling_routine.F90(766,77)
+<Multiversioned v2>
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/compute_forces_viscoelastic_calling_routine.F90(766,77)
+<Remainder, Multiversioned v2>
+LOOP END
+
+LOOP BEGIN at src/specfem3D/compute_forces_viscoelastic_calling_routine.F90(766,33)
+<Multiversioned v1>
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/compute_forces_viscoelastic_calling_routine.F90(766,33)
+<Alternate Alignment Vectorized Loop, Multiversioned v1>
+LOOP END
+
+LOOP BEGIN at src/specfem3D/compute_forces_viscoelastic_calling_routine.F90(766,33)
+<Remainder, Multiversioned v1>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/compute_forces_viscoelastic_calling_routine.F90(766,33)
+<Multiversioned v2>
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/compute_forces_viscoelastic_calling_routine.F90(766,33)
+<Remainder, Multiversioned v2>
+LOOP END
+
+LOOP BEGIN at src/specfem3D/compute_forces_viscoelastic_calling_routine.F90(766,55)
+<Multiversioned v1>
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/compute_forces_viscoelastic_calling_routine.F90(766,55)
+<Alternate Alignment Vectorized Loop, Multiversioned v1>
+LOOP END
+
+LOOP BEGIN at src/specfem3D/compute_forces_viscoelastic_calling_routine.F90(766,55)
+<Remainder, Multiversioned v1>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/compute_forces_viscoelastic_calling_routine.F90(766,55)
+<Multiversioned v2>
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/compute_forces_viscoelastic_calling_routine.F90(766,55)
+<Remainder, Multiversioned v2>
+LOOP END
+
+LOOP BEGIN at src/specfem3D/compute_forces_viscoelastic_calling_routine.F90(766,77)
+<Multiversioned v1>
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/compute_forces_viscoelastic_calling_routine.F90(766,77)
+<Alternate Alignment Vectorized Loop, Multiversioned v1>
+LOOP END
+
+LOOP BEGIN at src/specfem3D/compute_forces_viscoelastic_calling_routine.F90(766,77)
+<Remainder, Multiversioned v1>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/compute_forces_viscoelastic_calling_routine.F90(766,77)
+<Multiversioned v2>
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/compute_forces_viscoelastic_calling_routine.F90(766,77)
+<Remainder, Multiversioned v2>
+LOOP END
+
+LOOP BEGIN at src/specfem3D/compute_forces_viscoelastic_calling_routine.F90(770,33)
+<Multiversioned v1>
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/compute_forces_viscoelastic_calling_routine.F90(770,33)
+<Remainder, Multiversioned v1>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/compute_forces_viscoelastic_calling_routine.F90(770,33)
+<Multiversioned v2>
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/compute_forces_viscoelastic_calling_routine.F90(770,33)
+<Remainder, Multiversioned v2>
+LOOP END
+
+LOOP BEGIN at src/specfem3D/compute_forces_viscoelastic_calling_routine.F90(770,53)
+<Multiversioned v1>
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/compute_forces_viscoelastic_calling_routine.F90(770,53)
+<Remainder, Multiversioned v1>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/compute_forces_viscoelastic_calling_routine.F90(770,53)
+<Multiversioned v2>
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/compute_forces_viscoelastic_calling_routine.F90(770,53)
+<Remainder, Multiversioned v2>
+LOOP END
+
+LOOP BEGIN at src/specfem3D/compute_forces_viscoelastic_calling_routine.F90(770,73)
+<Multiversioned v1>
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/compute_forces_viscoelastic_calling_routine.F90(770,73)
+<Remainder, Multiversioned v1>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/compute_forces_viscoelastic_calling_routine.F90(770,73)
+<Multiversioned v2>
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/compute_forces_viscoelastic_calling_routine.F90(770,73)
+<Remainder, Multiversioned v2>
+LOOP END
+
+LOOP BEGIN at src/specfem3D/compute_forces_viscoelastic_calling_routine.F90(770,33)
+<Multiversioned v1>
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/compute_forces_viscoelastic_calling_routine.F90(770,33)
+<Alternate Alignment Vectorized Loop, Multiversioned v1>
+LOOP END
+
+LOOP BEGIN at src/specfem3D/compute_forces_viscoelastic_calling_routine.F90(770,33)
+<Remainder, Multiversioned v1>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/compute_forces_viscoelastic_calling_routine.F90(770,33)
+<Multiversioned v2>
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/compute_forces_viscoelastic_calling_routine.F90(770,33)
+<Remainder, Multiversioned v2>
+LOOP END
+
+LOOP BEGIN at src/specfem3D/compute_forces_viscoelastic_calling_routine.F90(770,53)
+<Multiversioned v1>
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/compute_forces_viscoelastic_calling_routine.F90(770,53)
+<Alternate Alignment Vectorized Loop, Multiversioned v1>
+LOOP END
+
+LOOP BEGIN at src/specfem3D/compute_forces_viscoelastic_calling_routine.F90(770,53)
+<Remainder, Multiversioned v1>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/compute_forces_viscoelastic_calling_routine.F90(770,53)
+<Multiversioned v2>
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/compute_forces_viscoelastic_calling_routine.F90(770,53)
+<Remainder, Multiversioned v2>
+LOOP END
+
+LOOP BEGIN at src/specfem3D/compute_forces_viscoelastic_calling_routine.F90(770,73)
+<Multiversioned v1>
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/compute_forces_viscoelastic_calling_routine.F90(770,73)
+<Alternate Alignment Vectorized Loop, Multiversioned v1>
+LOOP END
+
+LOOP BEGIN at src/specfem3D/compute_forces_viscoelastic_calling_routine.F90(770,73)
+<Remainder, Multiversioned v1>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/compute_forces_viscoelastic_calling_routine.F90(770,73)
+<Multiversioned v2>
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/compute_forces_viscoelastic_calling_routine.F90(770,73)
+<Remainder, Multiversioned v2>
+LOOP END
+
+LOOP BEGIN at src/specfem3D/compute_forces_viscoelastic_calling_routine.F90(782,12)
+<Multiversioned v1>
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/compute_forces_viscoelastic_calling_routine.F90(782,12)
+<Remainder, Multiversioned v1>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/compute_forces_viscoelastic_calling_routine.F90(782,12)
+<Multiversioned v2>
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/compute_forces_viscoelastic_calling_routine.F90(782,12)
+<Remainder, Multiversioned v2>
+LOOP END
+
+LOOP BEGIN at src/specfem3D/compute_forces_viscoelastic_calling_routine.F90(783,35)
+<Multiversioned v1>
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/compute_forces_viscoelastic_calling_routine.F90(783,35)
+<Remainder, Multiversioned v1>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/compute_forces_viscoelastic_calling_routine.F90(783,35)
+<Multiversioned v2>
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/compute_forces_viscoelastic_calling_routine.F90(783,35)
+<Remainder, Multiversioned v2>
+LOOP END
+
+LOOP BEGIN at src/specfem3D/compute_forces_viscoelastic_calling_routine.F90(783,57)
+<Multiversioned v1>
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/compute_forces_viscoelastic_calling_routine.F90(783,57)
+<Remainder, Multiversioned v1>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/compute_forces_viscoelastic_calling_routine.F90(783,57)
+<Multiversioned v2>
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/compute_forces_viscoelastic_calling_routine.F90(783,57)
+<Remainder, Multiversioned v2>
+LOOP END
+
+LOOP BEGIN at src/specfem3D/compute_forces_viscoelastic_calling_routine.F90(783,35)
+<Multiversioned v1>
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/compute_forces_viscoelastic_calling_routine.F90(783,35)
+<Alternate Alignment Vectorized Loop, Multiversioned v1>
+LOOP END
+
+LOOP BEGIN at src/specfem3D/compute_forces_viscoelastic_calling_routine.F90(783,35)
+<Remainder, Multiversioned v1>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/compute_forces_viscoelastic_calling_routine.F90(783,35)
+<Multiversioned v2>
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/compute_forces_viscoelastic_calling_routine.F90(783,35)
+<Remainder, Multiversioned v2>
+LOOP END
+
+LOOP BEGIN at src/specfem3D/compute_forces_viscoelastic_calling_routine.F90(783,57)
+<Multiversioned v1>
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/compute_forces_viscoelastic_calling_routine.F90(783,57)
+<Alternate Alignment Vectorized Loop, Multiversioned v1>
+LOOP END
+
+LOOP BEGIN at src/specfem3D/compute_forces_viscoelastic_calling_routine.F90(783,57)
+<Remainder, Multiversioned v1>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/compute_forces_viscoelastic_calling_routine.F90(783,57)
+<Multiversioned v2>
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/compute_forces_viscoelastic_calling_routine.F90(783,57)
+<Remainder, Multiversioned v2>
+LOOP END
+
+LOOP BEGIN at src/specfem3D/compute_forces_viscoelastic_calling_routine.F90(783,79)
+<Multiversioned v1>
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/compute_forces_viscoelastic_calling_routine.F90(783,79)
+<Alternate Alignment Vectorized Loop, Multiversioned v1>
+LOOP END
+
+LOOP BEGIN at src/specfem3D/compute_forces_viscoelastic_calling_routine.F90(783,79)
+<Remainder, Multiversioned v1>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/compute_forces_viscoelastic_calling_routine.F90(783,79)
+<Multiversioned v2>
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/compute_forces_viscoelastic_calling_routine.F90(783,79)
+<Remainder, Multiversioned v2>
+LOOP END
+===========================================================================

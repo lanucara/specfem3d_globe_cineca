@@ -1,0 +1,10 @@
+        !COMPILER-GENERATED INTERFACE MODULE: Fri Mar 11 15:45:24 2016
+        MODULE HEAP_SORT_LOCAL__genmod
+          INTERFACE 
+            SUBROUTINE HEAP_SORT_LOCAL(N,X,Y)
+              INTEGER(KIND=4), INTENT(IN) :: N
+              REAL(KIND=8), INTENT(INOUT) :: X(N)
+              INTEGER(KIND=4), INTENT(OUT) :: Y(N)
+            END SUBROUTINE HEAP_SORT_LOCAL
+          END INTERFACE 
+        END MODULE HEAP_SORT_LOCAL__genmod

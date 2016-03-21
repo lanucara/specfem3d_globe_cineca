@@ -1,0 +1,352 @@
+
+Begin optimization report for: COMPUTE_ADD_SOURCES
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/specfem3D/compute_add_sources.f90(59,5)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed FLOW dependence between timeval line 65 and timeval line 90
+
+   LOOP BEGIN at src/specfem3D/compute_add_sources.f90(102,17)
+      remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+      remark #15346: vector dependence: assumed OUTPUT dependence between accel_crust_mantle line 102 and accel_crust_mantle line 102
+
+      LOOP BEGIN at src/specfem3D/compute_add_sources.f90(102,17)
+         remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+         remark #15346: vector dependence: assumed OUTPUT dependence between accel_crust_mantle line 102 and accel_crust_mantle line 102
+
+         LOOP BEGIN at src/specfem3D/compute_add_sources.f90(99,15)
+            remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+            remark #15346: vector dependence: assumed OUTPUT dependence between accel_crust_mantle line 102 and accel_crust_mantle line 102
+
+            LOOP BEGIN at src/specfem3D/compute_add_sources.f90(102,17)
+               remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+            LOOP END
+
+            LOOP BEGIN at src/specfem3D/compute_add_sources.f90(102,17)
+            LOOP END
+
+            LOOP BEGIN at src/specfem3D/compute_add_sources.f90(102,17)
+            LOOP END
+
+            LOOP BEGIN at src/specfem3D/compute_add_sources.f90(102,17)
+            LOOP END
+
+            LOOP BEGIN at src/specfem3D/compute_add_sources.f90(102,17)
+            LOOP END
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/compute_add_sources.f90(99,15)
+
+            LOOP BEGIN at src/specfem3D/compute_add_sources.f90(102,17)
+            LOOP END
+
+            LOOP BEGIN at src/specfem3D/compute_add_sources.f90(102,17)
+            LOOP END
+
+            LOOP BEGIN at src/specfem3D/compute_add_sources.f90(102,17)
+            LOOP END
+
+            LOOP BEGIN at src/specfem3D/compute_add_sources.f90(102,17)
+            LOOP END
+
+            LOOP BEGIN at src/specfem3D/compute_add_sources.f90(102,17)
+            LOOP END
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/compute_add_sources.f90(99,15)
+
+            LOOP BEGIN at src/specfem3D/compute_add_sources.f90(102,17)
+            LOOP END
+
+            LOOP BEGIN at src/specfem3D/compute_add_sources.f90(102,17)
+            LOOP END
+
+            LOOP BEGIN at src/specfem3D/compute_add_sources.f90(102,17)
+            LOOP END
+
+            LOOP BEGIN at src/specfem3D/compute_add_sources.f90(102,17)
+            LOOP END
+
+            LOOP BEGIN at src/specfem3D/compute_add_sources.f90(102,17)
+            LOOP END
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/compute_add_sources.f90(99,15)
+
+            LOOP BEGIN at src/specfem3D/compute_add_sources.f90(102,17)
+            LOOP END
+
+            LOOP BEGIN at src/specfem3D/compute_add_sources.f90(102,17)
+            LOOP END
+
+            LOOP BEGIN at src/specfem3D/compute_add_sources.f90(102,17)
+            LOOP END
+
+            LOOP BEGIN at src/specfem3D/compute_add_sources.f90(102,17)
+            LOOP END
+
+            LOOP BEGIN at src/specfem3D/compute_add_sources.f90(102,17)
+            LOOP END
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/compute_add_sources.f90(99,15)
+
+            LOOP BEGIN at src/specfem3D/compute_add_sources.f90(102,17)
+            LOOP END
+
+            LOOP BEGIN at src/specfem3D/compute_add_sources.f90(102,17)
+            LOOP END
+
+            LOOP BEGIN at src/specfem3D/compute_add_sources.f90(102,17)
+            LOOP END
+
+            LOOP BEGIN at src/specfem3D/compute_add_sources.f90(102,17)
+            LOOP END
+
+            LOOP BEGIN at src/specfem3D/compute_add_sources.f90(102,17)
+            LOOP END
+         LOOP END
+      LOOP END
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/specfem3D/compute_add_sources.f90(127,7)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed OUTPUT dependence between timeval line 129 and timeval line 132
+LOOP END
+===========================================================================
+
+Begin optimization report for: COMPUTE_ADD_SOURCES_ADJOINT
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/specfem3D/compute_add_sources.f90(173,5)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed OUTPUT dependence between specfem_par_crustmantle_mp_accel line 245 and specfem_par_crustmantle_mp_accel line 245
+
+   LOOP BEGIN at src/specfem3D/compute_add_sources.f90(183,9)
+      remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+      remark #15346: vector dependence: assumed OUTPUT dependence between specfem_par_crustmantle_mp_accel line 245 and specfem_par_crustmantle_mp_accel line 245
+
+      LOOP BEGIN at src/specfem3D/compute_add_sources.f90(184,11)
+         remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+         remark #15346: vector dependence: assumed OUTPUT dependence between specfem_par_crustmantle_mp_accel line 245 and specfem_par_crustmantle_mp_accel line 245
+
+         LOOP BEGIN at src/specfem3D/compute_add_sources.f90(185,13)
+            remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+            remark #15346: vector dependence: assumed OUTPUT dependence between specfem_par_crustmantle_mp_accel line 245 and specfem_par_crustmantle_mp_accel line 245
+
+            LOOP BEGIN at src/specfem3D/compute_add_sources.f90(245,15)
+               remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+            LOOP END
+
+            LOOP BEGIN at src/specfem3D/compute_add_sources.f90(245,15)
+            LOOP END
+
+            LOOP BEGIN at src/specfem3D/compute_add_sources.f90(245,15)
+            LOOP END
+
+            LOOP BEGIN at src/specfem3D/compute_add_sources.f90(245,15)
+            LOOP END
+
+            LOOP BEGIN at src/specfem3D/compute_add_sources.f90(245,15)
+            LOOP END
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/compute_add_sources.f90(185,13)
+
+            LOOP BEGIN at src/specfem3D/compute_add_sources.f90(245,15)
+            LOOP END
+
+            LOOP BEGIN at src/specfem3D/compute_add_sources.f90(245,15)
+            LOOP END
+
+            LOOP BEGIN at src/specfem3D/compute_add_sources.f90(245,15)
+            LOOP END
+
+            LOOP BEGIN at src/specfem3D/compute_add_sources.f90(245,15)
+            LOOP END
+
+            LOOP BEGIN at src/specfem3D/compute_add_sources.f90(245,15)
+            LOOP END
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/compute_add_sources.f90(185,13)
+
+            LOOP BEGIN at src/specfem3D/compute_add_sources.f90(245,15)
+            LOOP END
+
+            LOOP BEGIN at src/specfem3D/compute_add_sources.f90(245,15)
+            LOOP END
+
+            LOOP BEGIN at src/specfem3D/compute_add_sources.f90(245,15)
+            LOOP END
+
+            LOOP BEGIN at src/specfem3D/compute_add_sources.f90(245,15)
+            LOOP END
+
+            LOOP BEGIN at src/specfem3D/compute_add_sources.f90(245,15)
+            LOOP END
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/compute_add_sources.f90(185,13)
+
+            LOOP BEGIN at src/specfem3D/compute_add_sources.f90(245,15)
+            LOOP END
+
+            LOOP BEGIN at src/specfem3D/compute_add_sources.f90(245,15)
+            LOOP END
+
+            LOOP BEGIN at src/specfem3D/compute_add_sources.f90(245,15)
+            LOOP END
+
+            LOOP BEGIN at src/specfem3D/compute_add_sources.f90(245,15)
+            LOOP END
+
+            LOOP BEGIN at src/specfem3D/compute_add_sources.f90(245,15)
+            LOOP END
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/compute_add_sources.f90(185,13)
+
+            LOOP BEGIN at src/specfem3D/compute_add_sources.f90(245,15)
+            LOOP END
+
+            LOOP BEGIN at src/specfem3D/compute_add_sources.f90(245,15)
+            LOOP END
+
+            LOOP BEGIN at src/specfem3D/compute_add_sources.f90(245,15)
+            LOOP END
+
+            LOOP BEGIN at src/specfem3D/compute_add_sources.f90(245,15)
+            LOOP END
+
+            LOOP BEGIN at src/specfem3D/compute_add_sources.f90(245,15)
+            LOOP END
+         LOOP END
+      LOOP END
+   LOOP END
+LOOP END
+===========================================================================
+
+Begin optimization report for: COMPUTE_ADD_SOURCES_BACKWARD
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/specfem3D/compute_add_sources.f90(380,5)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed FLOW dependence between timeval line 386 and timeval line 416
+
+   LOOP BEGIN at src/specfem3D/compute_add_sources.f90(428,17)
+      remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+      remark #15346: vector dependence: assumed OUTPUT dependence between b_accel_crust_mantle line 428 and b_accel_crust_mantle line 428
+
+      LOOP BEGIN at src/specfem3D/compute_add_sources.f90(428,17)
+         remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+         remark #15346: vector dependence: assumed OUTPUT dependence between b_accel_crust_mantle line 428 and b_accel_crust_mantle line 428
+
+         LOOP BEGIN at src/specfem3D/compute_add_sources.f90(425,15)
+            remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+            remark #15346: vector dependence: assumed OUTPUT dependence between b_accel_crust_mantle line 428 and b_accel_crust_mantle line 428
+
+            LOOP BEGIN at src/specfem3D/compute_add_sources.f90(428,17)
+               remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+            LOOP END
+
+            LOOP BEGIN at src/specfem3D/compute_add_sources.f90(428,17)
+            LOOP END
+
+            LOOP BEGIN at src/specfem3D/compute_add_sources.f90(428,17)
+            LOOP END
+
+            LOOP BEGIN at src/specfem3D/compute_add_sources.f90(428,17)
+            LOOP END
+
+            LOOP BEGIN at src/specfem3D/compute_add_sources.f90(428,17)
+            LOOP END
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/compute_add_sources.f90(425,15)
+
+            LOOP BEGIN at src/specfem3D/compute_add_sources.f90(428,17)
+            LOOP END
+
+            LOOP BEGIN at src/specfem3D/compute_add_sources.f90(428,17)
+            LOOP END
+
+            LOOP BEGIN at src/specfem3D/compute_add_sources.f90(428,17)
+            LOOP END
+
+            LOOP BEGIN at src/specfem3D/compute_add_sources.f90(428,17)
+            LOOP END
+
+            LOOP BEGIN at src/specfem3D/compute_add_sources.f90(428,17)
+            LOOP END
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/compute_add_sources.f90(425,15)
+
+            LOOP BEGIN at src/specfem3D/compute_add_sources.f90(428,17)
+            LOOP END
+
+            LOOP BEGIN at src/specfem3D/compute_add_sources.f90(428,17)
+            LOOP END
+
+            LOOP BEGIN at src/specfem3D/compute_add_sources.f90(428,17)
+            LOOP END
+
+            LOOP BEGIN at src/specfem3D/compute_add_sources.f90(428,17)
+            LOOP END
+
+            LOOP BEGIN at src/specfem3D/compute_add_sources.f90(428,17)
+            LOOP END
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/compute_add_sources.f90(425,15)
+
+            LOOP BEGIN at src/specfem3D/compute_add_sources.f90(428,17)
+            LOOP END
+
+            LOOP BEGIN at src/specfem3D/compute_add_sources.f90(428,17)
+            LOOP END
+
+            LOOP BEGIN at src/specfem3D/compute_add_sources.f90(428,17)
+            LOOP END
+
+            LOOP BEGIN at src/specfem3D/compute_add_sources.f90(428,17)
+            LOOP END
+
+            LOOP BEGIN at src/specfem3D/compute_add_sources.f90(428,17)
+            LOOP END
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/compute_add_sources.f90(425,15)
+
+            LOOP BEGIN at src/specfem3D/compute_add_sources.f90(428,17)
+            LOOP END
+
+            LOOP BEGIN at src/specfem3D/compute_add_sources.f90(428,17)
+            LOOP END
+
+            LOOP BEGIN at src/specfem3D/compute_add_sources.f90(428,17)
+            LOOP END
+
+            LOOP BEGIN at src/specfem3D/compute_add_sources.f90(428,17)
+            LOOP END
+
+            LOOP BEGIN at src/specfem3D/compute_add_sources.f90(428,17)
+            LOOP END
+         LOOP END
+      LOOP END
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/specfem3D/compute_add_sources.f90(452,7)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed OUTPUT dependence between timeval line 454 and timeval line 456
+LOOP END
+===========================================================================

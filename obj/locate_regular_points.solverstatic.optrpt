@@ -1,0 +1,202 @@
+
+Begin optimization report for: LAGRANGE_ANY2
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/specfem3D/locate_regular_points.f90(433,3)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at src/specfem3D/locate_regular_points.f90(437,6)
+   <Peeled>
+      remark #15301: PEEL LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/specfem3D/locate_regular_points.f90(437,6)
+      remark #15300: LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/specfem3D/locate_regular_points.f90(437,6)
+   <Remainder>
+      remark #15301: REMAINDER LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/specfem3D/locate_regular_points.f90(437,6)
+   <Peeled>
+      remark #15301: PEEL LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/specfem3D/locate_regular_points.f90(437,6)
+      remark #15300: LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/specfem3D/locate_regular_points.f90(437,6)
+   <Remainder>
+      remark #15301: REMAINDER LOOP WAS VECTORIZED
+   LOOP END
+LOOP END
+===========================================================================
+
+Begin optimization report for: READ_KL_REGULAR_GRID
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/specfem3D/locate_regular_points.f90(61,3)
+   remark #15522: loop was not vectorized: loop control flow is too complex. Try using canonical loop form.
+LOOP END
+
+LOOP BEGIN at src/specfem3D/locate_regular_points.f90(79,3)
+   remark #15398: loop was not vectorized: loop was transformed to memset or memcpy
+LOOP END
+
+LOOP BEGIN at src/specfem3D/locate_regular_points.f90(80,3)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed FLOW dependence between grid line 87 and grid line 87
+LOOP END
+===========================================================================
+
+Begin optimization report for: FIND_REGULAR_GRID_SLICE_NUMBER
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/specfem3D/locate_regular_points.f90(136,3)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed ANTI dependence between ilayer line 145 and ilayer line 137
+LOOP END
+===========================================================================
+
+Begin optimization report for: HEX_NODES2
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/specfem3D/locate_regular_points.f90(380,3)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed OUTPUT dependence between  line 389 and  line 409
+LOOP END
+===========================================================================
+
+Begin optimization report for: LOCATE_REGULAR_POINTS
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/specfem3D/locate_regular_points.f90(380,3) inlined into src/specfem3D/locate_regular_points.f90(236,8)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed OUTPUT dependence between  line 389 and  line 409
+LOOP END
+
+LOOP BEGIN at src/specfem3D/locate_regular_points.f90(246,5)
+<Peeled>
+LOOP END
+
+LOOP BEGIN at src/specfem3D/locate_regular_points.f90(246,5)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/locate_regular_points.f90(246,5)
+<Remainder>
+LOOP END
+
+LOOP BEGIN at src/specfem3D/locate_regular_points.f90(268,5)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed ANTI dependence between distmin_squared line 290 and distmin_squared line 295
+
+   LOOP BEGIN at src/specfem3D/locate_regular_points.f90(283,7)
+      remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+      remark #15346: vector dependence: assumed ANTI dependence between distmin_squared line 290 and distmin_squared line 295
+
+      LOOP BEGIN at src/specfem3D/locate_regular_points.f90(284,9)
+         remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+         remark #15346: vector dependence: assumed ANTI dependence between distmin_squared line 290 and distmin_squared line 295
+
+         LOOP BEGIN at src/specfem3D/locate_regular_points.f90(285,11)
+            remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+            remark #15346: vector dependence: assumed ANTI dependence between distmin_squared line 290 and distmin_squared line 295
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/locate_regular_points.f90(285,11)
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/locate_regular_points.f90(285,11)
+         LOOP END
+      LOOP END
+
+      LOOP BEGIN at src/specfem3D/locate_regular_points.f90(284,9)
+
+         LOOP BEGIN at src/specfem3D/locate_regular_points.f90(285,11)
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/locate_regular_points.f90(285,11)
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/locate_regular_points.f90(285,11)
+         LOOP END
+      LOOP END
+
+      LOOP BEGIN at src/specfem3D/locate_regular_points.f90(284,9)
+
+         LOOP BEGIN at src/specfem3D/locate_regular_points.f90(285,11)
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/locate_regular_points.f90(285,11)
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/locate_regular_points.f90(285,11)
+         LOOP END
+      LOOP END
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/specfem3D/locate_regular_points.f90(313,5)
+   remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at src/specfem3D/locate_regular_points.f90(321,5)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+LOOP END
+
+LOOP BEGIN at src/specfem3D/locate_regular_points.f90(354,10)
+   remark #15301: OUTER LOOP WAS VECTORIZED
+
+   LOOP BEGIN at src/specfem3D/locate_regular_points.f90(437,6) inlined into src/specfem3D/locate_regular_points.f90(354,10)
+      remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/specfem3D/locate_regular_points.f90(355,10)
+   remark #15301: OUTER LOOP WAS VECTORIZED
+
+   LOOP BEGIN at src/specfem3D/locate_regular_points.f90(437,6) inlined into src/specfem3D/locate_regular_points.f90(355,10)
+      remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/specfem3D/locate_regular_points.f90(356,10)
+   remark #15301: OUTER LOOP WAS VECTORIZED
+
+   LOOP BEGIN at src/specfem3D/locate_regular_points.f90(437,6) inlined into src/specfem3D/locate_regular_points.f90(356,10)
+      remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/specfem3D/locate_regular_points.f90(357,5)
+   remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at src/specfem3D/locate_regular_points.f90(358,5)
+LOOP END
+
+LOOP BEGIN at src/specfem3D/locate_regular_points.f90(359,5)
+LOOP END
+
+
+Non-optimizable loops:
+
+
+LOOP BEGIN at src/specfem3D/locate_regular_points.f90(361,3)
+   remark #15529: loop was not vectorized: volatile assignment was not vectorized. Try using non-volatile assignment.   [ src/specfem3D/locate_regular_points.f90(418,14) ]
+LOOP END
+===========================================================================

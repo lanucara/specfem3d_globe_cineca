@@ -1,0 +1,218 @@
+
+Begin optimization report for: COMPUTE_KERNEL_INTEGRAL_ISO
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/tomography/compute_kernel_integral.f90(79,3)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/tomography/compute_kernel_integral.f90(79,3)
+<Remainder>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/tomography/compute_kernel_integral.f90(83,3)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at src/tomography/compute_kernel_integral.f90(84,5)
+      remark #15542: loop was not vectorized: inner loop was already vectorized
+
+      LOOP BEGIN at src/tomography/compute_kernel_integral.f90(85,7)
+         remark #15300: LOOP WAS VECTORIZED
+      LOOP END
+   LOOP END
+
+   LOOP BEGIN at src/tomography/compute_kernel_integral.f90(84,5)
+   LOOP END
+
+   LOOP BEGIN at src/tomography/compute_kernel_integral.f90(84,5)
+   LOOP END
+
+   LOOP BEGIN at src/tomography/compute_kernel_integral.f90(84,5)
+   LOOP END
+
+   LOOP BEGIN at src/tomography/compute_kernel_integral.f90(84,5)
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/tomography/compute_kernel_integral.f90(708,3) inlined into src/tomography/compute_kernel_integral.f90(92,8)
+   remark #15398: loop was not vectorized: loop was transformed to memset or memcpy
+LOOP END
+
+LOOP BEGIN at src/tomography/compute_kernel_integral.f90(742,3) inlined into src/tomography/compute_kernel_integral.f90(92,8)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at src/tomography/compute_kernel_integral.f90(743,5) inlined into src/tomography/compute_kernel_integral.f90(92,8)
+   <Peeled>
+      remark #15301: PEEL LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/tomography/compute_kernel_integral.f90(743,5) inlined into src/tomography/compute_kernel_integral.f90(92,8)
+      remark #15300: LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/tomography/compute_kernel_integral.f90(743,5) inlined into src/tomography/compute_kernel_integral.f90(92,8)
+   <Remainder>
+      remark #15301: REMAINDER LOOP WAS VECTORIZED
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/tomography/compute_kernel_integral.f90(106,3)
+   remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+   LOOP BEGIN at src/tomography/compute_kernel_integral.f90(107,5)
+      remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+      LOOP BEGIN at src/tomography/compute_kernel_integral.f90(108,7)
+         remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+         LOOP BEGIN at src/tomography/compute_kernel_integral.f90(109,9)
+            remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+            remark #15346: vector dependence: assumed ANTI dependence between ARGBLOCK_REC_46 line 111 and ARGBLOCK_REC_46 line 144
+         LOOP END
+      LOOP END
+   LOOP END
+LOOP END
+===========================================================================
+
+Begin optimization report for: COMPUTE_KERNEL_INTEGRAL_TISO
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/tomography/compute_kernel_integral.f90(281,3)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/tomography/compute_kernel_integral.f90(281,3)
+<Remainder>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/tomography/compute_kernel_integral.f90(285,3)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at src/tomography/compute_kernel_integral.f90(286,5)
+      remark #15542: loop was not vectorized: inner loop was already vectorized
+
+      LOOP BEGIN at src/tomography/compute_kernel_integral.f90(287,7)
+         remark #15300: LOOP WAS VECTORIZED
+      LOOP END
+   LOOP END
+
+   LOOP BEGIN at src/tomography/compute_kernel_integral.f90(286,5)
+   LOOP END
+
+   LOOP BEGIN at src/tomography/compute_kernel_integral.f90(286,5)
+   LOOP END
+
+   LOOP BEGIN at src/tomography/compute_kernel_integral.f90(286,5)
+   LOOP END
+
+   LOOP BEGIN at src/tomography/compute_kernel_integral.f90(286,5)
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/tomography/compute_kernel_integral.f90(312,3)
+   remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+   LOOP BEGIN at src/tomography/compute_kernel_integral.f90(313,5)
+      remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+      LOOP BEGIN at src/tomography/compute_kernel_integral.f90(314,7)
+         remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+         LOOP BEGIN at src/tomography/compute_kernel_integral.f90(315,9)
+            remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+            remark #15346: vector dependence: assumed ANTI dependence between ARGBLOCK_REC_93 line 317 and ARGBLOCK_REC_93 line 354
+         LOOP END
+      LOOP END
+   LOOP END
+LOOP END
+===========================================================================
+
+Begin optimization report for: COMPUTE_JACOBIAN
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/tomography/compute_kernel_integral.f90(708,3)
+   remark #15398: loop was not vectorized: loop was transformed to memset or memcpy
+LOOP END
+
+LOOP BEGIN at src/tomography/compute_kernel_integral.f90(742,3)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at src/tomography/compute_kernel_integral.f90(743,5)
+   <Peeled>
+      remark #15301: PEEL LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/tomography/compute_kernel_integral.f90(743,5)
+      remark #15300: LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/tomography/compute_kernel_integral.f90(743,5)
+   <Remainder>
+      remark #15301: REMAINDER LOOP WAS VECTORIZED
+   LOOP END
+LOOP END
+===========================================================================
+
+Begin optimization report for: COMPUTE_KERNEL_INTEGRAL_TISO_ISO
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/tomography/compute_kernel_integral.f90(511,3)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/tomography/compute_kernel_integral.f90(511,3)
+<Remainder>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/tomography/compute_kernel_integral.f90(515,3)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at src/tomography/compute_kernel_integral.f90(516,5)
+      remark #15542: loop was not vectorized: inner loop was already vectorized
+
+      LOOP BEGIN at src/tomography/compute_kernel_integral.f90(517,7)
+         remark #15300: LOOP WAS VECTORIZED
+      LOOP END
+   LOOP END
+
+   LOOP BEGIN at src/tomography/compute_kernel_integral.f90(516,5)
+   LOOP END
+
+   LOOP BEGIN at src/tomography/compute_kernel_integral.f90(516,5)
+   LOOP END
+
+   LOOP BEGIN at src/tomography/compute_kernel_integral.f90(516,5)
+   LOOP END
+
+   LOOP BEGIN at src/tomography/compute_kernel_integral.f90(516,5)
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/tomography/compute_kernel_integral.f90(541,3)
+   remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+   LOOP BEGIN at src/tomography/compute_kernel_integral.f90(542,5)
+      remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+      LOOP BEGIN at src/tomography/compute_kernel_integral.f90(543,7)
+         remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+         LOOP BEGIN at src/tomography/compute_kernel_integral.f90(544,9)
+            remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+            remark #15346: vector dependence: assumed ANTI dependence between ARGBLOCK_REC_150 line 546 and ARGBLOCK_REC_150 line 579
+         LOOP END
+      LOOP END
+   LOOP END
+LOOP END
+===========================================================================

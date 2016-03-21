@@ -1,0 +1,11 @@
+
+Begin optimization report for: EXTRACT_DATABASES
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/auxiliaries/extract_database.f90(137,3)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed OUTPUT dependence between 56 line 138 and 56 line 138
+LOOP END
+===========================================================================

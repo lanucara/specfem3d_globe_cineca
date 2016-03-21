@@ -1,0 +1,105 @@
+
+Begin optimization report for: COUNT_ELEMENTS
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/shared/count_elements.f90(82,31)
+<Peeled>
+   remark #15301: PEEL LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/shared/count_elements.f90(82,31)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/shared/count_elements.f90(82,31)
+<Remainder>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/shared/count_elements.f90(298,3)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at src/shared/count_elements.f90(105,35)
+   <Peeled>
+   LOOP END
+
+   LOOP BEGIN at src/shared/count_elements.f90(105,35)
+      remark #15300: LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/shared/count_elements.f90(105,35)
+   <Remainder>
+      remark #15301: REMAINDER LOOP WAS VECTORIZED
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/shared/count_elements.f90(109,3)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/shared/count_elements.f90(253,21)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at src/shared/count_elements.f90(169,5)
+   <Distributed chunk1>
+      remark #15301: PARTIAL LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/shared/count_elements.f90(169,5)
+   <Remainder, Distributed chunk1>
+   LOOP END
+
+   LOOP BEGIN at src/shared/count_elements.f90(169,5)
+   <Distributed chunk2>
+      remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+      remark #15346: vector dependence: assumed OUTPUT dependence between divider line 173 and divider line 213
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/shared/count_elements.f90(268,3)
+   remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at src/shared/count_elements.f90(269,3)
+LOOP END
+
+LOOP BEGIN at src/shared/count_elements.f90(291,3)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/shared/count_elements.f90(292,3)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/shared/count_elements.f90(315,3)
+   remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at src/shared/count_elements.f90(316,89)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/shared/count_elements.f90(317,3)
+   remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at src/shared/count_elements.f90(318,89)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/shared/count_elements.f90(329,3)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed OUTPUT dependence between ifirst_region line 331 and ifirst_region line 337
+
+   LOOP BEGIN at src/shared/count_elements.f90(343,5)
+      remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+      remark #15346: vector dependence: assumed OUTPUT dependence between nb_lay_sb line 346 and nb_lay_sb line 355
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/shared/count_elements.f90(371,7)
+   remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+===========================================================================

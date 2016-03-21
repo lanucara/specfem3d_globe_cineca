@@ -1,0 +1,13 @@
+        !COMPILER-GENERATED INTERFACE MODULE: Fri Mar 11 15:46:24 2016
+        MODULE EVRADKER__genmod
+          INTERFACE 
+            SUBROUTINE EVRADKER(DEPTH,STRING,NKER,VERCOF,DVERCOF,IERROR)
+              INTEGER(KIND=4) :: NKER
+              REAL(KIND=4) :: DEPTH
+              CHARACTER(LEN=80) :: STRING
+              REAL(KIND=4) :: VERCOF(NKER)
+              REAL(KIND=4) :: DVERCOF(NKER)
+              INTEGER(KIND=4) :: IERROR
+            END SUBROUTINE EVRADKER
+          END INTERFACE 
+        END MODULE EVRADKER__genmod

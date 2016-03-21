@@ -1,0 +1,11 @@
+        !COMPILER-GENERATED INTERFACE MODULE: Fri Mar 11 15:45:17 2016
+        MODULE GET_ELEMENT__genmod
+          INTERFACE 
+            SUBROUTINE GET_ELEMENT(POINTS,ISPEC,NPTS,PTS)
+              INTEGER(KIND=4) :: NPTS
+              REAL(KIND=8) :: POINTS(NPTS,2)
+              INTEGER(KIND=4) :: ISPEC
+              REAL(KIND=8) :: PTS(9,2)
+            END SUBROUTINE GET_ELEMENT
+          END INTERFACE 
+        END MODULE GET_ELEMENT__genmod

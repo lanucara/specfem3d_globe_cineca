@@ -1,0 +1,15 @@
+        !COMPILER-GENERATED INTERFACE MODULE: Fri Mar 11 15:46:24 2016
+        MODULE MODEL_S362ANI_SUBSHSV__genmod
+          INTERFACE 
+            SUBROUTINE MODEL_S362ANI_SUBSHSV(XCOLAT,XLON,XRAD,DVSH,DVSV,&
+     &DVPH,DVPV)
+              REAL(KIND=4) :: XCOLAT
+              REAL(KIND=4) :: XLON
+              REAL(KIND=4) :: XRAD
+              REAL(KIND=4) :: DVSH
+              REAL(KIND=4) :: DVSV
+              REAL(KIND=4) :: DVPH
+              REAL(KIND=4) :: DVPV
+            END SUBROUTINE MODEL_S362ANI_SUBSHSV
+          END INTERFACE 
+        END MODULE MODEL_S362ANI_SUBSHSV__genmod

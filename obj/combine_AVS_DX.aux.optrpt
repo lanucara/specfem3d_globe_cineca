@@ -1,0 +1,337 @@
+
+Begin optimization report for: COMBINE_AVS_DX
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/auxiliaries/combine_AVS_DX.f90(259,3)
+   remark #15521: loop was not vectorized: explicitly compute the iteration count before executing the loop or try using canonical loop form
+LOOP END
+
+LOOP BEGIN at src/auxiliaries/combine_AVS_DX.f90(284,3)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/auxiliaries/combine_AVS_DX.f90(284,3)
+<Remainder>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/auxiliaries/combine_AVS_DX.f90(306,3)
+   remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+   LOOP BEGIN at src/auxiliaries/combine_AVS_DX.f90(309,3)
+      remark #15521: loop was not vectorized: explicitly compute the iteration count before executing the loop or try using canonical loop form
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/auxiliaries/combine_AVS_DX.f90(380,3)
+   remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+   LOOP BEGIN at src/auxiliaries/combine_AVS_DX.f90(383,3)
+      remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+      LOOP BEGIN at src/auxiliaries/combine_AVS_DX.f90(404,3)
+         remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+         remark #15346: vector dependence: assumed OUTPUT dependence between 459 line 405 and 459 line 419
+      LOOP END
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/auxiliaries/combine_AVS_DX.f90(458,3)
+   remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+   LOOP BEGIN at src/auxiliaries/combine_AVS_DX.f90(458,3)
+      remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+      LOOP BEGIN at src/auxiliaries/combine_AVS_DX.f90(490,3)
+         remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+         LOOP BEGIN at src/auxiliaries/combine_AVS_DX.f90(637,34)
+            remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+            remark #15346: vector dependence: assumed ANTI dependence between ipointnumber1_vert line 637 and ipointnumber1_vert line 609
+
+            LOOP BEGIN at src/auxiliaries/combine_AVS_DX.f90(605,7)
+               remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+               remark #15346: vector dependence: assumed ANTI dependence between ipointnumber1_vert line 637 and ipointnumber1_vert line 609
+            LOOP END
+         LOOP END
+
+         LOOP BEGIN at src/auxiliaries/combine_AVS_DX.f90(596,34)
+            remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+            remark #15346: vector dependence: assumed ANTI dependence between gridmin line 596 and gridmin line 596
+         LOOP END
+      LOOP END
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/auxiliaries/combine_AVS_DX.f90(696,20)
+<Peeled>
+   remark #15301: PEEL LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/auxiliaries/combine_AVS_DX.f90(696,20)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/auxiliaries/combine_AVS_DX.f90(696,20)
+<Remainder>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/auxiliaries/combine_AVS_DX.f90(699,5)
+<Peeled>
+   remark #15301: PEEL LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/auxiliaries/combine_AVS_DX.f90(699,5)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/auxiliaries/combine_AVS_DX.f90(699,5)
+<Remainder>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/auxiliaries/combine_AVS_DX.f90(702,5)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed OUTPUT dependence between xval line 704 and xval line 710
+LOOP END
+
+LOOP BEGIN at src/auxiliaries/combine_AVS_DX.f90(731,5)
+<Peeled>
+   remark #15301: PEEL LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/auxiliaries/combine_AVS_DX.f90(731,5)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/auxiliaries/combine_AVS_DX.f90(731,5)
+<Remainder>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/auxiliaries/combine_AVS_DX.f90(740,20)
+<Peeled>
+   remark #15301: PEEL LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/auxiliaries/combine_AVS_DX.f90(740,20)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/auxiliaries/combine_AVS_DX.f90(740,20)
+<Remainder>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/auxiliaries/combine_AVS_DX.f90(743,5)
+<Peeled>
+   remark #15301: PEEL LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/auxiliaries/combine_AVS_DX.f90(743,5)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/auxiliaries/combine_AVS_DX.f90(743,5)
+<Remainder>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/auxiliaries/combine_AVS_DX.f90(746,5)
+<Peeled>
+   remark #15301: PEEL LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/auxiliaries/combine_AVS_DX.f90(746,5)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/auxiliaries/combine_AVS_DX.f90(746,5)
+<Remainder>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/auxiliaries/combine_AVS_DX.f90(756,20)
+<Peeled>
+   remark #15301: PEEL LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/auxiliaries/combine_AVS_DX.f90(756,20)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/auxiliaries/combine_AVS_DX.f90(756,20)
+<Remainder>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/auxiliaries/combine_AVS_DX.f90(759,5)
+<Peeled>
+   remark #15301: PEEL LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/auxiliaries/combine_AVS_DX.f90(759,5)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/auxiliaries/combine_AVS_DX.f90(759,5)
+<Remainder>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/auxiliaries/combine_AVS_DX.f90(762,5)
+<Peeled>
+   remark #15301: PEEL LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/auxiliaries/combine_AVS_DX.f90(762,5)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/auxiliaries/combine_AVS_DX.f90(762,5)
+<Remainder>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/auxiliaries/combine_AVS_DX.f90(889,27)
+<Peeled>
+   remark #15301: PEEL LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/auxiliaries/combine_AVS_DX.f90(889,27)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/auxiliaries/combine_AVS_DX.f90(889,27)
+<Remainder>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/auxiliaries/combine_AVS_DX.f90(890,27)
+<Peeled>
+   remark #15301: PEEL LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/auxiliaries/combine_AVS_DX.f90(890,27)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/auxiliaries/combine_AVS_DX.f90(890,27)
+<Remainder>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/auxiliaries/combine_AVS_DX.f90(892,37)
+<Peeled>
+   remark #15301: PEEL LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/auxiliaries/combine_AVS_DX.f90(892,37)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/auxiliaries/combine_AVS_DX.f90(892,37)
+<Remainder>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/auxiliaries/combine_AVS_DX.f90(893,37)
+<Peeled>
+   remark #15301: PEEL LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/auxiliaries/combine_AVS_DX.f90(893,37)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/auxiliaries/combine_AVS_DX.f90(893,37)
+<Remainder>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/auxiliaries/combine_AVS_DX.f90(928,37)
+<Peeled>
+   remark #15301: PEEL LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/auxiliaries/combine_AVS_DX.f90(928,37)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/auxiliaries/combine_AVS_DX.f90(928,37)
+<Remainder>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/auxiliaries/combine_AVS_DX.f90(928,62)
+<Peeled>
+   remark #15301: PEEL LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/auxiliaries/combine_AVS_DX.f90(928,62)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/auxiliaries/combine_AVS_DX.f90(928,62)
+<Remainder>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/auxiliaries/combine_AVS_DX.f90(987,5)
+   remark #15521: loop was not vectorized: explicitly compute the iteration count before executing the loop or try using canonical loop form
+LOOP END
+
+LOOP BEGIN at src/auxiliaries/combine_AVS_DX.f90(1010,5)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed OUTPUT dependence between 459 line 1011 and 459 line 1011
+LOOP END
+
+LOOP BEGIN at src/auxiliaries/combine_AVS_DX.f90(1044,5)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed OUTPUT dependence between 459 line 1045 and 459 line 1046
+LOOP END
+
+LOOP BEGIN at src/auxiliaries/combine_AVS_DX.f90(1051,5)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed OUTPUT dependence between 459 line 1052 and 459 line 1052
+LOOP END
+
+LOOP BEGIN at src/auxiliaries/combine_AVS_DX.f90(1059,5)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed OUTPUT dependence between 459 line 1060 and 459 line 1060
+LOOP END
+
+LOOP BEGIN at src/auxiliaries/combine_AVS_DX.f90(1078,5)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed OUTPUT dependence between 459 line 1079 and 459 line 1080
+LOOP END
+
+LOOP BEGIN at src/auxiliaries/combine_AVS_DX.f90(1084,5)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed OUTPUT dependence between 459 line 1085 and 459 line 1085
+LOOP END
+
+LOOP BEGIN at src/auxiliaries/combine_AVS_DX.f90(1091,5)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed OUTPUT dependence between 459 line 1092 and 459 line 1092
+LOOP END
+
+
+Non-optimizable loops:
+
+
+LOOP BEGIN at src/auxiliaries/combine_AVS_DX.f90(865,3)
+   remark #15536: loop was not vectorized: inner loop throttling prevents vectorization of this outer loop. Refer to inner loop message for more details.
+
+   LOOP BEGIN at src/auxiliaries/combine_AVS_DX.f90(864,3)
+      remark #15536: loop was not vectorized: inner loop throttling prevents vectorization of this outer loop. Refer to inner loop message for more details.
+
+      LOOP BEGIN at src/auxiliaries/combine_AVS_DX.f90(858,3)
+         remark #15534: loop was not vectorized: loop contains arithmetic if or computed goto. Consider using if-then-else statement.    [ src/auxiliaries/combine_AVS_DX.f90(817,18) ]
+      LOOP END
+   LOOP END
+LOOP END
+===========================================================================

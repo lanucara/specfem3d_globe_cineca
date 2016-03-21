@@ -1,0 +1,506 @@
+
+Begin optimization report for: SMOOTH_SEM_GLOBE
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/smooth_sem.F90(229,3)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed FLOW dependence between 387 line 230 and 387 line 230
+LOOP END
+
+LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/smooth_sem.F90(342,3)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/smooth_sem.F90(343,5)
+      remark #15542: loop was not vectorized: inner loop was already vectorized
+
+      LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/smooth_sem.F90(344,7)
+         remark #15300: LOOP WAS VECTORIZED
+      LOOP END
+   LOOP END
+
+   LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/smooth_sem.F90(343,5)
+   LOOP END
+
+   LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/smooth_sem.F90(343,5)
+   LOOP END
+
+   LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/smooth_sem.F90(343,5)
+   LOOP END
+
+   LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/smooth_sem.F90(343,5)
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/smooth_sem.F90(363,52)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/smooth_sem.F90(363,15)
+      remark #15300: LOOP WAS VECTORIZED
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/smooth_sem.F90(418,3)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/smooth_sem.F90(420,5)
+   <Peeled>
+      remark #15301: PEEL LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/smooth_sem.F90(420,5)
+      remark #15300: LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/smooth_sem.F90(420,5)
+   <Remainder>
+      remark #15301: REMAINDER LOOP WAS VECTORIZED
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/smooth_sem.F90(502,3)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/smooth_sem.F90(502,3)
+      remark #15542: loop was not vectorized: inner loop was already vectorized
+
+      LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/smooth_sem.F90(502,3)
+         remark #15542: loop was not vectorized: inner loop was already vectorized
+
+         LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/smooth_sem.F90(502,3)
+            remark #15300: LOOP WAS VECTORIZED
+         LOOP END
+
+         LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/smooth_sem.F90(503,3)
+         LOOP END
+      LOOP END
+
+      LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/smooth_sem.F90(503,3)
+      LOOP END
+   LOOP END
+
+   LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/smooth_sem.F90(503,3)
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/smooth_sem.F90(503,3)
+LOOP END
+
+LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/smooth_sem.F90(506,3)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/smooth_sem.F90(525,7)
+      remark #15542: loop was not vectorized: inner loop was already vectorized
+
+      LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/smooth_sem.F90(525,7)
+      <Multiversioned v2>
+         remark #15300: LOOP WAS VECTORIZED
+      LOOP END
+   LOOP END
+
+   LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/smooth_sem.F90(526,7)
+      remark #15542: loop was not vectorized: inner loop was already vectorized
+
+      LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/smooth_sem.F90(526,7)
+      <Multiversioned v2>
+         remark #15300: LOOP WAS VECTORIZED
+      LOOP END
+   LOOP END
+
+   LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/smooth_sem.F90(527,7)
+      remark #15542: loop was not vectorized: inner loop was already vectorized
+
+      LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/smooth_sem.F90(527,7)
+      <Multiversioned v2>
+         remark #15300: LOOP WAS VECTORIZED
+      LOOP END
+   LOOP END
+
+   LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/smooth_sem.F90(529,7)
+      remark #15301: FUSED LOOP WAS VECTORIZED
+
+      LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/smooth_sem.F90(529,7)
+         remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+
+         LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/smooth_sem.F90(529,7)
+            remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+
+            LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/smooth_sem.F90(529,7)
+               remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+            LOOP END
+
+            LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/smooth_sem.F90(530,7)
+            LOOP END
+
+            LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/smooth_sem.F90(531,7)
+            LOOP END
+         LOOP END
+
+         LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/smooth_sem.F90(530,7)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/smooth_sem.F90(531,7)
+         LOOP END
+      LOOP END
+
+      LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/smooth_sem.F90(530,7)
+      LOOP END
+
+      LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/smooth_sem.F90(531,7)
+      LOOP END
+   LOOP END
+
+   LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/smooth_sem.F90(530,7)
+   LOOP END
+
+   LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/smooth_sem.F90(531,7)
+   LOOP END
+
+   LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/smooth_sem.F90(567,7)
+      remark #15542: loop was not vectorized: inner loop was already vectorized
+
+      LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/smooth_sem.F90(569,9)
+      <Peeled>
+         remark #15301: PEEL LOOP WAS VECTORIZED
+      LOOP END
+
+      LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/smooth_sem.F90(569,9)
+         remark #15300: LOOP WAS VECTORIZED
+      LOOP END
+
+      LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/smooth_sem.F90(569,9)
+      <Remainder>
+         remark #15301: REMAINDER LOOP WAS VECTORIZED
+      LOOP END
+   LOOP END
+
+   LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/smooth_sem.F90(621,17)
+      remark #15301: FUSED LOOP WAS VECTORIZED
+
+      LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/smooth_sem.F90(621,17)
+         remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+
+         LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/smooth_sem.F90(621,17)
+            remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+
+            LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/smooth_sem.F90(621,17)
+               remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+            LOOP END
+
+            LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/smooth_sem.F90(622,17)
+            LOOP END
+         LOOP END
+
+         LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/smooth_sem.F90(622,17)
+         LOOP END
+      LOOP END
+
+      LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/smooth_sem.F90(622,17)
+      LOOP END
+   LOOP END
+
+   LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/smooth_sem.F90(622,17)
+   LOOP END
+
+   LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/smooth_sem.F90(631,7)
+      remark #15398: loop was not vectorized: loop was transformed to memset or memcpy
+   LOOP END
+
+   LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/smooth_sem.F90(632,7)
+      remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+      remark #15346: vector dependence: assumed FLOW dependence between 1091 line 632 and 1091 line 632
+
+      LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/smooth_sem.F90(632,7)
+         remark #15398: loop was not vectorized: loop was transformed to memset or memcpy
+      LOOP END
+   LOOP END
+
+   LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/smooth_sem.F90(635,7)
+   <Peeled, Distributed chunk1>
+      remark #15301: PEEL LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/smooth_sem.F90(635,7)
+   <Distributed chunk1>
+      remark #15301: PARTIAL LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/smooth_sem.F90(635,7)
+   <Remainder, Distributed chunk1>
+      remark #15301: REMAINDER LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/smooth_sem.F90(635,7)
+   <Distributed chunk2>
+      remark #15301: PARTIAL LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/smooth_sem.F90(635,7)
+   <Remainder, Distributed chunk2>
+      remark #15301: REMAINDER LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/smooth_sem.F90(635,7)
+   <Remainder, Distributed chunk2>
+   LOOP END
+
+   LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/smooth_sem.F90(653,7)
+      remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+      LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/smooth_sem.F90(739,7)
+         remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+         remark #15346: vector dependence: assumed FLOW dependence between center_x line 750 and center_x line 756
+
+         LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/smooth_sem.F90(769,9)
+            remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+            remark #15346: vector dependence: assumed FLOW dependence between x0 line 773 and x0 line 778
+
+            LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/smooth_sem.F90(798,11)
+               remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+
+               LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/smooth_sem.F90(798,11)
+                  remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+
+                  LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/smooth_sem.F90(798,11)
+                     remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+                  LOOP END
+
+                  LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/smooth_sem.F90(801,51)
+                  LOOP END
+
+                  LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/smooth_sem.F90(804,51)
+                  LOOP END
+
+                  LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/smooth_sem.F90(798,11)
+                  LOOP END
+
+                  LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/smooth_sem.F90(798,11)
+                  LOOP END
+
+                  LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/smooth_sem.F90(798,11)
+                  LOOP END
+
+                  LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/smooth_sem.F90(798,11)
+                  LOOP END
+               LOOP END
+
+               LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/smooth_sem.F90(801,51)
+               LOOP END
+
+               LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/smooth_sem.F90(804,51)
+               LOOP END
+            LOOP END
+
+            LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/smooth_sem.F90(801,51)
+            LOOP END
+
+            LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/smooth_sem.F90(804,51)
+            LOOP END
+         LOOP END
+
+         LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/smooth_sem.F90(764,9)
+            remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+
+            LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/smooth_sem.F90(764,9)
+               remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+
+               LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/smooth_sem.F90(764,9)
+                  remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+               LOOP END
+
+               LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/smooth_sem.F90(764,9)
+               LOOP END
+
+               LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/smooth_sem.F90(764,9)
+               LOOP END
+
+               LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/smooth_sem.F90(764,9)
+               LOOP END
+
+               LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/smooth_sem.F90(764,9)
+               LOOP END
+            LOOP END
+
+            LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/smooth_sem.F90(764,9)
+
+               LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/smooth_sem.F90(764,9)
+               LOOP END
+
+               LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/smooth_sem.F90(764,9)
+               LOOP END
+
+               LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/smooth_sem.F90(764,9)
+               LOOP END
+
+               LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/smooth_sem.F90(764,9)
+               LOOP END
+
+               LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/smooth_sem.F90(764,9)
+               LOOP END
+            LOOP END
+
+            LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/smooth_sem.F90(764,9)
+
+               LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/smooth_sem.F90(764,9)
+               LOOP END
+
+               LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/smooth_sem.F90(764,9)
+               LOOP END
+
+               LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/smooth_sem.F90(764,9)
+               LOOP END
+
+               LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/smooth_sem.F90(764,9)
+               LOOP END
+
+               LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/smooth_sem.F90(764,9)
+               LOOP END
+            LOOP END
+
+            LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/smooth_sem.F90(764,9)
+
+               LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/smooth_sem.F90(764,9)
+               LOOP END
+
+               LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/smooth_sem.F90(764,9)
+               LOOP END
+
+               LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/smooth_sem.F90(764,9)
+               LOOP END
+
+               LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/smooth_sem.F90(764,9)
+               LOOP END
+
+               LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/smooth_sem.F90(764,9)
+               LOOP END
+            LOOP END
+
+            LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/smooth_sem.F90(764,9)
+
+               LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/smooth_sem.F90(764,9)
+               LOOP END
+
+               LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/smooth_sem.F90(764,9)
+               LOOP END
+
+               LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/smooth_sem.F90(764,9)
+               LOOP END
+
+               LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/smooth_sem.F90(764,9)
+               LOOP END
+
+               LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/smooth_sem.F90(764,9)
+               LOOP END
+            LOOP END
+         LOOP END
+      LOOP END
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/smooth_sem.F90(869,32)
+   remark #15301: OUTER LOOP WAS VECTORIZED
+
+   LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/smooth_sem.F90(869,32)
+      remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+
+      LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/smooth_sem.F90(869,32)
+         remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+
+         LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/smooth_sem.F90(869,32)
+            remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+         LOOP END
+      LOOP END
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/smooth_sem.F90(869,43)
+   remark #15301: OUTER LOOP WAS VECTORIZED
+
+   LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/smooth_sem.F90(869,43)
+      remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+
+      LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/smooth_sem.F90(869,43)
+         remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+
+         LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/smooth_sem.F90(869,43)
+            remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+         LOOP END
+      LOOP END
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/smooth_sem.F90(870,32)
+   remark #15301: OUTER LOOP WAS VECTORIZED
+
+   LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/smooth_sem.F90(870,32)
+      remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+
+      LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/smooth_sem.F90(870,32)
+         remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+
+         LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/smooth_sem.F90(870,32)
+            remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+         LOOP END
+      LOOP END
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/smooth_sem.F90(870,43)
+   remark #15301: OUTER LOOP WAS VECTORIZED
+
+   LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/smooth_sem.F90(870,43)
+      remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+
+      LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/smooth_sem.F90(870,43)
+         remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+
+         LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/smooth_sem.F90(870,43)
+            remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+         LOOP END
+      LOOP END
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/smooth_sem.F90(876,3)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/smooth_sem.F90(877,3)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed FLOW dependence between 179 line 904 and 179 line 907
+
+   LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/smooth_sem.F90(879,5)
+      remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+      remark #15346: vector dependence: assumed FLOW dependence between 179 line 904 and 179 line 907
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/smooth_sem.F90(916,13)
+   remark #15301: FUSED LOOP WAS VECTORIZED
+
+   LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/smooth_sem.F90(916,13)
+      remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+
+      LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/smooth_sem.F90(916,13)
+         remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+
+         LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/smooth_sem.F90(916,13)
+            remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+         LOOP END
+
+         LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/smooth_sem.F90(917,13)
+         LOOP END
+      LOOP END
+
+      LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/smooth_sem.F90(917,13)
+      LOOP END
+   LOOP END
+
+   LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/smooth_sem.F90(917,13)
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/smooth_sem.F90(917,13)
+LOOP END
+===========================================================================

@@ -1,0 +1,11 @@
+        !COMPILER-GENERATED INTERFACE MODULE: Fri Mar 11 15:45:17 2016
+        MODULE COMPUTE_NEX__genmod
+          INTERFACE 
+            SUBROUTINE COMPUTE_NEX(NEX_XI,RCUBE,ALPHA,NER)
+              INTEGER(KIND=4) :: NEX_XI
+              REAL(KIND=8) :: RCUBE
+              REAL(KIND=8) :: ALPHA
+              INTEGER(KIND=4) :: NER
+            END SUBROUTINE COMPUTE_NEX
+          END INTERFACE 
+        END MODULE COMPUTE_NEX__genmod

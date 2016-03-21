@@ -1,0 +1,312 @@
+
+Begin optimization report for: COMPUTE_ELEMENT_STRAIN_UNDOATT_DEV
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/specfem3D/compute_element_strain.F90(81,5)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/compute_element_strain.F90(81,5)
+<Remainder>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/compute_element_strain.F90(174,3) inlined into src/specfem3D/compute_element_strain.F90(166,8)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at src/specfem3D/compute_element_strain.F90(175,5) inlined into src/specfem3D/compute_element_strain.F90(166,8)
+      remark #15300: LOOP WAS VECTORIZED
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/specfem3D/compute_element_strain.F90(174,3) inlined into src/specfem3D/compute_element_strain.F90(166,8)
+<Remainder>
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at src/specfem3D/compute_element_strain.F90(175,5) inlined into src/specfem3D/compute_element_strain.F90(166,8)
+      remark #15300: LOOP WAS VECTORIZED
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/specfem3D/compute_element_strain.F90(218,3) inlined into src/specfem3D/compute_element_strain.F90(170,8)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at src/specfem3D/compute_element_strain.F90(219,5) inlined into src/specfem3D/compute_element_strain.F90(170,8)
+      remark #15300: LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/specfem3D/compute_element_strain.F90(219,5) inlined into src/specfem3D/compute_element_strain.F90(170,8)
+   <Remainder>
+      remark #15301: REMAINDER LOOP WAS VECTORIZED
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/specfem3D/compute_element_strain.F90(96,3)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/compute_element_strain.F90(96,3)
+<Remainder>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+===========================================================================
+
+Begin optimization report for: COMPUTE_ELEMENT_STRAIN_UNDOATT_DEV:MXM5_3COMP_3DMAT_SINGLEB
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/specfem3D/compute_element_strain.F90(265,7)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at src/specfem3D/compute_element_strain.F90(262,3)
+      remark #15542: loop was not vectorized: inner loop was already vectorized
+
+      LOOP BEGIN at src/specfem3D/compute_element_strain.F90(263,5)
+         remark #15301: PERMUTED LOOP WAS VECTORIZED
+      LOOP END
+   LOOP END
+LOOP END
+===========================================================================
+
+Begin optimization report for: COMPUTE_ELEMENT_STRAIN_UNDOATT_NODEV
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/specfem3D/compute_element_strain.F90(362,11)
+   remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+   LOOP BEGIN at src/specfem3D/compute_element_strain.F90(345,5)
+      remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+      LOOP BEGIN at src/specfem3D/compute_element_strain.F90(346,7)
+         remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+         LOOP BEGIN at src/specfem3D/compute_element_strain.F90(360,9)
+            remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+         LOOP END
+      LOOP END
+
+      LOOP BEGIN at src/specfem3D/compute_element_strain.F90(346,7)
+      <Remainder>
+         remark #15423: loop was not vectorized: has only one iteration
+
+         LOOP BEGIN at src/specfem3D/compute_element_strain.F90(360,9)
+            remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+         LOOP END
+      LOOP END
+   LOOP END
+LOOP END
+===========================================================================
+
+Begin optimization report for: COMPUTE_ELEMENT_STRAIN_ATT_DEV
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/specfem3D/compute_element_strain.F90(500,27)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/compute_element_strain.F90(500,27)
+<Remainder>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/compute_element_strain.F90(597,3) inlined into src/specfem3D/compute_element_strain.F90(1002,8)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at src/specfem3D/compute_element_strain.F90(598,5) inlined into src/specfem3D/compute_element_strain.F90(1002,8)
+      remark #15300: LOOP WAS VECTORIZED
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/specfem3D/compute_element_strain.F90(597,3) inlined into src/specfem3D/compute_element_strain.F90(1002,8)
+<Remainder>
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at src/specfem3D/compute_element_strain.F90(598,5) inlined into src/specfem3D/compute_element_strain.F90(1002,8)
+      remark #15300: LOOP WAS VECTORIZED
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/specfem3D/compute_element_strain.F90(641,3) inlined into src/specfem3D/compute_element_strain.F90(1006,8)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at src/specfem3D/compute_element_strain.F90(642,5) inlined into src/specfem3D/compute_element_strain.F90(1006,8)
+      remark #15300: LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/specfem3D/compute_element_strain.F90(642,5) inlined into src/specfem3D/compute_element_strain.F90(1006,8)
+   <Remainder>
+      remark #15301: REMAINDER LOOP WAS VECTORIZED
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/specfem3D/compute_element_strain.F90(517,5)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/compute_element_strain.F90(517,5)
+<Remainder>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/compute_element_strain.F90(517,5)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/compute_element_strain.F90(517,5)
+<Remainder>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/compute_element_strain.F90(517,5)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/compute_element_strain.F90(517,5)
+<Remainder>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+===========================================================================
+
+Begin optimization report for: COMPUTE_ELEMENT_STRAIN_ATT_DEV:MXM5_3COMP_3DMAT_SINGLEB
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/specfem3D/compute_element_strain.F90(688,7)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at src/specfem3D/compute_element_strain.F90(685,3)
+      remark #15542: loop was not vectorized: inner loop was already vectorized
+
+      LOOP BEGIN at src/specfem3D/compute_element_strain.F90(686,5)
+         remark #15301: PERMUTED LOOP WAS VECTORIZED
+      LOOP END
+   LOOP END
+LOOP END
+===========================================================================
+
+Begin optimization report for: COMPUTE_ELEMENT_STRAIN_ATT_NODEV
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/specfem3D/compute_element_strain.F90(779,31)
+   remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+
+   LOOP BEGIN at src/specfem3D/compute_element_strain.F90(776,5)
+      remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+
+      LOOP BEGIN at src/specfem3D/compute_element_strain.F90(777,7)
+         remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+      LOOP END
+
+      LOOP BEGIN at src/specfem3D/compute_element_strain.F90(777,7)
+      LOOP END
+
+      LOOP BEGIN at src/specfem3D/compute_element_strain.F90(777,7)
+      LOOP END
+
+      LOOP BEGIN at src/specfem3D/compute_element_strain.F90(777,7)
+      LOOP END
+
+      LOOP BEGIN at src/specfem3D/compute_element_strain.F90(777,7)
+      LOOP END
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/specfem3D/compute_element_strain.F90(787,5)
+   remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+   LOOP BEGIN at src/specfem3D/compute_element_strain.F90(788,7)
+      remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+      LOOP BEGIN at src/specfem3D/compute_element_strain.F90(802,9)
+         remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+      LOOP END
+   LOOP END
+
+   LOOP BEGIN at src/specfem3D/compute_element_strain.F90(788,7)
+   <Remainder>
+      remark #15423: loop was not vectorized: has only one iteration
+
+      LOOP BEGIN at src/specfem3D/compute_element_strain.F90(802,9)
+         remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+      LOOP END
+   LOOP END
+
+   LOOP BEGIN at src/specfem3D/compute_element_strain.F90(788,7)
+      remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+      LOOP BEGIN at src/specfem3D/compute_element_strain.F90(802,9)
+         remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+      LOOP END
+   LOOP END
+
+   LOOP BEGIN at src/specfem3D/compute_element_strain.F90(788,7)
+   <Remainder>
+      remark #15423: loop was not vectorized: has only one iteration
+
+      LOOP BEGIN at src/specfem3D/compute_element_strain.F90(802,9)
+         remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+      LOOP END
+   LOOP END
+
+   LOOP BEGIN at src/specfem3D/compute_element_strain.F90(788,7)
+      remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+      LOOP BEGIN at src/specfem3D/compute_element_strain.F90(802,9)
+         remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+      LOOP END
+   LOOP END
+
+   LOOP BEGIN at src/specfem3D/compute_element_strain.F90(788,7)
+   <Remainder>
+      remark #15423: loop was not vectorized: has only one iteration
+
+      LOOP BEGIN at src/specfem3D/compute_element_strain.F90(802,9)
+         remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+      LOOP END
+   LOOP END
+
+   LOOP BEGIN at src/specfem3D/compute_element_strain.F90(788,7)
+      remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+      LOOP BEGIN at src/specfem3D/compute_element_strain.F90(802,9)
+         remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+      LOOP END
+   LOOP END
+
+   LOOP BEGIN at src/specfem3D/compute_element_strain.F90(788,7)
+   <Remainder>
+      remark #15423: loop was not vectorized: has only one iteration
+
+      LOOP BEGIN at src/specfem3D/compute_element_strain.F90(802,9)
+         remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+      LOOP END
+   LOOP END
+
+   LOOP BEGIN at src/specfem3D/compute_element_strain.F90(788,7)
+      remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+      LOOP BEGIN at src/specfem3D/compute_element_strain.F90(802,9)
+         remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+      LOOP END
+   LOOP END
+
+   LOOP BEGIN at src/specfem3D/compute_element_strain.F90(788,7)
+   <Remainder>
+      remark #15423: loop was not vectorized: has only one iteration
+
+      LOOP BEGIN at src/specfem3D/compute_element_strain.F90(802,9)
+         remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+      LOOP END
+   LOOP END
+LOOP END
+===========================================================================

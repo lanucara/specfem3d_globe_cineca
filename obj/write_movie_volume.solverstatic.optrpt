@@ -1,0 +1,638 @@
+
+Begin optimization report for: MOVIE_VOLUME_INTEGRATE_STRAIN
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/specfem3D/write_movie_volume.f90(138,3)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at src/specfem3D/write_movie_volume.f90(138,3)
+      remark #15542: loop was not vectorized: inner loop was already vectorized
+
+      LOOP BEGIN at src/specfem3D/write_movie_volume.f90(138,3)
+         remark #15542: loop was not vectorized: inner loop was already vectorized
+
+         LOOP BEGIN at src/specfem3D/write_movie_volume.f90(138,3)
+            remark #15300: LOOP WAS VECTORIZED
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/write_movie_volume.f90(139,3)
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/write_movie_volume.f90(140,3)
+         LOOP END
+      LOOP END
+
+      LOOP BEGIN at src/specfem3D/write_movie_volume.f90(139,3)
+      LOOP END
+
+      LOOP BEGIN at src/specfem3D/write_movie_volume.f90(140,3)
+      LOOP END
+   LOOP END
+
+   LOOP BEGIN at src/specfem3D/write_movie_volume.f90(139,3)
+   LOOP END
+
+   LOOP BEGIN at src/specfem3D/write_movie_volume.f90(140,3)
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/specfem3D/write_movie_volume.f90(139,3)
+LOOP END
+
+LOOP BEGIN at src/specfem3D/write_movie_volume.f90(140,3)
+LOOP END
+
+LOOP BEGIN at src/specfem3D/write_movie_volume.f90(141,3)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at src/specfem3D/write_movie_volume.f90(141,3)
+      remark #15542: loop was not vectorized: inner loop was already vectorized
+
+      LOOP BEGIN at src/specfem3D/write_movie_volume.f90(141,3)
+         remark #15542: loop was not vectorized: inner loop was already vectorized
+
+         LOOP BEGIN at src/specfem3D/write_movie_volume.f90(141,3)
+            remark #15300: LOOP WAS VECTORIZED
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/write_movie_volume.f90(142,3)
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/write_movie_volume.f90(144,3)
+         LOOP END
+      LOOP END
+
+      LOOP BEGIN at src/specfem3D/write_movie_volume.f90(142,3)
+      LOOP END
+
+      LOOP BEGIN at src/specfem3D/write_movie_volume.f90(144,3)
+      LOOP END
+   LOOP END
+
+   LOOP BEGIN at src/specfem3D/write_movie_volume.f90(142,3)
+   LOOP END
+
+   LOOP BEGIN at src/specfem3D/write_movie_volume.f90(144,3)
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/specfem3D/write_movie_volume.f90(142,3)
+LOOP END
+
+LOOP BEGIN at src/specfem3D/write_movie_volume.f90(144,3)
+LOOP END
+===========================================================================
+
+Begin optimization report for: MOVIE_VOLUME_COUNT_POINTS
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/specfem3D/write_movie_volume.f90(54,3)
+<Peeled>
+LOOP END
+
+LOOP BEGIN at src/specfem3D/write_movie_volume.f90(54,3)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/write_movie_volume.f90(54,3)
+<Remainder>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/write_movie_volume.f90(73,37)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+
+   LOOP BEGIN at src/specfem3D/write_movie_volume.f90(77,7)
+      remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+
+      LOOP BEGIN at src/specfem3D/write_movie_volume.f90(78,9)
+         remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+         remark #15346: vector dependence: assumed OUTPUT dependence between mask_ibool line 85 and mask_ibool line 85
+
+         LOOP BEGIN at src/specfem3D/write_movie_volume.f90(79,11)
+            remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+            remark #15346: vector dependence: assumed FLOW dependence between mask_ibool line 85 and mask_ibool line 82
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/write_movie_volume.f90(79,11)
+         <Remainder>
+         LOOP END
+      LOOP END
+   LOOP END
+LOOP END
+===========================================================================
+
+Begin optimization report for: WRITE_MOVIE_VOLUME_MESH
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/specfem3D/write_movie_volume.f90(216,13)
+   remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+   LOOP BEGIN at src/specfem3D/write_movie_volume.f90(195,5)
+      remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+
+      LOOP BEGIN at src/specfem3D/write_movie_volume.f90(196,7)
+         remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+         remark #15346: vector dependence: assumed FLOW dependence between rval line 207 and rval line 212
+
+         LOOP BEGIN at src/specfem3D/write_movie_volume.f90(197,9)
+            remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+            remark #15346: vector dependence: assumed FLOW dependence between rval line 207 and rval line 212
+         LOOP END
+      LOOP END
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/specfem3D/write_movie_volume.f90(265,5)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed OUTPUT dependence between 270 line 266 and 270 line 266
+LOOP END
+
+LOOP BEGIN at src/specfem3D/write_movie_volume.f90(276,5)
+   remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+   LOOP BEGIN at src/specfem3D/write_movie_volume.f90(283,7)
+      remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+
+      LOOP BEGIN at src/specfem3D/write_movie_volume.f90(284,9)
+         remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+         remark #15346: vector dependence: assumed FLOW dependence between 270 line 303 and 270 line 303
+
+         LOOP BEGIN at src/specfem3D/write_movie_volume.f90(285,11)
+            remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+            remark #15346: vector dependence: assumed FLOW dependence between 270 line 303 and 270 line 303
+         LOOP END
+      LOOP END
+   LOOP END
+LOOP END
+===========================================================================
+
+Begin optimization report for: WRITE_MOVIE_VOLUME_STRAINS
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/specfem3D/write_movie_volume.f90(426,40)
+   remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+   LOOP BEGIN at src/specfem3D/write_movie_volume.f90(393,4)
+      remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+      LOOP BEGIN at src/specfem3D/write_movie_volume.f90(394,5)
+         remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+         LOOP BEGIN at src/specfem3D/write_movie_volume.f90(395,6)
+            remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+            LOOP BEGIN at src/specfem3D/write_movie_volume.f90(417,34)
+            LOOP END
+
+            LOOP BEGIN at src/specfem3D/write_movie_volume.f90(419,36)
+            LOOP END
+
+            LOOP BEGIN at src/specfem3D/write_movie_volume.f90(417,34)
+               remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+
+               LOOP BEGIN at src/specfem3D/write_movie_volume.f90(417,34)
+                  remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+                  remark #15346: vector dependence: assumed OUTPUT dependence between 803 line 417 and 803 line 417
+
+                  LOOP BEGIN at src/specfem3D/write_movie_volume.f90(417,34)
+                     remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+                  LOOP END
+
+                  LOOP BEGIN at src/specfem3D/write_movie_volume.f90(417,34)
+                  LOOP END
+
+                  LOOP BEGIN at src/specfem3D/write_movie_volume.f90(417,34)
+                  LOOP END
+               LOOP END
+
+               LOOP BEGIN at src/specfem3D/write_movie_volume.f90(417,34)
+
+                  LOOP BEGIN at src/specfem3D/write_movie_volume.f90(417,34)
+                  LOOP END
+
+                  LOOP BEGIN at src/specfem3D/write_movie_volume.f90(417,34)
+                  LOOP END
+
+                  LOOP BEGIN at src/specfem3D/write_movie_volume.f90(417,34)
+                  LOOP END
+               LOOP END
+
+               LOOP BEGIN at src/specfem3D/write_movie_volume.f90(417,34)
+
+                  LOOP BEGIN at src/specfem3D/write_movie_volume.f90(417,34)
+                  LOOP END
+
+                  LOOP BEGIN at src/specfem3D/write_movie_volume.f90(417,34)
+                  LOOP END
+
+                  LOOP BEGIN at src/specfem3D/write_movie_volume.f90(417,34)
+                  LOOP END
+               LOOP END
+            LOOP END
+
+            LOOP BEGIN at src/specfem3D/write_movie_volume.f90(417,27)
+            LOOP END
+
+            LOOP BEGIN at src/specfem3D/write_movie_volume.f90(417,27)
+               remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+               remark #15346: vector dependence: assumed OUTPUT dependence between 813 line 417 and 813 line 417
+
+               LOOP BEGIN at src/specfem3D/write_movie_volume.f90(417,27)
+                  remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+
+                  LOOP BEGIN at src/specfem3D/write_movie_volume.f90(417,27)
+                     remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+                  LOOP END
+
+                  LOOP BEGIN at src/specfem3D/write_movie_volume.f90(417,27)
+                  LOOP END
+
+                  LOOP BEGIN at src/specfem3D/write_movie_volume.f90(417,27)
+                  LOOP END
+               LOOP END
+
+               LOOP BEGIN at src/specfem3D/write_movie_volume.f90(417,27)
+
+                  LOOP BEGIN at src/specfem3D/write_movie_volume.f90(417,27)
+                  LOOP END
+
+                  LOOP BEGIN at src/specfem3D/write_movie_volume.f90(417,27)
+                  LOOP END
+
+                  LOOP BEGIN at src/specfem3D/write_movie_volume.f90(417,27)
+                  LOOP END
+               LOOP END
+
+               LOOP BEGIN at src/specfem3D/write_movie_volume.f90(417,27)
+
+                  LOOP BEGIN at src/specfem3D/write_movie_volume.f90(417,27)
+                  LOOP END
+
+                  LOOP BEGIN at src/specfem3D/write_movie_volume.f90(417,27)
+                  LOOP END
+
+                  LOOP BEGIN at src/specfem3D/write_movie_volume.f90(417,27)
+                  LOOP END
+               LOOP END
+            LOOP END
+
+            LOOP BEGIN at src/specfem3D/write_movie_volume.f90(417,8)
+            LOOP END
+         LOOP END
+      LOOP END
+   LOOP END
+LOOP END
+===========================================================================
+
+Begin optimization report for: WRITE_MOVIE_VOLUME_VECTOR
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/specfem3D/write_movie_volume.f90(557,46)
+   remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+   LOOP BEGIN at src/specfem3D/write_movie_volume.f90(541,5)
+      remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+
+      LOOP BEGIN at src/specfem3D/write_movie_volume.f90(542,7)
+         remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+
+         LOOP BEGIN at src/specfem3D/write_movie_volume.f90(543,9)
+            remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+            remark #15346: vector dependence: assumed FLOW dependence between 1253 line 552 and 1253 line 552
+
+            LOOP BEGIN at src/specfem3D/write_movie_volume.f90(549,13)
+            LOOP END
+
+            LOOP BEGIN at src/specfem3D/write_movie_volume.f90(552,35)
+            LOOP END
+
+            LOOP BEGIN at src/specfem3D/write_movie_volume.f90(552,35)
+            LOOP END
+
+            LOOP BEGIN at src/specfem3D/write_movie_volume.f90(552,13)
+            LOOP END
+         LOOP END
+      LOOP END
+   LOOP END
+LOOP END
+===========================================================================
+
+Begin optimization report for: WRITE_MOVIE_VOLUME_DIVCURL
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/specfem3D/write_movie_volume.f90(673,15)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at src/specfem3D/write_movie_volume.f90(667,9)
+      remark #15542: loop was not vectorized: inner loop was already vectorized
+
+      LOOP BEGIN at src/specfem3D/write_movie_volume.f90(668,11)
+         remark #15542: loop was not vectorized: inner loop was already vectorized
+
+         LOOP BEGIN at src/specfem3D/write_movie_volume.f90(669,13)
+            remark #15300: LOOP WAS VECTORIZED
+         LOOP END
+      LOOP END
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/specfem3D/write_movie_volume.f90(740,13)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at src/specfem3D/write_movie_volume.f90(737,7)
+      remark #15542: loop was not vectorized: inner loop was already vectorized
+
+      LOOP BEGIN at src/specfem3D/write_movie_volume.f90(738,9)
+         remark #15542: loop was not vectorized: inner loop was already vectorized
+
+         LOOP BEGIN at src/specfem3D/write_movie_volume.f90(739,11)
+            remark #15300: LOOP WAS VECTORIZED
+         LOOP END
+      LOOP END
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/specfem3D/write_movie_volume.f90(765,13)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at src/specfem3D/write_movie_volume.f90(762,7)
+      remark #15542: loop was not vectorized: inner loop was already vectorized
+
+      LOOP BEGIN at src/specfem3D/write_movie_volume.f90(763,9)
+         remark #15542: loop was not vectorized: inner loop was already vectorized
+
+         LOOP BEGIN at src/specfem3D/write_movie_volume.f90(764,11)
+            remark #15300: LOOP WAS VECTORIZED
+         LOOP END
+      LOOP END
+   LOOP END
+LOOP END
+===========================================================================
+
+Begin optimization report for: WRITE_MOVIE_VOLUME_DISPLNORM
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/specfem3D/write_movie_volume.f90(830,13)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at src/specfem3D/write_movie_volume.f90(825,7)
+      remark #15542: loop was not vectorized: inner loop was already vectorized
+
+      LOOP BEGIN at src/specfem3D/write_movie_volume.f90(826,9)
+         remark #15542: loop was not vectorized: inner loop was already vectorized
+
+         LOOP BEGIN at src/specfem3D/write_movie_volume.f90(827,11)
+            remark #15300: LOOP WAS VECTORIZED
+         LOOP END
+      LOOP END
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/specfem3D/write_movie_volume.f90(858,13)
+   remark #15301: OUTER LOOP WAS VECTORIZED
+
+   LOOP BEGIN at src/specfem3D/write_movie_volume.f90(851,7)
+      remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+
+      LOOP BEGIN at src/specfem3D/write_movie_volume.f90(852,9)
+         remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+
+         LOOP BEGIN at src/specfem3D/write_movie_volume.f90(853,11)
+            remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+         LOOP END
+      LOOP END
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/specfem3D/write_movie_volume.f90(858,13)
+<Remainder>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+
+   LOOP BEGIN at src/specfem3D/write_movie_volume.f90(851,7)
+      remark #25460: No loop optimizations reported
+
+      LOOP BEGIN at src/specfem3D/write_movie_volume.f90(852,9)
+         remark #25460: No loop optimizations reported
+
+         LOOP BEGIN at src/specfem3D/write_movie_volume.f90(853,11)
+         LOOP END
+      LOOP END
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/specfem3D/write_movie_volume.f90(858,13)
+<Remainder>
+
+   LOOP BEGIN at src/specfem3D/write_movie_volume.f90(851,7)
+      remark #25460: No loop optimizations reported
+
+      LOOP BEGIN at src/specfem3D/write_movie_volume.f90(852,9)
+         remark #25460: No loop optimizations reported
+
+         LOOP BEGIN at src/specfem3D/write_movie_volume.f90(853,11)
+         LOOP END
+      LOOP END
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/specfem3D/write_movie_volume.f90(882,13)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at src/specfem3D/write_movie_volume.f90(877,7)
+      remark #15542: loop was not vectorized: inner loop was already vectorized
+
+      LOOP BEGIN at src/specfem3D/write_movie_volume.f90(878,9)
+         remark #15542: loop was not vectorized: inner loop was already vectorized
+
+         LOOP BEGIN at src/specfem3D/write_movie_volume.f90(879,11)
+            remark #15300: LOOP WAS VECTORIZED
+         LOOP END
+      LOOP END
+   LOOP END
+LOOP END
+===========================================================================
+
+Begin optimization report for: WRITE_MOVIE_VOLUME_VELNORM
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/specfem3D/write_movie_volume.f90(949,13)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at src/specfem3D/write_movie_volume.f90(944,7)
+      remark #15542: loop was not vectorized: inner loop was already vectorized
+
+      LOOP BEGIN at src/specfem3D/write_movie_volume.f90(945,9)
+         remark #15542: loop was not vectorized: inner loop was already vectorized
+
+         LOOP BEGIN at src/specfem3D/write_movie_volume.f90(946,11)
+            remark #15300: LOOP WAS VECTORIZED
+         LOOP END
+      LOOP END
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/specfem3D/write_movie_volume.f90(977,13)
+   remark #15301: OUTER LOOP WAS VECTORIZED
+
+   LOOP BEGIN at src/specfem3D/write_movie_volume.f90(970,7)
+      remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+
+      LOOP BEGIN at src/specfem3D/write_movie_volume.f90(971,9)
+         remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+
+         LOOP BEGIN at src/specfem3D/write_movie_volume.f90(972,11)
+            remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+         LOOP END
+      LOOP END
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/specfem3D/write_movie_volume.f90(977,13)
+<Remainder>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+
+   LOOP BEGIN at src/specfem3D/write_movie_volume.f90(970,7)
+      remark #25460: No loop optimizations reported
+
+      LOOP BEGIN at src/specfem3D/write_movie_volume.f90(971,9)
+         remark #25460: No loop optimizations reported
+
+         LOOP BEGIN at src/specfem3D/write_movie_volume.f90(972,11)
+         LOOP END
+      LOOP END
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/specfem3D/write_movie_volume.f90(977,13)
+<Remainder>
+
+   LOOP BEGIN at src/specfem3D/write_movie_volume.f90(970,7)
+      remark #25460: No loop optimizations reported
+
+      LOOP BEGIN at src/specfem3D/write_movie_volume.f90(971,9)
+         remark #25460: No loop optimizations reported
+
+         LOOP BEGIN at src/specfem3D/write_movie_volume.f90(972,11)
+         LOOP END
+      LOOP END
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/specfem3D/write_movie_volume.f90(1001,13)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at src/specfem3D/write_movie_volume.f90(996,7)
+      remark #15542: loop was not vectorized: inner loop was already vectorized
+
+      LOOP BEGIN at src/specfem3D/write_movie_volume.f90(997,9)
+         remark #15542: loop was not vectorized: inner loop was already vectorized
+
+         LOOP BEGIN at src/specfem3D/write_movie_volume.f90(998,11)
+            remark #15300: LOOP WAS VECTORIZED
+         LOOP END
+      LOOP END
+   LOOP END
+LOOP END
+===========================================================================
+
+Begin optimization report for: WRITE_MOVIE_VOLUME_ACCELNORM
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/specfem3D/write_movie_volume.f90(1071,13)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at src/specfem3D/write_movie_volume.f90(1066,7)
+      remark #15542: loop was not vectorized: inner loop was already vectorized
+
+      LOOP BEGIN at src/specfem3D/write_movie_volume.f90(1067,9)
+         remark #15542: loop was not vectorized: inner loop was already vectorized
+
+         LOOP BEGIN at src/specfem3D/write_movie_volume.f90(1068,11)
+            remark #15300: LOOP WAS VECTORIZED
+         LOOP END
+      LOOP END
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/specfem3D/write_movie_volume.f90(1099,13)
+   remark #15301: OUTER LOOP WAS VECTORIZED
+
+   LOOP BEGIN at src/specfem3D/write_movie_volume.f90(1092,7)
+      remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+
+      LOOP BEGIN at src/specfem3D/write_movie_volume.f90(1093,9)
+         remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+
+         LOOP BEGIN at src/specfem3D/write_movie_volume.f90(1094,11)
+            remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+         LOOP END
+      LOOP END
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/specfem3D/write_movie_volume.f90(1099,13)
+<Remainder>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+
+   LOOP BEGIN at src/specfem3D/write_movie_volume.f90(1092,7)
+      remark #25460: No loop optimizations reported
+
+      LOOP BEGIN at src/specfem3D/write_movie_volume.f90(1093,9)
+         remark #25460: No loop optimizations reported
+
+         LOOP BEGIN at src/specfem3D/write_movie_volume.f90(1094,11)
+         LOOP END
+      LOOP END
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/specfem3D/write_movie_volume.f90(1099,13)
+<Remainder>
+
+   LOOP BEGIN at src/specfem3D/write_movie_volume.f90(1092,7)
+      remark #25460: No loop optimizations reported
+
+      LOOP BEGIN at src/specfem3D/write_movie_volume.f90(1093,9)
+         remark #25460: No loop optimizations reported
+
+         LOOP BEGIN at src/specfem3D/write_movie_volume.f90(1094,11)
+         LOOP END
+      LOOP END
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/specfem3D/write_movie_volume.f90(1123,13)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at src/specfem3D/write_movie_volume.f90(1118,7)
+      remark #15542: loop was not vectorized: inner loop was already vectorized
+
+      LOOP BEGIN at src/specfem3D/write_movie_volume.f90(1119,9)
+         remark #15542: loop was not vectorized: inner loop was already vectorized
+
+         LOOP BEGIN at src/specfem3D/write_movie_volume.f90(1120,11)
+            remark #15300: LOOP WAS VECTORIZED
+         LOOP END
+      LOOP END
+   LOOP END
+LOOP END
+===========================================================================

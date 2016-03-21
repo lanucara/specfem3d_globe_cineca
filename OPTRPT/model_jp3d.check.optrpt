@@ -1,0 +1,463 @@
+
+Begin optimization report for: PUT1
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/meshfem3D/model_jp3d.f90(352,7)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed OUTPUT dependence between 77 line 354 and 77 line 354
+
+   LOOP BEGIN at src/meshfem3D/model_jp3d.f90(353,10)
+      remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+      remark #15346: vector dependence: assumed OUTPUT dependence between 77 line 354 and 77 line 354
+   LOOP END
+LOOP END
+===========================================================================
+
+Begin optimization report for: LOCX
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/meshfem3D/model_jp3d.f90(426,10)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed ANTI dependence between ip line 430 and ip line 429
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_jp3d.f90(426,10)
+<Remainder>
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_jp3d.f90(435,10)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed ANTI dependence between ir line 439 and ir line 438
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_jp3d.f90(435,10)
+<Remainder>
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_jp3d.f90(444,10)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed ANTI dependence between ih line 448 and ih line 447
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_jp3d.f90(444,10)
+<Remainder>
+LOOP END
+===========================================================================
+
+Begin optimization report for: INPUTJP
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/meshfem3D/model_jp3d.f90(706,6)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_jp3d.f90(706,6)
+<Remainder>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+===========================================================================
+
+Begin optimization report for: JPMODEL
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/meshfem3D/model_jp3d.f90(730,6)
+   remark #15520: loop was not vectorized: loop with early exits cannot be vectorized unless it meets search loop idiom criteria
+LOOP END
+===========================================================================
+
+Begin optimization report for: BLDMAP
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/meshfem3D/model_jp3d.f90(426,10) inlined into src/meshfem3D/model_jp3d.f90(406,8)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed ANTI dependence between ip line 430 and ip line 429
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_jp3d.f90(426,10) inlined into src/meshfem3D/model_jp3d.f90(406,8)
+<Remainder>
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_jp3d.f90(435,10) inlined into src/meshfem3D/model_jp3d.f90(406,8)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed ANTI dependence between ir line 439 and ir line 438
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_jp3d.f90(435,10) inlined into src/meshfem3D/model_jp3d.f90(406,8)
+<Remainder>
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_jp3d.f90(444,10) inlined into src/meshfem3D/model_jp3d.f90(406,8)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed ANTI dependence between ih line 448 and ih line 447
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_jp3d.f90(444,10) inlined into src/meshfem3D/model_jp3d.f90(406,8)
+<Remainder>
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_jp3d.f90(426,10) inlined into src/meshfem3D/model_jp3d.f90(408,8)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed ANTI dependence between ip line 430 and ip line 429
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_jp3d.f90(426,10) inlined into src/meshfem3D/model_jp3d.f90(408,8)
+<Remainder>
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_jp3d.f90(435,10) inlined into src/meshfem3D/model_jp3d.f90(408,8)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed ANTI dependence between ir line 439 and ir line 438
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_jp3d.f90(435,10) inlined into src/meshfem3D/model_jp3d.f90(408,8)
+<Remainder>
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_jp3d.f90(444,10) inlined into src/meshfem3D/model_jp3d.f90(408,8)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed ANTI dependence between ih line 448 and ih line 447
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_jp3d.f90(444,10) inlined into src/meshfem3D/model_jp3d.f90(408,8)
+<Remainder>
+LOOP END
+===========================================================================
+
+Begin optimization report for: VEL1D
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/meshfem3D/model_jp3d.f90(730,6) inlined into src/meshfem3D/model_jp3d.f90(668,12)
+   remark #15520: loop was not vectorized: loop with early exits cannot be vectorized unless it meets search loop idiom criteria
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_jp3d.f90(730,6) inlined into src/meshfem3D/model_jp3d.f90(671,12)
+   remark #15520: loop was not vectorized: loop with early exits cannot be vectorized unless it meets search loop idiom criteria
+LOOP END
+===========================================================================
+
+Begin optimization report for: INPUT1
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/meshfem3D/model_jp3d.f90(352,7) inlined into src/meshfem3D/model_jp3d.f90(328,8)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed OUTPUT dependence between 77 line 354 and 77 line 354
+
+   LOOP BEGIN at src/meshfem3D/model_jp3d.f90(353,10) inlined into src/meshfem3D/model_jp3d.f90(328,8)
+      remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+      remark #15346: vector dependence: assumed OUTPUT dependence between 77 line 354 and 77 line 354
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_jp3d.f90(352,7) inlined into src/meshfem3D/model_jp3d.f90(332,8)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed OUTPUT dependence between 77 line 354 and 77 line 354
+
+   LOOP BEGIN at src/meshfem3D/model_jp3d.f90(353,10) inlined into src/meshfem3D/model_jp3d.f90(332,8)
+      remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+      remark #15346: vector dependence: assumed OUTPUT dependence between 77 line 354 and 77 line 354
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_jp3d.f90(426,10) inlined into src/meshfem3D/model_jp3d.f90(333,8)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed ANTI dependence between ip line 430 and ip line 429
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_jp3d.f90(426,10) inlined into src/meshfem3D/model_jp3d.f90(333,8)
+<Remainder>
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_jp3d.f90(435,10) inlined into src/meshfem3D/model_jp3d.f90(333,8)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed ANTI dependence between ir line 439 and ir line 438
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_jp3d.f90(435,10) inlined into src/meshfem3D/model_jp3d.f90(333,8)
+<Remainder>
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_jp3d.f90(444,10) inlined into src/meshfem3D/model_jp3d.f90(333,8)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed ANTI dependence between ih line 448 and ih line 447
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_jp3d.f90(444,10) inlined into src/meshfem3D/model_jp3d.f90(333,8)
+<Remainder>
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_jp3d.f90(426,10) inlined into src/meshfem3D/model_jp3d.f90(333,8)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed ANTI dependence between ip line 430 and ip line 429
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_jp3d.f90(426,10) inlined into src/meshfem3D/model_jp3d.f90(333,8)
+<Remainder>
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_jp3d.f90(435,10) inlined into src/meshfem3D/model_jp3d.f90(333,8)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed ANTI dependence between ir line 439 and ir line 438
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_jp3d.f90(435,10) inlined into src/meshfem3D/model_jp3d.f90(333,8)
+<Remainder>
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_jp3d.f90(444,10) inlined into src/meshfem3D/model_jp3d.f90(333,8)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed ANTI dependence between ih line 448 and ih line 447
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_jp3d.f90(444,10) inlined into src/meshfem3D/model_jp3d.f90(333,8)
+<Remainder>
+LOOP END
+===========================================================================
+
+Begin optimization report for: READ_JP3D_ISO_ZHAO_MODEL
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/meshfem3D/model_jp3d.f90(706,6) inlined into src/meshfem3D/model_jp3d.f90(232,8)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_jp3d.f90(706,6) inlined into src/meshfem3D/model_jp3d.f90(232,8)
+<Remainder>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_jp3d.f90(352,7) inlined into src/meshfem3D/model_jp3d.f90(234,8)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed OUTPUT dependence between 77 line 354 and 77 line 354
+
+   LOOP BEGIN at src/meshfem3D/model_jp3d.f90(353,10) inlined into src/meshfem3D/model_jp3d.f90(234,8)
+      remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+      remark #15346: vector dependence: assumed OUTPUT dependence between 77 line 354 and 77 line 354
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_jp3d.f90(352,7) inlined into src/meshfem3D/model_jp3d.f90(234,8)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed OUTPUT dependence between 77 line 354 and 77 line 354
+
+   LOOP BEGIN at src/meshfem3D/model_jp3d.f90(353,10) inlined into src/meshfem3D/model_jp3d.f90(234,8)
+      remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+      remark #15346: vector dependence: assumed OUTPUT dependence between 77 line 354 and 77 line 354
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_jp3d.f90(426,10) inlined into src/meshfem3D/model_jp3d.f90(234,8)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed ANTI dependence between ip line 430 and ip line 429
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_jp3d.f90(426,10) inlined into src/meshfem3D/model_jp3d.f90(234,8)
+<Remainder>
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_jp3d.f90(435,10) inlined into src/meshfem3D/model_jp3d.f90(234,8)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed ANTI dependence between ir line 439 and ir line 438
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_jp3d.f90(435,10) inlined into src/meshfem3D/model_jp3d.f90(234,8)
+<Remainder>
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_jp3d.f90(444,10) inlined into src/meshfem3D/model_jp3d.f90(234,8)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed ANTI dependence between ih line 448 and ih line 447
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_jp3d.f90(444,10) inlined into src/meshfem3D/model_jp3d.f90(234,8)
+<Remainder>
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_jp3d.f90(426,10) inlined into src/meshfem3D/model_jp3d.f90(234,8)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed ANTI dependence between ip line 430 and ip line 429
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_jp3d.f90(426,10) inlined into src/meshfem3D/model_jp3d.f90(234,8)
+<Remainder>
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_jp3d.f90(435,10) inlined into src/meshfem3D/model_jp3d.f90(234,8)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed ANTI dependence between ir line 439 and ir line 438
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_jp3d.f90(435,10) inlined into src/meshfem3D/model_jp3d.f90(234,8)
+<Remainder>
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_jp3d.f90(444,10) inlined into src/meshfem3D/model_jp3d.f90(234,8)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed ANTI dependence between ih line 448 and ih line 447
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_jp3d.f90(444,10) inlined into src/meshfem3D/model_jp3d.f90(234,8)
+<Remainder>
+LOOP END
+===========================================================================
+
+Begin optimization report for: INPUT2
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/meshfem3D/model_jp3d.f90(377,6)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed FLOW dependence between 190 line 378 and 190 line 378
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_jp3d.f90(380,6)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed FLOW dependence between 190 line 381 and 190 line 381
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_jp3d.f90(383,6)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed FLOW dependence between 190 line 384 and 190 line 384
+LOOP END
+===========================================================================
+
+Begin optimization report for: MODEL_JP3D_ISO_ZHAO
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/meshfem3D/model_jp3d.f90(730,6) inlined into src/meshfem3D/model_jp3d.f90(285,8)
+   remark #15520: loop was not vectorized: loop with early exits cannot be vectorized unless it meets search loop idiom criteria
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_jp3d.f90(730,6) inlined into src/meshfem3D/model_jp3d.f90(285,8)
+   remark #15520: loop was not vectorized: loop with early exits cannot be vectorized unless it meets search loop idiom criteria
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_jp3d.f90(730,6) inlined into src/meshfem3D/model_jp3d.f90(286,8)
+   remark #15520: loop was not vectorized: loop with early exits cannot be vectorized unless it meets search loop idiom criteria
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_jp3d.f90(730,6) inlined into src/meshfem3D/model_jp3d.f90(286,8)
+   remark #15520: loop was not vectorized: loop with early exits cannot be vectorized unless it meets search loop idiom criteria
+LOOP END
+===========================================================================
+
+Begin optimization report for: HLAY
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/meshfem3D/model_jp3d.f90(597,12)
+   remark #15524: loop was not vectorized: search loop cannot be vectorized unless all memory references can be aligned vector load. 
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_jp3d.f90(602,15)
+   remark #15524: loop was not vectorized: search loop cannot be vectorized unless all memory references can be aligned vector load. 
+LOOP END
+===========================================================================
+
+Begin optimization report for: MODEL_JP3D_BROADCAST
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/meshfem3D/model_jp3d.f90(706,6) inlined into src/meshfem3D/model_jp3d.f90(153,20)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_jp3d.f90(706,6) inlined into src/meshfem3D/model_jp3d.f90(153,20)
+<Remainder>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_jp3d.f90(352,7) inlined into src/meshfem3D/model_jp3d.f90(153,20)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed OUTPUT dependence between 77 line 354 and 77 line 354
+
+   LOOP BEGIN at src/meshfem3D/model_jp3d.f90(353,10) inlined into src/meshfem3D/model_jp3d.f90(153,20)
+      remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+      remark #15346: vector dependence: assumed OUTPUT dependence between 77 line 354 and 77 line 354
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_jp3d.f90(352,7) inlined into src/meshfem3D/model_jp3d.f90(153,20)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed OUTPUT dependence between 77 line 354 and 77 line 354
+
+   LOOP BEGIN at src/meshfem3D/model_jp3d.f90(353,10) inlined into src/meshfem3D/model_jp3d.f90(153,20)
+      remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+      remark #15346: vector dependence: assumed OUTPUT dependence between 77 line 354 and 77 line 354
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_jp3d.f90(426,10) inlined into src/meshfem3D/model_jp3d.f90(153,20)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed ANTI dependence between ip line 430 and ip line 429
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_jp3d.f90(426,10) inlined into src/meshfem3D/model_jp3d.f90(153,20)
+<Remainder>
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_jp3d.f90(435,10) inlined into src/meshfem3D/model_jp3d.f90(153,20)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed ANTI dependence between ir line 439 and ir line 438
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_jp3d.f90(435,10) inlined into src/meshfem3D/model_jp3d.f90(153,20)
+<Remainder>
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_jp3d.f90(444,10) inlined into src/meshfem3D/model_jp3d.f90(153,20)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed ANTI dependence between ih line 448 and ih line 447
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_jp3d.f90(444,10) inlined into src/meshfem3D/model_jp3d.f90(153,20)
+<Remainder>
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_jp3d.f90(426,10) inlined into src/meshfem3D/model_jp3d.f90(153,20)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed ANTI dependence between ip line 430 and ip line 429
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_jp3d.f90(426,10) inlined into src/meshfem3D/model_jp3d.f90(153,20)
+<Remainder>
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_jp3d.f90(435,10) inlined into src/meshfem3D/model_jp3d.f90(153,20)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed ANTI dependence between ir line 439 and ir line 438
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_jp3d.f90(435,10) inlined into src/meshfem3D/model_jp3d.f90(153,20)
+<Remainder>
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_jp3d.f90(444,10) inlined into src/meshfem3D/model_jp3d.f90(153,20)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed ANTI dependence between ih line 448 and ih line 447
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_jp3d.f90(444,10) inlined into src/meshfem3D/model_jp3d.f90(153,20)
+<Remainder>
+LOOP END
+===========================================================================

@@ -1,0 +1,117 @@
+
+Begin optimization report for: GET_ATTENUATION_PROPERTY_VALUES
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/specfem3D/get_attenuation.f90(137,3)
+   remark #15301: FUSED LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/get_attenuation.f90(139,3)
+LOOP END
+
+LOOP BEGIN at src/specfem3D/get_attenuation.f90(142,3)
+LOOP END
+
+LOOP BEGIN at src/specfem3D/get_attenuation.f90(152,3)
+LOOP END
+===========================================================================
+
+Begin optimization report for: GET_ATTENUATION_MEMORY_VALUES
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/specfem3D/get_attenuation.f90(240,3)
+   remark #15301: FUSED LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/get_attenuation.f90(242,3)
+LOOP END
+
+LOOP BEGIN at src/specfem3D/get_attenuation.f90(244,3)
+LOOP END
+
+LOOP BEGIN at src/specfem3D/get_attenuation.f90(246,3)
+LOOP END
+===========================================================================
+
+Begin optimization report for: GET_ATTENUATION_SCALE_FACTOR
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/specfem3D/get_attenuation.f90(200,3)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+===========================================================================
+
+Begin optimization report for: GET_ATTENUATION_MODEL_3D
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/specfem3D/get_attenuation.f90(84,3)
+<Peeled>
+   remark #15301: PEEL LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/get_attenuation.f90(84,3)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/get_attenuation.f90(84,3)
+<Remainder>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/get_attenuation.f90(85,3)
+   remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at src/specfem3D/get_attenuation.f90(90,3)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at src/specfem3D/get_attenuation.f90(92,5)
+      remark #15542: loop was not vectorized: inner loop was already vectorized
+
+      LOOP BEGIN at src/specfem3D/get_attenuation.f90(93,7)
+         remark #15542: loop was not vectorized: inner loop was already vectorized
+
+         LOOP BEGIN at src/specfem3D/get_attenuation.f90(94,9)
+            remark #15542: loop was not vectorized: inner loop was already vectorized
+
+            LOOP BEGIN at src/specfem3D/get_attenuation.f90(110,16)
+               remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+            LOOP END
+
+            LOOP BEGIN at src/specfem3D/get_attenuation.f90(137,3) inlined into src/specfem3D/get_attenuation.f90(102,16)
+               remark #15300: LOOP WAS VECTORIZED
+            LOOP END
+
+            LOOP BEGIN at src/specfem3D/get_attenuation.f90(139,3) inlined into src/specfem3D/get_attenuation.f90(102,16)
+               remark #15300: LOOP WAS VECTORIZED
+            LOOP END
+
+            LOOP BEGIN at src/specfem3D/get_attenuation.f90(142,3) inlined into src/specfem3D/get_attenuation.f90(102,16)
+            LOOP END
+
+            LOOP BEGIN at src/specfem3D/get_attenuation.f90(152,3) inlined into src/specfem3D/get_attenuation.f90(102,16)
+            LOOP END
+
+            LOOP BEGIN at src/specfem3D/get_attenuation.f90(104,11)
+            LOOP END
+
+            LOOP BEGIN at src/specfem3D/get_attenuation.f90(200,3) inlined into src/specfem3D/get_attenuation.f90(110,16)
+            LOOP END
+
+            LOOP BEGIN at src/specfem3D/get_attenuation.f90(139,3) inlined into src/specfem3D/get_attenuation.f90(102,16)
+            <Distributed chunk2>
+               remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+            LOOP END
+         LOOP END
+      LOOP END
+   LOOP END
+LOOP END
+===========================================================================

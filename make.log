@@ -1,0 +1,13 @@
+scorep ifort -g   -xHost -fpe0 -ftz -assume buffered_io -assume byterecl -align sequence -std03 -diag-disable 6477 -implicitnone -gen-interfaces -warn all -O3 -openmp -check nobounds -DFORCE_VECTORIZATION -mod ./obj -I./obj -I.  -I. -I./setup -c -o obj/compute_forces_inner_core_Dev.solverstatic.o src/specfem3D/compute_forces_inner_core_Dev.F90
+/gpfs/scratch/userinternal/planucar/.CIG/.vic_reference/specfem3d_globe/src/specfem3D/compute_forces_inner_core_Dev.F90(197): error #6752: Since the OpenMP* DEFAULT(NONE) clause applies, the PRIVATE, SHARED, REDUCTION, FIRSTPRIVATE, or LASTPRIVATE attribute must be explicitly specified for every variable.   [POMP2_REGION_1]
+      call POMP2_Parallel_begin(pomp2_region_1)
+--------------------------------^
+/gpfs/scratch/userinternal/planucar/.CIG/.vic_reference/specfem3d_globe/src/specfem3D/compute_forces_inner_core_Dev.F90(196): error #6752: Since the OpenMP* DEFAULT(NONE) clause applies, the PRIVATE, SHARED, REDUCTION, FIRSTPRIVATE, or LASTPRIVATE attribute must be explicitly specified for every variable.   [POMP2_REGION_2]
+      call POMP2_Do_enter(pomp2_region_2, &
+--------------------------^
+/gpfs/scratch/userinternal/planucar/.CIG/.vic_reference/specfem3d_globe/src/specfem3D/compute_forces_inner_core_Dev.F90(730): error #6752: Since the OpenMP* DEFAULT(NONE) clause applies, the PRIVATE, SHARED, REDUCTION, FIRSTPRIVATE, or LASTPRIVATE attribute must be explicitly specified for every variable.   [POMP2_REGION_3]
+      call POMP2_Do_enter(pomp2_region_3, &
+--------------------------^
+compilation aborted for compute_forces_inner_core_Dev.prep.opari.F90 (code 1)
+Error executing: VT_LIB_DIR=. VT_ROOT=. VT_ADD_LIBS="" ifort `/cineca/prod/tools/scalasca/2.2/intelmpi--5.0.2--binary/bin/scorep-config --thread=omp:pomp_tpd --mpp=none --mutex=none --nocuda --noonline-access --preprocess --noopencl --fflags`  -I/gpfs/scratch/userinternal/planucar/.CIG/.vic_reference/specfem3d_globe/src/specfem3D  -g -xHost -fpe0 -ftz -assume buffered_io -assume byterecl -align sequence -std03 -diag-disable 6477 -implicitnone -gen-interfaces -warn all -O3 -openmp -check nobounds -DFORCE_VECTORIZATION -mod ./obj -I./obj -I. -I. -I./setup -c  -c compute_forces_inner_core_Dev.prep.opari.F90 -o obj/compute_forces_inner_core_Dev.solverstatic.o
+make: *** [obj/compute_forces_inner_core_Dev.solverstatic.o] Error 1

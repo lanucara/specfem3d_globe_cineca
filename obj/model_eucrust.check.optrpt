@@ -1,0 +1,160 @@
+
+Begin optimization report for: CRUST_EU
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/meshfem3D/model_eucrust.f90(219,11)
+   remark #15520: loop was not vectorized: loop with early exits cannot be vectorized unless it meets search loop idiom criteria
+LOOP END
+
+
+Non-optimizable loops:
+
+
+LOOP BEGIN at src/meshfem3D/model_eucrust.f90(255,7)
+   remark #15341: loop was not vectorized: nonstandard loop is not a vectorization candidate
+LOOP END
+===========================================================================
+
+Begin optimization report for: READ_EUCRUST
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/meshfem3D/model_eucrust.f90(118,3)
+   remark #15398: loop was not vectorized: loop was transformed to memset or memcpy
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_eucrust.f90(119,3)
+   remark #15398: loop was not vectorized: loop was transformed to memset or memcpy
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_eucrust.f90(120,3)
+   remark #15398: loop was not vectorized: loop was transformed to memset or memcpy
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_eucrust.f90(121,3)
+   remark #15398: loop was not vectorized: loop was transformed to memset or memcpy
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_eucrust.f90(122,3)
+   remark #15398: loop was not vectorized: loop was transformed to memset or memcpy
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_eucrust.f90(137,3)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed OUTPUT dependence between 71 line 139 and 71 line 142
+LOOP END
+===========================================================================
+
+Begin optimization report for: MODEL_EUCRUST_BROADCAST
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/meshfem3D/model_eucrust.f90(118,3) inlined into src/meshfem3D/model_eucrust.f90(83,21)
+   remark #15398: loop was not vectorized: loop was transformed to memset or memcpy
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_eucrust.f90(119,3) inlined into src/meshfem3D/model_eucrust.f90(83,21)
+   remark #15398: loop was not vectorized: loop was transformed to memset or memcpy
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_eucrust.f90(120,3) inlined into src/meshfem3D/model_eucrust.f90(83,21)
+   remark #15398: loop was not vectorized: loop was transformed to memset or memcpy
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_eucrust.f90(121,3) inlined into src/meshfem3D/model_eucrust.f90(83,21)
+   remark #15398: loop was not vectorized: loop was transformed to memset or memcpy
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_eucrust.f90(122,3) inlined into src/meshfem3D/model_eucrust.f90(83,21)
+   remark #15398: loop was not vectorized: loop was transformed to memset or memcpy
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_eucrust.f90(137,3) inlined into src/meshfem3D/model_eucrust.f90(83,21)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed OUTPUT dependence between 71 line 139 and 71 line 142
+LOOP END
+===========================================================================
+
+Begin optimization report for: EU_CAP_SMOOTHING
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/meshfem3D/model_eucrust.f90(337,3)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed FLOW dependence between weight line 348 and weight line 349
+
+   LOOP BEGIN at src/meshfem3D/model_eucrust.f90(344,5)
+      remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+      remark #15346: vector dependence: assumed FLOW dependence between weight line 348 and weight line 349
+
+      LOOP BEGIN at src/meshfem3D/model_eucrust.f90(358,7)
+      <Peeled, Distributed chunk1>
+         remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+      LOOP END
+
+      LOOP BEGIN at src/meshfem3D/model_eucrust.f90(358,7)
+      LOOP END
+   LOOP END
+LOOP END
+
+
+Non-optimizable loops:
+
+
+LOOP BEGIN at src/meshfem3D/model_eucrust.f90(389,3)
+   remark #15536: loop was not vectorized: inner loop throttling prevents vectorization of this outer loop. Refer to inner loop message for more details.
+
+   LOOP BEGIN at src/meshfem3D/model_eucrust.f90(255,7) inlined into src/meshfem3D/model_eucrust.f90(387,14)
+      remark #15536: loop was not vectorized: inner loop throttling prevents vectorization of this outer loop. Refer to inner loop message for more details.
+
+      LOOP BEGIN at src/meshfem3D/model_eucrust.f90(253,11) inlined into src/meshfem3D/model_eucrust.f90(387,14)
+         remark #15341: loop was not vectorized: nonstandard loop is not a vectorization candidate
+      LOOP END
+   LOOP END
+LOOP END
+===========================================================================
+
+Begin optimization report for: MODEL_EUCRUST
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/meshfem3D/model_eucrust.f90(337,3) inlined into src/meshfem3D/model_eucrust.f90(180,8)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed FLOW dependence between weight line 348 and weight line 349
+
+   LOOP BEGIN at src/meshfem3D/model_eucrust.f90(344,5) inlined into src/meshfem3D/model_eucrust.f90(180,8)
+      remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+      remark #15346: vector dependence: assumed FLOW dependence between weight line 348 and weight line 349
+
+      LOOP BEGIN at src/meshfem3D/model_eucrust.f90(358,7) inlined into src/meshfem3D/model_eucrust.f90(180,8)
+      <Peeled, Distributed chunk1>
+         remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+      LOOP END
+
+      LOOP BEGIN at src/meshfem3D/model_eucrust.f90(358,7) inlined into src/meshfem3D/model_eucrust.f90(180,8)
+      LOOP END
+   LOOP END
+LOOP END
+
+
+Non-optimizable loops:
+
+
+LOOP BEGIN at src/meshfem3D/model_eucrust.f90(389,3) inlined into src/meshfem3D/model_eucrust.f90(180,8)
+   remark #15536: loop was not vectorized: inner loop throttling prevents vectorization of this outer loop. Refer to inner loop message for more details.
+
+   LOOP BEGIN at src/meshfem3D/model_eucrust.f90(255,7) inlined into src/meshfem3D/model_eucrust.f90(180,8)
+      remark #15536: loop was not vectorized: inner loop throttling prevents vectorization of this outer loop. Refer to inner loop message for more details.
+
+      LOOP BEGIN at src/meshfem3D/model_eucrust.f90(253,11) inlined into src/meshfem3D/model_eucrust.f90(180,8)
+         remark #15341: loop was not vectorized: nonstandard loop is not a vectorization candidate
+      LOOP END
+   LOOP END
+LOOP END
+===========================================================================

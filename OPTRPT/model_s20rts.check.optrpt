@@ -1,0 +1,446 @@
+
+Begin optimization report for: S20RTS_RSPLE
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/meshfem3D/model_s20rts.f90(312,2)
+   remark #15523: loop was not vectorized: cannot compute loop iteration count before executing the loop.
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_s20rts.f90(350,7)
+   remark #15523: loop was not vectorized: cannot compute loop iteration count before executing the loop.
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_s20rts.f90(350,7)
+   remark #15523: loop was not vectorized: cannot compute loop iteration count before executing the loop.
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_s20rts.f90(350,7)
+   remark #15523: loop was not vectorized: cannot compute loop iteration count before executing the loop.
+LOOP END
+===========================================================================
+
+Begin optimization report for: S20RTS_RSPLN
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/meshfem3D/model_s20rts.f90(432,7)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed FLOW dependence between b0 line 447 and b0 line 439
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_s20rts.f90(470,7)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed ANTI dependence between q line 474 and q line 472
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_s20rts.f90(414,7)
+   remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_s20rts.f90(480,7)
+   remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_s20rts.f90(396,10)
+   remark #15520: loop was not vectorized: loop with early exits cannot be vectorized unless it meets search loop idiom criteria
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_s20rts.f90(497,2)
+   remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+
+Non-optimizable loops:
+
+
+LOOP BEGIN at src/meshfem3D/model_s20rts.f90(396,10)
+   remark #15536: loop was not vectorized: inner loop throttling prevents vectorization of this outer loop. Refer to inner loop message for more details.
+
+   LOOP BEGIN at src/meshfem3D/model_s20rts.f90(405,7)
+      remark #15341: loop was not vectorized: nonstandard loop is not a vectorization candidate
+   LOOP END
+LOOP END
+===========================================================================
+
+Begin optimization report for: MANTLE_S20RTS
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/meshfem3D/model_s20rts.f90(186,3)
+   remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+   LOOP BEGIN at src/meshfem3D/model_s20rts.f90(350,7) inlined into src/meshfem3D/model_s20rts.f90(187,21)
+      remark #15520: loop was not vectorized: loop with early exits cannot be vectorized unless it meets search loop idiom criteria
+   LOOP END
+
+   LOOP BEGIN at src/meshfem3D/model_s20rts.f90(350,7) inlined into src/meshfem3D/model_s20rts.f90(187,21)
+      remark #15521: loop was not vectorized: explicitly compute the iteration count before executing the loop or try using canonical loop form
+   LOOP END
+
+   LOOP BEGIN at src/meshfem3D/model_s20rts.f90(350,7) inlined into src/meshfem3D/model_s20rts.f90(187,21)
+      remark #15521: loop was not vectorized: explicitly compute the iteration count before executing the loop or try using canonical loop form
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_s20rts.f90(190,3)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at src/meshfem3D/model_s20rts.f90(199,39)
+      remark #15300: LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/meshfem3D/model_s20rts.f90(199,39)
+   <Remainder>
+      remark #15301: REMAINDER LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/meshfem3D/model_s20rts.f90(204,5)
+      remark #15542: loop was not vectorized: inner loop was already vectorized
+
+      LOOP BEGIN at src/meshfem3D/model_s20rts.f90(209,7)
+         remark #15300: LOOP WAS VECTORIZED
+      LOOP END
+
+      LOOP BEGIN at src/meshfem3D/model_s20rts.f90(209,7)
+      <Remainder>
+      LOOP END
+   LOOP END
+
+   LOOP BEGIN at src/meshfem3D/model_s20rts.f90(204,5)
+   <Remainder>
+      remark #15542: loop was not vectorized: inner loop was already vectorized
+
+      LOOP BEGIN at src/meshfem3D/model_s20rts.f90(209,7)
+         remark #15300: LOOP WAS VECTORIZED
+      LOOP END
+
+      LOOP BEGIN at src/meshfem3D/model_s20rts.f90(209,7)
+      <Remainder>
+      LOOP END
+   LOOP END
+LOOP END
+===========================================================================
+
+Begin optimization report for: S20RTS_SPLHSETUP
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/meshfem3D/model_s20rts.f90(265,9)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at src/meshfem3D/model_s20rts.f90(263,5)
+      remark #15300: LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/meshfem3D/model_s20rts.f90(263,5)
+   <Remainder>
+      remark #15301: REMAINDER LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/meshfem3D/model_s20rts.f90(263,5)
+      remark #15300: LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/meshfem3D/model_s20rts.f90(263,5)
+   <Remainder>
+      remark #15301: REMAINDER LOOP WAS VECTORIZED
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_s20rts.f90(396,10) inlined into src/meshfem3D/model_s20rts.f90(272,10)
+   remark #15520: loop was not vectorized: loop with early exits cannot be vectorized unless it meets search loop idiom criteria
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_s20rts.f90(432,7) inlined into src/meshfem3D/model_s20rts.f90(272,10)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed FLOW dependence between b0 line 447 and b0 line 439
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_s20rts.f90(470,7) inlined into src/meshfem3D/model_s20rts.f90(272,10)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed ANTI dependence between q line 474 and q line 472
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_s20rts.f90(414,7) inlined into src/meshfem3D/model_s20rts.f90(272,10)
+   remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_s20rts.f90(480,7) inlined into src/meshfem3D/model_s20rts.f90(272,10)
+   remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_s20rts.f90(497,2) inlined into src/meshfem3D/model_s20rts.f90(272,10)
+   remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+
+Non-optimizable loops:
+
+
+LOOP BEGIN at src/meshfem3D/model_s20rts.f90(273,3)
+   remark #15536: loop was not vectorized: inner loop throttling prevents vectorization of this outer loop. Refer to inner loop message for more details.
+
+   LOOP BEGIN at src/meshfem3D/model_s20rts.f90(493,17) inlined into src/meshfem3D/model_s20rts.f90(272,10)
+      remark #15341: loop was not vectorized: nonstandard loop is not a vectorization candidate
+   LOOP END
+LOOP END
+===========================================================================
+
+Begin optimization report for: READ_MODEL_S20RTS
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/meshfem3D/model_s20rts.f90(120,3)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed FLOW dependence between 202 line 122 and 202 line 122
+
+   LOOP BEGIN at src/meshfem3D/model_s20rts.f90(121,5)
+      remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+      remark #15346: vector dependence: assumed FLOW dependence between 202 line 122 and 202 line 122
+
+      LOOP BEGIN at src/meshfem3D/model_s20rts.f90(122,7)
+         remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+         remark #15346: vector dependence: assumed FLOW dependence between ARGBLOCK_REC_2 line 122 and ARGBLOCK_REC_2 line 122
+      LOOP END
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_s20rts.f90(131,3)
+   remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+   LOOP BEGIN at src/meshfem3D/model_s20rts.f90(132,5)
+      remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+      remark #15346: vector dependence: assumed FLOW dependence between 202 line 133 and 202 line 133
+
+      LOOP BEGIN at src/meshfem3D/model_s20rts.f90(133,7)
+         remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+         remark #15346: vector dependence: assumed FLOW dependence between ARGBLOCK_REC_6 line 133 and ARGBLOCK_REC_6 line 133
+      LOOP END
+   LOOP END
+
+   LOOP BEGIN at src/meshfem3D/model_s20rts.f90(139,9)
+   <Distributed chunk1>
+   LOOP END
+
+   LOOP BEGIN at src/meshfem3D/model_s20rts.f90(139,9)
+   <Distributed chunk2>
+
+      LOOP BEGIN at src/meshfem3D/model_s20rts.f90(137,7)
+      LOOP END
+
+      LOOP BEGIN at src/meshfem3D/model_s20rts.f90(137,7)
+      LOOP END
+
+      LOOP BEGIN at src/meshfem3D/model_s20rts.f90(137,7)
+      LOOP END
+
+      LOOP BEGIN at src/meshfem3D/model_s20rts.f90(137,7)
+      LOOP END
+
+      LOOP BEGIN at src/meshfem3D/model_s20rts.f90(137,7)
+      LOOP END
+
+      LOOP BEGIN at src/meshfem3D/model_s20rts.f90(137,7)
+      LOOP END
+
+      LOOP BEGIN at src/meshfem3D/model_s20rts.f90(137,7)
+      LOOP END
+
+      LOOP BEGIN at src/meshfem3D/model_s20rts.f90(137,7)
+      LOOP END
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_s20rts.f90(265,9) inlined into src/meshfem3D/model_s20rts.f90(146,8)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at src/meshfem3D/model_s20rts.f90(263,5) inlined into src/meshfem3D/model_s20rts.f90(146,8)
+      remark #15300: LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/meshfem3D/model_s20rts.f90(263,5) inlined into src/meshfem3D/model_s20rts.f90(146,8)
+   <Remainder>
+      remark #15301: REMAINDER LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/meshfem3D/model_s20rts.f90(263,5) inlined into src/meshfem3D/model_s20rts.f90(146,8)
+      remark #15300: LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/meshfem3D/model_s20rts.f90(263,5) inlined into src/meshfem3D/model_s20rts.f90(146,8)
+   <Remainder>
+      remark #15301: REMAINDER LOOP WAS VECTORIZED
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_s20rts.f90(396,10) inlined into src/meshfem3D/model_s20rts.f90(146,8)
+   remark #15520: loop was not vectorized: loop with early exits cannot be vectorized unless it meets search loop idiom criteria
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_s20rts.f90(432,7) inlined into src/meshfem3D/model_s20rts.f90(146,8)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed FLOW dependence between b0 line 447 and b0 line 439
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_s20rts.f90(470,7) inlined into src/meshfem3D/model_s20rts.f90(146,8)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed ANTI dependence between q line 474 and q line 472
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_s20rts.f90(414,7) inlined into src/meshfem3D/model_s20rts.f90(146,8)
+   remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_s20rts.f90(480,7) inlined into src/meshfem3D/model_s20rts.f90(146,8)
+   remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_s20rts.f90(497,2) inlined into src/meshfem3D/model_s20rts.f90(146,8)
+   remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+
+Non-optimizable loops:
+
+
+LOOP BEGIN at src/meshfem3D/model_s20rts.f90(273,3) inlined into src/meshfem3D/model_s20rts.f90(146,8)
+   remark #15536: loop was not vectorized: inner loop throttling prevents vectorization of this outer loop. Refer to inner loop message for more details.
+
+   LOOP BEGIN at src/meshfem3D/model_s20rts.f90(493,17) inlined into src/meshfem3D/model_s20rts.f90(146,8)
+      remark #15341: loop was not vectorized: nonstandard loop is not a vectorization candidate
+   LOOP END
+LOOP END
+===========================================================================
+
+Begin optimization report for: MODEL_S20RTS_BROADCAST
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/meshfem3D/model_s20rts.f90(120,3) inlined into src/meshfem3D/model_s20rts.f90(86,20)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed FLOW dependence between 202 line 122 and 202 line 122
+
+   LOOP BEGIN at src/meshfem3D/model_s20rts.f90(121,5) inlined into src/meshfem3D/model_s20rts.f90(86,20)
+      remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+      remark #15346: vector dependence: assumed FLOW dependence between 202 line 122 and 202 line 122
+
+      LOOP BEGIN at src/meshfem3D/model_s20rts.f90(122,7) inlined into src/meshfem3D/model_s20rts.f90(86,20)
+         remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+         remark #15346: vector dependence: assumed FLOW dependence between ARGBLOCK_REC_2 line 122 and ARGBLOCK_REC_2 line 122
+      LOOP END
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_s20rts.f90(131,3) inlined into src/meshfem3D/model_s20rts.f90(86,20)
+   remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+   LOOP BEGIN at src/meshfem3D/model_s20rts.f90(132,5) inlined into src/meshfem3D/model_s20rts.f90(86,20)
+      remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+      remark #15346: vector dependence: assumed FLOW dependence between 202 line 133 and 202 line 133
+
+      LOOP BEGIN at src/meshfem3D/model_s20rts.f90(133,7) inlined into src/meshfem3D/model_s20rts.f90(86,20)
+         remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+         remark #15346: vector dependence: assumed FLOW dependence between ARGBLOCK_REC_6 line 133 and ARGBLOCK_REC_6 line 133
+      LOOP END
+   LOOP END
+
+   LOOP BEGIN at src/meshfem3D/model_s20rts.f90(139,9) inlined into src/meshfem3D/model_s20rts.f90(86,20)
+   <Distributed chunk1>
+   LOOP END
+
+   LOOP BEGIN at src/meshfem3D/model_s20rts.f90(139,9) inlined into src/meshfem3D/model_s20rts.f90(86,20)
+   <Distributed chunk2>
+
+      LOOP BEGIN at src/meshfem3D/model_s20rts.f90(137,7) inlined into src/meshfem3D/model_s20rts.f90(86,20)
+      LOOP END
+
+      LOOP BEGIN at src/meshfem3D/model_s20rts.f90(137,7) inlined into src/meshfem3D/model_s20rts.f90(86,20)
+      LOOP END
+
+      LOOP BEGIN at src/meshfem3D/model_s20rts.f90(137,7) inlined into src/meshfem3D/model_s20rts.f90(86,20)
+      LOOP END
+
+      LOOP BEGIN at src/meshfem3D/model_s20rts.f90(137,7) inlined into src/meshfem3D/model_s20rts.f90(86,20)
+      LOOP END
+
+      LOOP BEGIN at src/meshfem3D/model_s20rts.f90(137,7) inlined into src/meshfem3D/model_s20rts.f90(86,20)
+      LOOP END
+
+      LOOP BEGIN at src/meshfem3D/model_s20rts.f90(137,7) inlined into src/meshfem3D/model_s20rts.f90(86,20)
+      LOOP END
+
+      LOOP BEGIN at src/meshfem3D/model_s20rts.f90(137,7) inlined into src/meshfem3D/model_s20rts.f90(86,20)
+      LOOP END
+
+      LOOP BEGIN at src/meshfem3D/model_s20rts.f90(137,7) inlined into src/meshfem3D/model_s20rts.f90(86,20)
+      LOOP END
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_s20rts.f90(265,9) inlined into src/meshfem3D/model_s20rts.f90(86,20)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at src/meshfem3D/model_s20rts.f90(263,5) inlined into src/meshfem3D/model_s20rts.f90(86,20)
+      remark #15300: LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/meshfem3D/model_s20rts.f90(263,5) inlined into src/meshfem3D/model_s20rts.f90(86,20)
+   <Remainder>
+      remark #15301: REMAINDER LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/meshfem3D/model_s20rts.f90(263,5) inlined into src/meshfem3D/model_s20rts.f90(86,20)
+      remark #15300: LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/meshfem3D/model_s20rts.f90(263,5) inlined into src/meshfem3D/model_s20rts.f90(86,20)
+   <Remainder>
+      remark #15301: REMAINDER LOOP WAS VECTORIZED
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_s20rts.f90(396,10) inlined into src/meshfem3D/model_s20rts.f90(86,20)
+   remark #15520: loop was not vectorized: loop with early exits cannot be vectorized unless it meets search loop idiom criteria
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_s20rts.f90(432,7) inlined into src/meshfem3D/model_s20rts.f90(86,20)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed FLOW dependence between b0 line 447 and b0 line 439
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_s20rts.f90(470,7) inlined into src/meshfem3D/model_s20rts.f90(86,20)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed ANTI dependence between q line 474 and q line 472
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_s20rts.f90(414,7) inlined into src/meshfem3D/model_s20rts.f90(86,20)
+   remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_s20rts.f90(480,7) inlined into src/meshfem3D/model_s20rts.f90(86,20)
+   remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_s20rts.f90(497,2) inlined into src/meshfem3D/model_s20rts.f90(86,20)
+   remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+
+Non-optimizable loops:
+
+
+LOOP BEGIN at src/meshfem3D/model_s20rts.f90(273,3) inlined into src/meshfem3D/model_s20rts.f90(86,20)
+   remark #15536: loop was not vectorized: inner loop throttling prevents vectorization of this outer loop. Refer to inner loop message for more details.
+
+   LOOP BEGIN at src/meshfem3D/model_s20rts.f90(493,17) inlined into src/meshfem3D/model_s20rts.f90(86,20)
+      remark #15341: loop was not vectorized: nonstandard loop is not a vectorization candidate
+   LOOP END
+LOOP END
+===========================================================================

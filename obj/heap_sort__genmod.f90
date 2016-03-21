@@ -1,0 +1,9 @@
+        !COMPILER-GENERATED INTERFACE MODULE: Fri Mar 11 15:45:24 2016
+        MODULE HEAP_SORT__genmod
+          INTERFACE 
+            SUBROUTINE HEAP_SORT(N,ARRAY)
+              INTEGER(KIND=4), INTENT(IN) :: N
+              INTEGER(KIND=4), INTENT(INOUT) :: ARRAY(N)
+            END SUBROUTINE HEAP_SORT
+          END INTERFACE 
+        END MODULE HEAP_SORT__genmod

@@ -1,0 +1,55 @@
+
+Begin optimization report for: WRITE_AVS_DX_GLOBAL_FACES_DATA
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/meshfem3D/write_AVS_DX_global_faces_data.f90(93,3)
+   remark #15398: loop was not vectorized: loop was transformed to memset or memcpy
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/write_AVS_DX_global_faces_data.f90(98,3)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed OUTPUT dependence between mask_ibool line 114 and mask_ibool line 144
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/write_AVS_DX_global_faces_data.f90(151,11)
+<Peeled>
+   remark #15301: PEEL LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/write_AVS_DX_global_faces_data.f90(151,11)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/write_AVS_DX_global_faces_data.f90(151,11)
+<Remainder>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/write_AVS_DX_global_faces_data.f90(157,3)
+   remark #15398: loop was not vectorized: loop was transformed to memset or memcpy
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/write_AVS_DX_global_faces_data.f90(161,3)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed OUTPUT dependence between num_ibool_avs_dx line 178 and num_ibool_avs_dx line 292
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/write_AVS_DX_global_faces_data.f90(322,3)
+   remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+   LOOP BEGIN at src/meshfem3D/write_AVS_DX_global_faces_data.f90(346,8)
+      remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+      LOOP BEGIN at src/meshfem3D/write_AVS_DX_global_faces_data.f90(347,10)
+         remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+         LOOP BEGIN at src/meshfem3D/write_AVS_DX_global_faces_data.f90(348,12)
+            remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+            remark #15346: vector dependence: assumed OUTPUT dependence between x line 350 and x line 356
+         LOOP END
+      LOOP END
+   LOOP END
+LOOP END
+===========================================================================

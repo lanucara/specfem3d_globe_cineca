@@ -1,0 +1,78 @@
+
+Begin optimization report for: GET_MPI_1D_BUFFERS
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/meshfem3D/get_MPI_1D_buffers.f90(92,3)
+   remark #15398: loop was not vectorized: loop was transformed to memset or memcpy
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/get_MPI_1D_buffers.f90(96,3)
+   remark #15398: loop was not vectorized: loop was transformed to memset or memcpy
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/get_MPI_1D_buffers.f90(101,3)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed OUTPUT dependence between mask_ibool line 118 and mask_ibool line 118
+
+   LOOP BEGIN at src/meshfem3D/get_MPI_1D_buffers.f90(114,7)
+      remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+      remark #15346: vector dependence: assumed FLOW dependence between mask_ibool line 118 and mask_ibool line 116
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/get_MPI_1D_buffers.f90(157,3)
+   remark #15398: loop was not vectorized: loop was transformed to memset or memcpy
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/get_MPI_1D_buffers.f90(161,3)
+   remark #15398: loop was not vectorized: loop was transformed to memset or memcpy
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/get_MPI_1D_buffers.f90(165,3)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed OUTPUT dependence between mask_ibool line 181 and mask_ibool line 181
+
+   LOOP BEGIN at src/meshfem3D/get_MPI_1D_buffers.f90(178,7)
+      remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+      remark #15346: vector dependence: assumed FLOW dependence between mask_ibool line 181 and mask_ibool line 180
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/get_MPI_1D_buffers.f90(224,3)
+   remark #15398: loop was not vectorized: loop was transformed to memset or memcpy
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/get_MPI_1D_buffers.f90(228,3)
+   remark #15398: loop was not vectorized: loop was transformed to memset or memcpy
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/get_MPI_1D_buffers.f90(233,3)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed OUTPUT dependence between mask_ibool line 252 and mask_ibool line 252
+
+   LOOP BEGIN at src/meshfem3D/get_MPI_1D_buffers.f90(249,7)
+      remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+      remark #15346: vector dependence: assumed FLOW dependence between mask_ibool line 252 and mask_ibool line 251
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/get_MPI_1D_buffers.f90(291,3)
+   remark #15398: loop was not vectorized: loop was transformed to memset or memcpy
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/get_MPI_1D_buffers.f90(295,3)
+   remark #15398: loop was not vectorized: loop was transformed to memset or memcpy
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/get_MPI_1D_buffers.f90(300,3)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed OUTPUT dependence between mask_ibool line 320 and mask_ibool line 320
+
+   LOOP BEGIN at src/meshfem3D/get_MPI_1D_buffers.f90(316,7)
+      remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+      remark #15346: vector dependence: assumed FLOW dependence between mask_ibool line 320 and mask_ibool line 319
+   LOOP END
+LOOP END
+===========================================================================

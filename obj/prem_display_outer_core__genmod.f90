@@ -1,0 +1,16 @@
+        !COMPILER-GENERATED INTERFACE MODULE: Fri Mar 11 15:45:25 2016
+        MODULE PREM_DISPLAY_OUTER_CORE__genmod
+          INTERFACE 
+            SUBROUTINE PREM_DISPLAY_OUTER_CORE(MYRANK,X,RHO,VP,VS,QKAPPA&
+     &,QMU,IDOUBLING)
+              INTEGER(KIND=4) :: MYRANK
+              REAL(KIND=8) :: X
+              REAL(KIND=8) :: RHO
+              REAL(KIND=8) :: VP
+              REAL(KIND=8) :: VS
+              REAL(KIND=8) :: QKAPPA
+              REAL(KIND=8) :: QMU
+              INTEGER(KIND=4) :: IDOUBLING
+            END SUBROUTINE PREM_DISPLAY_OUTER_CORE
+          END INTERFACE 
+        END MODULE PREM_DISPLAY_OUTER_CORE__genmod

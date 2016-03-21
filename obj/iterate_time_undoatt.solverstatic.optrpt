@@ -1,0 +1,195 @@
+
+Begin optimization report for: ITERATE_TIME_UNDOATT
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/specfem3D/iterate_time_undoatt.F90(185,5)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at src/specfem3D/iterate_time_undoatt.F90(217,7)
+      remark #15521: loop was not vectorized: explicitly compute the iteration count before executing the loop or try using canonical loop form
+
+      LOOP BEGIN at src/specfem3D/iterate_time_undoatt.F90(226,9)
+         remark #15521: loop was not vectorized: explicitly compute the iteration count before executing the loop or try using canonical loop form
+      LOOP END
+   LOOP END
+
+   LOOP BEGIN at src/specfem3D/iterate_time_undoatt.F90(289,7)
+      remark #15542: loop was not vectorized: inner loop was already vectorized
+
+      LOOP BEGIN at src/specfem3D/iterate_time_undoatt.F90(298,9)
+         remark #15521: loop was not vectorized: explicitly compute the iteration count before executing the loop or try using canonical loop form
+      LOOP END
+
+      LOOP BEGIN at src/specfem3D/iterate_time_undoatt.F90(327,9)
+         remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+         remark #15346: vector dependence: assumed ANTI dependence between B_DISPL_CM_STORE_BUFFER line 327 and B_DISPL_CM_STORE_BUFFER line 327
+
+         LOOP BEGIN at src/specfem3D/iterate_time_undoatt.F90(327,9)
+            remark #15398: loop was not vectorized: loop was transformed to memset or memcpy
+
+            LOOP BEGIN at src/specfem3D/iterate_time_undoatt.F90(327,9)
+            <Multiversioned v2>
+            LOOP END
+
+            LOOP BEGIN at src/specfem3D/iterate_time_undoatt.F90(327,9)
+            <Remainder, Multiversioned v2>
+            LOOP END
+         LOOP END
+      LOOP END
+
+      LOOP BEGIN at src/specfem3D/iterate_time_undoatt.F90(328,9)
+         remark #15398: loop was not vectorized: loop was transformed to memset or memcpy
+
+         LOOP BEGIN at src/specfem3D/iterate_time_undoatt.F90(328,9)
+         <Multiversioned v2>
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/iterate_time_undoatt.F90(328,9)
+         <Remainder, Multiversioned v2>
+         LOOP END
+      LOOP END
+
+      LOOP BEGIN at src/specfem3D/iterate_time_undoatt.F90(329,9)
+         remark #15398: loop was not vectorized: loop was transformed to memset or memcpy
+
+         LOOP BEGIN at src/specfem3D/iterate_time_undoatt.F90(329,9)
+         <Multiversioned v2>
+         LOOP END
+
+         LOOP BEGIN at src/specfem3D/iterate_time_undoatt.F90(329,9)
+         <Remainder, Multiversioned v2>
+         LOOP END
+      LOOP END
+
+      LOOP BEGIN at src/specfem3D/iterate_time_undoatt.F90(330,9)
+         remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+         remark #15346: vector dependence: assumed ANTI dependence between B_DISPL_IC_STORE_BUFFER line 330 and B_DISPL_IC_STORE_BUFFER line 330
+
+         LOOP BEGIN at src/specfem3D/iterate_time_undoatt.F90(330,9)
+            remark #15398: loop was not vectorized: loop was transformed to memset or memcpy
+
+            LOOP BEGIN at src/specfem3D/iterate_time_undoatt.F90(330,9)
+            <Multiversioned v2>
+            LOOP END
+
+            LOOP BEGIN at src/specfem3D/iterate_time_undoatt.F90(330,9)
+            <Remainder, Multiversioned v2>
+            LOOP END
+         LOOP END
+      LOOP END
+
+      LOOP BEGIN at src/specfem3D/iterate_time_undoatt.F90(334,11)
+         remark #15542: loop was not vectorized: inner loop was already vectorized
+
+         LOOP BEGIN at src/specfem3D/iterate_time_undoatt.F90(334,11)
+            remark #15542: loop was not vectorized: inner loop was already vectorized
+
+            LOOP BEGIN at src/specfem3D/iterate_time_undoatt.F90(334,11)
+               remark #15542: loop was not vectorized: inner loop was already vectorized
+
+               LOOP BEGIN at src/specfem3D/iterate_time_undoatt.F90(334,11)
+                  remark #15542: loop was not vectorized: inner loop was already vectorized
+
+                  LOOP BEGIN at src/specfem3D/iterate_time_undoatt.F90(334,11)
+                  <Peeled, Multiversioned v2>
+                     remark #15301: PEEL LOOP WAS VECTORIZED
+                  LOOP END
+
+                  LOOP BEGIN at src/specfem3D/iterate_time_undoatt.F90(334,11)
+                  <Multiversioned v2>
+                     remark #15300: LOOP WAS VECTORIZED
+                  LOOP END
+
+                  LOOP BEGIN at src/specfem3D/iterate_time_undoatt.F90(334,11)
+                  <Alternate Alignment Vectorized Loop, Multiversioned v2>
+                  LOOP END
+
+                  LOOP BEGIN at src/specfem3D/iterate_time_undoatt.F90(334,11)
+                  <Remainder, Multiversioned v2>
+                  LOOP END
+               LOOP END
+            LOOP END
+         LOOP END
+      LOOP END
+   LOOP END
+
+   LOOP BEGIN at src/specfem3D/iterate_time_undoatt.F90(346,7)
+      remark #15542: loop was not vectorized: inner loop was already vectorized
+
+      LOOP BEGIN at src/specfem3D/iterate_time_undoatt.F90(370,11)
+         remark #15542: loop was not vectorized: inner loop was already vectorized
+
+         LOOP BEGIN at src/specfem3D/iterate_time_undoatt.F90(370,11)
+            remark #15542: loop was not vectorized: inner loop was already vectorized
+
+            LOOP BEGIN at src/specfem3D/iterate_time_undoatt.F90(370,11)
+               remark #15542: loop was not vectorized: inner loop was already vectorized
+
+               LOOP BEGIN at src/specfem3D/iterate_time_undoatt.F90(370,11)
+                  remark #15542: loop was not vectorized: inner loop was already vectorized
+
+                  LOOP BEGIN at src/specfem3D/iterate_time_undoatt.F90(370,11)
+                  <Peeled, Multiversioned v2>
+                     remark #15301: PEEL LOOP WAS VECTORIZED
+                  LOOP END
+
+                  LOOP BEGIN at src/specfem3D/iterate_time_undoatt.F90(370,11)
+                  <Multiversioned v2>
+                     remark #15300: LOOP WAS VECTORIZED
+                  LOOP END
+
+                  LOOP BEGIN at src/specfem3D/iterate_time_undoatt.F90(370,11)
+                  <Alternate Alignment Vectorized Loop, Multiversioned v2>
+                  LOOP END
+
+                  LOOP BEGIN at src/specfem3D/iterate_time_undoatt.F90(370,11)
+                  <Remainder, Multiversioned v2>
+                  LOOP END
+               LOOP END
+            LOOP END
+         LOOP END
+      LOOP END
+
+      LOOP BEGIN at src/specfem3D/iterate_time_undoatt.F90(390,9)
+         remark #15521: loop was not vectorized: explicitly compute the iteration count before executing the loop or try using canonical loop form
+      LOOP END
+
+      LOOP BEGIN at src/specfem3D/iterate_time_undoatt.F90(353,41)
+         remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+      LOOP END
+
+      LOOP BEGIN at src/specfem3D/iterate_time_undoatt.F90(364,39)
+      LOOP END
+   LOOP END
+LOOP END
+===========================================================================
+
+Begin optimization report for: IT_COMPUTE_STRAIN_ATT_BACKWARD
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/specfem3D/iterate_time_undoatt.F90(584,7)
+   remark #15521: loop was not vectorized: explicitly compute the iteration count before executing the loop or try using canonical loop form
+LOOP END
+
+LOOP BEGIN at src/specfem3D/iterate_time_undoatt.F90(601,7)
+   remark #15521: loop was not vectorized: explicitly compute the iteration count before executing the loop or try using canonical loop form
+LOOP END
+===========================================================================
+
+Begin optimization report for: IT_COMPUTE_STRAIN_ATT
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/specfem3D/iterate_time_undoatt.F90(482,7)
+   remark #15521: loop was not vectorized: explicitly compute the iteration count before executing the loop or try using canonical loop form
+LOOP END
+
+LOOP BEGIN at src/specfem3D/iterate_time_undoatt.F90(498,7)
+   remark #15521: loop was not vectorized: explicitly compute the iteration count before executing the loop or try using canonical loop form
+LOOP END
+===========================================================================

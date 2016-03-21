@@ -1,0 +1,101 @@
+
+Begin optimization report for: READ_ATTEN_MODEL_3D_QRFSI12
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/meshfem3D/model_atten3D_QRFSI12.f90(139,3)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed FLOW dependence between 63 line 140 and 63 line 150
+
+   LOOP BEGIN at src/meshfem3D/model_atten3D_QRFSI12.f90(147,11)
+      remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+      remark #15346: vector dependence: assumed FLOW dependence between 63 line 146 and 63 line 150
+
+      LOOP BEGIN at src/meshfem3D/model_atten3D_QRFSI12.f90(143,7)
+         remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+         remark #15346: vector dependence: assumed FLOW dependence between 63 line 150 and 63 line 150
+      LOOP END
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_atten3D_QRFSI12.f90(177,3)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed FLOW dependence between 63 line 178 and 63 line 178
+LOOP END
+===========================================================================
+
+Begin optimization report for: MODEL_ATTEN3D_QRFSI12_BROADCAST
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/meshfem3D/model_atten3D_QRFSI12.f90(139,3) inlined into src/meshfem3D/model_atten3D_QRFSI12.f90(90,20)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed FLOW dependence between 63 line 140 and 63 line 150
+
+   LOOP BEGIN at src/meshfem3D/model_atten3D_QRFSI12.f90(147,11) inlined into src/meshfem3D/model_atten3D_QRFSI12.f90(90,20)
+      remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+      remark #15346: vector dependence: assumed FLOW dependence between 63 line 146 and 63 line 150
+
+      LOOP BEGIN at src/meshfem3D/model_atten3D_QRFSI12.f90(143,7) inlined into src/meshfem3D/model_atten3D_QRFSI12.f90(90,20)
+         remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+         remark #15346: vector dependence: assumed FLOW dependence between 63 line 150 and 63 line 150
+      LOOP END
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_atten3D_QRFSI12.f90(177,3) inlined into src/meshfem3D/model_atten3D_QRFSI12.f90(90,20)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed FLOW dependence between 63 line 178 and 63 line 178
+LOOP END
+===========================================================================
+
+Begin optimization report for: MODEL_ATTEN3D_QRFSI12
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/meshfem3D/model_atten3D_QRFSI12.f90(258,20)
+<Peeled>
+   remark #15301: PEEL LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_atten3D_QRFSI12.f90(258,20)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_atten3D_QRFSI12.f90(258,20)
+<Remainder>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_atten3D_QRFSI12.f90(271,7)
+   remark #15398: loop was not vectorized: loop was transformed to memset or memcpy
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_atten3D_QRFSI12.f90(275,19)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_atten3D_QRFSI12.f90(279,9)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at src/meshfem3D/model_atten3D_QRFSI12.f90(280,40)
+      remark #15301: PERMUTED LOOP WAS VECTORIZED
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_atten3D_QRFSI12.f90(279,9)
+<Remainder>
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_atten3D_QRFSI12.f90(285,7)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/meshfem3D/model_atten3D_QRFSI12.f90(285,7)
+<Remainder>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+===========================================================================

@@ -1,0 +1,1179 @@
+m4trace:/usr/share/aclocal-1.13/cond.m4:12: -1- AC_DEFUN([AM_CONDITIONAL], [AC_PREREQ([2.52])dnl
+ m4_if([$1], [TRUE],  [AC_FATAL([$0: invalid condition: $1])],
+       [$1], [FALSE], [AC_FATAL([$0: invalid condition: $1])])dnl
+AC_SUBST([$1_TRUE])dnl
+AC_SUBST([$1_FALSE])dnl
+_AM_SUBST_NOTMAKE([$1_TRUE])dnl
+_AM_SUBST_NOTMAKE([$1_FALSE])dnl
+m4_define([_AM_COND_VALUE_$1], [$2])dnl
+if $2; then
+  $1_TRUE=
+  $1_FALSE='#'
+else
+  $1_TRUE='#'
+  $1_FALSE=
+fi
+AC_CONFIG_COMMANDS_PRE(
+[if test -z "${$1_TRUE}" && test -z "${$1_FALSE}"; then
+  AC_MSG_ERROR([[conditional "$1" was never defined.
+Usually this means the macro was only invoked conditionally.]])
+fi])])
+m4trace:/usr/share/aclocal-1.13/mkdirp.m4:11: -1- AC_DEFUN([AM_PROG_MKDIR_P], [AC_PREREQ([2.60])dnl
+AC_REQUIRE([AC_PROG_MKDIR_P])dnl
+dnl FIXME we are no longer going to remove this! adjust warning
+dnl FIXME message accordingly.
+AC_DIAGNOSE([obsolete],
+[$0: this macro is deprecated, and will soon be removed.
+You should use the Autoconf-provided 'AC][_PROG_MKDIR_P' macro instead,
+and use '$(MKDIR_P)' instead of '$(mkdir_p)'in your Makefile.am files.])
+dnl Automake 1.8 to 1.9.6 used to define mkdir_p.  We now use MKDIR_P,
+dnl while keeping a definition of mkdir_p for backward compatibility.
+dnl @MKDIR_P@ is magic: AC_OUTPUT adjusts its value for each Makefile.
+dnl However we cannot define mkdir_p as $(MKDIR_P) for the sake of
+dnl Makefile.ins that do not define MKDIR_P, so we do our own
+dnl adjustment using top_builddir (which is defined more often than
+dnl MKDIR_P).
+AC_SUBST([mkdir_p], ["$MKDIR_P"])dnl
+case $mkdir_p in
+  [[\\/$]]* | ?:[[\\/]]*) ;;
+  */*) mkdir_p="\$(top_builddir)/$mkdir_p" ;;
+esac
+])
+m4trace:/usr/share/aclocal-1.13/substnot.m4:12: -1- AC_DEFUN([_AM_SUBST_NOTMAKE])
+m4trace:/usr/share/aclocal-1.13/substnot.m4:17: -1- AC_DEFUN([AM_SUBST_NOTMAKE], [_AM_SUBST_NOTMAKE($@)])
+m4trace:m4/cit_adios.m4:11: -1- AC_DEFUN([CIT_ADIOS_CONFIG], [
+  dnl ADIOS comes with a program that *should* tell us how to link with it.
+  AC_ARG_VAR([ADIOS_CONFIG], [Path to adios_config program that indicates how to compile with it.])
+  AC_PATH_PROG([ADIOS_CONFIG], [adios_config])
+
+  if test "x$ADIOS_CONFIG" = "x"; then
+    AC_MSG_ERROR([adios_config program not found; try setting ADIOS_CONFIG to point to it])
+  fi
+
+  AC_LANG_PUSH([Fortran])
+  FC_save="$FC"
+  FCFLAGS_save="$FCFLAGS"
+  LIBS_save="$LIBS"
+  FC="$MPIFC" dnl Must use mpi compiler.
+
+  dnl First check for directory with ADIOS modules
+  AC_MSG_CHECKING([for ADIOS modules])
+  ADIOS_FCFLAGS=`$ADIOS_CONFIG -c -f`
+  FCFLAGS="$ADIOS_FCFLAGS $FCFLAGS"
+  AC_COMPILE_IFELSE([
+    AC_LANG_PROGRAM([], [[
+    use adios_read_mod
+    use adios_write_mod
+    ]])
+  ], [
+    AC_MSG_RESULT(yes)
+  ], [
+    AC_MSG_RESULT(no)
+    AC_MSG_ERROR([ADIOS modules not found; is ADIOS built with Fortran support for this compiler?])
+  ])
+
+  dnl Now check for libraries that must be linked.
+  AC_MSG_CHECKING([for ADIOS libraries])
+  FCFLAGS="$ADIOS_FCFLAGS $FCFLAGS_save"
+  ADIOS_LIBS=`$ADIOS_CONFIG -l -f`
+  LIBS="$ADIOS_LIBS $LIBS"
+  AC_LINK_IFELSE([
+    AC_LANG_PROGRAM([],
+                    [[use adios_write_mod; call adios_init_noxml(MPI_COMM_WORLD, ierr)]])
+  ], [
+    AC_MSG_RESULT(yes)
+  ], [
+    AC_MSG_RESULT(no)
+    AC_MSG_ERROR([ADIOS libraries not found.])
+  ])
+
+  FC="$FC_save"
+  FCFLAGS="$FCFLAGS_save"
+  LIBS="$LIBS_save"
+  AC_LANG_POP([Fortran])
+
+  AC_SUBST([ADIOS_FCFLAGS])
+  AC_SUBST([ADIOS_LIBS])
+])
+m4trace:m4/cit_cuda.m4:13: -1- AC_DEFUN([CIT_CUDA_CONFIG], [
+
+  # influential environment variables
+  AC_ARG_VAR(NVCC, [NVIDIA CUDA compiler command])
+  AC_ARG_VAR(CUDA_FLAGS, [CUDA compiler flags])
+  AC_ARG_VAR(CUDA_INC, [Location of CUDA include files])
+  AC_ARG_VAR(CUDA_LIB, [Location of CUDA library libcudart])
+
+  # tests NVCC variable
+  AS_IF([test x"$NVCC" = x],[
+    NVCC=nvcc
+  ])
+
+  # Check for compiler
+  # checks if program in path
+  AC_PATH_PROG(NVCC_PROG, $NVCC)
+  if test -z "$NVCC_PROG" ; then
+    AC_MSG_ERROR([cannot find '$NVCC' program, please check your PATH.])
+  fi
+
+  # Checks for compiling and linking
+  AC_LANG_PUSH([C])
+  AC_REQUIRE_CPP
+  CFLAGS_save="$CFLAGS"
+  LDFLAGS_save="$LDFLAGS"
+  LIBS_save="$LIBS"
+
+  # uses nvcc compiler
+  CFLAGS="$CUDA_FLAGS"
+  if test "x$CUDA_INC" != "x"; then
+    CUDA_CPPFLAGS="-I$CUDA_INC"
+    CFLAGS="$CFLAGS $CUDA_CPPFLAGS"
+  fi
+
+  # Check for CUDA headers
+  # runs test with nvcc
+  AC_MSG_CHECKING([for cuda_runtime.h])
+  ac_compile='$NVCC -c $CFLAGS conftest.$ac_ext >&5'
+  AC_COMPILE_IFELSE([
+    AC_LANG_PROGRAM([[
+#include <cuda.h>
+#include <cuda_runtime.h>]],[[void* ptr = 0;]])
+  ], [
+    AC_MSG_RESULT(yes)
+  ], [
+    AC_MSG_RESULT(no)
+    AC_MSG_ERROR([CUDA runtime header not found; try setting CUDA_INC.])
+  ])
+
+  # Check fo CUDA library
+  if test "x$CUDA_LIB" != "x"; then
+    CUDA_LDFLAGS="-L$CUDA_LIB"
+    LDFLAGS="$CUDA_LDFLAGS $LDFLAGS"
+  fi
+  CUDA_LIBS="-lcudart"
+  LIBS="$CUDA_LIBS $LIBS"
+
+  # runs compilation test with nvcc
+  AC_MSG_CHECKING([nvcc compilation with cudaMalloc in -lcudart])
+  ac_compile='$NVCC -c $CFLAGS conftest.$ac_ext >&5'
+  AC_COMPILE_IFELSE([
+    AC_LANG_PROGRAM([[
+#include <cuda.h>
+#include <cuda_runtime.h>]],[[void* ptr = 0;cudaMalloc(&ptr, 1);]])
+  ], [
+    AC_MSG_RESULT(yes)
+  ], [
+    AC_MSG_RESULT(no)
+    AC_MSG_ERROR([CUDA library function with nvcc compilation failed; try setting CUDA_INC.])
+  ])
+
+  # runs linking test with nvcc
+  AC_MSG_CHECKING([nvcc linking with cudaMalloc in -lcudart])
+  ac_link='$NVCC -o conftest$ac_exeext $CFLAGS $LDFLAGS conftest.$ac_ext $LIBS >&5'
+  AC_LINK_IFELSE(
+    [AC_LANG_PROGRAM([[
+#include <stdio.h>
+#include <cuda.h>
+#include <cuda_runtime.h>]],[[void* ptr = 0;cudaMalloc(&ptr, 1);]])],
+    [AC_MSG_RESULT(yes)],
+    [AC_MSG_RESULT(no)
+     AC_MSG_ERROR([CUDA library linking with nvcc failed; try setting CUDA_LIB.])
+  ])
+
+  # runs linking test with standard compiler
+  AC_MSG_CHECKING([linking with cudaMalloc in -lcudart])
+  # C compiler linking
+  ac_link='$NVCC -c $CFLAGS conftest.$ac_ext >&5; $CC -o conftest$ac_exeext $LDFLAGS conftest.$ac_objext $LIBS >&5'
+  # Fortran compiler linking
+  # note: fortran linking with ifort would need -nofor-main to succeed
+  #ac_link='$NVCC -c $CFLAGS conftest.$ac_ext >&5; $FC -o conftest$ac_exeext $LDFLAGS conftest.$ac_objext $LIBS >&5'
+  AC_LINK_IFELSE(
+    [AC_LANG_PROGRAM([[
+#include <stdio.h>
+#include <cuda.h>
+#include <cuda_runtime.h>]],[[void* ptr = 0;cudaMalloc(&ptr, 1);]])],
+    [AC_MSG_RESULT(yes)],
+    [AC_MSG_RESULT(no)
+     AC_MSG_ERROR([CUDA library linking failed; try setting CUDA_LIB.])
+  ])
+
+  CFLAGS="$CFLAGS_save"
+  LDFLAGS="$LDFLAGS_save"
+  LIBS="$LIBS_save"
+  AC_LANG_POP([C])
+
+  AC_SUBST([NVCC])
+  AC_SUBST([CUDA_CPPFLAGS])
+  AC_SUBST([CUDA_LDFLAGS])
+  AC_SUBST([CUDA_LIBS])
+])
+m4trace:m4/cit_mpi.m4:17: -1- AC_DEFUN([CIT_PROG_MPICC], [
+# $Id$
+AC_PROVIDE([_CIT_PROG_MPICC])dnl
+AC_REQUIRE([_CIT_PROG_MPICC_SEARCH_LIST])dnl
+AC_BEFORE([$0], [AC_PROG_CC])
+AC_ARG_VAR(MPICC, [MPI C compiler command])
+AC_SUBST([MPICC])
+test -z "$want_mpi" && want_mpi=yes
+# The 'cit_compiler_search_list' is the result of merging the
+# following:
+#     * MPI C wrappers
+#     * the range of values for config's COMPILER_CC_NAME
+#       (cc cl ecc gcc icc pgcc xlc xlc_r)
+# Newer names are tried first (e.g., icc before ecc).
+cit_compiler_search_list="gcc cc cl icc ecc pgcc xlc xlc_r"
+# There are two C command variables, so there are four cases to
+# consider:
+#
+#     ./configure CC=gcc MPICC=mpicc       # save MPICC as cit_MPICC; MPICC=$CC
+#     ./configure CC=gcc                   # MPICC=$CC, guess cit_MPICC
+#     ./configure MPICC=mpicc              # derive CC
+#     ./configure                          # guess MPICC and derive CC
+#
+# In the cases where CC is explicitly specified, the MPI C wrapper
+# (cit_MPICC, if known) is only used to gather compile/link flags (if
+# needed).
+if test "$want_mpi" = yes; then
+    if test -n "$CC"; then
+        cit_MPICC_underlying_CC=$CC
+        if test -n "$MPICC"; then
+            # CC=gcc MPICC=mpicc
+            cit_MPICC=$MPICC
+            MPICC=$CC
+        else
+            # CC=gcc MPICC=???
+            AC_CHECK_PROGS(cit_MPICC, $cit_mpicc_search_list)
+        fi
+    else
+        if test -n "$MPICC"; then
+            # CC=??? MPICC=mpicc
+            cit_MPICC=$MPICC
+            CC=$MPICC # will be reevaluated below
+        else
+            # CC=??? MPICC=???
+            cit_compiler_search_list="$cit_mpicc_search_list $cit_compiler_search_list"
+        fi
+    fi
+fi
+AC_PROG_CC($cit_compiler_search_list)
+if test "$want_mpi" = yes; then
+    if test -z "$MPICC"; then
+        MPICC=$CC
+    fi
+    if test -z "$cit_MPICC"; then
+        case $MPICC in
+            *mp* | hcc)
+                cit_MPICC=$MPICC
+                ;;
+        esac
+    fi
+    # The MPI library is typically static.  Linking a shared object
+    # against static library is non-portable, and needlessly bloats our
+    # Python extension modules on the platforms where it does work.
+    # Unless CC was set explicitly, attempt to set CC to the underlying
+    # compiler command, so that we may link with the matching C
+    # compiler, but omit -lmpi/-lmpich from the link line.
+    if test -z "$cit_MPICC_underlying_CC"; then
+        if test -n "$cit_MPICC"; then
+            AC_MSG_CHECKING([for the C compiler underlying $cit_MPICC])
+            CC=
+            AC_LANG_PUSH(C)
+            for cit_arg_show in CIT_MPI_COMPILE_INFO_SWITCHES
+            do
+                cit_cmd="$cit_MPICC -c $cit_arg_show"
+                if $cit_cmd >/dev/null 2>&1; then
+                    CC=`$cit_cmd 2>/dev/null | sed 's/ .*//'`
+                    if test -n "$CC"; then
+                        AC_COMPILE_IFELSE([AC_LANG_PROGRAM()], [break 2], [CC=])
+                    fi
+                fi
+            done
+            AC_LANG_POP(C)
+            if test -n "$CC"; then
+                AC_MSG_RESULT($CC)
+            else
+                AC_MSG_RESULT(failed)
+                AC_MSG_FAILURE([can not determine the C compiler underlying $cit_MPICC])
+            fi
+        fi
+        cit_MPICC_underlying_CC=$CC
+    fi
+fi
+])
+m4trace:m4/cit_mpi.m4:119: -1- AC_DEFUN([_CIT_PROG_MPICC], [
+AC_REQUIRE([_CIT_PROG_MPICC_SEARCH_LIST])dnl
+AC_CHECK_PROGS(cit_MPICC, $cit_mpicc_search_list)
+])
+m4trace:m4/cit_mpi.m4:127: -1- AC_DEFUN([_CIT_PROG_MPICC_SEARCH_LIST], [
+# $Id$
+cit_mpicc_search_list="mpicc hcc mpcc mpcc_r mpxlc cmpicc"
+])
+m4trace:m4/cit_mpi.m4:141: -1- AC_DEFUN([CIT_PROG_MPICXX], [
+# $Id$
+AC_BEFORE([$0], [AC_PROG_CXX])
+AC_ARG_VAR(MPICXX, [MPI C++ compiler command])
+AC_SUBST([MPICXX])
+test -z "$want_mpi" && want_mpi=yes
+# The 'cit_compiler_search_list' is the result of merging the
+# following:
+#     * MPI C++ wrappers
+#     * the Autoconf default (g++ c++ gpp aCC CC cxx cc++ cl
+#       FCC KCC RCC xlC_r xlC)
+#     * the range of values for config's COMPILER_CXX_NAME (aCC CC cl
+#       cxx ecpc g++ icpc KCC pgCC xlC xlc++_r xlC_r)
+# Newer names are tried first (e.g., icpc before ecpc).
+cit_compiler_search_list="g++ c++ gpp aCC CC cxx cc++ cl FCC KCC RCC xlc++_r xlC_r xlC"
+cit_compiler_search_list="$cit_compiler_search_list icpc ecpc pgCC"
+cit_mpicxx_search_list="mpicxx mpic++ mpiCC hcp mpCC mpxlC mpxlC_r cmpic++"
+# There are two C++ command variables, so there are four cases to
+# consider:
+#
+#     ./configure CXX=g++ MPICXX=mpicxx    # save MPICXX as cit_MPICXX; MPICXX=$CXX
+#     ./configure CXX=g++                  # MPICXX=$CXX, guess cit_MPICXX
+#     ./configure MPICXX=mpicxx            # derive CXX
+#     ./configure                          # guess MPICXX and derive CXX
+#
+# In the cases where CXX is explicitly specified, the MPI C++ wrapper
+# (cit_MPICXX, if known) is only used to gather compile/link flags (if
+# needed).
+if test "$want_mpi" = yes; then
+    if test -n "$CXX"; then
+        cit_MPICXX_underlying_CXX=$CXX
+        if test -n "$MPICXX"; then
+            # CXX=g++ MPICXX=mpicxx
+            cit_MPICXX=$MPICXX
+            MPICXX=$CXX
+        else
+            # CXX=g++ MPICXX=???
+            AC_CHECK_PROGS(cit_MPICXX, $cit_mpicxx_search_list)
+        fi
+    else
+        if test -n "$MPICXX"; then
+            # CXX=??? MPICXX=mpicxx
+            cit_MPICXX=$MPICXX
+            CXX=$MPICXX # will be reevaluated below
+        else
+            # CXX=??? MPICXX=???
+            cit_compiler_search_list="$cit_mpicxx_search_list $cit_compiler_search_list"
+        fi
+    fi
+fi
+AC_PROG_CXX($cit_compiler_search_list)
+if test "$want_mpi" = yes; then
+    if test -z "$MPICXX"; then
+        MPICXX=$CXX
+    fi
+    if test -z "$cit_MPICXX"; then
+        case $MPICXX in
+            *mp* | hcp)
+                cit_MPICXX=$MPICXX
+                ;;
+        esac
+    fi
+    # The MPI library is typically static.  Linking a shared object
+    # against static library is non-portable, and needlessly bloats our
+    # Python extension modules on the platforms where it does work.
+    # Unless CXX was set explicitly, attempt to set CXX to the underlying
+    # compiler command, so that we may link with the matching C++
+    # compiler, but omit -lmpi/-lmpich from the link line.
+    if test -z "$cit_MPICXX_underlying_CXX"; then
+        if test -n "$cit_MPICXX"; then
+            AC_MSG_CHECKING([for the C++ compiler underlying $cit_MPICXX])
+            CXX=
+            AC_LANG_PUSH(C++)
+            for cit_arg_show in CIT_MPI_COMPILE_INFO_SWITCHES
+            do
+                cit_cmd="$cit_MPICXX -c $cit_arg_show"
+                if $cit_cmd >/dev/null 2>&1; then
+                    CXX=`$cit_cmd 2>/dev/null | sed 's/ .*//'`
+                    if test -n "$CXX"; then
+                        AC_COMPILE_IFELSE([AC_LANG_PROGRAM()], [break 2], [CXX=])
+                    fi
+                fi
+            done
+            AC_LANG_POP(C++)
+            if test -n "$CXX"; then
+                AC_MSG_RESULT($CXX)
+            else
+                AC_MSG_RESULT(failed)
+                AC_MSG_FAILURE([can not determine the C++ compiler underlying $cit_MPICXX])
+            fi
+        fi
+        cit_MPICXX_underlying_CXX=$CXX
+    fi
+fi
+])
+m4trace:m4/cit_mpi.m4:241: -1- AC_DEFUN([CIT_CHECK_LIB_MPI], [
+# $Id$
+AC_REQUIRE([_CIT_PROG_MPICC])dnl
+AC_ARG_VAR(MPILIBS, [MPI linker flags, e.g. -L<mpi lib dir> -lmpi])
+AC_SUBST(MPILIBS)
+cit_mpi_save_CC=$CC
+cit_mpi_save_CXX=$CXX
+cit_mpi_save_LIBS=$LIBS
+CC=$MPICC
+CXX=$MPICXX
+LIBS="$MPILIBS $LIBS"
+# If MPILIBS is set, check to see if it works.
+# If MPILIBS is not set, check to see if it is needed.
+AC_CHECK_FUNC(MPI_Init, [], [
+    if test -n "$MPILIBS"; then
+        AC_MSG_ERROR([function MPI_Init not found; check MPILIBS])
+    fi
+    # MPILIBS is needed but was not set.
+    AC_LANG_CASE(
+        [C], [
+            cit_mpicmd=$cit_MPICC
+        ],
+        [C++], [
+            cit_mpicmd=$cit_MPICXX
+            test -z "$cit_mpicmd" && cit_mpicmd=$cit_MPICC
+        ]
+    )
+    if test -n "$cit_mpicmd"; then
+        # Try to guess the correct value for MPILIBS using an MPI wrapper.
+        CIT_MPI_LIBS(cit_libs, $cit_mpicmd, [
+            LIBS="$cit_libs $cit_mpi_save_LIBS"
+            unset ac_cv_func_MPI_Init
+            AC_CHECK_FUNC(MPI_Init, [
+                MPILIBS=$cit_libs
+                export MPILIBS
+            ], [
+                _CIT_CHECK_LIB_MPI_FAILED
+            ])
+        ], [
+            _CIT_CHECK_LIB_MPI_FAILED
+        ])
+    else
+        # Desperate, last-ditch effort.
+        cit_libs=
+        for cit_lib in mpi mpich; do
+            AC_CHECK_LIB($cit_lib, MPI_Init, [
+                cit_libs="-l$cit_lib"
+                MPILIBS=$cit_libs
+                export MPILIBS
+                break])
+        done
+        if test -z "$cit_libs"; then
+            _CIT_CHECK_LIB_MPI_FAILED
+        fi
+    fi
+])
+LIBS=$cit_mpi_save_LIBS
+CXX=$cit_mpi_save_CXX
+CC=$cit_mpi_save_CC
+])
+m4trace:m4/cit_mpi.m4:305: -1- AC_DEFUN([_CIT_CHECK_LIB_MPI_FAILED], [
+AC_MSG_ERROR([no MPI library found
+
+    Set the MPICC, MPICXX, MPIINCLUDES, and MPILIBS environment variables
+    to specify how to build MPI programs.
+])
+])
+m4trace:m4/cit_mpi.m4:316: -1- AC_DEFUN([CIT_HEADER_MPI], [
+# $Id$
+AC_LANG_CASE(
+    [C], [
+        AC_CHECK_HEADER([mpi.h], [], [AC_MSG_ERROR([header 'mpi.h' not found])])
+    ],
+    [C++], [
+        CIT_MPI_CHECK_CXX_LINK(cit_MPI_CPPFLAGS, [],
+                               _CIT_TRIVIAL_MPI_PROGRAM,
+                               [whether we can link a trivial C++ MPI program],
+                               [],
+                               AC_MSG_FAILURE([cannot link a trivial C++ MPI program using $CXX]))
+        CPPFLAGS="$cit_MPI_CPPFLAGS $CPPFLAGS"
+])
+])
+m4trace:m4/cit_mpi.m4:336: -1- AC_DEFUN([CIT_MPI_CHECK_CXX_LINK], [
+# $Id$
+AC_LANG_ASSERT(C++)
+AC_MSG_CHECKING($4)
+CIT_MPI_CXX_LINK_IFELSE(cit_arg, $$1, $2, $3,
+[
+    if test -z "$cit_arg"; then
+	AC_MSG_RESULT(yes)
+    else
+	AC_MSG_RESULT([yes, with $cit_arg])
+    fi
+    $1="$cit_arg [$]$1"
+    $5
+], [
+    AC_MSG_RESULT(no)
+    $6
+])
+])
+m4trace:m4/cit_mpi.m4:367: -1- AC_DEFUN([CIT_MPI_CXX_LINK_IFELSE], [
+# $Id$
+AC_LANG_ASSERT(C++)
+$1=
+cit_mpi_cxx_link_save_LIBS=$LIBS
+cit_mpi_cxx_link_save_CPPFLAGS=$CPPFLAGS
+LIBS="$3 $LIBS"
+CPPFLAGS="$2 $cit_mpi_cxx_link_save_CPPFLAGS"
+AC_LINK_IFELSE([$4], [$5], [
+    for cit_skip_mpicxx_define in CIT_SKIP_MPICXX_DEFINES
+    do
+	CPPFLAGS="$cit_skip_mpicxx_define $2 $cit_mpi_cxx_link_save_CPPFLAGS"
+	AC_LINK_IFELSE([$4], [
+	    $1=$cit_skip_mpicxx_define
+            $5
+	    break
+	], [
+            $6
+	])
+    done
+])
+CPPFLAGS=$cit_mpi_cxx_link_save_CPPFLAGS
+LIBS=$cit_mpi_cxx_link_save_LIBS
+])
+m4trace:m4/cit_mpi.m4:395: -1- AC_DEFUN([_CIT_TRIVIAL_MPI_PROGRAM], [
+AC_LANG_PROGRAM([[
+#include <stdio.h>
+#include <mpi.h>
+]], [[
+    MPI_Init(0,0);
+    MPI_Finalize();
+]])
+])
+m4trace:m4/cit_mpi.m4:410: -1- AC_DEFUN([CIT_MPI_LIBS], [
+# $Id$
+AC_MSG_CHECKING([for the libraries used by $2])
+$1=
+for cit_arg_show in CIT_MPI_LINK_INFO_SWITCHES
+do
+    cit_cmd="$2 $cit_arg_show"
+    if $cit_cmd >/dev/null 2>&1; then
+	cit_args=`$cit_cmd 2>/dev/null`
+	test -z "$cit_args" && continue
+	for cit_arg in $cit_args
+	do
+	    case $cit_arg in
+		-L* | -l* | -pthread* [)] $1="[$]$1 $cit_arg" ;;
+	    esac
+	done
+	test -z "[$]$1" && continue
+	break
+    fi
+done
+if test -n "[$]$1"; then
+    AC_MSG_RESULT([[$]$1])
+    $3
+else
+    AC_MSG_RESULT(failed)
+    $4
+fi
+])
+m4trace:m4/cit_mpi.m4:444: -1- AC_DEFUN([CIT_MPI_INCLUDES], [
+# $Id$
+AC_MSG_CHECKING([for the includes used by $2])
+$1=
+for cit_arg_show in CIT_MPI_COMPILE_INFO_SWITCHES
+do
+    cit_cmd="$2 -c $cit_arg_show"
+    if $cit_cmd >/dev/null 2>&1; then
+	cit_args=`$cit_cmd 2>/dev/null`
+	test -z "$cit_args" && continue
+	for cit_arg in $cit_args
+	do
+	    case $cit_arg in
+		-I* [)] $1="[$]$1 $cit_arg" ;;
+	    esac
+	done
+	test -z "[$]$1" && continue
+	break
+    fi
+done
+if test -n "[$]$1"; then
+    AC_MSG_RESULT([[$]$1])
+    $3
+else
+    AC_MSG_RESULT(failed)
+    $4
+fi
+])
+m4trace:m4/cit_mpi.m4:479: -1- AC_DEFUN([CIT_MPI_COMPILE_INFO_SWITCHES], ["-show" "-showme" "-echo" "-compile_info"])
+m4trace:m4/cit_mpi.m4:480: -1- AC_DEFUN([CIT_MPI_LINK_INFO_SWITCHES], ["-show" "-showme" "-echo" "-link_info"])
+m4trace:m4/cit_mpi.m4:486: -1- AC_DEFUN([CIT_SKIP_MPICXX_DEFINES], ["-DMPICH_SKIP_MPICXX" "-UHAVE_MPI_CPP" "-DLAM_WANT_MPI2CPP=0" "-DLAM_BUILDING=1" "-DOMPI_WANT_CXX_BINDINGS=0" "-DOMPI_BUILDING=1"])
+m4trace:m4/cit_mpi.m4:494: -1- AC_DEFUN([CIT_MPI_INCDIR], [
+  AC_ARG_VAR(MPI_INC, [Location of MPI include mpi.h, needed by CUDA/VTK (default: auto-detect)])
+  AC_LANG_PUSH([C++])
+  AC_REQUIRE_CPP
+  CPPFLAGS_save="$CPPFLAGS"
+
+  if test "x$MPI_INC" = "x"; then
+    MPI_INC=`$1 -showme:incdirs`
+  fi
+  if test "x$MPI_INC" != "x"; then
+    dnl showme:incdirs may return multiple directories:
+    for i in $MPI_INC
+    do
+      MPI_INCLUDES="$MPI_INCLUDES -I$i"
+    done
+    CPPFLAGS="$MPI_INCLUDES $CPPFLAGS"
+  fi
+  AC_CHECK_HEADER([mpi.h], [], [
+    AC_MSG_ERROR([MPI header not found; try setting MPI_INC.])
+  ])
+
+  CPPFLAGS="$CPPFLAGS_save"
+  AC_LANG_POP([C++])
+
+  AC_SUBST([MPI_INCLUDES])
+])
+m4trace:m4/cit_opencl.m4:13: -1- AC_DEFUN([CIT_OPENCL_CONFIG], [
+  AC_ARG_VAR(OCL_INC, [Location of OpenCL include files])
+  AC_ARG_VAR(OCL_LIB, [Location of OpenCL library libOpenCL])
+
+  AC_LANG_PUSH([C])
+  AC_REQUIRE_CPP
+  CFLAGS_save="$CFLAGS"
+  LDFLAGS_save="$LDFLAGS"
+  LIBS_save="$LIBS"
+
+  dnl Check for OpenCL headers
+  if test "x$OCL_INC" != "x"; then
+    OCL_CFLAGS="-I$OCL_INC"
+    CFLAGS="$OCL_CFLAGS $CFLAGS"
+  fi
+  # tests for Apple Mac OsX OpenCL header file
+  case $host in
+  *apple*) HEADER_H="OpenCL/cl.h";;
+  *) HEADER_H="CL/cl.h";;
+  esac
+  AC_CHECK_HEADER([${HEADER_H}], [], [
+    AC_MSG_ERROR([OpenCL header not found; try setting OCL_INC.])
+  ])
+
+  if test "x$OCL_LIB" != "x"; then
+    # tests for Apple Mac OsX which could add "-framework OpenCL"
+    case $host in
+    *apple*) OCL_LDFLAGS="$OCL_LIB";;
+    *) OCL_LDFLAGS="-L$OCL_LIB";;
+    esac
+    LDFLAGS="$OCL_LDFLAGS $LDFLAGS"
+  else
+    # adds default OpenCL library
+    case $host in
+    *apple*) OCL_LIBS="-framework OpenCL";;
+    *) OCL_LIBS="-lOpenCL";;
+    esac
+  fi
+
+  LIBS="$OCL_LIBS $LIBS"
+  AC_MSG_CHECKING([for clGetPlatformIDs in OpenCL])
+  AC_LINK_IFELSE(
+    [AC_LANG_PROGRAM([[
+#ifdef __APPLE__
+#include <OpenCL/cl.h>
+#else
+#include <CL/cl.h>
+#endif
+    ]],
+  	             [[clGetPlatformIDs(0, 0, 0);]])],
+    [AC_MSG_RESULT(yes)],
+    [AC_MSG_RESULT(no)
+     AC_MSG_ERROR([OpenCL library not found; try setting OCL_LIB.])
+  ])
+
+  CFLAGS="$CFLAGS_save"
+  LDFLAGS="$LDFLAGS_save"
+  LIBS="$LIBS_save"
+  AC_LANG_POP([C])
+
+  AC_SUBST([OCL_CFLAGS])
+  AC_SUBST([OCL_LDFLAGS])
+  AC_SUBST([OCL_LIBS])
+])
+m4trace:m4/cit_vtk.m4:20: -1- AC_DEFUN([CIT_OPTIONS_VTK], [
+
+    # vtk install prefix
+    AC_ARG_WITH([vtk],
+                [AC_HELP_STRING(
+                    [--with-vtk],
+                    [The prefix where VTK is installed @<:@default=/usr@:>@])],
+                [with_vtk="$withval"],
+                [with_vtk="/usr"])
+
+    # vtk suffix, to allow for multiple installations of vtk libraries
+    AC_ARG_WITH([vtk-suffix],
+                [AC_HELP_STRING(
+                    [--with-vtk-suffix],
+                    [Suffix to append to VTK's include directory, e.g., for vtk-5.2/ the suffix is "-5.2"])],
+                [vtk_suffix="$withval"],
+                [vtk_suffix=""])
+
+    # alternatively, derive suffix from version number
+    AC_ARG_WITH([vtk-version],
+                [AC_HELP_STRING(
+                    [--with-vtk-version],
+                    [Version number of VTK library @<:@default=5.2@:>@])],
+                [vtk_version="$withval"],
+                [vtk_version="5.2"])
+
+    if test -z "$vtk_suffix"; then
+        #
+        # suffix was not specified. use the version number
+        # to calculate what it should be
+        #
+        if test -n "$vtk_version"; then
+            vtk_suffix="-$vtk_version"
+        fi
+
+    else
+        #
+        # suffix was specified. ignore version silently?
+        # produce error for now
+        #
+        if test -n "$vtk_version"; then
+            AC_MSG_ERROR([The option --with-vtk-suffix overrides --with-vtk-version. Do not use simultaneously.])
+        fi
+
+    fi
+])
+m4trace:m4/cit_vtk.m4:73: -1- AC_DEFUN([CIT_PATH_VTK], [
+
+    dnl do we want to check for VTK?
+    if test x$with_vtk = "xyes"; then
+        dnl in case user wrote --with-vtk=yes
+        with_vtk="/usr"
+    fi
+
+    if test x$with_vtk != "xno"; then
+        VTK_PREFIX="$with_vtk"
+
+        AC_CHECK_FILE([$VTK_PREFIX/include/vtk$vtk_suffix/vtkCommonInstantiator.h],
+                      [vtkFound="OK"])
+        AC_MSG_CHECKING([if VTK is installed in $VTK_PREFIX])
+
+        if test -z "$vtkFound"; then
+
+            dnl VTK not found!
+            AC_MSG_RESULT([no])
+            $3
+
+        else
+
+            dnl VTK found!
+            AC_MSG_RESULT([yes])
+
+            dnl set VTK flags
+            VTK_INCLUDES="-I$VTK_PREFIX/include/vtk$vtk_suffix"
+            VTK_LDFLAGS="-L$VTK_PREFIX/lib/vtk$vtk_suffix -L$VTK_PREFIX/lib64/vtk$vtk_suffix"
+
+            dnl remember the old flags
+            AC_LANG_PUSH([C])
+            OLD_CFLAGS=$CFLAGS
+            OLD_CXXFLAGS=$CXXFLAGS
+            OLD_LDFLAGS=$LDFLAGS
+            OLD_LIBS=$LIBS
+
+            dnl in order to be able to compile the following test programs,
+            dnl we need to add to our VTK settings to the current flags
+            CFLAGS="$VTK_CFLAGS $CFLAGS"
+            CXXFLAGS="$VTK_CXXFLAGS $CXXFLAGS"
+            LDFLAGS="$VTK_LDFLAGS $LDFLAGS"
+
+            dnl these are the VTK libraries of a default build.
+            dnl figure out vtkCommon, vtkIO, vtkFiltering, plus dependencies (in case VTK libs are static)
+            dnl order of libs is significant
+            VTK_SUPPORT_LIBS="-lvtktiff -lvtkpng -lvtkjpeg -lvtkzlib -lvtkexpat -lvfw32 -lgdi32"
+            AC_CHECK_LIB(vtkIO, strcmp, [], [
+                VTK_SUPPORT_LIBS="-lvtktiff -lvtkpng -lvtkjpeg -lvtkzlib -lvtkexpat"
+                AC_CHECK_LIB(vtkIO, abort, [], [
+                    VTK_SUPPORT_LIBS="-ltiff -lpng -ljpeg -lz -lexpat"
+                    AC_CHECK_LIB(vtkIO, exit, [], [
+                        VTK_SUPPORT_LIBS=""
+                        AC_CHECK_LIB(vtkIO, strstr, [], [
+                            AC_MSG_ERROR([cannot link against VTK libraries])
+                        ], [$VTK_SUPPORT_LIBS])
+                    ], [$VTK_SUPPORT_LIBS])
+                ], [$VTK_SUPPORT_LIBS])
+            ], [$VTK_SUPPORT_LIBS])
+            VTK_LIBS="-lvtkIO -lvtkDICOMParser -lvtkFiltering -lvtkGenericFiltering -lvtkCommon $VTK_SUPPORT_LIBS -lvtksys"
+            LIBS="$VTK_LIBS $LIBS"
+
+            dnl now, check that we don't exceed the specified version
+            if test -n "$1"; then
+                dnl the version of VTK we need
+
+                maj=`echo $1 | sed 's/\([[0-9]]*\).\([[0-9]]*\).\([[0-9]]*\)/\1/'`
+                min=`echo $1 | sed 's/\([[0-9]]*\).\([[0-9]]*\).\([[0-9]]*\)/\2/'`
+                rel=`echo $1 | sed 's/\([[0-9]]*\).\([[0-9]]*\).\([[0-9]]*\)/\3/'`
+                AC_MSG_CHECKING([if VTK version is at least $maj.$min.$rel])
+
+                dnl check if the installed VTK is greater or not
+                AC_COMPILE_IFELSE([
+                    AC_LANG_PROGRAM([[
+                        #include <vtk/vtkConfigure.h>
+                        #include <stdio.h>
+                        ]],[[
+                        printf("VTK version is: %d.%d.%d",
+                               VTK_MAJOR_VERSION,
+                               VTK_MINOR_VERSION,
+                               VTK_BUILD_VERSION);
+
+                        #if VTK_MAJOR_VERSION < $maj
+                        #error Installed VTK is too old!
+                        #endif
+
+                        #if VTK_MINOR_VERSION < $min
+                        #error Installed VTK is too old!
+                        #endif
+
+                        #if VTK_BUILD_VERSION < $rel
+                        #error Installed VTK is too old!
+                        #endif
+                    ]])
+                ], [vtkVersion="OK"])
+
+                dnl restore all flags without VTK values
+                CFLAGS=$OLD_CFLAGS
+                CXXFLAGS=$OLD_CXXFLAGS
+                LDFLAGS=$OLD_LDFLAGS
+                LIBS=$OLD_LIBS
+
+                if test "$vtkVersion" = "OK"; then
+                    AC_MSG_RESULT([yes])
+                    $2
+                else
+                    AC_MSG_RESULT([no])
+                    $3
+                fi
+
+            else
+
+                dnl restore all flags without VTK values
+                CFLAGS=$OLD_CFLAGS
+                CXXFLAGS=$OLD_CXXFLAGS
+                LDFLAGS=$OLD_LDFLAGS
+                LIBS=$OLD_LIBS
+
+                dnl if we don't have to check for minimum version
+                dnl (because the user did not set that option),
+                dnl then we can execute here the block action-if-found
+                $2
+
+            fi          #if [[ -n "$1" ]];
+
+            dnl Don't move this up to where we restore flags, because it doesn't work.
+            AC_LANG_POP([C])
+
+            dnl Finally, define the C preprocessor variable HAVE_VTK
+            AC_DEFINE([HAVE_VTK],,[define if the VTK library is available])
+
+        fi          # if [[ -z "$vtkFound" ]];
+    fi          # $with_vtk != "no"
+
+    dnl Substitute the values of our VTK flags
+    AC_SUBST(VTK_INCLUDES)
+    AC_SUBST(VTK_LDFLAGS)
+    AC_SUBST(VTK_LIBS)
+])
+m4trace:configure.ac:12: -1- m4_pattern_forbid([^_?A[CHUM]_])
+m4trace:configure.ac:12: -1- m4_pattern_forbid([_AC_])
+m4trace:configure.ac:12: -1- m4_pattern_forbid([^LIBOBJS$], [do not use LIBOBJS directly, use AC_LIBOBJ (see section `AC_LIBOBJ vs LIBOBJS'])
+m4trace:configure.ac:12: -1- m4_pattern_allow([^AS_FLAGS$])
+m4trace:configure.ac:12: -1- m4_pattern_forbid([^_?m4_])
+m4trace:configure.ac:12: -1- m4_pattern_forbid([^dnl$])
+m4trace:configure.ac:12: -1- m4_pattern_forbid([^_?AS_])
+m4trace:configure.ac:12: -1- m4_pattern_allow([^SHELL$])
+m4trace:configure.ac:12: -1- m4_pattern_allow([^PATH_SEPARATOR$])
+m4trace:configure.ac:12: -1- m4_pattern_allow([^PACKAGE_NAME$])
+m4trace:configure.ac:12: -1- m4_pattern_allow([^PACKAGE_TARNAME$])
+m4trace:configure.ac:12: -1- m4_pattern_allow([^PACKAGE_VERSION$])
+m4trace:configure.ac:12: -1- m4_pattern_allow([^PACKAGE_STRING$])
+m4trace:configure.ac:12: -1- m4_pattern_allow([^PACKAGE_BUGREPORT$])
+m4trace:configure.ac:12: -1- m4_pattern_allow([^PACKAGE_URL$])
+m4trace:configure.ac:12: -1- m4_pattern_allow([^exec_prefix$])
+m4trace:configure.ac:12: -1- m4_pattern_allow([^prefix$])
+m4trace:configure.ac:12: -1- m4_pattern_allow([^program_transform_name$])
+m4trace:configure.ac:12: -1- m4_pattern_allow([^bindir$])
+m4trace:configure.ac:12: -1- m4_pattern_allow([^sbindir$])
+m4trace:configure.ac:12: -1- m4_pattern_allow([^libexecdir$])
+m4trace:configure.ac:12: -1- m4_pattern_allow([^datarootdir$])
+m4trace:configure.ac:12: -1- m4_pattern_allow([^datadir$])
+m4trace:configure.ac:12: -1- m4_pattern_allow([^sysconfdir$])
+m4trace:configure.ac:12: -1- m4_pattern_allow([^sharedstatedir$])
+m4trace:configure.ac:12: -1- m4_pattern_allow([^localstatedir$])
+m4trace:configure.ac:12: -1- m4_pattern_allow([^includedir$])
+m4trace:configure.ac:12: -1- m4_pattern_allow([^oldincludedir$])
+m4trace:configure.ac:12: -1- m4_pattern_allow([^docdir$])
+m4trace:configure.ac:12: -1- m4_pattern_allow([^infodir$])
+m4trace:configure.ac:12: -1- m4_pattern_allow([^htmldir$])
+m4trace:configure.ac:12: -1- m4_pattern_allow([^dvidir$])
+m4trace:configure.ac:12: -1- m4_pattern_allow([^pdfdir$])
+m4trace:configure.ac:12: -1- m4_pattern_allow([^psdir$])
+m4trace:configure.ac:12: -1- m4_pattern_allow([^libdir$])
+m4trace:configure.ac:12: -1- m4_pattern_allow([^localedir$])
+m4trace:configure.ac:12: -1- m4_pattern_allow([^mandir$])
+m4trace:configure.ac:12: -1- m4_pattern_allow([^PACKAGE_NAME$])
+m4trace:configure.ac:12: -1- m4_pattern_allow([^PACKAGE_TARNAME$])
+m4trace:configure.ac:12: -1- m4_pattern_allow([^PACKAGE_VERSION$])
+m4trace:configure.ac:12: -1- m4_pattern_allow([^PACKAGE_STRING$])
+m4trace:configure.ac:12: -1- m4_pattern_allow([^PACKAGE_BUGREPORT$])
+m4trace:configure.ac:12: -1- m4_pattern_allow([^PACKAGE_URL$])
+m4trace:configure.ac:12: -1- m4_pattern_allow([^DEFS$])
+m4trace:configure.ac:12: -1- m4_pattern_allow([^ECHO_C$])
+m4trace:configure.ac:12: -1- m4_pattern_allow([^ECHO_N$])
+m4trace:configure.ac:12: -1- m4_pattern_allow([^ECHO_T$])
+m4trace:configure.ac:12: -1- m4_pattern_allow([^LIBS$])
+m4trace:configure.ac:12: -1- m4_pattern_allow([^build_alias$])
+m4trace:configure.ac:12: -1- m4_pattern_allow([^host_alias$])
+m4trace:configure.ac:12: -1- m4_pattern_allow([^target_alias$])
+m4trace:configure.ac:17: -1- AC_CONFIG_MACRO_DIR([m4])
+m4trace:configure.ac:18: -1- m4_include([m4/cit_backports.m4])
+m4trace:configure.ac:23: -1- m4_pattern_allow([^build$])
+m4trace:configure.ac:23: -1- m4_pattern_allow([^build_cpu$])
+m4trace:configure.ac:23: -1- m4_pattern_allow([^build_vendor$])
+m4trace:configure.ac:23: -1- m4_pattern_allow([^build_os$])
+m4trace:configure.ac:23: -1- m4_pattern_allow([^host$])
+m4trace:configure.ac:23: -1- m4_pattern_allow([^host_cpu$])
+m4trace:configure.ac:23: -1- m4_pattern_allow([^host_vendor$])
+m4trace:configure.ac:23: -1- m4_pattern_allow([^host_os$])
+m4trace:configure.ac:43: -1- m4_pattern_allow([^CUSTOM_REAL$])
+m4trace:configure.ac:44: -1- m4_pattern_allow([^CUSTOM_MPI_TYPE$])
+m4trace:configure.ac:50: -1- _m4_warn([obsolete], [The macro `AC_HELP_STRING' is obsolete.
+You should run autoupdate.], [../../lib/autoconf/general.m4:207: AC_HELP_STRING is expanded from...
+../../lib/autoconf/general.m4:1462: AC_ARG_ENABLE is expanded from...
+configure.ac:50: the top level])
+m4trace:configure.ac:55: -1- AM_CONDITIONAL([COND_DEBUG], [test x"$want_debug" != xno])
+m4trace:configure.ac:55: -1- m4_pattern_allow([^COND_DEBUG_TRUE$])
+m4trace:configure.ac:55: -1- m4_pattern_allow([^COND_DEBUG_FALSE$])
+m4trace:configure.ac:55: -1- _AM_SUBST_NOTMAKE([COND_DEBUG_TRUE])
+m4trace:configure.ac:55: -1- _AM_SUBST_NOTMAKE([COND_DEBUG_FALSE])
+m4trace:configure.ac:63: -1- _m4_warn([obsolete], [The macro `AC_HELP_STRING' is obsolete.
+You should run autoupdate.], [../../lib/autoconf/general.m4:207: AC_HELP_STRING is expanded from...
+../../lib/autoconf/general.m4:1462: AC_ARG_ENABLE is expanded from...
+configure.ac:63: the top level])
+m4trace:configure.ac:79: -1- AM_CONDITIONAL([COND_VECTORIZATION], [test x"$want_vec" != xno])
+m4trace:configure.ac:79: -1- m4_pattern_allow([^COND_VECTORIZATION_TRUE$])
+m4trace:configure.ac:79: -1- m4_pattern_allow([^COND_VECTORIZATION_FALSE$])
+m4trace:configure.ac:79: -1- _AM_SUBST_NOTMAKE([COND_VECTORIZATION_TRUE])
+m4trace:configure.ac:79: -1- _AM_SUBST_NOTMAKE([COND_VECTORIZATION_FALSE])
+m4trace:configure.ac:85: -1- _m4_warn([obsolete], [The macro `AC_HELP_STRING' is obsolete.
+You should run autoupdate.], [../../lib/autoconf/general.m4:207: AC_HELP_STRING is expanded from...
+../../lib/autoconf/general.m4:1481: AC_ARG_WITH is expanded from...
+configure.ac:85: the top level])
+m4trace:configure.ac:90: -1- AM_CONDITIONAL([COND_CUDA], [test x"$want_cuda" != xno])
+m4trace:configure.ac:90: -1- m4_pattern_allow([^COND_CUDA_TRUE$])
+m4trace:configure.ac:90: -1- m4_pattern_allow([^COND_CUDA_FALSE$])
+m4trace:configure.ac:90: -1- _AM_SUBST_NOTMAKE([COND_CUDA_TRUE])
+m4trace:configure.ac:90: -1- _AM_SUBST_NOTMAKE([COND_CUDA_FALSE])
+m4trace:configure.ac:91: -1- AM_CONDITIONAL([COND_CUDA5], [test x"$want_cuda" = xcuda5])
+m4trace:configure.ac:91: -1- m4_pattern_allow([^COND_CUDA5_TRUE$])
+m4trace:configure.ac:91: -1- m4_pattern_allow([^COND_CUDA5_FALSE$])
+m4trace:configure.ac:91: -1- _AM_SUBST_NOTMAKE([COND_CUDA5_TRUE])
+m4trace:configure.ac:91: -1- _AM_SUBST_NOTMAKE([COND_CUDA5_FALSE])
+m4trace:configure.ac:93: -1- _m4_warn([obsolete], [The macro `AC_HELP_STRING' is obsolete.
+You should run autoupdate.], [../../lib/autoconf/general.m4:207: AC_HELP_STRING is expanded from...
+../../lib/autoconf/general.m4:1481: AC_ARG_WITH is expanded from...
+configure.ac:93: the top level])
+m4trace:configure.ac:97: -1- AM_CONDITIONAL([COND_OCL], [test "$want_opencl" != no])
+m4trace:configure.ac:97: -1- m4_pattern_allow([^COND_OCL_TRUE$])
+m4trace:configure.ac:97: -1- m4_pattern_allow([^COND_OCL_FALSE$])
+m4trace:configure.ac:97: -1- _AM_SUBST_NOTMAKE([COND_OCL_TRUE])
+m4trace:configure.ac:97: -1- _AM_SUBST_NOTMAKE([COND_OCL_FALSE])
+m4trace:configure.ac:103: -1- _m4_warn([obsolete], [The macro `AC_HELP_STRING' is obsolete.
+You should run autoupdate.], [../../lib/autoconf/general.m4:207: AC_HELP_STRING is expanded from...
+../../lib/autoconf/general.m4:1481: AC_ARG_WITH is expanded from...
+configure.ac:103: the top level])
+m4trace:configure.ac:108: -1- AM_CONDITIONAL([COND_MIC], [test "$want_mic" != no])
+m4trace:configure.ac:108: -1- m4_pattern_allow([^COND_MIC_TRUE$])
+m4trace:configure.ac:108: -1- m4_pattern_allow([^COND_MIC_FALSE$])
+m4trace:configure.ac:108: -1- _AM_SUBST_NOTMAKE([COND_MIC_TRUE])
+m4trace:configure.ac:108: -1- _AM_SUBST_NOTMAKE([COND_MIC_FALSE])
+m4trace:configure.ac:117: -1- _m4_warn([obsolete], [The macro `AC_HELP_STRING' is obsolete.
+You should run autoupdate.], [../../lib/autoconf/general.m4:207: AC_HELP_STRING is expanded from...
+../../lib/autoconf/general.m4:1462: AC_ARG_ENABLE is expanded from...
+configure.ac:117: the top level])
+m4trace:configure.ac:122: -1- AM_CONDITIONAL([COND_VTK], [test x"$want_vtk" != xno])
+m4trace:configure.ac:122: -1- m4_pattern_allow([^COND_VTK_TRUE$])
+m4trace:configure.ac:122: -1- m4_pattern_allow([^COND_VTK_FALSE$])
+m4trace:configure.ac:122: -1- _AM_SUBST_NOTMAKE([COND_VTK_TRUE])
+m4trace:configure.ac:122: -1- _AM_SUBST_NOTMAKE([COND_VTK_FALSE])
+m4trace:configure.ac:128: -1- _m4_warn([obsolete], [The macro `AC_HELP_STRING' is obsolete.
+You should run autoupdate.], [../../lib/autoconf/general.m4:207: AC_HELP_STRING is expanded from...
+../../lib/autoconf/general.m4:1481: AC_ARG_WITH is expanded from...
+configure.ac:128: the top level])
+m4trace:configure.ac:133: -1- AM_CONDITIONAL([COND_ADIOS], [test x"$want_adios" != xno])
+m4trace:configure.ac:133: -1- m4_pattern_allow([^COND_ADIOS_TRUE$])
+m4trace:configure.ac:133: -1- m4_pattern_allow([^COND_ADIOS_FALSE$])
+m4trace:configure.ac:133: -1- _AM_SUBST_NOTMAKE([COND_ADIOS_TRUE])
+m4trace:configure.ac:133: -1- _AM_SUBST_NOTMAKE([COND_ADIOS_FALSE])
+m4trace:configure.ac:139: -1- _m4_warn([obsolete], [The macro `AC_HELP_STRING' is obsolete.
+You should run autoupdate.], [../../lib/autoconf/general.m4:207: AC_HELP_STRING is expanded from...
+../../lib/autoconf/general.m4:1481: AC_ARG_WITH is expanded from...
+configure.ac:139: the top level])
+m4trace:configure.ac:144: -1- AM_CONDITIONAL([COND_ASDF], [test x$"$want_asdf" != xno])
+m4trace:configure.ac:144: -1- m4_pattern_allow([^COND_ASDF_TRUE$])
+m4trace:configure.ac:144: -1- m4_pattern_allow([^COND_ASDF_FALSE$])
+m4trace:configure.ac:144: -1- _AM_SUBST_NOTMAKE([COND_ASDF_TRUE])
+m4trace:configure.ac:144: -1- _AM_SUBST_NOTMAKE([COND_ASDF_FALSE])
+m4trace:configure.ac:150: -1- _m4_warn([obsolete], [The macro `AC_HELP_STRING' is obsolete.
+You should run autoupdate.], [../../lib/autoconf/general.m4:207: AC_HELP_STRING is expanded from...
+../../lib/autoconf/general.m4:1481: AC_ARG_WITH is expanded from...
+configure.ac:150: the top level])
+m4trace:configure.ac:155: -1- AM_CONDITIONAL([COND_CEM], [test x"$want_cem" != xno])
+m4trace:configure.ac:155: -1- m4_pattern_allow([^COND_CEM_TRUE$])
+m4trace:configure.ac:155: -1- m4_pattern_allow([^COND_CEM_FALSE$])
+m4trace:configure.ac:155: -1- _AM_SUBST_NOTMAKE([COND_CEM_TRUE])
+m4trace:configure.ac:155: -1- _AM_SUBST_NOTMAKE([COND_CEM_FALSE])
+m4trace:configure.ac:173: -1- m4_pattern_allow([^FC$])
+m4trace:configure.ac:173: -1- m4_pattern_allow([^FCFLAGS$])
+m4trace:configure.ac:173: -1- m4_pattern_allow([^LDFLAGS$])
+m4trace:configure.ac:173: -1- m4_pattern_allow([^LIBS$])
+m4trace:configure.ac:173: -1- m4_pattern_allow([^FC$])
+m4trace:configure.ac:173: -1- m4_pattern_allow([^ac_ct_FC$])
+m4trace:configure.ac:173: -1- m4_pattern_allow([^EXEEXT$])
+m4trace:configure.ac:173: -1- m4_pattern_allow([^OBJEXT$])
+m4trace:configure.ac:180: -1- m4_pattern_allow([^FCENV$])
+m4trace:configure.ac:181: -1- m4_pattern_allow([^srcdir$])
+m4trace:configure.ac:189: -1- m4_pattern_allow([^FCLIBS$])
+m4trace:configure.ac:189: -1- m4_pattern_allow([^CC$])
+m4trace:configure.ac:189: -1- m4_pattern_allow([^CFLAGS$])
+m4trace:configure.ac:189: -1- m4_pattern_allow([^LDFLAGS$])
+m4trace:configure.ac:189: -1- m4_pattern_allow([^LIBS$])
+m4trace:configure.ac:189: -1- m4_pattern_allow([^CPPFLAGS$])
+m4trace:configure.ac:189: -1- m4_pattern_allow([^CC$])
+m4trace:configure.ac:189: -1- m4_pattern_allow([^CC$])
+m4trace:configure.ac:189: -1- m4_pattern_allow([^CC$])
+m4trace:configure.ac:189: -1- m4_pattern_allow([^CC$])
+m4trace:configure.ac:189: -1- m4_pattern_allow([^ac_ct_CC$])
+m4trace:configure.ac:189: -1- m4_pattern_allow([^FC_DUMMY_MAIN$])
+m4trace:configure.ac:189: -1- m4_pattern_allow([^FC_DUMMY_MAIN_EQ_F77$])
+m4trace:configure.ac:189: -1- m4_pattern_allow([^FC_FUNC$])
+m4trace:configure.ac:189: -1- m4_pattern_allow([^FC_FUNC_$])
+m4trace:configure.ac:189: -1- m4_pattern_allow([^FC_FUNC$])
+m4trace:configure.ac:189: -1- m4_pattern_allow([^FC_FUNC_$])
+m4trace:configure.ac:189: -1- m4_pattern_allow([^FC_FUNC$])
+m4trace:configure.ac:189: -1- m4_pattern_allow([^FC_FUNC_$])
+m4trace:configure.ac:189: -1- m4_pattern_allow([^FC_FUNC$])
+m4trace:configure.ac:189: -1- m4_pattern_allow([^FC_FUNC_$])
+m4trace:configure.ac:189: -1- m4_pattern_allow([^FC_FUNC$])
+m4trace:configure.ac:189: -1- m4_pattern_allow([^FC_FUNC_$])
+m4trace:configure.ac:189: -1- m4_pattern_allow([^FC_FUNC$])
+m4trace:configure.ac:189: -1- m4_pattern_allow([^FC_FUNC_$])
+m4trace:configure.ac:189: -1- m4_pattern_allow([^FC_FUNC$])
+m4trace:configure.ac:189: -1- m4_pattern_allow([^FC_FUNC_$])
+m4trace:configure.ac:189: -1- m4_pattern_allow([^FC_FUNC$])
+m4trace:configure.ac:189: -1- m4_pattern_allow([^FC_FUNC_$])
+m4trace:configure.ac:191: -1- m4_pattern_allow([^FCFLAGS_f90$])
+m4trace:configure.ac:194: -1- AC_FC_PP_DEFINE([])
+m4trace:configure.ac:194: -1- AC_FC_PP_SRCEXT([F])
+m4trace:configure.ac:194: -1- m4_pattern_allow([^FCFLAGS_F$])
+m4trace:configure.ac:194: -1- m4_pattern_allow([^FC_DEFINE$])
+m4trace:configure.ac:195: -1- m4_pattern_allow([^FC_DEFINE$])
+m4trace:configure.ac:196: -1- AC_FC_PP_SRCEXT([F90])
+m4trace:configure.ac:196: -1- m4_pattern_allow([^FCFLAGS_F90$])
+m4trace:configure.ac:198: -1- m4_pattern_allow([^CC$])
+m4trace:configure.ac:198: -1- m4_pattern_allow([^CFLAGS$])
+m4trace:configure.ac:198: -1- m4_pattern_allow([^LDFLAGS$])
+m4trace:configure.ac:198: -1- m4_pattern_allow([^LIBS$])
+m4trace:configure.ac:198: -1- m4_pattern_allow([^CPPFLAGS$])
+m4trace:configure.ac:198: -1- m4_pattern_allow([^CC$])
+m4trace:configure.ac:198: -1- m4_pattern_allow([^CC$])
+m4trace:configure.ac:198: -1- m4_pattern_allow([^CC$])
+m4trace:configure.ac:198: -1- m4_pattern_allow([^CC$])
+m4trace:configure.ac:198: -1- m4_pattern_allow([^ac_ct_CC$])
+m4trace:configure.ac:203: -1- m4_pattern_allow([^MPIFC$])
+m4trace:configure.ac:204: -1- m4_pattern_allow([^MPILIBS$])
+m4trace:configure.ac:206: -1- m4_pattern_allow([^FLAGS_CHECK$])
+m4trace:configure.ac:209: -1- m4_pattern_allow([^LOCAL_PATH_IS_ALSO_GLOBAL$])
+m4trace:configure.ac:225: -1- AC_FC_MODULE_EXTENSION
+m4trace:configure.ac:225: -1- m4_pattern_allow([^FC_MODEXT$])
+m4trace:configure.ac:226: -1- m4_pattern_allow([^FC_MODEXT$])
+m4trace:configure.ac:227: -1- AC_FC_MODULE_FLAG([], [])
+m4trace:configure.ac:227: -1- m4_pattern_allow([^FC_MODINC$])
+m4trace:configure.ac:227: -1- m4_pattern_allow([^ac_empty$])
+m4trace:configure.ac:228: -1- AC_FC_MODULE_OUTPUT_FLAG([
+	FCFLAGS_f90="$FC_MODOUT./obj $FC_MODINC./obj $FC_MODINC. $FCFLAGS_f90"
+	FC_MODDIR=./obj
+], [
+	FC_MODDIR=.
+])
+m4trace:configure.ac:228: -1- m4_pattern_allow([^FC_MODOUT$])
+m4trace:configure.ac:228: -1- m4_pattern_allow([^ac_empty$])
+m4trace:configure.ac:234: -1- m4_pattern_allow([^FC_MODDIR$])
+m4trace:configure.ac:239: -2- m4_pattern_allow([^HAVE_EMMINTRIN$])
+m4trace:configure.ac:239: -1- m4_pattern_allow([^CPP$])
+m4trace:configure.ac:239: -1- m4_pattern_allow([^CPPFLAGS$])
+m4trace:configure.ac:239: -1- m4_pattern_allow([^CPP$])
+m4trace:configure.ac:239: -1- m4_pattern_allow([^GREP$])
+m4trace:configure.ac:239: -1- m4_pattern_allow([^EGREP$])
+m4trace:configure.ac:239: -1- m4_pattern_allow([^STDC_HEADERS$])
+m4trace:configure.ac:240: -2- m4_pattern_allow([^HAVE_XMMINTRIN$])
+m4trace:configure.ac:253: -1- CIT_ADIOS_CONFIG
+m4trace:configure.ac:253: -1- m4_pattern_allow([^ADIOS_CONFIG$])
+m4trace:configure.ac:253: -1- m4_pattern_allow([^ADIOS_CONFIG$])
+m4trace:configure.ac:253: -1- m4_pattern_allow([^ADIOS_FCFLAGS$])
+m4trace:configure.ac:253: -1- m4_pattern_allow([^ADIOS_LIBS$])
+m4trace:configure.ac:262: -1- m4_pattern_allow([^ASDF_LIBS$])
+m4trace:configure.ac:274: -1- m4_pattern_allow([^CONFIGURE_FLAGS$])
+m4trace:configure.ac:280: -1- CIT_CUDA_CONFIG
+m4trace:configure.ac:280: -1- m4_pattern_allow([^NVCC$])
+m4trace:configure.ac:280: -1- m4_pattern_allow([^CUDA_FLAGS$])
+m4trace:configure.ac:280: -1- m4_pattern_allow([^CUDA_INC$])
+m4trace:configure.ac:280: -1- m4_pattern_allow([^CUDA_LIB$])
+m4trace:configure.ac:280: -1- m4_pattern_allow([^NVCC_PROG$])
+m4trace:configure.ac:280: -1- m4_pattern_allow([^NVCC$])
+m4trace:configure.ac:280: -1- m4_pattern_allow([^CUDA_CPPFLAGS$])
+m4trace:configure.ac:280: -1- m4_pattern_allow([^CUDA_LDFLAGS$])
+m4trace:configure.ac:280: -1- m4_pattern_allow([^CUDA_LIBS$])
+m4trace:configure.ac:285: -1- m4_pattern_allow([^OCL_CPU_FLAGS$])
+m4trace:configure.ac:285: -1- m4_pattern_allow([^OCL_GPU_FLAGS$])
+m4trace:configure.ac:285: -1- CIT_OPENCL_CONFIG
+m4trace:configure.ac:285: -1- m4_pattern_allow([^OCL_INC$])
+m4trace:configure.ac:285: -1- m4_pattern_allow([^OCL_LIB$])
+m4trace:configure.ac:285: -1- m4_pattern_allow([^OCL_CFLAGS$])
+m4trace:configure.ac:285: -1- m4_pattern_allow([^OCL_LDFLAGS$])
+m4trace:configure.ac:285: -1- m4_pattern_allow([^OCL_LIBS$])
+m4trace:configure.ac:323: -1- CIT_OPTIONS_VTK
+m4trace:configure.ac:323: -1- _m4_warn([obsolete], [The macro `AC_HELP_STRING' is obsolete.
+You should run autoupdate.], [../../lib/autoconf/general.m4:207: AC_HELP_STRING is expanded from...
+../../lib/autoconf/general.m4:1481: AC_ARG_WITH is expanded from...
+m4/cit_vtk.m4:20: CIT_OPTIONS_VTK is expanded from...
+../../lib/m4sugar/m4sh.m4:639: AS_IF is expanded from...
+configure.ac:323: the top level])
+m4trace:configure.ac:323: -1- _m4_warn([obsolete], [The macro `AC_HELP_STRING' is obsolete.
+You should run autoupdate.], [../../lib/autoconf/general.m4:207: AC_HELP_STRING is expanded from...
+../../lib/autoconf/general.m4:1481: AC_ARG_WITH is expanded from...
+m4/cit_vtk.m4:20: CIT_OPTIONS_VTK is expanded from...
+../../lib/m4sugar/m4sh.m4:639: AS_IF is expanded from...
+configure.ac:323: the top level])
+m4trace:configure.ac:323: -1- _m4_warn([obsolete], [The macro `AC_HELP_STRING' is obsolete.
+You should run autoupdate.], [../../lib/autoconf/general.m4:207: AC_HELP_STRING is expanded from...
+../../lib/autoconf/general.m4:1481: AC_ARG_WITH is expanded from...
+m4/cit_vtk.m4:20: CIT_OPTIONS_VTK is expanded from...
+../../lib/m4sugar/m4sh.m4:639: AS_IF is expanded from...
+configure.ac:323: the top level])
+m4trace:configure.ac:323: -1- CIT_PATH_VTK
+m4trace:configure.ac:323: -1- _m4_warn([cross], [cannot check for file existence when cross compiling], [../../lib/autoconf/general.m4:2777: AC_CHECK_FILE is expanded from...
+m4/cit_vtk.m4:73: CIT_PATH_VTK is expanded from...
+../../lib/m4sugar/m4sh.m4:639: AS_IF is expanded from...
+configure.ac:323: the top level])
+m4trace:configure.ac:323: -1- m4_pattern_allow([^HAVE_LIBVTKIO$])
+m4trace:configure.ac:323: -1- m4_pattern_allow([^HAVE_LIBVTKIO$])
+m4trace:configure.ac:323: -1- m4_pattern_allow([^HAVE_LIBVTKIO$])
+m4trace:configure.ac:323: -1- m4_pattern_allow([^HAVE_LIBVTKIO$])
+m4trace:configure.ac:323: -1- m4_pattern_allow([^HAVE_VTK$])
+m4trace:configure.ac:323: -1- m4_pattern_allow([^VTK_INCLUDES$])
+m4trace:configure.ac:323: -1- m4_pattern_allow([^VTK_LDFLAGS$])
+m4trace:configure.ac:323: -1- m4_pattern_allow([^VTK_LIBS$])
+m4trace:configure.ac:335: -1- CIT_MPI_INCDIR([$MPIFC])
+m4trace:configure.ac:335: -1- m4_pattern_allow([^MPI_INC$])
+m4trace:configure.ac:335: -1- m4_pattern_allow([^CXX$])
+m4trace:configure.ac:335: -1- m4_pattern_allow([^CXXFLAGS$])
+m4trace:configure.ac:335: -1- m4_pattern_allow([^LDFLAGS$])
+m4trace:configure.ac:335: -1- m4_pattern_allow([^LIBS$])
+m4trace:configure.ac:335: -1- m4_pattern_allow([^CPPFLAGS$])
+m4trace:configure.ac:335: -1- m4_pattern_allow([^CXX$])
+m4trace:configure.ac:335: -1- m4_pattern_allow([^ac_ct_CXX$])
+m4trace:configure.ac:335: -1- m4_pattern_allow([^CXXCPP$])
+m4trace:configure.ac:335: -1- m4_pattern_allow([^CPPFLAGS$])
+m4trace:configure.ac:335: -1- m4_pattern_allow([^CXXCPP$])
+m4trace:configure.ac:335: -1- m4_pattern_allow([^MPI_INCLUDES$])
+m4trace:configure.ac:346: -1- m4_pattern_allow([^CEM_FCFLAGS$])
+m4trace:configure.ac:346: -1- m4_pattern_allow([^CEM_LIBS$])
+m4trace:configure.ac:387: -1- m4_pattern_allow([^GIT_VERSION_DEPS$])
+m4trace:configure.ac:423: -1- m4_pattern_allow([^LIB@&t@OBJS$])
+m4trace:configure.ac:423: -1- m4_pattern_allow([^LTLIBOBJS$])

@@ -1,0 +1,2118 @@
+
+Begin optimization report for: WRITE_NEW_MODEL_PERTURBATIONS_ISO
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(45,3)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(45,3)
+      remark #15542: loop was not vectorized: inner loop was already vectorized
+
+      LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(45,3)
+         remark #15542: loop was not vectorized: inner loop was already vectorized
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(45,3)
+            remark #15300: LOOP WAS VECTORIZED
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(46,28)
+         LOOP END
+      LOOP END
+
+      LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(46,28)
+      LOOP END
+   LOOP END
+
+   LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(46,28)
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(46,28)
+LOOP END
+
+LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(57,19)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed OUTPUT dependence between 205 line 57 and 205 line 57
+
+   LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(57,19)
+      remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+      remark #15346: vector dependence: assumed OUTPUT dependence between 205 line 57 and 205 line 57
+
+      LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(57,19)
+         remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+         remark #15346: vector dependence: assumed ANTI dependence between 205 line 57 and 205 line 57
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(57,19)
+            remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(57,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(57,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(57,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(57,19)
+         LOOP END
+      LOOP END
+
+      LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(57,19)
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(57,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(57,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(57,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(57,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(57,19)
+         LOOP END
+      LOOP END
+
+      LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(57,19)
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(57,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(57,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(57,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(57,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(57,19)
+         LOOP END
+      LOOP END
+
+      LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(57,19)
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(57,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(57,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(57,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(57,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(57,19)
+         LOOP END
+      LOOP END
+
+      LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(57,19)
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(57,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(57,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(57,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(57,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(57,19)
+         LOOP END
+      LOOP END
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(58,19)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed OUTPUT dependence between 219 line 58 and 219 line 58
+
+   LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(58,19)
+      remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+      remark #15346: vector dependence: assumed OUTPUT dependence between 219 line 58 and 219 line 58
+
+      LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(58,19)
+         remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+         remark #15346: vector dependence: assumed ANTI dependence between 219 line 58 and 219 line 58
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(58,19)
+            remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(58,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(58,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(58,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(58,19)
+         LOOP END
+      LOOP END
+
+      LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(58,19)
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(58,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(58,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(58,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(58,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(58,19)
+         LOOP END
+      LOOP END
+
+      LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(58,19)
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(58,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(58,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(58,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(58,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(58,19)
+         LOOP END
+      LOOP END
+
+      LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(58,19)
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(58,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(58,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(58,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(58,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(58,19)
+         LOOP END
+      LOOP END
+
+      LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(58,19)
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(58,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(58,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(58,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(58,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(58,19)
+         LOOP END
+      LOOP END
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(61,3)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(61,3)
+      remark #15542: loop was not vectorized: inner loop was already vectorized
+
+      LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(61,3)
+         remark #15542: loop was not vectorized: inner loop was already vectorized
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(61,3)
+            remark #15300: LOOP WAS VECTORIZED
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(62,28)
+         LOOP END
+      LOOP END
+
+      LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(62,28)
+      LOOP END
+   LOOP END
+
+   LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(62,28)
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(62,28)
+LOOP END
+
+LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(70,19)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed OUTPUT dependence between 333 line 70 and 333 line 70
+
+   LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(70,19)
+      remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+      remark #15346: vector dependence: assumed OUTPUT dependence between 333 line 70 and 333 line 70
+
+      LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(70,19)
+         remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+         remark #15346: vector dependence: assumed ANTI dependence between 333 line 70 and 333 line 70
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(70,19)
+            remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(70,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(70,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(70,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(70,19)
+         LOOP END
+      LOOP END
+
+      LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(70,19)
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(70,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(70,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(70,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(70,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(70,19)
+         LOOP END
+      LOOP END
+
+      LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(70,19)
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(70,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(70,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(70,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(70,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(70,19)
+         LOOP END
+      LOOP END
+
+      LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(70,19)
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(70,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(70,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(70,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(70,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(70,19)
+         LOOP END
+      LOOP END
+
+      LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(70,19)
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(70,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(70,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(70,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(70,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(70,19)
+         LOOP END
+      LOOP END
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(71,19)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed OUTPUT dependence between 347 line 71 and 347 line 71
+
+   LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(71,19)
+      remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+      remark #15346: vector dependence: assumed OUTPUT dependence between 347 line 71 and 347 line 71
+
+      LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(71,19)
+         remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+         remark #15346: vector dependence: assumed ANTI dependence between 347 line 71 and 347 line 71
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(71,19)
+            remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(71,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(71,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(71,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(71,19)
+         LOOP END
+      LOOP END
+
+      LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(71,19)
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(71,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(71,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(71,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(71,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(71,19)
+         LOOP END
+      LOOP END
+
+      LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(71,19)
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(71,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(71,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(71,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(71,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(71,19)
+         LOOP END
+      LOOP END
+
+      LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(71,19)
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(71,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(71,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(71,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(71,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(71,19)
+         LOOP END
+      LOOP END
+
+      LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(71,19)
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(71,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(71,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(71,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(71,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(71,19)
+         LOOP END
+      LOOP END
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(74,3)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(74,3)
+      remark #15542: loop was not vectorized: inner loop was already vectorized
+
+      LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(74,3)
+         remark #15542: loop was not vectorized: inner loop was already vectorized
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(74,3)
+            remark #15300: LOOP WAS VECTORIZED
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(75,29)
+         LOOP END
+      LOOP END
+
+      LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(75,29)
+      LOOP END
+   LOOP END
+
+   LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(75,29)
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(75,29)
+LOOP END
+
+LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(83,19)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed OUTPUT dependence between 461 line 83 and 461 line 83
+
+   LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(83,19)
+      remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+      remark #15346: vector dependence: assumed OUTPUT dependence between 461 line 83 and 461 line 83
+
+      LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(83,19)
+         remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+         remark #15346: vector dependence: assumed ANTI dependence between 461 line 83 and 461 line 83
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(83,19)
+            remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(83,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(83,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(83,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(83,19)
+         LOOP END
+      LOOP END
+
+      LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(83,19)
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(83,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(83,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(83,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(83,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(83,19)
+         LOOP END
+      LOOP END
+
+      LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(83,19)
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(83,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(83,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(83,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(83,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(83,19)
+         LOOP END
+      LOOP END
+
+      LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(83,19)
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(83,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(83,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(83,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(83,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(83,19)
+         LOOP END
+      LOOP END
+
+      LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(83,19)
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(83,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(83,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(83,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(83,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(83,19)
+         LOOP END
+      LOOP END
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(84,19)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed OUTPUT dependence between 475 line 84 and 475 line 84
+
+   LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(84,19)
+      remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+      remark #15346: vector dependence: assumed OUTPUT dependence between 475 line 84 and 475 line 84
+
+      LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(84,19)
+         remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+         remark #15346: vector dependence: assumed OUTPUT dependence between 475 line 84 and 475 line 84
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(84,19)
+            remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(84,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(84,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(84,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(84,19)
+         LOOP END
+      LOOP END
+
+      LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(84,19)
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(84,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(84,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(84,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(84,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(84,19)
+         LOOP END
+      LOOP END
+
+      LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(84,19)
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(84,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(84,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(84,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(84,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(84,19)
+         LOOP END
+      LOOP END
+
+      LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(84,19)
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(84,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(84,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(84,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(84,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(84,19)
+         LOOP END
+      LOOP END
+
+      LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(84,19)
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(84,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(84,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(84,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(84,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(84,19)
+         LOOP END
+      LOOP END
+   LOOP END
+LOOP END
+===========================================================================
+
+Begin optimization report for: WRITE_NEW_MODEL_PERTURBATIONS_TISO
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(127,3)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(127,3)
+      remark #15542: loop was not vectorized: inner loop was already vectorized
+
+      LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(127,3)
+         remark #15542: loop was not vectorized: inner loop was already vectorized
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(127,3)
+            remark #15300: LOOP WAS VECTORIZED
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(128,29)
+         LOOP END
+      LOOP END
+
+      LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(128,29)
+      LOOP END
+   LOOP END
+
+   LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(128,29)
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(128,29)
+LOOP END
+
+LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(139,19)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed OUTPUT dependence between 813 line 139 and 813 line 139
+
+   LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(139,19)
+      remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+      remark #15346: vector dependence: assumed OUTPUT dependence between 813 line 139 and 813 line 139
+
+      LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(139,19)
+         remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+         remark #15346: vector dependence: assumed ANTI dependence between 813 line 139 and 813 line 139
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(139,19)
+            remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(139,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(139,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(139,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(139,19)
+         LOOP END
+      LOOP END
+
+      LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(139,19)
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(139,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(139,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(139,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(139,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(139,19)
+         LOOP END
+      LOOP END
+
+      LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(139,19)
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(139,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(139,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(139,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(139,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(139,19)
+         LOOP END
+      LOOP END
+
+      LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(139,19)
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(139,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(139,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(139,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(139,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(139,19)
+         LOOP END
+      LOOP END
+
+      LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(139,19)
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(139,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(139,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(139,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(139,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(139,19)
+         LOOP END
+      LOOP END
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(140,19)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed OUTPUT dependence between 827 line 140 and 827 line 140
+
+   LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(140,19)
+      remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+      remark #15346: vector dependence: assumed OUTPUT dependence between 827 line 140 and 827 line 140
+
+      LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(140,19)
+         remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+         remark #15346: vector dependence: assumed ANTI dependence between 827 line 140 and 827 line 140
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(140,19)
+            remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(140,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(140,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(140,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(140,19)
+         LOOP END
+      LOOP END
+
+      LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(140,19)
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(140,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(140,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(140,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(140,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(140,19)
+         LOOP END
+      LOOP END
+
+      LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(140,19)
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(140,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(140,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(140,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(140,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(140,19)
+         LOOP END
+      LOOP END
+
+      LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(140,19)
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(140,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(140,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(140,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(140,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(140,19)
+         LOOP END
+      LOOP END
+
+      LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(140,19)
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(140,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(140,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(140,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(140,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(140,19)
+         LOOP END
+      LOOP END
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(143,3)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(143,3)
+      remark #15542: loop was not vectorized: inner loop was already vectorized
+
+      LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(143,3)
+         remark #15542: loop was not vectorized: inner loop was already vectorized
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(143,3)
+            remark #15300: LOOP WAS VECTORIZED
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(144,29)
+         LOOP END
+      LOOP END
+
+      LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(144,29)
+      LOOP END
+   LOOP END
+
+   LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(144,29)
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(144,29)
+LOOP END
+
+LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(152,19)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed OUTPUT dependence between 941 line 152 and 941 line 152
+
+   LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(152,19)
+      remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+      remark #15346: vector dependence: assumed OUTPUT dependence between 941 line 152 and 941 line 152
+
+      LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(152,19)
+         remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+         remark #15346: vector dependence: assumed ANTI dependence between 941 line 152 and 941 line 152
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(152,19)
+            remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(152,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(152,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(152,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(152,19)
+         LOOP END
+      LOOP END
+
+      LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(152,19)
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(152,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(152,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(152,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(152,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(152,19)
+         LOOP END
+      LOOP END
+
+      LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(152,19)
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(152,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(152,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(152,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(152,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(152,19)
+         LOOP END
+      LOOP END
+
+      LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(152,19)
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(152,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(152,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(152,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(152,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(152,19)
+         LOOP END
+      LOOP END
+
+      LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(152,19)
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(152,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(152,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(152,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(152,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(152,19)
+         LOOP END
+      LOOP END
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(153,19)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed OUTPUT dependence between 955 line 153 and 955 line 153
+
+   LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(153,19)
+      remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+      remark #15346: vector dependence: assumed OUTPUT dependence between 955 line 153 and 955 line 153
+
+      LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(153,19)
+         remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+         remark #15346: vector dependence: assumed ANTI dependence between 955 line 153 and 955 line 153
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(153,19)
+            remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(153,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(153,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(153,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(153,19)
+         LOOP END
+      LOOP END
+
+      LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(153,19)
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(153,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(153,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(153,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(153,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(153,19)
+         LOOP END
+      LOOP END
+
+      LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(153,19)
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(153,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(153,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(153,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(153,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(153,19)
+         LOOP END
+      LOOP END
+
+      LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(153,19)
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(153,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(153,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(153,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(153,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(153,19)
+         LOOP END
+      LOOP END
+
+      LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(153,19)
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(153,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(153,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(153,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(153,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(153,19)
+         LOOP END
+      LOOP END
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(156,3)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(156,3)
+      remark #15542: loop was not vectorized: inner loop was already vectorized
+
+      LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(156,3)
+         remark #15542: loop was not vectorized: inner loop was already vectorized
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(156,3)
+            remark #15300: LOOP WAS VECTORIZED
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(157,29)
+         LOOP END
+      LOOP END
+
+      LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(157,29)
+      LOOP END
+   LOOP END
+
+   LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(157,29)
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(157,29)
+LOOP END
+
+LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(165,19)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed OUTPUT dependence between 1069 line 165 and 1069 line 165
+
+   LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(165,19)
+      remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+      remark #15346: vector dependence: assumed OUTPUT dependence between 1069 line 165 and 1069 line 165
+
+      LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(165,19)
+         remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+         remark #15346: vector dependence: assumed ANTI dependence between 1069 line 165 and 1069 line 165
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(165,19)
+            remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(165,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(165,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(165,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(165,19)
+         LOOP END
+      LOOP END
+
+      LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(165,19)
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(165,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(165,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(165,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(165,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(165,19)
+         LOOP END
+      LOOP END
+
+      LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(165,19)
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(165,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(165,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(165,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(165,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(165,19)
+         LOOP END
+      LOOP END
+
+      LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(165,19)
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(165,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(165,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(165,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(165,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(165,19)
+         LOOP END
+      LOOP END
+
+      LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(165,19)
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(165,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(165,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(165,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(165,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(165,19)
+         LOOP END
+      LOOP END
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(166,19)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed OUTPUT dependence between 1083 line 166 and 1083 line 166
+
+   LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(166,19)
+      remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+      remark #15346: vector dependence: assumed OUTPUT dependence between 1083 line 166 and 1083 line 166
+
+      LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(166,19)
+         remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+         remark #15346: vector dependence: assumed ANTI dependence between 1083 line 166 and 1083 line 166
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(166,19)
+            remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(166,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(166,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(166,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(166,19)
+         LOOP END
+      LOOP END
+
+      LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(166,19)
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(166,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(166,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(166,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(166,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(166,19)
+         LOOP END
+      LOOP END
+
+      LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(166,19)
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(166,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(166,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(166,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(166,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(166,19)
+         LOOP END
+      LOOP END
+
+      LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(166,19)
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(166,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(166,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(166,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(166,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(166,19)
+         LOOP END
+      LOOP END
+
+      LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(166,19)
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(166,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(166,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(166,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(166,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(166,19)
+         LOOP END
+      LOOP END
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(169,3)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(169,3)
+      remark #15542: loop was not vectorized: inner loop was already vectorized
+
+      LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(169,3)
+         remark #15542: loop was not vectorized: inner loop was already vectorized
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(169,3)
+            remark #15300: LOOP WAS VECTORIZED
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(170,29)
+         LOOP END
+      LOOP END
+
+      LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(170,29)
+      LOOP END
+   LOOP END
+
+   LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(170,29)
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(170,29)
+LOOP END
+
+LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(178,19)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed OUTPUT dependence between 1197 line 178 and 1197 line 178
+
+   LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(178,19)
+      remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+      remark #15346: vector dependence: assumed OUTPUT dependence between 1197 line 178 and 1197 line 178
+
+      LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(178,19)
+         remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+         remark #15346: vector dependence: assumed ANTI dependence between 1197 line 178 and 1197 line 178
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(178,19)
+            remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(178,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(178,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(178,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(178,19)
+         LOOP END
+      LOOP END
+
+      LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(178,19)
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(178,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(178,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(178,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(178,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(178,19)
+         LOOP END
+      LOOP END
+
+      LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(178,19)
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(178,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(178,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(178,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(178,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(178,19)
+         LOOP END
+      LOOP END
+
+      LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(178,19)
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(178,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(178,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(178,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(178,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(178,19)
+         LOOP END
+      LOOP END
+
+      LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(178,19)
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(178,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(178,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(178,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(178,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(178,19)
+         LOOP END
+      LOOP END
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(179,19)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed OUTPUT dependence between 1211 line 179 and 1211 line 179
+
+   LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(179,19)
+      remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+      remark #15346: vector dependence: assumed OUTPUT dependence between 1211 line 179 and 1211 line 179
+
+      LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(179,19)
+         remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+         remark #15346: vector dependence: assumed ANTI dependence between 1211 line 179 and 1211 line 179
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(179,19)
+            remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(179,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(179,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(179,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(179,19)
+         LOOP END
+      LOOP END
+
+      LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(179,19)
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(179,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(179,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(179,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(179,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(179,19)
+         LOOP END
+      LOOP END
+
+      LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(179,19)
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(179,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(179,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(179,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(179,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(179,19)
+         LOOP END
+      LOOP END
+
+      LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(179,19)
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(179,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(179,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(179,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(179,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(179,19)
+         LOOP END
+      LOOP END
+
+      LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(179,19)
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(179,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(179,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(179,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(179,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(179,19)
+         LOOP END
+      LOOP END
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(182,3)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(182,3)
+      remark #15542: loop was not vectorized: inner loop was already vectorized
+
+      LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(182,3)
+         remark #15542: loop was not vectorized: inner loop was already vectorized
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(182,3)
+            remark #15300: LOOP WAS VECTORIZED
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(183,29)
+         LOOP END
+      LOOP END
+
+      LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(183,29)
+      LOOP END
+   LOOP END
+
+   LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(183,29)
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(183,29)
+LOOP END
+
+LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(191,19)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed OUTPUT dependence between 1325 line 191 and 1325 line 191
+
+   LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(191,19)
+      remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+      remark #15346: vector dependence: assumed OUTPUT dependence between 1325 line 191 and 1325 line 191
+
+      LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(191,19)
+         remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+         remark #15346: vector dependence: assumed ANTI dependence between 1325 line 191 and 1325 line 191
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(191,19)
+            remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(191,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(191,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(191,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(191,19)
+         LOOP END
+      LOOP END
+
+      LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(191,19)
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(191,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(191,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(191,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(191,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(191,19)
+         LOOP END
+      LOOP END
+
+      LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(191,19)
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(191,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(191,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(191,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(191,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(191,19)
+         LOOP END
+      LOOP END
+
+      LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(191,19)
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(191,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(191,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(191,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(191,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(191,19)
+         LOOP END
+      LOOP END
+
+      LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(191,19)
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(191,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(191,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(191,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(191,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(191,19)
+         LOOP END
+      LOOP END
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(192,19)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed OUTPUT dependence between 1339 line 192 and 1339 line 192
+
+   LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(192,19)
+      remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+      remark #15346: vector dependence: assumed OUTPUT dependence between 1339 line 192 and 1339 line 192
+
+      LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(192,19)
+         remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+         remark #15346: vector dependence: assumed ANTI dependence between 1339 line 192 and 1339 line 192
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(192,19)
+            remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(192,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(192,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(192,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(192,19)
+         LOOP END
+      LOOP END
+
+      LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(192,19)
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(192,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(192,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(192,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(192,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(192,19)
+         LOOP END
+      LOOP END
+
+      LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(192,19)
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(192,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(192,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(192,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(192,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(192,19)
+         LOOP END
+      LOOP END
+
+      LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(192,19)
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(192,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(192,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(192,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(192,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(192,19)
+         LOOP END
+      LOOP END
+
+      LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(192,19)
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(192,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(192,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(192,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(192,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(192,19)
+         LOOP END
+      LOOP END
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(195,3)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(195,3)
+      remark #15542: loop was not vectorized: inner loop was already vectorized
+
+      LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(195,3)
+         remark #15542: loop was not vectorized: inner loop was already vectorized
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(195,3)
+            remark #15300: LOOP WAS VECTORIZED
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(196,29)
+         LOOP END
+      LOOP END
+
+      LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(196,29)
+      LOOP END
+   LOOP END
+
+   LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(196,29)
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(196,29)
+LOOP END
+
+LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(204,19)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed OUTPUT dependence between 1453 line 204 and 1453 line 204
+
+   LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(204,19)
+      remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+      remark #15346: vector dependence: assumed OUTPUT dependence between 1453 line 204 and 1453 line 204
+
+      LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(204,19)
+         remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+         remark #15346: vector dependence: assumed ANTI dependence between 1453 line 204 and 1453 line 204
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(204,19)
+            remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(204,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(204,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(204,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(204,19)
+         LOOP END
+      LOOP END
+
+      LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(204,19)
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(204,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(204,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(204,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(204,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(204,19)
+         LOOP END
+      LOOP END
+
+      LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(204,19)
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(204,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(204,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(204,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(204,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(204,19)
+         LOOP END
+      LOOP END
+
+      LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(204,19)
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(204,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(204,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(204,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(204,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(204,19)
+         LOOP END
+      LOOP END
+
+      LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(204,19)
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(204,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(204,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(204,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(204,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(204,19)
+         LOOP END
+      LOOP END
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(205,19)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed OUTPUT dependence between 1467 line 205 and 1467 line 205
+
+   LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(205,19)
+      remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+      remark #15346: vector dependence: assumed OUTPUT dependence between 1467 line 205 and 1467 line 205
+
+      LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(205,19)
+         remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+         remark #15346: vector dependence: assumed OUTPUT dependence between 1467 line 205 and 1467 line 205
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(205,19)
+            remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(205,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(205,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(205,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(205,19)
+         LOOP END
+      LOOP END
+
+      LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(205,19)
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(205,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(205,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(205,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(205,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(205,19)
+         LOOP END
+      LOOP END
+
+      LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(205,19)
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(205,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(205,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(205,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(205,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(205,19)
+         LOOP END
+      LOOP END
+
+      LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(205,19)
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(205,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(205,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(205,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(205,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(205,19)
+         LOOP END
+      LOOP END
+
+      LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(205,19)
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(205,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(205,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(205,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(205,19)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/write_new_model_perturbations.f90(205,19)
+         LOOP END
+      LOOP END
+   LOOP END
+LOOP END
+===========================================================================

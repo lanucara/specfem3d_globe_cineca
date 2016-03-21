@@ -1,0 +1,545 @@
+
+Begin optimization report for: CROSS_SECTION
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/create_cross_section.F90(189,5)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed OUTPUT dependence between 2545 line 190 and 2545 line 190
+LOOP END
+
+LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/create_cross_section.F90(496,3)
+   remark #15398: loop was not vectorized: loop was transformed to memset or memcpy
+LOOP END
+
+LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/create_cross_section.F90(514,3)
+   remark #15398: loop was not vectorized: loop was transformed to memset or memcpy
+LOOP END
+
+LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/create_cross_section.F90(515,3)
+   remark #15398: loop was not vectorized: loop was transformed to memset or memcpy
+LOOP END
+
+LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/create_cross_section.F90(516,3)
+   remark #15398: loop was not vectorized: loop was transformed to memset or memcpy
+LOOP END
+
+LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/create_cross_section.F90(517,3)
+   remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+   LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/create_cross_section.F90(517,3)
+      remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+      LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/create_cross_section.F90(517,3)
+         remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+         LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/create_cross_section.F90(517,3)
+            remark #15398: loop was not vectorized: loop was transformed to memset or memcpy
+         LOOP END
+      LOOP END
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/create_cross_section.F90(563,3)
+   remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+   LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/create_cross_section.F90(563,3)
+      remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+      LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/create_cross_section.F90(563,3)
+         remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+         LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/create_cross_section.F90(563,3)
+            remark #15398: loop was not vectorized: loop was transformed to memset or memcpy
+         LOOP END
+      LOOP END
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/create_cross_section.F90(608,3)
+   remark #15398: loop was not vectorized: loop was transformed to memset or memcpy
+LOOP END
+
+LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/create_cross_section.F90(609,3)
+   remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+   LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/create_cross_section.F90(609,3)
+      remark #15398: loop was not vectorized: loop was transformed to memset or memcpy
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/create_cross_section.F90(623,11)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed OUTPUT dependence between  line 623 and  line 623
+
+   LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/create_cross_section.F90(616,5)
+      remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+      remark #15346: vector dependence: assumed OUTPUT dependence between  line 623 and  line 623
+
+      LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/create_cross_section.F90(617,7)
+         remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+         remark #15346: vector dependence: assumed OUTPUT dependence between  line 623 and  line 623
+
+         LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/create_cross_section.F90(618,9)
+            remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+            remark #15346: vector dependence: assumed OUTPUT dependence between kdtree_search_mp_kdtree_nodes_lo line 629 and kdtree_search_mp_kdtree_nodes_lo line 631
+         LOOP END
+
+         LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/create_cross_section.F90(618,9)
+         LOOP END
+
+         LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/create_cross_section.F90(618,9)
+         LOOP END
+      LOOP END
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/create_cross_section.F90(690,15)
+<Peeled>
+   remark #15301: PEEL LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/create_cross_section.F90(690,15)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/create_cross_section.F90(690,15)
+<Alternate Alignment Vectorized Loop>
+LOOP END
+
+LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/create_cross_section.F90(690,15)
+<Remainder>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/create_cross_section.F90(691,15)
+<Peeled>
+   remark #15301: PEEL LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/create_cross_section.F90(691,15)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/create_cross_section.F90(691,15)
+<Alternate Alignment Vectorized Loop>
+LOOP END
+
+LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/create_cross_section.F90(691,15)
+<Remainder>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/create_cross_section.F90(696,53)
+<Peeled>
+   remark #15301: PEEL LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/create_cross_section.F90(696,53)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/create_cross_section.F90(696,53)
+<Remainder>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+
+
+Non-optimizable loops:
+
+
+LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/create_cross_section.F90(311,3)
+   remark #15534: loop was not vectorized: loop contains arithmetic if or computed goto. Consider using if-then-else statement.    [ src/tomography/postprocess_sensitivity_kernels/create_cross_section.F90(245,18) ]
+LOOP END
+===========================================================================
+
+Begin optimization report for: SET_VERTICAL_CROSS_SECTION_POINTS
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/create_cross_section.F90(1034,5)
+   remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+   LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/create_cross_section.F90(1034,5)
+      remark #15398: loop was not vectorized: loop was transformed to memset or memcpy
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/create_cross_section.F90(1044,53)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/create_cross_section.F90(1044,53)
+   <Peeled>
+      remark #15301: PEEL LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/create_cross_section.F90(1044,53)
+      remark #15300: LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/create_cross_section.F90(1044,53)
+   <Remainder>
+      remark #15301: REMAINDER LOOP WAS VECTORIZED
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/create_cross_section.F90(1044,73)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/create_cross_section.F90(1044,73)
+   <Peeled>
+      remark #15301: PEEL LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/create_cross_section.F90(1044,73)
+      remark #15300: LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/create_cross_section.F90(1044,73)
+   <Remainder>
+      remark #15301: REMAINDER LOOP WAS VECTORIZED
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/create_cross_section.F90(1120,3)
+   remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+   LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/create_cross_section.F90(1127,5)
+      remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+      remark #15346: vector dependence: assumed OUTPUT dependence between phi line 2664 and phi line 2583
+   LOOP END
+LOOP END
+===========================================================================
+
+Begin optimization report for: SET_HORIZ_CROSS_SECTION_POINTS
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/create_cross_section.F90(832,5)
+   remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+   LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/create_cross_section.F90(832,5)
+      remark #15398: loop was not vectorized: loop was transformed to memset or memcpy
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/create_cross_section.F90(842,53)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/create_cross_section.F90(842,53)
+   <Peeled>
+      remark #15301: PEEL LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/create_cross_section.F90(842,53)
+      remark #15300: LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/create_cross_section.F90(842,53)
+   <Remainder>
+      remark #15301: REMAINDER LOOP WAS VECTORIZED
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/create_cross_section.F90(842,73)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/create_cross_section.F90(842,73)
+   <Peeled>
+      remark #15301: PEEL LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/create_cross_section.F90(842,73)
+      remark #15300: LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/create_cross_section.F90(842,73)
+   <Remainder>
+      remark #15301: REMAINDER LOOP WAS VECTORIZED
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/create_cross_section.F90(852,3)
+   remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+   LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/create_cross_section.F90(859,5)
+      remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+      remark #15346: vector dependence: assumed OUTPUT dependence between lat line 868 and lat line 890
+
+      LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/create_cross_section.F90(860,7)
+         remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+         remark #15346: vector dependence: assumed OUTPUT dependence between lat line 868 and lat line 890
+      LOOP END
+   LOOP END
+LOOP END
+===========================================================================
+
+Begin optimization report for: GET_MODEL_VALUES_CROSS_SECTION
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/create_cross_section.F90(1342,3)
+<Peeled>
+   remark #15301: PEEL LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/create_cross_section.F90(1342,3)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/create_cross_section.F90(1342,3)
+<Remainder>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/create_cross_section.F90(1349,10)
+<Peeled>
+   remark #15301: PEEL LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/create_cross_section.F90(1349,10)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/create_cross_section.F90(1349,10)
+<Remainder>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/create_cross_section.F90(1350,10)
+<Peeled>
+   remark #15301: PEEL LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/create_cross_section.F90(1350,10)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/create_cross_section.F90(1350,10)
+<Remainder>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/create_cross_section.F90(1351,10)
+<Peeled>
+   remark #15301: PEEL LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/create_cross_section.F90(1351,10)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/create_cross_section.F90(1351,10)
+<Remainder>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/create_cross_section.F90(1352,10)
+<Peeled>
+   remark #15301: PEEL LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/create_cross_section.F90(1352,10)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/create_cross_section.F90(1352,10)
+<Remainder>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/create_cross_section.F90(1353,10)
+<Peeled>
+   remark #15301: PEEL LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/create_cross_section.F90(1353,10)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/create_cross_section.F90(1353,10)
+<Remainder>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/create_cross_section.F90(1354,10)
+<Peeled>
+   remark #15301: PEEL LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/create_cross_section.F90(1354,10)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/create_cross_section.F90(1354,10)
+<Remainder>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/create_cross_section.F90(1358,3)
+<Peeled>
+   remark #15301: PEEL LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/create_cross_section.F90(1358,3)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/create_cross_section.F90(1358,3)
+<Remainder>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/create_cross_section.F90(1383,3)
+   remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+   LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/create_cross_section.F90(1467,5)
+      remark #15398: loop was not vectorized: loop was transformed to memset or memcpy
+   LOOP END
+
+   LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/create_cross_section.F90(1480,5)
+      remark #15398: loop was not vectorized: loop was transformed to memset or memcpy
+   LOOP END
+
+   LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/create_cross_section.F90(1484,5)
+      remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+      remark #15346: vector dependence: assumed OUTPUT dependence between  line 1493 and  line 1494
+
+      LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/create_cross_section.F90(1498,7)
+         remark #15520: loop was not vectorized: loop with early exits cannot be vectorized unless it meets search loop idiom criteria
+      LOOP END
+   LOOP END
+
+   LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/create_cross_section.F90(1514,5)
+      remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+      remark #15346: vector dependence: assumed FLOW dependence between ispec_selected line 1516 and ispec_selected line 1608
+   LOOP END
+LOOP END
+===========================================================================
+
+Begin optimization report for: LOCATE_SINGLE_POINT
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/create_cross_section.F90(1784,15)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed OUTPUT dependence between dist_min line 1789 and dist_min line 1789
+
+   LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/create_cross_section.F90(1779,5)
+      remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+      remark #15346: vector dependence: assumed OUTPUT dependence between dist_min line 1789 and dist_min line 1789
+
+      LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/create_cross_section.F90(1780,7)
+         remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+         remark #15346: vector dependence: assumed ANTI dependence between  line 1788 and dist line 1789
+      LOOP END
+
+      LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/create_cross_section.F90(1780,7)
+      LOOP END
+
+      LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/create_cross_section.F90(1780,7)
+      LOOP END
+
+      LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/create_cross_section.F90(1780,7)
+      LOOP END
+
+      LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/create_cross_section.F90(1780,7)
+      LOOP END
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/create_cross_section.F90(1821,19)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed OUTPUT dependence between  line 1828 and  line 1846
+LOOP END
+
+LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/create_cross_section.F90(1861,3)
+   remark #15520: loop was not vectorized: loop with early exits cannot be vectorized unless it meets search loop idiom criteria
+LOOP END
+===========================================================================
+
+Begin optimization report for: COLLECT_CLOSEST_POINT_VALUES
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/create_cross_section.F90(1219,5)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/create_cross_section.F90(1224,7)
+   <Peeled>
+      remark #15301: PEEL LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/create_cross_section.F90(1224,7)
+      remark #15300: LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/create_cross_section.F90(1224,7)
+   <Remainder>
+      remark #15301: REMAINDER LOOP WAS VECTORIZED
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/create_cross_section.F90(1241,5)
+<Peeled>
+   remark #15301: PEEL LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/create_cross_section.F90(1241,5)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/create_cross_section.F90(1241,5)
+<Alternate Alignment Vectorized Loop>
+LOOP END
+
+LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/create_cross_section.F90(1241,5)
+<Remainder>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+===========================================================================
+
+Begin optimization report for: WRITE_CROSS_SECTION
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/create_cross_section.F90(2060,3)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed OUTPUT dependence between 30 line 2082 and 30 line 2082
+LOOP END
+===========================================================================
+
+Begin optimization report for: GET_CROSS_SECTION_AVG
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/create_cross_section.F90(2164,3)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed OUTPUT dependence between x line 2166 and x line 2171
+LOOP END
+
+LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/create_cross_section.F90(2245,3)
+   remark #15398: loop was not vectorized: loop was transformed to memset or memcpy
+LOOP END
+
+LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/create_cross_section.F90(2246,3)
+   remark #15398: loop was not vectorized: loop was transformed to memset or memcpy
+LOOP END
+
+LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/create_cross_section.F90(2249,3)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/tomography/postprocess_sensitivity_kernels/create_cross_section.F90(2249,3)
+<Remainder>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+===========================================================================

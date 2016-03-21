@@ -1,0 +1,181 @@
+
+Begin optimization report for: AUTO_OPTIMAL_NER
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/shared/auto_ner.f90(366,3)
+   remark #15541: outer loop was not auto-vectorized: consider using SIMD directive   [ src/shared/auto_ner.f90(376,6) ]
+
+   LOOP BEGIN at src/shared/auto_ner.f90(376,6)
+      remark #15523: loop was not vectorized: cannot compute loop iteration count before executing the loop.
+   LOOP END
+LOOP END
+===========================================================================
+
+Begin optimization report for: COMPUTE_NEX
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/shared/auto_ner.f90(478,3)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/shared/auto_ner.f90(478,3)
+<Remainder>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+===========================================================================
+
+Begin optimization report for: GET_ELEMENT
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/shared/auto_ner.f90(513,5)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/shared/auto_ner.f90(517,5)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+===========================================================================
+
+Begin optimization report for: GET_SIZE_MIN_MAX
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/shared/auto_ner.f90(536,3)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+===========================================================================
+
+Begin optimization report for: AUTO_NER
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/shared/auto_ner.f90(304,3)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/shared/auto_ner.f90(304,3)
+<Remainder>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/shared/auto_ner.f90(313,3)
+   remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at src/shared/auto_ner.f90(316,3)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/shared/auto_ner.f90(310,3)
+   remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at src/shared/auto_ner.f90(311,3)
+   remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at src/shared/auto_ner.f90(317,3)
+   remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at src/shared/auto_ner.f90(368,50) inlined into src/shared/auto_ner.f90(324,8)
+   remark #15541: outer loop was not auto-vectorized: consider using SIMD directive   [ src/shared/auto_ner.f90(376,6) ]
+
+   LOOP BEGIN at src/shared/auto_ner.f90(376,6) inlined into src/shared/auto_ner.f90(324,8)
+      remark #15523: loop was not vectorized: cannot compute loop iteration count before executing the loop.
+   LOOP END
+LOOP END
+===========================================================================
+
+Begin optimization report for: FIND_R_CENTRAL_CUBE
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/shared/auto_ner.f90(478,3) inlined into src/shared/auto_ner.f90(426,11)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/shared/auto_ner.f90(478,3) inlined into src/shared/auto_ner.f90(426,11)
+<Remainder>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/shared/auto_ner.f90(513,5) inlined into src/shared/auto_ner.f90(434,14)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/shared/auto_ner.f90(517,5) inlined into src/shared/auto_ner.f90(434,14)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/shared/auto_ner.f90(536,3) inlined into src/shared/auto_ner.f90(435,14)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+
+Non-optimizable loops:
+
+
+LOOP BEGIN at src/shared/auto_ner.f90(422,3)
+   remark #15536: loop was not vectorized: inner loop throttling prevents vectorization of this outer loop. Refer to inner loop message for more details.
+
+   LOOP BEGIN at src/shared/auto_ner.f90(440,6)
+      remark #15529: loop was not vectorized: volatile assignment was not vectorized. Try using non-volatile assignment.   [ src/shared/auto_ner.f90(503,14) ]
+   LOOP END
+LOOP END
+===========================================================================
+
+Begin optimization report for: COMPUTE_IC_MESH
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/shared/auto_ner.f90(576,9)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at src/shared/auto_ner.f90(575,6)
+      remark #15542: loop was not vectorized: inner loop was already vectorized
+
+      LOOP BEGIN at src/shared/auto_ner.f90(576,9)
+         remark #15542: loop was not vectorized: inner loop was already vectorized
+
+         LOOP BEGIN at src/shared/auto_ner.f90(577,12)
+            remark #15300: LOOP WAS VECTORIZED
+         LOOP END
+
+         LOOP BEGIN at src/shared/auto_ner.f90(577,12)
+            remark #15300: LOOP WAS VECTORIZED
+         LOOP END
+
+         LOOP BEGIN at src/shared/auto_ner.f90(577,12)
+            remark #15300: LOOP WAS VECTORIZED
+         LOOP END
+
+         LOOP BEGIN at src/shared/auto_ner.f90(577,12)
+            remark #15300: LOOP WAS VECTORIZED
+         LOOP END
+      LOOP END
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/shared/auto_ner.f90(589,3)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at src/shared/auto_ner.f90(590,6)
+      remark #15542: loop was not vectorized: inner loop was already vectorized
+
+      LOOP BEGIN at src/shared/auto_ner.f90(591,9)
+         remark #15300: LOOP WAS VECTORIZED
+      LOOP END
+   LOOP END
+LOOP END
+===========================================================================

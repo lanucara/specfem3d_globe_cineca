@@ -1,0 +1,108 @@
+
+Begin optimization report for: COMPUTE_ARRAYS_SOURCE
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/specfem3D/compute_arrays_source.f90(84,30)
+<Distributed chunk1>
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed OUTPUT dependence between l line 65 and l line 89
+LOOP END
+
+LOOP BEGIN at src/specfem3D/compute_arrays_source.f90(84,30)
+<Distributed chunk2>
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed OUTPUT dependence between k line 66 and k line 88
+
+   LOOP BEGIN at src/specfem3D/compute_arrays_source.f90(66,7)
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/specfem3D/compute_arrays_source.f90(98,3)
+   remark #15521: loop was not vectorized: explicitly compute the iteration count before executing the loop or try using canonical loop form
+
+   LOOP BEGIN at src/specfem3D/compute_arrays_source.f90(99,5)
+      remark #15521: loop was not vectorized: explicitly compute the iteration count before executing the loop or try using canonical loop form
+
+      LOOP BEGIN at src/specfem3D/compute_arrays_source.f90(100,7)
+         remark #15521: loop was not vectorized: explicitly compute the iteration count before executing the loop or try using canonical loop form
+      LOOP END
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/specfem3D/compute_arrays_source.f90(108,3)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/compute_arrays_source.f90(108,3)
+<Alternate Alignment Vectorized Loop>
+LOOP END
+
+LOOP BEGIN at src/specfem3D/compute_arrays_source.f90(108,3)
+<Remainder>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+===========================================================================
+
+Begin optimization report for: COMPUTE_ARRAYS_SOURCE_ADJOINT
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/specfem3D/compute_arrays_source.f90(191,3)
+   remark #15398: loop was not vectorized: loop was transformed to memset or memcpy
+LOOP END
+
+LOOP BEGIN at src/specfem3D/compute_arrays_source.f90(215,5)
+   remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+   LOOP BEGIN at src/specfem3D/compute_arrays_source.f90(215,5)
+      remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+      remark #15346: vector dependence: assumed FLOW dependence between 87 line 216 and 87 line 216
+   LOOP END
+
+   LOOP BEGIN at src/specfem3D/compute_arrays_source.f90(223,5)
+      remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+      remark #15346: vector dependence: assumed FLOW dependence between adj_src line 230 and adj_src line 236
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/specfem3D/compute_arrays_source.f90(251,3)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/compute_arrays_source.f90(251,3)
+<Remainder>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/compute_arrays_source.f90(254,3)
+   remark #15300: LOOP WAS VECTORIZED
+
+   LOOP BEGIN at src/specfem3D/compute_arrays_source.f90(255,5)
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/specfem3D/compute_arrays_source.f90(254,3)
+<Remainder>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/specfem3D/compute_arrays_source.f90(266,3)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at src/specfem3D/compute_arrays_source.f90(272,5)
+      remark #15300: LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at src/specfem3D/compute_arrays_source.f90(272,5)
+   <Alternate Alignment Vectorized Loop>
+   LOOP END
+
+   LOOP BEGIN at src/specfem3D/compute_arrays_source.f90(272,5)
+   <Remainder>
+      remark #15301: REMAINDER LOOP WAS VECTORIZED
+   LOOP END
+LOOP END
+===========================================================================

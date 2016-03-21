@@ -1,0 +1,50 @@
+
+Begin optimization report for: INTERPOLATE
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/shared/interpolate.f90(67,43)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at src/shared/interpolate.f90(65,5)
+      remark #15542: loop was not vectorized: inner loop was already vectorized
+
+      LOOP BEGIN at src/shared/interpolate.f90(66,7)
+         remark #15300: LOOP WAS VECTORIZED
+      LOOP END
+   LOOP END
+LOOP END
+===========================================================================
+
+Begin optimization report for: INTERPOLATE_LIMITED
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at src/shared/interpolate.f90(128,40)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at src/shared/interpolate.f90(126,5)
+      remark #15542: loop was not vectorized: inner loop was already vectorized
+
+      LOOP BEGIN at src/shared/interpolate.f90(127,7)
+         remark #15300: LOOP WAS VECTORIZED
+      LOOP END
+   LOOP END
+LOOP END
+
+LOOP BEGIN at src/shared/interpolate.f90(142,13)
+<Peeled>
+   remark #15301: PEEL LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/shared/interpolate.f90(142,13)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at src/shared/interpolate.f90(142,13)
+<Remainder>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+===========================================================================
