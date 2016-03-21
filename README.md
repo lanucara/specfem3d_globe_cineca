@@ -1,3 +1,18 @@
+## MIC Development (CINECA) Piero Lanucara and Vittorio Ruggiero
+	
+	--with-mic enabled
+
+(modified configure.ac file. configure rebuilt with autoconf -i command)
+
+to install on Galileo@CINECA:
+
+./configure --prefix=/software/specfem3d_globe_cineca --with-mic MPI_INC=/cineca/prod/compilers/intel/cs-xe-2015/binary/impi_5.0.2/include64
+
+# MIC Development EXAMPLES: regional_Greece_small and regional_MiddleEast modified script run_mesher_solver.bash
+please, take a look and modify accordingly to your choice (number of CPUs, threads, launch parameters....)
+
+NOTE: run only from compute node (also for compiling and relink executables)
+ 
 # Specfem3D Globe
 
 Program specfem3D from `SPECFEM3D_GLOBE` is a 3-D spectral-element solver for the Earth.
@@ -32,14 +47,4 @@ at:
 
 Seismology software repository: [SPECFEM3D_GLOBE](https://geodynamics.org/cig/software/specfem3d_globe/)
 
-
-## MIC Development (CINECA)
-	
-	--with-mic enabled
-
-(modified configure.ac file. configure rebuilt with autoconf -i command)
-
-to install on Galileo@CINECA:
-
-./configure --prefix=/software/specfem3d_globe_cineca --with-mic MPI_INC=/cineca/prod/compilers/intel/cs-xe-2015/binary/impi_5.0.2/include64
 
