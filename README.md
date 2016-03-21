@@ -38,3 +38,8 @@ Seismology software repository: [SPECFEM3D_GLOBE](https://geodynamics.org/cig/so
 	--with-mic enabled
 
 (modified configure.ac file. configure rebuilt with autoconf -i command)
+
+to install on Galileo@CINECA:
+
+./configure --prefix=/software/specfem3d_globe_cineca --with-mic MPI_INC=/cineca/prod/compilers/intel/cs-xe-2015/binary/impi_5.0.2/include64
+
