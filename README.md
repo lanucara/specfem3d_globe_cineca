@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Specfem3D Globe
 
 Program specfem3D from `SPECFEM3D_GLOBE` is a 3-D spectral-element solver for the Earth.
@@ -38,6 +39,9 @@ Seismology software repository: [SPECFEM3D_GLOBE](https://geodynamics.org/cig/so
 	
 	--with-mic enabled
 (modified configure.ac file. configure rebuilt with autoconf -i command)
+=======
+# specfem3d_globe_cineca
+>>>>>>> 5e6d7ac8fd68f0c57a1fbc4ef4e3b57b2644318a
 =======
 # specfem3d_globe_cineca
 >>>>>>> 5e6d7ac8fd68f0c57a1fbc4ef4e3b57b2644318a
