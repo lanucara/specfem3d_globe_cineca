@@ -11,7 +11,10 @@ to install on Galileo@CINECA:
 ## MIC Development modified EXAMPLES: 
 
 regional_Greece_small and regional_MiddleEast modified script run_mesher_solver.bash
+
 please, take a look and modify accordingly to your choice (number of CPUs, threads, launch parameters....)
+
+synths were compared and found exactly the same (at least at a EPS machine size)
 
 NOTE: run only from compute node (also for compiling and relink executables)
  
